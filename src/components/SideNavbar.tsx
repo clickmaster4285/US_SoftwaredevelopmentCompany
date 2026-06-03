@@ -91,16 +91,15 @@ export default function SideNavbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
             ? "bg-[oklch(0.97_0.005_80)]/85 backdrop-blur-md border-b border-black/5 text-[oklch(0.20_0.02_250)]"
             : "bg-transparent text-white"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
           <a href="#" className="flex items-center gap-2 font-semibold tracking-tight text-base">
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-current animate-pulse" />
-            studio.motion
+            Clickmasters Software Development Company
           </a>
 
           <button
@@ -114,20 +113,17 @@ export default function SideNavbar() {
               {open ? "Close" : "Menu"}
             </span>
             <span
-              className={`relative h-9 w-9 rounded-full flex items-center justify-center transition-colors ${
-                scrolled ? "bg-[oklch(0.20_0.02_250)] text-white" : "bg-white text-[oklch(0.20_0.02_250)]"
-              }`}
+              className={`relative h-9 w-9 rounded-full flex items-center justify-center transition-colors ${scrolled ? "bg-[oklch(0.20_0.02_250)] text-white" : "bg-white text-[oklch(0.20_0.02_250)]"
+                }`}
             >
               <span className="relative block w-4 h-3">
                 <span
-                  className={`absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300 ${
-                    open ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0"
-                  }`}
+                  className={`absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300 ${open ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0"
+                    }`}
                 />
                 <span
-                  className={`absolute left-0 right-0 bottom-0 h-[1.5px] bg-current transition-all duration-300 ${
-                    open ? "top-1/2 -translate-y-1/2 -rotate-45 bottom-auto" : ""
-                  }`}
+                  className={`absolute left-0 right-0 bottom-0 h-[1.5px] bg-current transition-all duration-300 ${open ? "top-1/2 -translate-y-1/2 -rotate-45 bottom-auto" : ""
+                    }`}
                 />
               </span>
             </span>
@@ -204,8 +200,8 @@ export default function SideNavbar() {
         <div ref={sideMetaRef} className="relative px-8 md:px-12 py-8 border-t border-white/10 flex flex-col md:flex-row gap-6 md:items-end md:justify-between">
           <div data-nav-meta>
             <p className="text-[10px] uppercase tracking-[0.4em] opacity-50 mb-2">Say hello</p>
-            <a href="mailto:hello@studio.com" className="text-base md:text-lg font-medium hover:opacity-70">
-              hello@studio.com
+            <a href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com" className="text-base md:text-lg font-medium hover:opacity-70">
+              sales@Clickmasterssoftwaredevelopmentcompany.com
             </a>
           </div>
           <div data-nav-meta className="flex flex-wrap gap-x-5 gap-y-2">

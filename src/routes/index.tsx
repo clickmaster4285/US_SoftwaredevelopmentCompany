@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import heroVideo from "@/assets/hero-video.mp4.asset.json";
+import heroVideo from "@/assets/hero-video.mp4";
 import projectNorton from "@/assets/project-norton.jpg";
 import projectLumen from "@/assets/project-lumen.jpg";
 import projectNorthwind from "@/assets/project-northwind.jpg";

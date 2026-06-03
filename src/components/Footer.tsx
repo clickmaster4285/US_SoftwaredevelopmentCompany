@@ -55,12 +55,12 @@ export default function Footer() {
                 </h2>
                 <div className="mt-5 space-y-1.5">
                   <a
-                    href="mailto:hey@studio.global"
+                    href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
                     className="block text-base md:text-lg font-medium hover:opacity-60 transition-opacity"
                   >
-                    hey@studio.global
+                    sales@Clickmasterssoftwaredevelopmentcompany.com
                   </a>
-                  <p className="text-base md:text-lg opacity-70">+1 415 796 6262</p>
+                  <p className="text-base md:text-lg opacity-70">+13252024074</p>
                 </div>
               </div>
             </div>
