@@ -9,7 +9,7 @@ import testimonial1 from "@/assets/testimonial-1.mp4.asset.json";
 import testimonial2 from "@/assets/testimonial-2.mp4.asset.json";
 import testimonial3 from "@/assets/testimonial-3.mp4.asset.json";
 import testimonial4 from "@/assets/testimonial-4.mp4.asset.json";
-import dominateVideo from "@/assets/dominate-video.mp4.asset.json";
+import dominateVideo from "@/assets/dominate-video.mp4";
 import audienceAgencies from "@/assets/audience-agencies.jpg";
 import audienceCreators from "@/assets/audience-creators.jpg";
 import audienceMarketing from "@/assets/audience-marketing.jpg";
@@ -139,7 +139,7 @@ function Index() {
             }}
           >
             <video
-              src={heroVideo.url}
+              src={heroVideo}
               autoPlay
               muted
               loop
@@ -652,7 +652,7 @@ function DominateSection() {
         <div className="aspect-square w-full rounded-3xl overflow-hidden shadow-2xl bg-black">
           <video
             ref={videoRef}
-            src={dominateVideo.url}
+            src={dominateVideo}
             muted
             loop
             playsInline
