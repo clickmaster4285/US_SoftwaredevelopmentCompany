@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import type { StaticImageData } from "next/image";
 import card1 from "@/assets/award-card-1.jpg";
 import card2 from "@/assets/award-card-2.jpg";
 import card3 from "@/assets/award-card-3.jpg";
@@ -11,7 +12,7 @@ import card6 from "@/assets/award-card-6.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 type CardCfg = {
-  src: string;
+  src: string | StaticImageData;
   x: number; // % within stage
   y: number;
   rot: number;

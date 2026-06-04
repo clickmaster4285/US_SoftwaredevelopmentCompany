@@ -1,0 +1,763 @@
+# File Tree: Software uk
+
+**Generated:** 6/4/2026, 10:48:11 AM
+**Root Path:** `c:\Users\PC-24\Desktop\Software uk`
+
+```
+├── .qwen
+│   └── skills
+│       ├── nextjs-dead-code-removal
+│       │   └── SKILL.md
+│       ├── nextjs-dynamic-import-gotchas
+│       │   └── SKILL.md
+│       └── nextjs-lighthouse-tbt-audit
+│           └── SKILL.md
+├── app
+│   ├── (admin)
+│   │   └── admin
+│   │       ├── blog
+│   │       │   ├── [id]
+│   │       │   │   ├── detail
+│   │       │   │   │   └── page.js
+│   │       │   │   └── page.js
+│   │       │   └── page.js
+│   │       ├── case-studies
+│   │       │   ├── [id]
+│   │       │   │   ├── detail
+│   │       │   │   │   └── page.js
+│   │       │   │   └── page.js
+│   │       │   ├── new
+│   │       │   │   └── page.js
+│   │       │   └── page.js
+│   │       ├── categories
+│   │       │   ├── [id]
+│   │       │   │   └── page.js
+│   │       │   ├── new
+│   │       │   │   └── page.js
+│   │       │   └── page.js
+│   │       ├── dashboard
+│   │       │   └── page.js
+│   │       ├── projects
+│   │       │   ├── [id]
+│   │       │   │   ├── detail
+│   │       │   │   │   └── page.js
+│   │       │   │   └── page.js
+│   │       │   └── page.js
+│   │       ├── settings
+│   │       │   └── page.js
+│   │       ├── testimonials
+│   │       │   ├── [id]
+│   │       │   │   └── page.js
+│   │       │   └── page.js
+│   │       ├── layout.js
+│   │       └── page.js
+│   ├── (auth)
+│   │   └── login
+│   │       └── page.js
+│   ├── (landing)
+│   │   ├── [category]
+│   │   │   ├── [service]
+│   │   │   │   ├── ClientScrollWheel.jsx
+│   │   │   │   ├── NavigationWheel.js
+│   │   │   │   ├── page.js
+│   │   │   │   └── subservice.js
+│   │   │   ├── main-service.jsx
+│   │   │   └── page.js
+│   │   ├── about
+│   │   │   └── page.js
+│   │   ├── blog
+│   │   │   ├── [id]
+│   │   │   │   └── page.js
+│   │   │   └── page.js
+│   │   ├── case-studies
+│   │   │   ├── [id]
+│   │   │   │   └── page.js
+│   │   │   └── page.js
+│   │   ├── contact
+│   │   │   ├── ContactForm.js
+│   │   │   └── page.js
+│   │   ├── faq
+│   │   │   ├── FAQAccordion.js
+│   │   │   └── page.js
+│   │   ├── home
+│   │   │   ├── About.js
+│   │   │   ├── Benefits.js
+│   │   │   ├── FAQ.js
+│   │   │   ├── FinalCTA.js
+│   │   │   ├── Hero.js
+│   │   │   ├── MidCTA.js
+│   │   │   ├── Portfolio.js
+│   │   │   ├── Pricing.js
+│   │   │   ├── Services.js
+│   │   │   ├── SolutionCTA.js
+│   │   │   ├── TechStackSection.jsx
+│   │   │   ├── Testimonials.js
+│   │   │   └── TrustedBy.js
+│   │   ├── pricing
+│   │   │   └── page.js
+│   │   ├── projects
+│   │   │   └── page.js
+│   │   ├── solutions
+│   │   │   ├── [id]
+│   │   │   │   └── page.js
+│   │   │   └── page.js
+│   │   ├── testimonials
+│   │   │   ├── [id]
+│   │   │   │   └── page.js
+│   │   │   └── page.js
+│   │   ├── landing-styles.css
+│   │   ├── layout.js
+│   │   └── page.js
+│   ├── api
+│   │   ├── blog
+│   │   │   ├── [id]
+│   │   │   │   └── route.js
+│   │   │   └── route.js
+│   │   ├── case-studies
+│   │   │   ├── [id]
+│   │   │   │   └── route.js
+│   │   │   └── route.js
+│   │   ├── categories
+│   │   │   └── route.js
+│   │   ├── contact
+│   │   │   └── route.js
+│   │   ├── projects
+│   │   │   ├── [id]
+│   │   │   │   └── route.js
+│   │   │   └── route.js
+│   │   ├── testimonials
+│   │   │   └── route.js
+│   │   ├── upload
+│   │   │   └── route.js
+│   │   ├── uploads
+│   │   │   └── [filename]
+│   │   │       └── route.js
+│   │   └── users
+│   │       └── route.js
+│   ├── models
+│   │   ├── BlogPost.js
+│   │   ├── CaseStudy.js
+│   │   ├── Category.js
+│   │   ├── Project.js
+│   │   ├── Testimonial.js
+│   │   └── User.js
+│   ├── error.jsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.js
+│   ├── metadata-config.js
+│   └── not-found.jsx
+├── components
+│   ├── admin
+│   │   ├── BlogForm.jsx
+│   │   ├── CaseStudyForm.jsx
+│   │   ├── CategoryForm.jsx
+│   │   ├── ImageUpload.jsx
+│   │   ├── ProjectCard.jsx
+│   │   ├── ProjectForm.jsx
+│   │   ├── TestimonialForm.jsx
+│   │   ├── blog-card.jsx
+│   │   ├── case-study-card.jsx
+│   │   ├── faq-card.jsx
+│   │   └── testimonial-card.jsx
+│   ├── landing
+│   │   ├── main-service
+│   │   │   ├── AppsSection.jsx
+│   │   │   ├── ExploreSection.jsx
+│   │   │   ├── FaqSection.jsx
+│   │   │   ├── FeaturedInsights.jsx
+│   │   │   ├── PainPointsSolutions.jsx
+│   │   │   ├── ProcessPage.jsx
+│   │   │   ├── TechStackSection.jsx
+│   │   │   ├── TestimonialsSection.jsx
+│   │   │   ├── TrustedClientsSection.jsx
+│   │   │   ├── finalCta.jsx
+│   │   │   ├── hero-section.jsx
+│   │   │   ├── industries-section.jsx
+│   │   │   ├── pricing-section.jsx
+│   │   │   └── whyUs.jsx
+│   │   └── sub-services
+│   │       ├── CaseStudySection.jsx
+│   │       ├── CeoVision.jsx
+│   │       ├── DynamicSections.jsx
+│   │       ├── EngineeringBaseline.jsx
+│   │       ├── FAQSection.jsx
+│   │       ├── FooterCTA.jsx
+│   │       ├── IndustriesSection.jsx
+│   │       ├── PricingCard.jsx
+│   │       ├── PricingSection.jsx
+│   │       ├── ProcessSection.jsx
+│   │       ├── ServicesSection.jsx
+│   │       ├── TechStack.jsx
+│   │       ├── TestimonialsSection.jsx
+│   │       ├── WhyChooseUs.jsx
+│   │       ├── parallax-case-studies-section.jsx
+│   │       └── service-hero.jsx
+│   ├── ui
+│   │   ├── accordion.jsx
+│   │   ├── animated-background.jsx
+│   │   ├── avatar.jsx
+│   │   ├── badge.jsx
+│   │   ├── button.jsx
+│   │   ├── card.jsx
+│   │   ├── dialog.jsx
+│   │   ├── error-card.jsx
+│   │   ├── expand-cards.jsx
+│   │   ├── input.jsx
+│   │   ├── label.jsx
+│   │   ├── radio-group.jsx
+│   │   ├── scroll-snake-line.jsx
+│   │   ├── select.jsx
+│   │   ├── separator.jsx
+│   │   ├── skeleton.jsx
+│   │   ├── sonner.jsx
+│   │   ├── switch.jsx
+│   │   ├── table.jsx
+│   │   └── textarea.jsx
+│   ├── Footer.js
+│   ├── HomeLogoLink.jsx
+│   ├── MegaMenu.jsx
+│   ├── Navbar.js
+│   ├── Providers.jsx
+│   ├── ScrollToTopButton.jsx
+│   ├── SmoothScroll.jsx
+│   ├── StatsBanner.js
+│   ├── StrategyCallModal.js
+│   └── ToasterProvider.jsx
+├── data
+│   ├── aboutData.jsx
+│   ├── hire-us-pages.js
+│   ├── main-services.js
+│   ├── service-section-data.js
+│   ├── sub-services.js
+│   └── whyChooseUsData.js
+├── features
+│   ├── blogApi.js
+│   ├── caseStudyApi.js
+│   ├── categoryApi.js
+│   ├── contactApi.js
+│   ├── projectApi.js
+│   ├── testimonialApi.js
+│   └── userApi.js
+├── hooks
+│   ├── useBlog.js
+│   ├── useCaseStudies.js
+│   ├── useCategories.js
+│   ├── useContact.js
+│   ├── useProjects.js
+│   ├── useTestimonials.js
+│   └── useUser.js
+├── lib
+│   ├── auth.js
+│   ├── axios.js
+│   ├── mongoose.js
+│   ├── readTime.js
+│   ├── subservice-utils.js
+│   └── utils.js
+├── public
+│   ├── assets
+│   │   ├── aboutus.webp
+│   │   ├── mobile-app-development.svg
+│   │   ├── pruple-crayon.webp
+│   │   ├── service-ai.png
+│   │   ├── service-cloud.png
+│   │   ├── service-design.png
+│   │   ├── service-email.png
+│   │   ├── service-enterprise.png
+│   │   ├── service-infra.png
+│   │   ├── service-mobile.png
+│   │   ├── service-web.png
+│   │   ├── software-development-icon.webp
+│   │   ├── web-development.webp
+│   │   └── white-crayon-removebg-preview.webp
+│   ├── cm-logos
+│   │   ├── logo.webp
+│   │   └── logo_white.webp
+│   ├── contact
+│   │   ├── contact-bg.webp
+│   │   ├── support-person.webp
+│   │   ├── support-team.webp
+│   │   └── support-women.webp
+│   ├── landing
+│   │   ├── main-services
+│   │   │   └── hero-bg.webp
+│   │   ├── sub-services
+│   │   │   ├── center-background.jpg
+│   │   │   ├── ceo.jpeg
+│   │   │   ├── line1.png
+│   │   │   ├── line2.png
+│   │   │   ├── line3.png
+│   │   │   └── sub-service-bg.jpg
+│   │   ├── 3d-illustration-man-flying.webp
+│   │   ├── coding-illustration.webp
+│   │   ├── hero-home-image-1.webp
+│   │   ├── high-performace.webp
+│   │   ├── man_coding.webp
+│   │   ├── pricing_1.avif
+│   │   ├── pricing_2.jpg
+│   │   ├── purple-background-with-wavy-shapes.webp
+│   │   ├── service-ai.webp
+│   │   ├── service-cloudsecu.webp
+│   │   ├── service-enterpriseapp.webp
+│   │   ├── service-machinelern.webp
+│   │   ├── service-testing.webp
+│   │   └── service-uiux.webp
+│   ├── vedios
+│   │   ├── bg-video-final.mp4
+│   │   └── bg-video.webm
+│   └── robots.txt
+├── scripts
+│   └── seed-admin.mjs
+├── .gitignore
+├── AGENTS.md
+├── CLAUDE.md
+├── boneyard.md
+├── components.json
+├── eslint.config.mjs
+├── jsconfig.json
+├── lighthouse-solutions.txt
+├── lighthouse.txt
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+└── tailwind.config.js
+```
+
+---
+*Generated by FileTree Pro Extension*
+
+
+
+
+
+
+Optimized tool selectionI'll create a concise migration TODO list, then scan the repo for routes, server code, and key files.
+
+Created 10 todos
+
+Next, I'll scan the repo to locate routes, server entry, integrations, and key config files. I'll return findings.
+
+Search complete: Repo scan for migration targets
+
+Searched codebase for "main entry points routing files server start vite config package json", 16 results
+
+Searched codebase for "src/routes src/router.tsx integrations supabase components styles assets", 16 results
+
+Searched for files matching `**/*(server|start).ts`, no matches
+
+Searched for files matching `**/vite.config.ts`, 1 match
+
+Searched for files matching `**/package.json`, 1 match
+
+Searched for files matching `**/routes/**`, 2 matches
+
+Searched for files matching `**/router.tsx`, 1 match
+
+Searched for files matching `**/supabase*.{ts,js,tsx,jsx}`, no matches
+
+Searched for files matching `**/*component*.{ts,js,tsx,jsx}`, no matches
+
+Searched for files matching `**/*style*.{ts,js,tsx,jsx}`, no matches
+
+Searched for files matching `**/*entry*.ts`, no matches
+
+Searched for files matching `**/routeTree.*`, 1 match
+
+Searched for files matching `**/start*.ts`, 1 match
+
+Searched for files matching `**/server*.ts`, 1 match
+
+Searched for files matching `**/vite.config.*`, 1 match
+
+Searched for files matching `**/package.json`, 1 match
+
+Searched for files matching `**/router.tsx`, 1 match
+
+Searched for files matching `**/routes/**`, 2 matches
+
+Searched for files matching `**/integrations/**`, 5 matches
+
+Searched for files matching `**/*component*.{ts,tsx,js,jsx}`, no matches
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/server.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/start.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/router.tsx)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/routeTree.gen.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/routes/__root.tsx)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/routes/index.tsx#1-1), lines 1 to 260
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/integrations/supabase/types.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/src/integrations/supabase/client.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/vite.config.ts)
+
+Read [](file:///c%3A/Users/PC-24/Desktop/parallax-portal-play-main/package.json)
+
+**Summary**
+- I inspected the project and created a migration TODO list. Next I scanned key files to understand routing, SSR, integrations, and assets.
+
+**Key Findings**
+- **Vite + TanStack SSR**: Uses `@tanstack/react-start` + `@tanstack/react-router` with a custom SSR entry (vite.config.ts, server.ts, start.ts).
+- **File-based route generation (TanStack)**: Routes live under routes and a generated tree routeTree.gen.ts.
+- **Client/server split for Supabase**: Client and server Supabase clients and auth middleware exist ([src/integrations/supabase/client.ts], [src/integrations/supabase/client.server.ts], [src/integrations/supabase/auth-attacher.ts]).
+- **Assets imported as modules**: Videos/images are imported directly in React files (e.g., index.tsx).
+- **Tailwind + Radix + React Query**: Tailwind CSS, Radix components, React Query are in use (see package.json).
+- **Custom SSR error wrapper & middleware**: `server.ts` and `start.ts` implement SSR error handling and middleware chaining that will need mapping to Next's primitives.
+
+**High-level migration constraints / risks**
+- Next.js prefers its own routing (app/ or pages/) — migrating from TanStack routing requires rewriting route files to Next pages/app routes.
+- Server runtime differences: the TanStack SSR entry and middleware must be reimplemented with Next API routes, middleware, or server components.
+- Assets imported as modules may need moving to `public/` or configuring Next to handle static imports (recommend public for videos).
+- Supabase env var usage uses `import.meta.env` — convert to `process.env.NEXT_PUBLIC_*` for client, and `process.env.*` for server.
+- React version in package.json is v19; verify Next.js compatibility (Next may require React 18 currently). This likely requires adjusting React/ReactDOM versions or using an experimental Next build.
+
+**Detailed Migration Plan (recommended order)**
+1. **Inventory & compatibility check** — verify React/Next version compatibility and list environment variables. (Completed: repo scan)
+2. **Create Next.js scaffold** — add `next` to package.json, create `app/` layout, `next.config.js`, `tailwind.config.js` for Next, and scripts (`dev`, `build`, `start`).
+3. **Map routes → Next `app/`** — convert `src/routes/*` files into `app/` files (root layout, `page.tsx`, `not-found.tsx`, `error.tsx`). Use `app/layout.tsx` to include global CSS.
+4. **Migrate Root shell & providers** — move `Route` root shell from __root.tsx into `app/layout.tsx` and wrap client-only providers (React Query) inside a client component.
+5. **Convert dynamic/interactive pages to client components** — pages relying on window (animations, getBoundingClientRect) must be `use client` components; server components can render mostly static content.
+6. **Move SSR middleware logic** — reimplement `start.ts` middleware and `server.ts` error wrapper as Next middleware or server functions:
+   - Convert `attachSupabaseAuth` to a client-side header attachment for fetches and server-side API handlers to validate tokens.
+   - Recreate any global error page via Next's `app/error.tsx` and `app/not-found.tsx`.
+7. **Migrate API / server functions** — move server-only functions (if any) into Next API routes (`/app/api/…/route.ts`) or server actions as needed; use `supabaseAdmin` in server routes.
+8. **Assets & static files** — move large media (mp4) to `public/` and update imports to `/assets/...` paths or configure Next static imports. For images consider `next/image` where useful.
+9. **Environment variables** — map `VITE_*` to `NEXT_PUBLIC_*` for client keys; ensure server keys remain secret in hosting config.
+10. **Dependency adjustments** — remove Vite-only plugins, add `next`, adapt Tailwind setup, confirm Radix and other libs compatibility with SSR/Next.
+11. **Testing & iterative fixes** — run `next dev`, fix missing imports, convert any Vite-specific code (e.g., `?url` imports) to Next equivalents.
+12. **Performance & SEO pass** — enable Next image optimization, add meta tags in `app/head.tsx`, check Lighthouse/CLS/TBT.
+
+**Concrete design & logic changes to implement**
+- **Routing**: Replace `@tanstack/react-router` usage with Next `app/` routes; drop generated `routeTree.gen.ts`. Recreate route-level metadata inside `app/head.tsx` or per-page `head`.
+- **Providers**: Move QueryClientProvider into a client component loaded inside `app/layout.tsx` and pass context as needed.
+- **SSR error handling**: Replace the custom SSR wrapper with Next `error.tsx` and global middleware; rethrow handling mapped to Next's error boundaries.
+- **Supabase**:
+  - Client: use `createClient` with `process.env.NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+  - Server: use `process.env.SUPABASE_SERVICE_ROLE_KEY` in API routes; convert `auth-attacher` to Next-compatible fetch wrapper or middleware.
+- **Assets**: Put large media files into `public/` and reference them via static URLs to avoid bundling heavy assets into JS bundles.
+- **CSS**: Move styles.css to `app/globals.css` and import it in `app/layout.tsx`. Reconfigure Tailwind per Next docs.
+- **Client-only code**: Add `"use client"` to components that use `window`, refs, or effects (animations) to prevent SSR errors.
+
+**Next steps / options**
+- I can start implementing the migration incrementally. Suggested first implementation tasks:
+  - 1) Scaffold Next app, update package.json scripts and `next.config.js`.
+  - 2) Migrate root layout and global styles (`app/layout.tsx`, `app/globals.css`) and a single page (`/`) converted from [src/routes/index.tsx].
+  - 3) Convert Supabase clients to Next env variables and add a simple API route to test server-side supabaseAdmin usage.
+
+Do you want me to start implementing the scaffold and migrate the root layout + homepage now?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Showcase
+Docs
+Blog
+Templates
+Enterprise
+Search documentation...
+CtrlK
+NEXT.JS NIGHTS
+SF JUN 9 • AMS JUN 11 • LDN JUN 18
+VIEW EVENTS
+›
+
+Using App Router
+
+Features available in /app
+
+
+Latest Version
+
+16.2.7
+
+Getting Started
+Installation
+Project Structure
+Layouts and Pages
+Linking and Navigating
+Server and Client Components
+Fetching Data
+Mutating Data
+Caching
+Revalidating
+Error Handling
+CSS
+Image Optimization
+Font Optimization
+Metadata and OG images
+Route Handlers
+Proxy
+Deploying
+Upgrading
+Guides
+API Reference
+Directives
+Components
+File-system conventions
+Functions
+Configuration
+CLI
+Adapters
+Edge Runtime
+Turbopack
+Glossary
+Architecture
+Accessibility
+Fast Refresh
+Next.js Compiler
+Supported Browsers
+Community
+Contribution Guide
+Rspack
+On this page
+What is Next.js?
+How to use the docs
+App Router and Pages Router
+React version handling
+Pre-requisite knowledge
+Accessibility
+Join our Community
+Next Steps
+Edit this page on GitHub
+Scroll to top
+For an index of Next.js documentation, see /docs/llms.txt.
+Next.js Docs
+Welcome to the Next.js documentation!
+
+What is Next.js?
+Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.
+
+It also automatically configures lower-level tools like bundlers and compilers. You can instead focus on building your product and shipping quickly.
+
+Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications.
+
+How to use the docs
+The docs are organized into 3 sections:
+
+Getting Started: Step-by-step tutorials to help you create a new application and learn the core Next.js features.
+Guides: Tutorials on specific use cases, choose what's relevant to you.
+API Reference: Detailed technical reference for every feature.
+Use the sidebar to navigate through the sections, or search (Ctrl+K or Cmd+K) to quickly find a page.
+
+App Router and Pages Router
+Next.js has two different routers:
+
+App Router: The newer router that supports new React features like Server Components.
+Pages Router: The original router, still supported and being improved.
+At the top of the sidebar, you'll notice a dropdown menu that allows you to switch between the App Router and the Pages Router docs.
+
+React version handling
+The App Router and Pages Router handle React versions differently:
+
+App Router: Uses React canary releases built-in, which include all the stable React 19 changes, as well as newer features being validated in frameworks, prior to a new React release.
+
+Pages Router: Uses the React version installed in your project's package.json.
+
+This approach ensures new React features work reliably in the App Router while maintaining backwards compatibility for existing Pages Router applications.
+
+Pre-requisite knowledge
+Our documentation assumes some familiarity with web development. Before getting started, it'll help if you're comfortable with:
+
+HTML
+CSS
+JavaScript
+React
+If you're new to React or need a refresher, we recommend starting with our React Foundations course, and the Next.js Foundations course that has you building an application as you learn.
+
+Accessibility
+For the best experience when using a screen reader, we recommend using Firefox and NVDA, or Safari and VoiceOver.
+
+Join our Community
+If you have questions about anything related to Next.js, you're always welcome to ask our community on GitHub Discussions, Discord, X (Twitter), and Reddit.
+
+Next Steps
+Create your first application and learn the core Next.js features.
+Getting Started
+Learn how to create full-stack web applications with the Next.js App Router.
+Previous
+Rspack
+Next
+App Router
+Was this helpful?
+
+
+
+
+
+Your feedback...
+supported.
+Resources
+Docs
+Support Policy
+Learn
+Showcase
+Blog
+Team
+Analytics
+Next.js Conf
+Previews
+Evals
+More
+Next.js Commerce
+Contact Sales
+Community
+GitHub
+Releases
+Telemetry
+Governance
+Ecosystem Working Group
+About Vercel
+Next.js + Vercel
+Open Source Software
+GitHub
+Bluesky
+X
+Legal
+Privacy Policy
+Cookie Preferences
+Subscribe to our newsletter
+Stay updated on new releases and features, guides, and case studies.
+
+you@domain.com
+Subscribe
+© 2026 Vercel, Inc.
+
+
+
+
+
+
+
+Next.js Docs | Next.js
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "name": "software.clickmasters.uk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:analyze": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "next lint --fix",
+    "seed:admin": "node scripts/seed-admin.mjs"
+  },
+   "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@hookform/resolvers": "^5.2.2",
+    "@internationalized/date": "^3.12.1",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-alert-dialog": "^1.1.15",
+    "@radix-ui/react-aspect-ratio": "^1.1.8",
+    "@radix-ui/react-avatar": "^1.1.11",
+    "@radix-ui/react-checkbox": "^1.3.3",
+    "@radix-ui/react-collapsible": "^1.1.12",
+    "@radix-ui/react-context-menu": "^2.2.16",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-hover-card": "^1.1.15",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-menubar": "^1.1.16",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-progress": "^1.1.8",
+    "@radix-ui/react-radio-group": "^1.3.8",
+    "@radix-ui/react-scroll-area": "^1.2.10",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-separator": "^1.1.8",
+    "@radix-ui/react-slider": "^1.3.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@radix-ui/react-toggle": "^1.1.10",
+    "@radix-ui/react-toggle-group": "^1.1.11",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "@reduxjs/toolkit": "^2.11.2",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@tanstack/react-query": "^5.100.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "country-state-city": "^3.2.1",
+    "currency-codes": "^2.2.0",
+    "date-fns": "^4.2.1",
+    "embla-carousel-react": "^8.6.0",
+    "eslint-config-next": "^16.2.4",
+    "framer-motion": "^12.38.0",
+    "html2canvas": "^1.4.1",
+    "input-otp": "^1.4.2",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lucide-react": "^0.575.0",
+    "next": "^16.2.4",
+    "postcss": "^8.5.13",
+    "react": "^19.2.0",
+    "react-aria-components": "^1.17.0",
+    "react-barcode": "^1.6.1",
+    "react-day-picker": "^9.14.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.71.2",
+    "react-redux": "^9.2.0",
+    "react-resizable-panels": "^4.6.5",
+    "recharts": "^2.15.4",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.1",
+    "tw-animate-css": "^1.3.4",
+    "vaul": "^1.1.2",
+    "xlsx": "^0.18.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/node": "^22.16.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^15.15.0",
+    "prettier": "^3.7.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.56.1"
+  }
+}
