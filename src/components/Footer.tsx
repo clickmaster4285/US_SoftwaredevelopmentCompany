@@ -152,7 +152,7 @@ export default function Footer() {
 
             {/* Copyright + legal */}
             <div className="flex flex-wrap items-center justify-center gap-5 text-sm opacity-60">
-              <span>© 2016–2026 Studio, LLC</span>
+              <span>©2026 Clickmasterssoftwaredevelopmentcompany.com</span>
               <span className="hidden md:inline opacity-30">|</span>
               <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>
               <a href="#" className="hover:opacity-100 transition-opacity">Terms</a>
