@@ -232,7 +232,7 @@ export default function SpaceJourney() {
 
           <img
             ref={planet1Ref}
-            src={planet1}
+            src={planet1.src}
             alt=""
             aria-hidden
             loading="lazy"
@@ -241,7 +241,7 @@ export default function SpaceJourney() {
           />
           <img
             ref={planet2Ref}
-            src={planet2}
+            src={planet2.src}
             alt=""
             aria-hidden
             loading="lazy"
@@ -252,7 +252,7 @@ export default function SpaceJourney() {
           <div ref={astroWrapRef} className="absolute will-change-transform pointer-events-none">
             <img
               ref={astroRef}
-              src={astronaut}
+              src={astronaut.src}
               alt="Robot astronaut floating through space"
               loading="lazy"
               className="w-[28vw] max-w-[420px]"
@@ -293,7 +293,7 @@ export default function SpaceJourney() {
               >
                 <div className="absolute inset-3 rounded-[26px] overflow-hidden bg-black">
                   <img
-                    src={astronaut}
+                    src={astronaut.src}
                     alt="Robot astronaut in space"
                     className="absolute inset-0 h-full w-full object-cover"
                   />

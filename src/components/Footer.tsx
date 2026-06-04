@@ -1,3 +1,4 @@
+import Image from "next/image";
 import mascot from "@/assets/footer-mascot.png";
 
 const NAV_MAIN = [
@@ -42,11 +43,13 @@ export default function Footer() {
           <div className="md:col-span-5 lg:col-span-5 relative">
             <div className="flex items-start gap-4">
               <div className="relative w-[80px] md:w-[100px] h-[100px] md:h-[130px] shrink-0 -mt-2">
-                <img
+                <Image
                   src={mascot}
                   alt=""
                   aria-hidden="true"
                   className="footer-mascot absolute bottom-0 left-0 w-full h-full object-contain"
+                  fill
+                  sizes="(max-width: 768px) 80px, 100px"
                 />
               </div>
               <div>

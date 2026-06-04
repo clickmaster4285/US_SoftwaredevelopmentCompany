@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { StaticImageData } from "next/image";
@@ -32,7 +32,7 @@ const CARDS: CardCfg[] = [
   { src: card6, x: 50, y: 68, rot: 6,   scale: 1.0,  fromX:    0, fromY:  350, fromRot:  20 },
 ];
 
-const WORD = "awards"; // 6 letters → one per card
+const WORD = "awards"; // 6 letters â†’ one per card
 
 export default function AwardsSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -170,7 +170,7 @@ export default function AwardsSection() {
           }}
         />
 
-        {/* Massive background typography — letters fill one by one */}
+        {/* Massive background typography â€” letters fill one by one */}
         <div
           aria-hidden
           className="absolute inset-0 flex items-center justify-center select-none"
@@ -239,7 +239,7 @@ export default function AwardsSection() {
                   }}
                 >
                   <img
-                    src={c.src}
+                    src={typeof c.src == "string" ? c.src : c.src.src}
                     alt="Award"
                     loading="lazy"
                     width={512}
@@ -266,3 +266,4 @@ export default function AwardsSection() {
     </section>
   );
 }
+
