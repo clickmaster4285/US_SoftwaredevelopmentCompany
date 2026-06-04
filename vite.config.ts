@@ -12,4 +12,12 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  vite: {
+    preview: {
+      allowedHosts: [
+        "clickmasterssoftwaredevelopmentcompany.com",
+        "www.clickmasterssoftwaredevelopmentcompany.com",
+      ],
+    },
+  },
 });
