@@ -91,7 +91,7 @@ export default function HomePage() {
                   style={{ opacity: textOpacity, filter: `blur(${textBlur}px)` }}
                >
                   <h1 className="leading-[0.95] tracking-tight">
-                     <span className="block text-[clamp(3rem,9vw,9rem)] text-9xl  font-semibold">BEYOND</span>
+                     <span className="block text-[clamp(3rem,9vw,9rem)] font-semibold">BEYOND</span>
                      <span className="block text-[clamp(3rem,9vw,9rem)] italic font-serif">
                         THE{' '}
                         <span ref={slotRef} className="inline-block align-middle" style={{ width: slotSize, height: slotSize }} />{' '}
