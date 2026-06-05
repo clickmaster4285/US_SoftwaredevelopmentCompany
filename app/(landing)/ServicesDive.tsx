@@ -1,27 +1,7 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
-
-const SERVICES = [
-  { icon: "</>", title: "Web Development", desc: "Fast, scalable web apps built with modern stacks." },
-  { icon: "◐", title: "UI / UX Design", desc: "Interfaces designed for clarity, delight and conversion." },
-  { icon: "✦", title: "Branding & Identity", desc: "Memorable brand systems with depth and meaning." },
-  { icon: "▣", title: "Mobile Apps", desc: "Native-feeling iOS & Android experiences." },
-  { icon: "◈", title: "3D & Motion", desc: "Cinematic motion that elevates your product story." },
-  { icon: "✺", title: "E-commerce", desc: "Storefronts that feel editorial and sell hard." },
-  { icon: "◉", title: "SEO & Growth", desc: "Technical SEO and growth loops engineered to scale." },
-  { icon: "✜", title: "AI Integration", desc: "Smart assistants and AI flows woven into your product." },
-];
-
-const BUBBLES = Array.from({ length: 18 }, (_, i) => ({
-  left: (i * 53) % 100,
-  size: 6 + ((i * 7) % 18),
-  delay: (i * 0.4) % 6,
-  duration: 6 + ((i * 1.3) % 6),
-}));
-
-const RAYS = Array.from({ length: 6 }, (_, i) => ({
-  left: 8 + i * 16,
-  rotate: -8 + ((i * 5) % 12),
-}));
+import { BUBBLES, RAYS, SERVICES } from "@/app/(landing)/data";
 
 export default function ServicesDive() {
   const ref = useRef<HTMLDivElement>(null);

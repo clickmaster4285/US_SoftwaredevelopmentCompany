@@ -150,3 +150,4 @@ Documented as a recurring build failure. Standard fix: `rmdir /s /q .next && npm
 5. **Add `turbopack: {}` to `next.config.mjs`** for explicit declaration
 6. **Verify build** after cleanup: `rmdir /s /q .next && npm run build`
 7. **Decide on routing model** — landing-only is fine for a portfolio, but confirm no admin/CMS work is planned
+

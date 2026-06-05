@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { CAPS, STACK_ROW_1, STACK_ROW_2, STACK_ROW_3, STEPS } from "@/app/(landing)/data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,15 +23,6 @@ export default function StudioPath() {
 
 /* ---------------- 1. Capabilities ---------------- */
 
-const CAPS = [
-  { n: "01", title: "Web Platforms", desc: "Marketing sites, SaaS dashboards and content systems engineered for speed and SEO.", icon: "◐", accent: "oklch(0.55 0.18 250)" },
-  { n: "02", title: "Mobile Apps", desc: "iOS, Android and cross-platform apps built with React Native and native modules.", icon: "▲", accent: "oklch(0.62 0.18 30)" },
-  { n: "03", title: "AI Integrations", desc: "LLM features, RAG pipelines and intelligent automations wired into your product.", icon: "✦", accent: "oklch(0.65 0.18 160)" },
-  { n: "04", title: "Cloud & DevOps", desc: "Scalable infrastructure on AWS, GCP and edge runtimes with CI/CD baked in.", icon: "◇", accent: "oklch(0.60 0.16 290)" },
-  { n: "05", title: "Product Design", desc: "Research-led UI/UX, design systems and prototypes that ship straight to dev.", icon: "❋", accent: "oklch(0.65 0.18 60)" },
-  { n: "06", title: "MVP Sprints", desc: "Go from idea to a working, investor-ready product in four to six weeks.", icon: "➔", accent: "oklch(0.58 0.20 350)" },
-];
-
 function CapabilitiesSection() {
   const wrapRef = useRef<HTMLDivElement>(null);
   const headRef = useRef<HTMLDivElement>(null);
@@ -41,7 +33,6 @@ function CapabilitiesSection() {
     const el = wrapRef.current;
     if (!el) return;
     const ctx = gsap.context(() => {
-      // Headline word reveal
       const words = gsap.utils.toArray<HTMLElement>("[data-cap-word]");
       gsap.fromTo(
         words,
@@ -57,7 +48,6 @@ function CapabilitiesSection() {
         },
       );
 
-      // Cards 3D stagger
       const cards = gsap.utils.toArray<HTMLElement>("[data-cap-card]");
       gsap.set(cards, { transformPerspective: 1000, transformOrigin: "center bottom" });
       gsap.fromTo(
@@ -75,14 +65,12 @@ function CapabilitiesSection() {
         },
       );
 
-      // Parallax floating blob
       gsap.to(blobRef.current, {
         yPercent: -25,
         ease: "none",
         scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true },
       });
 
-      // Subtle counter / icon idle
       gsap.to("[data-cap-icon]", {
         y: -6,
         duration: 2.4,
@@ -100,7 +88,6 @@ function CapabilitiesSection() {
       ref={wrapRef}
       className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)] py-28 md:py-36 overflow-hidden"
     >
-      {/* Animated grid pattern background */}
       <div
         aria-hidden
         className="absolute inset-0 opacity-[0.05] pointer-events-none"
@@ -112,7 +99,6 @@ function CapabilitiesSection() {
         }}
       />
 
-      {/* Soft floating blob */}
       <div
         ref={blobRef}
         aria-hidden
@@ -151,7 +137,6 @@ function CapabilitiesSection() {
               data-cap-card
               className="group relative rounded-2xl border border-[oklch(0.18_0.02_250)]/12 bg-white/70 backdrop-blur-sm p-7 md:p-8 overflow-hidden will-change-transform transition-transform duration-500 hover:-translate-y-2"
             >
-              {/* hover gradient sheen */}
               <div
                 aria-hidden
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
@@ -159,7 +144,6 @@ function CapabilitiesSection() {
                   background: `radial-gradient(circle at 30% 0%, ${c.accent.replace(")", " / 0.18)")}, transparent 60%)`,
                 }}
               />
-              {/* moving border beam */}
               <div
                 aria-hidden
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
@@ -200,7 +184,6 @@ function CapabilitiesSection() {
                 Explore <span aria-hidden>→</span>
               </div>
 
-              {/* bottom accent bar */}
               <span
                 aria-hidden
                 className="absolute left-0 bottom-0 h-[3px] w-0 group-hover:w-full transition-[width] duration-700 ease-out"
@@ -214,12 +197,7 @@ function CapabilitiesSection() {
   );
 }
 
-
 /* ---------------- 2. Tech stack ---------------- */
-
-const STACK_ROW_1 = ["React", "Next.js", "TypeScript", "Tailwind", "GSAP", "Three.js", "Framer", "Vite"];
-const STACK_ROW_2 = ["Node.js", "Python", "Go", "PostgreSQL", "Supabase", "Redis", "Prisma", "GraphQL"];
-const STACK_ROW_3 = ["AWS", "Cloudflare", "Vercel", "Docker", "Kubernetes", "OpenAI", "LangChain", "Stripe"];
 
 function TechStackSection() {
   return (
@@ -269,21 +247,12 @@ function StackRow({ items, duration, direction }: { items: string[]; duration: n
 
 /* ---------------- 3. Animated Path ---------------- */
 
-const STEPS = [
-  { k: "01", t: "Discover", d: "Workshops, audits and a shared product brief." },
-  { k: "02", t: "Design", d: "Flows, wireframes and a clickable prototype." },
-  { k: "03", t: "Build", d: "Two-week sprints, continuous deploys, daily Slack." },
-  { k: "04", t: "Launch", d: "QA, performance, analytics — then we go live." },
-  { k: "05", t: "Scale", d: "Iterate on data, add features, grow the team." },
-];
-
 function ProcessPathSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
   const dotRef = useRef<SVGCircleElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
-  // S-curve path. ViewBox 1000 x 1400.
   const d = useMemo(
     () =>
       "M 120 60 C 120 220, 880 220, 880 380 S 120 540, 120 700 S 880 860, 880 1020 S 120 1180, 120 1340",
@@ -319,7 +288,6 @@ function ProcessPathSection() {
 
       tl.to(path, { strokeDashoffset: 0, ease: "none" }, 0);
 
-      // Move the traveling dot along the path
       const proxy = { p: 0 };
       tl.to(
         proxy,
@@ -334,7 +302,6 @@ function ProcessPathSection() {
         0,
       );
 
-      // Reveal each milestone as the dot passes its anchor
       const milestones = gsap.utils.toArray<HTMLElement>("[data-step]");
       milestones.forEach((el, i) => {
         const start = i / milestones.length;
@@ -370,10 +337,8 @@ function ProcessPathSection() {
                 </linearGradient>
               </defs>
 
-              {/* Faded base path */}
               <path d={d} fill="none" stroke="oklch(0.18 0.02 250 / 0.10)" strokeWidth="3" />
 
-              {/* Animated drawn path */}
               <path
                 ref={pathRef}
                 d={d}
@@ -383,7 +348,6 @@ function ProcessPathSection() {
                 strokeLinecap="round"
               />
 
-              {/* Anchor dots along the path */}
               {[60, 380, 700, 1020, 1340].map((cy, i) => {
                 const cx = i % 2 === 0 ? 120 : 880;
                 return (
@@ -396,7 +360,6 @@ function ProcessPathSection() {
                 );
               })}
 
-              {/* Traveling dot */}
               <circle
                 ref={dotRef}
                 cx="120"
@@ -408,7 +371,6 @@ function ProcessPathSection() {
               />
             </svg>
 
-            {/* Milestone cards positioned next to each anchor */}
             {STEPS.map((s, i) => {
               const yPct = [60, 380, 700, 1020, 1340][i] / 1400;
               const left = i % 2 === 0;

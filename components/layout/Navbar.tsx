@@ -1,8 +1,12 @@
-import { useState, useEffect } from "react";
-import { gsap } from "gsap";
+"use client";
 
-const LINKS = [
-  { label: "Services", href: "#services" },
+import { useState, useEffect, useCallback } from "react";
+import { ChevronDown } from "lucide-react";
+import MegaMenu from "./MegaMenu";
+import { serviceMenuSections } from "@/data/main-services";
+
+const NAV_LINKS = [
+  { label: "Services", href: "#services", hasMegaMenu: true },
   { label: "Solutions", href: "#solutions" },
   { label: "Resources", href: "#resources" },
   { label: "About", href: "#about" },
@@ -18,7 +22,7 @@ const SOCIAL = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -28,154 +32,264 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    // Close mobile menu on escape key
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setIsMobileMenuOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  const closeMobile = useCallback(() => setMobileOpen(false), []);
+
+  const linkClasses = scrolled
+    ? "text-[oklch(0.30_0.02_250)] hover:text-[oklch(0.15_0.02_250)]"
+    : "text-white/80 hover:text-white";
+
   return (
     <>
-      {/* Desktop Navigation */}
+      {/* ─── Desktop / Main Nav ─── */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-            ? "bg-[oklch(0.97_0.005_80)]/95 backdrop-blur-md border-b border-black/5 text-[oklch(0.20_0.02_250)]"
-            : "bg-transparent text-white"
-          }`}
+        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out"
+        aria-label="Main navigation"
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
+        <div
+          className={[
+            "mx-auto mt-4 md:mt-6 max-w-6xl rounded-2xl transition-all duration-500 ease-out",
+            scrolled
+              ? "bg-white/70 shadow-lg shadow-black/[0.04] ring-1 ring-black/[0.06] backdrop-blur-2xl"
+              : "bg-white/[0.07] shadow-none ring-1 ring-white/[0.10] backdrop-blur-xl",
+          ].join(" ")}
+        >
+          <div className="flex items-center justify-between px-5 md:px-8 h-14 md:h-16">
+            {/* ── Logo ── */}
             <a
               href="#"
-              className="flex items-center gap-3 font-semibold tracking-tight text-sm md:text-base hover:opacity-80 transition-opacity"
+              className="group flex items-center gap-2.5 transition-opacity hover:opacity-80"
             >
-              <span className="inline-block h-3 w-3 rounded-full bg-current animate-pulse" />
-              <span>Clickmasters</span>
+              <span className="relative flex h-7 w-7 items-center justify-center">
+                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 opacity-90 transition-transform duration-300 group-hover:scale-110" />
+                <span className="absolute inset-[3px] rounded-full bg-white/90" />
+                <span className="relative h-2 w-2 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600" />
+              </span>
+              <span
+                className={[
+                  "text-[15px] font-semibold tracking-[-0.01em] transition-colors duration-500",
+                  scrolled ? "text-[oklch(0.20_0.02_250)]" : "text-white",
+                ].join(" ")}
+              >
+                Clickmasters
+              </span>
             </a>
 
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
-              {LINKS.map((link, index) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="relative text-sm md:text-base font-medium hover:text-[oklch(0.35_0.03_250)] transition-colors group"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[oklch(0.35_0.03_250)] transition-all duration-300 group-hover:w-full" />
-                </a>
-              ))}
+            {/* ── Desktop Links ── */}
+            <div className="hidden md:flex items-center gap-1">
+              {NAV_LINKS.map((link) =>
+                link.hasMegaMenu ? (
+                  <MegaMenu
+                    key={link.label}
+                    categories={serviceMenuSections}
+                    trigger={
+                      <span
+                        className={[
+                          "relative flex items-center gap-1 px-4 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300 cursor-pointer",
+                          linkClasses,
+                        ].join(" ")}
+                      >
+                        {link.label}
+                        <ChevronDown className="h-3 w-3 opacity-60" />
+                      </span>
+                    }
+                  />
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className={[
+                      "relative px-4 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300",
+                      linkClasses,
+                    ].join(" ")}
+                  >
+                    {link.label}
+                  </a>
+                ),
+              )}
             </div>
 
-            {/* Desktop Contact Button */}
-            <div className="hidden md:flex items-center gap-4">
+            {/* ── CTA + Hamburger ── */}
+            <div className="flex items-center gap-3">
+              {/* CTA Button — desktop */}
               <a
                 href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
-                className="text-sm font-medium hover:opacity-80 transition-opacity"
+                className={[
+                  "hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-300",
+                  scrolled
+                    ? "bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/30 hover:scale-[1.03]"
+                    : "bg-white/15 text-white ring-1 ring-white/20 backdrop-blur-sm hover:bg-white/25 hover:ring-white/40",
+                ].join(" ")}
               >
-                Contact
-              </a>
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden relative flex items-center gap-2 rounded-full pl-4 pr-3 py-2 border border-current/20 hover:border-current/50 transition-colors"
-              >
-                <span className="text-[11px] uppercase tracking-[0.3em] font-medium">
-                  {isMobileMenuOpen ? "Close" : "Menu"}
-                </span>
-                <span
-                  className={`relative h-8 w-8 rounded-full flex items-center justify-center transition-colors ${scrolled ? "bg-[oklch(0.20_0.02_250)] text-white" : "bg-white text-[oklch(0.20_0.02_250)]"
-                    }`}
+                Get in touch
+                <svg
+                  className="h-3.5 w-3.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
                 >
-                  <span className="relative block w-4 h-3">
-                    <span
-                      className={`absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300 ${isMobileMenuOpen ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0"
-                        }`}
-                    />
-                    <span
-                      className={`absolute left-0 right-0 bottom-0 h-[1.5px] bg-current transition-all duration-300 ${isMobileMenuOpen ? "top-1/2 -translate-y-1/2 -rotate-45 bottom-auto" : ""
-                        }`}
-                    />
-                  </span>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5" />
+                </svg>
+              </a>
+
+              {/* Hamburger — mobile */}
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                className={[
+                  "relative flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:hidden",
+                  scrolled
+                    ? "bg-[oklch(0.20_0.02_250)] text-white"
+                    : "bg-white/15 text-white ring-1 ring-white/20 backdrop-blur-sm",
+                ].join(" ")}
+                aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              >
+                <span className="relative block h-4 w-5">
+                  <span
+                    className={[
+                      "absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300",
+                      mobileOpen ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0",
+                    ].join(" ")}
+                  />
+                  <span
+                    className={[
+                      "absolute left-0 right-0 top-1/2 h-[1.5px] -translate-y-1/2 bg-current transition-all duration-300",
+                      mobileOpen ? "scale-x-0 opacity-0" : "scale-x-100 opacity-100",
+                    ].join(" ")}
+                  />
+                  <span
+                    className={[
+                      "absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300",
+                      mobileOpen ? "top-1/2 -translate-y-1/2 -rotate-45" : "bottom-0",
+                    ].join(" ")}
+                  />
                 </span>
               </button>
             </div>
           </div>
         </div>
+      </nav>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden">
-            {/* Backdrop */}
-            <div
-              className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
-              onClick={() => setIsMobileMenuOpen(false)}
-            />
-            
-            {/* Mobile Menu Panel */}
-            <div className="fixed top-0 right-0 left-0 z-50 h-[100vh] max-h-[800px] bg-white text-[oklch(0.20_0.02_250)]">
-              {/* Menu Header */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-black/10">
+      {/* ─── Mobile Menu Overlay ─── */}
+      <div
+        className={[
+          "fixed inset-0 z-[60] transition-all duration-500 md:hidden",
+          mobileOpen ? "visible" : "invisible",
+        ].join(" ")}
+      >
+        {/* Backdrop */}
+        <div
+          className={[
+            "absolute inset-0 bg-black/40 backdrop-blur-md transition-opacity duration-500",
+            mobileOpen ? "opacity-100" : "opacity-0",
+          ].join(" ")}
+          onClick={closeMobile}
+        />
+
+        {/* Panel */}
+        <div
+          className={[
+            "absolute inset-x-0 top-0 bg-white/95 backdrop-blur-2xl shadow-2xl transition-all duration-500 ease-out",
+            mobileOpen ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0",
+          ].join(" ")}
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between px-5 pt-5 pb-3">
+            <a href="#" className="flex items-center gap-2.5" onClick={closeMobile}>
+              <span className="relative flex h-7 w-7 items-center justify-center">
+                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 opacity-90" />
+                <span className="absolute inset-[3px] rounded-full bg-white/90" />
+                <span className="relative h-2 w-2 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600" />
+              </span>
+              <span className="text-[15px] font-semibold tracking-[-0.01em] text-[oklch(0.20_0.02_250)]">
+                Clickmasters
+              </span>
+            </a>
+            <button
+              onClick={closeMobile}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[oklch(0.20_0.02_250)] text-white transition-transform hover:scale-105"
+              aria-label="Close menu"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Links */}
+          <div className="px-5 pt-6 pb-4">
+            {NAV_LINKS.map((link, i) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={closeMobile}
+                className="group flex items-center justify-between border-b border-black/[0.06] py-4 transition-colors hover:border-violet-300"
+                style={{
+                  transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms",
+                  opacity: mobileOpen ? 1 : 0,
+                  transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
+                  transition: `all 0.4s ease ${mobileOpen ? i * 60 : 0}ms`,
+                }}
+              >
+                <span className="text-xl font-medium text-[oklch(0.20_0.02_250)] transition-colors group-hover:text-violet-600">
+                  {link.label}
+                </span>
+                <span className="text-[11px] font-medium tracking-[0.2em] text-[oklch(0.20_0.02_250)]/30">
+                  0{i + 1}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="px-5 pt-4 pb-6">
+            <a
+              href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
+              className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-[1.02]"
+            >
+              Get in touch
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5" />
+              </svg>
+            </a>
+          </div>
+
+          {/* Social */}
+          <div className="border-t border-black/[0.06] px-5 py-6">
+            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.35em] text-[oklch(0.20_0.02_250)]/40">
+              Follow us
+            </p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              {SOCIAL.map((s) => (
                 <a
-                  href="#"
-                  className="flex items-center gap-3 font-semibold tracking-tight text-base"
+                  key={s.label}
+                  href={s.href}
+                  className="text-[13px] font-medium tracking-wide text-[oklch(0.20_0.02_250)]/60 transition-colors hover:text-violet-600"
                 >
-                  <span className="inline-block h-3 w-3 rounded-full bg-current animate-pulse" />
-                  <span>Clickmasters</span>
+                  {s.label}
                 </a>
-                <button
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-medium hover:opacity-80 transition-opacity"
-                >
-                  Close ×
-                </button>
-              </div>
-
-              {/* Navigation Links */}
-              <div className="px-6 py-8 space-y-1">
-                {LINKS.map((link, index) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-3 text-lg font-medium hover:text-[oklch(0.35_0.03_250)] transition-colors group"
-                  >
-                    <span className="flex items-center justify-between">
-                      <span>{link.label}</span>
-                      <span className="text-xs opacity-40 tracking-[0.3em]">0{index + 1}</span>
-                    </span>
-                    <span className="block mt-1 h-px w-0 bg-[oklch(0.35_0.03_250)] transition-all duration-300 group-hover:w-full" />
-                  </a>
-                ))}
-              </div>
-
-              {/* Contact & Social */}
-              <div className="px-6 py-8 border-t border-black/10">
-                <div className="mb-8">
-                  <p className="text-xs uppercase tracking-[0.4em] opacity-50 mb-2">Say hello</p>
-                  <a
-                    href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
-                    className="text-lg font-medium hover:opacity-80 transition-opacity"
-                  >
-                    sales@Clickmasterssoftwaredevelopmentcompany.com
-                  </a>
-                </div>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {SOCIAL.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      className="text-xs uppercase tracking-[0.3em] opacity-60 hover:opacity-100 transition-opacity"
-                    >
-                      {social.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        )}
-      </nav>
+        </div>
+      </div>
     </>
   );
 }

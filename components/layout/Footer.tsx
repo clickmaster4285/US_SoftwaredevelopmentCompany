@@ -63,7 +63,7 @@ export default function Footer() {
                   >
                     sales@Clickmasterssoftwaredevelopmentcompany.com
                   </a>
-                  <p className="text-base md:text-lg opacity-70">+13252024074</p>
+                  <p className="text-base md:text-lg opacity-70">+1 325 2024074</p>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function Footer() {
 
             {/* Copyright + legal */}
             <div className="flex flex-wrap items-center justify-center gap-5 text-sm opacity-60">
-              <span>©2026 Clickmasterssoftwaredevelopmentcompany.com</span>
+              <span>©2026 Clickmasterssoftwaredevelopmentcompany</span>
               <span className="hidden md:inline opacity-30">|</span>
               <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>
               <a href="#" className="hover:opacity-100 transition-opacity">Terms</a>

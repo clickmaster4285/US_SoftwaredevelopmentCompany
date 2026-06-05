@@ -1,18 +1,14 @@
+"use client";
+
 import { useEffect, useMemo, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import astronaut from "@/public/assets/space-astronaut.png";
 import planet1 from "@/public/assets/space-planet-1.png";
 import planet2 from "@/public/assets/space-planet-2.png";
+import { RING_COUNT, STAR_COUNT, buildChapters } from "@/app/(landing)/data";
 
 gsap.registerPlugin(ScrollTrigger);
-
-type Chapter = {
-  ref: React.RefObject<HTMLDivElement | null>;
-  kicker: string;
-  title: React.ReactNode;
-  sub: string;
-};
 
 export default function SpaceJourney() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -45,17 +41,15 @@ export default function SpaceJourney() {
   const c3 = useRef<HTMLDivElement>(null);
   const c4 = useRef<HTMLDivElement>(null);
 
-  const chapters: Chapter[] = [
-    { ref: c1, kicker: "01 — Discovery", title: <>Ideas, <span className="italic font-serif">engineered</span></>, sub: "We turn ambitious product ideas into clear, buildable roadmaps." },
-    { ref: c2, kicker: "02 — Design", title: <>Interfaces that <span className="italic font-serif">feel right</span></>, sub: "Pixel-precise UI/UX crafted around real users, not assumptions." },
-    { ref: c3, kicker: "03 — Engineering", title: <>Code built to <span className="italic font-serif">scale</span></>, sub: "Web, mobile and cloud systems shipped clean, fast and tested." },
-    { ref: c4, kicker: "04 — Launch", title: <>From beta to <span className="italic font-serif">millions</span></>, sub: "We deploy, monitor and iterate so your product keeps growing." },
-  ];
+  const chapters = useMemo(
+    () => buildChapters({ c1, c2, c3, c4 }),
+    [],
+  );
 
-  const starsNear = useMemo(() => Array.from({ length: 80 }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 1 + Math.random() * 2.5 })), []);
-  const starsMid = useMemo(() => Array.from({ length: 140 }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 0.8 + Math.random() * 1.6 })), []);
-  const starsFar = useMemo(() => Array.from({ length: 200 }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 0.4 + Math.random() * 1 })), []);
-  const rings = useMemo(() => Array.from({ length: 14 }), []);
+  const starsNear = useMemo(() => Array.from({ length: STAR_COUNT.near }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 1 + Math.random() * 2.5 })), []);
+  const starsMid = useMemo(() => Array.from({ length: STAR_COUNT.mid }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 0.8 + Math.random() * 1.6 })), []);
+  const starsFar = useMemo(() => Array.from({ length: STAR_COUNT.far }, () => ({ x: Math.random() * 100, y: Math.random() * 100, s: 0.4 + Math.random() * 1 })), []);
+  const rings = useMemo(() => Array.from({ length: RING_COUNT }), []);
 
   useEffect(() => {
     const section = sectionRef.current;

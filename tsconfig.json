@@ -1,14 +1,4 @@
 {
-  "include": [
-    "next-env.d.ts",
-    "/**/*.ts",
-    "/**/*.tsx",
-    "/**/*.d.ts",
-    "eslint.config.js",
-    "app/**/*",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-,  "components"  ],
   "compilerOptions": {
     "target": "ES2022",
     "jsx": "react-jsx",
@@ -21,34 +11,38 @@
     "types": [
       "next"
     ],
-    /* Bundler mode */
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": false,
     "noEmit": true,
-    /* Linting */
     "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "paths": {
-      "@/*": [
-        "/*"
-      ]
-    },
     "allowJs": true,
     "incremental": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
     "plugins": [
       {
         "name": "next"
       }
     ]
   },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

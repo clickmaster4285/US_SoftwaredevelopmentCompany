@@ -1,21 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-const TESTIMONIALS = [
-  { name: "Sarah Chen", role: "Founder, Lumen", quote: "Transformed our brand entirely. The team operates with a rare blend of taste and rigor.", accent: "oklch(0.78 0.14 50)" },
-  { name: "Daniel Park", role: "CTO, Northwind", quote: "Best design partner we've worked with. Shipped a production-grade product in six weeks.", accent: "oklch(0.75 0.16 200)" },
-  { name: "Maya Iyer", role: "Head of Design, Atelier", quote: "Pixel-perfect, every single detail. They treat craft like a non-negotiable.", accent: "oklch(0.78 0.15 320)" },
-  { name: "Alex Romero", role: "CMO, Norton", quote: "Doubled our conversion overnight. The redesign paid for itself in the first month.", accent: "oklch(0.80 0.14 110)" },
-  { name: "Priya Shah", role: "Founder, Kove", quote: "They understood our vision faster than our internal team did. Genuinely rare.", accent: "oklch(0.76 0.15 25)" },
-  { name: "Marcus Hall", role: "VP Product, Helio", quote: "Their motion work elevated the entire product. Customers notice immediately.", accent: "oklch(0.75 0.16 260)" },
-  { name: "Yuki Tanaka", role: "Creative Director, Forma", quote: "An effortless collaboration. They challenge us in the best way every single round.", accent: "oklch(0.78 0.14 160)" },
-  { name: "Elena Voss", role: "CEO, Stratus", quote: "Brand, product, story — they unified everything. We finally feel like one company.", accent: "oklch(0.78 0.15 80)" },
-];
-
-// Corridor layout constants
-const SPACING_Z = 1350; // distance between cards along the corridor
-const WALL_X = 430; // how far left/right cards sit on the walls
-const CARD_ROT_Y = 26; // degrees — cards face inward toward viewer
-const BASE_DEPTH = 1100; // push the whole room deeper so multiple cards stay in frame
+import { TESTIMONIALS, SPACING_Z, WALL_X, CARD_ROT_Y, BASE_DEPTH } from "@/app/(landing)/data";
 
 export default function Testimonials3DRoom() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,8 +24,6 @@ export default function Testimonials3DRoom() {
   }, []);
 
   const n = TESTIMONIALS.length;
-  // cameraIndex: 0 = at first card, n-1 = at last card.
-  // Intro third = entering room, outro tiny tail.
   const intro = 0.08;
   const outro = 0.04;
   const travel = 1 - intro - outro;
@@ -49,16 +31,12 @@ export default function Testimonials3DRoom() {
   const cameraIndex = t * (n - 1);
   const cameraZ = cameraIndex * SPACING_Z;
 
-  // Camera lateral shift — pull toward the side of the active card
-  // (positive x = camera moves right, content shifts left visually)
-  const sideOf = (i: number) => (i % 2 === 0 ? -1 : 1); // -1 left wall, +1 right wall
-  // Smooth interpolation between adjacent cards' sides
+  const sideOf = (i: number) => (i % 2 === 0 ? -1 : 1);
   const i0 = Math.floor(cameraIndex);
   const i1 = Math.min(n - 1, i0 + 1);
   const frac = cameraIndex - i0;
   const cameraX = (sideOf(i0) * (1 - frac) + sideOf(i1) * frac) * 180;
 
-  // Heading visible only at the very start
   const headingOpacity = Math.max(0, 1 - progress * 6);
   const roomOpacity = Math.min(1, progress * 8);
 
@@ -69,7 +47,6 @@ export default function Testimonials3DRoom() {
       style={{ height: `${120 + n * 120}vh` }}
     >
       <div className="sticky top-0 h-screen w-screen overflow-hidden">
-        {/* Ambient backdrop */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -78,7 +55,6 @@ export default function Testimonials3DRoom() {
           }}
         />
 
-        {/* Heading */}
         <div
           className="absolute inset-x-0 top-0 z-30 pt-20 md:pt-28 px-8 text-center will-change-[opacity,transform]"
           style={{
@@ -98,7 +74,6 @@ export default function Testimonials3DRoom() {
           </p>
         </div>
 
-        {/* 3D Stage */}
         <div
           className="absolute inset-0"
           style={{
@@ -106,7 +81,6 @@ export default function Testimonials3DRoom() {
             perspectiveOrigin: "50% 50%",
           }}
         >
-          {/* World moves opposite to camera */}
           <div
             className="absolute inset-0"
             style={{
@@ -118,11 +92,10 @@ export default function Testimonials3DRoom() {
             <Corridor n={n} opacity={roomOpacity} />
 
             {TESTIMONIALS.map((card, i) => {
-              const side = sideOf(i); // -1 left, +1 right
+              const side = sideOf(i);
               const z = -(i * SPACING_Z);
               const x = side * WALL_X;
-              const dist = i - cameraIndex; // negative = behind, positive = ahead
-              // Focus peaks when camera is right at the card
+              const dist = i - cameraIndex;
               const focus = Math.max(0, 1 - Math.abs(dist) * 0.9);
               const visibility = Math.max(0.16, 1 - Math.abs(dist) * 0.22);
               const lift = Math.sin(Math.min(1, focus) * Math.PI) * 22;
@@ -144,7 +117,6 @@ export default function Testimonials3DRoom() {
           </div>
         </div>
 
-        {/* Progress rail */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
           {TESTIMONIALS.map((_, i) => {
             const active = Math.round(cameraIndex) === i;
@@ -167,16 +139,11 @@ export default function Testimonials3DRoom() {
   );
 }
 
-/**
- * Corridor — builds a long box: floor, ceiling, and two side walls
- * stretching across the full card range, so it actually feels like a room.
- */
 function Corridor({ n, opacity }: { n: number; opacity: number }) {
   const length = (n + 2) * SPACING_Z;
   const halfW = WALL_X + 280;
   const wallH = 760;
 
-  // Use a single CSS gradient with repeating verticals as "panel lines" for depth cues
   const panelBg =
     "linear-gradient(180deg, oklch(0.12 0.02 260) 0%, oklch(0.08 0.02 260) 100%), repeating-linear-gradient(90deg, oklch(0.30 0.04 260 / 0.18) 0 1px, transparent 1px 220px)";
 
@@ -185,7 +152,6 @@ function Corridor({ n, opacity }: { n: number; opacity: number }) {
       className="absolute left-1/2 top-1/2 pointer-events-none"
       style={{ transformStyle: "preserve-3d", opacity }}
     >
-      {/* Floor */}
       <div
         className="absolute"
         style={{
@@ -200,7 +166,6 @@ function Corridor({ n, opacity }: { n: number; opacity: number }) {
           boxShadow: "inset 0 0 200px oklch(0.0 0 0 / 0.8)",
         }}
       />
-      {/* Ceiling */}
       <div
         className="absolute"
         style={{
@@ -213,7 +178,6 @@ function Corridor({ n, opacity }: { n: number; opacity: number }) {
             "linear-gradient(180deg, oklch(0.06 0.01 260), oklch(0.10 0.02 260))",
         }}
       />
-      {/* Left wall */}
       <div
         className="absolute"
         style={{
@@ -227,7 +191,6 @@ function Corridor({ n, opacity }: { n: number; opacity: number }) {
             "inset 0 0 240px oklch(0.0 0 0 / 0.7), inset 60px 0 120px oklch(0.0 0 0 / 0.6)",
         }}
       />
-      {/* Right wall */}
       <div
         className="absolute"
         style={{
@@ -254,7 +217,6 @@ function Card({
   index: number;
   focus: number;
 }) {
-  // Subtle scale + glow when focused. NO blur — keep cards crisp.
   const scale = 0.96 + focus * 0.08;
   const glow = 0.2 + focus * 0.6;
   return (
@@ -284,7 +246,7 @@ function Card({
         </span>
       </div>
       <p className="text-2xl md:text-[1.75rem] font-serif italic leading-[1.3] text-[oklch(0.97_0.005_80)]">
-        "{card.quote}"
+        &ldquo;{card.quote}&rdquo;
       </p>
       <div className="mt-8 flex items-center gap-4">
         <div

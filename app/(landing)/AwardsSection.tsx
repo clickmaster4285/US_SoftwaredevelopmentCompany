@@ -1,38 +1,11 @@
-﻿import { useEffect, useRef } from "react";
+"use client";
+
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import type { StaticImageData } from "next/image";
-import card1 from "@/public/assets/award-card-1.jpg";
-import card2 from "@/public/assets/award-card-2.jpg";
-import card3 from "@/public/assets/award-card-3.jpg";
-import card4 from "@/public/assets/award-card-4.jpg";
-import card5 from "@/public/assets/award-card-5.jpg";
-import card6 from "@/public/assets/award-card-6.jpg";
+import { AWARD_CARDS, AWARD_WORD } from "@/app/(landing)/data";
 
 gsap.registerPlugin(ScrollTrigger);
-
-type CardCfg = {
-  src: string | StaticImageData;
-  x: number; // % within stage
-  y: number;
-  rot: number;
-  scale: number;
-  fromX: number; // entry offset px
-  fromY: number;
-  fromRot: number;
-};
-
-// 6 cards positioned across the section, overlapping naturally
-const CARDS: CardCfg[] = [
-  { src: card2, x: 18, y: 32, rot: -10, scale: 0.95, fromX: -300, fromY: -200, fromRot: -45 },
-  { src: card1, x: 72, y: 28, rot: 8,   scale: 1.05, fromX:  300, fromY: -250, fromRot:  40 },
-  { src: card3, x: 42, y: 50, rot: -5,  scale: 1.15, fromX:    0, fromY:  300, fromRot: -25 },
-  { src: card4, x: 14, y: 62, rot: 10,  scale: 0.9,  fromX: -350, fromY:  250, fromRot:  35 },
-  { src: card5, x: 80, y: 60, rot: -8,  scale: 0.95, fromX:  350, fromY:  200, fromRot: -30 },
-  { src: card6, x: 50, y: 68, rot: 6,   scale: 1.0,  fromX:    0, fromY:  350, fromRot:  20 },
-];
-
-const WORD = "awards"; // 6 letters â†’ one per card
 
 export default function AwardsSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,7 +22,7 @@ export default function AwardsSection() {
       // Initial state: cards offscreen / hidden, letters dim
       cardRefs.current.forEach((el, i) => {
         if (!el) return;
-        const c = CARDS[i];
+        const c = AWARD_CARDS[i];
         gsap.set(el, {
           xPercent: -50,
           yPercent: -50,
@@ -69,14 +42,14 @@ export default function AwardsSection() {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: () => `+=${CARDS.length * 100}%`,
+          end: () => `+=${AWARD_CARDS.length * 100}%`,
           scrub: 1,
           pin: pin,
           anticipatePin: 1,
         },
       });
 
-      CARDS.forEach((c, i) => {
+      AWARD_CARDS.forEach((c, i) => {
         const card = cardRefs.current[i];
         const letter = letterRefs.current[i];
         if (!card) return;
@@ -170,7 +143,7 @@ export default function AwardsSection() {
           }}
         />
 
-        {/* Massive background typography â€” letters fill one by one */}
+        {/* Massive background typography — letters fill one by one */}
         <div
           aria-hidden
           className="absolute inset-0 flex items-center justify-center select-none"
@@ -182,7 +155,7 @@ export default function AwardsSection() {
               letterSpacing: "-0.06em",
             }}
           >
-            {WORD.split("").map((ch, i) => (
+            {AWARD_WORD.split("").map((ch, i) => (
               <span
                 key={i}
                 ref={(el) => {
@@ -209,7 +182,7 @@ export default function AwardsSection() {
 
         {/* Cards stage */}
         <div className="absolute inset-0">
-          {CARDS.map((c, i) => (
+          {AWARD_CARDS.map((c, i) => (
             <div
               key={i}
               ref={(el) => {
@@ -255,7 +228,7 @@ export default function AwardsSection() {
 
         {/* Progress dots */}
         <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-          {CARDS.map((_, i) => (
+          {AWARD_CARDS.map((_, i) => (
             <span
               key={i}
               className="h-1.5 w-6 rounded-full bg-white/20"
@@ -266,4 +239,3 @@ export default function AwardsSection() {
     </section>
   );
 }
-
