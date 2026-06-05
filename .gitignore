@@ -7,6 +7,7 @@ dist-ssr
 .nitro
 *.local
 .next
+.env
 
 # Wrangler / Cloudflare
 .wrangler/
