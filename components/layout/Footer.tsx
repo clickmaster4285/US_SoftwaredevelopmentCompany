@@ -3,9 +3,9 @@ import mascot from "@/public/assets/footer-mascot.png";
 
 const NAV_MAIN = [
   { label: "Work", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Services", href: "/software-development" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const NAV_SECONDARY = [

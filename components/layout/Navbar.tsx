@@ -6,11 +6,11 @@ import MegaMenu from "./MegaMenu";
 import { serviceMenuSections } from "@/data/main-services";
 
 const NAV_LINKS = [
-  { label: "Services", href: "#services", hasMegaMenu: true },
+  { label: "Services", href: "/software-development", hasMegaMenu: true },
   { label: "Solutions", href: "#solutions" },
   { label: "Resources", href: "#resources" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const SOCIAL = [
@@ -130,7 +130,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               {/* CTA Button — desktop */}
               <a
-                href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
+                href="/contact"
                 className={[
                   "hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-300",
                   scrolled
@@ -261,7 +261,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="px-5 pt-4 pb-6">
             <a
-              href="mailto:sales@Clickmasterssoftwaredevelopmentcompany.com"
+              href="/contact"
               className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-[1.02]"
             >
               Get in touch
