@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import astronaut from "@/assets/space-astronaut.png";
-import planet1 from "@/assets/space-planet-1.png";
-import planet2 from "@/assets/space-planet-2.png";
+import astronaut from "@/public/assets/space-astronaut.png";
+import planet1 from "@/public/assets/space-planet-1.png";
+import planet2 from "@/public/assets/space-planet-2.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

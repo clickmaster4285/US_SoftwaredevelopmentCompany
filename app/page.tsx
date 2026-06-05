@@ -1,21 +1,21 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
-import projectNorton from '@/assets/project-norton.jpg';
-import projectLumen from '@/assets/project-lumen.jpg';
-import projectNorthwind from '@/assets/project-northwind.jpg';
-import projectAtelier from '@/assets/project-atelier.jpg';
-import audienceAgencies from '@/assets/audience-agencies.jpg';
+import projectNorton from '@/public/assets/project-norton.jpg';
+import projectLumen from '@/public/assets/project-lumen.jpg';
+import projectNorthwind from '@/public/assets/project-northwind.jpg';
+import projectAtelier from '@/public/assets/project-atelier.jpg';
+import audienceAgencies from '@/public/assets/audience-agencies.jpg';
 const heroVideo = '/hero-video.mp4';
 const dominateVideo = '/dominate-video.mp4';
-import audienceCreators from '@/assets/audience-creators.jpg';
-import audienceMarketing from '@/assets/audience-marketing.jpg';
-import AwardsSection from '@/components/AwardsSection';
-import Testimonials3DRoom from '@/components/Testimonials3DRoom';
-import SpaceJourney from '@/components/SpaceJourney';
-import StudioPath from '@/components/StudioPath';
-import SideNavbar from '@/components/SideNavbar';
-import Footer from '@/components/Footer';
+import audienceCreators from '@/public/assets/audience-creators.jpg';
+import audienceMarketing from '@/public/assets/audience-marketing.jpg';
+import AwardsSection from '@/app/(landing)/AwardsSection';
+import Testimonials3DRoom from '@/app/(landing)/Testimonials3DRoom';
+import SpaceJourney from '@/app/(landing)/SpaceJourney';
+import StudioPath from '@/app/(landing)/StudioPath';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 export default function HomePage() {
    const sectionRef = useRef<HTMLDivElement>(null);
@@ -82,7 +82,7 @@ export default function HomePage() {
 
    return (
       <div className="bg-background text-foreground">
-         <SideNavbar />
+          <Navbar />
 
          <section ref={sectionRef} className="relative" style={{ height: '260vh' }}>
             <div className="sticky top-0 h-screen w-screen overflow-hidden" style={{ perspective: '1200px' }}>

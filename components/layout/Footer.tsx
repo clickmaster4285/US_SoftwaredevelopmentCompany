@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mascot from "@/assets/footer-mascot.png";
+import mascot from "@/public/assets/footer-mascot.png";
 
 const NAV_MAIN = [
   { label: "Work", href: "#" },

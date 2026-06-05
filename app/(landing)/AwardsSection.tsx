@@ -2,12 +2,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { StaticImageData } from "next/image";
-import card1 from "@/assets/award-card-1.jpg";
-import card2 from "@/assets/award-card-2.jpg";
-import card3 from "@/assets/award-card-3.jpg";
-import card4 from "@/assets/award-card-4.jpg";
-import card5 from "@/assets/award-card-5.jpg";
-import card6 from "@/assets/award-card-6.jpg";
+import card1 from "@/public/assets/award-card-1.jpg";
+import card2 from "@/public/assets/award-card-2.jpg";
+import card3 from "@/public/assets/award-card-3.jpg";
+import card4 from "@/public/assets/award-card-4.jpg";
+import card5 from "@/public/assets/award-card-5.jpg";
+import card6 from "@/public/assets/award-card-6.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
