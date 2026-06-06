@@ -113,9 +113,9 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
                       >
                         <div
                           className={[
-                            "flex items-center justify-between rounded-lg p-3 transition-all duration-200",
+                            "flex items-center justify-between rounded-lg p-3 transition-all border  duration-200",
                             isActive
-                              ? "bg-accent text-white shadow-md"
+                              ? "bg-primary text-accent shadow-md"
                               : "text-foreground hover:bg-accent hover:text-white",
                           ].join(" ")}
                         >
@@ -143,7 +143,7 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
                   <div>
                     {/* Header */}
                     <div className="mb-6 flex items-center justify-between">
-                      <h3 className="text-2xl font-bold text-accent">
+                      <h3 className="text-2xl font-bold text-primary">
                         {active.label}
                       </h3>
                       <Link
@@ -162,7 +162,7 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
                           href={getItemHref(active, item)}
                           className="group/sub flex h-full items-start gap-3 rounded-2xl border border-border/50 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
                         >
-                          <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-bold text-accent transition-colors group-hover/sub:bg-accent group-hover/sub:text-white">
+                          <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-bold text-primary transition-colors group-hover/sub:bg-accent group-hover/sub:text-white">
                             {item.title.charAt(0)}
                           </span>
                           <div className="min-w-0">

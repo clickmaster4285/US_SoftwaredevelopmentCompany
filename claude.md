@@ -99,7 +99,7 @@ A single client component, top to bottom:
 ### Config drift
 - **`next.config.mjs`** is missing the `turbopack: {}` key (Turbopack is the default dev bundler in Next 16, but explicit declaration is documented best practice and the MIGRATION_SUMMARY claims Turbopack is configured).
 - **`tsconfig.json`** includes `server.ts`, `start.ts`, `components` but **not** `lib/`, `data/`, `hooks/`, `types/`. Inconsistent — `lib/utils.ts` is referenced by code but the dir isn't listed.
-- **`app/layout.tsx`** metadata is still placeholder ("Lovable App", "Immersive Hero creates an engaging hero section...") — never updated to ClickMasters branding.
+- **`app/layout.tsx`** metadata is still placeholder ("hmmmmmm....", "Immersive Hero creates an engaging hero section...") — never updated to ClickMasters branding.
 
 ### Dead code / leftover
 - `server.ts` + `start.ts` at root — TanStack Start entries, unrelated to Next.js. Should be deleted or moved into a separate workspace.

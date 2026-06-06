@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import { ChevronDown } from "lucide-react";
 import MegaMenu from "./MegaMenu";
 import { serviceMenuSections } from "@/data/main-services";
+import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Services", href: "/software-development", hasMegaMenu: true },
@@ -73,24 +75,18 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-5 md:px-8 h-14 md:h-16">
             {/* ── Logo ── */}
-            <a
+            <Link
               href="#"
               className="group flex items-center gap-2.5 transition-opacity hover:opacity-80"
             >
-              <span className="relative flex h-7 w-7 items-center justify-center">
-                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 opacity-90 transition-transform duration-300 group-hover:scale-110" />
-                <span className="absolute inset-[3px] rounded-full bg-white/90" />
-                <span className="relative h-2 w-2 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600" />
-              </span>
-              <span
-                className={[
-                  "text-[15px] font-semibold tracking-[-0.01em] transition-colors duration-500",
-                  scrolled ? "text-[oklch(0.20_0.02_250)]" : "text-white",
-                ].join(" ")}
-              >
-                Clickmasters
-              </span>
-            </a>
+              <Image
+                src="/cm-logos/logo.webp"
+                alt="Clickmasters Logo"
+                width={142}
+                height={32}
+                className="object-contain"
+              />
+            </Link>
 
             {/* ── Desktop Links ── */}
             <div className="hidden md:flex items-center gap-1">
@@ -134,7 +130,7 @@ export default function Navbar() {
                 className={[
                   "hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-300",
                   scrolled
-                    ? "bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/30 hover:scale-[1.03]"
+                    ? "bg-primary text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/30 hover:scale-[1.03]"
                     : "bg-white/15 text-white ring-1 ring-white/20 backdrop-blur-sm hover:bg-white/25 hover:ring-white/40",
                 ].join(" ")}
               >
@@ -214,17 +210,17 @@ export default function Navbar() {
           <div className="flex items-center justify-between px-5 pt-5 pb-3">
             <a href="#" className="flex items-center gap-2.5" onClick={closeMobile}>
               <span className="relative flex h-7 w-7 items-center justify-center">
-                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 opacity-90" />
+                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-primary-500 opacity-90" />
                 <span className="absolute inset-[3px] rounded-full bg-white/90" />
-                <span className="relative h-2 w-2 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600" />
+                <span className="relative h-2 w-2 rounded-full bg-gradient-to-br from-primary to-primary-500" />
               </span>
-              <span className="text-[15px] font-semibold tracking-[-0.01em] text-[oklch(0.20_0.02_250)]">
+              <span className="text-[15px] font-semibold tracking-[-0.01em] text-primary">
                 Clickmasters
               </span>
             </a>
             <button
               onClick={closeMobile}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-[oklch(0.20_0.02_250)] text-white transition-transform hover:scale-105"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-transform hover:scale-105"
               aria-label="Close menu"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -262,7 +258,7 @@ export default function Navbar() {
           <div className="px-5 pt-4 pb-6">
             <a
               href="/contact"
-              className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-[1.02]"
+              className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 text-base font-semibold text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-[1.02]"
             >
               Get in touch
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

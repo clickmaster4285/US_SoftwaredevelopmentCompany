@@ -2,16 +2,16 @@ import './globals.css';
 import Providers from './providers';
 
 export const metadata = {
-   title: 'Lovable App',
+   title: 'hmmmmmm....',
    description: 'Immersive Hero creates an engaging hero section with a video that animates on scroll.',
    openGraph: {
-      title: 'Lovable App',
+      title: 'hmmmmmm....',
       description: 'Immersive Hero creates an engaging hero section with a video that animates on scroll.',
       type: 'website',
    },
    twitter: {
       card: 'summary',
-      title: 'Lovable App',
+      title: 'hmmmmmm....',
       description: 'Immersive Hero creates an engaging hero section with a video that animates on scroll.',
    },
 };
