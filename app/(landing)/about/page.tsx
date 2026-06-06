@@ -1,4 +1,4 @@
-import { AboutPage } from "../LandingPageShell";
+import AboutPage from "./AboutPage";
 
 export const metadata = {
   title: "About Clickmasters | Software, Design & AI Studio",

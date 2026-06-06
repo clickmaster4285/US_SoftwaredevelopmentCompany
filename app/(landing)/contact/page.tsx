@@ -1,4 +1,4 @@
-import { ContactPage } from "../LandingPageShell";
+import ContactPage from "./ContactPage";
 
 export const metadata = {
   title: "Contact Clickmasters | Start a Digital Product Project",

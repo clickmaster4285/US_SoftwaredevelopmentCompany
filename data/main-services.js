@@ -885,10 +885,12 @@ export const getAllSubServicePages = () => {
  */
 export const serviceMenuSections = Object.values(mainServicesData).map(main => ({
   label: main.title,
+  icon: main.icon,
   slug: main.slug,
   items: main.subServices ? main.subServices.map(sub => ({
     title: sub.title,
     slug: sub.slug,
+    icon: sub.icon,
     description: sub.description
   })) : []
 }));

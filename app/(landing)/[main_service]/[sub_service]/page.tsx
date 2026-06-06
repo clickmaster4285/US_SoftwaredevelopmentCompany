@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import { SubServicePage, services } from "../../LandingPageShell";
+import SubServicePage from "./SubServicePage";
+import { services } from "./service-data";
 
 type PageProps = {
   params: Promise<{

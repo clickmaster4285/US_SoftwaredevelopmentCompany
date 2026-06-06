@@ -3,10 +3,11 @@
 import { useState, useRef, useEffect, type ReactNode } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { slugify } from "@/data/main-services";
+import { slugify, iconMap  } from "@/data/main-services";
 
 export type SubService = {
   title: string;
+  icon:string;
   slug: string;
   description: string;
 };
@@ -72,6 +73,12 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
     const itemSlug = item.slug || slugify(item.title);
     return `/${categorySlug}/${itemSlug}`;
   };
+
+const DynamicIcon = ({ name, className = "h-4 w-4" }: { name: string; className?: string }) => {
+  const IconComponent = iconMap[name as keyof typeof iconMap];
+  if (!IconComponent) return null;
+  return <IconComponent className={className} />;
+};
 
   return (
     <div
@@ -162,9 +169,7 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
                           href={getItemHref(active, item)}
                           className="group/sub flex h-full items-start gap-3 rounded-2xl border border-border/50 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
                         >
-                          <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-bold text-primary transition-colors group-hover/sub:bg-accent group-hover/sub:text-white">
-                            {item.title.charAt(0)}
-                          </span>
+                          <DynamicIcon   name={item.icon} className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-bold text-primary transition-colors group-hover/sub:bg-accent group-hover/sub:scale-105" />
                           <div className="min-w-0">
                             <h4 className="mb-2 text-sm font-semibold text-foreground transition-colors group-hover/sub:text-primary">
                               {item.title}

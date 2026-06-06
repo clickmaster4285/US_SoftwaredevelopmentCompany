@@ -1,5 +1,92 @@
 For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMARY references an older, more elaborate folder structure (admin/auth/api/models). The current repo is significantly slimmer than what that doc describes — see "Current State" below for what is actually on disk.
 
+# Work Log: 2026-06-05 Around 6 PM
+
+## User Request
+The user asked to make the pages under `app/(landing)/` for:
+- `about`
+- `contact`
+- main service pages
+- sub-service pages
+
+The goal was to keep a record of what was done, how it was done, and when, so future work can continue from the correct project state.
+
+## What Was Done
+- Added real route implementations for:
+  - `/about`
+  - `/contact`
+  - `/{main_service}`
+  - `/{main_service}/{sub_service}`
+- Created a shared landing route renderer:
+  - `app/(landing)/LandingPageShell.tsx`
+- Filled previously empty route files:
+  - `app/(landing)/about/page.tsx`
+  - `app/(landing)/contact/page.tsx`
+  - `app/(landing)/[main_service]/page.tsx`
+  - `app/(landing)/[main_service]/[sub_service]/page.tsx`
+- Reused existing service catalog data from:
+  - `data/main-services.js`
+- Added dynamic static generation for service pages:
+  - main service pages use all keys from `mainServicesData`
+  - sub-service pages are generated from every `subServices` entry
+- Added metadata generation for dynamic service routes.
+- Added `notFound()` handling for invalid service or sub-service slugs.
+- Updated shared navigation links so real pages are reachable:
+  - Navbar About now points to `/about`
+  - Navbar Contact now points to `/contact`
+  - Navbar Services fallback points to `/software-development`
+  - Navbar "Get in touch" CTA points to `/contact`
+  - Footer Services/About/Contact point to real routes
+
+## How It Was Built
+- Used the existing Next.js App Router route group `app/(landing)/`.
+- Kept service pages data-driven instead of manually creating a page for each service.
+- Used `mainServicesData`, `serviceMenuSections`, and `iconMap` from `data/main-services.js`.
+- Built a shared visual page shell with:
+  - shared `Navbar` and `Footer`
+  - reusable hero section
+  - stats band
+  - service cards
+  - process section
+  - contact form layout
+  - about/company sections
+- Used plain HTML `img` for remote service hero images because `next.config.mjs` does not configure remote image domains for `next/image`.
+- Kept styling in Tailwind utility classes inside the shared shell, matching the existing landing-page direction.
+
+## Verification
+- Ran production build:
+  - `npm run build`
+- Build passed successfully.
+- Next generated 99 pages, including:
+  - `/`
+  - `/about`
+  - `/contact`
+  - all main service routes
+  - all sub-service routes
+- Example generated routes:
+  - `/software-development`
+  - `/web-development`
+  - `/mobile-development`
+  - `/software-development/custom-software-development`
+  - `/software-development/enterprise-software-development`
+  - `/software-development/saas-product-development`
+
+## Local Server
+- Started the Next.js dev server after implementation.
+- Local test URL:
+  - `http://localhost:3000`
+- Example pages to inspect:
+  - `http://localhost:3000/about`
+  - `http://localhost:3000/contact`
+  - `http://localhost:3000/software-development`
+  - `http://localhost:3000/software-development/custom-software-development`
+
+## Important Follow-Up Notes
+- The older "Current State" section below was written before this route work and may still describe the app as landing-only.
+- The app now has additional route pages under `app/(landing)/`.
+- Reconcile `claude.md` and `MIGRATION_SUMMARY.md` later so both reflect the newer multi-page landing/service structure.
+- Current working tree checks showed existing changes in `app/(landing)/LandingPageShell.tsx`, `components/layout/MegaMenu.tsx`, and `data/main-services.js`; check current diffs before overwriting those files.
+
 # Project Overview: parallax-portal-play-main
 
 ## Project Purpose
@@ -150,4 +237,3 @@ Documented as a recurring build failure. Standard fix: `rmdir /s /q .next && npm
 5. **Add `turbopack: {}` to `next.config.mjs`** for explicit declaration
 6. **Verify build** after cleanup: `rmdir /s /q .next && npm run build`
 7. **Decide on routing model** — landing-only is fine for a portfolio, but confirm no admin/CMS work is planned
-
