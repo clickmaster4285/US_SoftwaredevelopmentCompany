@@ -172,16 +172,16 @@ export default function AwardsSection() {
 
         {/* Header copy */}
         <div className="relative z-10 mx-auto max-w-7xl px-6 pt-10 md:pt-16">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/50">
+          <p className="text-xs mt-10 uppercase tracking-[0.3em] text-white/50">
             Recognition
           </p>
-          <h2 className="mt-3 max-w-2xl text-2xl font-medium leading-tight md:text-4xl">
+          <h2 className="mt-3 max-w-2xl text-2xl font-medium leading-tight md:text-5xl">
             Award-winning work, recognized worldwide.
           </h2>
         </div>
 
         {/* Cards stage */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 mt-40">
           {AWARD_CARDS.map((c, i) => (
             <div
               key={i}

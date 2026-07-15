@@ -150,15 +150,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <ProjectsStack />
+      <LogoMarquee />
       <DominateSection />
+
+      
+      <ProjectsStack />
+      
       <ComparisonSection />
       <AwardsSection />
       <AudienceCarousel />
-      <LogoMarquee />
+       <StudioPath />
       <Testimonials3DRoom />
-      <StudioPath />
+    
       <SpaceJourney />
       <Footer />
     </div>

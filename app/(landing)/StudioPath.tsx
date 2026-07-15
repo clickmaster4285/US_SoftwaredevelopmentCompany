@@ -314,16 +314,16 @@ function ProcessPathSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)]" style={{ height: "300vh" }}>
+    <section ref={sectionRef} className="relative  bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)]" style={{ height: "300vh" }}>
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <div ref={headerRef} className="absolute inset-x-0 top-10 md:top-14 px-6 text-center z-10">
+        <div ref={headerRef} className="absolute inset-x-0 top-10 md:top-22 px-6 text-center z-10">
           <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-3">The path</p>
           <h2 className="text-[clamp(2rem,5vw,4rem)] font-semibold tracking-tight leading-[1.02]">
             How a project <span className="italic font-serif">moves</span>
           </h2>
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center pt-20">
+        <div className="absolute inset-0 lg:mt-38 flex items-center justify-center pt-20">
           <div className="relative w-full max-w-5xl h-full">
             <svg
               viewBox="0 0 1000 1400"
