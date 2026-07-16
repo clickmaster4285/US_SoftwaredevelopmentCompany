@@ -9,37 +9,37 @@ import projectAtelier from "@/public/assets/project-atelier.jpg";
 
 const PROJECTS = [
   {
-    title: "Norton",
+    title: "AutoMotive",
     image: projectNorton,
-    desc: "Creative campaign with precision UX.",
-    tag: "Brand Identity",
+    desc: "Premium automotive showroom platform.",
+    tag: "Automotive",
     bg: "#1a1a1a",
     fg: "#ffffff",
   },
   {
-    title: "Lumen",
-    image: projectLumen,
-    desc: "Modern product design for scale.",
-    tag: "Product Design",
+    title: "ClothingPOS",
+    image:  projectAtelier,
+    desc: "Modern retail management system for fashion.",
+    tag: "Retail Tech",
     bg: "#f5f5f5",
     fg: "#1a1a1a",
   },
   {
-    title: "Northwind",
+    title: "JewelryPOS",
     image: projectNorthwind,
-    desc: "High-converting brand experience.",
-    tag: "Web Experience",
+    desc: "Luxury inventory & sales management solution.",
+    tag: "Luxury Retail",
     bg: "#2d2d2d",
     fg: "#ffffff",
   },
-  {
-    title: "Atelier",
-    image: projectAtelier,
-    desc: "Luxury digital storytelling.",
-    tag: "Creative Direction",
+{
+    title: "MarketPOS",
+    image: projectLumen,
+    desc: "Full-featured supermarket operations platform.",
+    tag: "Retail Tech",
     bg: "#e8e0d8",
     fg: "#1a1a1a",
-  },
+},
 ];
 
 export default function ProjectsStack() {

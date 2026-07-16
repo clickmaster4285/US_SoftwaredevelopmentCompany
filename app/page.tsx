@@ -12,6 +12,7 @@ import StudioPath from "@/app/(landing)/StudioPath";
 import SpaceJourney from "@/app/(landing)/SpaceJourney";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import TrustedBy from "./(landing)/TrustedBy";
 
 const heroVideo = "/hero-video.mp4";
 
@@ -150,12 +151,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <LogoMarquee />
+
+      <TrustedBy />
+      
       <DominateSection />
 
       
       <ProjectsStack />
-      
+      <LogoMarquee />
       <ComparisonSection />
       <AwardsSection />
       <AudienceCarousel />

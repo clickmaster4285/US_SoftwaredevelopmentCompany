@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import { CAPS, STACK_ROW_1, STACK_ROW_2, STACK_ROW_3, STEPS } from "@/app/(landing)/data";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 /**
  * Three stacked software-house sections before the SpaceJourney CTA:
@@ -29,10 +30,8 @@ function CapabilitiesSection() {
   const gridRef = useRef<HTMLDivElement>(null);
   const blobRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    const ctx = gsap.context(() => {
+  useGSAP(
+    () => {
       const words = gsap.utils.toArray<HTMLElement>("[data-cap-word]");
       gsap.fromTo(
         words,
@@ -44,7 +43,7 @@ function CapabilitiesSection() {
           duration: 0.9,
           ease: "power4.out",
           stagger: 0.06,
-          scrollTrigger: { trigger: headRef.current, start: "top 80%" },
+          scrollTrigger: { id: "cap-words", trigger: headRef.current, start: "top 80%" },
         },
       );
 
@@ -61,14 +60,14 @@ function CapabilitiesSection() {
           duration: 1,
           ease: "power3.out",
           stagger: { each: 0.1, from: "start" },
-          scrollTrigger: { trigger: gridRef.current, start: "top 75%" },
+          scrollTrigger: { id: "cap-cards", trigger: gridRef.current, start: "top 75%" },
         },
       );
 
       gsap.to(blobRef.current, {
         yPercent: -25,
         ease: "none",
-        scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true },
+        scrollTrigger: { id: "cap-blob", trigger: wrapRef.current, start: "top bottom", end: "bottom top", scrub: true },
       });
 
       gsap.to("[data-cap-icon]", {
@@ -79,9 +78,9 @@ function CapabilitiesSection() {
         yoyo: true,
         stagger: { each: 0.2, from: "random" },
       });
-    }, el);
-    return () => ctx.revert();
-  }, []);
+    },
+    { scope: wrapRef, dependencies: [] },
+  );
 
   return (
     <section
@@ -245,148 +244,145 @@ function StackRow({ items, duration, direction }: { items: string[]; duration: n
   );
 }
 
-/* ---------------- 3. Animated Path ---------------- */
+/* ---------------- 3. Process timeline ---------------- */
+
+/* ---------------- 3. Process timeline ---------------- */
 
 function ProcessPathSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const pathRef = useRef<SVGPathElement>(null);
-  const dotRef = useRef<SVGCircleElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
+  const railFillRef = useRef<HTMLDivElement>(null);
 
-  const d = useMemo(
-    () =>
-      "M 120 60 C 120 220, 880 220, 880 380 S 120 540, 120 700 S 880 860, 880 1020 S 120 1180, 120 1340",
-    [],
-  );
+  useGSAP(
+    () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    const path = pathRef.current;
-    const dot = dotRef.current;
-    if (!section || !path || !dot) return;
-
-    const ctx = gsap.context(() => {
-      const length = path.getTotalLength();
-      gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
+      if (reduceMotion) {
+        gsap.set(railFillRef.current, { scaleY: 1 });
+        gsap.set("[data-step-content]", { opacity: 1, y: 0 });
+        gsap.set("[data-step-node]", {
+          backgroundColor: "oklch(0.20 0.04 250)",
+          borderColor: "oklch(0.20 0.04 250)",
+          color: "oklch(0.97 0.005 80)",
+        });
+        return;
+      }
 
       gsap.fromTo(
         headerRef.current,
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", scrollTrigger: { trigger: section, start: "top 75%" } },
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          ease: "power3.out",
+          scrollTrigger: { trigger: headerRef.current, start: "top 85%" },
+        },
       );
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "+=200%",
-          scrub: 0.6,
-          pin: true,
-          anticipatePin: 1,
-        },
-      });
-
-      tl.to(path, { strokeDashoffset: 0, ease: "none" }, 0);
-
-      const proxy = { p: 0 };
-      tl.to(
-        proxy,
+      // Rail fills top-to-bottom as the whole timeline scrolls through — no pin needed.
+      gsap.fromTo(
+        railFillRef.current,
+        { scaleY: 0 },
         {
-          p: 1,
+          scaleY: 1,
           ease: "none",
-          onUpdate: () => {
-            const pt = path.getPointAtLength(length * proxy.p);
-            gsap.set(dot, { attr: { cx: pt.x, cy: pt.y } });
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 60%",
+            end: "bottom 70%",
+            scrub: 0.4,
           },
         },
-        0,
       );
 
-      const milestones = gsap.utils.toArray<HTMLElement>("[data-step]");
-      milestones.forEach((el, i) => {
-        const start = i / milestones.length;
-        const end = start + 0.08;
-        tl.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: end - start, ease: "power2.out" }, start);
-      });
-    }, section);
+      // Each step animates on its own trigger — independent, resilient, nothing shared to fight over.
+      gsap.utils.toArray<HTMLElement>("[data-step]").forEach((el) => {
+        const node = el.querySelector<HTMLElement>("[data-step-node]");
+        const content = el.querySelector<HTMLElement>("[data-step-content]");
 
-    return () => ctx.revert();
-  }, []);
+        gsap.fromTo(
+          content,
+          { y: 24, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: "power3.out",
+            scrollTrigger: { trigger: el, start: "top 80%" },
+          },
+        );
+
+        if (node) {
+          gsap.to(node, {
+            backgroundColor: "oklch(0.20 0.04 250)",
+            borderColor: "oklch(0.20 0.04 250)",
+            color: "oklch(0.97 0.005 80)",
+            duration: 0.4,
+            scrollTrigger: { trigger: el, start: "top 65%", toggleActions: "play none none reverse" },
+          });
+        }
+      });
+    },
+    { scope: sectionRef, dependencies: [] },
+  );
 
   return (
-    <section ref={sectionRef} className="relative  bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)]" style={{ height: "300vh" }}>
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <div ref={headerRef} className="absolute inset-x-0 top-10 md:top-22 px-6 text-center z-10">
-          <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-3">The path</p>
-          <h2 className="text-[clamp(2rem,5vw,4rem)] font-semibold tracking-tight leading-[1.02]">
+    <section
+      ref={sectionRef}
+      className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)] py-28 md:py-36"
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        <div ref={headerRef} className="max-w-lg mb-20 md:mb-28">
+          <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4 flex items-center gap-3">
+            <span className="inline-block w-8 h-px bg-current opacity-60" />
+            The process
+          </p>
+          <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight leading-[1.05]">
             How a project <span className="italic font-serif">moves</span>
           </h2>
+          <p className="mt-5 text-base opacity-70">
+            Five stages, no surprises — here's what happens between the first call and going live.
+          </p>
         </div>
 
-        <div className="absolute inset-0 lg:mt-38 flex items-center justify-center pt-20">
-          <div className="relative w-full max-w-5xl h-full">
-            <svg
-              viewBox="0 0 1000 1400"
-              preserveAspectRatio="xMidYMid meet"
-              className="absolute inset-0 h-full w-full"
-            >
-              <defs>
-                <linearGradient id="pathGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="oklch(0.40 0.06 250)" />
-                  <stop offset="100%" stopColor="oklch(0.20 0.04 250)" />
-                </linearGradient>
-              </defs>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+          {/* Video column — stretches to match the steps column's height */}
+          <div className="relative lg:sticky lg:top-24 h-[320px] md:h-[420px] lg:h-auto rounded-2xl overflow-hidden">
+            <video
+              className="absolute inset-0 w-full h-full object-cover"
+              src="/assets/studio-path.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
 
-              <path d={d} fill="none" stroke="oklch(0.18 0.02 250 / 0.10)" strokeWidth="3" />
+          {/* Steps column */}
+          <div className="relative">
+            <div className="absolute left-7 md:left-8 top-7 bottom-7 md:top-8 md:bottom-8 w-px bg-[oklch(0.18_0.02_250)]/12" />
+            <div
+              ref={railFillRef}
+              className="absolute left-7 md:left-8 top-7 bottom-7 md:top-8 md:bottom-8 w-px origin-top bg-[oklch(0.20_0.04_250)]"
+            />
 
-              <path
-                ref={pathRef}
-                d={d}
-                fill="none"
-                stroke="url(#pathGrad)"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-
-              {[60, 380, 700, 1020, 1340].map((cy, i) => {
-                const cx = i % 2 === 0 ? 120 : 880;
-                return (
-                  <g key={i}>
-                    <circle cx={cx} cy={cy} r="14" fill="oklch(0.97 0.005 80)" stroke="oklch(0.20 0.04 250)" strokeWidth="3" />
-                    <text x={cx} y={cy + 5} textAnchor="middle" fontSize="14" fontWeight="600" fill="oklch(0.20 0.04 250)">
-                      {STEPS[i].k}
-                    </text>
-                  </g>
-                );
-              })}
-
-              <circle
-                ref={dotRef}
-                cx="120"
-                cy="60"
-                r="11"
-                fill="oklch(0.20 0.04 250)"
-                stroke="oklch(0.97 0.005 80)"
-                strokeWidth="3"
-              />
-            </svg>
-
-            {STEPS.map((s, i) => {
-              const yPct = [60, 380, 700, 1020, 1340][i] / 1400;
-              const left = i % 2 === 0;
-              return (
-                <div
-                  key={s.k}
-                  data-step
-                  className={`absolute w-[42%] max-w-[320px] ${left ? "left-[18%] md:left-[20%] text-left" : "right-[18%] md:right-[20%] text-right"}`}
-                  style={{ top: `calc(${yPct * 100}% - 30px)` }}
-                >
-                  <p className="text-[10px] uppercase tracking-[0.4em] opacity-55 mb-1">Step {s.k}</p>
-                  <h3 className="text-xl md:text-2xl font-semibold tracking-tight">{s.t}</h3>
-                  <p className="mt-1 text-sm opacity-70 leading-snug">{s.d}</p>
+            <div className="flex flex-col gap-12 md:gap-16">
+              {STEPS.map((s) => (
+                <div key={s.k} data-step className="relative flex gap-6 md:gap-8">
+                  <div
+                    data-step-node
+                    className="relative z-10 shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-[oklch(0.18_0.02_250)]/20 bg-[oklch(0.97_0.005_80)] flex items-center justify-center font-mono text-sm tracking-tight"
+                  >
+                    {s.k}
+                  </div>
+                  <div data-step-content className="pt-2 md:pt-3 max-w-md">
+                    <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-2">{s.t}</h3>
+                    <p className="text-sm md:text-base opacity-70 leading-relaxed">{s.d}</p>
+                  </div>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </div>
