@@ -9,17 +9,20 @@ import audienceMarketing from "@/public/assets/audience-marketing.jpg";
 const AUDIENCE_SLIDES = [
   {
     title: "Marketing & Sales",
-    subtitle: "Launch high-converting pages fast without waiting on developers.",
+    subtitle:
+      "Launch high-converting pages fast without waiting on developers.",
     image: audienceMarketing,
   },
   {
     title: "Agencies & Teams",
-    subtitle: "Ship faster and deliver premium, immersive experiences to clients at scale.",
+    subtitle:
+      "Ship faster and deliver premium, immersive experiences to clients at scale.",
     image: audienceAgencies,
   },
   {
     title: "Creators & Founders",
-    subtitle: "Create breathtaking interactive stories without any design or coding skills.",
+    subtitle:
+      "Create breathtaking interactive stories without any design or coding skills.",
     image: audienceCreators,
   },
 ];
@@ -39,7 +42,9 @@ export default function AudienceCarousel() {
   return (
     <section className="bg-black text-white py-20 md:py-28 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 md:px-10 mb-10 md:mb-14 text-center">
-        <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4">Built for</p>
+        <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4">
+          Built for
+        </p>
         <h2 className="text-[clamp(2rem,5vw,4rem)] font-semibold tracking-tight leading-[1]">
           Who it's <span className="italic font-serif">for</span>
         </h2>
@@ -51,9 +56,9 @@ export default function AudienceCarousel() {
             <div
               key={slide.title}
               className="absolute inset-0 transition-opacity duration-700 ease-out"
-              style={{ 
-                opacity: i === index ? 1 : 0, 
-                pointerEvents: i === index ? "auto" : "none" 
+              style={{
+                opacity: i === index ? 1 : 0,
+                pointerEvents: i === index ? "auto" : "none",
               }}
             >
               <Image

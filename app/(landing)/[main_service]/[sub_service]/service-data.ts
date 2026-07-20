@@ -1,4 +1,8 @@
-import { getServiceData, iconMap, mainServicesData } from "@/data/main-services";
+import {
+  getServiceData,
+  iconMap,
+  mainServicesData,
+} from "@/data/main-services";
 
 export type IconName = keyof typeof iconMap;
 

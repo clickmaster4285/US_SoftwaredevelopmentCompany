@@ -25,7 +25,9 @@ export default function ProcessSection() {
               <p className="text-sm font-semibold text-[#f6c85f]">
                 0{index + 1}
               </p>
-              <p className="mt-12 text-xl font-semibold leading-tight">{step}</p>
+              <p className="mt-12 text-xl font-semibold leading-tight">
+                {step}
+              </p>
             </div>
           ))}
         </div>

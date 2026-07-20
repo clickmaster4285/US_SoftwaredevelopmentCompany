@@ -84,7 +84,11 @@ export default function HomePage() {
     <div className="bg-background text-foreground">
       <Navbar />
 
-      <section ref={sectionRef} className="relative" style={{ height: "260vh" }}>
+      <section
+        ref={sectionRef}
+        className="relative"
+        style={{ height: "260vh" }}
+      >
         <div
           className="sticky top-0 h-screen w-screen overflow-hidden"
           style={{ perspective: "1200px" }}
@@ -153,18 +157,17 @@ export default function HomePage() {
       </section>
 
       <TrustedBy />
-      
+
       <DominateSection />
 
-      
       <ProjectsStack />
       <LogoMarquee />
       <ComparisonSection />
       <AwardsSection />
       <AudienceCarousel />
-       <StudioPath />
+      <StudioPath />
       <Testimonials3DRoom />
-    
+
       <SpaceJourney />
       <Footer />
     </div>

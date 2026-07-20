@@ -14,7 +14,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
     "Agile sprints with full transparency — your project ships on time, every time.",
     ["2-Week Sprints", "Daily Updates", "Fast Turnaround", "No Delays"],
     "2x",
-    "Faster Delivery"
+    "Faster Delivery",
   ),
   b(
     "Code2",
@@ -22,15 +22,20 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
     "Enterprise-grade engineering with patterns, tests, and documentation built to scale.",
     ["SOLID Principles", "Unit Testing", "Code Reviews", "Documentation"],
     "99.9%",
-    "Code Quality"
+    "Code Quality",
   ),
   b(
     "ShieldCheck",
     "Security First",
     "Encryption, audits, and compliance practices including GDPR and SOC2 readiness.",
-    ["End-to-End Encryption", "Regular Audits", "GDPR Compliant", "Secure APIs"],
+    [
+      "End-to-End Encryption",
+      "Regular Audits",
+      "GDPR Compliant",
+      "Secure APIs",
+    ],
     "100%",
-    "Data Protection"
+    "Data Protection",
   ),
   b(
     "Zap",
@@ -38,7 +43,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
     "Fast load times through optimized data layers, caching, and CDN-ready architecture.",
     ["Sub-1s Load Time", "DB Optimization", "CDN Ready", "Caching"],
     "300%",
-    "Speed Boost"
+    "Speed Boost",
   ),
   b(
     "Users",
@@ -46,7 +51,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
     "Dedicated PMs, weekly demos, and clear communication — you are part of the team.",
     ["Dedicated PM", "Weekly Demos", "24/7 Support", "Clear Pricing"],
     "98%",
-    "Client Retention"
+    "Client Retention",
   ),
   b(
     "Clock",
@@ -54,7 +59,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
     "We stay after launch with maintenance, updates, scaling help, and ongoing support.",
     ["24/7 Support", "Regular Updates", "Scaling Help", "Bug Fixes"],
     "5+",
-    "Years Avg. Partnership"
+    "Years Avg. Partnership",
   ),
 ];
 
@@ -90,9 +95,14 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Building",
         "Custom Architecture",
         "Solutions designed around your workflows — not forced templates.",
-        ["Requirements Analysis", "System Design", "Tech Stack Planning", "Roadmaps"],
+        [
+          "Requirements Analysis",
+          "System Design",
+          "Tech Stack Planning",
+          "Roadmaps",
+        ],
         "200+",
-        "Projects Delivered"
+        "Projects Delivered",
       ),
       b(
         "Rocket",
@@ -100,7 +110,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Two-week sprints with demos so you always see real progress.",
         ["Sprint Planning", "CI/CD Pipelines", "Code Reviews", "Weekly Demos"],
         "2x",
-        "Faster Delivery"
+        "Faster Delivery",
       ),
       b(
         "ShieldCheck",
@@ -108,23 +118,33 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Rigorous testing before every release — fewer bugs, fewer surprises.",
         ["Unit Tests", "Integration Tests", "UAT Support", "Regression Suites"],
         "99.9%",
-        "Uptime SLA"
+        "Uptime SLA",
       ),
       b(
         "Code2",
         "Maintainable Codebase",
         "Clean, documented code your team can extend for years.",
-        ["SOLID Patterns", "API Documentation", "Handover Sessions", "Linting Standards"],
+        [
+          "SOLID Patterns",
+          "API Documentation",
+          "Handover Sessions",
+          "Linting Standards",
+        ],
         "100%",
-        "IP Ownership"
+        "IP Ownership",
       ),
       b(
         "Users",
         "Dedicated Teams",
         "Engineers and PMs aligned to your goals — an extension of your company.",
-        ["Dedicated PM", "Slack Access", "Timezone Overlap", "Transparent Billing"],
+        [
+          "Dedicated PM",
+          "Slack Access",
+          "Timezone Overlap",
+          "Transparent Billing",
+        ],
         "98%",
-        "Client Retention"
+        "Client Retention",
       ),
       b(
         "Clock",
@@ -132,7 +152,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "We do not disappear after go-live — monitoring, fixes, and scaling included.",
         ["24/7 Monitoring", "Bug Fixes", "Feature Updates", "SLA Options"],
         "5+",
-        "Years Partnership"
+        "Years Partnership",
       ),
     ],
   },
@@ -151,7 +171,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Semantic markup, Core Web Vitals, and technical SEO baked in from day one.",
         ["Meta & Schema", "Sitemap Setup", "CWV Optimization", "Analytics"],
         "500+",
-        "Sites Launched"
+        "Sites Launched",
       ),
       b(
         "Smartphone",
@@ -159,7 +179,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Flawless layouts from mobile to ultra-wide desktop screens.",
         ["Mobile-First", "Fluid Grids", "Touch Targets", "Cross-Browser"],
         "100%",
-        "Device Coverage"
+        "Device Coverage",
       ),
       b(
         "Zap",
@@ -167,7 +187,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Next.js, caching, and image optimization for lightning-fast pages.",
         ["Next.js", "Edge Caching", "Image CDN", "Lazy Loading"],
         "90+",
-        "Lighthouse Score"
+        "Lighthouse Score",
       ),
       b(
         "Globe2",
@@ -175,7 +195,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Headless CMS, Shopify, and custom stores that convert visitors.",
         ["Headless CMS", "Shopify", "WooCommerce", "Payment APIs"],
         "3x",
-        "Avg. Conversion Lift"
+        "Avg. Conversion Lift",
       ),
     ],
   },
@@ -194,15 +214,20 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Swift, Kotlin, React Native, and Flutter — the right stack for your goals.",
         ["iOS & Android", "React Native", "Flutter", "Shared Codebase"],
         "100+",
-        "Apps Shipped"
+        "Apps Shipped",
       ),
       b(
         "Rocket",
         "Fast Store Approval",
         "App Store and Play Store submission handled end-to-end.",
-        ["Store Assets", "Compliance Review", "Release Notes", "Phased Rollouts"],
+        [
+          "Store Assets",
+          "Compliance Review",
+          "Release Notes",
+          "Phased Rollouts",
+        ],
         "4.8★",
-        "Avg Rating"
+        "Avg Rating",
       ),
       b(
         "ShieldCheck",
@@ -210,7 +235,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "OAuth, encrypted storage, and secure API communication by default.",
         ["OAuth 2.0", "Certificate Pinning", "Biometric Auth", "OWASP Mobile"],
         "100%",
-        "Secure APIs"
+        "Secure APIs",
       ),
       b(
         "Users",
@@ -218,7 +243,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Interfaces users love — tested on real devices before launch.",
         ["Usability Testing", "Prototyping", "Analytics", "A/B Experiments"],
         "98%",
-        "Retention Rate"
+        "Retention Rate",
       ),
     ],
   },
@@ -237,7 +262,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Decisions backed by user interviews, analytics, and testing.",
         ["User Interviews", "Heatmaps", "Surveys", "Competitive Audit"],
         "95%",
-        "User Satisfaction"
+        "User Satisfaction",
       ),
       b(
         "LayoutDashboard",
@@ -245,7 +270,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Reusable components that keep your product consistent at scale.",
         ["Figma Libraries", "Tokens", "Documentation", "Dev Handoff"],
         "300+",
-        "Screens Designed"
+        "Screens Designed",
       ),
       b(
         "Edit3",
@@ -253,7 +278,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Clickable prototypes before a single line of code is written.",
         ["Wireframes", "Hi-Fi Mockups", "Prototypes", "Design QA"],
         "2x",
-        "Faster Sign-Off"
+        "Faster Sign-Off",
       ),
       b(
         "Palette",
@@ -261,7 +286,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Interfaces that reflect your brand and convert visitors.",
         ["Visual Identity", "Accessibility", "Micro-Interactions", "Dark Mode"],
         "40%",
-        "Higher Engagement"
+        "Higher Engagement",
       ),
     ],
   },
@@ -280,7 +305,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "LLM apps and agents that ship — not stuck in proof-of-concept.",
         ["RAG Pipelines", "Vector DBs", "Fine-Tuning", "Eval Frameworks"],
         "50+",
-        "AI Deployments"
+        "AI Deployments",
       ),
       b(
         "Bot",
@@ -288,7 +313,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Automate repetitive workflows and free your team for high-value work.",
         ["Workflow Bots", "Document AI", "Email Triage", "CRM Automation"],
         "10x",
-        "Efficiency Gain"
+        "Efficiency Gain",
       ),
       b(
         "ShieldCheck",
@@ -296,7 +321,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Guardrails, access control, and audit logs for enterprise AI.",
         ["Prompt Policies", "PII Filtering", "RBAC", "Audit Trails"],
         "100%",
-        "Compliance Ready"
+        "Compliance Ready",
       ),
       b(
         "Plug",
@@ -304,7 +329,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "AI embedded into your existing tools, CRMs, and data stacks.",
         ["API Integrations", "Webhooks", "Custom Plugins", "SSO"],
         "97%",
-        "Accuracy Target"
+        "Accuracy Target",
       ),
     ],
   },
@@ -323,23 +348,33 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Forecast demand, churn, and revenue with models trained on your data.",
         ["Time Series", "Churn Models", "Demand Forecast", "Dashboards"],
         "3x",
-        "Forecast Accuracy"
+        "Forecast Accuracy",
       ),
       b(
         "Cpu",
         "Custom ML Models",
         "Models built for your domain — not generic off-the-shelf tools.",
-        ["Feature Engineering", "Model Selection", "Hyperparameter Tuning", "MLOps"],
+        [
+          "Feature Engineering",
+          "Model Selection",
+          "Hyperparameter Tuning",
+          "MLOps",
+        ],
         "50+",
-        "Models Deployed"
+        "Models Deployed",
       ),
       b(
         "Target",
         "Recommendation Engines",
         "Personalized experiences that increase engagement and sales.",
-        ["Collaborative Filter", "Content Recs", "A/B Testing", "Real-Time Inference"],
+        [
+          "Collaborative Filter",
+          "Content Recs",
+          "A/B Testing",
+          "Real-Time Inference",
+        ],
         "25%",
-        "Engagement Lift"
+        "Engagement Lift",
       ),
       b(
         "Brain",
@@ -347,7 +382,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Neural networks for complex vision, NLP, and anomaly detection tasks.",
         ["CNN / RNN", "Transfer Learning", "GPU Training", "Edge Deployment"],
         "95%",
-        "Model Accuracy"
+        "Model Accuracy",
       ),
     ],
   },
@@ -364,9 +399,14 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Cloud",
         "Cloud-Native Architecture",
         "AWS, Azure, and GCP setups built for scale and cost efficiency.",
-        ["Architecture Review", "Migration Plan", "Multi-Region", "Cost Optimization"],
+        [
+          "Architecture Review",
+          "Migration Plan",
+          "Multi-Region",
+          "Cost Optimization",
+        ],
         "200+",
-        "Migrations"
+        "Migrations",
       ),
       b(
         "Workflow",
@@ -374,7 +414,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Automated build, test, and deploy — ship multiple times per day.",
         ["GitHub Actions", "Jenkins", "Blue-Green Deploy", "Rollback"],
         "70%",
-        "Faster Releases"
+        "Faster Releases",
       ),
       b(
         "Box",
@@ -382,7 +422,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Containerized workloads that scale automatically under load.",
         ["Docker", "K8s", "Helm Charts", "Auto-Scaling"],
         "99.9%",
-        "Uptime SLA"
+        "Uptime SLA",
       ),
       b(
         "FileText",
@@ -390,12 +430,12 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Repeatable, version-controlled infrastructure — no manual drift.",
         ["Terraform", "CloudFormation", "Ansible", "GitOps"],
         "100%",
-        "Reproducible Infra"
+        "Reproducible Infra",
       ),
     ],
   },
 
-  "cybersecurity": {
+  cybersecurity: {
     subtitle: buildWhyChooseUsSubtitle("Cybersecurity"),
     stats: mapServiceStatsToWhyUs([
       { value: "100+", label: "Security Audits" },
@@ -409,7 +449,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "OWASP-aligned reviews and fixes across your entire stack.",
         ["OWASP Top 10", "Dependency Scan", "WAF Setup", "Secrets Mgmt"],
         "100+",
-        "Audits Completed"
+        "Audits Completed",
       ),
       b(
         "Target",
@@ -417,7 +457,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Ethical hackers find vulnerabilities before attackers do.",
         ["Web App Pentest", "API Testing", "Social Engineering", "Reports"],
         "0",
-        "Critical Breaches"
+        "Critical Breaches",
       ),
       b(
         "FileText",
@@ -425,7 +465,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "GDPR, SOC2, and ISO readiness with documentation and policies.",
         ["GDPR", "SOC2 Prep", "Policy Docs", "Staff Training"],
         "100%",
-        "Audit Pass Rate"
+        "Audit Pass Rate",
       ),
       b(
         "Search",
@@ -433,7 +473,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "24/7 alerting on suspicious activity and misconfigurations.",
         ["SIEM Integration", "Log Analysis", "Incident Response", "Dashboards"],
         "24/7",
-        "Monitoring"
+        "Monitoring",
       ),
     ],
   },
@@ -452,7 +492,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Manual and automated testing across web, mobile, and API layers.",
         ["Test Plans", "Regression", "Exploratory", "UAT"],
         "500+",
-        "Projects Tested"
+        "Projects Tested",
       ),
       b(
         "Bot",
@@ -460,7 +500,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Selenium, Cypress, and Playwright suites that run on every commit.",
         ["E2E Tests", "API Tests", "CI Integration", "Reports"],
         "80%",
-        "Coverage Target"
+        "Coverage Target",
       ),
       b(
         "Zap",
@@ -468,15 +508,20 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Load and stress tests so your app handles traffic spikes.",
         ["Load Testing", "Stress Tests", "Bottleneck Reports", "Tuning"],
         "10x",
-        "Traffic Capacity"
+        "Traffic Capacity",
       ),
       b(
         "Bug",
         "Bug Tracking & Fixes",
         "Clear reproduction steps and prioritized fix workflows.",
-        ["Jira Integration", "Severity Triage", "Re-Test Cycles", "Release Sign-Off"],
+        [
+          "Jira Integration",
+          "Severity Triage",
+          "Re-Test Cycles",
+          "Release Sign-Off",
+        ],
         "50%",
-        "Fewer Prod Bugs"
+        "Fewer Prod Bugs",
       ),
     ],
   },
@@ -493,9 +538,14 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Users2",
         "Dedicated Dev Teams",
         "Full-stack engineers embedded in your workflow long-term.",
-        ["Dedicated Devs", "Sprint Alignment", "Knowledge Transfer", "Slack/Teams"],
+        [
+          "Dedicated Devs",
+          "Sprint Alignment",
+          "Knowledge Transfer",
+          "Slack/Teams",
+        ],
         "200+",
-        "Active Contracts"
+        "Active Contracts",
       ),
       b(
         "Headset",
@@ -503,7 +553,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Round-the-clock coverage for critical production systems.",
         ["L1 / L2 Support", "Incident Triage", "Escalation Paths", "SLA"],
         "24/7",
-        "Availability"
+        "Availability",
       ),
       b(
         "UserCheck",
@@ -511,7 +561,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Scale your team quickly without long hiring cycles.",
         ["Skill Matching", "Fast Onboarding", "Flexible Terms", "Replacement"],
         "2 weeks",
-        "Avg Onboard Time"
+        "Avg Onboard Time",
       ),
       b(
         "Settings",
@@ -519,7 +569,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
         "Security patches, dependency updates, and feature iterations.",
         ["Patch Management", "Dependency Updates", "Monitoring", "Backups"],
         "48h",
-        "Avg Response"
+        "Avg Response",
       ),
     ],
   },

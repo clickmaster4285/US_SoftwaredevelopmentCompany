@@ -229,10 +229,7 @@ export default function AwardsSection() {
         {/* Progress dots */}
         <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
           {AWARD_CARDS.map((_, i) => (
-            <span
-              key={i}
-              className="h-1.5 w-6 rounded-full bg-white/20"
-            />
+            <span key={i} className="h-1.5 w-6 rounded-full bg-white/20" />
           ))}
         </div>
       </div>

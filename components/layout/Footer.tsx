@@ -15,11 +15,17 @@ const NAV_SECONDARY = [
 ];
 
 const OFFICES = [
-  { city: "San Francisco", lines: ["300 Broadway,", "San Francisco, CA 94133"] },
+  {
+    city: "San Francisco",
+    lines: ["300 Broadway,", "San Francisco, CA 94133"],
+  },
   { city: "New York", lines: ["148 Lafayette St,", "New York, NY 10013"] },
   { city: "Austin", lines: ["600 Congress Ave,", "Austin, TX 78701"] },
   { city: "Denver", lines: ["1700 Lincoln St 17th fl,", "Denver, CO 80203"] },
-  { city: "Lisbon", lines: ["Av. Alm. Reis 139, 1150-015", "Lisbon, Portugal"] },
+  {
+    city: "Lisbon",
+    lines: ["Av. Alm. Reis 139, 1150-015", "Lisbon, Portugal"],
+  },
   { city: "Belgrade", lines: ["Nušićeva 15, 11000", "Belgrade, Serbia"] },
 ];
 
@@ -63,7 +69,9 @@ export default function Footer() {
                   >
                     sales@Clickmasterssoftwaredevelopmentcompany.com
                   </a>
-                  <p className="text-base md:text-lg opacity-70">+1 325 2024074</p>
+                  <p className="text-base md:text-lg opacity-70">
+                    +1 325 2024074
+                  </p>
                 </div>
               </div>
             </div>
@@ -121,7 +129,9 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-6">
             {OFFICES.map((o) => (
               <div key={o.city}>
-                <p className="text-sm font-semibold mb-2 tracking-tight">{o.city}</p>
+                <p className="text-sm font-semibold mb-2 tracking-tight">
+                  {o.city}
+                </p>
                 <address className="not-italic text-sm leading-relaxed opacity-60">
                   {o.lines.map((l) => (
                     <span key={l} className="block">
@@ -157,9 +167,15 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-5 text-sm opacity-60">
               <span>©2026 Clickmasterssoftwaredevelopmentcompany</span>
               <span className="hidden md:inline opacity-30">|</span>
-              <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>
-              <a href="#" className="hover:opacity-100 transition-opacity">Terms</a>
-              <a href="#" className="hover:opacity-100 transition-opacity">Sitemap</a>
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                Privacy
+              </a>
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                Terms
+              </a>
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                Sitemap
+              </a>
             </div>
           </div>
         </div>

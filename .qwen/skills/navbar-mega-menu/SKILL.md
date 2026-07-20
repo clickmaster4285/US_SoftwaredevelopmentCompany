@@ -2,7 +2,7 @@
 name: navbar-mega-menu
 description: Build a two-column hover mega menu for Next.js navbars with left categories and right sub-items driven by external data
 source: auto-skill
-extracted_at: '2026-06-05T12:10:00.000Z'
+extracted_at: "2026-06-05T12:10:00.000Z"
 ---
 
 ## Pattern: Two-Column Hover Mega Menu
@@ -15,15 +15,17 @@ Define your menu data as an array of categories, each with a `label`, `slug`, an
 
 ```ts
 // data/main-services.js (or any data file)
-export const serviceMenuSections = Object.values(mainServicesData).map(main => ({
-  label: main.title,       // e.g. "Software Development"
-  slug: main.slug,         // e.g. "software-development"
-  items: main.subServices.map(sub => ({
-    title: sub.title,      // e.g. "Custom Software Development"
-    slug: sub.slug,        // e.g. "custom-software-development"
-    description: sub.description,
-  })),
-}));
+export const serviceMenuSections = Object.values(mainServicesData).map(
+  (main) => ({
+    label: main.title, // e.g. "Software Development"
+    slug: main.slug, // e.g. "software-development"
+    items: main.subServices.map((sub) => ({
+      title: sub.title, // e.g. "Custom Software Development"
+      slug: sub.slug, // e.g. "custom-software-development"
+      description: sub.description,
+    })),
+  }),
+);
 ```
 
 ### MegaMenu Component
@@ -39,7 +41,7 @@ type MegaMenuProps = {
     slug: string;
     items: Array<{ title: string; slug: string; description: string }>;
   }>;
-  trigger: ReactNode;  // The nav link element that opens the menu
+  trigger: ReactNode; // The nav link element that opens the menu
 };
 
 export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
@@ -62,27 +64,45 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
     }, 250);
   };
 
-  useEffect(() => () => { if (closeTimer.current) clearTimeout(closeTimer.current); }, []);
+  useEffect(
+    () => () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+    },
+    [],
+  );
 
   const active = categories[hoveredIdx];
 
   return (
-    <div className="relative" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+    <div
+      className="relative"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
       {trigger}
       {/* Hover bridge — prevents menu from closing while moving cursor to panel */}
       <div className="absolute -bottom-4 left-0 right-0 h-4" />
 
       {visible && (
-        <div className={`absolute top-full left-1/2 z-50 w-[min(960px,92vw)] pt-3 transition-all duration-300
-          ${open ? "translate-x-[-50%] translate-y-0 scale-100 opacity-100"
-                   : "translate-x-[-50%] -translate-y-2 scale-[0.97] opacity-0"}`}>
+        <div
+          className={`absolute top-full left-1/2 z-50 w-[min(960px,92vw)] pt-3 transition-all duration-300
+          ${
+            open
+              ? "translate-x-[-50%] translate-y-0 scale-100 opacity-100"
+              : "translate-x-[-50%] -translate-y-2 scale-[0.97] opacity-0"
+          }`}
+        >
           <div className="flex min-h-[340px] max-h-[70vh] rounded-2xl border bg-white shadow-2xl overflow-hidden">
             {/* Left: Categories */}
             <div className="w-[260px] shrink-0 border-r bg-gray-50 p-4">
               {categories.map((cat, i) => (
-                <button key={cat.slug} type="button" onMouseEnter={() => setHoveredIdx(i)}
+                <button
+                  key={cat.slug}
+                  type="button"
+                  onMouseEnter={() => setHoveredIdx(i)}
                   className={`w-full flex items-center justify-between rounded-xl px-3 py-2.5 text-left
-                    ${hoveredIdx === i ? "bg-indigo-600 text-white" : "hover:bg-indigo-50"}`}>
+                    ${hoveredIdx === i ? "bg-indigo-600 text-white" : "hover:bg-indigo-50"}`}
+                >
                   <span className="text-[13px] font-medium">{cat.label}</span>
                 </button>
               ))}
@@ -92,10 +112,15 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
               {active && (
                 <div className="grid grid-cols-2 gap-3">
                   {active.items.map((item) => (
-                    <a key={item.slug} href={`/services/${active.slug}/${item.slug}`}
-                      className="rounded-xl border p-3.5 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                    <a
+                      key={item.slug}
+                      href={`/services/${active.slug}/${item.slug}`}
+                      className="rounded-xl border p-3.5 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                    >
                       <p className="text-[13px] font-semibold">{item.title}</p>
-                      <p className="text-[11px] text-gray-500 line-clamp-2">{item.description}</p>
+                      <p className="text-[11px] text-gray-500 line-clamp-2">
+                        {item.description}
+                      </p>
                     </a>
                   ))}
                 </div>

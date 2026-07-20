@@ -76,7 +76,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between px-5 md:px-8 h-14 md:h-16">
             {/* ── Logo ── */}
             <Link
-              href="/" className="group flex items-center gap-2.5 transition-opacity hover:opacity-80" >
+              href="/"
+              className="group flex items-center gap-2.5 transition-opacity hover:opacity-80"
+            >
               <Image
                 src="/cm-logos/logo.webp"
                 alt="Clickmasters Logo"
@@ -140,7 +142,11 @@ export default function Navbar() {
                   stroke="currentColor"
                   strokeWidth={2.5}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5"
+                  />
                 </svg>
               </a>
 
@@ -159,19 +165,25 @@ export default function Navbar() {
                   <span
                     className={[
                       "absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300",
-                      mobileOpen ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0",
+                      mobileOpen
+                        ? "top-1/2 -translate-y-1/2 rotate-45"
+                        : "top-0",
                     ].join(" ")}
                   />
                   <span
                     className={[
                       "absolute left-0 right-0 top-1/2 h-[1.5px] -translate-y-1/2 bg-current transition-all duration-300",
-                      mobileOpen ? "scale-x-0 opacity-0" : "scale-x-100 opacity-100",
+                      mobileOpen
+                        ? "scale-x-0 opacity-0"
+                        : "scale-x-100 opacity-100",
                     ].join(" ")}
                   />
                   <span
                     className={[
                       "absolute left-0 right-0 h-[1.5px] bg-current transition-all duration-300",
-                      mobileOpen ? "top-1/2 -translate-y-1/2 -rotate-45" : "bottom-0",
+                      mobileOpen
+                        ? "top-1/2 -translate-y-1/2 -rotate-45"
+                        : "bottom-0",
                     ].join(" ")}
                   />
                 </span>
@@ -201,12 +213,18 @@ export default function Navbar() {
         <div
           className={[
             "absolute inset-x-0 top-0 bg-white/95 backdrop-blur-2xl shadow-2xl transition-all duration-500 ease-out",
-            mobileOpen ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0",
+            mobileOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-8 opacity-0",
           ].join(" ")}
         >
           {/* Header */}
           <div className="flex items-center justify-between px-5 pt-5 pb-3">
-            <a href="#" className="flex items-center gap-2.5" onClick={closeMobile}>
+            <a
+              href="#"
+              className="flex items-center gap-2.5"
+              onClick={closeMobile}
+            >
               <span className="relative flex h-7 w-7 items-center justify-center">
                 <span className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-primary-500 opacity-90" />
                 <span className="absolute inset-[3px] rounded-full bg-white/90" />
@@ -221,8 +239,18 @@ export default function Navbar() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-transform hover:scale-105"
               aria-label="Close menu"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -259,8 +287,18 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 text-base font-semibold text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-[1.02]"
             >
               Get in touch
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5" />
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 12h18m0 0-7.5-7.5M21 12l-7.5 7.5"
+                />
               </svg>
             </a>
           </div>

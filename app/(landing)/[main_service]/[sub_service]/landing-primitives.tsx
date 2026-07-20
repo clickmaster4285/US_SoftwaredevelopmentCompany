@@ -47,7 +47,9 @@ export function SectionHeading({
         {title}
       </h2>
       {copy ? (
-        <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg">{copy}</p>
+        <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg">
+          {copy}
+        </p>
       ) : null}
     </div>
   );

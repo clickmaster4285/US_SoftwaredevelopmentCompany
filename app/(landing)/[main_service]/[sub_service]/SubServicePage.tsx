@@ -1,9 +1,5 @@
 import { CheckCircle2, Clock3 } from "lucide-react";
-import {
-  Hero,
-  PageFrame,
-  SectionHeading,
-} from "./landing-primitives";
+import { Hero, PageFrame, SectionHeading } from "./landing-primitives";
 import ProcessSection from "./process-section";
 import type { MainService, SubService } from "./service-data";
 
@@ -50,7 +46,9 @@ export default function SubServicePage({
                 className="rounded-[8px] border border-black/10 bg-white p-6 shadow-sm"
               >
                 <CheckCircle2 className="mb-6 h-5 w-5 text-[#e05b35]" />
-                <p className="text-xl font-semibold leading-tight">{highlight}</p>
+                <p className="text-xl font-semibold leading-tight">
+                  {highlight}
+                </p>
               </div>
             ))}
           </div>

@@ -46,7 +46,10 @@ export default function ServicesDive() {
       className="relative"
       style={{ height: "500vh", background: "oklch(0.18 0.09 250)" }}
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden" style={{ background: deepBg }}>
+      <div
+        className="sticky top-0 h-screen w-full overflow-hidden"
+        style={{ background: deepBg }}
+      >
         {/* Sky overlay fades as we dive */}
         <div
           className="absolute inset-0 pointer-events-none transition-opacity duration-150"
@@ -58,7 +61,10 @@ export default function ServicesDive() {
         />
 
         {/* Light rays from surface */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ opacity: depth * 0.9 }}>
+        <div
+          className="absolute inset-0 pointer-events-none overflow-hidden"
+          style={{ opacity: depth * 0.9 }}
+        >
           {RAYS.map((r, i) => (
             <div
               key={i}
@@ -86,7 +92,10 @@ export default function ServicesDive() {
         />
 
         {/* Bubbles */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ opacity: depth }}>
+        <div
+          className="absolute inset-0 pointer-events-none overflow-hidden"
+          style={{ opacity: depth }}
+        >
           {BUBBLES.map((b, i) => (
             <span
               key={i}
@@ -108,8 +117,12 @@ export default function ServicesDive() {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none transition-opacity duration-300"
           style={{ opacity: Math.max(0, 1 - depth * 4), color: "#0d2a4a" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-2">🌊 Our Services</h2>
-          <p className="text-base md:text-lg opacity-80">Scroll down to dive in</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-2">
+            🌊 Our Services
+          </h2>
+          <p className="text-base md:text-lg opacity-80">
+            Scroll down to dive in
+          </p>
         </div>
 
         {/* Underwater heading */}
@@ -121,8 +134,12 @@ export default function ServicesDive() {
             textShadow: "0 2px 16px rgba(0,100,200,0.7)",
           }}
         >
-          <h3 className="text-xl md:text-3xl font-semibold mb-1">Explore Our Services</h3>
-          <p className="text-sm opacity-80">Discover what we offer in the deep</p>
+          <h3 className="text-xl md:text-3xl font-semibold mb-1">
+            Explore Our Services
+          </h3>
+          <p className="text-sm opacity-80">
+            Discover what we offer in the deep
+          </p>
         </div>
 
         {/* Services cards grid */}
@@ -150,12 +167,19 @@ export default function ServicesDive() {
                 >
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center text-xl border border-white/30"
-                    style={{ background: "rgba(255,255,255,0.2)", color: "white" }}
+                    style={{
+                      background: "rgba(255,255,255,0.2)",
+                      color: "white",
+                    }}
                   >
                     {s.icon}
                   </div>
-                  <div className="text-sm font-semibold text-white leading-tight">{s.title}</div>
-                  <div className="text-xs text-white/75 leading-snug">{s.desc}</div>
+                  <div className="text-sm font-semibold text-white leading-tight">
+                    {s.title}
+                  </div>
+                  <div className="text-xs text-white/75 leading-snug">
+                    {s.desc}
+                  </div>
                 </div>
               );
             })}
@@ -175,7 +199,10 @@ export default function ServicesDive() {
         </div>
         <div
           className="absolute right-6 z-20 text-xs font-mono text-white/80 transition-opacity"
-          style={{ top: `calc(${p * 100}% + 12px)`, opacity: depth > 0.05 ? 1 : 0 }}
+          style={{
+            top: `calc(${p * 100}% + 12px)`,
+            opacity: depth > 0.05 ? 1 : 0,
+          }}
         >
           {depthMeters}m
         </div>

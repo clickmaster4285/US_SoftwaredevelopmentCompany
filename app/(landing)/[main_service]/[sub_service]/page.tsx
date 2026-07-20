@@ -21,7 +21,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { main_service, sub_service } = await params;
   const service = services[main_service];
-  const subService = service?.subServices?.find((item) => item.slug === sub_service);
+  const subService = service?.subServices?.find(
+    (item) => item.slug === sub_service,
+  );
 
   if (!service || !subService) {
     return {
@@ -38,7 +40,9 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function Page({ params }: PageProps) {
   const { main_service, sub_service } = await params;
   const service = services[main_service];
-  const subService = service?.subServices?.find((item) => item.slug === sub_service);
+  const subService = service?.subServices?.find(
+    (item) => item.slug === sub_service,
+  );
 
   if (!service || !subService) {
     notFound();

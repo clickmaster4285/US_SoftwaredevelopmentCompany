@@ -2,7 +2,13 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { CAPS, STACK_ROW_1, STACK_ROW_2, STACK_ROW_3, STEPS } from "@/app/(landing)/data";
+import {
+  CAPS,
+  STACK_ROW_1,
+  STACK_ROW_2,
+  STACK_ROW_3,
+  STEPS,
+} from "@/app/(landing)/data";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -43,12 +49,19 @@ function CapabilitiesSection() {
           duration: 0.9,
           ease: "power4.out",
           stagger: 0.06,
-          scrollTrigger: { id: "cap-words", trigger: headRef.current, start: "top 80%" },
+          scrollTrigger: {
+            id: "cap-words",
+            trigger: headRef.current,
+            start: "top 80%",
+          },
         },
       );
 
       const cards = gsap.utils.toArray<HTMLElement>("[data-cap-card]");
-      gsap.set(cards, { transformPerspective: 1000, transformOrigin: "center bottom" });
+      gsap.set(cards, {
+        transformPerspective: 1000,
+        transformOrigin: "center bottom",
+      });
       gsap.fromTo(
         cards,
         { y: 120, opacity: 0, rotateX: -25, scale: 0.9 },
@@ -60,14 +73,24 @@ function CapabilitiesSection() {
           duration: 1,
           ease: "power3.out",
           stagger: { each: 0.1, from: "start" },
-          scrollTrigger: { id: "cap-cards", trigger: gridRef.current, start: "top 75%" },
+          scrollTrigger: {
+            id: "cap-cards",
+            trigger: gridRef.current,
+            start: "top 75%",
+          },
         },
       );
 
       gsap.to(blobRef.current, {
         yPercent: -25,
         ease: "none",
-        scrollTrigger: { id: "cap-blob", trigger: wrapRef.current, start: "top bottom", end: "bottom top", scrub: true },
+        scrollTrigger: {
+          id: "cap-blob",
+          trigger: wrapRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
       });
 
       gsap.to("[data-cap-icon]", {
@@ -94,7 +117,8 @@ function CapabilitiesSection() {
           backgroundImage:
             "linear-gradient(oklch(0.18 0.02 250) 1px, transparent 1px), linear-gradient(90deg, oklch(0.18 0.02 250) 1px, transparent 1px)",
           backgroundSize: "56px 56px",
-          maskImage: "radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent 75%)",
+          maskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent 75%)",
         }}
       />
 
@@ -116,20 +140,42 @@ function CapabilitiesSection() {
           </p>
           <h2 className="text-[clamp(2.25rem,5.5vw,4.75rem)] font-semibold tracking-tight leading-[1.02] overflow-hidden">
             {["A", "full-stack", "software", "studio"].map((w, i) => (
-              <span key={i} data-cap-word className="inline-block mr-[0.25em] will-change-transform">{w}</span>
+              <span
+                key={i}
+                data-cap-word
+                className="inline-block mr-[0.25em] will-change-transform"
+              >
+                {w}
+              </span>
             ))}
             <br />
             {["for"].map((w, i) => (
-              <span key={`a${i}`} data-cap-word className="inline-block mr-[0.25em] will-change-transform">{w}</span>
+              <span
+                key={`a${i}`}
+                data-cap-word
+                className="inline-block mr-[0.25em] will-change-transform"
+              >
+                {w}
+              </span>
             ))}
-            <span data-cap-word className="inline-block italic font-serif will-change-transform">ambitious teams</span>
+            <span
+              data-cap-word
+              className="inline-block italic font-serif will-change-transform"
+            >
+              ambitious teams
+            </span>
           </h2>
           <p className="mt-7 text-base md:text-lg opacity-70 max-w-xl">
-            From the first wireframe to the millionth user — design, engineering, AI and infrastructure under one roof.
+            From the first wireframe to the millionth user — design,
+            engineering, AI and infrastructure under one roof.
           </p>
         </div>
 
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5" style={{ perspective: "1200px" }}>
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5"
+          style={{ perspective: "1200px" }}
+        >
           {CAPS.map((c) => (
             <div
               key={c.n}
@@ -158,7 +204,9 @@ function CapabilitiesSection() {
               />
 
               <div className="relative flex items-start justify-between mb-12">
-                <span className="text-[11px] uppercase tracking-[0.4em] opacity-50 font-medium">{c.n}</span>
+                <span className="text-[11px] uppercase tracking-[0.4em] opacity-50 font-medium">
+                  {c.n}
+                </span>
                 <span
                   data-cap-icon
                   className="text-2xl will-change-transform"
@@ -202,12 +250,15 @@ function TechStackSection() {
   return (
     <section className="relative bg-[oklch(0.10_0.015_250)] text-[oklch(0.97_0.005_80)] py-24 md:py-32 overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center mb-14">
-        <p className="text-xs uppercase tracking-[0.4em] opacity-50 mb-4">The toolkit</p>
+        <p className="text-xs uppercase tracking-[0.4em] opacity-50 mb-4">
+          The toolkit
+        </p>
         <h2 className="text-[clamp(2rem,5vw,4rem)] font-semibold tracking-tight leading-[1.02]">
           Modern stack, <span className="italic font-serif">battle-tested</span>
         </h2>
         <p className="mt-5 text-sm md:text-base opacity-60 max-w-xl mx-auto">
-          We choose tools that age well — fast to ship today, easy to maintain tomorrow.
+          We choose tools that age well — fast to ship today, easy to maintain
+          tomorrow.
         </p>
       </div>
 
@@ -218,14 +269,23 @@ function TechStackSection() {
   );
 }
 
-function StackRow({ items, duration, direction }: { items: string[]; duration: number; direction: "left" | "right" }) {
+function StackRow({
+  items,
+  duration,
+  direction,
+}: {
+  items: string[];
+  duration: number;
+  direction: "left" | "right";
+}) {
   const repeated = [...items, ...items, ...items];
   return (
     <div className="relative py-3 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
       <div
         className="flex gap-4 md:gap-5 whitespace-nowrap w-max will-change-transform"
         style={{
-          animationName: direction === "left" ? "marquee-left" : "marquee-right",
+          animationName:
+            direction === "left" ? "marquee-left" : "marquee-right",
           animationDuration: `${duration}s`,
           animationTimingFunction: "linear",
           animationIterationCount: "infinite",
@@ -255,7 +315,9 @@ function ProcessPathSection() {
 
   useGSAP(
     () => {
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
 
       if (reduceMotion) {
         gsap.set(railFillRef.current, { scaleY: 1 });
@@ -319,7 +381,11 @@ function ProcessPathSection() {
             borderColor: "oklch(0.20 0.04 250)",
             color: "oklch(0.97 0.005 80)",
             duration: 0.4,
-            scrollTrigger: { trigger: el, start: "top 65%", toggleActions: "play none none reverse" },
+            scrollTrigger: {
+              trigger: el,
+              start: "top 65%",
+              toggleActions: "play none none reverse",
+            },
           });
         }
       });
@@ -342,7 +408,8 @@ function ProcessPathSection() {
             How a project <span className="italic font-serif">moves</span>
           </h2>
           <p className="mt-5 text-base opacity-70">
-            Five stages, no surprises — here's what happens between the first call and going live.
+            Five stages, no surprises — here's what happens between the first
+            call and going live.
           </p>
         </div>
 
@@ -369,7 +436,11 @@ function ProcessPathSection() {
 
             <div className="flex flex-col gap-12 md:gap-16">
               {STEPS.map((s) => (
-                <div key={s.k} data-step className="relative flex gap-6 md:gap-8">
+                <div
+                  key={s.k}
+                  data-step
+                  className="relative flex gap-6 md:gap-8"
+                >
                   <div
                     data-step-node
                     className="relative z-10 shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-[oklch(0.18_0.02_250)]/20 bg-[oklch(0.97_0.005_80)] flex items-center justify-center font-mono text-sm tracking-tight"
@@ -377,8 +448,12 @@ function ProcessPathSection() {
                     {s.k}
                   </div>
                   <div data-step-content className="pt-2 md:pt-3 max-w-md">
-                    <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-2">{s.t}</h3>
-                    <p className="text-sm md:text-base opacity-70 leading-relaxed">{s.d}</p>
+                    <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-2">
+                      {s.t}
+                    </h3>
+                    <p className="text-sm md:text-base opacity-70 leading-relaxed">
+                      {s.d}
+                    </p>
                   </div>
                 </div>
               ))}

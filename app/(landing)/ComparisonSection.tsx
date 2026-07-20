@@ -1,53 +1,53 @@
 // components/ComparisonSection.tsx
 
-const COMPARISON_ROWS: { 
-  label: string; 
-  us: string; 
-  inhouse: string; 
-  freelancers: string; 
-  agencies: string 
+const COMPARISON_ROWS: {
+  label: string;
+  us: string;
+  inhouse: string;
+  freelancers: string;
+  agencies: string;
 }[] = [
-  { 
-    label: "Tech Expertise", 
-    us: "Senior full-stack engineers", 
-    inhouse: "Limited skill range", 
-    freelancers: "Generalist skills", 
-    agencies: "Junior-heavy teams" 
+  {
+    label: "Tech Expertise",
+    us: "Senior full-stack engineers",
+    inhouse: "Limited skill range",
+    freelancers: "Generalist skills",
+    agencies: "Junior-heavy teams",
   },
-  { 
-    label: "Speed to Ship", 
-    us: "MVP in 4–6 weeks", 
-    inhouse: "Slow ramp-up (3–6 mo)", 
-    freelancers: "Trial & error", 
-    agencies: "Endless discovery phases" 
+  {
+    label: "Speed to Ship",
+    us: "MVP in 4–6 weeks",
+    inhouse: "Slow ramp-up (3–6 mo)",
+    freelancers: "Trial & error",
+    agencies: "Endless discovery phases",
   },
-  { 
-    label: "Code Quality", 
-    us: "Production-grade, tested", 
-    inhouse: "Tech debt over time", 
-    freelancers: "Inconsistent standards", 
-    agencies: "Template-driven builds" 
+  {
+    label: "Code Quality",
+    us: "Production-grade, tested",
+    inhouse: "Tech debt over time",
+    freelancers: "Inconsistent standards",
+    agencies: "Template-driven builds",
   },
-  { 
-    label: "Communication", 
-    us: "Daily standups, Slack", 
-    inhouse: "Internal silos", 
-    freelancers: "You manage them", 
-    agencies: "Account-manager filters" 
+  {
+    label: "Communication",
+    us: "Daily standups, Slack",
+    inhouse: "Internal silos",
+    freelancers: "You manage them",
+    agencies: "Account-manager filters",
   },
-  { 
-    label: "Cost", 
-    us: "Niche team, fair rates", 
-    inhouse: "High fixed overhead", 
-    freelancers: "Cheap but unreliable", 
-    agencies: "High cost, low fit" 
+  {
+    label: "Cost",
+    us: "Niche team, fair rates",
+    inhouse: "High fixed overhead",
+    freelancers: "Cheap but unreliable",
+    agencies: "High cost, low fit",
   },
-  { 
-    label: "Secret Sauce?", 
-    us: "AI-assisted dev + 8+ yrs experience", 
-    inhouse: "No outside benchmarks", 
-    freelancers: "Guesswork-based", 
-    agencies: "One-size-fits-all stack" 
+  {
+    label: "Secret Sauce?",
+    us: "AI-assisted dev + 8+ yrs experience",
+    inhouse: "No outside benchmarks",
+    freelancers: "Guesswork-based",
+    agencies: "One-size-fits-all stack",
   },
 ];
 
@@ -61,7 +61,9 @@ export default function ComparisonSection() {
         <h2 className="mt-4 text-[clamp(2rem,4vw,4rem)] font-semibold tracking-tight">
           A simple framework for better products.
         </h2>
-        <p className="mt-5 text-sm md:text-base opacity-60">Here's why ours wins.</p>
+        <p className="mt-5 text-sm md:text-base opacity-60">
+          Here's why ours wins.
+        </p>
       </div>
 
       <div className="mx-auto mt-16 max-w-6xl sm:px-4 ">

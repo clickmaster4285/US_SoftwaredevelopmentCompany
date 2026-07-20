@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { TESTIMONIALS, SPACING_Z, WALL_X, CARD_ROT_Y, BASE_DEPTH } from "@/app/(landing)/data";
+import {
+  TESTIMONIALS,
+  SPACING_Z,
+  WALL_X,
+  CARD_ROT_Y,
+  BASE_DEPTH,
+} from "@/app/(landing)/data";
 
 export default function Testimonials3DRoom() {
   const sectionRef = useRef<HTMLDivElement>(null);

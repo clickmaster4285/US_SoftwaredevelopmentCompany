@@ -1,24 +1,24 @@
-declare module '*.jpg' {
+declare module "*.jpg" {
   const src: string;
   export default src;
 }
-declare module '*.jpeg' {
+declare module "*.jpeg" {
   const src: string;
   export default src;
 }
-declare module '*.png' {
+declare module "*.png" {
   const src: string;
   export default src;
 }
-declare module '*.webp' {
+declare module "*.webp" {
   const src: string;
   export default src;
 }
-declare module '*.mp4' {
+declare module "*.mp4" {
   const src: string;
   export default src;
 }
-declare module '*.asset.json' {
+declare module "*.asset.json" {
   const value: any;
   export default value;
 }

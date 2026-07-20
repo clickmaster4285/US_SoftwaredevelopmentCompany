@@ -3,7 +3,9 @@ For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMA
 # Work Log: 2026-06-05 Around 6 PM
 
 ## User Request
+
 The user asked to make the pages under `app/(landing)/` for:
+
 - `about`
 - `contact`
 - main service pages
@@ -12,6 +14,7 @@ The user asked to make the pages under `app/(landing)/` for:
 The goal was to keep a record of what was done, how it was done, and when, so future work can continue from the correct project state.
 
 ## What Was Done
+
 - Added real route implementations for:
   - `/about`
   - `/contact`
@@ -39,6 +42,7 @@ The goal was to keep a record of what was done, how it was done, and when, so fu
   - Footer Services/About/Contact point to real routes
 
 ## How It Was Built
+
 - Used the existing Next.js App Router route group `app/(landing)/`.
 - Kept service pages data-driven instead of manually creating a page for each service.
 - Used `mainServicesData`, `serviceMenuSections`, and `iconMap` from `data/main-services.js`.
@@ -54,6 +58,7 @@ The goal was to keep a record of what was done, how it was done, and when, so fu
 - Kept styling in Tailwind utility classes inside the shared shell, matching the existing landing-page direction.
 
 ## Verification
+
 - Ran production build:
   - `npm run build`
 - Build passed successfully.
@@ -72,6 +77,7 @@ The goal was to keep a record of what was done, how it was done, and when, so fu
   - `/software-development/saas-product-development`
 
 ## Local Server
+
 - Started the Next.js dev server after implementation.
 - Local test URL:
   - `http://localhost:3000`
@@ -82,6 +88,7 @@ The goal was to keep a record of what was done, how it was done, and when, so fu
   - `http://localhost:3000/software-development/custom-software-development`
 
 ## Important Follow-Up Notes
+
 - The older "Current State" section below was written before this route work and may still describe the app as landing-only.
 - The app now has additional route pages under `app/(landing)/`.
 - Reconcile `claude.md` and `MIGRATION_SUMMARY.md` later so both reflect the newer multi-page landing/service structure.
@@ -90,11 +97,13 @@ The goal was to keep a record of what was done, how it was done, and when, so fu
 # Project Overview: parallax-portal-play-main
 
 ## Project Purpose
+
 A single-page creative agency / portfolio site (ClickMasters branding). Landing-only — no admin, no auth, no API routes, no CMS. Built with Next.js App Router, React 19, Tailwind 4, with scroll-driven hero animation and video-led sections. Marketed toward brands/startups needing "branding & UI/UX design" work.
 
 ## Current State (verified 2026-06-05)
 
 ### Framework & Runtime
+
 - **Next.js**: 16.2.4 (App Router, Turbopack)
 - **React**: 19.2.0
 - **Tailwind**: 4.2.1 (`@tailwindcss/postcss` 4.2.4)
@@ -106,9 +115,11 @@ A single-page creative agency / portfolio site (ClickMasters branding). Landing-
 - **State**: Redux Toolkit + react-redux installed but **unused** in current code
 
 ### Architecture: Single landing page
+
 The entire app is one route: `/`. `app/(landing)/` is a route group, not a route — it holds section components imported directly by `app/page.tsx`. There is **no `(landing)/page.tsx`**.
 
 ## Actual File Tree (on disk)
+
 ```
 app/
 ├── (landing)/             # Route group, NOT a route — holds section components
@@ -168,7 +179,9 @@ package.json               # Many unused deps still present
 ```
 
 ## App Composition (`app/page.tsx`)
+
 A single client component, top to bottom:
+
 1. **Hero** — sticky scroll-pinned, clip-path morphing reveal, 260vh tall, `hero-video.mp4` background
 2. `ProjectsStack` — 4-card grid (Norton, Lumen, Northwind, Atelier) from `public/assets/project-*.jpg`
 3. `DominateSection` — copy + `dominate-video.mp4`
@@ -184,24 +197,29 @@ A single client component, top to bottom:
 ## Known Issues / Drift
 
 ### Config drift
+
 - **`next.config.mjs`** is missing the `turbopack: {}` key (Turbopack is the default dev bundler in Next 16, but explicit declaration is documented best practice and the MIGRATION_SUMMARY claims Turbopack is configured).
 - **`tsconfig.json`** includes `server.ts`, `start.ts`, `components` but **not** `lib/`, `data/`, `hooks/`, `types/`. Inconsistent — `lib/utils.ts` is referenced by code but the dir isn't listed.
 - **`app/layout.tsx`** metadata is still placeholder ("hmmmmmm....", "Immersive Hero creates an engaging hero section...") — never updated to ClickMasters branding.
 
 ### Dead code / leftover
+
 - `server.ts` + `start.ts` at root — TanStack Start entries, unrelated to Next.js. Should be deleted or moved into a separate workspace.
 - `routes/` — empty leftover dir from TanStack Router. Delete.
 - **`@tanstack/react-start`** dependency in `package.json` — unused by current Next.js app.
 - **`@reduxjs/toolkit` + `react-redux`** — installed, no usage in current code.
 
 ### Document drift
+
 - `MIGRATION_SUMMARY.md` describes an `(admin)/`, `(auth)/`, `api/`, `models/`, `pages/` structure that **does not exist on disk**. Either the doc is aspirational/historical, or those dirs were removed during cleanup.
 - The file tree embedded in the previous version of this `claude.md` is fictional — none of those routes exist.
 
 ### Stale `.next` cache
+
 Documented as a recurring build failure. Standard fix: `rmdir /s /q .next && npm run build`.
 
 ## What Is Working
+
 - Tailwind 4 OKLCH theme system compiles cleanly
 - React Query provider mounts via `app/providers.tsx`
 - All public assets are present in `public/assets/` and the JPG imports work (typed via `types/assets.d.ts`)
@@ -210,7 +228,9 @@ Documented as a recurring build failure. Standard fix: `rmdir /s /q .next && npm
 - `app/error.tsx` and `app/not-found.tsx` exist and are App-Router-compliant
 
 ## Migration Status
+
 ✅ Done
+
 - Vite → Next.js App Router scaffolding
 - Tailwind 4 + Radix + shadcn component library
 - React Query provider wired into root layout
@@ -219,17 +239,20 @@ Documented as a recurring build failure. Standard fix: `rmdir /s /q .next && npm
 - TypeScript declarations for media imports
 
 🟡 In progress
+
 - Document accuracy (`claude.md` + `MIGRATION_SUMMARY.md` still describe removed structure)
 - Layout metadata still placeholder
 - `next.config.mjs` missing Turbopack declaration
 
 ❌ Not done
+
 - Admin / auth / API / CMS routes (MIGRATION_SUMMARY implied these existed)
 - Data models (none on disk)
 - API features (blogApi, caseStudyApi, etc. in MIGRATION_SUMMARY do not exist)
 - Dead-code cleanup: `server.ts`, `start.ts`, `routes/`, unused deps
 
 ## Next Steps
+
 1. **Reconcile docs with reality** — update `MIGRATION_SUMMARY.md` to reflect the single-landing-page reality, or re-add the admin/auth/API sections if they are actually planned
 2. **Update `app/layout.tsx` metadata** to ClickMasters branding
 3. **Delete dead code**: `server.ts`, `start.ts`, `routes/`, unused deps in `package.json`

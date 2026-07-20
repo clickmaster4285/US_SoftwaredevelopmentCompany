@@ -1,57 +1,65 @@
 // components/TrustedBy.tsx
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
-import { CheckCircle, Code2, Users, Award, Zap, Star } from 'lucide-react';
+import { useEffect, useRef, useState } from "react";
+import { CheckCircle, Code2, Users, Award, Zap, Star } from "lucide-react";
 
 const TRUST_REASONS = [
   {
-    id: 'projects',
-    label: 'Projects Delivered',
+    id: "projects",
+    label: "Projects Delivered",
     value: 480,
-    suffix: '+',
+    suffix: "+",
     icon: Code2,
-    description: 'From MVPs to enterprise platforms',
-    bg: '#ffffff',
-    fg: '#1a1a1a',
-    accent: 'rgba(0,0,0,0.06)'
+    description: "From MVPs to enterprise platforms",
+    bg: "#ffffff",
+    fg: "#1a1a1a",
+    accent: "rgba(0,0,0,0.06)",
   },
   {
-    id: 'clients',
-    label: 'Happy Clients',
+    id: "clients",
+    label: "Happy Clients",
     value: 120,
-    suffix: '+',
+    suffix: "+",
     icon: Users,
-    description: 'Across 15+ industries',
-    bg: '#f5f5f5',
-    fg: '#1a1a1a',
-    accent: 'rgba(0,0,0,0.06)'
+    description: "Across 15+ industries",
+    bg: "#f5f5f5",
+    fg: "#1a1a1a",
+    accent: "rgba(0,0,0,0.06)",
   },
   {
-    id: 'experience',
-    label: 'Years Combined Experience',
+    id: "experience",
+    label: "Years Combined Experience",
     value: 8,
-    suffix: '+ yrs',
+    suffix: "+ yrs",
     icon: Award,
-    description: 'Deep full-stack expertise',
-    bg: '#ffffff',
-    fg: '#1a1a1a',
-    accent: 'rgba(0,0,0,0.06)'
+    description: "Deep full-stack expertise",
+    bg: "#ffffff",
+    fg: "#1a1a1a",
+    accent: "rgba(0,0,0,0.06)",
   },
   {
-    id: 'satisfaction',
-    label: 'Client Satisfaction',
+    id: "satisfaction",
+    label: "Client Satisfaction",
     value: 98,
-    suffix: '%',
+    suffix: "%",
     icon: Star,
-    description: 'Average project rating',
-    bg: '#f5f5f5',
-    fg: '#1a1a1a',
-    accent: 'rgba(0,0,0,0.06)'
-  }
+    description: "Average project rating",
+    bg: "#f5f5f5",
+    fg: "#1a1a1a",
+    accent: "rgba(0,0,0,0.06)",
+  },
 ];
 
-const Counter = ({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) => {
+const Counter = ({
+  target,
+  suffix = "",
+  duration = 2000,
+}: {
+  target: number;
+  suffix?: string;
+  duration?: number;
+}) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +71,7 @@ const Counter = ({ target, suffix = '', duration = 2000 }: { target: number; suf
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (ref.current) {
@@ -82,10 +90,10 @@ const Counter = ({ target, suffix = '', duration = 2000 }: { target: number; suf
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
-      
+
       const eased = 1 - Math.pow(1 - progress, 3);
       const current = Math.floor(eased * target);
-      
+
       setCount(current);
 
       if (progress < 1) {
@@ -125,7 +133,8 @@ export default function TrustedBy() {
             Built for teams that <span className="italic font-serif">ship</span>
           </h2>
           <p className="mt-5 text-sm md:text-base opacity-60 max-w-2xl mx-auto text-[oklch(0.18_0.02_250)]">
-            Join 120+ companies that chose us for reliable, high-quality development
+            Join 120+ companies that chose us for reliable, high-quality
+            development
           </p>
         </div>
 
@@ -139,49 +148,53 @@ export default function TrustedBy() {
                 className="group relative rounded-2xl border border-[oklch(0.7_0.02_250)]/20 bg-white p-6 md:p-8 transition-all duration-300 hover:border-[oklch(0.5_0.05_250)]/30 hover:shadow-xl hover:shadow-black/5"
                 style={{
                   background: reason.bg,
-                  color: reason.fg
+                  color: reason.fg,
                 }}
               >
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[oklch(0.5_0.05_250)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative">
                   {/* Icon */}
-                  <div 
+                  <div
                     className="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4 transition-colors duration-300"
                     style={{
                       background: reason.accent,
-                      color: reason.fg
+                      color: reason.fg,
                     }}
                   >
                     <Icon className="w-6 h-6" />
                   </div>
 
                   {/* Counter */}
-                  <div 
+                  <div
                     className="text-4xl md:text-5xl font-bold tracking-tight"
                     style={{ color: reason.fg }}
                   >
-                    <Counter target={reason.value} suffix={reason.suffix} duration={2500} />
+                    <Counter
+                      target={reason.value}
+                      suffix={reason.suffix}
+                      duration={2500}
+                    />
                   </div>
 
                   {/* Label */}
-                  <p 
+                  <p
                     className="mt-3 text-sm font-medium"
-                    style={{ 
+                    style={{
                       color: reason.fg,
-                      opacity: 0.9
+                      opacity: 0.9,
                     }}
                   >
                     {reason.label}
                   </p>
 
                   {/* Description */}
-                  <p 
+                  <p
                     className="mt-1.5 text-sm"
-                    style={{ 
+                    style={{
                       color: reason.fg,
-                      opacity: 0.5
+                      opacity: 0.5,
                     }}
                   >
                     {reason.description}

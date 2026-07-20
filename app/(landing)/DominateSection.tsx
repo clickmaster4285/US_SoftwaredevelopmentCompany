@@ -14,10 +14,7 @@ export default function DominateSection() {
   });
 
   return (
-    <section
-      ref={ref}
-      className="bg-[oklch(0.98_0.005_170)] py-24 md:py-32"
-    >
+    <section ref={ref} className="bg-[oklch(0.98_0.005_170)] py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
         <div className="space-y-6">
           <p className="text-sm uppercase tracking-[0.35em] text-muted-foreground">
@@ -33,10 +30,10 @@ export default function DominateSection() {
           </h2>
 
           <p className="max-w-2xl text-lg leading-7 text-muted-foreground">
-            We craft high-performance digital experiences that blend
-            world-class design with engineering excellence. From startups
-            to enterprises, we help brands move faster, think bigger,
-            and build products that users actually love.
+            We craft high-performance digital experiences that blend world-class
+            design with engineering excellence. From startups to enterprises, we
+            help brands move faster, think bigger, and build products that users
+            actually love.
           </p>
 
           <div className="flex flex-wrap gap-16 pt-2">
@@ -51,14 +48,7 @@ export default function DominateSection() {
 
             <div>
               <p className="text-5xl font-bold tracking-tight">
-                {isInView && (
-                  <CountUp
-                    end={4.9}
-                    decimals={1}
-                    duration={2.5}
-                  />
-                )}
-                ★
+                {isInView && <CountUp end={4.9} decimals={1} duration={2.5} />}★
               </p>
               <p className="text-xs text-muted-foreground">
                 Client satisfaction
@@ -69,9 +59,7 @@ export default function DominateSection() {
               <p className="text-5xl font-bold tracking-tight">
                 {isInView && <CountUp end={12} duration={2.5} />}+
               </p>
-              <p className="text-xs text-muted-foreground">
-                Industry awards
-              </p>
+              <p className="text-xs text-muted-foreground">Industry awards</p>
             </div>
           </div>
         </div>

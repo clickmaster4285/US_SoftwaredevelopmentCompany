@@ -14,7 +14,10 @@ import {
   Workflow,
 } from "lucide-react";
 import { IconFor, SectionHeading } from "./[sub_service]/landing-primitives";
-import type { MainService, ServicePricingTier } from "./[sub_service]/service-data";
+import type {
+  MainService,
+  ServicePricingTier,
+} from "./[sub_service]/service-data";
 
 const appIdeas = [
   "Customer portals",
@@ -110,8 +113,13 @@ export function MainServiceHero({ service }: { service: MainService }) {
           <div className="absolute inset-0 bg-background/45" />
           <div className="absolute inset-x-6 bottom-6 grid gap-3 sm:grid-cols-2">
             {(service.stats || []).slice(0, 4).map((stat) => (
-              <div key={`${stat.value}-${stat.label}`} className="rounded-lg border border-border bg-card/90 p-4 backdrop-blur">
-                <p className="text-2xl font-semibold text-card-foreground">{stat.value}</p>
+              <div
+                key={`${stat.value}-${stat.label}`}
+                className="rounded-lg border border-border bg-card/90 p-4 backdrop-blur"
+              >
+                <p className="text-2xl font-semibold text-card-foreground">
+                  {stat.value}
+                </p>
                 <p className="mt-1 text-xs uppercase tracking-[0.15em] text-muted-foreground">
                   {stat.label}
                 </p>
@@ -143,7 +151,9 @@ export function ExploreSection({ service }: { service: MainService }) {
               <span className="mb-7 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
                 <IconFor name={item.icon} />
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight">{item.title}</h3>
+              <h3 className="text-2xl font-semibold tracking-tight">
+                {item.title}
+              </h3>
               <p className="mt-3 text-sm leading-6 text-muted-foreground">
                 {item.description}
               </p>
@@ -168,19 +178,22 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
   const solutions = service.features?.length
     ? service.features
     : [
-      {
-        title: "Clear architecture",
-        description: "A practical technical plan before production work expands.",
-      },
-      {
-        title: "Focused delivery",
-        description: "Short feedback loops, visible progress, and usable releases.",
-      },
-      {
-        title: "Launch support",
-        description: "Monitoring, documentation, and iteration after go-live.",
-      },
-    ];
+        {
+          title: "Clear architecture",
+          description:
+            "A practical technical plan before production work expands.",
+        },
+        {
+          title: "Focused delivery",
+          description:
+            "Short feedback loops, visible progress, and usable releases.",
+        },
+        {
+          title: "Launch support",
+          description:
+            "Monitoring, documentation, and iteration after go-live.",
+        },
+      ];
 
   return (
     <section className="border-y border-border bg-secondary px-5 py-24 md:px-10">
@@ -209,7 +222,9 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
                   <IconFor name={item.icon} />
                 </span>
                 <div>
-                  <h3 className="text-xl font-semibold text-card-foreground">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-card-foreground">
+                    {item.title}
+                  </h3>
                   <p className="mt-1 text-sm leading-6 text-muted-foreground">
                     {item.description}
                   </p>
@@ -236,12 +251,19 @@ export function TrustedClientsSection({ service }: { service: MainService }) {
         />
         <div className="mt-14 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
           {clients.slice(0, 5).map((client) => (
-            <div key={client.name} className="rounded-lg border border-border bg-card p-5">
+            <div
+              key={client.name}
+              className="rounded-lg border border-border bg-card p-5"
+            >
               <span className="mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
                 <IconFor name={client.icon} />
               </span>
-              <h3 className="font-semibold text-card-foreground">{client.name}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{client.industry}</p>
+              <h3 className="font-semibold text-card-foreground">
+                {client.name}
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {client.industry}
+              </p>
             </div>
           ))}
         </div>
@@ -261,9 +283,14 @@ export function AppsSection() {
         />
         <div className="mt-14 grid gap-4 md:grid-cols-4">
           {appIdeas.map((item) => (
-            <div key={item} className="rounded-lg border border-border bg-card p-6">
+            <div
+              key={item}
+              className="rounded-lg border border-border bg-card p-6"
+            >
               <Layers3 className="mb-10 h-6 w-6 text-primary" />
-              <p className="text-xl font-semibold text-card-foreground">{item}</p>
+              <p className="text-xl font-semibold text-card-foreground">
+                {item}
+              </p>
             </div>
           ))}
         </div>
@@ -291,10 +318,15 @@ export function ProcessPage({ service }: { service: MainService }) {
         />
         <div className="mt-14 grid gap-4 md:grid-cols-5">
           {steps.map((step, index) => (
-            <div key={step} className="rounded-lg border border-border bg-card p-6">
+            <div
+              key={step}
+              className="rounded-lg border border-border bg-card p-6"
+            >
               <p className="text-sm font-semibold text-primary">0{index + 1}</p>
               <Workflow className="mt-10 h-5 w-5 text-muted-foreground" />
-              <p className="mt-5 text-lg font-semibold text-card-foreground">{step}</p>
+              <p className="mt-5 text-lg font-semibold text-card-foreground">
+                {step}
+              </p>
             </div>
           ))}
         </div>
@@ -337,7 +369,10 @@ export function FeaturedInsights() {
         />
         <div className="mt-14 grid gap-4 md:grid-cols-3">
           {insights.map((item) => (
-            <article key={item} className="rounded-lg border border-border bg-card p-6">
+            <article
+              key={item}
+              className="rounded-lg border border-border bg-card p-6"
+            >
               <Compass className="mb-12 h-6 w-6 text-primary" />
               <h3 className="text-xl font-semibold leading-tight text-card-foreground">
                 {item}
@@ -370,7 +405,10 @@ export function WhyChooseUs({ service }: { service: MainService }) {
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {points.map((point) => (
-            <div key={point} className="rounded-lg border border-border bg-card p-6">
+            <div
+              key={point}
+              className="rounded-lg border border-border bg-card p-6"
+            >
               <CheckCircle2 className="mb-8 h-5 w-5 text-primary" />
               <p className="text-lg font-semibold leading-tight text-card-foreground">
                 {point}
@@ -421,7 +459,10 @@ export function PricingSection({
               ) : null}
               <div className="mt-7 space-y-3">
                 {(plan.features || []).slice(0, 4).map((feature) => (
-                  <div key={feature} className="flex gap-3 text-sm text-muted-foreground">
+                  <div
+                    key={feature}
+                    className="flex gap-3 text-sm text-muted-foreground"
+                  >
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
                     {feature}
                   </div>
@@ -431,7 +472,11 @@ export function PricingSection({
                 href="/contact"
                 className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-bold text-primary-foreground transition hover:opacity-90"
               >
-                {index === 0 ? "Get a quote" : index === 1 ? "Start project" : "Contact sales"}
+                {index === 0
+                  ? "Get a quote"
+                  : index === 1
+                    ? "Start project"
+                    : "Contact sales"}
               </Link>
             </div>
           ))}
