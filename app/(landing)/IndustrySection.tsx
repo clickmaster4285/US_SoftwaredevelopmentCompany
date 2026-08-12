@@ -1,174 +1,70 @@
 "use client";
 
-import {
-  useEffect,
-  useRef,
-  useState,
-  type CSSProperties,
-} from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
-type Industry = {
-  code: string;
-  title: string;
-  chips: string[];
-};
+/**
+ * TrustedPartnerSection
+ * -----------------------------------------------------------------------
+ * Palette aligned with IndustriesSection: oklch warm-neutral background,
+ * var(--chart-1)/var(--chart-2) accent pair, color-mix blends for tints,
+ * dot-grid + ambient glow texture. Signature element: a "Credential
+ * Ledger" — certifications as verified line items with stroke-drawn
+ * checkmarks and a one-time scan-line sweep on reveal.
+ * -----------------------------------------------------------------------
+ */
 
-const INDUSTRIES: Industry[] = [
+const CERTIFICATIONS = [
   {
-    code: "HLTH",
-    title: "Healthcare & HealthTech",
-    chips: ["Patient portals", "Telehealth apps", "Secure health platforms"],
+    id: "CRD—01",
+    code: "AWS",
+    label: "AWS Certified",
+    detail: "Solutions Architect · SysOps Administrator",
   },
   {
-    code: "FTC",
-    title: "Fintech & Banking",
-    chips: ["Payment systems", "Lending platforms", "Compliance tools"],
+    id: "CRD—02",
+    code: "AZ",
+    label: "Azure Certified",
+    detail: "Solutions Architect Expert",
   },
   {
-    code: "RTL",
-    title: "E-commerce & Retail",
-    chips: ["Online stores", "Inventory systems", "Personalized shopping"],
-  },
-  {
-    code: "LOG",
-    title: "Logistics & Supply Chain",
-    chips: ["Real-time tracking", "Route planning", "Warehouse tools"],
-  },
-  {
-    code: "PROP",
-    title: "Real Estate & PropTech",
-    chips: ["Property listings", "CRM tools", "Virtual tours"],
-  },
-  {
-    code: "EDU",
-    title: "Education & EdTech",
-    chips: ["Learning platforms", "Virtual classrooms", "Testing tools"],
-  },
-  {
-    code: "MFG",
-    title: "Manufacturing",
-    chips: ["Smart monitoring", "Maintenance alerts", "ERP systems"],
-  },
-  {
-    code: "SAAS",
-    title: "Professional Services & SaaS",
-    chips: ["Internal tools", "Client portals", "SaaS products"],
+    id: "CRD—03",
+    code: "GCP",
+    label: "GCP Certified",
+    detail: "Professional Cloud Architect",
   },
 ];
 
-const ICONS: Record<string, React.ReactNode> = {
-  HLTH: (
-    <>
-      <path d="M12 20.5S4.5 16 4.5 10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.9c0 5.8-7.5 10.3-7.5 10.3Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-      <path d="M8.5 12h1.8l1-2 1.4 4 1-2H15" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-    </>
-  ),
-  FTC: (
-    <>
-      <rect x="3.5" y="6.5" width="17" height="11.5" rx="1.8" stroke="currentColor" strokeWidth="1.4" fill="none" />
-      <path d="M3.5 10.2h17" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M6.5 14.2h4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-    </>
-  ),
-  RTL: (
-    <>
-      <path d="M6 8.5V7a3 3 0 1 1 6 0v1.5M6 8.5h9l.8 10.2a1.8 1.8 0 0 1-1.8 1.8H7a1.8 1.8 0 0 1-1.8-1.8L6 8.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-    </>
-  ),
-  LOG: (
-    <>
-      <path d="M3.5 8h9v8h-9z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-      <path d="M12.5 11h3.3L19 13.6V16h-6.5z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-      <circle cx="7" cy="17.3" r="1.6" stroke="currentColor" strokeWidth="1.3" fill="none" />
-      <circle cx="16" cy="17.3" r="1.6" stroke="currentColor" strokeWidth="1.3" fill="none" />
-    </>
-  ),
-  PROP: (
-    <>
-      <path d="M4 11.5 12 4l8 7.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      <path d="M6 10.5V19a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1v-8.5" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-    </>
-  ),
-  EDU: (
-    <>
-      <path d="M2.5 9 12 5l9.5 4-9.5 4-9.5-4Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-      <path d="M6.5 11v4.2c0 1 2.5 2.3 5.5 2.3s5.5-1.3 5.5-2.3V11" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" fill="none" />
-      <path d="M21 10v5.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-    </>
-  ),
-  MFG: (
-    <path
-      d="M12 8.3a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 0-7.4Z M19.3 12a7.2 7.2 0 0 0-.1-1.3l1.9-1.5-1.5-2.6-2.3.7a7.3 7.3 0 0 0-2.2-1.3L14.7 4h-3l-.4 2a7.3 7.3 0 0 0-2.2 1.3l-2.3-.7-1.5 2.6 1.9 1.5a7.2 7.2 0 0 0 0 2.6l-1.9 1.5 1.5 2.6 2.3-.7c.65.55 1.4.99 2.2 1.3l.4 2h3l.4-2c.8-.31 1.55-.75 2.2-1.3l2.3.7 1.5-2.6-1.9-1.5c.07-.43.1-.86.1-1.3Z"
-      stroke="currentColor"
-      strokeWidth="1.3"
-      strokeLinejoin="round"
-      fill="none"
-    />
-  ),
-  SAAS: (
-    <>
-      <path d="M12 4 3.5 8.3 12 12.6l8.5-4.3L12 4Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-      <path d="M3.5 12.3 12 16.6l8.5-4.3M3.5 16.3 12 20.6l8.5-4.3" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
-    </>
-  ),
-};
+const GUARANTEES = [
+  {
+    title: "Fully documented",
+    detail:
+      "Every decision, API, and architecture choice written down not locked in someone's head.",
+  },
+  {
+    title: "Ironclad agreements",
+    detail:
+      "Clear contracts covering scope, timelines, and deliverables before a line of code ships.",
+  },
+  {
+    title: "Full code ownership",
+    detail:
+      "You own every repository, credential, and asset the moment we hand over.",
+  },
+];
 
+const INDUSTRIES = ["Healthcare", "Fintech", "Logistics", "E-commerce"];
+
+// Same accent pair + rotation logic as IndustriesSection
 const ACCENTS = ["var(--chart-2)", "var(--chart-1)"];
-const SCRAMBLE_CHARS = "01#%&$XZQKJ";
 
-function scrambledFrame(target: string, progress: number) {
-  // progress: 0..1, how much of the string (left to right) is resolved
-  const resolveCount = Math.floor(target.length * progress);
-  return target
-    .split("")
-    .map((ch, i) => {
-      if (i < resolveCount) return ch;
-      if (ch === " ") return " ";
-      return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
-    })
-    .join("");
-}
-
-function SectorCode({ code, trigger }: { code: string; trigger: number }) {
-  const [display, setDisplay] = useState(code);
-
-  useEffect(() => {
-    if (trigger === 0) return; // don't scramble on initial idle state
-    let frame = 0;
-    const totalFrames = 7;
-    const id = setInterval(() => {
-      frame += 1;
-      const progress = frame / totalFrames;
-      if (progress >= 1) {
-        setDisplay(code);
-        clearInterval(id);
-      } else {
-        setDisplay(scrambledFrame(code, progress));
-      }
-    }, 35);
-    return () => clearInterval(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [trigger]);
-
-  return <span className="ind-code">{display}</span>;
-}
-
-export default function IndustriesSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const listRef = useRef<HTMLDivElement>(null);
-  const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
-
+export default function TrustedPartnerSection() {
+  const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
-  const [openSet, setOpenSet] = useState<Set<number>>(new Set());
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [dotTop, setDotTop] = useState<number | null>(null);
-  const [scrambleTrigger, setScrambleTrigger] = useState<number[]>(
-    () => INDUSTRIES.map(() => 0)
-  );
 
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -176,187 +72,74 @@ export default function IndustriesSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.25 }
     );
+
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
-  // Boot-decode every row's code once the section scrolls into view.
-  useEffect(() => {
-    if (!inView) return;
-    INDUSTRIES.forEach((_, i) => {
-      window.setTimeout(() => {
-        setScrambleTrigger((prev) => {
-          const next = [...prev];
-          next[i] = next[i] + 1;
-          return next;
-        });
-      }, 300 + i * 110);
-    });
-  }, [inView]);
-
-  const bumpScramble = (i: number) => {
-    setScrambleTrigger((prev) => {
-      const next = [...prev];
-      next[i] = next[i] + 1;
-      return next;
-    });
-  };
-
-  const moveDotTo = (i: number) => {
-    const row = rowRefs.current[i];
-    const list = listRef.current;
-    if (!row || !list) return;
-    const rowRect = row.getBoundingClientRect();
-    const listRect = list.getBoundingClientRect();
-    setDotTop(rowRect.top - listRect.top + rowRect.height / 2);
-    setActiveIndex(i);
-  };
-
-  const handleEnter = (i: number) => {
-    moveDotTo(i);
-    bumpScramble(i);
-  };
-
-  const handleLeave = (i: number) => {
-    if (openSet.size === 0) {
-      setActiveIndex(null);
-      return;
-    }
-    // fall back to the most recently opened row, if any
-    const remaining = [...openSet];
-    const fallback = remaining[remaining.length - 1];
-    if (fallback !== undefined) moveDotTo(fallback);
-  };
-
-  const toggleRow = (i: number) => {
-    setOpenSet((prev) => {
-      const next = new Set(prev);
-      if (next.has(i)) next.delete(i);
-      else next.add(i);
-      return next;
-    });
-    moveDotTo(i);
-    bumpScramble(i);
-  };
-
   return (
-    <section ref={sectionRef} className="relative overflow-hidden px-6 py-24 md:py-32 bg-[oklch(0.97_0.005_80)]">
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden px-6 py-24 md:py-32 bg-[oklch(0.97_0.005_80)]"
+    >
       <style>{`
-        @keyframes ind-rise-in {
+        @keyframes tp-rise-in {
           from { opacity: 0; transform: translateY(16px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes ind-row-print {
-          from { opacity: 0; transform: translateX(-14px); clip-path: inset(0 100% 0 0); }
-          60% { clip-path: inset(0 0% 0 0); }
-          to { opacity: 1; transform: translateX(0); clip-path: inset(0 0% 0 0); }
-        }
-        @keyframes ind-beam-drift {
-          0% { top: -10%; opacity: 0; }
-          8% { opacity: 0.5; }
-          92% { opacity: 0.5; }
-          100% { top: 100%; opacity: 0; }
-        }
-        @keyframes ind-dot-pulse {
-          0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--active-accent, var(--chart-2)) 55%, transparent); }
-          50% { box-shadow: 0 0 0 6px color-mix(in oklch, var(--active-accent, var(--chart-2)) 0%, transparent); }
-        }
-        @keyframes ind-chip-in {
+        @keyframes tp-chip-in {
           from { opacity: 0; transform: translateY(6px); }
           to { opacity: 1; transform: translateY(0); }
         }
-
-        .ind-rise { animation: ind-rise-in 0.7s cubic-bezier(.22,1,.36,1) both; }
-        .ind-row-anim { animation: ind-row-print 0.6s cubic-bezier(.22,1,.36,1) both; }
-
-        .ind-beam {
-          position: absolute;
-          left: 0;
-          right: 0;
-          height: 22%;
-          background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--chart-2) 10%, transparent) 45%, color-mix(in oklch, var(--chart-1) 8%, transparent) 55%, transparent);
-          animation: ind-beam-drift 9s ease-in-out infinite;
-          pointer-events: none;
+        @keyframes tp-row-in {
+          from { opacity: 0; transform: translateY(14px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes tp-check-draw {
+          from { stroke-dashoffset: 1; }
+          to { stroke-dashoffset: 0; }
+        }
+        @keyframes tp-scan-sweep {
+          0% { transform: translateY(-100%); opacity: 0; }
+          8% { opacity: 1; }
+          92% { opacity: 1; }
+          100% { transform: translateY(100%); opacity: 0; }
+        }
+        @keyframes tp-glow-drift {
+          0%, 100% { transform: translate(-6%, -4%) scale(1); }
+          50% { transform: translate(4%, 6%) scale(1.15); }
+        }
+        @keyframes tp-id-fade {
+          from { opacity: 0; letter-spacing: 0.4em; }
+          to { opacity: 1; letter-spacing: 0.15em; }
         }
 
-        .ind-code {
-          font-variant-numeric: tabular-nums;
-          letter-spacing: 0.04em;
+        .tp-rise { animation: tp-rise-in 0.7s cubic-bezier(.22,1,.36,1) both; }
+        .tp-chip { animation: tp-chip-in 0.5s cubic-bezier(.22,1,.36,1) both; }
+        .tp-row { animation: tp-row-in 0.6s cubic-bezier(.22,1,.36,1) both; }
+        .tp-check-path {
+          stroke-dasharray: 1;
+          stroke-dashoffset: 1;
+          animation: tp-check-draw 0.5s cubic-bezier(.65,0,.35,1) forwards;
         }
-
-        .ind-row {
-          cursor: pointer;
-          transition: background-color 0.3s ease, border-color 0.3s ease;
-          border-color: var(--border);
-        }
-        .ind-row:hover,
-        .ind-row.is-open {
-          background-color: color-mix(in oklch, var(--row-accent) 6%, transparent);
-        }
-        .ind-row:focus-visible {
-          outline: 2px solid var(--row-accent);
-          outline-offset: -2px;
-        }
-
-        .ind-chevron {
-          transition: transform 0.35s cubic-bezier(.22,1,.36,1), color 0.3s ease;
-        }
-        .ind-row.is-open .ind-chevron {
-          transform: rotate(180deg);
-          color: var(--row-accent);
-        }
-
-        .ind-panel {
-          display: grid;
-          grid-template-rows: 0fr;
-          transition: grid-template-rows 0.4s cubic-bezier(.22,1,.36,1);
-        }
-        .ind-row.is-open .ind-panel {
-          grid-template-rows: 1fr;
-        }
-        .ind-panel-inner {
-          overflow: hidden;
-        }
-
-        .ind-chip {
-          animation: ind-chip-in 0.4s cubic-bezier(.22,1,.36,1) both;
-        }
-
-        .ind-icon-wrap {
-          transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-        }
-        .ind-row:hover .ind-icon-wrap,
-        .ind-row.is-open .ind-icon-wrap {
-          transform: scale(1.06);
-        }
-
-        .ind-dot {
-          animation: ind-dot-pulse 1.8s ease-in-out infinite;
-        }
-
-        .ind-corner {
-          position: absolute;
-          width: 22px;
-          height: 22px;
-          border-color: var(--border);
-          opacity: 0.7;
-        }
+        .tp-scan { animation: tp-scan-sweep 1.6s cubic-bezier(.4,0,.2,1) both; }
+        .tp-glow { animation: tp-glow-drift 14s ease-in-out infinite; }
+        .tp-id { animation: tp-id-fade 0.8s cubic-bezier(.22,1,.36,1) both; }
 
         @media (prefers-reduced-motion: reduce) {
-          .ind-rise, .ind-row-anim, .ind-chip { animation: none !important; opacity: 1 !important; transform: none !important; clip-path: none !important; }
-          .ind-beam { animation: none !important; opacity: 0.15 !important; }
-          .ind-dot { animation: none !important; }
-          .ind-chevron, .ind-panel, .ind-icon-wrap, .ind-row { transition: none !important; }
+          .tp-rise, .tp-chip, .tp-row, .tp-check-path, .tp-scan, .tp-glow, .tp-id {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+            stroke-dashoffset: 0 !important;
+          }
         }
       `}</style>
 
-      {/* Ambient glow blobs */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.08]"
-      >
+      {/* Ambient glow blobs — same two-tone pair as IndustriesSection */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.08]">
         <div
           className="absolute -top-32 -right-32 h-[600px] w-[600px] rounded-full blur-3xl"
           style={{ background: "var(--chart-2)" }}
@@ -367,7 +150,7 @@ export default function IndustriesSection() {
         />
       </div>
 
-      {/* Dot grid texture */}
+      {/* Dot grid texture, matches IndustriesSection */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.06]"
@@ -377,153 +160,274 @@ export default function IndustriesSection() {
         }}
       />
 
-      {/* faint scanline texture */}
+      {/* faint ledger-line texture, ties to "documented / on the record" theme */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        className="pointer-events-none absolute inset-0 opacity-[0.035]"
         style={{
-          backgroundImage: "repeating-linear-gradient(180deg, var(--foreground) 0px, var(--foreground) 1px, transparent 1px, transparent 5px)",
+          backgroundImage:
+            "repeating-linear-gradient(180deg, var(--foreground) 0px, var(--foreground) 1px, transparent 1px, transparent 40px)",
         }}
       />
 
-      <div className="relative mx-auto max-w-4xl">
-        {/* Header */}
-        <div className="mb-14 flex flex-col items-center text-center md:mb-16">
-          <div className={`mb-5 flex items-center gap-2 rounded-full border border-border bg-secondary px-3.5 py-1.5 ${inView ? "ind-rise" : "opacity-0"}`}>
-            <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ backgroundColor: "var(--chart-1)" }} />
-            <span className="font-mono text-[11px] tracking-[0.08em] text-secondary-foreground">
-              SECTOR MANIFEST · 8 ENTRIES
+      {/* additional drifting glow behind the ledger card specifically */}
+      <div
+        aria-hidden="true"
+        className={`pointer-events-none absolute -right-24 top-1/3 h-[26rem] w-[26rem] rounded-full blur-3xl ${
+          inView ? "tp-glow" : ""
+        }`}
+        style={{
+          background: "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
+          opacity: 0.12,
+        }}
+      />
+
+      <div className="relative mx-auto grid max-w-6xl gap-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12">
+        {/* ---------------- Left column ---------------- */}
+        <div>
+          <div
+            className={`mb-5 flex w-fit items-center gap-2 rounded-full border border-border bg-secondary px-3.5 py-1.5 ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.05s" }}
+          >
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full"
+              style={{ backgroundColor: "var(--chart-1)" }}
+            />
+            <span className="font-mono text-xs uppercase tracking-[0.3em] text-secondary-foreground">
+              Why Clients Stay
             </span>
           </div>
 
-          <h2 className={`max-w-2xl text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight leading-[1.05] text-foreground ${inView ? "ind-rise" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
-            Industries{" "}
-            <span className="font-serif font-normal italic text-foreground/90">we</span> serve
+          <h2
+            className={`text-4xl font-bold leading-[1.05] tracking-tight text-foreground md:text-6xl ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.12s" }}
+          >
+            Your <span className="font-serif font-normal italic">trusted</span>{" "}
+            software development partner
           </h2>
 
-          <p className={`mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base ${inView ? "ind-rise" : "opacity-0"}`} style={{ animationDelay: "0.18s" }}>
-            Clickmasters builds software across eight sectors.
-          </p>
-        </div>
-
-        {/* Manifest list */}
-        <div className={`relative ${inView ? "ind-rise" : "opacity-0"}`} style={{ animationDelay: "0.24s" }}>
-          {/* blueprint corner brackets */}
-          <span aria-hidden="true" className="ind-corner -left-2 -top-2 border-l-2 border-t-2 rounded-tl-md" />
-          <span aria-hidden="true" className="ind-corner -right-2 -top-2 border-r-2 border-t-2 rounded-tr-md" />
-          <span aria-hidden="true" className="ind-corner -left-2 -bottom-2 border-l-2 border-b-2 rounded-bl-md" />
-          <span aria-hidden="true" className="ind-corner -right-2 -bottom-2 border-r-2 border-b-2 rounded-br-md" />
-
           <div
-            ref={listRef}
-            className="relative overflow-hidden rounded-2xl border border-border bg-card/80 backdrop-blur-sm"
-            onMouseLeave={() => handleLeave(-1)}
+            className={`mt-6 max-w-xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.2s" }}
           >
-            {/* ambient scanning beam */}
-            <div aria-hidden="true" className="ind-beam" />
+            <p>
+              Clickmasters is a software development company USA clients turn
+              to when they need more than just code they need a real
+              partner. We work as a dependable software development agency,
+              mixing solid engineering with smart planning and clear
+              communication.
+            </p>
+            <p>
+              We build software development solutions for healthcare,
+              fintech, logistics, and e-commerce businesses across the United
+              States.
+            </p>
+          </div>
 
-            {/* tracking spine + dot (desktop only, needs measured positions) */}
-            <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-0 top-0 hidden w-10 sm:block">
-              <div className="absolute bottom-4 left-5 top-4 w-px bg-border" />
-              {dotTop !== null && activeIndex !== null && (
-                <div
-                  className="ind-dot absolute h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-[top] duration-300 ease-out"
-                  style={{
-                    left: "20px",
-                    top: dotTop,
-                    backgroundColor: ACCENTS[activeIndex % ACCENTS.length],
-                    ["--active-accent" as string]: ACCENTS[activeIndex % ACCENTS.length],
-                  }}
-                />
-              )}
-            </div>
-
+          {/* Industry chips — alternating chart-1/chart-2 accent, like IndustriesSection rows */}
+          <ul className="mt-6 flex flex-wrap gap-2">
             {INDUSTRIES.map((industry, i) => {
               const accent = ACCENTS[i % ACCENTS.length];
-              const isOpen = openSet.has(i);
               return (
-                <div
-                  key={industry.code}
-                  ref={(el) => {
-                    rowRefs.current[i] = el;
-                  }}
-                  className={`ind-row ${isOpen ? "is-open" : ""} ${inView ? "ind-row-anim" : "opacity-0"} ${i !== 0 ? "border-t border-border" : ""}`}
-                  style={
-                    {
-                      "--row-accent": accent,
-                      animationDelay: inView ? `${0.3 + i * 0.07}s` : undefined,
-                    } as CSSProperties
-                  }
-                  onMouseEnter={() => handleEnter(i)}
-                  role="button"
-                  tabIndex={0}
-                  aria-expanded={isOpen}
-                  onClick={() => toggleRow(i)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      e.preventDefault();
-                      toggleRow(i);
-                    }
+                <li
+                  key={industry}
+                  className={`rounded-full border px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-foreground ${
+                    inView ? "tp-chip" : "opacity-0"
+                  }`}
+                  style={{
+                    borderColor: "color-mix(in oklch, " + accent + " 35%, var(--border))",
+                    backgroundColor: "color-mix(in oklch, " + accent + " 8%, transparent)",
+                    animationDelay: inView ? `${0.35 + i * 0.08}s` : undefined,
                   }}
                 >
-                  <div className="flex items-center gap-4 px-5 py-4 pl-5 sm:pl-14 sm:pr-6 md:px-6 md:py-5 md:pl-16">
+                  {industry}
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Guarantees checklist */}
+          <ul className="mt-10 space-y-5 border-t border-border pt-8">
+            {GUARANTEES.map((item, i) => {
+              const accent = ACCENTS[i % ACCENTS.length];
+              return (
+                <li
+                  key={item.title}
+                  className={`flex gap-4 ${inView ? "tp-rise" : "opacity-0"}`}
+                  style={
+                    inView ? { animationDelay: `${0.5 + i * 0.12}s` } : undefined
+                  }
+                >
+                  <span
+                    className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border"
+                    style={{ borderColor: accent, color: accent }}
+                  >
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path
+                        d="M2 6.2L4.8 9L10 3"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        pathLength="1"
+                        className={inView ? "tp-check-path" : ""}
+                        style={
+                          inView
+                            ? { animationDelay: `${0.65 + i * 0.12}s` }
+                            : { strokeDashoffset: 0 }
+                        }
+                      />
+                    </svg>
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      {item.title}
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {item.detail}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        {/* ---------------- Right column: credential ledger ---------------- */}
+        <div className="relative flex flex-col justify-center">
+          <p
+            className={`mb-6 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+          >
+            Engineering credentials on file
+          </p>
+
+          <div
+            className={`relative overflow-hidden rounded-lg border border-border bg-card/80 backdrop-blur-sm shadow-sm ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.15s" }}
+          >
+            {/* scan-line sweep, plays once on reveal */}
+            <div
+              aria-hidden="true"
+              className={`pointer-events-none absolute inset-x-0 top-0 h-16 ${
+                inView ? "tp-scan" : "opacity-0"
+              }`}
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent, color-mix(in oklch, var(--chart-2) 18%, transparent), transparent)",
+                animationDelay: "0.5s",
+              }}
+            />
+
+            {/* ledger header */}
+            <div className="flex items-center justify-between border-b border-border px-6 py-3.5">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Credential Ledger
+              </span>
+              <span
+                className="font-mono text-[10px] uppercase tracking-[0.2em]"
+                style={{ color: "var(--chart-1)" }}
+              >
+                Verified
+              </span>
+            </div>
+
+            {/* rows — accent alternates chart-2 / chart-1, matching IndustriesSection */}
+            <ul>
+              {CERTIFICATIONS.map((cert, i) => {
+                const accent = ACCENTS[i % ACCENTS.length];
+                const rowDelay = 0.3 + i * 0.14;
+                return (
+                  <li
+                    key={cert.code}
+                    className={`group flex items-center gap-4 px-6 py-5 ${
+                      i !== CERTIFICATIONS.length - 1 ? "border-b border-border" : ""
+                    } transition-colors duration-300 ${inView ? "tp-row" : "opacity-0"}`}
+                    style={{
+                      ...(inView ? { animationDelay: `${rowDelay}s` } : {}),
+                      ["--row-accent" as string]: accent,
+                    } as CSSProperties}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.backgroundColor =
+                        "color-mix(in oklch, " + accent + " 6%, transparent)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                    }}
+                  >
                     <span
-                      className="ind-icon-wrap flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
+                      className={`shrink-0 font-mono text-[10px] tracking-[0.15em] text-muted-foreground ${
+                        inView ? "tp-id" : "opacity-0"
+                      }`}
+                      style={inView ? { animationDelay: `${rowDelay + 0.08}s` } : undefined}
+                    >
+                      {cert.id}
+                    </span>
+
+                    <span
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-[11px] font-bold tracking-tight"
                       style={{
-                        backgroundColor: "color-mix(in oklch, var(--row-accent) 16%, var(--secondary))",
+                        backgroundColor: "color-mix(in oklch, " + accent + " 16%, var(--secondary))",
                         color: accent,
                       }}
                     >
-                      <svg viewBox="0 0 24 24" className="h-4.5 w-4.5">
-                        {ICONS[industry.code]}
-                      </svg>
+                      {cert.code}
                     </span>
 
                     <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
-                        <span
-                          className="font-mono text-[11px] font-semibold tracking-[0.08em]"
-                          style={{ color: accent }}
-                        >
-                          <SectorCode code={industry.code} trigger={scrambleTrigger[i]} />
-                        </span>
-                        <h3 className="text-base font-bold text-foreground md:text-lg">
-                          {industry.title}
-                        </h3>
-                      </div>
+                      <p className="truncate text-sm font-semibold text-foreground">
+                        {cert.label}
+                      </p>
+                      <p className="mt-0.5 truncate text-xs leading-relaxed text-muted-foreground">
+                        {cert.detail}
+                      </p>
                     </div>
 
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      className="ind-chevron h-4 w-4 shrink-0 text-muted-foreground"
+                    <span
+                      className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border transition-transform duration-300 group-hover:scale-110"
+                      style={{ borderColor: accent, color: accent }}
                     >
-                      <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                    </svg>
-                  </div>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path
+                          d="M2 6.2L4.8 9L10 3"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          pathLength="1"
+                          className={inView ? "tp-check-path" : ""}
+                          style={
+                            inView
+                              ? { animationDelay: `${rowDelay + 0.25}s` }
+                              : { strokeDashoffset: 0 }
+                          }
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
 
-                  <div className="ind-panel px-5 sm:pl-14 sm:pr-6 md:px-6 md:pl-16">
-                    <div className="ind-panel-inner">
-                      <div className="flex flex-wrap gap-2 pb-5 pt-1">
-                        {industry.chips.map((chip, ci) => (
-                          <span
-                            key={chip}
-                            className="ind-chip rounded-full border px-3 py-1 text-xs font-medium text-foreground"
-                            style={{
-                              borderColor: "color-mix(in oklch, var(--row-accent) 35%, var(--border))",
-                              backgroundColor: "color-mix(in oklch, var(--row-accent) 8%, transparent)",
-                              animationDelay: isOpen ? `${ci * 0.06}s` : undefined,
-                            }}
-                          >
-                            {chip}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            {/* footer strip */}
+            <div className="flex items-center gap-2 border-t border-border bg-secondary/40 px-6 py-3">
+              <span
+                className="h-1.5 w-1.5 rounded-full"
+                style={{ backgroundColor: "var(--chart-1)" }}
+              />
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Renewed annually · audit trail available on request
+              </span>
+            </div>
           </div>
         </div>
       </div>

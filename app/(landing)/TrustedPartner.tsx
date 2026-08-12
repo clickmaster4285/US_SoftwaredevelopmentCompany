@@ -5,30 +5,31 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 /**
  * TrustedPartnerSection
  * -----------------------------------------------------------------------
- * Signature element: certification "medallions" circular badges that
- * pop in with a shockwave-ring + elastic scale/rotate impact as the
- * section scrolls into view, then settle into a slow idle float.
+ * Signature element: a "Credential Ledger" — certifications presented as
+ * verified line items with stroke-drawn checkmarks and a single scan-line
+ * sweep on reveal, echoing the "fully documented / on the record" thesis
+ * of the copy rather than a decorative badge grid.
  * -----------------------------------------------------------------------
  */
 
 const CERTIFICATIONS = [
   {
+    id: "CRD—01",
     code: "AWS",
-    label: "AWS CERTIFIED",
+    label: "AWS Certified",
     detail: "Solutions Architect · SysOps Administrator",
-    rotate: -18,
   },
   {
+    id: "CRD—02",
     code: "AZ",
-    label: "AZURE CERTIFIED",
+    label: "Azure Certified",
     detail: "Solutions Architect Expert",
-    rotate: 14,
   },
   {
+    id: "CRD—03",
     code: "GCP",
-    label: "GCP CERTIFIED",
+    label: "GCP Certified",
     detail: "Professional Cloud Architect",
-    rotate: -10,
   },
 ];
 
@@ -81,40 +82,54 @@ export default function TrustedPartnerSection() {
     >
       <style>{`
         @keyframes tp-rise-in {
-          from { opacity: 0; transform: translateY(18px); }
+          from { opacity: 0; transform: translateY(16px); }
           to { opacity: 1; transform: translateY(0); }
         }
         @keyframes tp-chip-in {
-          from { opacity: 0; transform: translateY(8px) scale(0.96); }
-          to { opacity: 1; transform: translateY(0) scale(1); }
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes tp-pop-in {
-          0% { opacity: 0; transform: scale(0.15) rotate(var(--pop-rotate)); }
-          55% { opacity: 1; transform: scale(1.22) rotate(calc(var(--pop-rotate) * -0.35)); }
-          75% { transform: scale(0.92) rotate(calc(var(--pop-rotate) * 0.18)); }
-          90% { transform: scale(1.04) rotate(calc(var(--pop-rotate) * -0.06)); }
-          100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        @keyframes tp-row-in {
+          from { opacity: 0; transform: translateY(14px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes tp-shockwave {
-          0% { opacity: 0.75; transform: scale(0.4); border-width: 3px; }
-          100% { opacity: 0; transform: scale(2.4); border-width: 0px; }
+        @keyframes tp-check-draw {
+          from { stroke-dashoffset: 1; }
+          to { stroke-dashoffset: 0; }
         }
-        @keyframes tp-float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-7px); }
+        @keyframes tp-scan-sweep {
+          0% { transform: translateY(-100%); opacity: 0; }
+          8% { opacity: 1; }
+          92% { opacity: 1; }
+          100% { transform: translateY(100%); opacity: 0; }
+        }
+        @keyframes tp-glow-drift {
+          0%, 100% { transform: translate(-6%, -4%) scale(1); }
+          50% { transform: translate(4%, 6%) scale(1.15); }
+        }
+        @keyframes tp-id-fade {
+          from { opacity: 0; letter-spacing: 0.4em; }
+          to { opacity: 1; letter-spacing: 0.15em; }
         }
 
         .tp-rise { animation: tp-rise-in 0.7s cubic-bezier(.22,1,.36,1) both; }
         .tp-chip { animation: tp-chip-in 0.5s cubic-bezier(.22,1,.36,1) both; }
-        .tp-pop { animation: tp-pop-in 0.9s cubic-bezier(.34,1.56,.64,1) both; }
-        .tp-shockwave { animation: tp-shockwave 0.9s cubic-bezier(.16,1,.3,1) both; }
-        .tp-float { animation: tp-float 3.2s ease-in-out infinite; }
+        .tp-row { animation: tp-row-in 0.6s cubic-bezier(.22,1,.36,1) both; }
+        .tp-check-path {
+          stroke-dasharray: 1;
+          stroke-dashoffset: 1;
+          animation: tp-check-draw 0.5s cubic-bezier(.65,0,.35,1) forwards;
+        }
+        .tp-scan { animation: tp-scan-sweep 1.6s cubic-bezier(.4,0,.2,1) both; }
+        .tp-glow { animation: tp-glow-drift 14s ease-in-out infinite; }
+        .tp-id { animation: tp-id-fade 0.8s cubic-bezier(.22,1,.36,1) both; }
 
         @media (prefers-reduced-motion: reduce) {
-          .tp-rise, .tp-chip, .tp-pop, .tp-shockwave, .tp-float {
+          .tp-rise, .tp-chip, .tp-row, .tp-check-path, .tp-scan, .tp-glow, .tp-id {
             animation: none !important;
             opacity: 1 !important;
             transform: none !important;
+            stroke-dashoffset: 0 !important;
           }
         }
       `}</style>
@@ -126,6 +141,19 @@ export default function TrustedPartnerSection() {
         style={{
           backgroundImage:
             "repeating-linear-gradient(180deg, var(--foreground) 0px, var(--foreground) 1px, transparent 1px, transparent 40px)",
+        }}
+      />
+
+      {/* ambient drifting glow, low-key atmosphere */}
+      <div
+        aria-hidden="true"
+        className={`pointer-events-none absolute -right-24 top-1/3 h-[26rem] w-[26rem] rounded-full blur-3xl ${
+          inView ? "tp-glow" : ""
+        }`}
+        style={{
+          background:
+            "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
+          opacity: 0.12,
         }}
       />
 
@@ -179,7 +207,7 @@ export default function TrustedPartnerSection() {
             {INDUSTRIES.map((industry, i) => (
               <li
                 key={industry}
-                className={`rounded-full border border-border bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground ${
+                className={`rounded-sm border border-border bg-secondary px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-secondary-foreground ${
                   inView ? "tp-chip" : "opacity-0"
                 }`}
                 style={
@@ -212,6 +240,13 @@ export default function TrustedPartnerSection() {
                       strokeWidth="1.6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      pathLength="1"
+                      className={inView ? "tp-check-path" : ""}
+                      style={
+                        inView
+                          ? { animationDelay: `${0.65 + i * 0.12}s` }
+                          : { strokeDashoffset: 0 }
+                      }
                     />
                   </svg>
                 </span>
@@ -228,82 +263,116 @@ export default function TrustedPartnerSection() {
           </ul>
         </div>
 
-        {/* ---------------- Right column: certification medallions ---------------- */}
+        {/* ---------------- Right column: credential ledger ---------------- */}
         <div className="relative flex flex-col justify-center">
           <p
-            className={`mb-8 text-center font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground md:text-left ${
+            className={`mb-6 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground ${
               inView ? "tp-rise" : "opacity-0"
             }`}
           >
             Engineering credentials on file
           </p>
 
-          <div className="grid grid-cols-3 gap-4 md:gap-6">
-            {CERTIFICATIONS.map((cert, i) => {
-              const offsetClass =
-                i % 2 === 1 ? "md:-translate-y-5" : "md:translate-y-5";
-              const popDelay = 0.15 + i * 0.2;
-              const floatDelay = popDelay + 0.95;
+          <div
+            className={`relative overflow-hidden rounded-lg border border-border bg-card shadow-sm ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.15s" }}
+          >
+            {/* scan-line sweep, plays once on reveal */}
+            <div
+              aria-hidden="true"
+              className={`pointer-events-none absolute inset-x-0 top-0 h-16 ${
+                inView ? "tp-scan" : "opacity-0"
+              }`}
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent, color-mix(in srgb, var(--chart-1) 18%, transparent), transparent)",
+                animationDelay: "0.5s",
+              }}
+            />
 
-              return (
-                <div
-                  key={cert.code}
-                  className={`group flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 ${offsetClass}`}
-                >
-                  <div
-                    className={`relative ${inView ? "tp-pop" : "opacity-0"}`}
-                    style={
-                      {
-                        "--pop-rotate": `${cert.rotate}deg`,
-                        animationDelay: inView ? `${popDelay}s` : undefined,
-                      } as CSSProperties
-                    }
+            {/* ledger header */}
+            <div className="flex items-center justify-between border-b border-border px-6 py-3.5">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Credential Ledger
+              </span>
+              <span
+                className="font-mono text-[10px] uppercase tracking-[0.2em]"
+                style={{ color: "var(--chart-1)" }}
+              >
+                Verified
+              </span>
+            </div>
+
+            {/* rows */}
+            <ul>
+              {CERTIFICATIONS.map((cert, i) => {
+                const rowDelay = 0.3 + i * 0.14;
+                return (
+                  <li
+                    key={cert.code}
+                    className={`group flex items-center gap-4 px-6 py-5 ${
+                      i !== CERTIFICATIONS.length - 1 ? "border-b border-border" : ""
+                    } transition-colors duration-300 hover:bg-secondary/50 ${
+                      inView ? "tp-row" : "opacity-0"
+                    }`}
+                    style={inView ? { animationDelay: `${rowDelay}s` } : undefined}
                   >
-                    {/* shockwave ring */}
                     <span
-                      className={`pointer-events-none absolute inset-0 rounded-full border-2 ${
-                        inView ? "tp-shockwave" : "opacity-0"
+                      className={`shrink-0 font-mono text-[10px] tracking-[0.15em] text-muted-foreground ${
+                        inView ? "tp-id" : "opacity-0"
                       }`}
-                      style={{
-                        borderColor: "var(--chart-1)",
-                        animationDelay: inView ? `${popDelay}s` : undefined,
-                      }}
-                    />
-
-                    {/* gradient ring + medallion */}
-                    <div
-                      className={`relative flex h-20 w-20 items-center justify-center rounded-full p-[3px] shadow-lg md:h-28 md:w-28 ${
-                        inView ? "tp-float" : ""
-                      }`}
-                      style={{
-                        background:
-                          "conic-gradient(from 180deg, var(--chart-1), var(--chart-5), var(--chart-1))",
-                        animationDelay: inView ? `${floatDelay}s` : undefined,
-                      }}
+                      style={inView ? { animationDelay: `${rowDelay + 0.08}s` } : undefined}
                     >
-                      <div className="flex h-full w-full items-center justify-center rounded-full bg-card transition-transform duration-300 group-hover:scale-95">
-                        <span
-                          className="font-mono text-base font-black tracking-tight md:text-lg"
-                          style={{ color: "var(--chart-1)" }}
-                        >
-                          {cert.code}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                      {cert.id}
+                    </span>
 
-                  <p
-                    className="mt-4 font-mono text-[10px] font-bold uppercase leading-tight tracking-[0.12em] md:text-[11px]"
-                    style={{ color: "var(--chart-1)" }}
-                  >
-                    {cert.label}
-                  </p>
-                  <p className="mt-1 max-w-[8.5rem] text-[11px] leading-snug text-muted-foreground md:text-xs">
-                    {cert.detail}
-                  </p>
-                </div>
-              );
-            })}
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-sm font-semibold text-foreground">
+                        {cert.label}
+                      </p>
+                      <p className="mt-0.5 truncate text-xs leading-relaxed text-muted-foreground">
+                        {cert.detail}
+                      </p>
+                    </div>
+
+                    <span
+                      className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border transition-transform duration-300 group-hover:scale-110"
+                      style={{ borderColor: "var(--chart-1)", color: "var(--chart-1)" }}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path
+                          d="M2 6.2L4.8 9L10 3"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          pathLength="1"
+                          className={inView ? "tp-check-path" : ""}
+                          style={
+                            inView
+                              ? { animationDelay: `${rowDelay + 0.25}s` }
+                              : { strokeDashoffset: 0 }
+                          }
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* footer strip */}
+            <div className="flex items-center gap-2 border-t border-border bg-secondary/40 px-6 py-3">
+              <span
+                className="h-1.5 w-1.5 rounded-full"
+                style={{ backgroundColor: "var(--chart-1)" }}
+              />
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Renewed annually · audit trail available on request
+              </span>
+            </div>
           </div>
         </div>
       </div>
