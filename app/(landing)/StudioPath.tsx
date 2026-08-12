@@ -14,9 +14,9 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 /**
  * Three stacked software-house sections before the SpaceJourney CTA:
- *  1) Capabilities — what we build
- *  2) Tech stack — marquee of tools
- *  3) Animated Path — SVG path the user "walks" while scrolling, with milestones
+ *  1) Capabilities what we build
+ *  2) Tech stack marquee of tools
+ *  3) Animated Path SVG path the user "walks" while scrolling, with milestones
  */
 export default function StudioPath() {
   return (
@@ -106,141 +106,119 @@ function CapabilitiesSection() {
   );
 
   return (
-    <section
-      ref={wrapRef}
-      className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)] py-28 md:py-36 overflow-hidden"
+ <section
+  ref={wrapRef}
+  className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)] py-28 md:py-36 overflow-hidden"
+>
+  <div
+    aria-hidden
+    className="absolute inset-0 opacity-[0.05] pointer-events-none"
+    style={{
+      backgroundImage:
+        "linear-gradient(oklch(0.18 0.02 250) 1px, transparent 1px), linear-gradient(90deg, oklch(0.18 0.02 250) 1px, transparent 1px)",
+      backgroundSize: "56px 56px",
+      maskImage:
+        "radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent 75%)",
+    }}
+  />
+
+  <div
+    ref={blobRef}
+    aria-hidden
+    className="absolute -top-32 -right-40 w-[640px] h-[640px] rounded-full pointer-events-none blur-3xl opacity-30"
+    style={{
+      background:
+        "radial-gradient(circle at 30% 30%, oklch(0.65 0.18 250 / 0.55), transparent 65%)",
+    }}
+  />
+
+  <div className="relative max-w-6xl mx-auto px-6 md:px-10">
+    <div ref={headRef} className="max-w-3xl mx-auto mb-20 text-center">
+      <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-5 flex items-center justify-center gap-3">
+        <span className="inline-block w-8 h-px bg-current opacity-60" />
+        What we build
+        <span className="inline-block w-8 h-px bg-current opacity-60" />
+      </p>
+      <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight leading-[1.05]">
+        Our <span className="italic font-serif">Software</span>
+        <br />
+        <span className="italic font-serif">Development</span> Services
+      </h2>
+      <p className="mt-7 text-base md:text-lg opacity-70 max-w-xl mx-auto">
+        Clickmasters offers complete software development services that cover every step from planning and design to building, testing, launch, and ongoing support.
+      </p>
+    </div>
+
+    <div
+      ref={gridRef}
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5"
+      style={{ perspective: "1200px" }}
     >
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.05] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(oklch(0.18 0.02 250) 1px, transparent 1px), linear-gradient(90deg, oklch(0.18 0.02 250) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-          maskImage:
-            "radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent 75%)",
-        }}
-      />
-
-      <div
-        ref={blobRef}
-        aria-hidden
-        className="absolute -top-32 -right-40 w-[640px] h-[640px] rounded-full pointer-events-none blur-3xl opacity-30"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 30%, oklch(0.65 0.18 250 / 0.55), transparent 65%)",
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-6 md:px-10">
-        <div ref={headRef} className="max-w-3xl mb-20">
-          <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-5 flex items-center gap-3">
-            <span className="inline-block w-8 h-px bg-current opacity-60" />
-            What we build
-          </p>
-          <h2 className="text-[clamp(2.25rem,5.5vw,4.75rem)] font-semibold tracking-tight leading-[1.02] overflow-hidden">
-            {["A", "full-stack", "software", "studio"].map((w, i) => (
-              <span
-                key={i}
-                data-cap-word
-                className="inline-block mr-[0.25em] will-change-transform"
-              >
-                {w}
-              </span>
-            ))}
-            <br />
-            {["for"].map((w, i) => (
-              <span
-                key={`a${i}`}
-                data-cap-word
-                className="inline-block mr-[0.25em] will-change-transform"
-              >
-                {w}
-              </span>
-            ))}
-            <span
-              data-cap-word
-              className="inline-block italic font-serif will-change-transform"
-            >
-              ambitious teams
-            </span>
-          </h2>
-          <p className="mt-7 text-base md:text-lg opacity-70 max-w-xl">
-            From the first wireframe to the millionth user — design,
-            engineering, AI and infrastructure under one roof.
-          </p>
-        </div>
-
+      {CAPS.map((c) => (
         <div
-          ref={gridRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5"
-          style={{ perspective: "1200px" }}
+          key={c.n}
+          data-cap-card
+          className="group relative rounded-2xl border border-[oklch(0.18_0.02_250)]/12 bg-white/70 backdrop-blur-sm p-7 md:p-8 overflow-hidden will-change-transform transition-transform duration-500 hover:-translate-y-2"
         >
-          {CAPS.map((c) => (
-            <div
-              key={c.n}
-              data-cap-card
-              className="group relative rounded-2xl border border-[oklch(0.18_0.02_250)]/12 bg-white/70 backdrop-blur-sm p-7 md:p-8 overflow-hidden will-change-transform transition-transform duration-500 hover:-translate-y-2"
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+            style={{
+              background: `radial-gradient(circle at 30% 0%, ${c.accent.replace(")", " / 0.18)")}, transparent 60%)`,
+            }}
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            style={{
+              background: `conic-gradient(from 0deg, transparent 0deg, ${c.accent} 60deg, transparent 120deg)`,
+              WebkitMask:
+                "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+              WebkitMaskComposite: "xor",
+              maskComposite: "exclude",
+              padding: 1,
+              animation: "spin 4s linear infinite",
+            }}
+          />
+
+          <div className="relative flex items-start justify-between mb-12">
+            <span className="text-[11px] uppercase tracking-[0.4em] opacity-50 font-medium">
+              {c.n}
+            </span>
+            <span
+              data-cap-icon
+              className="text-2xl will-change-transform"
+              style={{ color: c.accent }}
+              aria-hidden
             >
-              <div
-                aria-hidden
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                style={{
-                  background: `radial-gradient(circle at 30% 0%, ${c.accent.replace(")", " / 0.18)")}, transparent 60%)`,
-                }}
-              />
-              <div
-                aria-hidden
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background: `conic-gradient(from 0deg, transparent 0deg, ${c.accent} 60deg, transparent 120deg)`,
-                  WebkitMask:
-                    "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                  padding: 1,
-                  animation: "spin 4s linear infinite",
-                }}
-              />
+              {c.icon}
+            </span>
+          </div>
 
-              <div className="relative flex items-start justify-between mb-12">
-                <span className="text-[11px] uppercase tracking-[0.4em] opacity-50 font-medium">
-                  {c.n}
-                </span>
-                <span
-                  data-cap-icon
-                  className="text-2xl will-change-transform"
-                  style={{ color: c.accent }}
-                  aria-hidden
-                >
-                  {c.icon}
-                </span>
-              </div>
+          <h3 className="relative text-xl md:text-2xl font-semibold tracking-tight mb-3">
+            {c.title}
+          </h3>
+          <p className="relative text-sm md:text-[15px] leading-relaxed opacity-70">
+            {c.desc}
+          </p>
 
-              <h3 className="relative text-xl md:text-2xl font-semibold tracking-tight mb-3">
-                {c.title}
-              </h3>
-              <p className="relative text-sm md:text-[15px] leading-relaxed opacity-70">
-                {c.desc}
-              </p>
+          <div
+            className="relative mt-6 flex items-center gap-2 text-[11px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-80 -translate-x-2 group-hover:translate-x-0 transition-all duration-500"
+            style={{ color: c.accent }}
+          >
+            Explore <span aria-hidden>→</span>
+          </div>
 
-              <div
-                className="relative mt-6 flex items-center gap-2 text-[11px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-80 -translate-x-2 group-hover:translate-x-0 transition-all duration-500"
-                style={{ color: c.accent }}
-              >
-                Explore <span aria-hidden>→</span>
-              </div>
-
-              <span
-                aria-hidden
-                className="absolute left-0 bottom-0 h-[3px] w-0 group-hover:w-full transition-[width] duration-700 ease-out"
-                style={{ background: c.accent }}
-              />
-            </div>
-          ))}
+          <span
+            aria-hidden
+            className="absolute left-0 bottom-0 h-[3px] w-0 group-hover:w-full transition-[width] duration-700 ease-out"
+            style={{ background: c.accent }}
+          />
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 }
 
@@ -257,7 +235,7 @@ function TechStackSection() {
           Modern stack, <span className="italic font-serif">battle-tested</span>
         </h2>
         <p className="mt-5 text-sm md:text-base opacity-60 max-w-xl mx-auto">
-          We choose tools that age well — fast to ship today, easy to maintain
+          We choose tools that age well fast to ship today, easy to maintain
           tomorrow.
         </p>
       </div>
@@ -342,7 +320,7 @@ function ProcessPathSection() {
         },
       );
 
-      // Rail fills top-to-bottom as the whole timeline scrolls through — no pin needed.
+      // Rail fills top-to-bottom as the whole timeline scrolls through no pin needed.
       gsap.fromTo(
         railFillRef.current,
         { scaleY: 0 },
@@ -358,7 +336,7 @@ function ProcessPathSection() {
         },
       );
 
-      // Each step animates on its own trigger — independent, resilient, nothing shared to fight over.
+      // Each step animates on its own trigger independent, resilient, nothing shared to fight over.
       gsap.utils.toArray<HTMLElement>("[data-step]").forEach((el) => {
         const node = el.querySelector<HTMLElement>("[data-step-node]");
         const content = el.querySelector<HTMLElement>("[data-step-content]");
@@ -408,13 +386,13 @@ function ProcessPathSection() {
             How a project <span className="italic font-serif">moves</span>
           </h2>
           <p className="mt-5 text-base opacity-70">
-            Five stages, no surprises — here's what happens between the first
+            Five stages, no surprises here's what happens between the first
             call and going live.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-          {/* Video column — stretches to match the steps column's height */}
+          {/* Video column stretches to match the steps column's height */}
           <div className="relative lg:sticky lg:top-24 h-[320px] md:h-[420px] lg:h-auto rounded-2xl overflow-hidden">
             <video
               className="absolute inset-0 w-full h-full object-cover"

@@ -124,7 +124,7 @@ export default function Navbar() {
 
             {/* ── CTA + Hamburger ── */}
             <div className="flex items-center gap-3">
-              {/* CTA Button — desktop */}
+              {/* CTA Button desktop */}
               <a
                 href="/contact"
                 className={[
@@ -150,7 +150,7 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              {/* Hamburger — mobile */}
+              {/* Hamburger mobile */}
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className={[

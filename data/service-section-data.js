@@ -1,6 +1,6 @@
 /**
  * Section data for main service pages (trustedClients, features, stats, pricing, faqs).
- * Merged in getServiceData() — edit here to update all service landing sections.
+ * Merged in getServiceData() edit here to update all service landing sections.
  */
 
 const tier = (type, investment, bestFor, timeline, features) => ({
@@ -244,7 +244,7 @@ export const SERVICE_SECTION_DATA = {
     ],
     faqs: [
       faq(
-        "Native vs cross-platform — which should we choose?",
+        "Native vs cross-platform which should we choose?",
         "Native is best for maximum performance and platform-specific features. Cross-platform (React Native, Flutter) reduces cost and time when targeting both stores.",
       ),
       faq(
@@ -718,7 +718,7 @@ export const SERVICE_SECTION_DATA = {
     faqs: [
       faq(
         "Which cloud providers do you support?",
-        "Amazon Web Services, Microsoft Azure, and Google Cloud Platform — including hybrid setups.",
+        "Amazon Web Services, Microsoft Azure, and Google Cloud Platform including hybrid setups.",
       ),
       faq(
         "Can you migrate us with zero downtime?",
@@ -960,7 +960,7 @@ export const SERVICE_SECTION_DATA = {
       ),
       faq(
         "Can you build NFT marketplaces?",
-        "Yes — minting, listings, royalties, wallets, and admin dashboards with IPFS or centralized metadata.",
+        "Yes minting, listings, royalties, wallets, and admin dashboards with IPFS or centralized metadata.",
       ),
       faq(
         "Is Web3 right for our business?",

@@ -166,43 +166,43 @@ export const buildChapters = (refs: {
 }): Chapter[] => [
   {
     ref: refs.c1,
-    kicker: "01 — Discovery",
+    kicker: "Step 1 Discovery & Strategy",
     title: (
       <>
-        Ideas, <span className="italic font-serif">engineered</span>
+        Learn, define, <span className="italic font-serif">align</span>
       </>
     ),
-    sub: "We turn ambitious product ideas into clear, buildable roadmaps.",
+    sub: "We start by learning about your business, your users, and your goals. Then we agree on the scope, timeline, and what success looks like.",
   },
   {
     ref: refs.c2,
-    kicker: "02 — Design",
+    kicker: "Step 2 Design & Planning",
     title: (
       <>
-        Interfaces that <span className="italic font-serif">feel right</span>
+        Blueprint for <span className="italic font-serif">excellence</span>
       </>
     ),
-    sub: "Pixel-precise UI/UX crafted around real users, not assumptions.",
+    sub: "Our team plans the technical setup, creates UI/UX design prototypes, and maps out the full roadmap so everyone knows what's being built.",
   },
   {
     ref: refs.c3,
-    kicker: "03 — Engineering",
+    kicker: "Step 3 Development & Testing",
     title: (
       <>
-        Code built to <span className="italic font-serif">scale</span>
+        Build, test, <span className="italic font-serif">perfect</span>
       </>
     ),
-    sub: "Web, mobile and cloud systems shipped clean, fast and tested.",
+    sub: "We build in short sprints and test constantly. Our Testing & QA team checks every feature for speed, safety, and quality.",
   },
   {
     ref: refs.c4,
-    kicker: "04 — Launch",
+    kicker: "Step 4 Deployment & Support",
     title: (
       <>
-        From beta to <span className="italic font-serif">millions</span>
+        Launch, monitor, <span className="italic font-serif">grow</span>
       </>
     ),
-    sub: "We deploy, monitor and iterate so your product keeps growing.",
+    sub: "We launch your software using Cloud & DevOps best practices, then keep monitoring, maintaining, and supporting it as your business grows.",
   },
 ];
 
@@ -218,48 +218,75 @@ export const RING_COUNT = 14;
 export const CAPS = [
   {
     n: "01",
-    title: "Web Platforms",
-    desc: "Marketing sites, SaaS dashboards and content systems engineered for speed and SEO.",
+    title: "Web Development",
+    desc: "We build fast, easy-to-use websites and web apps for businesses and SaaS platforms, with SEO and accessibility built in from the start.",
     icon: "◐",
     accent: "oklch(0.55 0.18 250)",
   },
   {
     n: "02",
-    title: "Mobile Apps",
-    desc: "iOS, Android and cross-platform apps built with React Native and native modules.",
+    title: "Mobile App Development",
+    desc: "Our mobile app development covers both iOS and Android, built for speed, smooth performance, and easy connection with your existing systems.",
     icon: "▲",
     accent: "oklch(0.62 0.18 30)",
   },
   {
     n: "03",
-    title: "AI Integrations",
-    desc: "LLM features, RAG pipelines and intelligent automations wired into your product.",
+    title: "UI/UX Design",
+    desc: "Our UI/UX design turns complicated processes into simple, easy-to-use screens through research, wireframes, and prototypes that boost engagement.",
     icon: "✦",
     accent: "oklch(0.65 0.18 160)",
   },
   {
     n: "04",
-    title: "Cloud & DevOps",
-    desc: "Scalable infrastructure on AWS, GCP and edge runtimes with CI/CD baked in.",
+    title: "Artificial Intelligence (AI)",
+    desc: "Our AI software development services help you automate daily tasks, personalize the customer experience, and make smarter decisions using custom Artificial Intelligence (AI) tools.",
     icon: "◇",
     accent: "oklch(0.60 0.16 290)",
   },
   {
     n: "05",
-    title: "Product Design",
-    desc: "Research-led UI/UX, design systems and prototypes that ship straight to dev.",
+    title: "Machine Learning (ML)",
+    desc: "From product recommendations to fraud detection, our Machine Learning (ML) team builds models that keep learning and improving over time.",
     icon: "❋",
     accent: "oklch(0.65 0.18 60)",
   },
   {
     n: "06",
-    title: "MVP Sprints",
-    desc: "Go from idea to a working, investor-ready product in four to six weeks.",
+    title: "NLP & Computer Vision",
+    desc: "Our NLP & Computer Vision solutions power chatbots, document automation, image recognition, and quality checks making manual work faster and easier.",
     icon: "➔",
     accent: "oklch(0.58 0.20 350)",
   },
+  {
+    n: "07",
+    title: "Data Services",
+    desc: "Our Data Services team organizes your data, builds dashboards, and creates simple reports so your leadership can make better decisions faster.",
+    icon: "◐",
+    accent: "oklch(0.55 0.18 210)",
+  },
+  {
+    n: "08",
+    title: "Cloud & DevOps",
+    desc: "Our Cloud & DevOps team sets up your systems on AWS, Azure, or Google Cloud, with automated deployments and cost-friendly cloud migration.",
+    icon: "▲",
+    accent: "oklch(0.62 0.18 200)",
+  },
+  {
+    n: "09",
+    title: "Cybersecurity",
+    desc: "Our Cybersecurity team keeps your software and data safe with regular testing, secure code checks, and around-the-clock monitoring.",
+    icon: "✦",
+    accent: "oklch(0.65 0.18 130)",
+  },
+  {
+    n: "10",
+    title: "Testing & QA",
+    desc: "Our Testing & QA process checks every feature carefully, so your product launches stable, fast, and free of major bugs.",
+    icon: "◇",
+    accent: "oklch(0.60 0.16 300)",
+  },
 ];
-
 export const STACK_ROW_1 = [
   "React",
   "Next.js",
@@ -303,7 +330,7 @@ export const STEPS = [
     t: "Build",
     d: "Two-week sprints, continuous deploys, daily Slack.",
   },
-  { k: "04", t: "Launch", d: "QA, performance, analytics — then we go live." },
+  { k: "04", t: "Launch", d: "QA, performance, analytics then we go live." },
   { k: "05", t: "Scale", d: "Iterate on data, add features, grow the team." },
 ];
 
@@ -313,60 +340,74 @@ export const STEPS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Sarah Chen",
-    role: "Founder, Lumen",
+    name: "★★★★★ Operations Director",
+    role: "Logistics Startup Texas",
     quote:
-      "Transformed our brand entirely. The team operates with a rare blend of taste and rigor.",
+      "Clickmasters Software Development Company rebuilt our dispatch system from scratch. What used to take hours of manual work now runs on its own. Our delivery times dropped by 30% in just three months.",
     accent: "oklch(0.78 0.14 50)",
   },
   {
-    name: "Daniel Park",
-    role: "CTO, Northwind",
+    name: "★★★★★ Founder",
+    role: "HealthTech Platform California",
     quote:
-      "Best design partner we've worked with. Shipped a production-grade product in six weeks.",
+      "We needed a patient portal built fast and built right. The team at Clickmasters Software Development Company delivered a working version in eight weeks and is still our development partner today.",
     accent: "oklch(0.75 0.16 200)",
   },
   {
-    name: "Maya Iyer",
-    role: "Head of Design, Atelier",
+    name: "★★★★★ CTO",
+    role: "Fintech Company New York",
     quote:
-      "Pixel-perfect, every single detail. They treat craft like a non-negotiable.",
+      "Clickmasters Software Development Company understood our compliance needs right away. The custom software development services we got were exactly what a fintech product needs.",
     accent: "oklch(0.78 0.15 320)",
   },
   {
-    name: "Alex Romero",
-    role: "CMO, Norton",
+    name: "★★★★★ VP Marketing",
+    role: "E-commerce Brand Florida",
     quote:
-      "Doubled our conversion overnight. The redesign paid for itself in the first month.",
+      "Our new online store, built by Clickmasters Software Development Company, increased mobile sales by 24%. The UI/UX design work alone was worth it.",
     accent: "oklch(0.80 0.14 110)",
   },
   {
-    name: "Priya Shah",
-    role: "Founder, Kove",
+    name: "★★★★★ Owner",
+    role: "Manufacturing Firm Ohio",
     quote:
-      "They understood our vision faster than our internal team did. Genuinely rare.",
+      "The maintenance dashboard built by Clickmasters Software Development Company has already helped us avoid two major equipment failures.",
     accent: "oklch(0.76 0.15 25)",
   },
   {
-    name: "Marcus Hall",
-    role: "VP Product, Helio",
+    name: "★★★★★ Product Manager",
+    role: "EdTech Startup Illinois",
     quote:
-      "Their motion work elevated the entire product. Customers notice immediately.",
+      "Clickmasters Software Development Company delivered our learning platform on time. Their Testing & QA process caught issues we never would have found ourselves.",
     accent: "oklch(0.75 0.16 260)",
   },
   {
-    name: "Yuki Tanaka",
-    role: "Creative Director, Forma",
+    name: "★★★★★ CEO",
+    role: "PropTech Company Arizona",
     quote:
-      "An effortless collaboration. They challenge us in the best way every single round.",
+      "We talked to several software development companies before choosing Clickmasters Software Development Company. Their plan was the clearest, and they delivered exactly what they promised.",
     accent: "oklch(0.78 0.14 160)",
   },
   {
-    name: "Elena Voss",
-    role: "CEO, Stratus",
+    name: "★★★★★ Director of IT",
+    role: "Enterprise Retailer Georgia",
     quote:
-      "Brand, product, story — they unified everything. We finally feel like one company.",
+      "As an enterprise software development partner, Clickmasters Software Development Company connected with our older systems without a single major issue.",
     accent: "oklch(0.78 0.15 80)",
+  },
+  {
+    name: "★★★★★ Founder",
+    role: "AI Startup Washington",
+    quote:
+      "The AI software development services team at Clickmasters Software Development Company built and launched our recommendation tool in half the time our old vendor promised.",
+    accent: "oklch(0.77 0.14 140)",
+  },
+  {
+    name: "★★★★★ Operations Lead",
+    role: "Supply Chain Company North Carolina",
+    quote:
+      "Quick to respond, easy to talk to, and always on top of things. Clickmasters Software Development Company is now our go-to partner for every new project.",
+    accent: "oklch(0.79 0.15 60)",
   },
 ];
 

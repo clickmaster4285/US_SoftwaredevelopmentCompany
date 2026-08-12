@@ -47,101 +47,101 @@ export default function Testimonials3DRoom() {
   const roomOpacity = Math.min(1, progress * 8);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative bg-[oklch(0.07_0.01_260)] text-[oklch(0.97_0.005_80)]"
-      style={{ height: `${120 + n * 120}vh` }}
+   <section
+  ref={sectionRef}
+  className="relative bg-[oklch(0.07_0.01_260)] text-[oklch(0.97_0.005_80)]"
+  style={{ height: `${120 + n * 120}vh` }}
+>
+  <div className="sticky top-0 h-screen w-screen overflow-hidden">
+    <div
+      className="absolute inset-0 pointer-events-none"
+      style={{
+        background:
+          "radial-gradient(ellipse at center, oklch(0.16 0.04 260) 0%, oklch(0.05 0.01 260) 75%)",
+      }}
+    />
+
+    <div
+      className="absolute inset-x-0 top-0 z-30 pt-20 md:pt-28 px-8 text-center will-change-[opacity,transform]"
+      style={{
+        opacity: headingOpacity,
+        transform: `translateY(${-progress * 60}px)`,
+      }}
     >
-      <div className="sticky top-0 h-screen w-screen overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, oklch(0.16 0.04 260) 0%, oklch(0.05 0.01 260) 75%)",
-          }}
-        />
+      <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4">
+        Success Stories & Reviews
+      </p>
+      <h2 className="text-[clamp(2rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1]">
+        Here's what real clients{" "}
+        <span className="italic font-serif">say</span>
+      </h2>
+      <p className="mt-6 text-sm md:text-base opacity-70 max-w-2xl mx-auto">
+        about working with our software development agency.
+      </p>
+    </div>
 
-        <div
-          className="absolute inset-x-0 top-0 z-30 pt-20 md:pt-28 px-8 text-center will-change-[opacity,transform]"
-          style={{
-            opacity: headingOpacity,
-            transform: `translateY(${-progress * 60}px)`,
-          }}
-        >
-          <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4">
-            Kind Words
-          </p>
-          <h2 className="text-[clamp(2rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1]">
-            Walk through what clients{" "}
-            <span className="italic font-serif">say</span>
-          </h2>
-          <p className="mt-6 text-xs uppercase tracking-[0.3em] opacity-50">
-            Scroll to walk down the corridor ↓
-          </p>
-        </div>
+    <div
+      className="absolute inset-0"
+      style={{
+        perspective: "1600px",
+        perspectiveOrigin: "50% 50%",
+      }}
+    >
+      <div
+        className="absolute inset-0"
+        style={{
+          transformStyle: "preserve-3d",
+          transform: `translate3d(${-cameraX}px, 0, ${-BASE_DEPTH + cameraZ}px)`,
+          willChange: "transform",
+        }}
+      >
+        <Corridor n={n} opacity={roomOpacity} />
 
-        <div
-          className="absolute inset-0"
-          style={{
-            perspective: "1600px",
-            perspectiveOrigin: "50% 50%",
-          }}
-        >
-          <div
-            className="absolute inset-0"
-            style={{
-              transformStyle: "preserve-3d",
-              transform: `translate3d(${-cameraX}px, 0, ${-BASE_DEPTH + cameraZ}px)`,
-              willChange: "transform",
-            }}
-          >
-            <Corridor n={n} opacity={roomOpacity} />
+        {TESTIMONIALS.map((card, i) => {
+          const side = sideOf(i);
+          const z = -(i * SPACING_Z);
+          const x = side * WALL_X;
+          const dist = i - cameraIndex;
+          const focus = Math.max(0, 1 - Math.abs(dist) * 0.9);
+          const visibility = Math.max(0.16, 1 - Math.abs(dist) * 0.22);
+          const lift = Math.sin(Math.min(1, focus) * Math.PI) * 22;
 
-            {TESTIMONIALS.map((card, i) => {
-              const side = sideOf(i);
-              const z = -(i * SPACING_Z);
-              const x = side * WALL_X;
-              const dist = i - cameraIndex;
-              const focus = Math.max(0, 1 - Math.abs(dist) * 0.9);
-              const visibility = Math.max(0.16, 1 - Math.abs(dist) * 0.22);
-              const lift = Math.sin(Math.min(1, focus) * Math.PI) * 22;
-
-              return (
-                <div
-                  key={i}
-                  className="absolute left-1/2 top-1/2 w-[min(520px,80vw)]"
-                  style={{
-                    transform: `translate3d(calc(-50% + ${x}px), calc(-50% - ${lift}px), ${z}px) rotateY(${-side * CARD_ROT_Y}deg)`,
-                    transformStyle: "preserve-3d",
-                    opacity: visibility,
-                  }}
-                >
-                  <Card card={card} index={i} focus={focus} />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
-          {TESTIMONIALS.map((_, i) => {
-            const active = Math.round(cameraIndex) === i;
-            return (
-              <span
-                key={i}
-                className="block h-[3px] rounded-full transition-all duration-500"
-                style={{
-                  width: active ? 28 : 10,
-                  background: active
-                    ? "oklch(0.97 0.005 80)"
-                    : "oklch(0.97 0.005 80 / 0.25)",
-                }}
-              />
-            );
-          })}
-        </div>
+          return (
+            <div
+              key={i}
+              className="absolute left-1/2 top-1/2 w-[min(520px,80vw)]"
+              style={{
+                transform: `translate3d(calc(-50% + ${x}px), calc(-50% - ${lift}px), ${z}px) rotateY(${-side * CARD_ROT_Y}deg)`,
+                transformStyle: "preserve-3d",
+                opacity: visibility,
+              }}
+            >
+              <Card card={card} index={i} focus={focus} />
+            </div>
+          );
+        })}
       </div>
-    </section>
+    </div>
+
+    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
+      {TESTIMONIALS.map((_, i) => {
+        const active = Math.round(cameraIndex) === i;
+        return (
+          <span
+            key={i}
+            className="block h-[3px] rounded-full transition-all duration-500"
+            style={{
+              width: active ? 28 : 10,
+              background: active
+                ? "oklch(0.97 0.005 80)"
+                : "oklch(0.97 0.005 80 / 0.25)",
+            }}
+          />
+        );
+      })}
+    </div>
+  </div>
+</section>
   );
 }
 

@@ -150,7 +150,7 @@ export default function SpaceJourney() {
         },
       });
 
-      // SCENE 0 — Intro: tablet zooms toward camera, copy slides away, fade into world
+      // SCENE 0 Intro: tablet zooms toward camera, copy slides away, fade into world
       tl.to(introCopyRef.current, { opacity: 0, x: 120, duration: 0.5 }, 0)
         .to(introBlobRef.current, { opacity: 0, rotate: 80, duration: 0.5 }, 0)
         .to(
@@ -169,7 +169,7 @@ export default function SpaceJourney() {
           0.85,
         );
 
-      // SCENE 1 — Discovery: leave the ground, stars emerge
+      // SCENE 1 Discovery: leave the ground, stars emerge
       tl.to(
         skyRef.current,
         {
@@ -207,7 +207,7 @@ export default function SpaceJourney() {
           1.85,
         );
 
-      // SCENE 2 — Design: subtle tilt, blueprint grid feel, robot fills frame
+      // SCENE 2 Design: subtle tilt, blueprint grid feel, robot fills frame
       tl.to(worldRef.current, { rotateZ: 2, duration: 1 }, 2)
         .to(
           astroWrapRef.current,
@@ -251,7 +251,7 @@ export default function SpaceJourney() {
           2.85,
         );
 
-      // SCENE 3 — Engineering: drift past a quiet structure, robot off-center working
+      // SCENE 3 Engineering: drift past a quiet structure, robot off-center working
       tl.to(worldRef.current, { rotateZ: -1.5, duration: 1 }, 3)
         .to(
           skyRef.current,
@@ -297,7 +297,7 @@ export default function SpaceJourney() {
           3.85,
         );
 
-      // SCENE 4 — Launch: zoom forward into deep field
+      // SCENE 4 Launch: zoom forward into deep field
       tl.to(worldRef.current, { rotateZ: 0, duration: 1 }, 4)
         .to(
           planet2Ref.current,
@@ -333,7 +333,7 @@ export default function SpaceJourney() {
         .to(ringsRef.current, { scale: 10, opacity: 0, duration: 1 }, 4)
         .to(vignetteRef.current, { opacity: 1, duration: 1 }, 4.3);
 
-      // SCENE 5 — Landing CTA (5 → 6)
+      // SCENE 5 Landing CTA (5 → 6)
       tl.to(
         astroWrapRef.current,
         {
@@ -548,7 +548,7 @@ export default function SpaceJourney() {
           }}
         />
 
-        {/* INTRO — sits above the world until the first scroll burst */}
+        {/* INTRO sits above the world until the first scroll burst */}
         <div ref={introRef} className="absolute inset-0 z-20">
           <div
             ref={introBgRef}

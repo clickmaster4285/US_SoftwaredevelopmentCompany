@@ -87,36 +87,54 @@ export default function Navbar() {
         href: `/blog/${blog.slug || blog._id}`,
       })) || []
     },
+   {
+  label: "FAQs",
+  viewAllHref: "/faq",
+  items: [
     {
-      label: "FAQs",
-      viewAllHref: "/faq",
-      items: [
-        {
-          type: "faq",
-          question: "What is Software Development Company?",
-          answer: "Learn about tailored software solutions for your business and how custom applications can transform operations.",
-          href: "/faq#what-is-custom-software-development",
-        },
-        {
-          type: "faq",
-          question: "How long does it take to build an app?",
-          answer: "Timeline for app development projects depends on scope, integrations, and delivery model.",
-          href: "/faq#how-long-does-it-take-to-build-an-app",
-        },
-        {
-          type: "faq",
-          question: "What technologies do you use?",
-          answer: "Our tech stack includes modern frontend, backend, and cloud tools to build scalable digital products.",
-          href: "/faq#what-technologies-do-you-use",
-        },
-        {
-          type: "faq",
-          question: "How much does a project cost?",
-          answer: "Pricing and cost estimation depends on requirements, timeline, and integration complexity.",
-          href: "/faq#how-much-does-a-project-cost",
-        },
-      ],
+      type: "faq",
+      question: "What does a software development company do?",
+      answer: "A software development company designs, builds, tests, and maintains software like websites, mobile apps, and business systems built around your specific needs, instead of a one-size-fits-all product.",
+      href: "/faq#what-does-a-software-development-company-do",
     },
+    {
+      type: "faq",
+      question: "How much does custom software development cost in the USA?",
+      answer: "It depends on your project. Most custom software development services start around $15,000 for a small project and can go above $250,000 for large, enterprise-level platforms. Clickmasters gives you a clear, fixed quote after a quick discovery call.",
+      href: "/faq#how-much-does-custom-software-development-cost",
+    },
+    {
+      type: "faq",
+      question: "How long does it take to build custom software?",
+      answer: "A simple first version usually takes 8-12 weeks. A full enterprise software development project can take 4-9 months, depending on how complex it is.",
+      href: "/faq#how-long-does-it-take-to-build-custom-software",
+    },
+    {
+      type: "faq",
+      question: "Does Clickmasters work with US-based businesses remotely?",
+      answer: "Yes. As a software development agency working with clients in the USA, UK, and UAE, we match your working hours, communicate through Slack and Zoom, and share weekly progress updates.",
+      href: "/faq#does-clickmasters-work-with-us-businesses-remotely",
+    },
+    {
+      type: "faq",
+      question: "What industries does Clickmasters build software for?",
+      answer: "We build software development solutions for healthcare, fintech, e-commerce, logistics, real estate, education, and manufacturing businesses, among others.",
+      href: "/faq#what-industries-does-clickmasters-build-software-for",
+    },
+    {
+      type: "faq",
+      question: "Does Clickmasters provide support after the software is launched?",
+      answer: "Yes. Every project includes support after launch, with ongoing maintenance and upgrade options for the long run.",
+      href: "/faq#does-clickmasters-provide-post-launch-support",
+    },
+    {
+      type: "faq",
+      question: "How is Clickmasters different from other software development companies?",
+      answer: "Clickmasters brings together experienced developers, honest pricing, and strong skills in AI software development services, cloud systems, and enterprise software giving you the reliability of an in-house team with the flexibility of an outside software development firm.",
+      href: "/faq#how-is-clickmasters-different",
+    },
+  ],
+},
     {
       label: "Testimonials",
       viewAllHref: "/testimonials",

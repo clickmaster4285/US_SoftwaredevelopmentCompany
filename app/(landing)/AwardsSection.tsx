@@ -143,7 +143,7 @@ export default function AwardsSection() {
           }}
         />
 
-        {/* Massive background typography — letters fill one by one */}
+        {/* Massive background typography letters fill one by one */}
         <div
           aria-hidden
           className="absolute inset-0 flex items-center justify-center select-none"
