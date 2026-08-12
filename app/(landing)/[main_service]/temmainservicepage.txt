@@ -18,7 +18,7 @@ const TrustedClientsSection = dynamic(() => import('@/components/landing/main-se
 const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
 const FaqSection = dynamic(() => import('@/components/landing/main-service/FaqSection'), { ssr: true });
 
-// Lazy: named export only — wrap as component functions
+// Lazy: named export only wrap as component functions
 const ExploreSection = dynamic(() =>
   import('@/components/landing/main-service/ExploreSection').then(mod => {
     const C = mod.ExploreSection; const W = (p) => <C {...p} />; W.displayName = 'ExploreSection'; return W;
@@ -128,7 +128,7 @@ export default function ServiceClient({ serviceData }) {
       <PricingSection
         plans={pricingPlans}
         title={`${serviceData?.title} Investment`}
-        subtitle={`Flexible engagement models for ${serviceData?.title?.toLowerCase() || 'your project'} — scoped to your timeline, team size, and goals.`}
+        subtitle={`Flexible engagement models for ${serviceData?.title?.toLowerCase() || 'your project'} scoped to your timeline, team size, and goals.`}
       />
 
       <IndustriesSection />

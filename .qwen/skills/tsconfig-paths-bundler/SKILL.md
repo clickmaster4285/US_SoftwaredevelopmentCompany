@@ -39,4 +39,4 @@ Zero errors = paths are resolving correctly.
 
 ## Common mistake
 
-Using `"@/*": ["/*"]` (absolute) without `baseUrl` — this silently fails with `moduleResolution: "Bundler"`. The correct form is `"@/*": ["./*"]` with `"baseUrl": "."`.
+Using `"@/*": ["/*"]` (absolute) without `baseUrl` this silently fails with `moduleResolution: "Bundler"`. The correct form is `"@/*": ["./*"]` with `"baseUrl": "."`.

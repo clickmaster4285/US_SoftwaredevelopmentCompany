@@ -1,5 +1,5 @@
 /**
- * Why Choose Us — single source of truth for main service pages.
+ * Why Choose Us single source of truth for main service pages.
  * Icons are string keys from iconMap in main-services.js
  */
 
@@ -11,7 +11,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
   b(
     "Rocket",
     "Rapid Delivery",
-    "Agile sprints with full transparency — your project ships on time, every time.",
+    "Agile sprints with full transparency your project ships on time, every time.",
     ["2-Week Sprints", "Daily Updates", "Fast Turnaround", "No Delays"],
     "2x",
     "Faster Delivery",
@@ -48,7 +48,7 @@ export const DEFAULT_WHY_CHOOSE_US_BENEFITS = [
   b(
     "Users",
     "Client-Centric",
-    "Dedicated PMs, weekly demos, and clear communication — you are part of the team.",
+    "Dedicated PMs, weekly demos, and clear communication you are part of the team.",
     ["Dedicated PM", "Weekly Demos", "24/7 Support", "Clear Pricing"],
     "98%",
     "Client Retention",
@@ -94,7 +94,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Building",
         "Custom Architecture",
-        "Solutions designed around your workflows — not forced templates.",
+        "Solutions designed around your workflows not forced templates.",
         [
           "Requirements Analysis",
           "System Design",
@@ -115,7 +115,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "ShieldCheck",
         "Quality Assurance",
-        "Rigorous testing before every release — fewer bugs, fewer surprises.",
+        "Rigorous testing before every release fewer bugs, fewer surprises.",
         ["Unit Tests", "Integration Tests", "UAT Support", "Regression Suites"],
         "99.9%",
         "Uptime SLA",
@@ -136,7 +136,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Users",
         "Dedicated Teams",
-        "Engineers and PMs aligned to your goals — an extension of your company.",
+        "Engineers and PMs aligned to your goals an extension of your company.",
         [
           "Dedicated PM",
           "Slack Access",
@@ -149,7 +149,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Clock",
         "Post-Launch Support",
-        "We do not disappear after go-live — monitoring, fixes, and scaling included.",
+        "We do not disappear after go-live monitoring, fixes, and scaling included.",
         ["24/7 Monitoring", "Bug Fixes", "Feature Updates", "SLA Options"],
         "5+",
         "Years Partnership",
@@ -211,7 +211,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Smartphone",
         "Native & Cross-Platform",
-        "Swift, Kotlin, React Native, and Flutter — the right stack for your goals.",
+        "Swift, Kotlin, React Native, and Flutter the right stack for your goals.",
         ["iOS & Android", "React Native", "Flutter", "Shared Codebase"],
         "100+",
         "Apps Shipped",
@@ -240,7 +240,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Users",
         "User-Centered UX",
-        "Interfaces users love — tested on real devices before launch.",
+        "Interfaces users love tested on real devices before launch.",
         ["Usability Testing", "Prototyping", "Analytics", "A/B Experiments"],
         "98%",
         "Retention Rate",
@@ -302,7 +302,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Brain",
         "Production-Ready AI",
-        "LLM apps and agents that ship — not stuck in proof-of-concept.",
+        "LLM apps and agents that ship not stuck in proof-of-concept.",
         ["RAG Pipelines", "Vector DBs", "Fine-Tuning", "Eval Frameworks"],
         "50+",
         "AI Deployments",
@@ -353,7 +353,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Cpu",
         "Custom ML Models",
-        "Models built for your domain — not generic off-the-shelf tools.",
+        "Models built for your domain not generic off-the-shelf tools.",
         [
           "Feature Engineering",
           "Model Selection",
@@ -411,7 +411,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "Workflow",
         "CI/CD Pipelines",
-        "Automated build, test, and deploy — ship multiple times per day.",
+        "Automated build, test, and deploy ship multiple times per day.",
         ["GitHub Actions", "Jenkins", "Blue-Green Deploy", "Rollback"],
         "70%",
         "Faster Releases",
@@ -427,7 +427,7 @@ export const WHY_CHOOSE_US_BY_SLUG = {
       b(
         "FileText",
         "Infrastructure as Code",
-        "Repeatable, version-controlled infrastructure — no manual drift.",
+        "Repeatable, version-controlled infrastructure no manual drift.",
         ["Terraform", "CloudFormation", "Ansible", "GitOps"],
         "100%",
         "Reproducible Infra",

@@ -493,16 +493,16 @@ Result
 ✅ About page now has premium sections: Hero → Stats → Journey → Services → Values → Tech Stack → Clients → CTA
 Stack → Clients → CTA
 
-Session Summary — ClickMasters Website Cleanup
+Session Summary ClickMasters Website Cleanup
 
     Project
-    ClickMasters agency website — Next.js (app router), React 19, Tailwind 4, framer-motion. Package manager: pnpm. Dev server uses --turbopack.
+    ClickMasters agency website Next.js (app router), React 19, Tailwind 4, framer-motion. Package manager: pnpm. Dev server uses --turbopack.
 
     ---
 
     1. Removed swiper, lenis, @studio-freight/lenis packages
 
-    `package.json` — removed all three dependencies.
+    `package.json` removed all three dependencies.
 
     ---
 
@@ -519,7 +519,7 @@ Session Summary — ClickMasters Website Cleanup
     ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤
     │ components/HomeLogoLink.jsx                              │ Updated import: useLenisScroll → useScrollToTop                                                  │
     ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤
-    │                                                          │ Full rewrite — removed all swiper, swiper/css, swiper/css/effect-coverflow, swiper/react,        │
+    │                                                          │ Full rewrite removed all swiper, swiper/css, swiper/css/effect-coverflow, swiper/react,        │
     │ components/landing/main-service/TestimonialsSection.jsx  │ swiper/modules imports. Replaced <Swiper> / <SwiperSlide> with a custom framer-motion carousel:  │
     │                                                          │ grid of 3 cards (prev/current/next), AnimatePresence slide transitions, dot indicators, autoplay │
     │                                                          │  with pause-on-hover, prev/next/play-pause controls.                                             │
@@ -549,7 +549,7 @@ Session Summary — ClickMasters Website Cleanup
      - TrustedBySection.jsx
      - LandingHomeDeferredHeavy.jsx (had broken dynamic imports to non-existent @/components/landingPage/ path)
 
-    14 files remain — all actively imported by app/(landing)/[category]/main-service.jsx.
+    14 files remain all actively imported by app/(landing)/[category]/main-service.jsx.
 
     Also cleaned up the stale "Unused sections" comment block in app/(landing)/[category]/main-service.jsx.
 
@@ -563,7 +563,7 @@ Session Summary — ClickMasters Website Cleanup
      - ServiceSubpageBreadcrumb.jsx
      - table-of-contents.jsx
 
-    16 files remain — all actively imported (directly or dynamically) by app/(landing)/[category]/[service]/page.js or by each other.
+    16 files remain all actively imported (directly or dynamically) by app/(landing)/[category]/[service]/page.js or by each other.
 
     ---
 

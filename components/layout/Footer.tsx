@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-20 md:pt-28 pb-16">
         {/* Top row: CTA + Nav */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
-          {/* Left — CTA with mascot */}
+          {/* Left CTA with mascot */}
           <div className="md:col-span-5 lg:col-span-5 relative">
             <div className="flex items-start gap-4">
               <div className="relative w-[80px] md:w-[100px] h-[100px] md:h-[130px] shrink-0 -mt-2">
@@ -77,7 +77,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right — Navigation columns */}
+          {/* Right Navigation columns */}
           <div className="md:col-span-7 lg:col-span-7 md:justify-self-end">
             <div className="grid grid-cols-2 gap-12 md:gap-20">
               {/* Main nav */}

@@ -80,7 +80,7 @@ export default function MegaMenu({ categories, trigger }: MegaMenuProps) {
       onMouseLeave={handleLeave}
     >
       {trigger}
-      {/* Hover bridge — prevents menu from closing while moving cursor to panel */}
+      {/* Hover bridge prevents menu from closing while moving cursor to panel */}
       <div className="absolute -bottom-4 left-0 right-0 h-4" />
 
       {visible && (
@@ -161,6 +161,6 @@ import { serviceMenuSections } from "@/data/main-services";
 1. **Hover bridge**: An invisible `div` between the trigger and the panel prevents the menu from closing when the user moves their cursor diagonally from the link to the dropdown.
 2. **Close timer with reset**: `handleEnter` clears any pending close timer, so rapid mouse movements don't cause flicker.
 3. **Reset on close**: `setHoveredIdx(0)` on close ensures the first category is selected next time the menu opens.
-4. **`trigger` prop pattern**: The MegaMenu doesn't own the nav link — it receives it as a child prop. This keeps the navbar in control of link styling and the menu in control of positioning.
+4. **`trigger` prop pattern**: The MegaMenu doesn't own the nav link it receives it as a child prop. This keeps the navbar in control of link styling and the menu in control of positioning.
 5. **Data-driven**: The menu reads from a plain data array, so adding/removing services requires zero component changes.
 6. **Scrollable right panel**: `overflow-y-auto` with `max-h-[70vh]` handles categories with many sub-items gracefully.

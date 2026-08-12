@@ -37,7 +37,7 @@ export const values = [
       </svg>
     ),
     title: "Scalable & Future-Proof Architecture",
-    desc: "We engineer software solutions on proven stacks — React, Node.js, and cloud-native infrastructure — built to scale without costly rewrites.",
+    desc: "We engineer software solutions on proven stacks React, Node.js, and cloud-native infrastructure built to scale without costly rewrites.",
   },
   {
     icon: (
@@ -57,7 +57,7 @@ export const values = [
       </svg>
     ),
     title: "Enterprise Security & Compliance",
-    desc: "Every product from our software house follows OWASP standards, GDPR best practices, and rigorous QA — so your business and users stay protected.",
+    desc: "Every product from our software house follows OWASP standards, GDPR best practices, and rigorous QA so your business and users stay protected.",
   },
   {
     icon: (
@@ -77,7 +77,7 @@ export const values = [
       </svg>
     ),
     title: "24/7 Dedicated Support",
-    desc: "Our software development company stays with you post-launch — monitoring performance, deploying updates, and resolving issues around the clock.",
+    desc: "Our software development company stays with you post-launch monitoring performance, deploying updates, and resolving issues around the clock.",
   },
 ];
 
@@ -101,7 +101,7 @@ export const trustedClients = [
   { name: "Discord" },
 ];
 
-// Tech stack icons — Devicon SVGs via jsDelivr (order matches techStackNames)
+// Tech stack icons Devicon SVGs via jsDelivr (order matches techStackNames)
 const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons";
 
 export const techStackImages = {
