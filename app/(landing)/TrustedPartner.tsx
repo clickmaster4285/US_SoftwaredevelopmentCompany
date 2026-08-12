@@ -5,10 +5,11 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 /**
  * TrustedPartnerSection
  * -----------------------------------------------------------------------
- * Signature element: a "Credential Ledger" — certifications presented as
- * verified line items with stroke-drawn checkmarks and a single scan-line
- * sweep on reveal, echoing the "fully documented / on the record" thesis
- * of the copy rather than a decorative badge grid.
+ * Palette aligned with IndustriesSection: oklch warm-neutral background,
+ * var(--chart-1)/var(--chart-2) accent pair, color-mix blends for tints,
+ * dot-grid + ambient glow texture. Signature element: a "Credential
+ * Ledger" — certifications as verified line items with stroke-drawn
+ * checkmarks and a one-time scan-line sweep on reveal.
  * -----------------------------------------------------------------------
  */
 
@@ -53,6 +54,9 @@ const GUARANTEES = [
 
 const INDUSTRIES = ["Healthcare", "Fintech", "Logistics", "E-commerce"];
 
+// Same accent pair + rotation logic as IndustriesSection
+const ACCENTS = ["var(--chart-2)", "var(--chart-1)"];
+
 export default function TrustedPartnerSection() {
   const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
@@ -78,7 +82,7 @@ export default function TrustedPartnerSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden px-6 py-24 md:py-32"
+      className="relative overflow-hidden px-6 py-24 md:py-32 bg-[oklch(0.97_0.005_80)]"
     >
       <style>{`
         @keyframes tp-rise-in {
@@ -134,6 +138,28 @@ export default function TrustedPartnerSection() {
         }
       `}</style>
 
+      {/* Ambient glow blobs — same two-tone pair as IndustriesSection */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.08]">
+        <div
+          className="absolute -top-32 -right-32 h-[600px] w-[600px] rounded-full blur-3xl"
+          style={{ background: "var(--chart-2)" }}
+        />
+        <div
+          className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full blur-3xl"
+          style={{ background: "var(--chart-1)" }}
+        />
+      </div>
+
+      {/* Dot grid texture, matches IndustriesSection */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage: "radial-gradient(var(--foreground) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }}
+      />
+
       {/* faint ledger-line texture, ties to "documented / on the record" theme */}
       <div
         aria-hidden="true"
@@ -144,15 +170,14 @@ export default function TrustedPartnerSection() {
         }}
       />
 
-      {/* ambient drifting glow, low-key atmosphere */}
+      {/* additional drifting glow behind the ledger card specifically */}
       <div
         aria-hidden="true"
         className={`pointer-events-none absolute -right-24 top-1/3 h-[26rem] w-[26rem] rounded-full blur-3xl ${
           inView ? "tp-glow" : ""
         }`}
         style={{
-          background:
-            "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
+          background: "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
           opacity: 0.12,
         }}
       />
@@ -161,15 +186,18 @@ export default function TrustedPartnerSection() {
         {/* ---------------- Left column ---------------- */}
         <div>
           <div
-            className={inView ? "tp-rise" : "opacity-0"}
+            className={`mb-5 flex w-fit items-center gap-2 rounded-full border border-border bg-secondary px-3.5 py-1.5 ${
+              inView ? "tp-rise" : "opacity-0"
+            }`}
             style={{ animationDelay: "0.05s" }}
           >
-            <div className="mb-5 flex items-center gap-3">
-              <span className="h-px w-8 bg-border" />
-              <span className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-                Why Clients Stay
-              </span>
-            </div>
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full"
+              style={{ backgroundColor: "var(--chart-1)" }}
+            />
+            <span className="font-mono text-xs uppercase tracking-[0.3em] text-secondary-foreground">
+              Why Clients Stay
+            </span>
           </div>
 
           <h2
@@ -202,64 +230,72 @@ export default function TrustedPartnerSection() {
             </p>
           </div>
 
-          {/* Industry chips */}
+          {/* Industry chips — alternating chart-1/chart-2 accent, like IndustriesSection rows */}
           <ul className="mt-6 flex flex-wrap gap-2">
-            {INDUSTRIES.map((industry, i) => (
-              <li
-                key={industry}
-                className={`rounded-sm border border-border bg-secondary px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-secondary-foreground ${
-                  inView ? "tp-chip" : "opacity-0"
-                }`}
-                style={
-                  inView ? { animationDelay: `${0.35 + i * 0.08}s` } : undefined
-                }
-              >
-                {industry}
-              </li>
-            ))}
+            {INDUSTRIES.map((industry, i) => {
+              const accent = ACCENTS[i % ACCENTS.length];
+              return (
+                <li
+                  key={industry}
+                  className={`rounded-full border px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-foreground ${
+                    inView ? "tp-chip" : "opacity-0"
+                  }`}
+                  style={{
+                    borderColor: "color-mix(in oklch, " + accent + " 35%, var(--border))",
+                    backgroundColor: "color-mix(in oklch, " + accent + " 8%, transparent)",
+                    animationDelay: inView ? `${0.35 + i * 0.08}s` : undefined,
+                  }}
+                >
+                  {industry}
+                </li>
+              );
+            })}
           </ul>
 
           {/* Guarantees checklist */}
           <ul className="mt-10 space-y-5 border-t border-border pt-8">
-            {GUARANTEES.map((item, i) => (
-              <li
-                key={item.title}
-                className={`flex gap-4 ${inView ? "tp-rise" : "opacity-0"}`}
-                style={
-                  inView ? { animationDelay: `${0.5 + i * 0.12}s` } : undefined
-                }
-              >
-                <span
-                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border"
-                  style={{ borderColor: "var(--chart-1)", color: "var(--chart-1)" }}
+            {GUARANTEES.map((item, i) => {
+              const accent = ACCENTS[i % ACCENTS.length];
+              return (
+                <li
+                  key={item.title}
+                  className={`flex gap-4 ${inView ? "tp-rise" : "opacity-0"}`}
+                  style={
+                    inView ? { animationDelay: `${0.5 + i * 0.12}s` } : undefined
+                  }
                 >
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path
-                      d="M2 6.2L4.8 9L10 3"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      pathLength="1"
-                      className={inView ? "tp-check-path" : ""}
-                      style={
-                        inView
-                          ? { animationDelay: `${0.65 + i * 0.12}s` }
-                          : { strokeDashoffset: 0 }
-                      }
-                    />
-                  </svg>
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">
-                    {item.title}
-                  </p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {item.detail}
-                  </p>
-                </div>
-              </li>
-            ))}
+                  <span
+                    className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border"
+                    style={{ borderColor: accent, color: accent }}
+                  >
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path
+                        d="M2 6.2L4.8 9L10 3"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        pathLength="1"
+                        className={inView ? "tp-check-path" : ""}
+                        style={
+                          inView
+                            ? { animationDelay: `${0.65 + i * 0.12}s` }
+                            : { strokeDashoffset: 0 }
+                        }
+                      />
+                    </svg>
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      {item.title}
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {item.detail}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
@@ -274,7 +310,7 @@ export default function TrustedPartnerSection() {
           </p>
 
           <div
-            className={`relative overflow-hidden rounded-lg border border-border bg-card shadow-sm ${
+            className={`relative overflow-hidden rounded-lg border border-border bg-card/80 backdrop-blur-sm shadow-sm ${
               inView ? "tp-rise" : "opacity-0"
             }`}
             style={{ animationDelay: "0.15s" }}
@@ -287,7 +323,7 @@ export default function TrustedPartnerSection() {
               }`}
               style={{
                 background:
-                  "linear-gradient(180deg, transparent, color-mix(in srgb, var(--chart-1) 18%, transparent), transparent)",
+                  "linear-gradient(180deg, transparent, color-mix(in oklch, var(--chart-2) 18%, transparent), transparent)",
                 animationDelay: "0.5s",
               }}
             />
@@ -305,19 +341,28 @@ export default function TrustedPartnerSection() {
               </span>
             </div>
 
-            {/* rows */}
+            {/* rows — accent alternates chart-2 / chart-1, matching IndustriesSection */}
             <ul>
               {CERTIFICATIONS.map((cert, i) => {
+                const accent = ACCENTS[i % ACCENTS.length];
                 const rowDelay = 0.3 + i * 0.14;
                 return (
                   <li
                     key={cert.code}
                     className={`group flex items-center gap-4 px-6 py-5 ${
                       i !== CERTIFICATIONS.length - 1 ? "border-b border-border" : ""
-                    } transition-colors duration-300 hover:bg-secondary/50 ${
-                      inView ? "tp-row" : "opacity-0"
-                    }`}
-                    style={inView ? { animationDelay: `${rowDelay}s` } : undefined}
+                    } transition-colors duration-300 ${inView ? "tp-row" : "opacity-0"}`}
+                    style={{
+                      ...(inView ? { animationDelay: `${rowDelay}s` } : {}),
+                      ["--row-accent" as string]: accent,
+                    } as CSSProperties}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.backgroundColor =
+                        "color-mix(in oklch, " + accent + " 6%, transparent)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                    }}
                   >
                     <span
                       className={`shrink-0 font-mono text-[10px] tracking-[0.15em] text-muted-foreground ${
@@ -326,6 +371,16 @@ export default function TrustedPartnerSection() {
                       style={inView ? { animationDelay: `${rowDelay + 0.08}s` } : undefined}
                     >
                       {cert.id}
+                    </span>
+
+                    <span
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-[11px] font-bold tracking-tight"
+                      style={{
+                        backgroundColor: "color-mix(in oklch, " + accent + " 16%, var(--secondary))",
+                        color: accent,
+                      }}
+                    >
+                      {cert.code}
                     </span>
 
                     <div className="min-w-0 flex-1">
@@ -339,7 +394,7 @@ export default function TrustedPartnerSection() {
 
                     <span
                       className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border transition-transform duration-300 group-hover:scale-110"
-                      style={{ borderColor: "var(--chart-1)", color: "var(--chart-1)" }}
+                      style={{ borderColor: accent, color: accent }}
                     >
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path

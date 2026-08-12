@@ -217,7 +217,6 @@ export default function HomePage() {
       <ProjectsStack />
       <BenefitsSection/>
       <Testimonials3DRoom />
-
       <SpaceJourney />
       <Footer />
     </div>
