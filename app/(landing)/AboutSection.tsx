@@ -14,7 +14,7 @@ const trustBadges = [
 
 const stats = [
   { number: "200+", label: "Projects delivered" },
-  { number: "8+", label: "Years combined engineering experience" },
+  { number: "10+", label: "Years combined engineering experience" },
   { number: "15+", label: "Industries served" },
   { number: "24/7", label: "Support coverage" },
 ];
@@ -255,7 +255,8 @@ export default function AboutSection() {
           <div>
             <div className={`${inView ? "ab-rise" : "opacity-0"}`} style={{ animationDelay: "0.15s" }}>
               <h3 className="mb-4 text-2xl font-bold tracking-tight text-[#171717] md:text-3xl">
-                The alternative to freelancer chaos and agency bloat
+                Why We Started Clickmasters
+
               </h3>
               <p className="text-base leading-relaxed text-black/70">
                 Most software agencies make you choose: work with a cheap freelancer and manage the
@@ -342,7 +343,7 @@ export default function AboutSection() {
               style={{ animationDelay: "0.85s" }}
             >
               <span className="flex h-3 w-3 animate-pulse rounded-full bg-[#e05b35]" />
-              <span className="text-sm font-semibold text-[#171717]">8+ Years Experience</span>
+              <span className="text-sm font-semibold text-[#171717]">10+ Years Experience</span>
             </div>
           </div>
         </div>

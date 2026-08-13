@@ -424,8 +424,8 @@ export default function AboutPage() {
             <div>
               <Reveal>
                 <SectionHeading
-                  eyebrow="Why We Started Clickmasters"
-                  title="The alternative to freelancer chaos and agency bloat"
+                  eyebrow="Why we started"
+                  title="Why We Started Clickmasters"
                   copy="Most software agencies make you choose: work with a cheap freelancer and manage the chaos yourself, or pay enterprise rates to a big agency and wait months for a junior-heavy team to 'ramp up.' We built Clickmasters as the alternative a senior, full-stack studio that moves at startup speed without cutting corners on code quality or design craft."
                 />
               </Reveal>

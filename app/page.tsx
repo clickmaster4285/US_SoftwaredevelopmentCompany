@@ -87,7 +87,7 @@ export default function HomePage() {
     <div className="bg-background text-foreground">
       <Navbar />
 
-  <section
+ <section
   ref={sectionRef}
   className="relative"
   style={{ height: "260vh" }}
@@ -113,7 +113,7 @@ export default function HomePage() {
     style={{ perspective: "1200px" }}
   >
     <div
-      className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-6 px-6 text-center will-change-[opacity,filter]"
+      className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-6 px-6 pt-24 md:pt-28 pb-10 text-center will-change-[opacity,filter]"
       style={{ opacity: textOpacity, filter: `blur(${textBlur}px)` }}
     >
       <h1 className="leading-[1.15] tracking-tight space-y-1 text-black">
@@ -121,12 +121,13 @@ export default function HomePage() {
           SOFTWARE DEVELOPMENT
         </span>
         <span className="block text-[clamp(2.25rem,6.5vw,6.5rem)] italic font-serif">
-          COMPANY OFFERING{" "}
+          COMPANY{" "}
           <span
             ref={slotRef}
             className="inline-block align-middle"
             style={{ width: slotSize, height: slotSize }}
-          />
+          />{" "}
+          OFFERING
         </span>
         <span className="block text-[clamp(2.25rem,6.5vw,6.5rem)] italic font-serif">
           WEB, MOBILE & AI
@@ -136,44 +137,42 @@ export default function HomePage() {
         </span>
       </h1>
 
-      <div className="mt-8 max-w-2xl mx-auto">
-        {/* Eyebrow label */}
+      <div className="mt-6 w-full flex justify-center px-85 md:px-95">
         <div
-          className="flex items-center justify-center gap-3 mb-5 animate-fade-up"
-          style={{ animationDelay: "0.15s" }}
+          className="rounded-2xl border border-black/10 bg-white/60 backdrop-blur-md px-6 py-8 md:px-10 md:py-10 text-left animate-fade-up"
+          style={{ 
+            animationDelay: "0.3s",
+            maxWidth: "calc(100% - 48px)",
+            width: "auto",
+            minWidth: "min(80%, 800px)",
+          }}
         >
-          <span className="h-px w-8 bg-black/40" />
-          <span className="text-[10px] md:text-xs uppercase tracking-[0.35em] text-black/60 font-medium">
-            About Clickmasters
-          </span>
-          <span className="h-px w-8 bg-black/40" />
+          {/* Eyebrow label */}
+         
+
+          {/* Primary description - INCREASED TEXT SIZE & DARKER COLOR */}
+          <p className="text-[16px] md:text-[18px] leading-relaxed text-black/90 font-light">
+            Clickmasters is a software development company USA businesses
+            trust to design, build, and grow their software. We work as a
+            hands-on software development agency and help startups, growing
+            businesses, and large companies across the United States turn
+            their ideas into secure, easy-to-use digital products. Our team
+            offers custom software development services and enterprise
+            software development, along with web development, mobile app
+            development, UI/UX design, and AI software development services.
+          </p>
+
+          {/* Accent callout line - INCREASED TEXT SIZE & DARKER COLOR */}
+          <div className="mt-6 flex items-start gap-3 border-t border-black/10 pt-6">
+            <span className="mt-1 h-8 w-[2px] bg-black/60 shrink-0" />
+            <p className="italic text-[16px] md:text-[18px] leading-relaxed text-black/95 font-light">
+              Need a software development firm to build something new? Or a
+              software development company to upgrade an old system? Either
+              way, Clickmasters delivers real results, on time and within
+              budget.
+            </p>
+          </div>
         </div>
-
-        {/* Primary description */}
-        <p
-          className="text-sm md:text-base leading-relaxed text-black/80 font-light animate-fade-up"
-          style={{ animationDelay: "0.3s" }}
-        >
-          Clickmasters is a software development company USA businesses
-          trust to design, build, and grow their software. We work as a
-          hands-on software development agency and help startups, growing
-          businesses, and large companies across the United States turn
-          their ideas into secure, easy-to-use digital products. Our team
-          offers custom software development services and enterprise
-          software development, along with web development, mobile app
-          development, UI/UX design, and AI software development services.
-        </p>
-
-        {/* Accent callout line */}
-        <p
-          className="mt-5 pl-4 border-l-2 border-black/30 italic text-sm md:text-base leading-relaxed text-black/95 font-light animate-fade-up"
-          style={{ animationDelay: "0.45s" }}
-        >
-          Need a software development firm to build something new? Or a
-          software development company to upgrade an old system? Either
-          way, Clickmasters delivers real results, on time and within
-          budget.
-        </p>
       </div>
     </div>
 
@@ -205,8 +204,9 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      <TrustedBy />
       <AboutSection />
+      <TrustedBy />  
+      <TrustedPartner/>   
       <DominateSection />
       <StudioPath />
       <LogoMarquee />
@@ -214,11 +214,9 @@ export default function HomePage() {
       <IndustrySection/>
       <AwardsSection />
       <AudienceCarousel />
-      <TrustedPartner/>
       <ProjectsStack />
       <BenefitsSection/>
       <Testimonials3DRoom />
-
       <SpaceJourney />
       <Footer />
     </div>
