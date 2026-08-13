@@ -16,7 +16,6 @@ import TrustedBy from "./(landing)/TrustedBy";
 import TrustedPartner from "./(landing)/TrustedPartner";
 import BenefitsSection from "./(landing)/BenefitsSection";
 import IndustrySection from "./(landing)/IndustrySection";
-import AboutSection from "./(landing)/AboutSection";
 const heroVideo = "/hero-video.mp4";
 
 export default function HomePage() {
@@ -204,7 +203,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      <AboutSection />
+    
       <TrustedBy />  
       <TrustedPartner/>   
       <DominateSection />
