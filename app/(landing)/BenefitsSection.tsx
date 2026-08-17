@@ -28,7 +28,7 @@ const BENEFITS = [
   {
     title: "Lower costs",
     detail:
-      "Skip the overhead of hiring and managing an in-house team pay for output, not payroll.",
+      "Skip the overhead of hiring and managing an in-house team — pay for output, not payroll.",
     rotate: 2,
     icon: (
       <>
@@ -264,7 +264,7 @@ export default function BenefitsSection() {
         }
         @keyframes bn-typing {
           from { width: 0; }
-          to { width: 25ch; }
+          to { width: 28ch; }
         }
         @keyframes bn-caret {
           50% { border-color: transparent; }
@@ -297,9 +297,9 @@ export default function BenefitsSection() {
           white-space: nowrap;
           vertical-align: bottom;
           border-right: 2px solid var(--chart-2);
-          width: 25ch;
-          animation: bn-typing 1.1s steps(25, end) both,
-            bn-caret 0.75s step-end infinite 1.1s;
+          width: 28ch;
+          animation: bn-typing 1.3s steps(28, end) both,
+            bn-caret 0.75s step-end infinite 1.3s;
         }
 
         .bn-blob {
@@ -411,23 +411,23 @@ export default function BenefitsSection() {
             />
             <span className="font-mono text-[11px] tracking-[0.08em] text-secondary-foreground">
               {inView ? (
-                <span className="bn-type">SYSTEM STATUS: ALL ACTIVE</span>
+                <span className="bn-type">BENEFITS OF CHOOSING US</span>
               ) : (
-                <span className="opacity-0">SYSTEM STATUS: ALL ACTIVE</span>
+                <span className="opacity-0">BENEFITS OF CHOOSING US</span>
               )}
             </span>
           </div>
 
-          {/* Professional Bold Title - 2 lines matching first section style */}
+          {/* New title structure */}
           <h2
             className={`max-w-3xl text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight leading-[1.05] text-foreground ${
               inView ? "bn-rise" : "opacity-0"
             }`}
             style={{ animationDelay: "0.1s" }}
           >
-            <span className="font-serif italic">Why</span> choose our 
+            Benefits of Choosing Our
             <br />
-            software development <span className="font-serif italic">company</span>
+            Software Development <span className="font-serif italic">Company</span>
           </h2>
 
           <p
@@ -436,8 +436,7 @@ export default function BenefitsSection() {
             }`}
             style={{ animationDelay: "0.18s" }}
           >
-            When you work with Clickmasters, your business gets a real
-            advantage end to end.
+            When you work with Clickmasters, your business gets a real advantage:
           </p>
         </div>
 

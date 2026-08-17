@@ -16,7 +16,6 @@ import TrustedBy from "./(landing)/TrustedBy";
 import TrustedPartner from "./(landing)/TrustedPartner";
 import BenefitsSection from "./(landing)/BenefitsSection";
 import IndustrySection from "./(landing)/IndustrySection";
-import AboutSection from "./(landing)/AboutSection";
 const heroVideo = "/hero-video.mp4";
 
 export default function HomePage() {
@@ -119,6 +118,7 @@ export default function HomePage() {
       <h1 className="leading-[1.15] tracking-tight space-y-1 text-black">
         <span className="block text-[clamp(2.25rem,6.5vw,6.5rem)] font-semibold">
           SOFTWARE DEVELOPMENT
+          
         </span>
         <span className="block text-[clamp(2.25rem,6.5vw,6.5rem)] italic font-serif">
           COMPANY{" "}
@@ -133,7 +133,7 @@ export default function HomePage() {
           WEB, MOBILE & AI
         </span>
         <span className="block text-[clamp(2.25rem,6.5vw,6.5rem)] font-semibold">
-          DEVELOPMENT SERVICES
+          DEVELOPMENT SERVICE
         </span>
       </h1>
 
@@ -204,7 +204,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      <AboutSection />
+    
       <TrustedBy />  
       <TrustedPartner/>   
       <DominateSection />
