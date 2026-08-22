@@ -28,6 +28,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
+    // Call immediately to set initial state
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -56,7 +57,7 @@ export default function Navbar() {
 
   const linkClasses = scrolled
     ? "text-[oklch(0.30_0.02_250)] hover:text-[oklch(0.15_0.02_250)]"
-    : "text-white/80 hover:text-white";
+    : "text-[oklch(0.30_0.02_250)] hover:text-[oklch(0.15_0.02_250)]";
 
   return (
     <>
@@ -70,7 +71,7 @@ export default function Navbar() {
             "mx-auto mt-4 md:mt-6 max-w-6xl rounded-2xl transition-all duration-500 ease-out",
             scrolled
               ? "bg-white/70 shadow-lg shadow-black/[0.04] ring-1 ring-black/[0.06] backdrop-blur-2xl"
-              : "bg-white/[0.07] shadow-none ring-1 ring-white/[0.10] backdrop-blur-xl",
+              : "bg-white/90 shadow-lg shadow-black/[0.04] ring-1 ring-black/[0.06] backdrop-blur-2xl",
           ].join(" ")}
         >
           <div className="flex items-center justify-between px-5 md:px-8 h-14 md:h-16">
@@ -131,7 +132,7 @@ export default function Navbar() {
                   "hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-300",
                   scrolled
                     ? "bg-primary text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/30 hover:scale-[1.03]"
-                    : "bg-white/15 text-white ring-1 ring-white/20 backdrop-blur-sm hover:bg-white/25 hover:ring-white/40",
+                    : "bg-primary text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/30 hover:scale-[1.03]",
                 ].join(" ")}
               >
                 Get in touch
@@ -157,7 +158,7 @@ export default function Navbar() {
                   "relative flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:hidden",
                   scrolled
                     ? "bg-[oklch(0.20_0.02_250)] text-white"
-                    : "bg-white/15 text-white ring-1 ring-white/20 backdrop-blur-sm",
+                    : "bg-[oklch(0.20_0.02_250)] text-white",
                 ].join(" ")}
                 aria-label={mobileOpen ? "Close menu" : "Open menu"}
               >

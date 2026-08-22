@@ -28,7 +28,7 @@ const BENEFITS = [
   {
     title: "Lower costs",
     detail:
-      "Skip the overhead of hiring and managing an in-house team — pay for output, not payroll.",
+      "Skip the overhead of hiring and managing an in-house team pay for output, not payroll.",
     rotate: 2,
     icon: (
       <>

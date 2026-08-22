@@ -7,13 +7,34 @@ import {
   CircleDollarSign,
   Code2,
   Compass,
+  Target,
+  Building,
+  Building2,
+  Cloud,
+  Rocket,
+  Monitor,
+  Plug,
+  Server,
+  Users,
+  Brain,
+  Globe,
+  Smartphone,
+  Cpu,
+  Truck,
+  Coins,
+  Puzzle,
+  CircuitBoard,
+  ShieldCheck,
+  Handshake,
+  ShoppingBag,
+  Heart,
   Layers3,
   MessageSquareText,
   Quote,
   Sparkles,
   Workflow,
 } from "lucide-react";
-import { IconFor, SectionHeading } from "./[sub_service]/landing-primitives";
+import { SectionHeading } from "./[sub_service]/landing-primitives";
 import type {
   MainService,
   ServicePricingTier,
@@ -51,6 +72,58 @@ const insights = [
   "When to modernize legacy systems instead of replacing them",
   "What strong discovery produces before development starts",
 ];
+
+// IconFor Component - Maps icon names to Lucide React components
+export function IconFor({ name }: { name?: string }) {
+  const iconMap: Record<string, React.ElementType> = {
+    // Existing icons
+    ArrowRight,
+    BarChart3,
+    CheckCircle2,
+    ChevronRight,
+    CircleDollarSign,
+    Code2,
+    Compass,
+    Layers3,
+    MessageSquareText,
+    Quote,
+    Sparkles,
+    Workflow,
+    
+    // Software Development icons
+    Target,
+    Building,
+    Building2,
+    Cloud,
+    Rocket,
+    Monitor,
+    Plug,
+    Server,
+    Users,
+    Brain,
+    Globe,
+    Smartphone,
+    Cpu,
+    Truck,
+    Coins,
+    Puzzle,
+    CircuitBoard,
+    ShieldCheck,
+    Handshake,
+    ShoppingBag,
+    Heart,
+  };
+
+  const IconComponent = name ? iconMap[name] : undefined;
+  
+  if (!IconComponent) {
+    console.warn(`Icon "${name}" not found in iconMap, using fallback`);
+    // Fallback to Code2 if icon not found
+    return <Code2 className="h-5 w-5" />;
+  }
+  
+  return <IconComponent className="h-5 w-5" />;
+}
 
 export function MainServiceBreadcrumb({ service }: { service: MainService }) {
   return (
@@ -179,16 +252,19 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
     ? service.features
     : [
         {
+          icon: "Building",
           title: "Clear architecture",
           description:
             "A practical technical plan before production work expands.",
         },
         {
+          icon: "Rocket",
           title: "Focused delivery",
           description:
             "Short feedback loops, visible progress, and usable releases.",
         },
         {
+          icon: "ShieldCheck",
           title: "Launch support",
           description:
             "Monitoring, documentation, and iteration after go-live.",

@@ -18,82 +18,297 @@ const feature = (title, description, icon) => ({ title, description, icon });
 const client = (name, industry, icon) => ({ name, industry, icon });
 
 export const SERVICE_SECTION_DATA = {
-  "software-development": {
-    features: [
-      feature(
-        "Custom Architecture",
-        "Tailored solutions built for your requirements",
-        "Building",
-      ),
-      feature(
-        "Agile Development",
-        "Rapid iterations with continuous feedback",
-        "Rocket",
-      ),
-      feature(
-        "Quality Assurance",
-        "Comprehensive testing for bug-free delivery",
-        "ShieldCheck",
-      ),
-    ],
-    pricing: [
-      tier(
-        "MVP Build",
-        "$8,000+",
-        "Startups validating product-market fit",
-        "6–12 weeks",
-        [
-          "Core workflows",
-          "Auth & admin",
-          "Staging deployment",
-          "2-week sprints",
-        ],
-      ),
-      tier(
-        "Custom Application",
-        "$25,000+",
-        "Growing B2B teams scaling operations",
-        "3–6 months",
-        [
-          "Full product build",
-          "API integrations",
-          "QA & security review",
-          "Documentation handover",
-        ],
-      ),
-      tier(
-        "Enterprise Platform",
-        "$60,000+",
-        "Complex orgs with compliance needs",
-        "6–18 months",
-        [
-          "Multi-module systems",
-          "SSO & RBAC",
-          "Dedicated team",
-          "SLA & 24/7 support",
-        ],
-      ),
-    ],
-    faqs: [
-      faq(
-        "How much does custom software development cost?",
-        "MVP builds start around $8,000. Full applications range from $25,000–$60,000+. Enterprise platforms can exceed $150,000 depending on scope, integrations, and compliance.",
-      ),
-      faq(
-        "How long does a software project take?",
-        "MVPs typically ship in 6–12 weeks. Full products take 3–6 months. Enterprise programs run 6–18 months with phased releases every 2 weeks.",
-      ),
-      faq(
-        "Do we own the source code?",
-        "Yes. You receive full IP ownership, repository access, and deployment documentation at project completion.",
-      ),
-      faq(
-        "What happens after launch?",
-        "We offer maintenance plans covering security patches, monitoring, performance tuning, and feature iterations.",
-      ),
-    ],
-  },
-
+"software-development": {
+  title: "Software Development",
+  slug: "software-development",
+  icon: "Code2",
+  tagline: "Best Software Development Services",
+  description: "Get the best software development services from Clickmasters. Build custom, scalable software solutions with expert developers. Get started today!",
+  heroBadge: "200+ Software Projects Delivered",
+  heroImage: "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+  stats: [
+    { value: "200+", label: "Software Projects Delivered" },
+    { value: "50+", label: "Expert Engineers on Staff" },
+    { value: "99.9%", label: "Uptime Guarantee" },
+    { value: "24/7", label: "Support & Monitoring" },
+  ],
+  features: [
+    {
+      icon: "Building",
+      title: "Custom Software Development",
+      description: "Replace generic, off-the-shelf tools with software built around how your business actually operates. We handle bespoke software development for internal workflows, customer-facing platforms, and everything in between, using an architecture chosen for your specific scale and compliance needs.",
+    },
+    {
+      icon: "Building2",
+      title: "Enterprise Software Development",
+      description: "For larger organizations, our enterprise software development and enterprise application development services focus on multi-department systems that need to integrate with existing tools, enforce role-based access, and scale across teams without downtime.",
+    },
+    {
+      icon: "Cloud",
+      title: "SaaS Product Development",
+      description: "Our SaaS development services take a product from idea to a multi-tenant, cloud-native application ready for recurring revenue including subscription billing, usage metering, and secure account architecture.",
+    },
+    {
+      icon: "Globe",
+      title: "Web Application Development",
+      description: "We design and build web application development projects on modern, well-supported stacks (React, Next.js, Node.js), so your platform stays fast, accessible, and easy for future developers to maintain.",
+    },
+    {
+      icon: "Smartphone",
+      title: "Mobile App Development Services",
+      description: "Our mobile app development services cover native and cross-platform builds for iOS and Android, connected to the same backend and APIs as your web platform so your data stays consistent across devices.",
+    },
+    {
+      icon: "Brain",
+      title: "AI Software Development Services",
+      description: "Our AI software development services help businesses add practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows into existing or new software, without over-engineering the solution.",
+    },
+    {
+      icon: "Workflow",
+      title: "Full Stack Development Services",
+      description: "Our full stack development services give you a single accountable team across frontend, backend, and infrastructure, which reduces handoff delays and keeps architecture decisions consistent end to end.",
+    },
+    {
+      icon: "Plug",
+      title: "Application Development & API Integration",
+      description: "Our application development services include building and integrating APIs with the third-party tools your business already relies on payment processors, CRMs, ERPs, and internal systems so software fits into your existing operations rather than replacing them.",
+    },
+    {
+      icon: "Compass",
+      title: "Software Consulting Services",
+      description: "Not every engagement starts with a build. Our software consulting services help you scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget before a single line of code is written.",
+    },
+    {
+      icon: "Users",
+      title: "Software Development Outsourcing",
+      description: "For companies that need to extend their engineering capacity, our software development outsourcing and offshore software development options provide dedicated developers who work inside your existing sprint process and tools.",
+    },
+  ],
+  trustedClients: [
+    { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+    { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
+    { name: "Financial Services", industry: "Finance", icon: "Coins" },
+    { name: "Healthcare System", industry: "Healthcare", icon: "Heart" },
+    { name: "E-commerce Retailer", industry: "Retail", icon: "ShoppingBag" },
+  ],
+  subServices: [
+    {
+      title: "Custom Software Development",
+      slug: "custom-software-development",
+      description: "Replace generic, off-the-shelf tools with software built around how your business actually operates.",
+      icon: "Building",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Custom Software Development Company | ClickMasters",
+      metaDescription: "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
+      lead: "Custom software built around how your business actually operates not generic tools that force you to change your workflows.",
+      highlights: [
+        "Internal workflows & customer-facing platforms",
+        "Bespoke software development",
+        "Architecture chosen for scale & compliance",
+        "Full source-code ownership",
+      ],
+      pricing: [
+        { type: "MVP Build", investment: "$8,000+", timeline: "6-12 weeks" },
+        { type: "Custom App", investment: "$25,000+", timeline: "3-6 months" },
+        { type: "Enterprise", investment: "$60,000+", timeline: "6-18 months" },
+      ],
+    },
+    {
+      title: "Enterprise Software Development",
+      slug: "enterprise-software-development",
+      description: "Multi-department systems that integrate with existing tools and scale across teams without downtime.",
+      icon: "Building2",
+      heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Enterprise Software Development Company | Custom ERP & B2B Systems",
+      lead: "Enterprise software built for multi-department systems with role-based access and seamless integrations.",
+      highlights: [
+        "Multi-department systems",
+        "Role-based access control (RBAC)",
+        "Legacy system integration",
+        "Zero-downtime scaling",
+      ],
+    },
+    {
+      title: "SaaS Product Development",
+      slug: "saas-product-development",
+      description: "Cloud-native applications ready for recurring revenue with subscription billing and secure account architecture.",
+      icon: "Cloud",
+      heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+      lead: "From idea to revenue-generating SaaS platform including billing, usage metering, and multi-tenant architecture.",
+      highlights: [
+        "Multi-tenant architecture",
+        "Subscription billing & usage metering",
+        "Secure account architecture",
+        "API-first design",
+      ],
+    },
+    {
+      title: "Web Application Development",
+      slug: "web-application-development",
+      description: "Modern web applications on React, Next.js, and Node.js that stay fast, accessible, and easy to maintain.",
+      icon: "Globe",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      lead: "Modern, well-supported stacks (React, Next.js, Node.js) for fast, accessible, and maintainable web platforms.",
+      highlights: [
+        "React & Next.js",
+        "Node.js backend",
+        "Responsive & accessible",
+        "Future-proof architecture",
+      ],
+    },
+    {
+      title: "Mobile App Development Services",
+      slug: "mobile-app-development",
+      description: "Native and cross-platform mobile apps connected to the same backend and APIs as your web platform.",
+      icon: "Smartphone",
+      heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+      lead: "Native and cross-platform builds for iOS and Android with consistent data across all devices.",
+      highlights: [
+        "iOS & Android development",
+        "Native & cross-platform options",
+        "Backend & API integration",
+        "Consistent data across devices",
+      ],
+    },
+    {
+      title: "AI Software Development Services",
+      slug: "ai-software-development",
+      description: "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows.",
+      icon: "Brain",
+      heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+      lead: "Add practical AI features to existing or new software without over-engineering the solution.",
+      highlights: [
+        "Automation & predictive analytics",
+        "Intelligent search",
+        "AI-assisted workflows",
+        "OpenAI & custom ML integrations",
+      ],
+    },
+    {
+      title: "Full Stack Development Services",
+      slug: "full-stack-development",
+      description: "A single accountable team across frontend, backend, and infrastructure for consistent architecture.",
+      icon: "Workflow",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      lead: "Full stack development with a single accountable team across frontend, backend, and infrastructure.",
+      highlights: [
+        "Frontend & backend development",
+        "Cloud infrastructure",
+        "Consistent architecture",
+        "Reduced handoff delays",
+      ],
+    },
+    {
+      title: "Application Development & API Integration",
+      slug: "api-development-integration",
+      description: "Build and integrate APIs with payment processors, CRMs, ERPs, and internal systems.",
+      icon: "Plug",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      lead: "API integrations that make software fit into your existing operations not replace them.",
+      highlights: [
+        "Payment processor integration",
+        "CRM & ERP integration",
+        "Internal system connectivity",
+        "REST & GraphQL APIs",
+      ],
+    },
+    {
+      title: "Software Consulting Services",
+      slug: "software-consulting",
+      description: "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget.",
+      icon: "Compass",
+      heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+      lead: "Strategic consulting to scope roadmaps, choose tech stacks, and plan budgets before any code is written.",
+      highlights: [
+        "Roadmap planning",
+        "Tech stack selection",
+        "Legacy system audit",
+        "Budget forecasting",
+      ],
+    },
+    {
+      title: "Software Development Outsourcing",
+      slug: "software-development-outsourcing",
+      description: "Dedicated developers who work inside your existing sprint process and tools.",
+      icon: "Users",
+      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+      lead: "Extend your engineering capacity with dedicated developers who work inside your existing sprint process and tools.",
+      highlights: [
+        "Dedicated engineering teams",
+        "Existing process integration",
+        "Sprint cadence alignment",
+        "Engineering capacity extension",
+      ],
+    },
+  ],
+  pricing: [
+    {
+      type: "MVP Build",
+      investment: "$8,000+",
+      timeline: "6-12 weeks",
+      bestFor: "Startups validating product-market fit",
+      features: [
+        "Core workflows",
+        "Auth & admin",
+        "Staging deployment",
+        "2-week sprints",
+        "Full source-code ownership",
+      ],
+    },
+    {
+      type: "Custom Application",
+      investment: "$25,000+",
+      timeline: "3-6 months",
+      bestFor: "Growing B2B teams scaling operations",
+      features: [
+        "Full product build",
+        "API integrations",
+        "QA & security review",
+        "Documentation handover",
+        "Full source-code ownership",
+      ],
+    },
+    {
+      type: "Enterprise Platform",
+      investment: "$60,000+",
+      timeline: "6-18 months",
+      bestFor: "Complex orgs with compliance needs",
+      features: [
+        "Multi-module systems",
+        "SSO & RBAC",
+        "Dedicated team",
+        "SLA & 24/7 support",
+        "Security-first architecture",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "What is included in software development services?",
+      answer: "Software development services typically include discovery and requirement analysis, UI/UX design, architecture planning, development, quality assurance, deployment, and post-launch support. At Clickmasters, all of these are included in a single engagement rather than billed as separate add-ons.",
+    },
+    {
+      question: "How much does custom software development cost?",
+      answer: "Custom software development cost depends on scope. A minimum viable product (MVP) typically starts around $8,000 and takes 6-12 weeks. A full custom application generally ranges from $25,000-$60,000 over 3-6 months, while enterprise platforms with compliance and integration requirements can exceed $150,000 across 6-18 months.",
+    },
+    {
+      question: "How long does a software development project take?",
+      answer: "Most MVPs ship in 6-12 weeks, standard business applications take 3-6 months, and enterprise software programs run 6-18 months with phased releases roughly every two weeks.",
+    },
+    {
+      question: "Do I own the source code after the project is complete?",
+      answer: "Yes. Clients receive full intellectual property ownership, repository access, and deployment documentation once a project is complete.",
+    },
+    {
+      question: "What is the difference between custom software development and off-the-shelf software?",
+      answer: "Off-the-shelf software is a fixed, one-size-fits-all product, while custom software development builds an application around your specific workflows, data, and integrations. Custom software costs more upfront but avoids paying for unused features and licensing limits as you scale.",
+    },
+    {
+      question: "Do you offer offshore or outsourced software development?",
+      answer: "Yes. Alongside project-based delivery, we offer software development outsourcing and dedicated offshore software development teams that work inside your existing tools and sprint cadence for ongoing engineering capacity.",
+    },
+  ],
+},
   "web-development": {
     trustedClients: [
       client("RetailHub", "Retail & E-commerce", "ShoppingBag"),
