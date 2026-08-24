@@ -97,10 +97,6 @@ const serviceMenuSections = [
     label: "Mobile Development",
     items: [
       {
-        title: "Mobile App Development",
-        description: "Mobile products for iOS and Android users.",
-      },
-      {
         title: "Android App Development",
         description: "Native Android apps with strong performance.",
       },

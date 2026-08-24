@@ -8,7 +8,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
  * Palette aligned with IndustriesSection: oklch warm-neutral background,
  * var(--chart-1)/var(--chart-2) accent pair, color-mix blends for tints,
  * dot-grid + ambient glow texture. Signature element: a "Credential
- * Ledger" — certifications as verified line items with stroke-drawn
+ * Ledger" certifications as verified line items with stroke-drawn
  * checkmarks and a one-time scan-line sweep on reveal.
  * -----------------------------------------------------------------------
  */
@@ -138,7 +138,7 @@ export default function TrustedPartnerSection() {
         }
       `}</style>
 
-      {/* Ambient glow blobs — same two-tone pair as IndustriesSection */}
+      {/* Ambient glow blobs same two-tone pair as IndustriesSection */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.08]">
         <div
           className="absolute -top-32 -right-32 h-[600px] w-[600px] rounded-full blur-3xl"
@@ -230,7 +230,7 @@ export default function TrustedPartnerSection() {
             </p>
           </div>
 
-          {/* Industry chips — alternating chart-1/chart-2 accent, like IndustriesSection rows */}
+          {/* Industry chips alternating chart-1/chart-2 accent, like IndustriesSection rows */}
           <ul className="mt-6 flex flex-wrap gap-2">
             {INDUSTRIES.map((industry, i) => {
               const accent = ACCENTS[i % ACCENTS.length];
@@ -341,7 +341,7 @@ export default function TrustedPartnerSection() {
               </span>
             </div>
 
-            {/* rows — accent alternates chart-2 / chart-1, matching IndustriesSection */}
+            {/* rows accent alternates chart-2 / chart-1, matching IndustriesSection */}
             <ul>
               {CERTIFICATIONS.map((cert, i) => {
                 const accent = ACCENTS[i % ACCENTS.length];

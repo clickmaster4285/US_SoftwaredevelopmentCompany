@@ -1,5 +1,6 @@
 import {
   Code2,
+  Compass,
   Globe,
   Smartphone,
   Palette,
@@ -84,6 +85,7 @@ import { enrichServiceData } from "./service-section-data";
  */
 export const iconMap = {
   Code2,
+  Compass,
   Globe,
   Smartphone,
   Palette,
@@ -178,155 +180,356 @@ export function slugify(value) {
 
 export const mainServicesData = {
   // 1. SOFTWARE DEVELOPMENT
-  "software-development": {
-    title: "Software Development",
-    slug: "software-development",
-    icon: "Code2",
-    tagline: "Build Scalable, Robust Enterprise Solutions",
-    description:
-      "We craft custom software solutions that streamline operations, enhance productivity, and drive business growth.",
-    heroBadge: "10+ Enterprise Solutions Delivered",
-    heroImage:
-      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
-    stats: [
-      { value: "200+", label: "Projects Delivered" },
-      { value: "99.9%", label: "Uptime Guarantee" },
-      { value: "50+", label: "Expert Engineers" },
-      { value: "24/7", label: "Support" },
-    ],
-    trustedClients: [
-      { name: "TechCorp", industry: "Manufacturing", icon: "Cpu" },
-      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
-      { name: "FinTrust", industry: "Finance", icon: "Coins" },
-      { name: "Vertex Solutions", industry: "Consulting", icon: "BarChart3" },
-      {
-        name: "Quantum Dynamics",
-        industry: "Technology",
-        icon: "CircuitBoard",
-      },
-    ],
-    subServices: [
-      {
-        title: "Custom Software Development",
-        slug: "custom-software-development",
-        description: "Tailored software for specific business goals.",
-        icon: "Target",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Custom Software Development Company | ClickMasters",
-        metaDescription:
-          "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
-        lead: "Build software that scales your revenue - not just your codebase. ClickMasters delivers end-to-end custom software development for B2B companies.",
-        highlights: [
-          "MVP to enterprise delivery",
-          "Architecture-first approach",
-          "Post-launch support",
-          "Security hardening",
-        ],
-        pricing: [
-          { type: "MVP Build", investment: "$8,000+", timeline: "6-12 weeks" },
-          {
-            type: "Custom App",
-            investment: "$25,000+",
-            timeline: "3-6 months",
-          },
-          {
-            type: "Enterprise",
-            investment: "$60,000+",
-            timeline: "6-18 months",
-          },
-        ],
-      },
-      {
-        title: "Enterprise Software Development",
-        slug: "enterprise-software-development",
-        description: "Scalable enterprise platforms and workflows.",
-        icon: "Building",
-        heroImage:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
-        metaTitle:
-          "Enterprise Software Development Company | Custom ERP & B2B Systems",
-        lead: "Enterprise software built for operational complexity - not around it.",
-        highlights: [
-          "ERP & CRM systems",
-          "Legacy modernization",
-          "Enterprise integrations",
-          "Compliance-grade security",
-        ],
-      },
-      {
-        title: "SaaS Product Development",
-        slug: "saas-product-development",
-        description: "Cloud-based SaaS products with recurring value.",
-        icon: "Cloud",
-        heroImage:
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
-        lead: "From idea to revenue-generating SaaS platform in one engagement.",
-        highlights: [
-          "Multi-tenant architecture",
-          "Stripe/Chargebee billing",
-          "SSO & RBAC",
-          "API-first design",
-        ],
-      },
-      {
-        title: "MVP Development",
-        slug: "mvp-development",
-        description: "Fast MVP releases to validate ideas.",
-        icon: "Rocket",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Desktop Application Development",
-        slug: "desktop-application-development",
-        description: "Reliable desktop apps for business operations.",
-        icon: "Monitor",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "API Development & Integration",
-        slug: "api-development-integration",
-        description: "Robust APIs and third-party integrations.",
-        icon: "Plug",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Microservices Architecture",
-        slug: "microservices-architecture",
-        description: "Distributed systems built for scale.",
-        icon: "Puzzle",
-        heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Backend Development",
-        slug: "backend-development",
-        description: "Secure, high-performance backend services.",
-        icon: "Server",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Frontend Development",
-        slug: "frontend-development",
-        description: "Responsive, accessible frontend experiences.",
-        icon: "Code2",
-        heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Full Stack Development",
-        slug: "full-stack-development",
-        description: "End-to-end product development support.",
-        icon: "Workflow",
-        heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      },
-    ],
-  },
+ "software-development": {
+  title: "Software Development",
+  slug: "software-development",
+  icon: "Code2",
+  tagline: "Build Scalable, Robust Enterprise Solutions",
+  description:
+    "We craft custom software solutions that streamline operations, enhance productivity, and drive business growth.",
+  heroBadge: "10+ Enterprise Solutions Delivered",
+  heroImage:
+    "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+  stats: [
+    { value: "200+", label: "Projects Delivered" },
+    { value: "99.9%", label: "Uptime Guarantee" },
+    { value: "50+", label: "Expert Engineers" },
+    { value: "24/7", label: "Support & Monitoring" },
+  ],
+  features: [
+    {
+      icon: "Building",
+      title: "Custom Architecture",
+      description: "Tailored solutions built around how your business actually operates, using an architecture chosen for your specific scale and compliance needs.",
+    },
+    {
+      icon: "Rocket",
+      title: "Agile Development",
+      description: "Rapid iterations with two-week delivery sprints, continuous testing, code review, and regular demos for visible progress.",
+    },
+    {
+      icon: "ShieldCheck",
+      title: "Quality Assurance",
+      description: "Comprehensive testing, peer-reviewed code, and thorough QA to ensure reliable performance and bug-free delivery.",
+    },
+    {
+      icon: "Cloud",
+      title: "Full Stack Development",
+      description: "A single accountable team across frontend, backend, and infrastructure, reducing handoff delays and keeping architecture consistent.",
+    },
+    {
+      icon: "Brain",
+      title: "AI & Automation",
+      description: "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows without over-engineering the solution.",
+    },
+    {
+      icon: "Compass",
+      title: "Software Consulting",
+      description: "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget before a single line of code is written.",
+    },
+  ],
+  trustedClients: [
+    { name: "TechCorp", industry: "Manufacturing", icon: "Cpu" },
+    { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
+    { name: "FinTrust", industry: "Finance", icon: "Coins" },
+    { name: "Vertex Solutions", industry: "Consulting", icon: "BarChart3" },
+    { name: "Quantum Dynamics", industry: "Technology", icon: "CircuitBoard" },
+  ],
+  subServices: [
+    {
+      title: "Custom Software Development",
+      slug: "custom-software-development",
+      description: "Tailored software for specific business goals built around your workflows, not generic templates.",
+      icon: "Target",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Custom Software Development Company | ClickMasters",
+      metaDescription:
+        "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
+      lead: "Build software that scales your revenue - not just your codebase. ClickMasters delivers end-to-end custom software development for B2B companies.",
+      highlights: [
+        "MVP to enterprise delivery",
+        "Architecture-first approach",
+        "Post-launch support",
+        "Security hardening",
+        "Full source-code ownership",
+      ],
+      pricing: [
+        { type: "MVP Build", investment: "$8,000+", timeline: "6-12 weeks" },
+        { type: "Custom App", investment: "$25,000+", timeline: "3-6 months" },
+        { type: "Enterprise", investment: "$60,000+", timeline: "6-18 months" },
+      ],
+    },
+    {
+      title: "Enterprise Software Development",
+      slug: "enterprise-software-development",
+      description: "Scalable enterprise platforms and workflows for multi-department systems.",
+      icon: "Building",
+      heroImage:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Enterprise Software Development Company | Custom ERP & B2B Systems",
+      lead: "Enterprise software built for operational complexity - not around it.",
+      highlights: [
+        "ERP & CRM systems",
+        "Legacy modernization",
+        "Enterprise integrations",
+        "Compliance-grade security",
+        "Role-based access control",
+      ],
+    },
+    {
+      title: "SaaS Product Development",
+      slug: "saas-product-development",
+      description: "Cloud-based SaaS products with recurring value and subscription billing.",
+      icon: "Cloud",
+      heroImage:
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+      lead: "From idea to revenue-generating SaaS platform in one engagement.",
+      highlights: [
+        "Multi-tenant architecture",
+        "Stripe/Chargebee billing",
+        "SSO & RBAC",
+        "API-first design",
+        "Usage metering",
+      ],
+    },
+    {
+      title: "MVP Development",
+      slug: "mvp-development",
+      description: "Fast MVP releases to validate ideas and product-market fit.",
+      icon: "Rocket",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "6-12 weeks to launch",
+        "Core workflows only",
+        "Staging deployment",
+        "2-week sprints",
+      ],
+    },
+    {
+      title: "Web Application Development",
+      slug: "web-application-development",
+      description: "Modern web applications built on React, Next.js, and Node.js.",
+      icon: "Globe",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "React & Next.js",
+        "Node.js backend",
+        "Responsive design",
+        "API integrations",
+      ],
+    },
+    {
+      title: "Mobile App Development",
+      slug: "mobile-app-development",
+      description: "Native and cross-platform mobile apps for iOS and Android.",
+      icon: "Smartphone",
+      heroImage:
+        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "iOS & Android",
+        "Cross-platform options",
+        "Backend integration",
+        "Consistent data across devices",
+      ],
+    },
+    {
+      title: "AI Software Development",
+      slug: "ai-software-development",
+      description: "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows.",
+      icon: "Brain",
+      heroImage:
+        "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "OpenAI integrations",
+        "Predictive analytics",
+        "Intelligent search",
+        "AI-assisted workflows",
+      ],
+    },
+    {
+      title: "Desktop Application Development",
+      slug: "desktop-application-development",
+      description: "Reliable desktop apps for business operations and internal workflows.",
+      icon: "Monitor",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Cross-platform desktop",
+        "Native performance",
+        "Legacy system integration",
+        "Offline capabilities",
+      ],
+    },
+    {
+      title: "API Development & Integration",
+      slug: "api-development-integration",
+      description: "Robust APIs and third-party integrations with CRMs, ERPs, and payment processors.",
+      icon: "Plug",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "REST & GraphQL APIs",
+        "Payment processor integration",
+        "CRM & ERP integration",
+        "Internal system connectivity",
+      ],
+    },
+    {
+      title: "Microservices Architecture",
+      slug: "microservices-architecture",
+      description: "Distributed systems built for scale and independent deployability.",
+      icon: "Puzzle",
+      heroImage:
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Service independence",
+        "Container orchestration",
+        "API gateways",
+        "Event-driven architecture",
+      ],
+    },
+    {
+      title: "Backend Development",
+      slug: "backend-development",
+      description: "Secure, high-performance backend services with Node.js and Python.",
+      icon: "Server",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Node.js & Python",
+        "PostgreSQL & MongoDB",
+        "Secure APIs",
+        "Performance optimization",
+      ],
+    },
+    {
+      title: "Frontend Development",
+      slug: "frontend-development",
+      description: "Responsive, accessible frontend experiences with React and Next.js.",
+      icon: "Code2",
+      heroImage:
+        "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "React & Next.js",
+        "Responsive design",
+        "Accessibility (WCAG)",
+        "Performance optimization",
+      ],
+    },
+    {
+      title: "Full Stack Development",
+      slug: "full-stack-development",
+      description: "End-to-end product development with a single accountable team.",
+      icon: "Workflow",
+      heroImage:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Frontend & backend",
+        "Cloud infrastructure",
+        "CI/CD pipelines",
+        "Complete ownership",
+      ],
+    },
+    {
+      title: "Software Consulting",
+      slug: "software-consulting",
+      description: "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget.",
+      icon: "Compass",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Roadmap planning",
+        "Tech stack selection",
+        "Legacy system audit",
+        "Budget forecasting",
+      ],
+    },
+    {
+      title: "Software Development Outsourcing",
+      slug: "software-development-outsourcing",
+      description: "Dedicated developers who work inside your existing sprint process and tools.",
+      icon: "Users",
+      heroImage:
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+      highlights: [
+        "Dedicated engineering teams",
+        "Existing process integration",
+        "Sprint cadence alignment",
+        "Engineering capacity extension",
+      ],
+    },
+  ],
+  pricing: [
+    {
+      type: "MVP Build",
+      investment: "$8,000+",
+      timeline: "6-12 weeks",
+      bestFor: "Startups validating product-market fit",
+      features: [
+        "Core workflows",
+        "Auth & admin",
+        "Staging deployment",
+        "2-week sprints",
+        "Full source-code ownership",
+      ],
+    },
+    {
+      type: "Custom Application",
+      investment: "$25,000+",
+      timeline: "3-6 months",
+      bestFor: "Growing B2B teams scaling operations",
+      features: [
+        "Full product build",
+        "API integrations",
+        "QA & security review",
+        "Documentation handover",
+        "Full source-code ownership",
+      ],
+    },
+    {
+      type: "Enterprise Platform",
+      investment: "$60,000+",
+      timeline: "6-18 months",
+      bestFor: "Complex orgs with compliance needs",
+      features: [
+        "Multi-module systems",
+        "SSO & RBAC",
+        "Dedicated team",
+        "SLA & 24/7 support",
+        "Security-first architecture",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "How much does custom software development cost?",
+      answer: "MVP builds start around $8,000 and take 6-12 weeks. Full applications range from $25,000-$60,000+ over 3-6 months. Enterprise platforms can exceed $150,000 depending on scope, integrations, and compliance.",
+    },
+    {
+      question: "How long does a software development project take?",
+      answer: "Most MVPs ship in 6-12 weeks, standard business applications take 3-6 months, and enterprise software programs run 6-18 months with phased releases roughly every two weeks.",
+    },
+    {
+      question: "Do I own the source code after the project is complete?",
+      answer: "Yes. Clients receive full intellectual property ownership, repository access, and deployment documentation at project completion.",
+    },
+    {
+      question: "What is the difference between custom software and off-the-shelf software?",
+      answer: "Off-the-shelf software is a fixed, one-size-fits-all product, while custom software development builds an application around your specific workflows, data, and integrations. Custom software costs more upfront but avoids paying for unused features and licensing limits as you scale.",
+    },
+    {
+      question: "What happens after launch?",
+      answer: "We offer maintenance plans covering security patches, monitoring, performance tuning, and feature iterations. We also provide ongoing support and documentation.",
+    },
+    {
+      question: "Do you offer offshore or outsourced software development?",
+      answer: "Yes. Alongside project-based delivery, we offer software development outsourcing and dedicated teams that work inside your existing tools and sprint cadence for ongoing engineering capacity.",
+    },
+  ],
+},
 
   // 2. WEB DEVELOPMENT
   "web-development": {
@@ -432,10 +635,10 @@ export const mainServicesData = {
     ],
   },
 
-  // 3. MOBILE DEVELOPMENT
-  "mobile-development": {
-    title: "Mobile Development",
-    slug: "mobile-development",
+  // 3. MOBILE APP DEVELOPMENT
+  "mobile-app-development": {
+    title: "Mobile App Development",
+    slug: "mobile-app-development",
     icon: "Smartphone",
     tagline: "Native & Cross-Platform Mobile Apps",
     description:
@@ -452,23 +655,6 @@ export const mainServicesData = {
       { name: "HealthPlus", industry: "Healthcare", icon: "Stethoscope" },
     ],
     subServices: [
-      {
-        title: "Mobile App Development",
-        slug: "mobile-app-development",
-        description: "Mobile products for iOS and Android.",
-        icon: "Smartphone",
-        heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle:
-          "Mobile App Development Company | iOS, Android & Cross-Platform",
-        lead: "iOS, Android, and cross-platform mobile apps built for B2B - from concept to App Store.",
-        highlights: [
-          "React Native & Flutter",
-          "Native Swift & Kotlin",
-          "App Store management",
-          "Offline capability",
-        ],
-      },
       {
         title: "Android App Development",
         slug: "android-app-development",
