@@ -30,7 +30,7 @@ const TRUST_REASONS = [
   {
     id: "experience",
     label: "Years Combined Experience",
-    value: 8,
+    value: 10,
     suffix: "+ yrs",
     icon: Award,
     description: "Deep full-stack expertise",
