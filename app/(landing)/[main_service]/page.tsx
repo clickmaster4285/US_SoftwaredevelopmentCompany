@@ -33,6 +33,16 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  if (dedicatedService) {
+    return {
+      title: dedicatedService.metaTitle,
+      description: dedicatedService.metaDescription,
+      alternates: {
+        canonical: dedicatedService.canonical,
+      },
+    };
+  }
+
   return {
     title: `${service.title} | Clickmasters`,
     description: service.description,

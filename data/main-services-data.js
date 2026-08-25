@@ -436,7 +436,7 @@ export const mainServiceData = {
   webDevelopment: {
     // Meta data
     metaTitle: "Web Development Company USA | Custom Websites & Apps",
-    metaDescription: "Get expert web development services in the USA for custom websites, web apps, and e-commerce solutions. Get your free quote today!",
+    metaDescription: "Get expert web development services in the USA for custom websites, web apps, and e-commerce solutions. Get your free quote today! ",
     canonical: "https://clickmasterssoftwaredevelopmentcompany.com/web-development",
     
     // Hero Section
@@ -827,7 +827,7 @@ export const mainServiceData = {
   },
 
   // ============================================
-  // MOBILE APP DEVELOPMENT SERVICE - NEW
+  // MOBILE APP DEVELOPMENT SERVICE
   // ============================================
   mobileDevelopment: {
     // Meta data
@@ -1159,6 +1159,447 @@ export const mainServiceData = {
       {
         question: "Do you offer ongoing app maintenance after launch?",
         answer: "Yes. Our support plans cover OS updates, new device compatibility, bug fixes, performance monitoring, and new feature releases.",
+      },
+    ],
+  },
+
+  // ============================================
+  // ARTIFICIAL INTELLIGENCE (AI) SERVICE - NEW
+  // ============================================
+  artificialIntelligence: {
+    // Meta data
+    metaTitle: "Artificial Intelligence Company | AI Services in USA",
+    metaDescription: "Clickmasters is a trusted artificial intelligence company in the USA offering AI development, chatbots, agents & automation. Get a free consultation today.",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/artificial-intelligence-ai",
+    slug: "artificial-intelligence-ai",
+    
+    // Hero Section
+    title: "Leading Artificial Intelligence Company for Modern U.S. Businesses",
+    slug: "artificial-intelligence-ai",
+    icon: "Brain",
+    tagline: "Artificial Intelligence Services",
+    description: "Clickmasters is an artificial intelligence company helping USA businesses design, build, and scale AI from AI chatbots and autonomous agents to enterprise-grade generative AI solutions. As a full-service artificial intelligence company, we turn AI experiments into production systems that cut costs, save time, and grow revenue.",
+    heroBadge: "50+ AI projects delivered",
+    heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    
+    // Hero Stats
+    stats: [
+      { value: "50+", label: "AI Projects Delivered" },
+      { value: "97%", label: "Model Accuracy" },
+      { value: "60%", label: "Average Task Automation" },
+      { value: "24/7", label: "AI Monitoring & Support" },
+    ],
+    
+    // Trust Section Data
+    trustSection: {
+      title: "Artificial Intelligence Company Built for Real Results",
+      description: "Clickmasters is an artificial intelligence company delivering scalable AI solutions built around real business goals. Our AI developers, data engineers, and AI consultants specialize in machine learning, large language models, and intelligent automation. As a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights.",
+      points: [
+        "50+ AI projects delivered across industries",
+        "97% model accuracy achieved on production systems",
+        "60% average task automation for clients",
+        "24/7 AI monitoring and support for all deployed solutions",
+        "Secure engineering and transparent delivery with measurable ROI",
+      ],
+      closingText: "Our AI development services combine expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock built to scale with your business.",
+    },
+    
+    // Features/Services List
+    features: [
+      {
+        icon: "Sparkles",
+        title: "Generative AI Solutions",
+        description: "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models designed for accuracy, safety, and speed.",
+      },
+      {
+        icon: "Compass",
+        title: "AI Consulting Services",
+        description: "Strategic AI advice from experienced AI consultants to help you identify high-ROI use cases, avoid costly missteps, and build a realistic AI roadmap.",
+      },
+      {
+        icon: "Code2",
+        title: "AI Developers & Custom AI App Development",
+        description: "Our AI developers build custom AI applications from internal tools to customer-facing products tailored to your workflows, not a generic template.",
+      },
+      {
+        icon: "MessageSquare",
+        title: "AI Prompt Engineering",
+        description: "High-quality prompt design and model tuning that improves reliability, reduces hallucinations, and gets more consistent results from your AI systems.",
+      },
+      {
+        icon: "Bot",
+        title: "AI Chatbot Development",
+        description: "As an experienced AI chatbot development company, we build conversational assistants for support, sales, and internal operations that actually resolve issues not just deflect them.",
+      },
+      {
+        icon: "Users2",
+        title: "AI Agents Development",
+        description: "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems, reducing manual work across departments.",
+      },
+      {
+        icon: "Workflow",
+        title: "AI Automation Systems",
+        description: "Intelligent automation that connects your AI models to real business processes from lead qualification to document processing and reporting.",
+      },
+      {
+        icon: "Plug",
+        title: "AI Integration Services",
+        description: "We integrate AI into your existing software CRMs, ERPs, support desks, and internal APIs so AI becomes part of your workflow, not a separate silo.",
+      },
+      {
+        icon: "Database",
+        title: "AI Model Development",
+        description: "Custom model training, fine-tuning, and evaluation for teams that need AI tailored to proprietary data and specialized use cases.",
+      },
+      {
+        icon: "Layers3",
+        title: "LLM Application Development",
+        description: "Production-grade LLM applications including RAG (retrieval-augmented generation) systems built with vector databases, evaluation pipelines, and monitoring.",
+      },
+    ],
+    
+    // Trusted Clients
+    trustedClients: [
+      { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
+      { name: "Healthcare System", industry: "Healthcare", icon: "Heart" },
+      { name: "Regional Bank", industry: "Finance", icon: "Coins" },
+      { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+      { name: "Retail Chain", industry: "Retail", icon: "ShoppingBag" },
+    ],
+    
+    // Benefits Section Data
+    benefits: [
+      "Faster time to value we move AI from idea to production quickly using proven architectures",
+      "Lower operational costs by reducing manual, repetitive work across your organization",
+      "Data-driven decisions with predictive analytics and AI-powered insights",
+      "Secure, governed AI with guardrails, access controls, and monitoring for compliance",
+      "Built to scale systems that grow with your user base and data volume",
+      "Measurable ROI every AI initiative tied to clear business KPIs",
+    ],
+    
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters as Your Artificial Intelligence Company",
+      description: "Choosing the right artificial intelligence company for your business isn't about the flashiest demo it's about who can build, secure, and support AI in production. At Clickmasters, we focus on long-term partnerships and practical results:",
+      reasons: [
+        {
+          title: "Full-stack AI expertise",
+          description: "specialists across machine learning, NLP, computer vision, and generative AI not generalists stretched thin",
+        },
+        {
+          title: "Reusable, proven patterns",
+          description: "instead of one-off, throwaway builds that don't scale",
+        },
+        {
+          title: "Transparent communication",
+          description: "regular demos, milestones, and full project visibility",
+        },
+        {
+          title: "Security and governance",
+          description: "built in from the start, not bolted on after launch",
+        },
+        {
+          title: "Real industry experience",
+          description: "across SaaS, healthcare, finance, retail, logistics, and education",
+        },
+        {
+          title: "Ongoing support",
+          description: "monitoring, retraining, and optimization included after launch",
+        },
+      ],
+    },
+    
+    // SubServices
+    subServices: [
+      {
+        title: "Generative AI Solutions",
+        slug: "generative-ai-solutions",
+        description: "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models designed for accuracy, safety, and speed.",
+        icon: "Sparkles",
+        heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Generative AI Solutions Company | ClickMasters",
+        metaDescription: "ClickMasters builds generative AI solutions for content, automation, and internal tools using GPT, Claude, and Gemini.",
+        lead: "LLM-powered solutions built for accuracy, safety, and speed.",
+        highlights: [
+          "Content generation",
+          "Workflow automation",
+          "Internal tools",
+          "OpenAI, Claude, Gemini",
+        ],
+        pricing: [
+          { type: "AI Proof of Concept", investment: "$8,000+", timeline: "4-8 weeks" },
+          { type: "Production AI App", investment: "$25,000+", timeline: "3-5 months" },
+          { type: "Enterprise AI", investment: "$60,000+", timeline: "6-12 months" },
+        ],
+      },
+      {
+        title: "AI Consulting Services",
+        slug: "ai-consulting",
+        description: "Strategic AI advice from experienced AI consultants to identify high-ROI use cases, avoid costly missteps, and build a realistic AI roadmap.",
+        icon: "Compass",
+        heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+        lead: "Strategic AI consulting to identify high-ROI use cases and build a realistic roadmap.",
+        highlights: [
+          "Use case identification",
+          "AI roadmap planning",
+          "Technology assessment",
+          "ROI analysis",
+        ],
+      },
+      {
+        title: "Custom AI App Development",
+        slug: "custom-ai-app-development",
+        description: "Our AI developers build custom AI applications from internal tools to customer-facing products tailored to your workflows, not a generic template.",
+        icon: "Code2",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Custom AI applications built around your specific workflows.",
+        highlights: [
+          "Internal tools",
+          "Customer-facing products",
+          "Workflow-specific AI",
+          "Scalable architecture",
+        ],
+      },
+      {
+        title: "AI Prompt Engineering",
+        slug: "ai-prompt-engineering",
+        description: "High-quality prompt design and model tuning that improves reliability, reduces hallucinations, and gets more consistent results from your AI systems.",
+        icon: "MessageSquare",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Professional prompt engineering for consistent, reliable AI outputs.",
+        highlights: [
+          "Prompt design",
+          "Model tuning",
+          "Hallucination reduction",
+          "Consistent results",
+        ],
+      },
+      {
+        title: "AI Chatbot Development",
+        slug: "ai-chatbot-development",
+        description: "As an experienced AI chatbot development company, we build conversational assistants for support, sales, and internal operations that actually resolve issues not just deflect them.",
+        icon: "Bot",
+        heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Conversational AI assistants that actually resolve issues.",
+        highlights: [
+          "Customer support chatbots",
+          "Sales assistants",
+          "Internal operations bots",
+          "Issue resolution focus",
+        ],
+      },
+      {
+        title: "AI Agents Development",
+        slug: "ai-agents-development",
+        description: "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems, reducing manual work across departments.",
+        icon: "Users2",
+        heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Autonomous AI agents that complete multi-step tasks across your systems.",
+        highlights: [
+          "Task automation",
+          "Cross-system execution",
+          "Multi-step planning",
+          "Departmental efficiency",
+        ],
+      },
+      {
+        title: "AI Automation Systems",
+        slug: "ai-automation-systems",
+        description: "Intelligent automation that connects your AI models to real business processes from lead qualification to document processing and reporting.",
+        icon: "Workflow",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Intelligent automation connecting AI to your business processes.",
+        highlights: [
+          "Lead qualification",
+          "Document processing",
+          "Automated reporting",
+          "Process integration",
+        ],
+      },
+      {
+        title: "AI Integration Services",
+        slug: "ai-integration-services",
+        description: "We integrate AI into your existing software CRMs, ERPs, support desks, and internal APIs so AI becomes part of your workflow, not a separate silo.",
+        icon: "Plug",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Seamless AI integration into your existing software stack.",
+        highlights: [
+          "CRM integration",
+          "ERP integration",
+          "Support desk integration",
+          "API connectivity",
+        ],
+      },
+      {
+        title: "AI Model Development",
+        slug: "ai-model-development",
+        description: "Custom model training, fine-tuning, and evaluation for teams that need AI tailored to proprietary data and specialized use cases.",
+        icon: "Database",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Custom AI models trained on your proprietary data.",
+        highlights: [
+          "Custom model training",
+          "Fine-tuning",
+          "Model evaluation",
+          "Proprietary data integration",
+        ],
+      },
+      {
+        title: "LLM Application Development",
+        slug: "llm-application-development",
+        description: "Production-grade LLM applications including RAG (retrieval-augmented generation) systems built with vector databases, evaluation pipelines, and monitoring.",
+        icon: "Layers3",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        lead: "Production-grade LLM applications with RAG, vector databases, and monitoring.",
+        highlights: [
+          "RAG systems",
+          "Vector databases",
+          "Evaluation pipelines",
+          "Performance monitoring",
+        ],
+      },
+    ],
+    
+    // Technology Stack Data
+    techStack: {
+      title: "AI Development Technologies Behind Our Solutions",
+      description: "We choose technology for reliability, maintainability, and long-term support not trends. Our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
+      aiModelsFrameworks: ["OpenAI (GPT)", "Anthropic (Claude)", "Google Gemini", "open-source LLMs (Llama, Mistral)"],
+      mlData: ["Python", "TensorFlow", "PyTorch", "vector databases"],
+      infrastructure: ["AWS", "Azure", "AWS Bedrock", "Docker"],
+      applicationLayer: ["Next.js", "React", "Node.js", "PostgreSQL"],
+    },
+    
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters built an AI chatbot that actually helps our customers. Within two months, our support tickets dropped by 40%.",
+        author: "Daniel Morgan",
+        title: "Operations Director",
+        company: "SaaS Company",
+        location: "",
+      },
+      {
+        quote: "Clickmasters' AI consulting team helped us choose the right solution instead of overspending on unnecessary technology. We launched in weeks and achieved exactly what we needed.",
+        author: "Sarah Mitchell",
+        title: "VP of Product",
+        company: "Healthcare Technology Company",
+        location: "",
+      },
+      {
+        quote: "Clickmasters automated our document processing and saved our team hours every week. The AI solution paid for itself in less than three months.",
+        author: "James Carter",
+        title: "Finance Operations Lead",
+        company: "Regional Bank",
+        location: "",
+      },
+      {
+        quote: "Clickmasters made the entire AI development process clear and transparent. Their RAG-based search solution now answers around 70% of our internal questions without a support ticket.",
+        author: "Michael Bennett",
+        title: "IT Manager",
+        company: "Logistics Company",
+        location: "",
+      },
+    ],
+    
+    // Process Steps
+    processSteps: [
+      {
+        title: "Discovery & AI Strategy",
+        description: "We audit your workflows, data, and goals to identify the highest-impact AI use case and build a realistic roadmap around it.",
+      },
+      {
+        title: "Architecture & Model Selection",
+        description: "Our AI developers choose the right models, data pipeline, and infrastructure for your use case, balancing performance, cost, and security.",
+      },
+      {
+        title: "Build, Test & Integrate",
+        description: "We build your AI solution, integrate it with your existing systems, and rigorously test for accuracy, safety, and reliability.",
+      },
+      {
+        title: "Launch, Monitor & Optimize",
+        description: "After launch, we monitor performance, retrain models as needed, and continuously optimize based on real usage data.",
+      },
+    ],
+    
+    // Industries Data
+    industries: [
+      { name: "SaaS", description: "AI features, onboarding automation, in-app copilots" },
+      { name: "Healthcare", description: "clinical documentation support, patient triage assistants, HIPAA-aware workflows" },
+      { name: "Finance", description: "fraud detection, reporting automation, risk scoring" },
+      { name: "Retail", description: "personalization engines, demand forecasting, AI shopping assistants" },
+      { name: "Education", description: "adaptive learning tools, administrative automation" },
+      { name: "Logistics", description: "route optimization, demand prediction, real-time tracking intelligence" },
+    ],
+    
+    // Pricing
+    pricing: [
+      {
+        type: "AI Proof of Concept",
+        investment: "$8,000+",
+        timeline: "4-8 weeks",
+        bestFor: "Teams validating AI feasibility",
+        features: [
+          "Use case validation",
+          "Model selection",
+          "Prototype development",
+          "ROI assessment",
+          "Strategic roadmap",
+        ],
+      },
+      {
+        type: "Production AI Application",
+        investment: "$25,000+",
+        timeline: "3-5 months",
+        bestFor: "Chatbots, agents, and RAG systems",
+        features: [
+          "Full AI product build",
+          "System integration",
+          "QA & safety testing",
+          "Monitoring setup",
+          "Documentation & training",
+        ],
+      },
+      {
+        type: "Enterprise AI Platform",
+        investment: "$60,000+",
+        timeline: "6-12 months",
+        bestFor: "Regulated or high-scale AI systems",
+        features: [
+          "Custom model training",
+          "Advanced governance",
+          "Fine-tuning & optimization",
+          "Dedicated AI team",
+          "24/7 enterprise support",
+        ],
+      },
+    ],
+    
+    // FAQs
+    faqs: [
+      {
+        question: "What is RAG, and do you implement it?",
+        answer: "RAG (Retrieval-Augmented Generation) connects AI models to trusted business data for accurate, relevant answers. Yes, Clickmasters implements RAG for search, support, and knowledge systems.",
+      },
+      {
+        question: "Which AI models do you work with?",
+        answer: "We work with OpenAI, Anthropic (Claude), Google Gemini, and open-source models, selecting the right model based on your use case, security, and budget.",
+      },
+      {
+        question: "How do you keep AI outputs accurate and safe?",
+        answer: "We use trusted data, testing, monitoring, guardrails, and human oversight to improve AI accuracy, security, and reliability.",
+      },
+      {
+        question: "Can AI integrate with our existing software?",
+        answer: "Yes. We integrate AI with CRMs, ERPs, databases, APIs, cloud platforms, and other existing business software.",
+      },
+      {
+        question: "How much do AI development services cost?",
+        answer: "Costs vary by scope. A focused AI proof of concept typically starts around $8,000, a production AI application (chatbot, agent, or RAG system) starts around $25,000, and enterprise AI platforms with governance and fine-tuning start around $60,000.",
+      },
+      {
+        question: "Which AI models and platforms do you work with?",
+        answer: "We work with OpenAI, Anthropic (Claude), Google Gemini, and open-source models (Llama, Mistral), deployed via Azure, AWS Bedrock, or self-hosted infrastructure whichever fits your security and compliance needs.",
       },
     ],
   },
