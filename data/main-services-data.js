@@ -1,4 +1,8 @@
 // main-service-data.js
+import { iconMap, slugify } from "./main-services";
+import { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data";
+import { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData";
+
 export const mainServiceData = {
   // ============================================
   // SOFTWARE DEVELOPMENT SERVICE
@@ -561,7 +565,7 @@ export const mainServiceData = {
       },
       {
         title: "Web Application Development",
-        slug: "web-application-development-web",
+        slug: "web-application-development",
         description: "We design and build secure, scalable web applications customer portals, internal dashboards, booking systems, and SaaS products using modern frameworks with clean, maintainable code.",
         icon: "Workflow",
         heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
@@ -834,8 +838,7 @@ export const mainServiceData = {
     metaTitle: "Reliable Mobile App Development Company | Clickmasters",
     metaDescription: "Choose a reliable Mobile App Development Company for custom Mobile App Development Services. Clickmasters builds scalable apps tailored to your business. Get started!",
     canonical: "https://clickmasterssoftwaredevelopmentcompany.com/mobile-app-development",
-    slug: "mobile-app-development",
-    
+
     // Hero Section
     title: "Mobile App Development Company",
     slug: "mobile-app-development",
@@ -1171,8 +1174,7 @@ export const mainServiceData = {
     metaTitle: "Artificial Intelligence Company | AI Services in USA",
     metaDescription: "Clickmasters is a trusted artificial intelligence company in the USA offering AI development, chatbots, agents & automation. Get a free consultation today.",
     canonical: "https://clickmasterssoftwaredevelopmentcompany.com/artificial-intelligence-ai",
-    slug: "artificial-intelligence-ai",
-    
+
     // Hero Section
     title: "Leading Artificial Intelligence Company for Modern U.S. Businesses",
     slug: "artificial-intelligence-ai",
@@ -1603,7 +1605,3105 @@ export const mainServiceData = {
       },
     ],
   },
+  
+  // MACHINE LEARNING DEVELOPMENT SERVICES
+  machineLearningDevelopmentServices: {
+    // Meta data
+    metaTitle: "Machine Learning Development Services | USA ML Company",
+    metaDescription: "Custom machine learning development services in the USA. Build ML models, predictive analytics & deep learning solutions. Get a free ML consultation today.",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/machine-learning-development-services",
+
+    // Hero Section
+    title: "Machine Learning Development Services",
+    slug: "machine-learning-development-services",
+    icon: "BrainCircuit",
+    tagline: "Machine Learning Services",
+    description: "Clickmasters delivers custom machine learning development services for USA businesses — from predictive analytics and recommendation systems to deep learning and enterprise-grade ML platforms. As a full-cycle machine learning development company, we help you go from raw data to production-ready models that drive measurable results.",
+    heroBadge: "40+ ML models deployed to production",
+    heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero CTAs
+    heroCtas: {
+      primary: "Get a Free ML Consultation",
+      secondary: "Explore Our Machine Learning Services",
+    },
+
+    // Hero Stats
+    stats: [
+      { value: "40+", label: "ML Models Deployed to Production" },
+      { value: "95%+", label: "Average Model Accuracy" },
+      { value: "30%", label: "Average Forecasting Improvement" },
+      { value: "Ongoing", label: "Model Monitoring & Retraining" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Machine Learning Development Company Built on Engineering Discipline",
+      description: "Clickmasters is a machine learning development company built for businesses that need models which perform in production, not just in a notebook. Our machine learning development services combine data engineering, statistical modeling, and software engineering — so the ML solutions we build are accurate, scalable, and maintainable long after launch.",
+      paragraphs: [
+        "As an AI ML development company, we don't hand you a black-box model and walk away. Every machine learning development service we offer includes clear documentation, performance benchmarks, and a plan for monitoring and retraining as your data evolves. Whether you need a single predictive model or a full machine learning development services agency to build your entire ML pipeline, our team scales to match your project.",
+      ],
+      points: [],
+      closingText: "We're recognized among ML development companies that prioritize transparent delivery, measurable outcomes, and long-term reliability — the standard every ML development service provider should be held to.",
+    },
+
+    // Services Section (Explore) heading
+    servicesSection: {
+      title: "Our Machine Learning Development Services",
+      description: "We offer end-to-end machine learning development services — from data strategy and model design to deployment and ongoing optimization. As a complete ML software development company, we cover every stage of the ML lifecycle.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "BrainCircuit",
+        title: "Machine Learning Solutions",
+        description: "Custom machine learning solutions built around your business data — from forecasting and classification to anomaly detection and process optimization.",
+      },
+      {
+        icon: "Users2",
+        title: "Machine Learning Experts",
+        description: "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Predictive Analytics",
+        description: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
+      },
+      {
+        icon: "Target",
+        title: "Recommendation Systems",
+        description: "Personalized recommendation systems that increase engagement and revenue by matching customers with the products, content, or services most relevant to them.",
+      },
+      {
+        icon: "SlidersHorizontal",
+        title: "Model Training & Optimization",
+        description: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
+      },
+      {
+        icon: "Layers3",
+        title: "Deep Learning Solutions",
+        description: "Deep learning solutions for complex, high-dimensional problems — including image recognition, natural language processing, and time-series forecasting.",
+      },
+      {
+        icon: "Network",
+        title: "Deep Learning Experts",
+        description: "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
+      },
+      {
+        icon: "Database",
+        title: "Custom ML Model Development",
+        description: "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
+      },
+      {
+        icon: "Repeat",
+        title: "ML Model Development Services",
+        description: "Full-cycle ML model development services covering data preparation, feature engineering, model selection, training, and validation.",
+      },
+      {
+        icon: "Workflow",
+        title: "Machine Learning Solutions Development",
+        description: "Complete machine learning solutions development — including MLOps pipelines for continuous training, deployment, and monitoring at scale.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
+      { name: "Healthcare Provider", industry: "Healthcare", icon: "Heart" },
+      { name: "Fintech Company", industry: "Finance", icon: "Coins" },
+      { name: "Retail Company", industry: "Retail", icon: "ShoppingBag" },
+      { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+    ],
+
+    // Benefits Section Data
+    benefitsSection: {
+      title: "Benefits of Our Machine Learning Development Services",
+      description: "Businesses choose our machine learning development services for measurable, practical reasons.",
+    },
+    benefits: [
+      {
+        title: "Faster Time to Value",
+        description: "We use proven ML frameworks and reusable pipelines to move from data exploration to a working model faster than building from scratch.",
+      },
+      {
+        title: "Higher Model Accuracy",
+        description: "Rigorous validation, cross-testing, and hyperparameter tuning ensure your models perform reliably on real-world data, not just training data.",
+      },
+      {
+        title: "Lower Operational Costs",
+        description: "Automated ML pipelines and optimized inference reduce the manual work and compute costs tied to running models at scale.",
+      },
+      {
+        title: "Scalable ML Infrastructure",
+        description: "As an AI ML development company, we architect ML systems that scale with your data volume and user growth, not just your first pilot.",
+      },
+      {
+        title: "Continuous Improvement",
+        description: "We monitor live model performance and retrain as your data shifts, so accuracy doesn't degrade over time.",
+      },
+      {
+        title: "Measurable Business Impact",
+        description: "Every machine learning development service we deliver is tied to clear KPIs — accuracy, cost savings, or revenue impact — so ROI is never a guessing game.",
+      },
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters for Machine Learning Development?",
+      description: "Choosing a machine learning development company is about building models that work reliably in the real world. Here's what makes Clickmasters different:",
+      reasons: [
+        {
+          title: "Specialized Expertise",
+          description: "Predictive analytics, deep learning, NLP, and computer vision.",
+        },
+        {
+          title: "Reliable Models",
+          description: "Thorough testing and validation before deployment.",
+        },
+        {
+          title: "Clear Communication",
+          description: "Regular updates, demos, and transparent progress.",
+        },
+        {
+          title: "Built for Production",
+          description: "MLOps, monitoring, versioning, and retraining from day one.",
+        },
+        {
+          title: "Industry Experience",
+          description: "Solutions for SaaS, finance, healthcare, retail, and logistics.",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "Machine Learning Solutions",
+        slug: "machine-learning-solutions",
+        description: "Custom machine learning solutions built around your business data — from forecasting and classification to anomaly detection and process optimization.",
+        icon: "BrainCircuit",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Machine Learning Solutions Company | Clickmasters",
+        metaDescription: "Custom machine learning solutions built around your business data — forecasting, classification, anomaly detection, and process optimization.",
+        lead: "Custom ML built around your business data.",
+        highlights: ["Forecasting", "Classification", "Anomaly detection", "Process optimization"],
+      },
+      {
+        title: "Machine Learning Experts",
+        slug: "machine-learning-experts",
+        description: "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
+        icon: "Users2",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Machine Learning Experts & Data Scientists | Clickmasters",
+        metaDescription: "Hire dedicated machine learning experts and data scientists who design, train, and validate models for your specific use case.",
+        lead: "A dedicated team of ML experts and data scientists.",
+        highlights: ["Model design", "Model training", "Validation", "Use-case fit"],
+      },
+      {
+        title: "Predictive Analytics",
+        slug: "predictive-analytics",
+        description: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
+        icon: "TrendingUp",
+        heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Predictive Analytics Development Services | Clickmasters",
+        metaDescription: "Predictive analytics models that forecast demand, detect risk, and identify trends — built on your historical and real-time data.",
+        lead: "Forecast demand, detect risk, and spot trends before they hit.",
+        highlights: ["Demand forecasting", "Risk detection", "Trend identification", "Historical & real-time data"],
+      },
+      {
+        title: "Recommendation Systems",
+        slug: "recommendation-systems",
+        description: "Personalized recommendation systems that increase engagement and revenue by matching customers with the products, content, or services most relevant to them.",
+        icon: "Target",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Recommendation System Development | Clickmasters",
+        metaDescription: "Personalized recommendation systems that increase engagement and revenue by matching customers with the most relevant products and content.",
+        lead: "Personalization that increases engagement and revenue.",
+        highlights: ["Product recommendations", "Content matching", "Service matching", "Engagement lift"],
+      },
+      {
+        title: "Model Training & Optimization",
+        slug: "model-training-optimization",
+        description: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
+        icon: "SlidersHorizontal",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "ML Model Training & Optimization Services | Clickmasters",
+        metaDescription: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
+        lead: "Maximum accuracy, inference costs under control.",
+        highlights: ["Hyperparameter tuning", "Accuracy maximization", "Inference cost control", "Rigorous evaluation"],
+      },
+      {
+        title: "Deep Learning Solutions",
+        slug: "deep-learning-solutions",
+        description: "Deep learning solutions for complex, high-dimensional problems — including image recognition, natural language processing, and time-series forecasting.",
+        icon: "Layers3",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Deep Learning Development Services | Clickmasters",
+        metaDescription: "Deep learning solutions for image recognition, natural language processing, and time-series forecasting.",
+        lead: "Deep learning for complex, high-dimensional problems.",
+        highlights: ["Image recognition", "Natural language processing", "Time-series forecasting", "High-dimensional modeling"],
+      },
+      {
+        title: "Deep Learning Experts",
+        slug: "deep-learning-experts",
+        description: "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
+        icon: "Network",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Deep Learning Experts & Neural Network Architects | Clickmasters",
+        metaDescription: "Deep learning experts who design neural network architectures suited to your data — from CNNs to transformer-based models.",
+        lead: "Neural network architectures designed for your data.",
+        highlights: ["CNN architectures", "Transformer-based models", "Architecture design", "Data-specific tuning"],
+      },
+      {
+        title: "Custom ML Model Development",
+        slug: "custom-ml-model-development",
+        description: "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
+        icon: "Database",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Custom ML Model Development Company | Clickmasters",
+        metaDescription: "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
+        lead: "Models built from the ground up on your proprietary data.",
+        highlights: ["Proprietary data training", "Business-metric tuning", "Ground-up builds", "Custom evaluation"],
+      },
+      {
+        title: "ML Model Development Services",
+        slug: "ml-model-development-services",
+        description: "Full-cycle ML model development services covering data preparation, feature engineering, model selection, training, and validation.",
+        icon: "Repeat",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Full-Cycle ML Model Development Services | Clickmasters",
+        metaDescription: "Full-cycle ML model development covering data preparation, feature engineering, model selection, training, and validation.",
+        lead: "Full-cycle model development, data prep to validation.",
+        highlights: ["Data preparation", "Feature engineering", "Model selection", "Training & validation"],
+      },
+      {
+        title: "Machine Learning Solutions Development",
+        slug: "machine-learning-solutions-development",
+        description: "Complete machine learning solutions development — including MLOps pipelines for continuous training, deployment, and monitoring at scale.",
+        icon: "Workflow",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "ML Solutions & MLOps Development | Clickmasters",
+        metaDescription: "Complete machine learning solutions development with MLOps pipelines for continuous training, deployment, and monitoring at scale.",
+        lead: "End-to-end ML solutions with MLOps at scale.",
+        highlights: ["MLOps pipelines", "Continuous training", "Deployment automation", "Monitoring at scale"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "The Technology Powering Our Machine Learning Solutions",
+      description: "We choose technology for reliability, accuracy, and long-term maintainability — not trends.",
+      groups: [
+        {
+          label: "ML & Deep Learning Frameworks",
+          items: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
+        },
+        {
+          label: "Data Engineering",
+          items: ["Python", "Apache Spark", "Pandas", "SQL"],
+        },
+        {
+          label: "MLOps & Deployment",
+          items: ["MLflow", "Docker", "Kubernetes", "AWS SageMaker"],
+        },
+        {
+          label: "Infrastructure",
+          items: ["AWS", "Azure", "Google Cloud Platform"],
+        },
+      ],
+      closingText: "This combination lets our machine learning experts deliver ml development services that are accurate, scalable, and easy for your internal team to maintain long after launch.",
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters helped us build a demand forecasting model that reduced excess inventory by 28%. Their machine learning team understood our business goals and delivered a solution that performed reliably in production.",
+        author: "Michael Carter",
+        title: "Supply Chain Director",
+        company: "U.S. Retail Company",
+        location: "",
+      },
+      {
+        quote: "We needed a fraud detection system that could handle high transaction volumes in real time. Clickmasters delivered a scalable solution that reduced false positives by 35%.",
+        author: "Daniel Brooks",
+        title: "Head of Risk",
+        company: "U.S. Fintech Company",
+        location: "",
+      },
+      {
+        quote: "The predictive analytics solution helped our team identify important warning signs much earlier. It has now become an essential part of our daily workflow.",
+        author: "Sarah Mitchell",
+        title: "Clinical Operations Director",
+        company: "U.S. Healthcare Provider",
+        location: "",
+      },
+      {
+        quote: "Clickmasters built a recommendation system that increased our average order value by 18%. The team was professional, responsive, and transparent about model performance.",
+        author: "James Wilson",
+        title: "E-Commerce Manager",
+        company: "U.S. Online Retailer",
+        location: "",
+      },
+    ],
+
+    // Process Steps
+    processSection: {
+      title: "Our Machine Learning Development Process",
+    },
+    processSteps: [
+      {
+        title: "Data Discovery & Strategy",
+        description: "We audit your data sources, quality, and business goals to identify the highest-impact ML use case — and build a realistic roadmap around it.",
+      },
+      {
+        title: "Model Design & Feature Engineering",
+        description: "Our machine learning experts select the right algorithms and engineer features that maximize predictive power for your specific data.",
+      },
+      {
+        title: "Training, Testing & Validation",
+        description: "We train, tune, and rigorously validate the model against real-world data to confirm accuracy, fairness, and reliability before deployment.",
+      },
+      {
+        title: "Deployment, Monitoring & Retraining",
+        description: "After deployment, we monitor live performance and retrain the model as your data evolves, so accuracy stays high over time.",
+      },
+    ],
+
+    // Industries Data
+    industriesSection: {
+      title: "Machine Learning Development Services for Every Industry",
+      description: "Our machine learning development services are adapted to the operating reality of your industry — not a generic playbook.",
+    },
+    industries: [
+      { name: "SaaS", description: "churn prediction, usage analytics, in-app recommendation systems" },
+      { name: "Healthcare", description: "patient risk scoring, diagnostic support models, HIPAA-aware ML pipelines" },
+      { name: "Finance", description: "fraud detection, credit risk models, algorithmic forecasting" },
+      { name: "Retail", description: "demand forecasting, personalization engines, dynamic pricing models" },
+      { name: "Logistics", description: "route optimization, predictive maintenance, demand prediction" },
+      { name: "Manufacturing", description: "quality control automation, predictive maintenance, anomaly detection" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "ML Proof of Concept",
+        investment: "$10,000+",
+        timeline: "4-6 weeks",
+        bestFor: "Teams validating ML feasibility",
+        features: [
+          "Data discovery & strategy",
+          "Use case validation",
+          "Prototype model",
+          "Performance benchmarks",
+          "Go-forward roadmap",
+        ],
+      },
+      {
+        type: "Production ML Model",
+        investment: "$30,000+",
+        timeline: "2-4 months",
+        bestFor: "Production-ready predictive models",
+        features: [
+          "Feature engineering",
+          "Model training & tuning",
+          "Validation on real-world data",
+          "Deployment & integration",
+          "Monitoring setup",
+        ],
+      },
+      {
+        type: "Enterprise ML Platform",
+        investment: "$70,000+",
+        timeline: "4-9 months",
+        bestFor: "Enterprise platforms with MLOps & retraining",
+        features: [
+          "MLOps pipelines",
+          "Continuous training & retraining",
+          "Drift detection & monitoring",
+          "Enterprise integrations",
+          "Ongoing support",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What machine learning development services does Clickmasters offer?",
+        answer: "Clickmasters offers full-spectrum machine learning development services including predictive analytics, recommendation systems, deep learning solutions, custom ML model development, model training & optimization, and MLOps for businesses across the USA.",
+      },
+      {
+        question: "How much do machine learning development services cost?",
+        answer: "Costs vary by scope. A focused ML proof of concept typically starts around $10,000, a production-ready ML model starts around $30,000, and enterprise ML platforms with MLOps and ongoing retraining start around $70,000.",
+      },
+      {
+        question: "How long does it take to build a custom machine learning model?",
+        answer: "A proof of concept usually takes 4–6 weeks, a production-ready ML model takes 2–4 months, and enterprise ML platforms typically take 4–9 months depending on data complexity and integration scope.",
+      },
+      {
+        question: "What data do you need to start a machine learning project?",
+        answer: "We typically start with 6–12 months of historical business data, though requirements vary by use case. During discovery, we assess your existing data quality and identify any gaps before committing to a model design.",
+      },
+      {
+        question: "Do you offer ongoing support after the model is deployed?",
+        answer: "Yes. Every machine learning development service we deliver includes performance monitoring, drift detection, and retraining support, so your model stays accurate as your data changes.",
+      },
+      {
+        question: "Is Clickmasters a machine learning development company or a general software development company?",
+        answer: "We're a full software development company with a dedicated machine learning development team, so you get ML expertise backed by production-grade engineering, data infrastructure, and long-term support — not a siloed ML vendor.",
+      },
+      {
+        question: "Can you integrate machine learning models with our existing software?",
+        answer: "Yes. We integrate ML models into your existing CRMs, ERPs, data warehouses, and internal APIs through secure, scalable integration layers.",
+      },
+    ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Put Machine Learning to Work for Your Business?",
+      description: "Partner with a machine learning development company that ships production-ready models, not just prototypes. Book a free consultation and let's map out the right ML solution for your business.",
+      primary: "Book a Free ML Consultation",
+      secondary: "Talk to Our Machine Learning Development Team",
+    },
+
+    // Mid-page CTA labels (rendered by <SectionCta> in main-service-page.tsx)
+    sectionCtas: {
+      afterServices: "Talk to Our Machine Learning Development Team",
+      afterWhyChooseUs: "See Why Teams Trust Our ML Development Company",
+      afterProcess: "Start Your Machine Learning Project Today",
+    },
+  },
+    
+  // UI/UX DESIGN SERVICE - NEW
+  // ============================================
+  uiUxDesignServices: {
+    // Meta data
+    metaTitle: "Top UI/UX Design Services Company in USA | Clickmasters",
+    metaDescription: "Get expert UI/UX design services from a top UI/UX design agency in the USA. We build user-friendly web & mobile app designs. Request a free quote!",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/ui-ux-design-services",
+    slug: "ui-ux-design-services",
+
+    // Hero Section
+    title: "UI/UX Design Services That Turn Visitors Into Customers",
+    icon: "Palette",
+    tagline: "UI/UX Design Services",
+    description: "Clickmasters offers complete UI/UX design services for websites, apps, and digital products. As a full-service UI/UX design agency in the USA, we combine research, strategy, and creativity to design experiences your users love — and that turn browsers into buyers. Whether you need a single landing page or a full ui ux design and development services package, our team is ready to help.",
+    heroBadge: "10+ years of design experience",
+    heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "10+", label: "Years of Design Experience" },
+      { value: "8+", label: "Industries Served" },
+      { value: "4", label: "Step Design Process" },
+      { value: "100%", label: "Research-Backed Design Decisions" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "Trusted UI/UX Design Company in the USA",
+      description: "At Clickmasters, we're more than just another UI/UX design services company. We're a team of designers, researchers, and strategists who care about how real people use your product. For over 10 years, we've partnered with startups, growing businesses, and enterprise brands to design websites and apps that are easy to use, look professional, and drive measurable results.",
+      points: [
+        "Partnered with startups, growing businesses, and enterprise brands for over 10 years",
+        "Every wireframe, prototype, and pixel backed by user research and your business goals",
+        "Full-service UI/UX design and development company — research to front-end development under one roof",
+        "Delivered for clients across SaaS, healthcare, fintech, and e-commerce",
+        "Described by clients as one of the top UI/UX design companies in the USA",
+      ],
+      closingText: "As a full-service UI/UX design and development company, we don't only make screens look attractive. Our ui and ux design services are built to help you compete — and win — in a crowded digital market.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "Palette",
+        title: "UI/UX Design",
+        description: "Our core ui ux design service covers everything from visual design to user flows. We design interfaces that are simple to navigate, on-brand, and built to convert visitors into customers.",
+      },
+      {
+        icon: "Package",
+        title: "Product Design",
+        description: "We help you design digital products from the ground up. Our product design process blends UX research, UI design, and usability testing so your product launches with confidence.",
+      },
+      {
+        icon: "Monitor",
+        title: "Web Design",
+        description: "As a trusted UX UI web design agency, we build responsive, fast-loading websites that look great on every screen and guide visitors toward taking action.",
+      },
+      {
+        icon: "Smartphone",
+        title: "Mobile App Design",
+        description: "Looking for mobile UI/UX design services? We design iOS and Android apps with clean layouts, smooth navigation, and interfaces users genuinely enjoy using.",
+      },
+      {
+        icon: "Search",
+        title: "UX Research",
+        description: "Good design starts with understanding your users. Our UX research includes user interviews, surveys, and competitor analysis to guide every design ui ux decision we make.",
+      },
+      {
+        icon: "PenTool",
+        title: "Wireframing & Prototyping",
+        description: "Before we design a single screen, we map out wireframes and interactive prototypes. This lets you test ideas and gather feedback early, avoiding costly changes later in development.",
+      },
+      {
+        icon: "Component",
+        title: "Design Systems",
+        description: "We build reusable design systems that keep your brand consistent across every page, screen, and future update — saving your team time and budget down the road.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
+      { name: "Healthcare Provider", industry: "Healthcare", icon: "Heart" },
+      { name: "Fintech Company", industry: "Finance", icon: "Coins" },
+      { name: "E-commerce Brand", industry: "Retail", icon: "ShoppingBag" },
+      { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Higher Conversion Rates: A clear, easy-to-use interface turns more visitors into paying customers",
+      "Lower Development Costs: Catching design issues early means fewer expensive changes once developers start building",
+      "Better User Retention: Products that are simple and pleasant to use keep customers coming back",
+      "Stronger Brand Trust: Clean, professional design builds credibility with your audience from the first visit",
+      "Faster Time to Market: Our streamlined ui ux design and development services help you launch faster",
+      "Smarter, Data-Backed Decisions: Every design choice is guided by real user research and data, not guesswork",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters as Your UI/UX Design Agency",
+      description: "With so many UI/UX design companies in the USA to choose from, Clickmasters focuses on creating digital experiences that are easy to use, visually engaging, and built around your business goals. Here's why businesses choose us as their trusted UI/UX design agency:",
+      reasons: [
+        {
+          title: "Proven Experience",
+          description: "We've helped businesses across the USA create intuitive digital products that are designed around real user needs and business objectives. Our experience has helped us build a strong reputation as a reliable UI/UX design agency",
+        },
+        {
+          title: "Full-Service Team",
+          description: "From UX research and wireframing to interface design and front-end development, our team provides complete UI UX design and development services under one roof. This keeps communication simple and eliminates the need to coordinate multiple vendors",
+        },
+        {
+          title: "USA-Based Support",
+          description: "As a trusted UI/UX design company in USA, Clickmasters works with your schedule, understands the U.S. market, and keeps communication straightforward throughout your project",
+        },
+        {
+          title: "Transparent Process",
+          description: "We keep you informed at every stage with clear timelines, project milestones, regular updates, and straightforward pricing — so you always know what to expect",
+        },
+        {
+          title: "Results-Driven Design",
+          description: "We don't design interfaces just to look good. Our UI/UX design services focus on improving usability, engagement, conversions, signups, and other outcomes that matter to your business",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "UI/UX Design",
+        slug: "ui-ux-design",
+        description: "Our core ui ux design service covers everything from visual design to user flows. We design interfaces that are simple to navigate, on-brand, and built to convert visitors into customers.",
+        icon: "Palette",
+        heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "UI/UX Design Services | Clickmasters",
+        metaDescription: "UI/UX design that converts — visual design and user flows built to turn visitors into customers.",
+        lead: "Interfaces that are simple, on-brand, and built to convert.",
+        highlights: ["Visual design", "User flows", "On-brand interfaces", "Conversion-focused"],
+      },
+      {
+        title: "Product Design",
+        slug: "product-design",
+        description: "We help you design digital products from the ground up. Our product design process blends UX research, UI design, and usability testing so your product launches with confidence.",
+        icon: "Package",
+        heroImage: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Digital Product Design Services | Clickmasters",
+        metaDescription: "Ground-up product design blending UX research, UI design, and usability testing for confident launches.",
+        lead: "Digital products designed from the ground up.",
+        highlights: ["UX research", "UI design", "Usability testing", "Launch-ready design"],
+      },
+      {
+        title: "Web Design",
+        slug: "web-design",
+        description: "As a trusted UX UI web design agency, we build responsive, fast-loading websites that look great on every screen and guide visitors toward taking action.",
+        icon: "Monitor",
+        heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "UX UI Web Design Agency | Clickmasters",
+        metaDescription: "Responsive, fast-loading web design that looks great on every screen and drives visitor action.",
+        lead: "Websites that look great on every screen.",
+        highlights: ["Responsive layouts", "Fast-loading pages", "Cross-screen consistency", "Action-oriented design"],
+      },
+      {
+        title: "Mobile App Design",
+        slug: "mobile-app-design",
+        description: "We design iOS and Android apps with clean layouts, smooth navigation, and interfaces users genuinely enjoy using.",
+        icon: "Smartphone",
+        heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Mobile UI/UX Design Services | Clickmasters",
+        metaDescription: "iOS and Android app design with clean layouts, smooth navigation, and engaging interfaces.",
+        lead: "Mobile apps users genuinely enjoy using.",
+        highlights: ["iOS & Android", "Clean layouts", "Smooth navigation", "Engaging interfaces"],
+      },
+      {
+        title: "UX Research",
+        slug: "ux-research",
+        description: "Good design starts with understanding your users. Our UX research includes user interviews, surveys, and competitor analysis to guide every design decision we make.",
+        icon: "Search",
+        heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "UX Research Services | Clickmasters",
+        metaDescription: "User interviews, surveys, and competitor analysis that guide every design decision with real data.",
+        lead: "Design decisions backed by real user understanding.",
+        highlights: ["User interviews", "Surveys", "Competitor analysis", "Research-driven decisions"],
+      },
+      {
+        title: "Wireframing & Prototyping",
+        slug: "wireframing-prototyping",
+        description: "Before we design a single screen, we map out wireframes and interactive prototypes. This lets you test ideas and gather feedback early, avoiding costly changes later in development.",
+        icon: "PenTool",
+        heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Wireframing & Prototyping Services | Clickmasters",
+        metaDescription: "Wireframes and interactive prototypes that let you test ideas early and avoid costly changes later.",
+        lead: "Test ideas before a single screen is designed.",
+        highlights: ["Wireframe mapping", "Interactive prototypes", "Early idea testing", "Early feedback"],
+      },
+      {
+        title: "Design Systems",
+        slug: "design-systems",
+        description: "We build reusable design systems that keep your brand consistent across every page, screen, and future update — saving your team time and budget down the road.",
+        icon: "Component",
+        heroImage: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Design System Development | Clickmasters",
+        metaDescription: "Reusable design systems that keep your brand consistent across every page, screen, and update.",
+        lead: "Brand consistency across every page and screen.",
+        highlights: ["Reusable components", "Brand consistency", "Future-proof updates", "Time & budget savings"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Technology & Tools We Use",
+      description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products. On the development side, our team works with modern frameworks, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
+      aiModelsFrameworks: ["Figma", "Adobe XD", "Sketch"],
+      mlData: ["InVision", "Maze", "Hotjar"],
+      infrastructure: ["React", "Flutter"],
+      applicationLayer: ["Swift", "Kotlin"],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters made the entire UI/UX design process straightforward. They understood our goals, improved the user experience, and delivered a design our customers responded well to.",
+        author: "Michael Carter",
+        title: "Product Manager",
+        company: "Northstar Digital Solutions",
+        location: "",
+      },
+      {
+        quote: "What stood out was how much attention Clickmasters gave to our users before starting the actual design. The final interface feels intuitive, polished, and much more aligned with what our customers need.",
+        author: "Sarah Mitchell",
+        title: "Marketing Director",
+        company: "BrightPath Solutions",
+        location: "",
+      },
+      {
+        quote: "Our previous website was outdated and difficult to navigate. Clickmasters gave it a cleaner, more modern experience that made it much easier for visitors to find what they needed.",
+        author: "Daniel Brooks",
+        title: "Founder",
+        company: "Summit Ridge Technologies",
+        location: "",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Discover & Research",
+        description: "We learn about your business, your users, and your competitors so every design decision has a clear reason behind it.",
+      },
+      {
+        title: "Design & Prototype",
+        description: "We create wireframes and interactive prototypes so you can see and test ideas before any code is written.",
+      },
+      {
+        title: "Test & Refine",
+        description: "We gather feedback from real users and refine the design until navigation feels natural and effortless.",
+      },
+      {
+        title: "Launch & Support",
+        description: "We hand off polished, developer-ready designs and stay available to support your team through launch and beyond.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "SaaS & Technology", description: "dashboards, onboarding flows, and product interfaces" },
+      { name: "Healthcare", description: "patient portals and clinical tools with clear, accessible design" },
+      { name: "E-commerce & Retail", description: "product pages, checkout flows, and shopping apps" },
+      { name: "Fintech & Banking", description: "secure onboarding, dashboards, and transaction flows" },
+      { name: "Logistics & Transportation", description: "tracking interfaces and operations dashboards" },
+      { name: "Education", description: "learning platforms and student-friendly interfaces" },
+      { name: "Real Estate", description: "property search experiences and agent tools" },
+      { name: "Startups & SaaS Founders", description: "MVP design and pitch-ready prototypes" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "Landing Page Design",
+        investment: "Custom quote",
+        timeline: "1-2 weeks",
+        bestFor: "Single pages and quick redesigns",
+        features: [
+          "Wireframe & visual design",
+          "One revision round",
+          "Developer-ready handoff",
+          "Basic usability check",
+        ],
+      },
+      {
+        type: "Website or App UI/UX Design",
+        investment: "Custom quote",
+        timeline: "4-6 weeks",
+        bestFor: "Full websites and mobile apps",
+        features: [
+          "UX research",
+          "Wireframes & interactive prototype",
+          "Full UI design",
+          "Usability testing",
+          "Developer handoff",
+        ],
+      },
+      {
+        type: "Full Product Design",
+        investment: "Custom quote",
+        timeline: "8-12 weeks",
+        bestFor: "New products designed from scratch",
+        features: [
+          "User interviews & competitor analysis",
+          "Complete design system",
+          "Prototyping & user testing",
+          "Front-end development support",
+          "Ongoing launch support",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What are UI/UX design services?",
+        answer: "UI/UX design services cover the research, planning, and design work needed to make a website or app easy and enjoyable to use. UI (user interface) is how a product looks, while UX (user experience) is how it works and feels. Together, they shape the entire user journey.",
+      },
+      {
+        question: "What is the difference between UI and UX design?",
+        answer: "UI design focuses on the visual side of a product — colors, buttons, typography, and layout. UX design focuses on how the product works, including navigation, flow, and overall usability. A good UI/UX design agency handles both together, since they work best as a team.",
+      },
+      {
+        question: "How much do UI/UX design services cost?",
+        answer: "Cost depends on the size and complexity of your project. A simple landing page redesign costs far less than a full mobile app design that includes research, prototyping, and testing. Contact us for a free, no-obligation quote based on your specific needs.",
+      },
+      {
+        question: "How long does a UI/UX design project take?",
+        answer: "Most projects take between 4–12 weeks, depending on scope. Smaller projects like a single landing page move faster, while full app designs with research and usability testing take longer.",
+      },
+      {
+        question: "Do you offer UI/UX design and development services together?",
+        answer: "Yes. As a full-service UI/UX design and development company, we handle everything from research and design to front-end development, so your product moves smoothly from idea to launch without switching vendors.",
+      },
+      {
+        question: "Do you offer mobile UI/UX design services?",
+        answer: "Yes. We design UI/UX for both iOS and Android apps, focusing on smooth navigation, clean layouts, and interfaces that keep users engaged and coming back.",
+      },
+      {
+        question: "Which industries do you provide UI/UX design services for?",
+        answer: "We provide UI/UX design services for SaaS, healthcare, fintech, e-commerce, logistics, education, real estate, and startups, adapting our approach to each industry's users and goals.",
+      },
+      {
+        question: "How do I choose the best UI/UX design agency?",
+        answer: "Look for an agency with a proven portfolio, a clear step-by-step process, honest client reviews, and experience in your industry. Ask to see real case studies and how they measure design success against business goals.",
+      },
+      {
+        question: "What tools do you use for UI/UX design?",
+        answer: "We use industry-standard tools such as Figma, Adobe XD, and Sketch for design work, along with Maze and Hotjar for user testing and research.",
+      },
+      {
+        question: "Can you redesign my existing website or app?",
+        answer: "Yes. We offer UI/UX redesign services to improve usability, modernize the look and feel, and boost conversions on a website or app you already have.",
+      },
+    ],
+  },
+    // ============================================
+  // DATA SERVICES - NEW
+  // ============================================
+  dataServices: {
+    // Meta data
+    metaTitle: "Data Services Company in USA | Analytics & Engineering",
+    metaDescription: "ClickMasters is a top data services company in the USA. We offer data analytics, engineering, and big data solutions. Get a free quote today!",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/data-services",
+    slug: "data-services",
+
+    // Hero Section
+    title: "Data Services Company USA — Smarter Data. Faster Growth.",
+    icon: "Database",
+    tagline: "Data Services",
+    description: "ClickMasters is a trusted data services company that helps U.S. businesses collect, clean, and use their data the right way. As your dedicated data services provider, we turn messy spreadsheets and scattered systems into clear answers you can act on. From small startups to large enterprises, our custom data solutions help you save time, cut costs, and make better decisions every single day.",
+    heroBadge: "200+ data projects delivered",
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "200+", label: "Data Projects Delivered" },
+      { value: "3", label: "Cloud Certifications (AWS, Azure, GCP)" },
+      { value: "SOC 2", label: "Aligned & HIPAA-Ready Practices" },
+      { value: "2-3 wks", label: "Typical First Dashboard Turnaround" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Trusted Data Solutions Company in the USA",
+      description: "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.",
+      points: [
+        "Engineers certified by AWS, Microsoft Azure, and Google Cloud",
+        "200+ data projects delivered across the United States",
+        "SOC 2-aligned and HIPAA-ready security practices from day one",
+        "One team for strategy, building, and ongoing support",
+        "Scales from a five-person team to Fortune 500 enterprise data services",
+      ],
+      closingText: "Whether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "BarChart3",
+        title: "Data Science & Analytics",
+        description: "Our data analytics services turn your numbers into a clear story. We use statistics, machine learning, and clean data models to answer real business questions — like which customers may leave, or which product will sell best next quarter. As a trusted data analytics company, we help you move from guessing to knowing.",
+      },
+      {
+        icon: "LayoutDashboard",
+        title: "Business Intelligence (BI)",
+        description: "Good decisions need good dashboards. Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time — no more waiting on manual spreadsheets.",
+      },
+      {
+        icon: "Database",
+        title: "Data Engineering",
+        description: "Behind every good report is a strong data pipeline. Our data engineering services build the pipes that move your data safely from one system to another. As a full-service data engineering company, we design pipelines that scale — the same quality of work a data engineering company USA enterprises already trust would expect.",
+      },
+      {
+        icon: "HardDrive",
+        title: "Data Warehousing",
+        description: "We build cloud data warehouses that store all your business data in one safe, organized place. This means your sales, finance, and marketing teams all work from the same numbers, not five different versions of the truth.",
+      },
+      {
+        icon: "Box",
+        title: "Big Data Solutions",
+        description: "When your data grows into millions of rows from many sources, spreadsheets stop working. As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
+      },
+      {
+        icon: "Plug",
+        title: "Data Integration Services",
+        description: "Your business runs on many tools — CRM, accounting, marketing, support. Our data integration services connect them all, so information flows automatically instead of being copied by hand into spreadsheets.",
+      },
+      {
+        icon: "Repeat",
+        title: "Data Migration Services",
+        description: "Moving to a new system can be risky if data gets lost or messy along the way. Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
+      },
+      {
+        icon: "ShieldCheck",
+        title: "Data Management & Governance",
+        description: "Clean, safe, organized data does not happen by accident. Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Data Visualization Services",
+        description: "Numbers are hard to read in tables. Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "Meridian Retail Group", industry: "Retail", icon: "ShoppingBag" },
+      { name: "Lakeshore Health Partners", industry: "Healthcare", icon: "Heart" },
+      { name: "Northbridge SaaS Solutions", industry: "SaaS", icon: "Cloud" },
+      { name: "Regional Bank", industry: "Finance", icon: "Coins" },
+      { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Faster decisions: Get clear answers in hours, not weeks, with fast data processing services",
+      "Lower costs: Find and cut wasted spending across your business",
+      "Better customer experience: Know what your customers want before they ask",
+      "Safer data: Keep your business data services protected and compliant",
+      "Room to grow: Our cloud data services scale up as your business gets bigger",
+      "One trusted partner: Get data consulting services, building, and support from a single team",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose ClickMasters as Your Data Services Company",
+      description: "Many companies call themselves a data services provider. Here is what actually makes ClickMasters different:",
+      reasons: [
+        {
+          title: "U.S.-based team",
+          description: "we are a data services company USA businesses can call, meet, and trust — not an outsourced call center",
+        },
+        {
+          title: "Full-service model",
+          description: "need a data solutions agency, a data analytics agency, a data engineering agency, or a data consulting agency? You get all four under one contract",
+        },
+        {
+          title: "Proven track record",
+          description: "200+ projects delivered as a leading data solutions provider across finance, healthcare, and retail",
+        },
+        {
+          title: "Fair, clear pricing",
+          description: "no hidden fees, whether you need a data analytics company for one report or a data engineering company for a full platform",
+        },
+        {
+          title: "Security first",
+          description: "SOC 2-aligned, HIPAA-ready standards followed by our data management company on every project",
+        },
+        {
+          title: "Fast, human support",
+          description: "real people answer your questions — not a ticket stuck in a queue",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "Data Science & Analytics",
+        slug: "data-science-analytics",
+        description: "Our data analytics services turn your numbers into a clear story, using statistics, machine learning, and clean data models to answer real business questions.",
+        icon: "BarChart3",
+        heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Analytics Services Company | ClickMasters",
+        metaDescription: "Data analytics services that turn your numbers into a clear story — move from guessing to knowing with ClickMasters.",
+        lead: "From guessing to knowing.",
+        highlights: ["Customer churn prediction", "Product forecasting", "Machine learning models", "Clean data models"],
+      },
+      {
+        title: "Business Intelligence (BI)",
+        slug: "business-intelligence",
+        description: "Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time.",
+        icon: "LayoutDashboard",
+        heroImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Business Intelligence Services | ClickMasters",
+        metaDescription: "Live BI dashboards and reports so your team sees sales, costs, and performance in one place, in real time.",
+        lead: "One place for all your numbers, in real time.",
+        highlights: ["Live dashboards", "Real-time reporting", "Sales & cost visibility", "No manual spreadsheets"],
+      },
+      {
+        title: "Data Engineering",
+        slug: "data-engineering",
+        description: "Our data engineering services build the pipes that move your data safely from one system to another, with pipelines designed to scale.",
+        icon: "Database",
+        heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Engineering Services Company | ClickMasters",
+        metaDescription: "Data engineering services that build safe, scalable pipelines moving your data from system to system.",
+        lead: "Strong pipelines behind every good report.",
+        highlights: ["Data pipelines", "Scalable architecture", "Safe data movement", "Enterprise-grade quality"],
+      },
+      {
+        title: "Data Warehousing",
+        slug: "data-warehousing",
+        description: "We build cloud data warehouses that store all your business data in one safe, organized place, so every team works from the same numbers.",
+        icon: "Warehouse",
+        heroImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Data Warehousing Services | ClickMasters",
+        metaDescription: "Cloud data warehouses that store all your business data in one safe, organized place — one version of the truth.",
+        lead: "One safe place for all your business data.",
+        highlights: ["Cloud warehouses", "Single source of truth", "Organized storage", "Cross-team alignment"],
+      },
+      {
+        title: "Big Data Solutions",
+        slug: "big-data-solutions",
+        description: "As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
+        icon: "Boxes",
+        heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Big Data Solutions Company | ClickMasters",
+        metaDescription: "Big data services using Apache Spark, Hadoop, and Kafka to process huge data volumes fast and spot trends first.",
+        lead: "Millions of rows, processed fast.",
+        highlights: ["Apache Spark", "Hadoop", "Kafka streaming", "Trend detection"],
+      },
+      {
+        title: "Data Integration Services",
+        slug: "data-integration",
+        description: "Our data integration services connect all your tools — CRM, accounting, marketing, support — so information flows automatically instead of being copied by hand.",
+        icon: "Plug",
+        heroImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Integration Services | ClickMasters",
+        metaDescription: "Connect your CRM, accounting, marketing, and support tools so information flows automatically across your business.",
+        lead: "All your tools, talking to each other.",
+        highlights: ["CRM integration", "Accounting integration", "Marketing & support tools", "Automatic data flow"],
+      },
+      {
+        title: "Data Migration Services",
+        slug: "data-migration",
+        description: "Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
+        icon: "ArrowRightLeft",
+        heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Migration Services | ClickMasters",
+        metaDescription: "Safe data migration from old systems to new — zero data loss, almost no downtime.",
+        lead: "Move systems without losing data.",
+        highlights: ["Zero data loss", "Minimal downtime", "Old-to-new system moves", "Safe handling"],
+      },
+      {
+        title: "Data Management & Governance",
+        slug: "data-management-governance",
+        description: "Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
+        icon: "ShieldCheck",
+        heroImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Management & Governance Services | ClickMasters",
+        metaDescription: "Data management services with clear access rules, keeping your data accurate and compliant with U.S. privacy laws.",
+        lead: "Clean, safe, organized data — by design.",
+        highlights: ["Access rules", "Data accuracy", "U.S. privacy compliance", "Organized governance"],
+      },
+      {
+        title: "Data Visualization Services",
+        slug: "data-visualization",
+        description: "Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
+        icon: "PieChart",
+        heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Visualization Services | ClickMasters",
+        metaDescription: "Turn raw numbers into simple charts, maps, and graphs anyone on your team can understand in seconds.",
+        lead: "Numbers anyone can read in seconds.",
+        highlights: ["Charts & graphs", "Maps", "Simple reporting", "Team-friendly visuals"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Technology We Use",
+      description: "We stay hands-on with the tools that power modern cloud data services and data technology services, so you're never locked into outdated systems.",
+      aiModelsFrameworks: ["Apache Spark", "Hadoop", "Kafka"],
+      mlData: ["Python", "SQL", "R"],
+      infrastructure: ["AWS", "Microsoft Azure", "Google Cloud"],
+      applicationLayer: ["Snowflake", "Google BigQuery", "Amazon Redshift", "Power BI", "Tableau", "Looker"],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "ClickMasters cleaned up three years of messy spreadsheets and gave us one dashboard we actually use every morning. We were searching for data services near me, and they made the whole process simple. Our reporting time dropped from two days to twenty minutes.",
+        author: "Sarah Mitchell",
+        title: "Operations Director",
+        company: "Meridian Retail Group",
+        location: "",
+      },
+      {
+        quote: "We needed a data engineering company near me that could move fast without breaking anything. ClickMasters understood our requirements, handled the migration smoothly, and we had zero downtime.",
+        author: "David Park",
+        title: "IT Manager",
+        company: "Lakeshore Health Partners",
+        location: "",
+      },
+      {
+        quote: "As a growing company, we didn't have an in-house data team. We were looking for data consulting services near me, and ClickMasters became the partner we needed. They helped us make sense of our numbers for the first time.",
+        author: "Amanda Reyes",
+        title: "Founder",
+        company: "Northbridge SaaS Solutions",
+        location: "",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Discovery Call",
+        description: "We learn about your business, your current data, and your goals — no jargon, just questions that matter.",
+      },
+      {
+        title: "Data Strategy",
+        description: "We map out the right mix of services, from data engineering to data analytics, matched to your budget and timeline.",
+      },
+      {
+        title: "Build & Implement",
+        description: "Our team builds your pipelines, dashboards, and systems, testing every step along the way.",
+      },
+      {
+        title: "Support & Scale",
+        description: "We monitor performance, fix issues fast, and scale your data services as your business grows.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "Healthcare", description: "secure patient data, reporting, and analytics" },
+      { name: "Finance & Banking", description: "risk analysis, fraud detection, compliance reporting" },
+      { name: "Retail & E-commerce", description: "customer insights, inventory, and sales forecasting" },
+      { name: "Manufacturing", description: "production data, predictive maintenance, supply data" },
+      { name: "Logistics & Supply Chain", description: "route data, tracking, demand planning" },
+      { name: "SaaS & Technology", description: "product analytics and usage data" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "Dashboard & Analytics",
+        investment: "Custom quote",
+        timeline: "2-3 weeks",
+        bestFor: "First dashboards and reporting",
+        features: [
+          "Live dashboard build",
+          "Data connection & cleanup",
+          "Visualization setup",
+          "Free clear quote before work begins",
+        ],
+      },
+      {
+        type: "Pipelines & Migration",
+        investment: "Custom quote",
+        timeline: "4-12 weeks",
+        bestFor: "Data engineering and system moves",
+        features: [
+          "Data pipeline design",
+          "Zero-loss migration",
+          "Integration with existing tools",
+          "Testing at every step",
+        ],
+      },
+      {
+        type: "Enterprise Data Platform",
+        investment: "Custom quote",
+        timeline: "Custom",
+        bestFor: "Fortune 500-scale data programs",
+        features: [
+          "Cloud data warehouse",
+          "Big data processing",
+          "Governance & compliance",
+          "Ongoing support & scaling",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What is a data services company?",
+        answer: "A data services company helps businesses collect, clean, store, and use their data. This can include data analytics, data engineering, data management, and more, all handled by one team.",
+      },
+      {
+        question: "What do data services include?",
+        answer: "Data services usually include data analytics services, data engineering services, data integration services, data migration services, data visualization services, and data management services.",
+      },
+      {
+        question: "How much do data services cost in the USA?",
+        answer: "Cost depends on the size of your project. Small dashboards can start in the low thousands, while full data engineering company USA projects cost more. ClickMasters provides a free, clear quote before any work begins.",
+      },
+      {
+        question: "Why choose ClickMasters as a data services provider?",
+        answer: "ClickMasters is a data services company USA businesses trust for fast delivery, fair pricing, and secure, compliant data management services USA companies rely on every day.",
+      },
+      {
+        question: "Is my data safe with a data services agency?",
+        answer: "Yes. ClickMasters follows SOC 2-aligned and HIPAA-ready practices, so your data stays private and protected at every step of the process.",
+      },
+      {
+        question: "How long does a data migration or data engineering project take?",
+        answer: "Most data migration service projects take 4 to 12 weeks, depending on how much data you have and how many systems are involved. A data analytics company USA-wide can usually turn around a first dashboard in 2 to 3 weeks.",
+      },
+    ],
+  },
+    // ============================================
+  // CLOUD DEVOPS SERVICE - NEW
+  // ============================================
+  cloudDevOpsServices: {
+    // Meta data
+    metaTitle: "Cloud DevOps Services & Consulting Company | Clickmasters",
+    metaDescription: "Looking for a reliable cloud DevOps consulting company? Get CI/CD, cloud migration, automation & managed DevOps services. Request a free quote today.",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/cloud-and-devops",
+    slug: "cloud-and-devops",
+
+    // Hero Section
+    title: "Cloud DevOps Services That Help Your Business Grow Faster",
+    icon: "CloudCog",
+    tagline: "Cloud DevOps Services",
+    description: "Our Cloud DevOps Services help you build, automate, and manage your cloud systems, so your team can ship software faster, with fewer errors and lower costs. Clickmasters is a trusted cloud DevOps agency, and every cloud DevOps service we deliver is backed by a real cloud DevOps engineer, not just a sales team. Talk to us today and see how we can help.",
+    heroBadge: "Serving teams across the USA, UK, and UAE",
+    heroImage: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "3", label: "Major Cloud Platforms (AWS, Azure, GCP)" },
+      { value: "24/7", label: "Monitoring & Issue Response" },
+      { value: "1-2 wks", label: "Typical CI/CD Pipeline Setup" },
+      { value: "3+", label: "Regions Served (USA, UK, UAE)" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Cloud DevOps Company You Can Trust",
+      description: "Clickmasters is a cloud DevOps company that works with businesses across the USA, UK, and UAE. We help teams move to the cloud, automate their daily work, and keep their systems running smoothly at all times. As a full-service DevOps services company, we bring together skilled cloud engineers, automation experts, and support staff under one roof.",
+      points: [
+        "Hands-on experience with AWS, Azure, and Google Cloud",
+        "Proven DevOps consulting methods used by top enterprises worldwide",
+        "One roof for cloud engineers, automation experts, and support staff",
+        "Plans that fit startups setting up their first server and enterprises needing enterprise DevOps services",
+        "Real results, not empty promises — DevOps consulting services USA businesses turn to",
+      ],
+      closingText: "Whether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "Cloud",
+        title: "Cloud Solutions",
+        description: "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
+      },
+      {
+        icon: "GitBranch",
+        title: "DevOps Services",
+        description: "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
+      },
+      {
+        icon: "Compass",
+        title: "DevOps Consulting",
+        description: "Not sure where to start? Our DevOps consulting services review your current setup and give you a clear roadmap. As a trusted DevOps consulting company, we guide you through every step, from planning to full rollout.",
+      },
+      {
+        icon: "GitPullRequest",
+        title: "CI/CD Pipeline Setup",
+        description: "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
+      },
+      {
+        icon: "Container",
+        title: "Containerization (Docker & Kubernetes)",
+        description: "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
+      },
+      {
+        icon: "FileCode",
+        title: "Infrastructure as Code (IaC)",
+        description: "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
+      },
+      {
+        icon: "ArrowRightLeft",
+        title: "Cloud Migration & Modernization",
+        description: "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
+      },
+      {
+        icon: "Activity",
+        title: "Cloud Monitoring & Observability",
+        description: "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
+      },
+      {
+        icon: "Settings",
+        title: "Managed DevOps Services",
+        description: "Don't want to hire a full in-house team? Our managed DevOps services give you a full team of experts on demand. Think of it as DevOps as a service — we handle the daily work while you focus on your product, backed by full cloud DevOps management services for your entire infrastructure.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
+      { name: "E-commerce Business", industry: "Retail", icon: "ShoppingBag" },
+      { name: "FinTech Startup", industry: "Finance", icon: "Coins" },
+      { name: "Healthcare Company", industry: "Healthcare", icon: "Heart" },
+      { name: "Manufacturing Firm", industry: "Manufacturing", icon: "Factory" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Faster software releases with fewer bugs",
+      "Lower cloud hosting and infrastructure costs",
+      "Stronger security and fewer outages",
+      "24/7 monitoring and quick issue response",
+      "Systems that scale as your business grows",
+      "Clear reporting so you always know what is happening",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters as Your DevOps Agency",
+      description: "There are many companies that call themselves a DevOps agency, but not all of them deliver real results. Here is what sets our cloud DevOps consulting services apart:",
+      reasons: [
+        {
+          title: "Certified engineers",
+          description: "real experience on AWS, Azure, and Google Cloud",
+        },
+        {
+          title: "Clear, step-by-step process",
+          description: "no hidden surprises",
+        },
+        {
+          title: "Honest, upfront pricing",
+          description: "no long-term lock-in",
+        },
+        {
+          title: "Global experience",
+          description: "serving clients across the USA, UK, and UAE",
+        },
+        {
+          title: "Fast response times",
+          description: "and a dedicated support team",
+        },
+        {
+          title: "Top cloud DevOps services track record",
+          description: "built on long-term client relationships and results our clients rank among the best cloud DevOps services they have used",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "Cloud Solutions",
+        slug: "cloud-solutions",
+        description: "We help you choose the right cloud setup for your business — AWS, Azure, or Google Cloud — and deliver complete DevOps solutions alongside your cloud build.",
+        icon: "Cloud",
+        heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Solutions for Your Business | Clickmasters",
+        metaDescription: "Choose the right cloud setup on AWS, Azure, or Google Cloud with infrastructure and workflows working together from day one.",
+        lead: "The right cloud setup, from day one.",
+        highlights: ["AWS, Azure & GCP", "Cloud architecture", "DevOps-aligned builds", "Day-one readiness"],
+      },
+      {
+        title: "DevOps Services",
+        slug: "devops-services",
+        description: "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays.",
+        icon: "GitBranch",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "DevOps Development Services | Clickmasters",
+        metaDescription: "Connect development and operations so code moves from idea to production without delays — tools and workflows included.",
+        lead: "From idea to production, without delays.",
+        highlights: ["Dev & ops alignment", "Tool setup", "Workflow design", "Fewer mistakes"],
+      },
+      {
+        title: "DevOps Consulting",
+        slug: "devops-consulting",
+        description: "Our DevOps consulting services review your current setup and give you a clear roadmap, guiding you through every step from planning to full rollout.",
+        icon: "Compass",
+        heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "DevOps Consulting Services | Clickmasters",
+        metaDescription: "Expert DevOps consulting that reviews your setup and delivers a clear roadmap from planning to full rollout.",
+        lead: "A clear roadmap for where to start.",
+        highlights: ["Setup review", "Clear roadmap", "Planning to rollout", "Expert guidance"],
+      },
+      {
+        title: "CI/CD Pipeline Setup",
+        slug: "ci-cd-pipeline-setup",
+        description: "We build CI/CD pipelines that test and release your code automatically — fewer manual steps, faster releases, and fewer bugs reaching your customers.",
+        icon: "GitPullRequest",
+        heroImage: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "CI/CD Pipeline Setup Services | Clickmasters",
+        metaDescription: "Automated CI/CD pipelines that test and release code automatically — faster releases, fewer bugs.",
+        lead: "Releases that test and ship themselves.",
+        highlights: ["Automated testing", "Automated releases", "Fewer manual steps", "Fewer customer-facing bugs"],
+      },
+      {
+        title: "Containerization (Docker & Kubernetes)",
+        slug: "containerization-docker-kubernetes",
+        description: "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales with traffic.",
+        icon: "Container",
+        heroImage: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Docker & Kubernetes Containerization | Clickmasters",
+        metaDescription: "Package applications with Docker and manage them with Kubernetes — consistent runs and traffic-based scaling.",
+        lead: "Runs the same everywhere, scales on demand.",
+        highlights: ["Docker packaging", "Kubernetes management", "Environment consistency", "Auto-scaling"],
+      },
+      {
+        title: "Infrastructure as Code (IaC)",
+        slug: "infrastructure-as-code",
+        description: "Using tools like Terraform, we turn your cloud setup into code — repeatable, easy to track, and simple to roll back if something goes wrong.",
+        icon: "FileCode",
+        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Infrastructure as Code (Terraform) Services | Clickmasters",
+        metaDescription: "Turn your cloud setup into code with Terraform — repeatable, trackable, and easy to roll back.",
+        lead: "Your cloud setup, as code.",
+        highlights: ["Terraform", "Repeatable setups", "Version tracking", "Simple rollbacks"],
+      },
+      {
+        title: "Cloud Migration & Modernization",
+        slug: "cloud-migration-modernization",
+        description: "Our team plans and runs your cloud migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
+        icon: "ArrowRightLeft",
+        heroImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Migration & Modernization Services | Clickmasters",
+        metaDescription: "Careful, planned cloud migration with little to no downtime — modernize systems while your business keeps running.",
+        lead: "Move to the cloud without stopping your business.",
+        highlights: ["Careful planning", "Little to no downtime", "System modernization", "Business continuity"],
+      },
+      {
+        title: "Cloud Monitoring & Observability",
+        slug: "cloud-monitoring-observability",
+        description: "We set up dashboards and alerts that watch your systems around the clock — your team knows about problems before your customers do.",
+        icon: "Activity",
+        heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Monitoring & Observability Services | Clickmasters",
+        metaDescription: "24/7 dashboards and alerts that watch your systems — know about problems before your customers do.",
+        lead: "Know before your customers do.",
+        highlights: ["Live dashboards", "Smart alerts", "24/7 watching", "Early problem detection"],
+      },
+      {
+        title: "Managed DevOps Services",
+        slug: "managed-devops-services",
+        description: "Our managed DevOps services give you a full team of experts on demand — DevOps as a service — handling the daily work while you focus on your product.",
+        icon: "Settings",
+        heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Managed DevOps Services (DevOps as a Service) | Clickmasters",
+        metaDescription: "A full DevOps team on demand — we handle daily operations and infrastructure management while you focus on your product.",
+        lead: "A full DevOps team, on demand.",
+        highlights: ["DevOps as a service", "Daily operations handled", "Full infrastructure management", "No in-house hire needed"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Technology We Work With",
+      description: "Our cloud DevOps engineering services and DevOps engineering services are built on tools that are trusted by companies around the world.",
+      aiModelsFrameworks: ["Terraform", "Jenkins", "GitHub Actions", "Ansible"],
+      mlData: ["Docker", "Kubernetes", "Prometheus & Grafana"],
+      infrastructure: ["AWS", "Microsoft Azure", "Google Cloud Platform (GCP)"],
+      applicationLayer: ["CI/CD pipelines", "Monitoring & alerting", "Cloud-native tooling"],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "The team acted as a true extension of ours. Once our CI/CD pipeline was in place, our releases became faster and far more reliable.",
+        author: "James R.",
+        title: "Founder",
+        company: "SaaS Company",
+        location: "USA",
+      },
+      {
+        quote: "We were spending too much on cloud hosting before working with Clickmasters. Their cloud team cleaned up our setup and cut our monthly costs noticeably.",
+        author: "Sarah M.",
+        title: "Operations Manager",
+        company: "E-commerce Business",
+        location: "UK",
+      },
+      {
+        quote: "Their managed DevOps team keeps our systems running around the clock. We finally sleep well knowing someone is watching our infrastructure.",
+        author: "Ahmed K.",
+        title: "CTO",
+        company: "FinTech Startup",
+        location: "UAE",
+      },
+      {
+        quote: "I searched for a cloud DevOps company near me and almost went with a local freelancer, but Clickmasters' remote team turned out to be faster and far more reliable.",
+        author: "Daniel P.",
+        title: "IT Director",
+        company: "Healthcare Company",
+        location: "USA",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Discovery & Assessment",
+        description: "We start by learning about your business, your current systems, and your goals. This helps us understand exactly what your cloud DevOps services plan needs to include.",
+      },
+      {
+        title: "Strategy & Planning",
+        description: "Our DevOps consultants build a clear roadmap with timelines, tools, and milestones, so you know exactly what to expect before any work begins.",
+      },
+      {
+        title: "Implementation & Automation",
+        description: "Our engineers set up your cloud infrastructure, build your CI/CD pipelines, and automate the repetitive tasks that used to slow your team down.",
+      },
+      {
+        title: "Monitoring & Continuous Support",
+        description: "Once your systems are live, our team keeps watching, fixing, and improving them, so your business keeps running smoothly long after launch.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "E-commerce & Retail", description: "reliable storefronts that survive traffic spikes" },
+      { name: "Healthcare", description: "secure, always-on systems for patient-facing platforms" },
+      { name: "FinTech & Banking", description: "high-availability infrastructure with strong security" },
+      { name: "SaaS & Software", description: "fast release cycles and scalable cloud environments" },
+      { name: "Manufacturing", description: "dependable systems for production and operations tooling" },
+      { name: "Logistics & Supply Chain", description: "tracking and operations platforms that run around the clock" },
+      { name: "Education Technology", description: "stable platforms that scale with enrollment" },
+      { name: "Real Estate", description: "always-available platforms for listings and client tools" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "DevOps Project",
+        investment: "Custom quote",
+        timeline: "1-2 weeks (basic CI/CD) onward",
+        bestFor: "One-time setups like pipelines, migration, or IaC",
+        features: [
+          "CI/CD pipeline setup",
+          "Containerization & IaC",
+          "Cloud migration",
+          "Documentation & handoff",
+        ],
+      },
+      {
+        type: "Managed DevOps",
+        investment: "Custom quote",
+        timeline: "Ongoing",
+        bestFor: "Teams without an in-house DevOps function",
+        features: [
+          "Full DevOps team on demand",
+          "24/7 monitoring & response",
+          "Continuous optimization",
+          "Clear reporting",
+        ],
+      },
+      {
+        type: "Enterprise DevOps",
+        investment: "Custom quote",
+        timeline: "Custom",
+        bestFor: "Large-scale and multi-region infrastructure",
+        features: [
+          "Enterprise DevOps services",
+          "Multi-cloud architecture",
+          "Security & compliance focus",
+          "Dedicated support team",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What is cloud DevOps?",
+        answer: "Cloud DevOps is the practice of combining cloud computing with DevOps methods so teams can build, test, and release software faster on platforms like AWS, Azure, or Google Cloud, while keeping systems stable and secure.",
+      },
+      {
+        question: "What does a DevOps consulting company do?",
+        answer: "A DevOps consulting company reviews your current development and cloud setup, then designs and helps you put in place tools, workflows, and automation that speed up software delivery and reduce errors.",
+      },
+      {
+        question: "How much do DevOps services cost?",
+        answer: "The cost of DevOps services depends on the size of your infrastructure, the tools you need, and whether you want a one-time project or ongoing managed support. Contact us for a free quote based on your exact needs.",
+      },
+      {
+        question: "Do you offer managed DevOps services for small businesses?",
+        answer: "Yes. Our managed DevOps services are built to fit businesses of every size, from small startups that need occasional support to enterprises that need a full-time DevOps team.",
+      },
+      {
+        question: "Which cloud platforms do you support?",
+        answer: "We work with all major cloud platforms, including AWS, Microsoft Azure, and Google Cloud Platform, and we can help you choose the best fit for your business.",
+      },
+      {
+        question: "How long does it take to set up a CI/CD pipeline?",
+        answer: "A basic CI/CD pipeline can often be set up within one to two weeks, while larger, more complex projects may take a few weeks longer depending on your existing systems.",
+      },
+      {
+        question: "Is there a cloud DevOps company near me?",
+        answer: "Clickmasters works remotely with clients across every US state, the UK, and the UAE, so you get the same fast response and hands-on support as a local team without being limited to a cloud DevOps company near me search.",
+      },
+    ],
+  },
+
+  // ============================================
+  // CYBERSECURITY SERVICES - NEW
+  // ============================================
+  cybersecurityServices: {
+    // Meta data
+    metaTitle: "Cybersecurity Services Company in USA | Clickmasters",
+    metaDescription: "Leading cybersecurity services company in the USA offering managed security, penetration testing & compliance solutions. Get a free security audit today!",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/cybersecurity-services",
+    slug: "cybersecurity-services",
+
+    // Hero Section
+    title: "Cybersecurity Services That Keep Your Business Safe",
+    icon: "Shield",
+    tagline: "Cybersecurity Services",
+    description: "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat. From a single security audit to full-time managed protection, our team acts as your cybersecurity agency, on call and ready.",
+    heroBadge: "24/7 threat monitoring & response",
+    heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+    
+    // Hero Stats
+    stats: [
+      { value: "24/7", label: "Threat Monitoring & Response" },
+      { value: "100+", label: "Security Audits Completed" },
+      { value: "99.9%", label: "Threat Detection Rate" },
+      { value: "<15 min", label: "Average Response Time" },
+    ],
+    
+    // Trust Section Data
+    trustSection: {
+      title: "A Cybersecurity Services Company Built on Trust and Real Protection",
+      description: "Clickmasters is a US-based cybersecurity company built for one reason: to keep businesses safe from threats that grow more advanced every year. We are not a call center reselling security software. We are a hands-on cybersecurity service provider with engineers who test, monitor, and defend your systems every day. Cyberattacks don't wait for a good time to happen. A single data breach can cost a company its customers' trust, its revenue, and in some cases, its future. That's why our cybersecurity consulting company approach starts with understanding your business first — what data you hold, what systems you run, and what a breach would actually cost you — before we recommend a single tool. We work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+      points: [
+        "Certified security engineers with real-world attack and defense experience",
+        "Clear, plain-English reporting — no confusing jargon",
+        "Support for compliance frameworks like HIPAA, SOC 2, PCI-DSS, and GDPR",
+        "Fast response times when something looks wrong",
+      ],
+      closingText: "We work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+    },
+    
+    // Features/Services List
+    features: [
+      {
+        icon: "Search",
+        title: "Cybersecurity Risk Assessment Services",
+        description: "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
+      },
+      {
+        icon: "Crosshair",
+        title: "Penetration Testing",
+        description: "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
+      },
+      {
+        icon: "ClipboardCheck",
+        title: "Security Audits & Compliance Management",
+        description: "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
+      },
+      {
+        icon: "Network",
+        title: "Network Security Services",
+        description: "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
+      },
+      {
+        icon: "Cloud",
+        title: "Cloud Security Services",
+        description: "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
+      },
+      {
+        icon: "Database",
+        title: "Data Security Services",
+        description: "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
+      },
+      {
+        icon: "Code2",
+        title: "Application Security Services",
+        description: "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
+      },
+      {
+        icon: "Laptop",
+        title: "Endpoint Security Services",
+        description: "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
+      },
+      {
+        icon: "Settings",
+        title: "Managed Cybersecurity Services & Security Operations Center (SOC)",
+        description: "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
+      },
+      {
+        icon: "Radar",
+        title: "Cyber Threat Detection & Management Services",
+        description: "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
+      },
+      {
+        icon: "Compass",
+        title: "Cybersecurity Consulting Services",
+        description: "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
+      },
+      {
+        icon: "Wrench",
+        title: "Custom Cybersecurity Software Development & Automation",
+        description: "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
+      },
+    ],
+    
+    // Trusted Clients
+    trustedClients: [
+      { name: "Financial Services Firm", industry: "Finance", icon: "Coins" },
+      { name: "Healthcare Provider", industry: "Healthcare", icon: "Heart" },
+      { name: "E-commerce Platform", industry: "Retail", icon: "ShoppingBag" },
+      { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
+      { name: "Manufacturing Company", industry: "Manufacturing", icon: "Factory" },
+    ],
+    
+    // Benefits Section Data
+    benefits: [
+      "Fewer Successful Attacks — Regular testing and monitoring stop threats before they cause damage.",
+      "Lower Financial Risk — Preventing a breach costs far less than recovering from one.",
+      "Stronger Customer Trust — Customers stay loyal to businesses that protect their data.",
+      "Easier Compliance — Stay ready for audits instead of scrambling before one.",
+      "Less Downtime — Fast threat detection means less time spent recovering systems.",
+      "Peace of Mind — A dedicated team watching your systems, so you don't have to.",
+    ],
+    
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters for Cybersecurity Services",
+      description: "Choosing the right cybersecurity services company is about more than just tools and certifications. Here's what makes Clickmasters different:",
+      reasons: [
+        {
+          title: "Real Experience, Not Just Certifications",
+          description: "Our team has hands-on experience defending real businesses from real attacks, not just classroom training. That experience is what turns a cybersecurity service provider into a true security partner.",
+        },
+        {
+          title: "Fast, Clear Communication",
+          description: "When something goes wrong, you get a phone call and a plain-English explanation — not a support ticket that sits for days.",
+        },
+        {
+          title: "Solutions That Fit Your Business Size",
+          description: "Whether you're a five-person startup or a 500-person enterprise, our cybersecurity management services scale to match your budget and risk level.",
+        },
+        {
+          title: "One Partner for Everything Security",
+          description: "From cybersecurity risk assessment services to full managed protection, you don't need five different vendors. We cover it all under one roof.",
+        },
+        {
+          title: "Ongoing Protection, Not a One-Time Fix",
+          description: "Threats change constantly. As your cybersecurity agency, we keep testing, monitoring, and updating your defenses long after the first project ends.",
+        },
+      ],
+    },
+    
+    // SubServices
+    subServices: [
+      {
+        title: "Cybersecurity Risk Assessment Services",
+        slug: "cybersecurity-risk-assessment",
+        description: "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
+        icon: "Search",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cybersecurity Risk Assessment Services | Clickmasters",
+        metaDescription: "Cybersecurity risk assessment services that find weak points before attackers do — get a clear plan to fix them.",
+        lead: "Find weak points before attackers do.",
+        highlights: ["Full IT review", "Ranked risk list", "Remediation plan", "Security baseline"],
+      },
+      {
+        title: "Penetration Testing",
+        slug: "penetration-testing",
+        description: "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
+        icon: "Crosshair",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Penetration Testing Services | Clickmasters",
+        metaDescription: "Ethical hacking and penetration testing services that show where your defenses fail — fix gaps before real breaches.",
+        lead: "Ethical hacking that finds gaps before attackers do.",
+        highlights: ["Real-world attack simulation", "Vulnerability discovery", "Remediation guidance", "Security validation"],
+      },
+      {
+        title: "Security Audits & Compliance Management",
+        slug: "security-audits-compliance",
+        description: "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
+        icon: "ClipboardCheck",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Security Audits & Compliance Management | Clickmasters",
+        metaDescription: "Security audits and compliance management for HIPAA, PCI-DSS, SOC 2, and other standards — stay audit-ready.",
+        lead: "Stay aligned with HIPAA, PCI-DSS, SOC 2, and more.",
+        highlights: ["Industry-standard audits", "Policy review", "Compliance alignment", "Audit preparation"],
+      },
+      {
+        title: "Network Security Services",
+        slug: "network-security",
+        description: "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
+        icon: "Network",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Network Security Services | Clickmasters",
+        metaDescription: "Network security services with firewalls, intrusion detection, and constant monitoring — protect your business network.",
+        lead: "Firewalls, intrusion detection, and constant monitoring.",
+        highlights: ["Firewall management", "Intrusion detection", "Traffic monitoring", "Malware protection"],
+      },
+      {
+        title: "Cloud Security Services",
+        slug: "cloud-security",
+        description: "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
+        icon: "Cloud",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Security Services | Clickmasters",
+        metaDescription: "Cloud security services for AWS, Azure, and Google Cloud — protect against misconfigurations, data leaks, and unauthorized access.",
+        lead: "Protect your AWS, Azure, or Google Cloud environment.",
+        highlights: ["Misconfiguration detection", "Data leak prevention", "Access control", "Multi-cloud support"],
+      },
+      {
+        title: "Data Security Services",
+        slug: "data-security",
+        description: "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
+        icon: "Database",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Security Services | Clickmasters",
+        metaDescription: "Data security services with encryption, access controls, and backup strategies — keep sensitive data safe.",
+        lead: "Encryption, access controls, and safe backups.",
+        highlights: ["Data encryption", "Access controls", "Backup strategies", "Theft & loss prevention"],
+      },
+      {
+        title: "Application Security Services",
+        slug: "application-security",
+        description: "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
+        icon: "Code2",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Application Security Services | Clickmasters",
+        metaDescription: "Application security services that catch coding flaws and vulnerabilities — secure web and mobile apps.",
+        lead: "Catch flaws before attackers find them.",
+        highlights: ["Code review", "Vulnerability scanning", "Secure development", "Web & mobile apps"],
+      },
+      {
+        title: "Endpoint Security Services",
+        slug: "endpoint-security",
+        description: "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
+        icon: "Laptop",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Endpoint Security Services | Clickmasters",
+        metaDescription: "Endpoint security services that protect laptops, phones, and devices — secure every entry point.",
+        lead: "Protect every device your team uses.",
+        highlights: ["Device protection", "Laptop & mobile security", "Network access control", "Threat prevention"],
+      },
+      {
+        title: "Managed Cybersecurity Services & SOC",
+        slug: "managed-cybersecurity-soc",
+        description: "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
+        icon: "Settings",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Managed Cybersecurity Services & SOC | Clickmasters",
+        metaDescription: "Managed cybersecurity services with 24/7 SOC protection — we watch your systems so you don't have to.",
+        lead: "24/7 protection through a dedicated SOC.",
+        highlights: ["24/7 monitoring", "Dedicated SOC team", "Threat response", "Ongoing management"],
+      },
+      {
+        title: "Cyber Threat Detection & Management Services",
+        slug: "cyber-threat-detection",
+        description: "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
+        icon: "Radar",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cyber Threat Detection & Management Services | Clickmasters",
+        metaDescription: "Real-time threat detection and management services — catch threats early and respond in minutes, not days.",
+        lead: "Real-time monitoring that catches threats early.",
+        highlights: ["Real-time monitoring", "Early threat detection", "Rapid response", "Threat management"],
+      },
+      {
+        title: "Cybersecurity Consulting Services",
+        slug: "cybersecurity-consulting",
+        description: "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
+        icon: "Compass",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cybersecurity Consulting Services | Clickmasters",
+        metaDescription: "Cybersecurity consulting services that build a full security roadmap tailored to your business size, industry, and budget.",
+        lead: "A security roadmap tailored to your business.",
+        highlights: ["Security strategy", "Business-aligned planning", "Budget-conscious solutions", "Roadmap development"],
+      },
+      {
+        title: "Custom Cybersecurity Software Development & Automation",
+        slug: "custom-cybersecurity-software",
+        description: "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
+        icon: "Wrench",
+        heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Custom Cybersecurity Software Development | Clickmasters",
+        metaDescription: "Custom cybersecurity software development and automation — build solutions that work together instead of creating manual work.",
+        lead: "Custom security solutions that work together.",
+        highlights: ["Custom development", "Security automation", "Tool integration", "Workflow optimization"],
+      },
+    ],
+    
+    // Technology Stack Data
+    techStack: {
+      title: "Technology Behind Our Cybersecurity Services",
+      description: "Our cybersecurity services and solutions are powered by proven, industry-trusted tools. This stack allows our cybersecurity company to deliver protection that works across your entire business, not just one part of it.",
+      groups: [
+        {
+          label: "Network Security",
+          items: ["Firewalls", "Cisco", "Palo Alto", "Fortinet"],
+        },
+        {
+          label: "Threat Detection & SIEM",
+          items: ["Splunk", "IBM QRadar", "Microsoft Sentinel"],
+        },
+        {
+          label: "Cloud Security",
+          items: ["AWS Security Hub", "Azure Security Center", "Google Chronicle"],
+        },
+        {
+          label: "Endpoint Protection",
+          items: ["CrowdStrike", "SentinelOne", "Microsoft Defender"],
+        },
+        {
+          label: "Penetration Testing",
+          items: ["Burp Suite", "Metasploit", "Nmap", "Kali Linux"],
+        },
+        {
+          label: "Identity & Access",
+          items: ["Okta", "Microsoft Entra ID", "Duo Security"],
+        },
+        {
+          label: "Compliance & GRC",
+          items: ["Vanta", "Drata", "OneTrust"],
+        },
+      ],
+    },
+    
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "We were looking for a reliable cybersecurity company that could help us prepare for our annual compliance audit. Clickmasters reviewed our policies, strengthened our controls, and helped us pass our latest PCI-DSS audit with zero findings. Their team really knows cybersecurity.",
+        author: "Sarah Mitchell",
+        title: "Operations Director",
+        company: "Financial Services",
+        location: "USA",
+      },
+      {
+        quote: "We found Clickmasters while searching for cybersecurity services near me, and they quickly identified security gaps on our checkout page through penetration testing. They fixed the issues before they became a serious problem. Professional, responsive, and worth every dollar.",
+        author: "David Chen",
+        title: "Founder",
+        company: "Online Retail Business",
+        location: "USA",
+      },
+      {
+        quote: "Clickmasters provides the kind of cybersecurity monitoring every business needs. Their security operations team detected a network issue at 2 AM and contained it before our staff even arrived. Having that level of protection gives us real peace of mind.",
+        author: "Maria Gonzalez",
+        title: "IT Director",
+        company: "Healthcare Provider",
+        location: "USA",
+      },
+      {
+        quote: "We wanted a cybersecurity company that would understand our business instead of simply selling us software. Clickmasters took the time to understand our needs and created a practical security strategy that worked for our company, team, and budget.",
+        author: "James Anderson",
+        title: "CEO",
+        company: "Manufacturing Company",
+        location: "USA",
+      },
+      {
+        quote: "Clickmasters helped us build a comprehensive security program from scratch. Their team was thorough, transparent, and genuinely cared about our security posture. We finally feel confident about our cybersecurity.",
+        author: "Michael Brown",
+        title: "CTO",
+        company: "Technology & SaaS Company",
+        location: "USA",
+      },
+    ],
+    
+    // Process Steps
+    processSteps: [
+      {
+        title: "Assessment & Discovery",
+        description: "We review your systems, data, and current security setup to understand exactly where your business stands and what risks matter most.",
+      },
+      {
+        title: "Strategy & Planning",
+        description: "Our team builds a clear security plan, ranking risks by priority and matching solutions to your budget and business goals.",
+      },
+      {
+        title: "Implementation & Testing",
+        description: "We put the right tools and protections in place, then test everything through penetration testing and audits to confirm it actually works.",
+      },
+      {
+        title: "Monitoring & Ongoing Support",
+        description: "Once you're protected, we don't disappear. Our team monitors your systems, updates your defenses, and stays ready to respond, day or night.",
+      },
+    ],
+    
+    // Industries Data
+    industries: [
+      { name: "Healthcare", description: "HIPAA-compliant data protection and patient record security" },
+      { name: "Finance & Banking", description: "Fraud prevention, transaction security, PCI-DSS compliance" },
+      { name: "Retail & eCommerce", description: "Payment data protection and website security" },
+      { name: "Manufacturing", description: "Protecting production systems and connected devices" },
+      { name: "Legal Services", description: "Confidential document and client data protection" },
+      { name: "Real Estate", description: "Secure transaction and client data handling" },
+      { name: "Education", description: "Student data protection and network security" },
+      { name: "Government & Public Sector", description: "Compliance-focused security programs" },
+      { name: "Technology & SaaS", description: "Application security and secure cloud infrastructure" },
+    ],
+    
+    // Pricing
+    pricing: [
+      {
+        type: "Security Audit & Assessment",
+        investment: "Custom quote",
+        timeline: "1-2 weeks",
+        bestFor: "First security audit and risk assessment",
+        features: [
+          "Full risk assessment",
+          "Vulnerability scanning",
+          "Compliance review",
+          "Remediation roadmap",
+        ],
+      },
+      {
+        type: "Penetration Testing",
+        investment: "Custom quote",
+        timeline: "2-4 weeks",
+        bestFor: "Active security testing and validation",
+        features: [
+          "Ethical hacking simulation",
+          "Application & network testing",
+          "Detailed vulnerability report",
+          "Remediation guidance",
+        ],
+      },
+      {
+        type: "Managed Security Services",
+        investment: "Custom quote",
+        timeline: "Ongoing",
+        bestFor: "24/7 monitoring and protection",
+        features: [
+          "24/7 SOC monitoring",
+          "Threat detection & response",
+          "Regular security reporting",
+          "Ongoing optimization",
+        ],
+      },
+      {
+        type: "Enterprise Security Platform",
+        investment: "Custom quote",
+        timeline: "Custom",
+        bestFor: "Large-scale security programs",
+        features: [
+          "Full security stack",
+          "Custom integrations",
+          "Dedicated security team",
+          "SLA & compliance support",
+        ],
+      },
+    ],
+    
+    // FAQs
+    faqs: [
+      {
+        question: "What are cybersecurity services?",
+        answer: "Cybersecurity services are the tools, testing, and monitoring a company uses to protect its computers, networks, and data from hackers, malware, and data theft.",
+      },
+      {
+        question: "How much do cybersecurity services cost?",
+        answer: "Cost depends on your business size, industry, and how much protection you need. A small business audit costs far less than full 24/7 managed security for an enterprise. We provide a clear quote after a free consultation.",
+      },
+      {
+        question: "Why does my small business need cybersecurity services?",
+        answer: "Small businesses are actually a common target for hackers because they often have weaker defenses. A single breach can be costly and damage customer trust, which is why even small businesses need basic protection in place.",
+      },
+      {
+        question: "What is the difference between a cybersecurity audit and penetration testing?",
+        answer: "A security audit reviews your policies, systems, and compliance status. Penetration testing actively tries to break into your systems like a real hacker would, to test how well your defenses hold up.",
+      },
+      {
+        question: "What industries need cybersecurity services the most?",
+        answer: "Healthcare, finance, retail, and legal services are common targets because they hold sensitive data, but every business that stores customer information or runs online systems needs some level of protection.",
+      },
+      {
+        question: "What are managed cybersecurity services?",
+        answer: "Managed cybersecurity services mean an outside team, like ours, actively monitors and protects your systems on an ongoing basis, instead of you managing it all with an in-house team.",
+      },
+      {
+        question: "How long does it take to set up cybersecurity protection?",
+        answer: "A basic risk assessment can be completed in one to two weeks. Full managed protection setup usually takes four to eight weeks, depending on the size and complexity of your systems.",
+      },
+      {
+        question: "Can you help with compliance like HIPAA or PCI-DSS?",
+        answer: "Yes. Our compliance management services help you meet requirements for HIPAA, PCI-DSS, SOC 2, GDPR, and other industry standards, and prepare you for audits.",
+      },
+      {
+        question: "What happens if you find a threat on our network?",
+        answer: "Our security operations center alerts you immediately, isolates the threat where possible, and works with your team to contain and resolve the issue as fast as possible.",
+      },
+      {
+        question: "How do I get started with your cybersecurity services company?",
+        answer: "Start with a free security consultation. We'll review your current setup, point out major risks, and recommend a plan that fits your business, with no pressure to commit right away.",
+      },
+    ],
+    
+    // Final CTA Section
+    finalCta: {
+      title: "Don't Wait for a Breach to Take Security Seriously",
+      description: "Every day without proper protection is a risk your business doesn't need to take. Partner with a cybersecurity services company that treats your data like it's our own, and get real protection built around your business.",
+      primary: "Get Your Free Security Audit",
+      secondary: "Talk to a Cybersecurity Expert Today",
+    },
+    
+    // Mid-page CTA labels
+    sectionCtas: {
+      afterServices: "Talk to Our Cybersecurity Professionals",
+      afterWhyChooseUs: "See Why Businesses Trust Us",
+      afterProcess: "Start Your Free Security Audit",
+    },
+  },
+
+  // ============================================
+  // TESTING & QA SERVICE
+  // ============================================
+  testingAndQa: {
+    // Meta data
+    metaTitle: "Testing & QA Services Company USA | Clickmasters",
+    metaDescription: "Get expert testing and QA services from Clickmasters. We provide comprehensive software testing, automated testing, performance testing, and bug fixing services. Ensure quality and reliability.",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/testing-and-qa",
+    slug: "testing-and-qa",
+
+    // Hero Section
+    title: "Testing & QA Services That Ensure Software Excellence",
+    icon: "TestTube",
+    tagline: "Testing & QA Services",
+    description: "Clickmasters provides comprehensive testing and QA services to ensure your software meets the highest standards of quality, performance, and reliability. Our expert QA team uses industry-leading tools and methodologies to catch bugs, optimize performance, and deliver flawless user experiences.",
+    heroBadge: "500+ Projects Tested",
+    heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "500+", label: "Projects Tested" },
+      { value: "99%", label: "Bug Detection Rate" },
+      { value: "24/7", label: "Testing Support" },
+      { value: "<1 day", label: "Critical Bug Response" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Testing & QA Company You Can Trust",
+      description: "Clickmasters is a trusted testing and QA company that helps businesses across the USA deliver high-quality software. Our QA specialists use proven testing methodologies, automated tools, and manual testing strategies to ensure your application performs flawlessly in production.",
+      points: [
+        "500+ software projects tested across industries",
+        "Comprehensive manual and automated testing strategies",
+        "Experienced QA specialists using industry-leading tools",
+        "Performance and security testing included in every engagement",
+        "Clear bug reporting and tracking with quick turnaround",
+      ],
+      closingText: "Whether you need a quick bug fix or a complete QA strategy for your new application, our testing and QA services are designed to catch issues before they reach your users.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "TestTube",
+        title: "QA & Software Testing",
+        description: "Comprehensive quality assurance strategies including manual testing, test case design, and bug reporting to ensure your software meets all requirements.",
+      },
+      {
+        icon: "Bot",
+        title: "Automated Testing",
+        description: "Fast, reliable automated testing solutions that integrate with your CI/CD pipeline, catching regressions early and speeding up release cycles.",
+      },
+      {
+        icon: "Zap",
+        title: "Performance Testing",
+        description: "System performance testing including load testing, stress testing, and scalability analysis to ensure your application handles real-world traffic.",
+      },
+      {
+        icon: "Settings",
+        title: "Bug Fixing",
+        description: "Quick and efficient bug resolution with detailed root cause analysis, ensuring issues are fixed properly and don't reoccur.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "TechCorp", industry: "Technology", icon: "Cpu" },
+      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
+      { name: "FinTrust", industry: "Finance", icon: "Coins" },
+      { name: "HealthPlus", industry: "Healthcare", icon: "Stethoscope" },
+      { name: "EduSmart", industry: "Education", icon: "GraduationCap" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Higher quality software with fewer production bugs",
+      "Faster release cycles with automated testing integration",
+      "Better user experience through thorough UX and functionality testing",
+      "Reduced long-term costs by catching issues early",
+      "Comprehensive test coverage across all platforms and devices",
+      "Clear documentation and reporting for every test cycle",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters for Testing & QA Services",
+      description: "Choosing the right testing and QA company is crucial for delivering high-quality software. Here's what makes Clickmasters different:",
+      reasons: [
+        {
+          title: "Comprehensive testing strategies",
+          description: "We combine manual and automated testing to cover every aspect of your application.",
+        },
+        {
+          title: "Experienced QA team",
+          description: "Our QA specialists have years of experience testing complex enterprise applications.",
+        },
+        {
+          title: "Fast turnaround",
+          description: "Quick bug detection and reporting to keep your development timeline on track.",
+        },
+        {
+          title: "Modern tooling",
+          description: "We use industry-leading testing tools and frameworks for reliable, scalable testing.",
+        },
+        {
+          title: "Clear communication",
+          description: "Detailed bug reports and regular updates keep everyone aligned on quality status.",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "QA & Software Testing",
+        slug: "qa-software-testing",
+        description: "Comprehensive QA strategies including manual testing, test case design, and bug reporting to ensure your software meets all requirements.",
+        icon: "TestTube",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "QA & Software Testing Services | Clickmasters",
+        metaDescription: "Comprehensive QA and software testing services to ensure your application meets all requirements and quality standards.",
+        lead: "Quality assurance that catches issues before users do.",
+        highlights: ["Manual testing", "Test case design", "Bug reporting", "Quality standards"],
+      },
+      {
+        title: "Automated Testing",
+        slug: "automated-testing",
+        description: "Fast, reliable automated testing solutions that integrate with your CI/CD pipeline, catching regressions early and speeding up release cycles.",
+        icon: "Bot",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Automated Testing Services | Clickmasters",
+        metaDescription: "Automated testing solutions that integrate with CI/CD pipelines for faster, more reliable releases.",
+        lead: "Automated tests that catch regressions early.",
+        highlights: ["CI/CD integration", "Regression testing", "Fast execution", "Scalable test suites"],
+      },
+      {
+        title: "Performance Testing",
+        slug: "performance-testing",
+        description: "System performance testing including load testing, stress testing, and scalability analysis to ensure your application handles real-world traffic.",
+        icon: "Zap",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Performance Testing Services | Clickmasters",
+        metaDescription: "Performance testing including load testing, stress testing, and scalability analysis to ensure real-world readiness.",
+        lead: "Ensure your app handles real-world traffic.",
+        highlights: ["Load testing", "Stress testing", "Scalability analysis", "Performance optimization"],
+      },
+      {
+        title: "Bug Fixing",
+        slug: "bug-fixing",
+        description: "Quick and efficient bug resolution with detailed root cause analysis, ensuring issues are fixed properly and don't reoccur.",
+        icon: "Settings",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Bug Fixing Services | Clickmasters",
+        metaDescription: "Quick and efficient bug resolution with root cause analysis to ensure issues are fixed properly.",
+        lead: "Fast bug resolution with proper fixes.",
+        highlights: ["Root cause analysis", "Quick turnaround", "Proper fixes", "Prevention strategies"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Testing Tools & Technologies We Use",
+      description: "We use industry-leading testing tools and frameworks to ensure comprehensive coverage and reliable results.",
+      groups: [
+        {
+          label: "Automated Testing",
+          items: ["Selenium", "Cypress", "Playwright", "Jest"],
+        },
+        {
+          label: "Performance Testing",
+          items: ["JMeter", "LoadRunner", "Gatling", "k6"],
+        },
+        {
+          label: "API Testing",
+          items: ["Postman", "REST Assured", "Swagger", "SoapUI"],
+        },
+        {
+          label: "Bug Tracking",
+          items: ["Jira", "Bugzilla", "GitHub Issues", "Linear"],
+        },
+      ],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters' QA team caught critical bugs we missed during development. Their thorough testing saved us from a potentially disastrous launch.",
+        author: "Michael Carter",
+        title: "Engineering Director",
+        company: "TechCorp",
+        location: "USA",
+      },
+      {
+        quote: "The automated testing suite Clickmasters built for us reduced our release cycle from two weeks to three days. Excellent work.",
+        author: "Sarah Mitchell",
+        title: "CTO",
+        company: "FinTrust",
+        location: "USA",
+      },
+      {
+        quote: "Their performance testing identified bottlenecks we didn't know existed. After optimization, our app load time improved by 60%.",
+        author: "James Wilson",
+        title: "Product Manager",
+        company: "HealthPlus",
+        location: "USA",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Test Planning",
+        description: "We analyze your application and create a comprehensive test plan covering all functional, performance, and security requirements.",
+      },
+      {
+        title: "Test Execution",
+        description: "Our QA team executes manual and automated tests across all platforms and devices, documenting every finding.",
+      },
+      {
+        title: "Bug Reporting & Fixing",
+        description: "We provide detailed bug reports with reproduction steps and work with your team to ensure proper fixes.",
+      },
+      {
+        title: "Regression & Release",
+        description: "After fixes, we run full regression testing to ensure no new issues were introduced and your release is ready.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "Technology & SaaS", description: "web applications, mobile apps, and enterprise software" },
+      { name: "Healthcare", description: "HIPAA-compliant applications and patient portals" },
+      { name: "Finance", description: "secure financial platforms and trading systems" },
+      { name: "E-commerce", description: "online stores and payment processing systems" },
+      { name: "Education", description: "learning management systems and educational platforms" },
+      { name: "Logistics", description: "tracking systems and fleet management platforms" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "QA Assessment",
+        investment: "Custom quote",
+        timeline: "1-2 weeks",
+        bestFor: "Initial quality assessment and test strategy",
+        features: [
+          "Current QA assessment",
+          "Test strategy development",
+          "Tool recommendations",
+          "Process improvement plan",
+        ],
+      },
+      {
+        type: "Automated Testing Setup",
+        investment: "Custom quote",
+        timeline: "2-4 weeks",
+        bestFor: "CI/CD integrated test automation",
+        features: [
+          "Test automation framework",
+          "CI/CD integration",
+          "Regression test suite",
+          "Reporting dashboard",
+        ],
+      },
+      {
+        type: "Ongoing QA Support",
+        investment: "Custom quote",
+        timeline: "Ongoing",
+        bestFor: "Continuous testing and quality assurance",
+        features: [
+          "Dedicated QA resources",
+          "Regular test cycles",
+          "Bug tracking & reporting",
+          "Performance monitoring",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What is QA and software testing?",
+        answer: "QA (Quality Assurance) and software testing are processes that ensure your application meets quality standards, functions correctly, and provides a good user experience. This includes functional testing, performance testing, security testing, and more.",
+      },
+      {
+        question: "Why is automated testing important?",
+        answer: "Automated testing speeds up release cycles, catches regressions early, and provides consistent, reliable results. It's especially valuable for applications that require frequent updates and deployments.",
+      },
+      {
+        question: "How much do testing and QA services cost?",
+        answer: "Cost depends on the scope of testing needed. A basic QA assessment starts at a few thousand dollars, while comprehensive automated testing setups and ongoing QA support are scoped based on your application complexity and testing requirements.",
+      },
+      {
+        question: "What types of testing do you offer?",
+        answer: "We offer functional testing, automated testing, performance testing, security testing, mobile testing, and regression testing to ensure comprehensive coverage of your application.",
+      },
+      {
+        question: "How long does a testing cycle take?",
+        answer: "A basic QA assessment takes 1-2 weeks. Automated test suite setup takes 2-4 weeks. Ongoing testing is integrated into your development cycle with results available within hours of each build.",
+      },
+      {
+        question: "Do you provide bug fixing services?",
+        answer: "Yes. We not only identify bugs but also work with your team to fix them, providing detailed root cause analysis and verification testing to ensure issues are properly resolved.",
+      },
+    ],
+  },
+
+  // ============================================
+  // SUPPORT & OUTSOURCING SERVICE
+  // ============================================
+  supportAndOutsourcing: {
+    // Meta data
+    metaTitle: "Support & Outsourcing Services | Clickmasters",
+    metaDescription: "Get reliable support and outsourcing services from Clickmasters. We offer maintenance & support, dedicated dev teams, staff augmentation, and technical support. Scale your team today.",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/support-and-outsourcing",
+    slug: "support-and-outsourcing",
+
+    // Hero Section
+    title: "Support & Outsourcing Services That Scale Your Team",
+    icon: "Headphones",
+    tagline: "Support & Outsourcing Services",
+    description: "Clickmasters provides reliable support and outsourcing services to help businesses scale their development capacity. From ongoing maintenance and support to dedicated development teams and staff augmentation, we give you the engineering resources you need without the overhead of hiring and training.",
+    heroBadge: "200+ Support Contracts",
+    heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "200+", label: "Support Contracts" },
+      { value: "50+", label: "Dedicated Developers" },
+      { value: "24/7", label: "Support Availability" },
+      { value: "98%", label: "Client Retention" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Support & Outsourcing Partner You Can Trust",
+      description: "Clickmasters is a trusted support and outsourcing partner for businesses across the USA. We provide flexible engagement models — from maintenance and support contracts to fully dedicated development teams — so you can scale your engineering capacity on demand.",
+      points: [
+        "200+ active support and outsourcing contracts",
+        "Flexible engagement models from hourly support to dedicated teams",
+        "Senior engineers who integrate with your existing tools and processes",
+        "Transparent communication and regular progress reporting",
+        "Secure infrastructure and compliance with data protection standards",
+      ],
+      closingText: "Whether you need a few extra hands for a sprint or a complete team to manage your product, our support and outsourcing services give you the flexibility to grow without the risk of over-hiring.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "Settings",
+        title: "Maintenance & Support",
+        description: "Ongoing product support covering bug fixes, security patches, performance monitoring, and feature updates to keep your application running smoothly.",
+      },
+      {
+        icon: "Users2",
+        title: "Dedicated Dev Teams",
+        description: "Engineering continuity with a dedicated team that understands your product, your codebase, and your business goals — no handoffs or knowledge loss.",
+      },
+      {
+        icon: "UserCheck",
+        title: "Staff Augmentation",
+        description: "Scale your team with experienced developers who integrate seamlessly with your existing processes, tools, and sprint cadence.",
+      },
+      {
+        icon: "Headset",
+        title: "Technical Support",
+        description: "Reliable technical support for your team and your users, with clear escalation paths and quick response times when issues arise.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "TechCorp", industry: "Technology", icon: "Cpu" },
+      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
+      { name: "FinTrust", industry: "Finance", icon: "Coins" },
+      { name: "HealthPlus", industry: "Healthcare", icon: "Stethoscope" },
+      { name: "EduSmart", industry: "Education", icon: "GraduationCap" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Instant access to experienced engineers without lengthy hiring processes",
+      "Flexible scaling — add or reduce capacity based on your needs",
+      "Cost-effective alternative to full-time hiring and training",
+      "Seamless integration with your existing tools and workflows",
+      "Consistent team members who learn your product over time",
+      "24/7 support coverage for critical issues and production incidents",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters for Support & Outsourcing",
+      description: "Choosing the right support and outsourcing partner can make or break your product's long-term success. Here's why businesses trust Clickmasters:",
+      reasons: [
+        {
+          title: "Experienced engineers",
+          description: "Our team consists of senior developers who can jump into your codebase quickly and contribute from day one.",
+        },
+        {
+          title: "Flexible engagement",
+          description: "From part-time support to full dedicated teams, we scale to match your needs and budget.",
+        },
+        {
+          title: "Proven processes",
+          description: "We follow agile methodologies and use modern collaboration tools to stay aligned with your team.",
+        },
+        {
+          title: "Transparent communication",
+          description: "Regular standups, progress reports, and direct access to your team keep everyone on the same page.",
+        },
+        {
+          title: "Long-term partnership",
+          description: "We build lasting relationships with our clients, becoming a true extension of your team.",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "Maintenance & Support",
+        slug: "maintenance-support",
+        description: "Ongoing product support covering bug fixes, security patches, performance monitoring, and feature updates to keep your application running smoothly.",
+        icon: "Settings",
+        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Maintenance & Support Services | Clickmasters",
+        metaDescription: "Ongoing maintenance and support services to keep your application running smoothly with quick bug fixes and updates.",
+        lead: "Keep your product running smoothly.",
+        highlights: ["Bug fixes", "Security patches", "Performance monitoring", "Feature updates"],
+      },
+      {
+        title: "Dedicated Dev Teams",
+        slug: "dedicated-development-teams",
+        description: "Engineering continuity with a dedicated team that understands your product, your codebase, and your business goals — no handoffs or knowledge loss.",
+        icon: "Users2",
+        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Dedicated Development Teams | Clickmasters",
+        metaDescription: "Dedicated development teams that become a true extension of your team with deep product knowledge.",
+        lead: "A dedicated team that knows your product.",
+        highlights: ["Team continuity", "Product knowledge", "No handoffs", "Full integration"],
+      },
+      {
+        title: "Staff Augmentation",
+        slug: "staff-augmentation",
+        description: "Scale your team with experienced developers who integrate seamlessly with your existing processes, tools, and sprint cadence.",
+        icon: "UserCheck",
+        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Staff Augmentation Services | Clickmasters",
+        metaDescription: "Staff augmentation services that scale your team with experienced developers who integrate seamlessly.",
+        lead: "Scale your team on demand.",
+        highlights: ["Quick scaling", "Seamless integration", "Experienced developers", "Flexible terms"],
+      },
+      {
+        title: "Technical Support",
+        slug: "technical-support",
+        description: "Reliable technical support for your team and your users, with clear escalation paths and quick response times when issues arise.",
+        icon: "Headset",
+        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Technical Support Services | Clickmasters",
+        metaDescription: "Reliable technical support with quick response times and clear escalation paths for critical issues.",
+        lead: "Fast, reliable technical support.",
+        highlights: ["Quick response", "Clear escalation", "User support", "Team support"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Tools & Technologies We Work With",
+      description: "Our support and outsourcing teams are proficient in all modern development tools, platforms, and frameworks.",
+      groups: [
+        {
+          label: "Collaboration",
+          items: ["Slack", "Microsoft Teams", "Zoom", "Jira", "Confluence"],
+        },
+        {
+          label: "Development",
+          items: ["GitHub", "GitLab", "VS Code", "Docker", "Postman"],
+        },
+        {
+          label: "Cloud & Infrastructure",
+          items: ["AWS", "Azure", "Google Cloud", "Vercel", "Netlify"],
+        },
+        {
+          label: "Monitoring & Support",
+          items: ["Sentry", "Datadog", "New Relic", "PagerDuty", "Grafana"],
+        },
+      ],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters' dedicated team has been instrumental in our product's success. They feel like a true extension of our company, not an outsourced vendor.",
+        author: "Michael Brown",
+        title: "VP of Engineering",
+        company: "TechCorp",
+        location: "USA",
+      },
+      {
+        quote: "We needed to scale our development capacity quickly for a major product launch. Clickmasters provided excellent developers who integrated seamlessly with our team.",
+        author: "Sarah Chen",
+        title: "Product Director",
+        company: "FinTrust",
+        location: "USA",
+      },
+      {
+        quote: "Their maintenance and support services have been outstanding. Issues are resolved quickly, and their team is always available when we need them.",
+        author: "David Park",
+        title: "CTO",
+        company: "HealthPlus",
+        location: "USA",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Needs Assessment",
+        description: "We learn about your product, your current team, and your specific needs to recommend the right engagement model.",
+      },
+      {
+        title: "Team Matching",
+        description: "We select engineers with the right skills and experience to integrate seamlessly with your existing team and processes.",
+      },
+      {
+        title: "Onboarding & Integration",
+        description: "We handle onboarding, tool access, and knowledge transfer so your new team members can contribute from day one.",
+      },
+      {
+        title: "Ongoing Support",
+        description: "We provide continuous support, regular check-ins, and team adjustments as your needs evolve.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "Technology & SaaS", description: "software products and cloud platforms" },
+      { name: "Healthcare", description: "HIPAA-compliant applications and patient systems" },
+      { name: "Finance", description: "secure financial platforms and trading systems" },
+      { name: "E-commerce", description: "online stores and marketplace platforms" },
+      { name: "Education", description: "learning management systems and EdTech" },
+      { name: "Logistics", description: "tracking and fleet management systems" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "Maintenance & Support",
+        investment: "Custom quote",
+        timeline: "Ongoing",
+        bestFor: "Ongoing product support and maintenance",
+        features: [
+          "Bug fixes & patches",
+          "Security updates",
+          "Performance monitoring",
+          "Priority support",
+        ],
+      },
+      {
+        type: "Dedicated Team",
+        investment: "Custom quote",
+        timeline: "Ongoing",
+        bestFor: "Full-time dedicated development resources",
+        features: [
+          "Dedicated developers",
+          "Project management",
+          "Code reviews",
+          "Full integration",
+        ],
+      },
+      {
+        type: "Staff Augmentation",
+        investment: "Custom quote",
+        timeline: "Flexible",
+        bestFor: "Scaling your existing team temporarily",
+        features: [
+          "Skilled developers",
+          "Flexible engagement",
+          "Quick onboarding",
+          "Tool integration",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What are support and outsourcing services?",
+        answer: "Support and outsourcing services provide ongoing maintenance, technical support, and additional development resources for your software projects without the need to hire full-time employees.",
+      },
+      {
+        question: "How does staff augmentation work?",
+        answer: "Staff augmentation allows you to add experienced developers to your existing team on a flexible basis. Our engineers integrate with your processes, tools, and sprint cadence to extend your capacity.",
+      },
+      {
+        question: "What's the difference between dedicated teams and staff augmentation?",
+        answer: "Dedicated teams are self-contained groups that manage entire projects or product lines. Staff augmentation adds individual developers to your existing team to fill specific skill gaps or capacity needs.",
+      },
+      {
+        question: "How quickly can you provide developers?",
+        answer: "We can typically provide qualified developers within 1-2 weeks, depending on the specific skills and experience required for your project.",
+      },
+      {
+        question: "Do your developers work in our time zone?",
+        answer: "Yes. Our team operates across US time zones and can align their working hours with your team for real-time collaboration.",
+      },
+      {
+        question: "What happens if a team member leaves?",
+        answer: "We ensure knowledge transfer and provide a replacement with minimal disruption. Our dedicated teams are structured to avoid single points of failure.",
+      },
+    ],
+  },
+
+  // ============================================
+  // BLOCKCHAIN & WEB3 SERVICE
+  // ============================================
+  blockchainAndWeb3: {
+    // Meta data
+    metaTitle: "Blockchain & Web3 Development Services | Clickmasters",
+    metaDescription: "Get expert blockchain and Web3 development services from Clickmasters. We build DApps, smart contracts, NFT marketplaces, and crypto wallets. Get started today!",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/blockchain-and-web3",
+    slug: "blockchain-and-web3",
+
+    // Hero Section
+    title: "Blockchain & Web3 Development Services",
+    icon: "Link2",
+    tagline: "Blockchain & Web3 Services",
+    description: "Clickmasters offers blockchain and Web3 development services that help businesses leverage decentralized technologies. From smart contract development to DApp platforms and NFT marketplaces, our blockchain developers build secure, scalable solutions on leading blockchain networks.",
+    heroBadge: "50+ Web3 Projects",
+    heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero Stats
+    stats: [
+      { value: "50+", label: "Web3 Projects Delivered" },
+      { value: "10+", label: "Blockchain Networks Supported" },
+      { value: "100%", label: "Smart Contract Audits" },
+      { value: "24/7", label: "Support & Monitoring" },
+    ],
+
+    // Trust Section Data
+    trustSection: {
+      title: "A Blockchain & Web3 Development Company You Can Trust",
+      description: "Clickmasters is a blockchain and Web3 development company that helps businesses explore and implement decentralized technologies. Our blockchain developers specialize in smart contract development, DApp development, and Web3 infrastructure, delivering secure and scalable solutions.",
+      points: [
+        "50+ blockchain and Web3 projects delivered",
+        "Experienced blockchain developers across multiple networks",
+        "Secure smart contract development with thorough auditing",
+        "End-to-end DApp development from concept to deployment",
+        "Ongoing support and maintenance for deployed solutions",
+      ],
+      closingText: "Whether you're launching your first NFT marketplace or building enterprise blockchain solutions, our Web3 development services provide the expertise you need.",
+    },
+
+    // Features/Services List
+    features: [
+      {
+        icon: "Link2",
+        title: "Blockchain Development",
+        description: "Custom blockchain platforms and infrastructure designed for your specific use case, whether public, private, or hybrid.",
+      },
+      {
+        icon: "FileText",
+        title: "Smart Contract Development",
+        description: "Secure, audited smart contracts for Ethereum, Solana, and other leading blockchain networks.",
+      },
+      {
+        icon: "Globe2",
+        title: "DApp Development",
+        description: "Decentralized applications with seamless user experiences, connecting users to blockchain functionality.",
+      },
+      {
+        icon: "CreditCard",
+        title: "Crypto Wallets",
+        description: "Secure cryptocurrency wallet solutions for storing, managing, and transacting digital assets.",
+      },
+      {
+        icon: "Package",
+        title: "NFT Marketplaces",
+        description: "Custom NFT marketplace platforms for minting, buying, selling, and trading digital assets.",
+      },
+    ],
+
+    // Trusted Clients
+    trustedClients: [
+      { name: "CryptoFirst", industry: "DeFi", icon: "Coins" },
+      { name: "ArtBlock", industry: "NFT", icon: "Package" },
+      { name: "ChainPay", industry: "FinTech", icon: "CreditCard" },
+      { name: "MetaGames", industry: "Gaming", icon: "Gamepad2" },
+      { name: "BlockHealth", industry: "Healthcare", icon: "Heart" },
+    ],
+
+    // Benefits Section Data
+    benefits: [
+      "Secure, audited smart contracts that protect user assets",
+      "Decentralized solutions that reduce dependency on intermediaries",
+      "Transparent and immutable transaction records",
+      "Custom tokenomics and incentive structures",
+      "Seamless integration with existing systems and APIs",
+      "Ongoing support for protocol upgrades and maintenance",
+    ],
+
+    // Why Choose Us Data
+    whyChooseUs: {
+      title: "Why Choose Clickmasters for Blockchain & Web3 Development",
+      description: "Choosing the right blockchain development company is critical for the success of your Web3 project. Here's what makes Clickmasters the right choice:",
+      reasons: [
+        {
+          title: "Deep blockchain expertise",
+          description: "Our team has extensive experience across multiple blockchain networks and Web3 technologies.",
+        },
+        {
+          title: "Security-first approach",
+          description: "Every smart contract and DApp we build undergoes rigorous security auditing before deployment.",
+        },
+        {
+          title: "Full-stack capabilities",
+          description: "From smart contracts to front-end DApps, we handle every layer of your Web3 solution.",
+        },
+        {
+          title: "Clear communication",
+          description: "We explain complex blockchain concepts in plain language and keep you updated throughout development.",
+        },
+        {
+          title: "Post-launch support",
+          description: "We provide ongoing monitoring, upgrades, and support after your project goes live.",
+        },
+      ],
+    },
+
+    // SubServices
+    subServices: [
+      {
+        title: "Blockchain Development",
+        slug: "blockchain-development",
+        description: "Custom blockchain platforms and infrastructure designed for your specific use case.",
+        icon: "Link2",
+        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Blockchain Development Services | Clickmasters",
+        metaDescription: "Custom blockchain development services for public, private, and hybrid blockchain solutions.",
+        lead: "Custom blockchain platforms for your use case.",
+        highlights: ["Custom protocols", "Public/private chains", "Consensus mechanisms", "Network design"],
+      },
+      {
+        title: "Smart Contract Development",
+        slug: "smart-contract-development",
+        description: "Secure, audited smart contracts for Ethereum, Solana, and other leading blockchain networks.",
+        icon: "FileText",
+        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Smart Contract Development Services | Clickmasters",
+        metaDescription: "Secure smart contract development with thorough auditing for Ethereum, Solana, and other networks.",
+        lead: "Secure, audited smart contracts.",
+        highlights: ["Solidity & Rust", "Security auditing", "Gas optimization", "Multi-chain support"],
+      },
+      {
+        title: "DApp Development",
+        slug: "dapp-development",
+        description: "Decentralized applications with seamless user experiences, connecting users to blockchain functionality.",
+        icon: "Globe2",
+        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "DApp Development Services | Clickmasters",
+        metaDescription: "Decentralized application development with seamless UX connecting users to blockchain functionality.",
+        lead: "DApps with seamless user experiences.",
+        highlights: ["Web3 integration", "Wallet connectivity", "Responsive design", "Cross-platform"],
+      },
+      {
+        title: "Crypto Wallets",
+        slug: "crypto-wallet-development",
+        description: "Secure cryptocurrency wallet solutions for storing, managing, and transacting digital assets.",
+        icon: "CreditCard",
+        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Crypto Wallet Development | Clickmasters",
+        metaDescription: "Secure cryptocurrency wallet development for storing, managing, and transacting digital assets.",
+        lead: "Secure wallets for digital assets.",
+        highlights: ["Multi-currency support", "Biometric security", "Transaction history", "Cross-platform"],
+      },
+      {
+        title: "NFT Marketplaces",
+        slug: "nft-marketplace-development",
+        description: "Custom NFT marketplace platforms for minting, buying, selling, and trading digital assets.",
+        icon: "Package",
+        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "NFT Marketplace Development | Clickmasters",
+        metaDescription: "Custom NFT marketplace development for minting, buying, selling, and trading digital assets.",
+        lead: "Custom NFT marketplace platforms.",
+        highlights: ["Minting tools", "Auction systems", "Royalty management", "Multi-chain support"],
+      },
+    ],
+
+    // Technology Stack Data
+    techStack: {
+      title: "Blockchain & Web3 Technologies We Use",
+      description: "We build on proven, secure blockchain technologies and frameworks to deliver reliable Web3 solutions.",
+      groups: [
+        {
+          label: "Blockchain Networks",
+          items: ["Ethereum", "Solana", "Polygon", "Binance Smart Chain", "Hyperledger"],
+        },
+        {
+          label: "Smart Contract Languages",
+          items: ["Solidity", "Rust", "Vyper", "Move"],
+        },
+        {
+          label: "Web3 Frameworks",
+          items: ["Web3.js", "Ethers.js", "Hardhat", "Truffle", "Foundry"],
+        },
+        {
+          label: "Storage & Infrastructure",
+          items: ["IPFS", "Pinata", "Arweave", "The Graph", "Chainlink"],
+        },
+      ],
+    },
+
+    // Client Success Stories (Testimonials)
+    testimonials: [
+      {
+        quote: "Clickmasters built our NFT marketplace from scratch. Their team understood the technology and delivered a platform that our users love.",
+        author: "Alex Rivera",
+        title: "Founder",
+        company: "ArtBlock",
+        location: "USA",
+      },
+      {
+        quote: "The smart contracts Clickmasters developed for us passed their audit with zero critical issues. Their attention to security is outstanding.",
+        author: "Maria Chen",
+        title: "CTO",
+        company: "ChainPay",
+        location: "USA",
+      },
+      {
+        quote: "We needed a DApp that could handle high transaction volumes. Clickmasters delivered a scalable solution that performs well under load.",
+        author: "James Kim",
+        title: "Product Lead",
+        company: "MetaGames",
+        location: "USA",
+      },
+    ],
+
+    // Process Steps
+    processSteps: [
+      {
+        title: "Discovery & Strategy",
+        description: "We understand your business goals, target users, and technical requirements to define the right blockchain solution.",
+      },
+      {
+        title: "Architecture & Design",
+        description: "Our blockchain architects design the system architecture, smart contract structure, and DApp infrastructure.",
+      },
+      {
+        title: "Development & Testing",
+        description: "We develop smart contracts and DApps with rigorous testing, security audits, and performance optimization.",
+      },
+      {
+        title: "Deployment & Support",
+        description: "After deployment, we provide ongoing monitoring, upgrades, and support to ensure your solution continues to perform.",
+      },
+    ],
+
+    // Industries Data
+    industries: [
+      { name: "DeFi", description: "decentralized finance platforms and protocols" },
+      { name: "NFT & Digital Art", description: "NFT marketplaces and digital collectibles" },
+      { name: "Gaming", description: "blockchain gaming and play-to-earn platforms" },
+      { name: "Finance", description: "payment solutions and asset tokenization" },
+      { name: "Healthcare", description: "secure medical records and data sharing" },
+      { name: "Supply Chain", description: "tracking and provenance solutions" },
+    ],
+
+    // Pricing
+    pricing: [
+      {
+        type: "Smart Contract Development",
+        investment: "Custom quote",
+        timeline: "2-6 weeks",
+        bestFor: "Individual smart contract development",
+        features: [
+          "Contract design & development",
+          "Security best practices",
+          "Unit testing",
+          "Documentation",
+        ],
+      },
+      {
+        type: "DApp Development",
+        investment: "Custom quote",
+        timeline: "2-4 months",
+        bestFor: "Full decentralized application",
+        features: [
+          "Smart contracts",
+          "Front-end DApp",
+          "Wallet integration",
+          "Testing & deployment",
+        ],
+      },
+      {
+        type: "NFT Marketplace",
+        investment: "Custom quote",
+        timeline: "3-6 months",
+        bestFor: "Full NFT trading platform",
+        features: [
+          "Minting functionality",
+          "Auction & listing system",
+          "Wallet integration",
+          "Admin dashboard",
+        ],
+      },
+      {
+        type: "Enterprise Blockchain",
+        investment: "Custom quote",
+        timeline: "Custom",
+        bestFor: "Large-scale blockchain solutions",
+        features: [
+          "Custom blockchain setup",
+          "Smart contract suite",
+          "Integration services",
+          "Ongoing support",
+        ],
+      },
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "What is blockchain development?",
+        answer: "Blockchain development involves building decentralized applications, smart contracts, and blockchain infrastructure that enable secure, transparent, and immutable transactions without intermediaries.",
+      },
+      {
+        question: "What are smart contracts?",
+        answer: "Smart contracts are self-executing contracts with terms written in code that automatically execute when predetermined conditions are met. They run on blockchain networks and eliminate the need for intermediaries.",
+      },
+      {
+        question: "What is Web3 development?",
+        answer: "Web3 development refers to building decentralized applications (DApps) that run on blockchain technology, giving users more control over their data and digital assets.",
+      },
+      {
+        question: "How much does blockchain development cost?",
+        answer: "Cost varies significantly based on complexity. A simple smart contract might start at $5,000, while a full DApp or NFT marketplace can range from $30,000 to $100,000+. Enterprise blockchain solutions are scoped individually.",
+      },
+      {
+        question: "Which blockchain networks do you work with?",
+        answer: "We work with Ethereum, Solana, Polygon, Binance Smart Chain, and other leading blockchain networks. We recommend the best network based on your specific use case, scalability needs, and budget.",
+      },
+      {
+        question: "Are smart contracts secure?",
+        answer: "Smart contracts can be secure when properly developed and audited. We follow industry best practices, conduct thorough testing, and recommend third-party audits for critical contracts to ensure security.",
+      },
+    ],
+  },
 };
 
 // Default export for backward compatibility
 export default mainServiceData;
+
+/**
+ * Get full data for a main service by its URL slug.
+ */
+export const getServiceData = (slug) => {
+  const service = Object.values(mainServiceData).find((s) => s.slug === slug);
+  if (!service) return null;
+  return enrichServiceData(service.slug, service);
+};
+
+/**
+ * Get data for a sub-service by its slug.
+ */
+export const getSubServiceData = (slug) => {
+  for (const main of Object.values(mainServiceData)) {
+    const sub = main.subServices?.find((s) => s.slug === slug);
+    if (sub) return { ...sub, categorySlug: main.slug, categoryTitle: main.title };
+  }
+  return null;
+};
+
+/**
+ * Return all main service URL slugs.
+ */
+export const getAllServiceSlugs = () => {
+  return Object.values(mainServiceData).map((s) => s.slug);
+};
+
+/**
+ * Flatten all sub-services for static generation.
+ */
+export const getAllSubServicePages = () => {
+  const subServices = [];
+  Object.values(mainServiceData).forEach((main) => {
+    if (main.subServices) {
+      main.subServices.forEach((sub) => {
+        subServices.push({
+          ...sub,
+          categorySlug: main.slug,
+          categoryTitle: main.title,
+        });
+      });
+    }
+  });
+  return subServices;
+};
+
+export { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data";
+export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData";

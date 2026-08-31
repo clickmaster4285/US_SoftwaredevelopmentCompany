@@ -13,6 +13,7 @@ import {
   PainPointsSolutions,
   PricingSection,
   ProcessSection,
+  SectionCta,
   TechStackSection,
   TrustSection,
   TrustedClientsSection,
@@ -24,6 +25,8 @@ import { mainServiceData } from "@/data/main-services-data";
 type MainService = (typeof mainServiceData)[keyof typeof mainServiceData];
 
 export default function MainServicePage({ service }: { service: MainService }) {
+  // Only some services define mid-page CTA labels.
+  const sectionCtas = "sectionCtas" in service ? service.sectionCtas : undefined;
 
   return (
     <>
@@ -35,25 +38,28 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <TrustSection service={service} />
           
           <ExploreSection service={service} />
+          <SectionCta label={sectionCtas?.afterServices} />
           <PainPointsSolutions service={service} />
-          
+
           {/* Benefits Section */}
           <BenefitsSection service={service} />
-          
+
           <TrustedClientsSection service={service} />
           <AppsSection />
-          
+
           {/* Process Section */}
           <ProcessSection service={service} />
-          
+          <SectionCta label={sectionCtas?.afterProcess} />
+
           {/* Tech Stack Section */}
           <TechStackSection service={service} />
-          
+
           <FeaturedInsights />
-          
+
           {/* Why Choose Us Section */}
           <WhyChooseUsSection service={service} />
-          
+          <SectionCta label={sectionCtas?.afterWhyChooseUs} />
+
           {/* Client Success Stories */}
           <ClientSuccessStories service={service} />
           

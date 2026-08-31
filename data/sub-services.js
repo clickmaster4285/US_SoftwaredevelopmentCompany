@@ -279,12 +279,24 @@ const serviceMenuSections = [
         description: "Warehouse design for analytics at scale.",
       },
       {
-        title: "Data Visualization",
-        description: "Clear visual storytelling with data.",
-      },
-      {
         title: "Big Data Solutions",
         description: "Large-scale data processing infrastructure.",
+      },
+      {
+        title: "Data Integration Services",
+        description: "Automated data flow and tool integrations.",
+      },
+      {
+        title: "Data Migration Services",
+        description: "Safe data migration with zero data loss.",
+      },
+      {
+        title: "Data Management & Governance",
+        description: "Clean, safe, organized data and compliance.",
+      },
+      {
+        title: "Data Visualization",
+        description: "Clear visual storytelling with data.",
       },
     ],
   },
@@ -412,36 +424,48 @@ const serviceMenuSections = [
         description: "Cloud architecture and migration services.",
       },
       {
-        title: "Cloud Solutions DevOps",
-        description: "Cloud architecture with DevOps practices.",
-      },
-      {
-        title: "Cloud-Native Development",
-        description: "Cloud-native apps built for resilience.",
-      },
-      {
         title: "DevOps Services",
         description: "Delivery pipelines and release automation.",
       },
       {
-        title: "DevSecOps",
-        description: "Security integrated into DevOps practices.",
+        title: "DevOps Consulting",
+        description: "Strategic DevOps roadmaps and expert assessments.",
       },
       {
         title: "CI/CD Pipeline Setup",
         description: "Automated build, test, and deployment workflows.",
       },
       {
-        title: "Serverless Architecture",
-        description: "Event-driven serverless application design.",
-      },
-      {
-        title: "Containerisation",
-        description: "Containerized deployments at scale.",
+        title: "Containerization (Docker & Kubernetes)",
+        description: "Containerized deployments and orchestration at scale.",
       },
       {
         title: "Infrastructure as Code",
-        description: "Versioned, repeatable infrastructure setup.",
+        description: "Versioned, repeatable infrastructure setup with Terraform.",
+      },
+      {
+        title: "Cloud Migration & Modernization",
+        description: "Carefully planned cloud migration with zero downtime.",
+      },
+      {
+        title: "Cloud Monitoring & Observability",
+        description: "24/7 dashboards, smart alerts, and early problem detection.",
+      },
+      {
+        title: "Managed DevOps Services",
+        description: "Dedicated full DevOps team on demand for daily operations.",
+      },
+      {
+        title: "Cloud-Native Development",
+        description: "Cloud-native apps built for resilience.",
+      },
+      {
+        title: "DevSecOps",
+        description: "Security integrated into DevOps practices.",
+      },
+      {
+        title: "Serverless Architecture",
+        description: "Event-driven serverless application design.",
       },
     ],
   },
