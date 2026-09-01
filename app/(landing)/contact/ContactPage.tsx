@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { ArrowRight, Loader2, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import {
-  Hero,
   PageFrame,
   SectionHeading,
 } from "../[main_service]/[sub_service]/landing-primitives";
@@ -31,11 +31,13 @@ export default function ContactPage() {
     budget: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -70,19 +72,49 @@ export default function ContactPage() {
 
   return (
     <PageFrame>
-      <Hero
-        eyebrow="Contact"
-        title="Bring the messy brief. We will shape the build."
-        copy="Tell us what you are trying to launch, repair, automate, or scale. We will come back with the cleanest route to production."
-        badge="Response within one business day"
-      />
+      <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
+        <div className="absolute inset-x-0 top-0 h-px bg-border" />
+        <div className="mx-auto max-w-7xl">
+          <nav className="mb-8 flex items-center gap-2 text-sm font-medium">
+            <span className="text-muted-foreground">Home</span>
+            <span className="text-muted-foreground">/</span>
+            <span className="font-semibold text-foreground">Contact</span>
+          </nav>
+
+          <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                <span className="h-2 w-2 rounded-full bg-primary" />
+                Contact
+              </div>
+              <h1 className="max-w-5xl text-[clamp(2.5rem,5vw,4.5rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
+                Contact Us
+              </h1>
+              <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
+                Ready to turn your software idea into reality? Talk to our
+                US-based development experts today. It only takes a few minutes
+                to get started.
+              </p>
+            </div>
+            <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-card">
+              <Image
+                src="/uscontact.jpeg"
+                alt="Contact Clickmasters"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="px-5 py-24 md:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <SectionHeading
-              eyebrow="Start here"
+              eyebrow="Contact Info"
               title="A direct line to the team."
-              copy="Send a short note with your goals, timeline, and current stack if you have one."
+              copy="Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we're here to help you get started."
             />
             <div className="mt-10 space-y-4">
               {contactItems.map((item) => (
@@ -162,8 +194,8 @@ export default function ContactPage() {
             {/* Status messages */}
             {status === "success" && (
               <p className="mt-4 rounded-[8px] bg-green-500/15 px-4 py-3 text-sm font-semibold text-green-400">
-                ✅ Thanks! Your inquiry has been sent. We&apos;ll get back to you
-                within one business day.
+                ✅ Thanks! Your inquiry has been sent. We&apos;ll get back to
+                you within one business day.
               </p>
             )}
             {status === "error" && (

@@ -96,6 +96,9 @@ import {
   Laptop,
   Radar,
   Wrench,
+  CheckCircle,
+  RefreshCw,
+  PlayCircle,
 } from "lucide-react";
 import { enrichServiceData } from "./service-section-data.js";
 
@@ -202,6 +205,9 @@ export const iconMap = {
   Laptop,
   Radar,
   Wrench,
+  CheckCircle,
+  RefreshCw,
+  PlayCircle,
 };
 
 /**
@@ -1025,7 +1031,7 @@ export const mainServicesData = {
   // (mainServiceData.machineLearningDevelopmentServices). Keep sub-service
   // slugs in sync with that file or the Explore cards 404.
   "machine-learning-development-services": {
-    title: "Machine Learning Development Services",
+    title: "Machine Learning Development",
     slug: "machine-learning-development-services",
     icon: "BrainCircuit",
     tagline: "Machine Learning Services",
@@ -1759,46 +1765,111 @@ export const mainServicesData = {
     ],
   },
 
-  // 11. TESTING & QA
-  "testing-and-qa": {
-    title: "Testing & QA",
+  // QA TESTING SERVICES
+  "qa-testing-services": {
+    title: "QA Testing Services",
+    slug: "qa-testing-services",
     icon: "TestTube",
-    slug: "testing-and-qa",
-    tagline: "Software Excellence",
-    description: "Comprehensive QA and testing strategies.",
-    heroBadge: "500+ Projects",
+    tagline: "QA Testing Services",
+    description:
+      "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers.",
+    heroBadge: "500+ Projects Tested",
     heroImage:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
     subServices: [
       {
-        title: "QA & Software Testing",
-        slug: "qa-software-testing",
-        description: "QA strategies.",
-        icon: "TestTube",
+        title: "Manual QA Testing Services",
+        slug: "manual-qa-testing",
+        description: "Human testers catch what scripts can't.",
+        icon: "Search",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Automated Testing",
-        slug: "automated-testing",
-        description: "Fast releases.",
+        title: "Automated QA Testing & Test Automation Services",
+        slug: "automated-qa-testing",
+        description: "Reusable test scripts for frequent releases.",
         icon: "Bot",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Performance Testing",
+        title: "Web Application Testing Services",
+        slug: "web-application-testing",
+        description: "Cross-browser, cross-device testing.",
+        icon: "Globe",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Mobile App Testing Services",
+        slug: "mobile-app-testing",
+        description: "Real device testing for iOS and Android.",
+        icon: "Smartphone",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "API Testing Services",
+        slug: "api-testing",
+        description: "Validate every endpoint and response.",
+        icon: "Workflow",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Performance Testing Services",
         slug: "performance-testing",
-        description: "System limits.",
+        description: "Find bottlenecks before users do.",
         icon: "Zap",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Bug Fixing",
-        slug: "bug-fixing",
-        description: "Issue resolution.",
-        icon: "Settings",
+        title: "Security Testing Services",
+        slug: "security-testing",
+        description: "Find vulnerabilities before attackers do.",
+        icon: "Shield",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Functional Testing Services",
+        slug: "functional-testing",
+        description: "Verify every feature works as intended.",
+        icon: "CheckCircle",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Regression Testing Services",
+        slug: "regression-testing",
+        description: "Protect existing features from breaking.",
+        icon: "RefreshCw",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "End-to-End Testing Services",
+        slug: "end-to-end-testing",
+        description: "Test complete workflows, not just features.",
+        icon: "PlayCircle",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "QA Consulting Services",
+        slug: "qa-consulting",
+        description: "A practical roadmap to better QA.",
+        icon: "Compass",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Enterprise QA Testing Services",
+        slug: "enterprise-qa-testing",
+        description: "Dedicated QA teams for complex systems.",
+        icon: "Building2",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },

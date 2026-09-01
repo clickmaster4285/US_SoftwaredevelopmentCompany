@@ -3707,23 +3707,23 @@ export const mainServiceData = {
   },
 
   // ============================================
-  // TESTING & QA SERVICE
+  // QA TESTING SERVICES - NEW
   // ============================================
-  testingAndQa: {
+  qaTestingServices: {
     // Meta data
-    metaTitle: "Testing & QA Services Company USA | Clickmasters",
-    metaDescription: "Get expert testing and QA services from Clickmasters. We provide comprehensive software testing, automated testing, performance testing, and bug fixing services. Ensure quality and reliability.",
-    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/testing-and-qa",
-    slug: "testing-and-qa",
+    metaTitle: "QA Testing Services Company | ClickMasters",
+    metaDescription: "Leading QA testing services company in the USA offering manual, automation, and performance testing solutions. Get a free QA consultation and quote today!",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/qa-testing-services",
+    slug: "qa-testing-services",
 
     // Hero Section
-    title: "Testing & QA Services That Ensure Software Excellence",
+    title: "QA Testing Services That Catch Bugs Before Your Customers Do",
     icon: "TestTube",
-    tagline: "Testing & QA Services",
-    description: "Clickmasters provides comprehensive testing and QA services to ensure your software meets the highest standards of quality, performance, and reliability. Our expert QA team uses industry-leading tools and methodologies to catch bugs, optimize performance, and deliver flawless user experiences.",
+    tagline: "QA Testing Services",
+    description: "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers. As a trusted software testing company, we find bugs, security gaps, and performance issues before they ever reach your users, so your product works the first time and every time. Whether you need one round of manual testing or a full-time automation testing partner, our QA testing company is built to fit your release schedule, not slow it down.",
     heroBadge: "500+ Projects Tested",
     heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-
+    
     // Hero Stats
     stats: [
       { value: "500+", label: "Projects Tested" },
@@ -3731,231 +3731,379 @@ export const mainServiceData = {
       { value: "24/7", label: "Testing Support" },
       { value: "<1 day", label: "Critical Bug Response" },
     ],
-
+    
     // Trust Section Data
     trustSection: {
-      title: "A Testing & QA Company You Can Trust",
-      description: "Clickmasters is a trusted testing and QA company that helps businesses across the USA deliver high-quality software. Our QA specialists use proven testing methodologies, automated tools, and manual testing strategies to ensure your application performs flawlessly in production.",
+      title: "A QA Testing Company Built Around Your Release Schedule",
+      description: "ClickMasters is a US-focused QA testing services company built for teams that can't afford to ship broken software. We are not a testing checklist factory. We are a hands-on software QA company that acts like part of your team — writing test plans around your product, not a generic template. A single bug in production can cost more than the fix itself. It costs user trust, bad reviews, and support tickets that pull your developers away from building new features. That's why our QA and testing services start with understanding how your users actually use your product, then build a testing strategy around real-world scenarios, not just a checkbox exercise. We work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
       points: [
-        "500+ software projects tested across industries",
-        "Comprehensive manual and automated testing strategies",
-        "Experienced QA specialists using industry-leading tools",
-        "Performance and security testing included in every engagement",
-        "Clear bug reporting and tracking with quick turnaround",
+        "ISTQB-aligned testers with real production testing experience",
+        "Clear, easy-to-read bug reports — no confusing technical jargon",
+        "Support for Agile, Scrum, and CI/CD-integrated testing workflows",
+        "Flexible engagement: one-time testing, ongoing QA, or a dedicated QA team",
       ],
-      closingText: "Whether you need a quick bug fix or a complete QA strategy for your new application, our testing and QA services are designed to catch issues before they reach your users.",
+      closingText: "We work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
     },
-
+    
     // Features/Services List
     features: [
       {
-        icon: "TestTube",
-        title: "QA & Software Testing",
-        description: "Comprehensive quality assurance strategies including manual testing, test case design, and bug reporting to ensure your software meets all requirements.",
+        icon: "Search",
+        title: "Manual QA Testing Services",
+        description: "Some bugs only a human eye can catch. Our manual QA testing services use real testers to explore your app the way real users do, catching usability issues and edge cases that automated scripts often miss.",
       },
       {
         icon: "Bot",
-        title: "Automated Testing",
-        description: "Fast, reliable automated testing solutions that integrate with your CI/CD pipeline, catching regressions early and speeding up release cycles.",
+        title: "Automated QA Testing & Test Automation Services",
+        description: "For products that release often, our automation testing company builds reusable test scripts that run fast, catch regressions early, and plug directly into your CI/CD pipeline.",
+      },
+      {
+        icon: "Globe",
+        title: "Web Application Testing Services",
+        description: "We test your website or web app across browsers, screen sizes, and devices to make sure every user gets a smooth, working experience, no matter how they access your site.",
+      },
+      {
+        icon: "Smartphone",
+        title: "Mobile App Testing Services",
+        description: "Our mobile app testing services cover iOS and Android apps across real devices and operating system versions, catching crashes, layout issues, and performance problems before launch.",
+      },
+      {
+        icon: "Workflow",
+        title: "API Testing Services",
+        description: "APIs are the backbone of modern software. Our API testing services check that your endpoints return the right data, handle errors correctly, and stay stable under real traffic.",
       },
       {
         icon: "Zap",
-        title: "Performance Testing",
-        description: "System performance testing including load testing, stress testing, and scalability analysis to ensure your application handles real-world traffic.",
+        title: "Performance Testing Services",
+        description: "We simulate real user load to see how your application holds up under pressure. Our performance testing services catch slowdowns and crashes before your busiest day exposes them.",
       },
       {
-        icon: "Settings",
-        title: "Bug Fixing",
-        description: "Quick and efficient bug resolution with detailed root cause analysis, ensuring issues are fixed properly and don't reoccur.",
+        icon: "Shield",
+        title: "Security Testing Services",
+        description: "Our security testing services check your application for common vulnerabilities, weak access controls, and data exposure risks, helping you fix issues before attackers find them.",
+      },
+      {
+        icon: "CheckCircle",
+        title: "Functional Testing Services",
+        description: "We verify that every feature works exactly the way it's supposed to. Our functional testing services confirm your software matches your requirements, button by button, flow by flow.",
+      },
+      {
+        icon: "RefreshCw",
+        title: "Regression Testing Services",
+        description: "New code shouldn't break old features. Our regression testing services re-check existing functionality after every update, so new releases don't quietly break what already worked.",
+      },
+      {
+        icon: "PlayCircle",
+        title: "End-to-End Testing Services",
+        description: "We test complete user journeys from start to finish, not just isolated features, so you know your entire workflow works the way a real customer would experience it.",
+      },
+      {
+        icon: "Compass",
+        title: "QA Consulting Services",
+        description: "Not sure where your QA process is falling short? Our QA consulting services review your current testing approach and build a practical roadmap to improve coverage, speed, and release confidence.",
+      },
+      {
+        icon: "Building2",
+        title: "Enterprise QA Testing Services",
+        description: "Large, complex systems need a structured approach. Our enterprise QA testing services provide dedicated testing teams, detailed reporting, and processes built to scale with your organization.",
       },
     ],
-
+    
     // Trusted Clients
     trustedClients: [
       { name: "TechCorp", industry: "Technology", icon: "Cpu" },
-      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
       { name: "FinTrust", industry: "Finance", icon: "Coins" },
-      { name: "HealthPlus", industry: "Healthcare", icon: "Stethoscope" },
+      { name: "HealthPlus", industry: "Healthcare", icon: "Heart" },
       { name: "EduSmart", industry: "Education", icon: "GraduationCap" },
+      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
     ],
-
+    
     // Benefits Section Data
     benefits: [
-      "Higher quality software with fewer production bugs",
-      "Faster release cycles with automated testing integration",
-      "Better user experience through thorough UX and functionality testing",
-      "Reduced long-term costs by catching issues early",
-      "Comprehensive test coverage across all platforms and devices",
-      "Clear documentation and reporting for every test cycle",
+      "Fewer Bugs in Production — Catching issues before launch means fewer emergency fixes after.",
+      "Faster Releases — Automated testing shortens the time between 'code complete' and 'ready to ship.'",
+      "Lower Development Costs — Fixing a bug before launch costs far less than fixing it after users find it.",
+      "Better User Experience — Thorough testing means fewer crashes, errors, and frustrated customers.",
+      "Stronger Team Confidence — Your developers can ship faster when they trust the safety net behind them.",
+      "Reduced Business Risk — Security and performance testing protect your reputation before problems go public.",
     ],
-
+    
     // Why Choose Us Data
     whyChooseUs: {
-      title: "Why Choose Clickmasters for Testing & QA Services",
-      description: "Choosing the right testing and QA company is crucial for delivering high-quality software. Here's what makes Clickmasters different:",
+      title: "Why Choose ClickMasters for QA Testing Services",
+      description: "Choosing the right QA testing services company is about more than just tools and certifications. Here's what makes ClickMasters different:",
       reasons: [
         {
-          title: "Comprehensive testing strategies",
-          description: "We combine manual and automated testing to cover every aspect of your application.",
+          title: "Real Testers, Not Just Scripts",
+          description: "Our team combines manual and automated testing, so nothing slips through the cracks — scripts catch what's repeatable, and human testers catch what scripts can't.",
         },
         {
-          title: "Experienced QA team",
-          description: "Our QA specialists have years of experience testing complex enterprise applications.",
+          title: "Clear, Honest Communication",
+          description: "You get straightforward bug reports and status updates, not confusing jargon or vague 'in progress' messages.",
         },
         {
-          title: "Fast turnaround",
-          description: "Quick bug detection and reporting to keep your development timeline on track.",
+          title: "Flexible Engagement Models",
+          description: "Whether you need a single testing sprint or an embedded team for the long run, our QA services company scales up or down with your project.",
         },
         {
-          title: "Modern tooling",
-          description: "We use industry-leading testing tools and frameworks for reliable, scalable testing.",
+          title: "Fast Turnaround",
+          description: "We understand release deadlines. Our QA testing process is built to keep pace with your development speed, not slow it down.",
         },
         {
-          title: "Clear communication",
-          description: "Detailed bug reports and regular updates keep everyone aligned on quality status.",
+          title: "Industry and Domain Experience",
+          description: "From healthcare to fintech to eCommerce, our testers understand the compliance and business rules specific to your industry.",
         },
       ],
     },
-
+    
     // SubServices
     subServices: [
       {
-        title: "QA & Software Testing",
-        slug: "qa-software-testing",
-        description: "Comprehensive QA strategies including manual testing, test case design, and bug reporting to ensure your software meets all requirements.",
-        icon: "TestTube",
+        title: "Manual QA Testing Services",
+        slug: "manual-qa-testing",
+        description: "Some bugs only a human eye can catch. Our manual QA testing services use real testers to explore your app the way real users do, catching usability issues and edge cases that automated scripts often miss.",
+        icon: "Search",
         heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "QA & Software Testing Services | Clickmasters",
-        metaDescription: "Comprehensive QA and software testing services to ensure your application meets all requirements and quality standards.",
-        lead: "Quality assurance that catches issues before users do.",
-        highlights: ["Manual testing", "Test case design", "Bug reporting", "Quality standards"],
+        metaTitle: "Manual QA Testing Services | ClickMasters",
+        metaDescription: "Manual QA testing services that catch usability issues and edge cases automated scripts miss.",
+        lead: "Human testers that catch what scripts can't.",
+        highlights: ["Real user exploration", "Usability testing", "Edge case detection", "No script limitations"],
       },
       {
-        title: "Automated Testing",
-        slug: "automated-testing",
-        description: "Fast, reliable automated testing solutions that integrate with your CI/CD pipeline, catching regressions early and speeding up release cycles.",
+        title: "Automated QA Testing & Test Automation Services",
+        slug: "automated-qa-testing",
+        description: "For products that release often, our automation testing company builds reusable test scripts that run fast, catch regressions early, and plug directly into your CI/CD pipeline.",
         icon: "Bot",
         heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Automated Testing Services | Clickmasters",
-        metaDescription: "Automated testing solutions that integrate with CI/CD pipelines for faster, more reliable releases.",
-        lead: "Automated tests that catch regressions early.",
-        highlights: ["CI/CD integration", "Regression testing", "Fast execution", "Scalable test suites"],
+        metaTitle: "Automated QA Testing Services | ClickMasters",
+        metaDescription: "Automated QA testing and test automation services that catch regressions early and integrate with CI/CD.",
+        lead: "Fast, reusable test scripts for frequent releases.",
+        highlights: ["CI/CD integration", "Regression testing", "Fast execution", "Reusable scripts"],
       },
       {
-        title: "Performance Testing",
+        title: "Web Application Testing Services",
+        slug: "web-application-testing",
+        description: "We test your website or web app across browsers, screen sizes, and devices to make sure every user gets a smooth, working experience, no matter how they access your site.",
+        icon: "Globe",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Web Application Testing Services | ClickMasters",
+        metaDescription: "Web application testing services across browsers, screen sizes, and devices for a smooth user experience.",
+        lead: "Cross-browser, cross-device testing.",
+        highlights: ["Cross-browser testing", "Responsive design checks", "Device compatibility", "User experience validation"],
+      },
+      {
+        title: "Mobile App Testing Services",
+        slug: "mobile-app-testing",
+        description: "Our mobile app testing services cover iOS and Android apps across real devices and operating system versions, catching crashes, layout issues, and performance problems before launch.",
+        icon: "Smartphone",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Mobile App Testing Services | ClickMasters",
+        metaDescription: "Mobile app testing services for iOS and Android across real devices and OS versions.",
+        lead: "Real device testing for iOS and Android.",
+        highlights: ["Real device testing", "iOS & Android coverage", "OS version compatibility", "Crash detection"],
+      },
+      {
+        title: "API Testing Services",
+        slug: "api-testing",
+        description: "APIs are the backbone of modern software. Our API testing services check that your endpoints return the right data, handle errors correctly, and stay stable under real traffic.",
+        icon: "Workflow",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "API Testing Services | ClickMasters",
+        metaDescription: "API testing services that validate endpoints, error handling, and stability under real traffic.",
+        lead: "Validate every endpoint and response.",
+        highlights: ["Endpoint validation", "Error handling checks", "Load testing", "Schema validation"],
+      },
+      {
+        title: "Performance Testing Services",
         slug: "performance-testing",
-        description: "System performance testing including load testing, stress testing, and scalability analysis to ensure your application handles real-world traffic.",
+        description: "We simulate real user load to see how your application holds up under pressure. Our performance testing services catch slowdowns and crashes before your busiest day exposes them.",
         icon: "Zap",
         heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Performance Testing Services | Clickmasters",
-        metaDescription: "Performance testing including load testing, stress testing, and scalability analysis to ensure real-world readiness.",
-        lead: "Ensure your app handles real-world traffic.",
-        highlights: ["Load testing", "Stress testing", "Scalability analysis", "Performance optimization"],
+        metaTitle: "Performance Testing Services | ClickMasters",
+        metaDescription: "Performance testing services that simulate real user load and catch slowdowns before launch.",
+        lead: "Find bottlenecks before users do.",
+        highlights: ["Load testing", "Stress testing", "Bottleneck identification", "Scalability checks"],
       },
       {
-        title: "Bug Fixing",
-        slug: "bug-fixing",
-        description: "Quick and efficient bug resolution with detailed root cause analysis, ensuring issues are fixed properly and don't reoccur.",
-        icon: "Settings",
+        title: "Security Testing Services",
+        slug: "security-testing",
+        description: "Our security testing services check your application for common vulnerabilities, weak access controls, and data exposure risks, helping you fix issues before attackers find them.",
+        icon: "Shield",
         heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Bug Fixing Services | Clickmasters",
-        metaDescription: "Quick and efficient bug resolution with root cause analysis to ensure issues are fixed properly.",
-        lead: "Fast bug resolution with proper fixes.",
-        highlights: ["Root cause analysis", "Quick turnaround", "Proper fixes", "Prevention strategies"],
+        metaTitle: "Security Testing Services | ClickMasters",
+        metaDescription: "Security testing services that find vulnerabilities, weak access controls, and data exposure risks.",
+        lead: "Find vulnerabilities before attackers do.",
+        highlights: ["Vulnerability scanning", "Access control testing", "Data exposure checks", "OWASP standards"],
+      },
+      {
+        title: "Functional Testing Services",
+        slug: "functional-testing",
+        description: "We verify that every feature works exactly the way it's supposed to. Our functional testing services confirm your software matches your requirements, button by button, flow by flow.",
+        icon: "CheckCircle",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Functional Testing Services | ClickMasters",
+        metaDescription: "Functional testing services that verify every feature matches requirements, button by button, flow by flow.",
+        lead: "Verify every feature works as intended.",
+        highlights: ["Feature validation", "Requirements matching", "UI/UX verification", "Business logic testing"],
+      },
+      {
+        title: "Regression Testing Services",
+        slug: "regression-testing",
+        description: "New code shouldn't break old features. Our regression testing services re-check existing functionality after every update, so new releases don't quietly break what already worked.",
+        icon: "RefreshCw",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Regression Testing Services | ClickMasters",
+        metaDescription: "Regression testing services that re-check existing functionality after updates to prevent breaking changes.",
+        lead: "Protect existing features from breaking.",
+        highlights: ["Existing feature validation", "Update verification", "Automated regression suites", "Change impact analysis"],
+      },
+      {
+        title: "End-to-End Testing Services",
+        slug: "end-to-end-testing",
+        description: "We test complete user journeys from start to finish, not just isolated features, so you know your entire workflow works the way a real customer would experience it.",
+        icon: "PlayCircle",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "End-to-End Testing Services | ClickMasters",
+        metaDescription: "End-to-end testing services that validate complete user journeys from start to finish.",
+        lead: "Test complete workflows, not just features.",
+        highlights: ["User journey testing", "Complete workflow validation", "Real-world scenarios", "Cross-platform coverage"],
+      },
+      {
+        title: "QA Consulting Services",
+        slug: "qa-consulting",
+        description: "Not sure where your QA process is falling short? Our QA consulting services review your current testing approach and build a practical roadmap to improve coverage, speed, and release confidence.",
+        icon: "Compass",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "QA Consulting Services | ClickMasters",
+        metaDescription: "QA consulting services that review your testing approach and build a practical roadmap for improvement.",
+        lead: "A practical roadmap to better QA.",
+        highlights: ["Process assessment", "Coverage improvement", "Speed optimization", "Release confidence"],
+      },
+      {
+        title: "Enterprise QA Testing Services",
+        slug: "enterprise-qa-testing",
+        description: "Large, complex systems need a structured approach. Our enterprise QA testing services provide dedicated testing teams, detailed reporting, and processes built to scale with your organization.",
+        icon: "Building2",
+        heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Enterprise QA Testing Services | ClickMasters",
+        metaDescription: "Enterprise QA testing services with dedicated teams, detailed reporting, and scalable processes.",
+        lead: "Dedicated QA teams for complex systems.",
+        highlights: ["Dedicated testing teams", "Detailed reporting", "Scalable processes", "Enterprise-grade tools"],
       },
     ],
-
+    
     // Technology Stack Data
     techStack: {
-      title: "Testing Tools & Technologies We Use",
-      description: "We use industry-leading testing tools and frameworks to ensure comprehensive coverage and reliable results.",
+      title: "Technology Behind Our QA and Testing Services",
+      description: "Our software testing services are powered by proven, industry-standard tools and frameworks. This stack allows our QA testing company to deliver fast, reliable results that fit directly into your existing development workflow.",
       groups: [
         {
-          label: "Automated Testing",
-          items: ["Selenium", "Cypress", "Playwright", "Jest"],
-        },
-        {
-          label: "Performance Testing",
-          items: ["JMeter", "LoadRunner", "Gatling", "k6"],
+          label: "Automation Frameworks",
+          items: ["Selenium", "Cypress", "Playwright", "Appium"],
         },
         {
           label: "API Testing",
-          items: ["Postman", "REST Assured", "Swagger", "SoapUI"],
+          items: ["Postman", "RestAssured", "SoapUI"],
         },
         {
-          label: "Bug Tracking",
-          items: ["Jira", "Bugzilla", "GitHub Issues", "Linear"],
+          label: "Performance Testing",
+          items: ["JMeter", "LoadRunner", "Gatling"],
+        },
+        {
+          label: "Security Testing",
+          items: ["OWASP ZAP", "Burp Suite"],
+        },
+        {
+          label: "Mobile Testing",
+          items: ["BrowserStack", "Sauce Labs", "Firebase Test Lab"],
+        },
+        {
+          label: "CI/CD Integration",
+          items: ["Jenkins", "GitHub Actions", "GitLab CI", "Azure DevOps"],
+        },
+        {
+          label: "Bug Tracking & Test Management",
+          items: ["Jira", "TestRail", "Zephyr"],
         },
       ],
     },
-
+    
     // Client Success Stories (Testimonials)
     testimonials: [
       {
-        quote: "Clickmasters' QA team caught critical bugs we missed during development. Their thorough testing saved us from a potentially disastrous launch.",
-        author: "Michael Carter",
-        title: "Engineering Director",
-        company: "TechCorp",
-        location: "USA",
-      },
-      {
-        quote: "The automated testing suite Clickmasters built for us reduced our release cycle from two weeks to three days. Excellent work.",
-        author: "Sarah Mitchell",
-        title: "CTO",
-        company: "FinTrust",
-        location: "USA",
-      },
-      {
-        quote: "Their performance testing identified bottlenecks we didn't know existed. After optimization, our app load time improved by 60%.",
-        author: "James Wilson",
+        quote: "ClickMasters caught bugs our own team missed for months. Our release process is faster now, and we ship with a lot more confidence.",
+        author: "Rachel Turner",
         title: "Product Manager",
-        company: "HealthPlus",
+        company: "SaaS Platform",
+        location: "USA",
+      },
+      {
+        quote: "Their automation testing team saved us hours of manual regression work every single sprint. It paid for itself within the first month.",
+        author: "Michael Brooks",
+        title: "CTO",
+        company: "eCommerce Company",
+        location: "USA",
+      },
+      {
+        quote: "They found a payment bug three days before our biggest sale of the year. That one catch alone was worth the entire engagement.",
+        author: "Priya Nair",
+        title: "Founder",
+        company: "Online Retail Business",
+        location: "USA",
+      },
+      {
+        quote: "Clear bug reports, fast turnaround, and testers who actually understood our product. Exactly what we needed before our app store launch.",
+        author: "Kevin Walsh",
+        title: "Head of Engineering",
+        company: "Mobile App Company",
         location: "USA",
       },
     ],
-
+    
     // Process Steps
     processSteps: [
       {
-        title: "Test Planning",
-        description: "We analyze your application and create a comprehensive test plan covering all functional, performance, and security requirements.",
+        title: "Requirement Analysis & Test Planning",
+        description: "We review your product, requirements, and release timeline to build a test plan that covers what matters most, without wasting time on low-risk areas.",
       },
       {
-        title: "Test Execution",
-        description: "Our QA team executes manual and automated tests across all platforms and devices, documenting every finding.",
+        title: "Test Case Design & Environment Setup",
+        description: "Our team writes detailed test cases and sets up the right testing environment, whether that's manual test scripts, automation frameworks, or both.",
       },
       {
-        title: "Bug Reporting & Fixing",
-        description: "We provide detailed bug reports with reproduction steps and work with your team to ensure proper fixes.",
+        title: "Test Execution & Bug Reporting",
+        description: "We run functional, automation, performance, and security tests, then deliver clear, prioritized bug reports your development team can act on immediately.",
       },
       {
-        title: "Regression & Release",
-        description: "After fixes, we run full regression testing to ensure no new issues were introduced and your release is ready.",
+        title: "Retesting & Continuous QA Support",
+        description: "After fixes are made, we retest to confirm the issue is resolved and offer ongoing QA support for every future release.",
       },
     ],
-
+    
     // Industries Data
     industries: [
-      { name: "Technology & SaaS", description: "web applications, mobile apps, and enterprise software" },
-      { name: "Healthcare", description: "HIPAA-compliant applications and patient portals" },
-      { name: "Finance", description: "secure financial platforms and trading systems" },
-      { name: "E-commerce", description: "online stores and payment processing systems" },
-      { name: "Education", description: "learning management systems and educational platforms" },
-      { name: "Logistics", description: "tracking systems and fleet management platforms" },
+      { name: "Healthcare", description: "HIPAA-aware testing for patient-facing and clinical software" },
+      { name: "Finance & Fintech", description: "Secure, compliant testing for banking and payment platforms" },
+      { name: "Retail & eCommerce", description: "Checkout, payment, and load testing for high-traffic sites" },
+      { name: "SaaS & Technology", description: "Continuous testing built into fast release cycles" },
+      { name: "Logistics & Supply Chain", description: "Testing for real-time tracking and inventory systems" },
+      { name: "Insurance", description: "Testing for claims processing and policy management systems" },
+      { name: "Education", description: "Testing for learning platforms and student data systems" },
+      { name: "Real Estate", description: "Testing for listing platforms and transaction workflows" },
     ],
-
+    
     // Pricing
     pricing: [
       {
-        type: "QA Assessment",
+        type: "QA Testing Sprint",
         investment: "Custom quote",
         timeline: "1-2 weeks",
-        bestFor: "Initial quality assessment and test strategy",
+        bestFor: "One-time testing and bug detection",
         features: [
-          "Current QA assessment",
-          "Test strategy development",
-          "Tool recommendations",
-          "Process improvement plan",
+          "Manual testing",
+          "Bug reporting",
+          "Priority fixes",
+          "Test summary",
         ],
       },
       {
@@ -3982,677 +4130,78 @@ export const mainServiceData = {
           "Performance monitoring",
         ],
       },
-    ],
-
-    // FAQs
-    faqs: [
       {
-        question: "What is QA and software testing?",
-        answer: "QA (Quality Assurance) and software testing are processes that ensure your application meets quality standards, functions correctly, and provides a good user experience. This includes functional testing, performance testing, security testing, and more.",
-      },
-      {
-        question: "Why is automated testing important?",
-        answer: "Automated testing speeds up release cycles, catches regressions early, and provides consistent, reliable results. It's especially valuable for applications that require frequent updates and deployments.",
-      },
-      {
-        question: "How much do testing and QA services cost?",
-        answer: "Cost depends on the scope of testing needed. A basic QA assessment starts at a few thousand dollars, while comprehensive automated testing setups and ongoing QA support are scoped based on your application complexity and testing requirements.",
-      },
-      {
-        question: "What types of testing do you offer?",
-        answer: "We offer functional testing, automated testing, performance testing, security testing, mobile testing, and regression testing to ensure comprehensive coverage of your application.",
-      },
-      {
-        question: "How long does a testing cycle take?",
-        answer: "A basic QA assessment takes 1-2 weeks. Automated test suite setup takes 2-4 weeks. Ongoing testing is integrated into your development cycle with results available within hours of each build.",
-      },
-      {
-        question: "Do you provide bug fixing services?",
-        answer: "Yes. We not only identify bugs but also work with your team to fix them, providing detailed root cause analysis and verification testing to ensure issues are properly resolved.",
-      },
-    ],
-  },
-
-  // ============================================
-  // SUPPORT & OUTSOURCING SERVICE
-  // ============================================
-  supportAndOutsourcing: {
-    // Meta data
-    metaTitle: "Support & Outsourcing Services | Clickmasters",
-    metaDescription: "Get reliable support and outsourcing services from Clickmasters. We offer maintenance & support, dedicated dev teams, staff augmentation, and technical support. Scale your team today.",
-    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/support-and-outsourcing",
-    slug: "support-and-outsourcing",
-
-    // Hero Section
-    title: "Support & Outsourcing Services That Scale Your Team",
-    icon: "Headphones",
-    tagline: "Support & Outsourcing Services",
-    description: "Clickmasters provides reliable support and outsourcing services to help businesses scale their development capacity. From ongoing maintenance and support to dedicated development teams and staff augmentation, we give you the engineering resources you need without the overhead of hiring and training.",
-    heroBadge: "200+ Support Contracts",
-    heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
-
-    // Hero Stats
-    stats: [
-      { value: "200+", label: "Support Contracts" },
-      { value: "50+", label: "Dedicated Developers" },
-      { value: "24/7", label: "Support Availability" },
-      { value: "98%", label: "Client Retention" },
-    ],
-
-    // Trust Section Data
-    trustSection: {
-      title: "A Support & Outsourcing Partner You Can Trust",
-      description: "Clickmasters is a trusted support and outsourcing partner for businesses across the USA. We provide flexible engagement models — from maintenance and support contracts to fully dedicated development teams — so you can scale your engineering capacity on demand.",
-      points: [
-        "200+ active support and outsourcing contracts",
-        "Flexible engagement models from hourly support to dedicated teams",
-        "Senior engineers who integrate with your existing tools and processes",
-        "Transparent communication and regular progress reporting",
-        "Secure infrastructure and compliance with data protection standards",
-      ],
-      closingText: "Whether you need a few extra hands for a sprint or a complete team to manage your product, our support and outsourcing services give you the flexibility to grow without the risk of over-hiring.",
-    },
-
-    // Features/Services List
-    features: [
-      {
-        icon: "Settings",
-        title: "Maintenance & Support",
-        description: "Ongoing product support covering bug fixes, security patches, performance monitoring, and feature updates to keep your application running smoothly.",
-      },
-      {
-        icon: "Users2",
-        title: "Dedicated Dev Teams",
-        description: "Engineering continuity with a dedicated team that understands your product, your codebase, and your business goals — no handoffs or knowledge loss.",
-      },
-      {
-        icon: "UserCheck",
-        title: "Staff Augmentation",
-        description: "Scale your team with experienced developers who integrate seamlessly with your existing processes, tools, and sprint cadence.",
-      },
-      {
-        icon: "Headset",
-        title: "Technical Support",
-        description: "Reliable technical support for your team and your users, with clear escalation paths and quick response times when issues arise.",
-      },
-    ],
-
-    // Trusted Clients
-    trustedClients: [
-      { name: "TechCorp", industry: "Technology", icon: "Cpu" },
-      { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
-      { name: "FinTrust", industry: "Finance", icon: "Coins" },
-      { name: "HealthPlus", industry: "Healthcare", icon: "Stethoscope" },
-      { name: "EduSmart", industry: "Education", icon: "GraduationCap" },
-    ],
-
-    // Benefits Section Data
-    benefits: [
-      "Instant access to experienced engineers without lengthy hiring processes",
-      "Flexible scaling — add or reduce capacity based on your needs",
-      "Cost-effective alternative to full-time hiring and training",
-      "Seamless integration with your existing tools and workflows",
-      "Consistent team members who learn your product over time",
-      "24/7 support coverage for critical issues and production incidents",
-    ],
-
-    // Why Choose Us Data
-    whyChooseUs: {
-      title: "Why Choose Clickmasters for Support & Outsourcing",
-      description: "Choosing the right support and outsourcing partner can make or break your product's long-term success. Here's why businesses trust Clickmasters:",
-      reasons: [
-        {
-          title: "Experienced engineers",
-          description: "Our team consists of senior developers who can jump into your codebase quickly and contribute from day one.",
-        },
-        {
-          title: "Flexible engagement",
-          description: "From part-time support to full dedicated teams, we scale to match your needs and budget.",
-        },
-        {
-          title: "Proven processes",
-          description: "We follow agile methodologies and use modern collaboration tools to stay aligned with your team.",
-        },
-        {
-          title: "Transparent communication",
-          description: "Regular standups, progress reports, and direct access to your team keep everyone on the same page.",
-        },
-        {
-          title: "Long-term partnership",
-          description: "We build lasting relationships with our clients, becoming a true extension of your team.",
-        },
-      ],
-    },
-
-    // SubServices
-    subServices: [
-      {
-        title: "Maintenance & Support",
-        slug: "maintenance-support",
-        description: "Ongoing product support covering bug fixes, security patches, performance monitoring, and feature updates to keep your application running smoothly.",
-        icon: "Settings",
-        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Maintenance & Support Services | Clickmasters",
-        metaDescription: "Ongoing maintenance and support services to keep your application running smoothly with quick bug fixes and updates.",
-        lead: "Keep your product running smoothly.",
-        highlights: ["Bug fixes", "Security patches", "Performance monitoring", "Feature updates"],
-      },
-      {
-        title: "Dedicated Dev Teams",
-        slug: "dedicated-development-teams",
-        description: "Engineering continuity with a dedicated team that understands your product, your codebase, and your business goals — no handoffs or knowledge loss.",
-        icon: "Users2",
-        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Dedicated Development Teams | Clickmasters",
-        metaDescription: "Dedicated development teams that become a true extension of your team with deep product knowledge.",
-        lead: "A dedicated team that knows your product.",
-        highlights: ["Team continuity", "Product knowledge", "No handoffs", "Full integration"],
-      },
-      {
-        title: "Staff Augmentation",
-        slug: "staff-augmentation",
-        description: "Scale your team with experienced developers who integrate seamlessly with your existing processes, tools, and sprint cadence.",
-        icon: "UserCheck",
-        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Staff Augmentation Services | Clickmasters",
-        metaDescription: "Staff augmentation services that scale your team with experienced developers who integrate seamlessly.",
-        lead: "Scale your team on demand.",
-        highlights: ["Quick scaling", "Seamless integration", "Experienced developers", "Flexible terms"],
-      },
-      {
-        title: "Technical Support",
-        slug: "technical-support",
-        description: "Reliable technical support for your team and your users, with clear escalation paths and quick response times when issues arise.",
-        icon: "Headset",
-        heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Technical Support Services | Clickmasters",
-        metaDescription: "Reliable technical support with quick response times and clear escalation paths for critical issues.",
-        lead: "Fast, reliable technical support.",
-        highlights: ["Quick response", "Clear escalation", "User support", "Team support"],
-      },
-    ],
-
-    // Technology Stack Data
-    techStack: {
-      title: "Tools & Technologies We Work With",
-      description: "Our support and outsourcing teams are proficient in all modern development tools, platforms, and frameworks.",
-      groups: [
-        {
-          label: "Collaboration",
-          items: ["Slack", "Microsoft Teams", "Zoom", "Jira", "Confluence"],
-        },
-        {
-          label: "Development",
-          items: ["GitHub", "GitLab", "VS Code", "Docker", "Postman"],
-        },
-        {
-          label: "Cloud & Infrastructure",
-          items: ["AWS", "Azure", "Google Cloud", "Vercel", "Netlify"],
-        },
-        {
-          label: "Monitoring & Support",
-          items: ["Sentry", "Datadog", "New Relic", "PagerDuty", "Grafana"],
-        },
-      ],
-    },
-
-    // Client Success Stories (Testimonials)
-    testimonials: [
-      {
-        quote: "Clickmasters' dedicated team has been instrumental in our product's success. They feel like a true extension of our company, not an outsourced vendor.",
-        author: "Michael Brown",
-        title: "VP of Engineering",
-        company: "TechCorp",
-        location: "USA",
-      },
-      {
-        quote: "We needed to scale our development capacity quickly for a major product launch. Clickmasters provided excellent developers who integrated seamlessly with our team.",
-        author: "Sarah Chen",
-        title: "Product Director",
-        company: "FinTrust",
-        location: "USA",
-      },
-      {
-        quote: "Their maintenance and support services have been outstanding. Issues are resolved quickly, and their team is always available when we need them.",
-        author: "David Park",
-        title: "CTO",
-        company: "HealthPlus",
-        location: "USA",
-      },
-    ],
-
-    // Process Steps
-    processSteps: [
-      {
-        title: "Needs Assessment",
-        description: "We learn about your product, your current team, and your specific needs to recommend the right engagement model.",
-      },
-      {
-        title: "Team Matching",
-        description: "We select engineers with the right skills and experience to integrate seamlessly with your existing team and processes.",
-      },
-      {
-        title: "Onboarding & Integration",
-        description: "We handle onboarding, tool access, and knowledge transfer so your new team members can contribute from day one.",
-      },
-      {
-        title: "Ongoing Support",
-        description: "We provide continuous support, regular check-ins, and team adjustments as your needs evolve.",
-      },
-    ],
-
-    // Industries Data
-    industries: [
-      { name: "Technology & SaaS", description: "software products and cloud platforms" },
-      { name: "Healthcare", description: "HIPAA-compliant applications and patient systems" },
-      { name: "Finance", description: "secure financial platforms and trading systems" },
-      { name: "E-commerce", description: "online stores and marketplace platforms" },
-      { name: "Education", description: "learning management systems and EdTech" },
-      { name: "Logistics", description: "tracking and fleet management systems" },
-    ],
-
-    // Pricing
-    pricing: [
-      {
-        type: "Maintenance & Support",
-        investment: "Custom quote",
-        timeline: "Ongoing",
-        bestFor: "Ongoing product support and maintenance",
-        features: [
-          "Bug fixes & patches",
-          "Security updates",
-          "Performance monitoring",
-          "Priority support",
-        ],
-      },
-      {
-        type: "Dedicated Team",
-        investment: "Custom quote",
-        timeline: "Ongoing",
-        bestFor: "Full-time dedicated development resources",
-        features: [
-          "Dedicated developers",
-          "Project management",
-          "Code reviews",
-          "Full integration",
-        ],
-      },
-      {
-        type: "Staff Augmentation",
-        investment: "Custom quote",
-        timeline: "Flexible",
-        bestFor: "Scaling your existing team temporarily",
-        features: [
-          "Skilled developers",
-          "Flexible engagement",
-          "Quick onboarding",
-          "Tool integration",
-        ],
-      },
-    ],
-
-    // FAQs
-    faqs: [
-      {
-        question: "What are support and outsourcing services?",
-        answer: "Support and outsourcing services provide ongoing maintenance, technical support, and additional development resources for your software projects without the need to hire full-time employees.",
-      },
-      {
-        question: "How does staff augmentation work?",
-        answer: "Staff augmentation allows you to add experienced developers to your existing team on a flexible basis. Our engineers integrate with your processes, tools, and sprint cadence to extend your capacity.",
-      },
-      {
-        question: "What's the difference between dedicated teams and staff augmentation?",
-        answer: "Dedicated teams are self-contained groups that manage entire projects or product lines. Staff augmentation adds individual developers to your existing team to fill specific skill gaps or capacity needs.",
-      },
-      {
-        question: "How quickly can you provide developers?",
-        answer: "We can typically provide qualified developers within 1-2 weeks, depending on the specific skills and experience required for your project.",
-      },
-      {
-        question: "Do your developers work in our time zone?",
-        answer: "Yes. Our team operates across US time zones and can align their working hours with your team for real-time collaboration.",
-      },
-      {
-        question: "What happens if a team member leaves?",
-        answer: "We ensure knowledge transfer and provide a replacement with minimal disruption. Our dedicated teams are structured to avoid single points of failure.",
-      },
-    ],
-  },
-
-  // ============================================
-  // BLOCKCHAIN & WEB3 SERVICE
-  // ============================================
-  blockchainAndWeb3: {
-    // Meta data
-    metaTitle: "Blockchain & Web3 Development Services | Clickmasters",
-    metaDescription: "Get expert blockchain and Web3 development services from Clickmasters. We build DApps, smart contracts, NFT marketplaces, and crypto wallets. Get started today!",
-    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/blockchain-and-web3",
-    slug: "blockchain-and-web3",
-
-    // Hero Section
-    title: "Blockchain & Web3 Development Services",
-    icon: "Link2",
-    tagline: "Blockchain & Web3 Services",
-    description: "Clickmasters offers blockchain and Web3 development services that help businesses leverage decentralized technologies. From smart contract development to DApp platforms and NFT marketplaces, our blockchain developers build secure, scalable solutions on leading blockchain networks.",
-    heroBadge: "50+ Web3 Projects",
-    heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-
-    // Hero Stats
-    stats: [
-      { value: "50+", label: "Web3 Projects Delivered" },
-      { value: "10+", label: "Blockchain Networks Supported" },
-      { value: "100%", label: "Smart Contract Audits" },
-      { value: "24/7", label: "Support & Monitoring" },
-    ],
-
-    // Trust Section Data
-    trustSection: {
-      title: "A Blockchain & Web3 Development Company You Can Trust",
-      description: "Clickmasters is a blockchain and Web3 development company that helps businesses explore and implement decentralized technologies. Our blockchain developers specialize in smart contract development, DApp development, and Web3 infrastructure, delivering secure and scalable solutions.",
-      points: [
-        "50+ blockchain and Web3 projects delivered",
-        "Experienced blockchain developers across multiple networks",
-        "Secure smart contract development with thorough auditing",
-        "End-to-end DApp development from concept to deployment",
-        "Ongoing support and maintenance for deployed solutions",
-      ],
-      closingText: "Whether you're launching your first NFT marketplace or building enterprise blockchain solutions, our Web3 development services provide the expertise you need.",
-    },
-
-    // Features/Services List
-    features: [
-      {
-        icon: "Link2",
-        title: "Blockchain Development",
-        description: "Custom blockchain platforms and infrastructure designed for your specific use case, whether public, private, or hybrid.",
-      },
-      {
-        icon: "FileText",
-        title: "Smart Contract Development",
-        description: "Secure, audited smart contracts for Ethereum, Solana, and other leading blockchain networks.",
-      },
-      {
-        icon: "Globe2",
-        title: "DApp Development",
-        description: "Decentralized applications with seamless user experiences, connecting users to blockchain functionality.",
-      },
-      {
-        icon: "CreditCard",
-        title: "Crypto Wallets",
-        description: "Secure cryptocurrency wallet solutions for storing, managing, and transacting digital assets.",
-      },
-      {
-        icon: "Package",
-        title: "NFT Marketplaces",
-        description: "Custom NFT marketplace platforms for minting, buying, selling, and trading digital assets.",
-      },
-    ],
-
-    // Trusted Clients
-    trustedClients: [
-      { name: "CryptoFirst", industry: "DeFi", icon: "Coins" },
-      { name: "ArtBlock", industry: "NFT", icon: "Package" },
-      { name: "ChainPay", industry: "FinTech", icon: "CreditCard" },
-      { name: "MetaGames", industry: "Gaming", icon: "Gamepad2" },
-      { name: "BlockHealth", industry: "Healthcare", icon: "Heart" },
-    ],
-
-    // Benefits Section Data
-    benefits: [
-      "Secure, audited smart contracts that protect user assets",
-      "Decentralized solutions that reduce dependency on intermediaries",
-      "Transparent and immutable transaction records",
-      "Custom tokenomics and incentive structures",
-      "Seamless integration with existing systems and APIs",
-      "Ongoing support for protocol upgrades and maintenance",
-    ],
-
-    // Why Choose Us Data
-    whyChooseUs: {
-      title: "Why Choose Clickmasters for Blockchain & Web3 Development",
-      description: "Choosing the right blockchain development company is critical for the success of your Web3 project. Here's what makes Clickmasters the right choice:",
-      reasons: [
-        {
-          title: "Deep blockchain expertise",
-          description: "Our team has extensive experience across multiple blockchain networks and Web3 technologies.",
-        },
-        {
-          title: "Security-first approach",
-          description: "Every smart contract and DApp we build undergoes rigorous security auditing before deployment.",
-        },
-        {
-          title: "Full-stack capabilities",
-          description: "From smart contracts to front-end DApps, we handle every layer of your Web3 solution.",
-        },
-        {
-          title: "Clear communication",
-          description: "We explain complex blockchain concepts in plain language and keep you updated throughout development.",
-        },
-        {
-          title: "Post-launch support",
-          description: "We provide ongoing monitoring, upgrades, and support after your project goes live.",
-        },
-      ],
-    },
-
-    // SubServices
-    subServices: [
-      {
-        title: "Blockchain Development",
-        slug: "blockchain-development",
-        description: "Custom blockchain platforms and infrastructure designed for your specific use case.",
-        icon: "Link2",
-        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Blockchain Development Services | Clickmasters",
-        metaDescription: "Custom blockchain development services for public, private, and hybrid blockchain solutions.",
-        lead: "Custom blockchain platforms for your use case.",
-        highlights: ["Custom protocols", "Public/private chains", "Consensus mechanisms", "Network design"],
-      },
-      {
-        title: "Smart Contract Development",
-        slug: "smart-contract-development",
-        description: "Secure, audited smart contracts for Ethereum, Solana, and other leading blockchain networks.",
-        icon: "FileText",
-        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Smart Contract Development Services | Clickmasters",
-        metaDescription: "Secure smart contract development with thorough auditing for Ethereum, Solana, and other networks.",
-        lead: "Secure, audited smart contracts.",
-        highlights: ["Solidity & Rust", "Security auditing", "Gas optimization", "Multi-chain support"],
-      },
-      {
-        title: "DApp Development",
-        slug: "dapp-development",
-        description: "Decentralized applications with seamless user experiences, connecting users to blockchain functionality.",
-        icon: "Globe2",
-        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "DApp Development Services | Clickmasters",
-        metaDescription: "Decentralized application development with seamless UX connecting users to blockchain functionality.",
-        lead: "DApps with seamless user experiences.",
-        highlights: ["Web3 integration", "Wallet connectivity", "Responsive design", "Cross-platform"],
-      },
-      {
-        title: "Crypto Wallets",
-        slug: "crypto-wallet-development",
-        description: "Secure cryptocurrency wallet solutions for storing, managing, and transacting digital assets.",
-        icon: "CreditCard",
-        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Crypto Wallet Development | Clickmasters",
-        metaDescription: "Secure cryptocurrency wallet development for storing, managing, and transacting digital assets.",
-        lead: "Secure wallets for digital assets.",
-        highlights: ["Multi-currency support", "Biometric security", "Transaction history", "Cross-platform"],
-      },
-      {
-        title: "NFT Marketplaces",
-        slug: "nft-marketplace-development",
-        description: "Custom NFT marketplace platforms for minting, buying, selling, and trading digital assets.",
-        icon: "Package",
-        heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "NFT Marketplace Development | Clickmasters",
-        metaDescription: "Custom NFT marketplace development for minting, buying, selling, and trading digital assets.",
-        lead: "Custom NFT marketplace platforms.",
-        highlights: ["Minting tools", "Auction systems", "Royalty management", "Multi-chain support"],
-      },
-    ],
-
-    // Technology Stack Data
-    techStack: {
-      title: "Blockchain & Web3 Technologies We Use",
-      description: "We build on proven, secure blockchain technologies and frameworks to deliver reliable Web3 solutions.",
-      groups: [
-        {
-          label: "Blockchain Networks",
-          items: ["Ethereum", "Solana", "Polygon", "Binance Smart Chain", "Hyperledger"],
-        },
-        {
-          label: "Smart Contract Languages",
-          items: ["Solidity", "Rust", "Vyper", "Move"],
-        },
-        {
-          label: "Web3 Frameworks",
-          items: ["Web3.js", "Ethers.js", "Hardhat", "Truffle", "Foundry"],
-        },
-        {
-          label: "Storage & Infrastructure",
-          items: ["IPFS", "Pinata", "Arweave", "The Graph", "Chainlink"],
-        },
-      ],
-    },
-
-    // Client Success Stories (Testimonials)
-    testimonials: [
-      {
-        quote: "Clickmasters built our NFT marketplace from scratch. Their team understood the technology and delivered a platform that our users love.",
-        author: "Alex Rivera",
-        title: "Founder",
-        company: "ArtBlock",
-        location: "USA",
-      },
-      {
-        quote: "The smart contracts Clickmasters developed for us passed their audit with zero critical issues. Their attention to security is outstanding.",
-        author: "Maria Chen",
-        title: "CTO",
-        company: "ChainPay",
-        location: "USA",
-      },
-      {
-        quote: "We needed a DApp that could handle high transaction volumes. Clickmasters delivered a scalable solution that performs well under load.",
-        author: "James Kim",
-        title: "Product Lead",
-        company: "MetaGames",
-        location: "USA",
-      },
-    ],
-
-    // Process Steps
-    processSteps: [
-      {
-        title: "Discovery & Strategy",
-        description: "We understand your business goals, target users, and technical requirements to define the right blockchain solution.",
-      },
-      {
-        title: "Architecture & Design",
-        description: "Our blockchain architects design the system architecture, smart contract structure, and DApp infrastructure.",
-      },
-      {
-        title: "Development & Testing",
-        description: "We develop smart contracts and DApps with rigorous testing, security audits, and performance optimization.",
-      },
-      {
-        title: "Deployment & Support",
-        description: "After deployment, we provide ongoing monitoring, upgrades, and support to ensure your solution continues to perform.",
-      },
-    ],
-
-    // Industries Data
-    industries: [
-      { name: "DeFi", description: "decentralized finance platforms and protocols" },
-      { name: "NFT & Digital Art", description: "NFT marketplaces and digital collectibles" },
-      { name: "Gaming", description: "blockchain gaming and play-to-earn platforms" },
-      { name: "Finance", description: "payment solutions and asset tokenization" },
-      { name: "Healthcare", description: "secure medical records and data sharing" },
-      { name: "Supply Chain", description: "tracking and provenance solutions" },
-    ],
-
-    // Pricing
-    pricing: [
-      {
-        type: "Smart Contract Development",
-        investment: "Custom quote",
-        timeline: "2-6 weeks",
-        bestFor: "Individual smart contract development",
-        features: [
-          "Contract design & development",
-          "Security best practices",
-          "Unit testing",
-          "Documentation",
-        ],
-      },
-      {
-        type: "DApp Development",
-        investment: "Custom quote",
-        timeline: "2-4 months",
-        bestFor: "Full decentralized application",
-        features: [
-          "Smart contracts",
-          "Front-end DApp",
-          "Wallet integration",
-          "Testing & deployment",
-        ],
-      },
-      {
-        type: "NFT Marketplace",
-        investment: "Custom quote",
-        timeline: "3-6 months",
-        bestFor: "Full NFT trading platform",
-        features: [
-          "Minting functionality",
-          "Auction & listing system",
-          "Wallet integration",
-          "Admin dashboard",
-        ],
-      },
-      {
-        type: "Enterprise Blockchain",
+        type: "Enterprise QA",
         investment: "Custom quote",
         timeline: "Custom",
-        bestFor: "Large-scale blockchain solutions",
+        bestFor: "Large-scale testing programs",
         features: [
-          "Custom blockchain setup",
-          "Smart contract suite",
-          "Integration services",
-          "Ongoing support",
+          "Dedicated testing teams",
+          "Detailed reporting",
+          "Scalable processes",
+          "SLA & compliance support",
         ],
       },
     ],
-
+    
     // FAQs
     faqs: [
       {
-        question: "What is blockchain development?",
-        answer: "Blockchain development involves building decentralized applications, smart contracts, and blockchain infrastructure that enable secure, transparent, and immutable transactions without intermediaries.",
+        question: "What are QA testing services?",
+        answer: "QA testing services are the process of checking software for bugs, security issues, and performance problems before it reaches real users, covering both manual and automated testing methods.",
       },
       {
-        question: "What are smart contracts?",
-        answer: "Smart contracts are self-executing contracts with terms written in code that automatically execute when predetermined conditions are met. They run on blockchain networks and eliminate the need for intermediaries.",
+        question: "How much do QA testing services cost?",
+        answer: "Cost depends on your application's size, complexity, and how much automation is involved. A one-time testing sprint costs less than ongoing, dedicated QA support. We provide a clear quote after reviewing your project.",
       },
       {
-        question: "What is Web3 development?",
-        answer: "Web3 development refers to building decentralized applications (DApps) that run on blockchain technology, giving users more control over their data and digital assets.",
+        question: "What is the difference between manual and automated testing?",
+        answer: "Manual testing uses real testers to explore your software and catch usability issues a script might miss. Automated testing uses scripts to quickly re-check repeatable scenarios, especially useful for regression testing.",
       },
       {
-        question: "How much does blockchain development cost?",
-        answer: "Cost varies significantly based on complexity. A simple smart contract might start at $5,000, while a full DApp or NFT marketplace can range from $30,000 to $100,000+. Enterprise blockchain solutions are scoped individually.",
+        question: "Do I need QA testing if my developers already test their own code?",
+        answer: "Yes. Developers naturally test with a builder's mindset, while dedicated QA testers approach the product like a real user, often catching issues developers overlook simply because they know the code too well.",
       },
       {
-        question: "Which blockchain networks do you work with?",
-        answer: "We work with Ethereum, Solana, Polygon, Binance Smart Chain, and other leading blockchain networks. We recommend the best network based on your specific use case, scalability needs, and budget.",
+        question: "How long does software testing take?",
+        answer: "Timelines depend on your application's size and testing scope. A focused testing sprint can take one to two weeks, while full QA coverage for a large platform may take four to six weeks or run continuously alongside development.",
       },
       {
-        question: "Are smart contracts secure?",
-        answer: "Smart contracts can be secure when properly developed and audited. We follow industry best practices, conduct thorough testing, and recommend third-party audits for critical contracts to ensure security.",
+        question: "Can you test mobile apps and websites together?",
+        answer: "Yes. Our QA testing services cover web applications, mobile apps, and APIs, so if your product spans multiple platforms, we test all of them as one connected system.",
+      },
+      {
+        question: "What is automation testing and when do I need it?",
+        answer: "Automation testing uses scripts to test your software automatically instead of by hand. It's most useful when you release frequently and need to quickly re-check that old features still work after every update.",
+      },
+      {
+        question: "Do you offer ongoing QA support after launch?",
+        answer: "Yes. As a full-service QA testing services company, we offer ongoing testing for every new release, so quality doesn't drop after your first launch.",
+      },
+      {
+        question: "Can you help set up a testing process for a startup with no QA team?",
+        answer: "Yes. Our QA consulting services help startups build a practical testing process from scratch, matched to their budget and release speed, without slowing down early growth.",
+      },
+      {
+        question: "How do I get started with your QA testing company?",
+        answer: "Start with a free QA consultation. We'll review your product and current testing process, then recommend a plan that fits your timeline and budget, with no pressure to commit right away.",
       },
     ],
+    
+    // Final CTA Section
+    finalCta: {
+      title: "Let's Make Sure Your Next Release Doesn't Break",
+      description: "Ship Software Your Users Can Trust. Every bug that reaches a user is one that could have been caught earlier. Partner with a QA testing services company that treats your release like our own, and launch with real confidence instead of crossed fingers.",
+      primary: "Get Your Free QA Consultation",
+      secondary: "Talk to a QA Testing Expert Today",
+    },
+    
+    // Mid-page CTA labels
+    sectionCtas: {
+      afterServices: "Talk to Our QA Testing Experts",
+      afterWhyChooseUs: "See Why Teams Trust Our QA Testing Company",
+      afterProcess: "Start Your Free QA Consultation",
+    },
   },
 };
 

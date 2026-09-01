@@ -643,7 +643,7 @@ export function TechStackSection({ service }) {
       );
 
   return (
-    <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
+    <section className="border-y border-border bg-primary text-white px-5 py-24  md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Tech stack"

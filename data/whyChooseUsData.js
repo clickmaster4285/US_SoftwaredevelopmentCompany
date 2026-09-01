@@ -478,54 +478,6 @@ export const WHY_CHOOSE_US_BY_SLUG = {
     ],
   },
 
-  "testing-and-qa": {
-    subtitle: buildWhyChooseUsSubtitle("Testing & QA"),
-    stats: mapServiceStatsToWhyUs([
-      { value: "500+", label: "Projects Tested" },
-      { value: "99%", label: "Bug Catch Rate" },
-      { value: "50%", label: "Fewer Production Bugs" },
-    ]),
-    benefits: [
-      b(
-        "TestTube",
-        "Comprehensive QA",
-        "Manual and automated testing across web, mobile, and API layers.",
-        ["Test Plans", "Regression", "Exploratory", "UAT"],
-        "500+",
-        "Projects Tested",
-      ),
-      b(
-        "Bot",
-        "Test Automation",
-        "Selenium, Cypress, and Playwright suites that run on every commit.",
-        ["E2E Tests", "API Tests", "CI Integration", "Reports"],
-        "80%",
-        "Coverage Target",
-      ),
-      b(
-        "Zap",
-        "Performance Testing",
-        "Load and stress tests so your app handles traffic spikes.",
-        ["Load Testing", "Stress Tests", "Bottleneck Reports", "Tuning"],
-        "10x",
-        "Traffic Capacity",
-      ),
-      b(
-        "Bug",
-        "Bug Tracking & Fixes",
-        "Clear reproduction steps and prioritized fix workflows.",
-        [
-          "Jira Integration",
-          "Severity Triage",
-          "Re-Test Cycles",
-          "Release Sign-Off",
-        ],
-        "50%",
-        "Fewer Prod Bugs",
-      ),
-    ],
-  },
-
   "support-and-outsourcing": {
     subtitle: buildWhyChooseUsSubtitle("Support & Outsourcing"),
     stats: mapServiceStatsToWhyUs([

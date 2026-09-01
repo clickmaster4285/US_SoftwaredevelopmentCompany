@@ -1,4 +1,5 @@
-import { CheckCircle2, Clock3 } from "lucide-react";
+import { CheckCircle2, Clock3, ChevronRight } from "lucide-react";
+import Link from "next/link";
 import { Hero, PageFrame, SectionHeading } from "./landing-primitives";
 import ProcessSection from "./process-section";
 import type { MainService, SubService } from "./service-data";
@@ -18,6 +19,29 @@ export default function SubServicePage({
 
   return (
     <PageFrame>
+      <div className="relative z-20 border-b border-border bg-background/80 backdrop-blur-md pt-20 md:pt-24">
+        <div className="mx-auto max-w-7xl px-5 py-4 md:px-10">
+          <nav className="flex items-center gap-2 text-sm font-medium">
+            <Link
+              href="/"
+              className="text-muted-foreground transition-colors hover:text-primary"
+            >
+              Home
+            </Link>
+            <ChevronRight className="h-4 w-4 text-muted-foreground" />
+            <Link
+              href={`/${service.slug}`}
+              className="text-muted-foreground transition-colors hover:text-primary"
+            >
+              {service.title}
+            </Link>
+            <ChevronRight className="h-4 w-4 text-muted-foreground" />
+            <span className="font-semibold text-foreground">
+              {subService.title}
+            </span>
+          </nav>
+        </div>
+      </div>
       <Hero
         eyebrow={service.title}
         title={subService.title}
@@ -83,6 +107,17 @@ export default function SubServicePage({
         </section>
       ) : null}
       <ProcessSection />
+      <section className="border-t border-border bg-background px-5 py-8 md:px-10">
+        <div className="mx-auto max-w-7xl">
+          <Link
+            href={`/${service.slug}`}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:opacity-80"
+          >
+            <ChevronRight className="h-4 w-4 rotate-180" />
+            Back to {service.title}
+          </Link>
+        </div>
+      </section>
     </PageFrame>
   );
 }
