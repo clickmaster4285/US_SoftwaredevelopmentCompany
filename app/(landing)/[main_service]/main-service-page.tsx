@@ -4,6 +4,7 @@ import {
   AppsSection,
   BenefitsSection,
   ClientSuccessStories,
+  CompanySection,
   ExploreSection,
   FaqSection,
   FeaturedInsights,
@@ -66,7 +67,10 @@ export default function MainServicePage({ service }: { service: MainService }) {
           {/* Process Section */}
           <ProcessSection service={service} />
           <SectionCta label={sectionCtas?.afterProcess} />
-          
+
+          {/* Company / Agency Section (e.g. "Your Cloud DevOps Agency in the USA") */}
+          <CompanySection service={service} />
+
           {/* FAQs */}
           <FaqSection service={service} />
           

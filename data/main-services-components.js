@@ -320,7 +320,8 @@ export function TrustSection({ service }) {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground transition hover:opacity-90"
               >
-                Start a Project <ArrowRight className="h-4 w-4" />
+                {trustData.button || "Start a Project"}{" "}
+                <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="#services"
@@ -373,6 +374,38 @@ export function TrustSection({ service }) {
     </section>
   );
 }
+// Company / Agency Narrative Section — renders a titled narrative block
+// (e.g. "Your Cloud DevOps Agency in the USA") with one or more paragraphs.
+export function CompanySection({ service }) {
+  const data = service.companySection || {};
+  if (!data.title) return null;
+
+  const paragraphs =
+    Array.isArray(data.paragraphs) && data.paragraphs.length
+      ? data.paragraphs
+      : data.description
+        ? [data.description]
+        : [];
+
+  return (
+    <section className="bg-background px-5 py-24 md:px-10">
+      <div className="mx-auto max-w-7xl">
+        <SectionHeading
+          eyebrow="Why Work With Us"
+          title={data.title}
+        />
+        <div className="mx-auto mt-10 max-w-4xl space-y-5 text-center">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className="text-lg leading-8 text-muted-foreground">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Pain Points Solutions Component
 export function PainPointsSolutions({ service }) {
   const painPoints = [
