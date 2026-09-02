@@ -18,6 +18,7 @@ import { SectionHeading } from "./[sub_service]/landing-primitives";
 import type {
   MainService,
   ServicePricingTier,
+  SubService,
 } from "./[sub_service]/service-data";
 
 const appIdeas = [
@@ -153,16 +154,21 @@ export function MainServiceHero({ service }: { service: MainService }) {
 }
 
 export function ExploreSection({ service }: { service: MainService }) {
+  const ourServices = service.ourServices || {};
+  const exploreTitle = ourServices.title || `Everything inside ${service.title}`;
+  const exploreCopy = ourServices.description || "Choose the focused service line that best matches your product, platform, or operational goal.";
+  const servicesToRender: SubService[] = ourServices.subServices || service.subServices || [];
+
   return (
     <section className="bg-background px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Explore"
-          title={`Everything inside ${service.title}`}
-          copy="Choose the focused service line that best matches your product, platform, or operational goal."
+          title={exploreTitle}
+          copy={exploreCopy}
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {(service.subServices || []).map((item) => (
+          {servicesToRender.map((item) => (
             <Link
               key={item.slug}
               href={`/${service.slug}/${item.slug}`}
@@ -458,8 +464,11 @@ export function PricingSection({
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Investment"
-          title={`${service.title} investment`}
-          copy={`Flexible engagement models for ${service.title.toLowerCase()} scoped to your timeline, team size, and goals.`}
+          title={service.pricingSection?.title || `${service.title} investment`}
+          copy={
+            service.pricingSection?.description ||
+            `Flexible engagement models for ${service.title.toLowerCase()} scoped to your timeline, team size, and goals.`
+          }
         />
         <div className="mt-14 grid gap-4 lg:grid-cols-3">
           {plans.map((plan, index) => (
@@ -558,7 +567,8 @@ export function FaqSection({ service }: { service: MainService }) {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="FAQ"
-          title={`Common questions about ${service.title.toLowerCase()}`}
+          title={service.faqsSection?.title || "Frequently Asked Questions"}
+          copy={service.faqsSection?.description}
         />
         <div className="mt-14 divide-y divide-border rounded-lg border border-border bg-card">
           {faqs.map((item) => (

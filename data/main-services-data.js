@@ -1,7 +1,7 @@
 // main-service-data.js
-import { iconMap, slugify } from "./main-services";
-import { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data";
-import { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData";
+import { iconMap, slugify } from "./main-services.js";
+import { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data.js";
+import { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData.js";
 
 export const mainServiceData = {
   // ============================================
@@ -18,9 +18,15 @@ export const mainServiceData = {
     slug: "software-development",
     icon: "Code2",
     tagline: "Software Development Services",
-    description: "Software Development Services from Clickmasters help businesses across the USA build reliable, scalable, and custom software solutions. We design and develop web applications, enterprise platforms, SaaS products, and other software tailored to your business needs. Our experienced engineers use agile development and provide full source-code ownership, so you get a practical solution built for long-term growth.",
+    description: "Software Development Services from Clickmasters help businesses across the USA build reliable, scalable, and custom software solutions. We design and develop web applications, enterprise platforms, SaaS products, and other software tailored to your business needs. Our experienced engineers use agile development and provide full source-code ownership, so you get a practical solution built for long-term growth.\nFrom the initial discovery call to development, launch, and ongoing support, our team works closely with you at every stage. We have experience delivering production-ready software for startups and enterprises across industries including healthcare, finance, logistics, and SaaS.",
     heroBadge: "200+ software projects delivered",
     heroImage: "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+    
+    // Hero CTAs
+    heroCtas: {
+      primary: "Start a Project",
+      secondary: "Book a Free Consultation",
+    },
     
     // Hero Stats
     stats: [
@@ -84,10 +90,185 @@ export const mainServiceData = {
       },
     ],
     
+    // Our Software Development Services
+    ourServices: {
+      title: "Our Software Development Services",
+      description: "Whether you need a single feature built, a full product engineered from scratch, or an outsourced engineering team, our software development services cover the entire product lifecycle: discovery, architecture, design, development, quality assurance, and long-term support.",
+    },
+    
+    // SubServices
+    subServices: [
+        {
+          title: "Custom Software Development",
+          slug: "custom-software-development",
+          description: "Our custom software development services replace generic, off-the-shelf tools with software built around how your business actually operates. We handle bespoke software development for internal workflows, customer-facing platforms, and everything in between, using an architecture chosen for your specific scale and compliance needs.",
+          icon: "Building",
+          heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Custom Software Development Services | Clickmasters",
+          metaDescription: "Bespoke software development services tailored to your business workflows, scale, and compliance requirements.",
+          lead: "Software built around how your business actually operates — not generic tools that force you to adapt.",
+          highlights: [
+            "Bespoke application development",
+            "Workflow-specific architecture",
+            "Compliance-ready design",
+            "Full source-code ownership",
+          ],
+          pricing: [
+            { type: "MVP Build", investment: "$8,000+", timeline: "6-12 weeks" },
+            { type: "Custom Application", investment: "$25,000+", timeline: "3-6 months" },
+            { type: "Enterprise", investment: "$60,000+", timeline: "6-18 months" },
+          ],
+        },
+        {
+          title: "Enterprise Software Development",
+          slug: "enterprise-software-development",
+          description: "For larger organizations, our enterprise software development and enterprise application development services focus on multi-department systems that need to integrate with existing tools, enforce role-based access, and scale across teams without downtime.",
+          icon: "Building2",
+          heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Enterprise Software Development Services | Clickmasters",
+          metaDescription: "Enterprise software development for multi-department systems with role-based access and seamless integrations.",
+          lead: "Enterprise software built for multi-department systems with role-based access and seamless integrations.",
+          highlights: [
+            "Multi-department systems",
+            "Role-based access control (RBAC)",
+            "Legacy system integration",
+            "Zero-downtime scaling",
+          ],
+        },
+        {
+          title: "SaaS Product Development",
+          slug: "saas-product-development",
+          description: "Our SaaS development services take a product from idea to a multi-tenant, cloud-native application ready for recurring revenue — including subscription billing, usage metering, and secure account architecture.",
+          icon: "Cloud",
+          heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "SaaS Product Development Services | Clickmasters",
+          metaDescription: "SaaS development services from idea to multi-tenant, cloud-native applications with subscription billing and secure account architecture.",
+          lead: "From idea to revenue-generating SaaS platform including billing, usage metering, and multi-tenant architecture.",
+          highlights: [
+            "Multi-tenant architecture",
+            "Subscription billing & usage metering",
+            "Secure account architecture",
+            "API-first design",
+          ],
+        },
+        {
+          title: "Web Application Development",
+          slug: "web-application-development",
+          description: "We design and build web application development projects on modern, well-supported stacks (React, Next.js, Node.js), so your platform stays fast, accessible, and easy for future developers to maintain.",
+          icon: "Globe",
+          heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Web Application Development Services | Clickmasters",
+          metaDescription: "Web application development on modern stacks like React, Next.js, and Node.js for fast, accessible, and maintainable platforms.",
+          lead: "Modern, well-supported stacks (React, Next.js, Node.js) for fast, accessible, and maintainable web platforms.",
+          highlights: [
+            "React & Next.js",
+            "Node.js backend",
+            "Responsive & accessible",
+            "Future-proof architecture",
+          ],
+        },
+        {
+          title: "Mobile App Development Services",
+          slug: "mobile-app-development",
+          description: "Our mobile app development services cover native and cross-platform builds for iOS and Android, connected to the same backend and APIs as your web platform so your data stays consistent across devices.",
+          icon: "Smartphone",
+          heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Mobile App Development Services | Clickmasters",
+          metaDescription: "Native and cross-platform mobile app development for iOS and Android with consistent data across devices.",
+          lead: "Native and cross-platform builds for iOS and Android with consistent data across all devices.",
+          highlights: [
+            "iOS & Android development",
+            "Native & cross-platform options",
+            "Backend & API integration",
+            "Consistent data across devices",
+          ],
+        },
+        {
+          title: "AI Software Development Services",
+          slug: "ai-software-development",
+          description: "Our AI software development services help businesses add practical AI features — automation, predictive analytics, intelligent search, and AI-assisted workflows — into existing or new software, without over-engineering the solution.",
+          icon: "Brain",
+          heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "AI Software Development Services | Clickmasters",
+          metaDescription: "AI software development services for practical AI features including automation, predictive analytics, intelligent search, and AI-assisted workflows.",
+          lead: "Add practical AI features to existing or new software without over-engineering the solution.",
+          highlights: [
+            "Automation & predictive analytics",
+            "Intelligent search",
+            "AI-assisted workflows",
+            "OpenAI & custom ML integrations",
+          ],
+        },
+        {
+          title: "Full Stack Development Services",
+          slug: "full-stack-development",
+          description: "Our full stack development services give you a single accountable team across frontend, backend, and infrastructure, which reduces handoff delays and keeps architecture decisions consistent end to end.",
+          icon: "Workflow",
+          heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Full Stack Development Services | Clickmasters",
+          metaDescription: "Full stack development services with a single accountable team across frontend, backend, and infrastructure.",
+          lead: "Full stack development with a single accountable team across frontend, backend, and infrastructure.",
+          highlights: [
+            "Frontend & backend development",
+            "Cloud infrastructure",
+            "Consistent architecture",
+            "Reduced handoff delays",
+          ],
+        },
+        {
+          title: "Application Development & API Integration",
+          slug: "api-development-integration",
+          description: "Our application development services include building and integrating APIs with the third-party tools your business already relies on — payment processors, CRMs, ERPs, and internal systems — so software fits into your existing operations rather than replacing them.",
+          icon: "Plug",
+          heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Application Development & API Integration | Clickmasters",
+          metaDescription: "Application development and API integration services with payment processors, CRMs, ERPs, and internal systems.",
+          lead: "API integrations that make software fit into your existing operations not replace them.",
+          highlights: [
+            "Payment processor integration",
+            "CRM & ERP integration",
+            "Internal system connectivity",
+            "REST & GraphQL APIs",
+          ],
+        },
+        {
+          title: "Software Consulting Services",
+          slug: "software-consulting",
+          description: "Not every engagement starts with a build. Our software consulting services help you scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget before a single line of code is written.",
+          icon: "Compass",
+          heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Software Consulting Services | Clickmasters",
+          metaDescription: "Software consulting services to scope roadmaps, choose tech stacks, audit legacy systems, and plan budgets.",
+          lead: "Strategic consulting to scope roadmaps, choose tech stacks, and plan budgets before any code is written.",
+          highlights: [
+            "Roadmap planning",
+            "Tech stack selection",
+            "Legacy system audit",
+            "Budget forecasting",
+          ],
+        },
+        {
+          title: "Software Development Outsourcing",
+          slug: "software-development-outsourcing",
+          description: "For companies that need to extend their engineering capacity, our software development outsourcing and offshore software development options provide dedicated developers who work inside your existing sprint process and tools.",
+          icon: "Users",
+          heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          metaTitle: "Software Development Outsourcing | Clickmasters",
+          metaDescription: "Software development outsourcing and offshore software development with dedicated developers working inside your existing sprint process and tools.",
+          lead: "Extend your engineering capacity with dedicated developers who work inside your existing sprint process and tools.",
+          highlights: [
+            "Dedicated engineering teams",
+            "Existing process integration",
+            "Sprint cadence alignment",
+            "Engineering capacity extension",
+          ],
+        },
+      ],
+    
     // Trust Section Data
     trustSection: {
       title: "Software Development Company You Can Trust",
-      description: "Clickmasters is a software development company that helps startups, mid-size businesses, and enterprises across the United States plan, build, and maintain reliable software. Our in-house architects, full-stack engineers, QA specialists, and product strategists work directly on your project to deliver high-quality solutions.",
+      description: "Clickmasters is a software development company that helps startups, mid-size businesses, and enterprises across the United States plan, build, and maintain reliable software. Our in-house architects, full-stack engineers, QA specialists, and product strategists work directly on your project to deliver high-quality solutions.\nWe provide custom software development for industries including healthcare, finance, SaaS, and e-commerce. Every project follows clear architecture, peer-reviewed code, and thorough QA to ensure reliable performance.\nOur software development services also include post-launch support, maintenance, documentation, and full intellectual property ownership, giving you a reliable software solution built for long-term growth.",
       points: [
         "Custom software development for industries including healthcare, finance, SaaS, and e-commerce",
         "Every project follows clear architecture, peer-reviewed code, and thorough QA to ensure reliable performance",
@@ -119,7 +300,7 @@ export const mainServiceData = {
     // Why Choose Us Data
     whyChooseUs: {
       title: "Why Choose Clickmasters as Your Software Development Partner",
-      description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
+      description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:\nThis combination is why businesses evaluating software development companies in the USA consistently shortlist us among the best software development services for mid-market and enterprise projects.",
       reasons: [
         {
           title: "Track record",
@@ -145,157 +326,6 @@ export const mainServiceData = {
     },
     
     // SubServices
-    subServices: [
-      {
-        title: "Custom Software Development",
-        slug: "custom-software-development",
-        description: "Replace generic, off-the-shelf tools with software built around how your business actually operates.",
-        icon: "Building",
-        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Custom Software Development Company | ClickMasters",
-        metaDescription: "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
-        lead: "Custom software built around how your business actually operates not generic tools that force you to change your workflows.",
-        highlights: [
-          "Internal workflows & customer-facing platforms",
-          "Bespoke software development",
-          "Architecture chosen for scale & compliance",
-          "Full source-code ownership",
-        ],
-        pricing: [
-          { type: "MVP Build", investment: "$8,000+", timeline: "6-12 weeks" },
-          { type: "Custom App", investment: "$25,000+", timeline: "3-6 months" },
-          { type: "Enterprise", investment: "$60,000+", timeline: "6-18 months" },
-        ],
-      },
-      {
-        title: "Enterprise Software Development",
-        slug: "enterprise-software-development",
-        description: "Multi-department systems that integrate with existing tools and scale across teams without downtime.",
-        icon: "Building2",
-        heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Enterprise Software Development Company | Custom ERP & B2B Systems",
-        lead: "Enterprise software built for multi-department systems with role-based access and seamless integrations.",
-        highlights: [
-          "Multi-department systems",
-          "Role-based access control (RBAC)",
-          "Legacy system integration",
-          "Zero-downtime scaling",
-        ],
-      },
-      {
-        title: "SaaS Product Development",
-        slug: "saas-product-development",
-        description: "Cloud-native applications ready for recurring revenue with subscription billing and secure account architecture.",
-        icon: "Cloud",
-        heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
-        lead: "From idea to revenue-generating SaaS platform including billing, usage metering, and multi-tenant architecture.",
-        highlights: [
-          "Multi-tenant architecture",
-          "Subscription billing & usage metering",
-          "Secure account architecture",
-          "API-first design",
-        ],
-      },
-      {
-        title: "Web Application Development",
-        slug: "web-application-development",
-        description: "Modern web applications on React, Next.js, and Node.js that stay fast, accessible, and easy to maintain.",
-        icon: "Globe",
-        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        lead: "Modern, well-supported stacks (React, Next.js, Node.js) for fast, accessible, and maintainable web platforms.",
-        highlights: [
-          "React & Next.js",
-          "Node.js backend",
-          "Responsive & accessible",
-          "Future-proof architecture",
-        ],
-      },
-      {
-        title: "Mobile App Development Services",
-        slug: "mobile-app-development",
-        description: "Native and cross-platform mobile apps connected to the same backend and APIs as your web platform.",
-        icon: "Smartphone",
-        heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
-        lead: "Native and cross-platform builds for iOS and Android with consistent data across all devices.",
-        highlights: [
-          "iOS & Android development",
-          "Native & cross-platform options",
-          "Backend & API integration",
-          "Consistent data across devices",
-        ],
-      },
-      {
-        title: "AI Software Development Services",
-        slug: "ai-software-development",
-        description: "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows.",
-        icon: "Brain",
-        heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
-        lead: "Add practical AI features to existing or new software without over-engineering the solution.",
-        highlights: [
-          "Automation & predictive analytics",
-          "Intelligent search",
-          "AI-assisted workflows",
-          "OpenAI & custom ML integrations",
-        ],
-      },
-      {
-        title: "Full Stack Development Services",
-        slug: "full-stack-development",
-        description: "A single accountable team across frontend, backend, and infrastructure for consistent architecture.",
-        icon: "Workflow",
-        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        lead: "Full stack development with a single accountable team across frontend, backend, and infrastructure.",
-        highlights: [
-          "Frontend & backend development",
-          "Cloud infrastructure",
-          "Consistent architecture",
-          "Reduced handoff delays",
-        ],
-      },
-      {
-        title: "Application Development & API Integration",
-        slug: "api-development-integration",
-        description: "Build and integrate APIs with payment processors, CRMs, ERPs, and internal systems.",
-        icon: "Plug",
-        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        lead: "API integrations that make software fit into your existing operations not replace them.",
-        highlights: [
-          "Payment processor integration",
-          "CRM & ERP integration",
-          "Internal system connectivity",
-          "REST & GraphQL APIs",
-        ],
-      },
-      {
-        title: "Software Consulting Services",
-        slug: "software-consulting",
-        description: "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget.",
-        icon: "Compass",
-        heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
-        lead: "Strategic consulting to scope roadmaps, choose tech stacks, and plan budgets before any code is written.",
-        highlights: [
-          "Roadmap planning",
-          "Tech stack selection",
-          "Legacy system audit",
-          "Budget forecasting",
-        ],
-      },
-      {
-        title: "Software Development Outsourcing",
-        slug: "software-development-outsourcing",
-        description: "Dedicated developers who work inside your existing sprint process and tools.",
-        icon: "Users",
-        heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
-        lead: "Extend your engineering capacity with dedicated developers who work inside your existing sprint process and tools.",
-        highlights: [
-          "Dedicated engineering teams",
-          "Existing process integration",
-          "Sprint cadence alignment",
-          "Engineering capacity extension",
-        ],
-      },
-    ],
-    
     // Technology Stack Data
     techStack: {
       title: "Technology We Use",
@@ -432,8 +462,23 @@ export const mainServiceData = {
         answer: "Yes. Alongside project-based delivery, we offer software development outsourcing and dedicated offshore software development teams that work inside your existing tools and sprint cadence for ongoing engineering capacity.",
       },
     ],
+    
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Build Software That Moves Your Business Forward?",
+      description: "Tell us about your project and get a scoped estimate from our engineering team — no obligation, no generic sales pitch.",
+      primary: "Get a Free Quote",
+      secondary: "",
+    },
+    
+    // Mid-page CTA labels (rendered by <SectionCta> in main-service-page.tsx)
+    sectionCtas: {
+      afterServices: "Talk to Our Software Development Team",
+      afterWhyChooseUs: "See Why Teams Trust Our Software Development Company",
+      afterProcess: "Start Your Software Development Project Today",
+    },
   },
-
+  
   // ============================================
   // WEB DEVELOPMENT SERVICE
   // ============================================
@@ -448,7 +493,7 @@ export const mainServiceData = {
     slug: "web-development",
     icon: "Globe",
     tagline: "Web Development Services",
-    description: "Clickmasters is a full-service web development company helping USA businesses launch fast, secure, and high-converting websites and web applications. Whether you need a brand-new business website, a custom web app, or a scalable e-commerce store, our web development services are built around one goal turning your website into your best-performing sales channel. As a trusted web development agency, we combine clean engineering, conversion-focused design, and technical SEO from day one, so your site is fast, findable on Google and AI search tools, and ready to scale as your business grows.",
+    description: "Clickmasters is a full-service web development company helping USA businesses launch fast, secure, and high-converting websites and web applications. Whether you need a brand-new business website, a custom web app, or a scalable e-commerce store, our web development services are built around one goal — turning your website into your best-performing sales channel.\nAs a trusted web development agency, we combine clean engineering, conversion-focused design, and technical SEO from day one, so your site is fast, findable on Google and AI search tools, and ready to scale as your business grows.",
     heroBadge: "500+ websites and web apps launched",
     heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
     
@@ -471,7 +516,7 @@ export const mainServiceData = {
         "Offices supporting clients across San Francisco, New York, Austin, and Denver",
         "Transparent pricing, fixed milestones, and direct access to your project team",
       ],
-      closingText: "We are not a template shop. Every engagement starts with real discovery understanding your business goals, your users, and your growth plan before a single line of code is written. That is what separates a true web development agency from a freelancer with a website builder.",
+      closingText: "We are not a template shop. Every engagement starts with real discovery — understanding your business goals, your users, and your growth plan — before a single line of code is written. That is what separates a true web development agency from a freelancer with a website builder.",
     },
     
     // Features/Services List
@@ -503,6 +548,9 @@ export const mainServiceData = {
     ],
     
     // Benefits Section Data
+    benefitsSection: {
+      title: "Benefits of Working With Our Web Development Agency",
+    },
     benefits: [
       "Faster time to market with proven, repeatable delivery processes",
       "SEO and AEO/GEO-ready structure built in from the first sprint, not bolted on later",
@@ -675,58 +723,90 @@ export const mainServiceData = {
           "Conversion-focused",
         ],
       },
-      {
-        title: "WooCommerce Development",
-        slug: "woocommerce-development",
-        description: "For businesses already on WordPress, our WooCommerce development services add secure, high-performance commerce functionality without rebuilding your entire site.",
-        icon: "Coins",
-        heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        lead: "WooCommerce solutions for businesses already on WordPress.",
-        highlights: [
-          "Secure payments",
-          "High performance",
-          "WordPress integration",
-          "Custom functionality",
-        ],
-      },
-    ],
-    
+        {
+          title: "WooCommerce Development",
+          slug: "woocommerce-development",
+          description: "For businesses already on WordPress, our WooCommerce development services add secure, high-performance commerce functionality without rebuilding your entire site.",
+          icon: "Coins",
+          heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          lead: "WooCommerce solutions for businesses already on WordPress.",
+          highlights: [
+            "Secure payments",
+            "High performance",
+            "WordPress integration",
+            "Custom functionality",
+          ],
+        },
+      ],
+
+    // Our Web Development Services (section heading)
+    ourServices: {
+      title: "Our Web Development Services",
+      description: "Our web development services cover every stage of building a modern, revenue-ready website — from a simple business site to a fully custom web application. As a full-stack web development company, we scope the right solution for your goals instead of pushing a one-size-fits-all package.",
+    },
+
     // Technology Stack Data
     techStack: {
       title: "Technology We Use",
       description: "As a modern web development company, we choose our stack for long-term maintainability, not trends. Our core technologies include:",
-      frontend: ["React", "Next.js", "Vue.js"],
-      backend: ["Node.js", "Python", "PHP"],
-      databases: ["PostgreSQL", "MySQL", "MongoDB"],
-      cmsCommerce: ["Shopify", "WooCommerce", "WordPress", "Sanity", "Contentful"],
-      cloudDevOps: ["AWS", "Azure", "Docker", "Vercel"],
+      groups: [
+        { label: "Front end", items: ["React", "Next.js", "Vue.js"] },
+        { label: "Back end", items: ["Node.js", "Python", "PHP"] },
+        { label: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB"] },
+        { label: "CMS & Commerce", items: ["Shopify", "WooCommerce", "WordPress", "Sanity", "Contentful"] },
+        { label: "Cloud & DevOps", items: ["AWS", "Azure", "Docker", "Vercel"] },
+      ],
     },
-    
+
+    // Industries Section heading
+    industriesSection: {
+      title: "Industries We Serve",
+      description: "Our web development services are trusted by teams across regulated and high-growth industries alike, including:",
+    },
+
+    // Industries Data
+    industries: [
+      { name: "SaaS & Technology", description: "product sites, dashboards, and platform front ends" },
+      { name: "Healthcare", description: "patient portals and accessible, compliance-aware websites" },
+      { name: "Finance & Fintech", description: "secure, high-performance financial platforms" },
+      { name: "Retail & E-commerce", description: "online stores, checkout flows, and catalogs that convert" },
+      { name: "Education", description: "learning platforms and student-friendly websites" },
+      { name: "Logistics & Supply Chain", description: "tracking portals and operations dashboards" },
+    ],
+
     // Client Success Stories (Testimonials)
+    testimonialsSection: {
+      title: "Success Stories & Client Reviews",
+    },
     testimonials: [
       {
         quote: "Clickmasters provided excellent web development services and gave us the technical expertise we needed to take our project from planning to production.",
         author: "Mike",
-        title: "",
+        title: "Client",
         company: "RetailHub",
         location: "New York",
       },
       {
         quote: "We were searching for web development services near me and found Clickmasters. They rebuilt our e-commerce website, improved its speed, and helped us achieve better conversions.",
         author: "Sarah",
-        title: "",
+        title: "Client",
         company: "GrowthMart",
         location: "Austin",
       },
       {
         quote: "Clickmasters delivered reliable web development services that helped us build a fast and user-friendly booking platform for our hotel.",
         author: "James",
-        title: "",
+        title: "Client",
         company: "Skyline Hotels",
         location: "Miami",
       },
     ],
-    
+
+    // Process Section heading
+    processSection: {
+      title: "Our Web Development Process",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -746,62 +826,55 @@ export const mainServiceData = {
         description: "We handle a smooth go-live, then provide ongoing support, monitoring, and updates to keep your site performing.",
       },
     ],
-    
-    // Industries Data
-    industries: [
-      { name: "SaaS and technology", description: "scalable platforms and software solutions" },
-      { name: "Healthcare", description: "HIPAA-compliant websites and patient portals" },
-      { name: "Finance and fintech", description: "secure financial platforms and tools" },
-      { name: "Retail and e-commerce", description: "high-converting online stores" },
-      { name: "Education", description: "learning management systems and educational platforms" },
-      { name: "Logistics and supply chain", description: "tracking and logistics platforms" },
-    ],
-    
+
     // Pricing
     pricing: [
       {
         type: "Business Website",
         investment: "$3,500+",
         timeline: "3-6 weeks",
-        bestFor: "SMBs needing a professional web presence",
+        bestFor: "Small businesses establishing a professional online presence",
         features: [
-          "Up to 10 pages",
-          "CMS setup",
-          "Mobile responsive",
-          "Basic SEO",
+          "Custom design & development",
+          "Mobile-responsive layout",
+          "On-page SEO setup",
+          "Contact forms & analytics",
+          "Launch & post-launch support",
         ],
       },
       {
-        type: "Web Application",
+        type: "Custom Web Application",
         investment: "$15,000+",
         timeline: "2-4 months",
-        bestFor: "Portals, dashboards, and custom apps",
+        bestFor: "Teams replacing manual workflows with web software",
         features: [
-          "Custom UX/UI",
-          "Auth & roles",
+          "Custom dashboards & portals",
+          "User authentication & roles",
           "API integrations",
-          "Performance tuning",
+          "QA & performance testing",
+          "Staging deployment",
         ],
       },
       {
-        type: "Enterprise Web Platform",
+        type: "Enterprise Platform",
         investment: "$45,000+",
         timeline: "4-12 months",
-        bestFor: "High-traffic, multi-tenant systems",
+        bestFor: "Organizations needing scalable, integrated platforms",
         features: [
-          "Scalable architecture",
-          "Headless CMS",
-          "Advanced analytics",
-          "Dedicated SLA",
+          "Multi-module architecture",
+          "SSO & role-based access",
+          "Third-party system integrations",
+          "Security & compliance review",
+          "Dedicated team & SLA support",
         ],
       },
     ],
-    
+
     // FAQs
     faqs: [
       {
         question: "What does a web development company do?",
-        answer: "A web development company plans, designs, builds, and maintains websites and web applications handling everything from front-end design to backend architecture, hosting, and SEO.",
+        answer: "A web development company plans, designs, builds, and maintains websites and web applications — handling everything from front-end design to backend architecture, hosting, and SEO.",
       },
       {
         question: "How much do web development services cost?",
@@ -809,7 +882,7 @@ export const mainServiceData = {
       },
       {
         question: "How long does a website development project take?",
-        answer: "A standard business website takes 3-6 weeks. Custom web applications typically take 2-4 months, while enterprise-grade platforms can take 4-12 months depending on scope.",
+        answer: "A standard business website takes 3–6 weeks. Custom web applications typically take 2–4 months, while enterprise-grade platforms can take 4–12 months depending on scope.",
       },
       {
         question: "Do you offer e-commerce website development?",
@@ -819,18 +892,18 @@ export const mainServiceData = {
         question: "Can you redesign or modernize an existing website?",
         answer: "Absolutely. We audit your current site's performance, UX, and code quality, then rebuild or migrate it with minimal downtime and no lost SEO equity.",
       },
-      {
-        question: "Which stack do you use for web projects?",
-        answer: "We primarily use Next.js, React, Node.js, and headless CMS options (Sanity, Contentful) with cloud hosting on Vercel, AWS, or Azure.",
-      },
-      {
-        question: "Will my site be SEO-friendly?",
-        answer: "Yes. We implement semantic HTML, Core Web Vitals optimization, structured data, and technical SEO foundations from day one.",
-      },
     ],
-  },
 
-  // ============================================
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Start Your Web Development Project?",
+      description: "Partner with a web development company that treats your website as a growth engine, not just a digital brochure. Tell us about your project and get a free, no-obligation quote.",
+      primary: "Get a Free Quote",
+      secondary: "Book a Discovery Call Today",
+    },
+    },
+
+
   // MOBILE APP DEVELOPMENT SERVICE
   // ============================================
   mobileDevelopment: {
@@ -844,7 +917,7 @@ export const mainServiceData = {
     slug: "mobile-app-development",
     icon: "Smartphone",
     tagline: "Mobile App Development Services",
-    description: "Clickmasters is a mobile app development company helping U.S. founders, startups, and established brands take an idea from sketch to a live app on the App Store and Google Play. Our mobile app developers build native iOS and Android apps, plus cross-platform products with Flutter and React Native, so you launch on the right platform without overpaying for the wrong one.",
+    description: "Clickmasters is a mobile app development company helping U.S. founders, startups, and established brands take an idea from sketch to a live app on the App Store and Google Play. Our mobile app developers build native iOS and Android apps, plus cross-platform products with Flutter and React Native, so you launch on the right platform without overpaying for the wrong one.\nIf you're comparing a mobile app development agency for a new build, or looking to hire mobile app developers to rescue a stalled project, our team plans the architecture, designs the experience, and ships an app built to handle real users from day one.",
     heroBadge: "100+ apps published across iOS and Android",
     heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
     
@@ -907,6 +980,11 @@ export const mainServiceData = {
       "Ongoing maintenance plans covering OS updates and new device support",
       "Direct access to your engineering team, not a rotating account manager",
     ],
+
+    // Benefits Section heading
+    benefitsSection: {
+      title: "Benefits of Working With Our Mobile App Development Agency",
+    },
     
     // Why Choose Us Data
     whyChooseUs: {
@@ -936,6 +1014,12 @@ export const mainServiceData = {
       ],
     },
     
+    // Our Mobile App Development Services (section heading)
+    ourServices: {
+      title: "Mobile App Development Services",
+      description: "Our mobile application development services cover the full build — from a single-platform MVP to a cross-platform product serving thousands of daily users. As a custom mobile app development company, we scope the platform and framework around your users, budget, and timeline instead of defaulting to one approach.",
+    },
+
     // SubServices
     subServices: [
       {
@@ -957,6 +1041,20 @@ export const mainServiceData = {
           { type: "MVP App", investment: "$12,000+", timeline: "8-14 weeks" },
           { type: "Cross-Platform App", investment: "$28,000+", timeline: "3-5 months" },
           { type: "Enterprise Mobile", investment: "$55,000+", timeline: "5-12 months" },
+        ],
+      },
+      {
+        title: "Mobile App Development",
+        slug: "mobile-app-development-services",
+        description: "From concept to launch, our core mobile app development service covers UX design, engineering, QA, and store submission for both new products and app rebuilds.",
+        icon: "Smartphone",
+        heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+        lead: "From concept to launch — UX, engineering, QA, and store submission.",
+        highlights: [
+          "UX design",
+          "Engineering & QA",
+          "App store submission",
+          "New products & rebuilds",
         ],
       },
       {
@@ -1043,6 +1141,9 @@ export const mainServiceData = {
     },
     
     // Client Success Stories (Testimonials)
+    testimonialsSection: {
+      title: "Success Stories & Client Reviews",
+    },
     testimonials: [
       {
         quote: "Clickmasters brought structure and clarity to our mobile app project. Their team was responsive, technically strong, and helped us move confidently from the initial concept to launch.",
@@ -1067,6 +1168,11 @@ export const mainServiceData = {
       },
     ],
     
+    // Process Section heading
+    processSection: {
+      title: "Our Mobile App Development Process",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -1087,6 +1193,12 @@ export const mainServiceData = {
       },
     ],
     
+    // Industries Section heading
+    industriesSection: {
+      title: "Industries We Serve",
+      description: "Our mobile app development services support regulated and fast-moving industries alike, including:",
+    },
+
     // Industries Data
     industries: [
       { name: "Health & Wellness", description: "fitness tracking and health monitoring apps" },
@@ -1164,6 +1276,14 @@ export const mainServiceData = {
         answer: "Yes. Our support plans cover OS updates, new device compatibility, bug fixes, performance monitoring, and new feature releases.",
       },
     ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Build Your Mobile App?",
+      description: "Work with a mobile app development company that ships real products, not just prototypes. Share your idea and get a free, no-obligation project quote.",
+      primary: "Get a Free Quote",
+      secondary: "Book a Discovery Call Today",
+    },
   },
 
   // ============================================
@@ -2092,6 +2212,12 @@ export const mainServiceData = {
     heroBadge: "10+ years of design experience",
     heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
 
+    // Hero CTAs
+    heroCtas: {
+      primary: "Get a Free UI/UX Design Quote",
+      secondary: "",
+    },
+
     // Hero Stats
     stats: [
       { value: "10+", label: "Years of Design Experience" },
@@ -2281,10 +2407,33 @@ export const mainServiceData = {
       },
     ],
 
+    // Our UI/UX Design Services (section heading)
+    ourServices: {
+      title: "Our UI/UX Design Services",
+      description: "We offer complete UI/UX design and development services under one roof — some clients search for this as UX/UI design services or UI/UX development services, but it all means the same thing to us: helping you design a product people enjoy using. From the first sketch to final handoff, our team supports every stage of your ui ux designing journey.",
+    },
+
+    // Benefits of Our UI/UX Design Services (section heading)
+    benefitsSection: {
+      title: "Benefits of Our UI/UX Design Services",
+    },
+
+    // Section heading overrides
+    testimonialsSection: {
+      title: "Success Stories & Client Reviews",
+    },
+    processSection: {
+      title: "Our 4-Step UI/UX Design Process",
+    },
+    industriesSection: {
+      title: "Industries We Serve",
+      description: "No matter your industry, our team creates ui ux design solutions tailored to your users, your goals, and your market, including:",
+    },
+
     // Technology Stack Data
     techStack: {
       title: "Technology & Tools We Use",
-      description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products. On the development side, our team works with modern frameworks, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
+      description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products, including Figma, Adobe XD, Sketch, InVision, Maze, and Hotjar. On the development side, our team works with React, Flutter, Swift, and Kotlin, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
       aiModelsFrameworks: ["Figma", "Adobe XD", "Sketch"],
       mlData: ["InVision", "Maze", "Hotjar"],
       infrastructure: ["React", "Flutter"],
@@ -2433,6 +2582,21 @@ export const mainServiceData = {
         answer: "Yes. We offer UI/UX redesign services to improve usability, modernize the look and feel, and boost conversions on a website or app you already have.",
       },
     ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Design a Better User Experience?",
+      description: "Partner with a UI/UX design agency that puts your users — and your business goals — first. Get in touch with Clickmasters today for a free consultation and a custom quote.",
+      primary: "Get Your Free UI/UX Design Quote",
+      secondary: "",
+    },
+
+    // Mid-page CTA labels
+    sectionCtas: {
+      afterServices: "Talk to Our UI/UX Design Team",
+      afterWhyChooseUs: "See Why Businesses Trust Us",
+      afterProcess: "Get Your Free UI/UX Design Quote",
+    },
   },
     // ============================================
   // DATA SERVICES - NEW
@@ -4254,5 +4418,5 @@ export const getAllSubServicePages = () => {
   return subServices;
 };
 
-export { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data";
-export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData";
+export { enrichServiceData, SERVICE_SECTION_DATA } from "./service-section-data.js";
+export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from "./whyChooseUsData.js";
