@@ -1315,7 +1315,7 @@ export const mainServiceData = {
     // Trust Section Data
     trustSection: {
       title: "Artificial Intelligence Company Built for Real Results",
-      description: "Clickmasters is an artificial intelligence company delivering scalable AI solutions built around real business goals. Our AI developers, data engineers, and AI consultants specialize in machine learning, large language models, and intelligent automation. As a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights.",
+      description: "Clickmasters is an artificial intelligence company delivering scalable AI solutions built around real business goals. Our AI developers, data engineers, and AI consultants specialize in machine learning, large language models, and intelligent automation. As a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights. Whether you need an AI chatbot development company for customer support or an enterprise AI solutions partner, our artificial intelligence services and solutions are built to scale.",
       points: [
         "50+ AI projects delivered across industries",
         "97% model accuracy achieved on production systems",
@@ -1323,7 +1323,7 @@ export const mainServiceData = {
         "24/7 AI monitoring and support for all deployed solutions",
         "Secure engineering and transparent delivery with measurable ROI",
       ],
-      closingText: "Our AI development services combine expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock built to scale with your business.",
+      closingText: "Our AI development services combine secure engineering, transparent delivery, measurable ROI, and expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock.",
     },
     
     // Features/Services List
@@ -1390,19 +1390,40 @@ export const mainServiceData = {
     ],
     
     // Benefits Section Data
+    benefitsSection: {
+      title: "Why Businesses Choose Our AI Development Services",
+    },
     benefits: [
-      "Faster time to value we move AI from idea to production quickly using proven architectures",
-      "Lower operational costs by reducing manual, repetitive work across your organization",
-      "Data-driven decisions with predictive analytics and AI-powered insights",
-      "Secure, governed AI with guardrails, access controls, and monitoring for compliance",
-      "Built to scale systems that grow with your user base and data volume",
-      "Measurable ROI every AI initiative tied to clear business KPIs",
+      {
+        title: "Faster Time to Value",
+        description: "We move AI from idea to production quickly, using proven architectures instead of reinventing the wheel on every project.",
+      },
+      {
+        title: "Lower Operational Costs",
+        description: "Our AI automation systems reduce manual, repetitive work — freeing your team to focus on higher-value tasks.",
+      },
+      {
+        title: "Data-Driven Decisions",
+        description: "Predictive analytics and AI-powered insights help you make faster, more confident business decisions.",
+      },
+      {
+        title: "Secure, Governed AI",
+        description: "Every AI solution we build includes guardrails, access controls, and monitoring — so you stay compliant and in control.",
+      },
+      {
+        title: "Built to Scale",
+        description: "As a custom AI development company, we architect systems that grow with your user base and data volume, not just your first pilot.",
+      },
+      {
+        title: "Measurable ROI",
+        description: "We tie every AI initiative to clear business KPIs, so you always know what your AI investment is delivering.",
+      },
     ],
     
     // Why Choose Us Data
     whyChooseUs: {
       title: "Why Choose Clickmasters as Your Artificial Intelligence Company",
-      description: "Choosing the right artificial intelligence company for your business isn't about the flashiest demo it's about who can build, secure, and support AI in production. At Clickmasters, we focus on long-term partnerships and practical results:",
+      description: "Choosing the right artificial intelligence company for your business isn't about the flashiest demo it's about who can build, secure, and support AI in production. At Clickmasters, we focus on long-term partnerships and practical results, delivering reliable AI solutions that are designed to perform, scale, and create measurable business value:",
       reasons: [
         {
           title: "Full-stack AI expertise",
@@ -1430,7 +1451,13 @@ export const mainServiceData = {
         },
       ],
     },
-    
+
+    // Our Artificial Intelligence Development Services (section heading)
+    ourServices: {
+      title: "Our Artificial Intelligence Development Services",
+      description: "We offer end-to-end artificial intelligence services and solutions — from strategy and prototyping to full-scale deployment and support. As a complete AI development company, we cover every layer of the AI stack.",
+    },
+
     // SubServices
     subServices: [
       {
@@ -1585,14 +1612,18 @@ export const mainServiceData = {
     // Technology Stack Data
     techStack: {
       title: "AI Development Technologies Behind Our Solutions",
-      description: "We choose technology for reliability, maintainability, and long-term support not trends. Our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
+      description: "We choose technology for reliability, maintainability, and long-term support — not trends.",
       aiModelsFrameworks: ["OpenAI (GPT)", "Anthropic (Claude)", "Google Gemini", "open-source LLMs (Llama, Mistral)"],
       mlData: ["Python", "TensorFlow", "PyTorch", "vector databases"],
       infrastructure: ["AWS", "Azure", "AWS Bedrock", "Docker"],
       applicationLayer: ["Next.js", "React", "Node.js", "PostgreSQL"],
+      closingText: "This combination lets our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
     },
     
     // Client Success Stories (Testimonials)
+    testimonialsSection: {
+      title: "Success Stories",
+    },
     testimonials: [
       {
         quote: "Clickmasters built an AI chatbot that actually helps our customers. Within two months, our support tickets dropped by 40%.",
@@ -1624,6 +1655,16 @@ export const mainServiceData = {
       },
     ],
     
+    // Process Section heading
+    processSection: {
+      title: "Our Artificial Intelligence Development Process",
+    },
+
+    // Process Section heading
+    processSection: {
+      title: "Our Artificial Intelligence Development Process",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -1644,6 +1685,12 @@ export const mainServiceData = {
       },
     ],
     
+    // Industries Section heading
+    industriesSection: {
+      title: "Artificial Intelligence Services for Every Industry",
+      description: "Our artificial intelligence development services are adapted to the operating reality of your industry — not a generic playbook.",
+    },
+
     // Industries Data
     industries: [
       { name: "SaaS", description: "AI features, onboarding automation, in-app copilots" },
@@ -1705,7 +1752,7 @@ export const mainServiceData = {
       },
       {
         question: "Which AI models do you work with?",
-        answer: "We work with OpenAI, Anthropic (Claude), Google Gemini, and open-source models, selecting the right model based on your use case, security, and budget.",
+        answer: "We work with OpenAI, Anthropic, Google Gemini, and AWS Bedrock, selecting the right model based on your use case, security, and budget.",
       },
       {
         question: "How do you keep AI outputs accurate and safe?",
@@ -1724,6 +1771,21 @@ export const mainServiceData = {
         answer: "We work with OpenAI, Anthropic (Claude), Google Gemini, and open-source models (Llama, Mistral), deployed via Azure, AWS Bedrock, or self-hosted infrastructure whichever fits your security and compliance needs.",
       },
     ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Partner With a Trusted Artificial Intelligence Company?",
+      description: "Partner with an artificial intelligence company that ships production AI, not just prototypes. Book a free consultation and let's map out the right AI solution for your business.",
+      primary: "Book a Free AI Consultation",
+      secondary: "Talk to Our AI Development Team",
+    },
+
+    // Mid-page CTA labels (rendered by <SectionCta> in main-service-page.tsx)
+    sectionCtas: {
+      afterServices: "Talk to Our AI Development Team",
+      afterWhyChooseUs: "See Why Teams Trust Our AI Development Company",
+      afterProcess: "Start Your AI Project Today",
+    },
   },
   
   // MACHINE LEARNING DEVELOPMENT SERVICES
@@ -2624,10 +2686,19 @@ export const mainServiceData = {
       { value: "2-3 wks", label: "Typical First Dashboard Turnaround" },
     ],
 
+    // Hero CTAs
+    heroCtas: {
+      primary: "Get Your Free Data Strategy Call",
+      secondary: "",
+    },
+
     // Trust Section Data
     trustSection: {
       title: "A Trusted Data Solutions Company in the USA",
       description: "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.",
+      paragraphs: [
+        "Our engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team has delivered 200+ data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.",
+      ],
       points: [
         "Engineers certified by AWS, Microsoft Azure, and Google Cloud",
         "200+ data projects delivered across the United States",
@@ -2636,6 +2707,12 @@ export const mainServiceData = {
         "Scales from a five-person team to Fortune 500 enterprise data services",
       ],
       closingText: "Whether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
+    },
+
+    // Services Section (Explore) heading
+    servicesSection: {
+      title: "Our Data Services",
+      description: "We offer a complete set of data services under one roof. Choose one service, or combine a few — every plan is built around your business, not a one-size-fits-all package.",
     },
 
     // Features/Services List
@@ -2697,6 +2774,9 @@ export const mainServiceData = {
     ],
 
     // Benefits Section Data
+    benefitsSection: {
+      title: "Why Data Services Matter for Your Business",
+    },
     benefits: [
       "Faster decisions: Get clear answers in hours, not weeks, with fast data processing services",
       "Lower costs: Find and cut wasted spending across your business",
@@ -2973,6 +3053,21 @@ export const mainServiceData = {
         answer: "Most data migration service projects take 4 to 12 weeks, depending on how much data you have and how many systems are involved. A data analytics company USA-wide can usually turn around a first dashboard in 2 to 3 weeks.",
       },
     ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Put Your Data to Work?",
+      description: "Stop guessing and start growing. Talk to our data services company today and see how our data analytics, data engineering, and big data services can help your business make better decisions.",
+      primary: "Book Your Free Consultation",
+      secondary: "",
+    },
+
+    // Mid-page CTA labels
+    sectionCtas: {
+      afterServices: "Talk to Our Data Services Team",
+      afterWhyChooseUs: "See Why Teams Trust Our Data Services Company",
+      afterProcess: "Start Your Data Project Today",
+    },
   },
     // ============================================
   // CLOUD DEVOPS SERVICE - NEW
@@ -3000,10 +3095,19 @@ export const mainServiceData = {
       { value: "3+", label: "Regions Served (USA, UK, UAE)" },
     ],
 
+    // Hero CTAs
+    heroCtas: {
+      primary: "Get a Free DevOps Consultation",
+      secondary: "",
+    },
+
     // Trust Section Data
     trustSection: {
       title: "A Cloud DevOps Company You Can Trust",
       description: "Clickmasters is a cloud DevOps company that works with businesses across the USA, UK, and UAE. We help teams move to the cloud, automate their daily work, and keep their systems running smoothly at all times. As a full-service DevOps services company, we bring together skilled cloud engineers, automation experts, and support staff under one roof.",
+      paragraphs: [
+        "Our team holds hands-on experience with AWS, Azure, and Google Cloud, and we follow proven DevOps consulting methods used by top enterprises around the world.",
+      ],
       points: [
         "Hands-on experience with AWS, Azure, and Google Cloud",
         "Proven DevOps consulting methods used by top enterprises worldwide",
@@ -3011,7 +3115,22 @@ export const mainServiceData = {
         "Plans that fit startups setting up their first server and enterprises needing enterprise DevOps services",
         "Real results, not empty promises — DevOps consulting services USA businesses turn to",
       ],
-      closingText: "Whether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals.",
+      closingText: "Whether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals. We are proud to be a DevOps company USA teams trust, and we provide DevOps services USA and DevOps consulting services USA businesses turn to when they want real results, not empty promises.",
+    },
+
+    // Services Section (Explore) heading
+    servicesSection: {
+      title: "Our Cloud & DevOps Services",
+      description: "We offer a complete set of DevOps services to help you plan, build, and manage your cloud environment from start to finish.",
+    },
+
+    // Company / Agency Section — "Your Cloud DevOps Agency in the USA"
+    companySection: {
+      title: "Your Cloud DevOps Agency in the USA",
+      paragraphs: [
+        "Clickmasters works as a Cloud DevOps Agency USA businesses rely on, supporting companies from coast to coast alongside our clients in the UK and UAE. Some teams look for a DevOps Agency USA to handle day-to-day operations, while others need a full DevOps Development Agency USA to build new cloud systems from the ground up.",
+        "We also work as a DevOps Consulting Agency USA for teams that just need expert guidance, and as a Cloud DevOps Development Agency for companies building new cloud-native products. Whether you need us as a general DevOps Agency, a focused DevOps Services Agency, or a DevOps Solutions Agency and DevOps Automation Agency for a specific project, our DevOps Development Agency and DevOps Consulting Agency teams are ready to help.",
+      ],
     },
 
     // Features/Services List
@@ -3073,6 +3192,9 @@ export const mainServiceData = {
     ],
 
     // Benefits Section Data
+    benefitsSection: {
+      title: "Benefits of Working With Our DevOps Team",
+    },
     benefits: [
       "Faster software releases with fewer bugs",
       "Lower cloud hosting and infrastructure costs",
@@ -3227,6 +3349,11 @@ export const mainServiceData = {
       applicationLayer: ["CI/CD pipelines", "Monitoring & alerting", "Cloud-native tooling"],
     },
 
+    // Testimonials Section heading
+    testimonialsSection: {
+      title: "What Our Clients Say",
+    },
+
     // Client Success Stories (Testimonials)
     testimonials: [
       {
@@ -3259,6 +3386,11 @@ export const mainServiceData = {
       },
     ],
 
+    // Process Section heading
+    processSection: {
+      title: "Our 4-Step Process",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -3278,6 +3410,12 @@ export const mainServiceData = {
         description: "Once your systems are live, our team keeps watching, fixing, and improving them, so your business keeps running smoothly long after launch.",
       },
     ],
+
+    // Industries Section heading
+    industriesSection: {
+      title: "Industries We Serve",
+      description: "Our DevOps implementation services support businesses across many industries, including:",
+    },
 
     // Industries Data
     industries: [
@@ -3362,6 +3500,21 @@ export const mainServiceData = {
         answer: "Clickmasters works remotely with clients across every US state, the UK, and the UAE, so you get the same fast response and hands-on support as a local team without being limited to a cloud DevOps company near me search.",
       },
     ],
+
+    // Final CTA Section
+    finalCta: {
+      title: "Ready to Build a Faster, Safer Cloud Setup?",
+      description: "Whether you need a one-time project or an ongoing DevOps service provider, our team is ready to help. Get in touch today and let's build a cloud and DevOps plan that fits your business.",
+      primary: "Request a Free Quote",
+      secondary: "",
+    },
+
+    // Mid-page CTA labels
+    sectionCtas: {
+      afterServices: "Talk to Our Cloud DevOps Team",
+      afterWhyChooseUs: "See Why Teams Trust Our Cloud DevOps Company",
+      afterProcess: "Start Your Cloud DevOps Project Today",
+    },
   },
 
   // ============================================
@@ -3381,6 +3534,12 @@ export const mainServiceData = {
     description: "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat. From a single security audit to full-time managed protection, our team acts as your cybersecurity agency, on call and ready.",
     heroBadge: "24/7 threat monitoring & response",
     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+
+    // Hero CTAs
+    heroCtas: {
+      primary: "Schedule a Free Consultation",
+      secondary: "Get Your Free Security Audit",
+    },
     
     // Hero Stats
     stats: [
@@ -3401,6 +3560,7 @@ export const mainServiceData = {
         "Fast response times when something looks wrong",
       ],
       closingText: "We work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+      button: "Schedule a Free Consultation →",
     },
     
     // Features/Services List
@@ -3477,6 +3637,9 @@ export const mainServiceData = {
     ],
     
     // Benefits Section Data
+    benefitsSection: {
+      title: "Benefits of Working With Our Cybersecurity Company",
+    },
     benefits: [
       "Fewer Successful Attacks — Regular testing and monitoring stop threats before they cause damage.",
       "Lower Financial Risk — Preventing a breach costs far less than recovering from one.",
@@ -3513,7 +3676,13 @@ export const mainServiceData = {
         },
       ],
     },
-    
+
+    // Our Cybersecurity Services (section heading)
+    ourServices: {
+      title: "Complete Cybersecurity Services and Solutions for Every Business",
+      description: "As a full-service cybersecurity solutions provider, we cover every layer of your business — your network, your cloud, your apps, and your people. Here are our core cybersecurity services.",
+    },
+
     // SubServices
     subServices: [
       {
@@ -3687,6 +3856,9 @@ export const mainServiceData = {
     },
     
     // Client Success Stories (Testimonials)
+    testimonialsSection: {
+      title: "Success Stories",
+    },
     testimonials: [
       {
         quote: "We were looking for a reliable cybersecurity company that could help us prepare for our annual compliance audit. Clickmasters reviewed our policies, strengthened our controls, and helped us pass our latest PCI-DSS audit with zero findings. Their team really knows cybersecurity.",
@@ -3716,15 +3888,13 @@ export const mainServiceData = {
         company: "Manufacturing Company",
         location: "USA",
       },
-      {
-        quote: "Clickmasters helped us build a comprehensive security program from scratch. Their team was thorough, transparent, and genuinely cared about our security posture. We finally feel confident about our cybersecurity.",
-        author: "Michael Brown",
-        title: "CTO",
-        company: "Technology & SaaS Company",
-        location: "USA",
-      },
     ],
     
+    // Process Section heading
+    processSection: {
+      title: "Our 4-Step Cybersecurity Process",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -3745,6 +3915,12 @@ export const mainServiceData = {
       },
     ],
     
+    // Industries Section heading
+    industriesSection: {
+      title: "Cybersecurity Services for Every Industry",
+      description: "Our cybersecurity services are trusted by teams across regulated and high-growth industries alike, including:",
+    },
+
     // Industries Data
     industries: [
       { name: "Healthcare", description: "HIPAA-compliant data protection and patient record security" },
@@ -3864,9 +4040,12 @@ export const mainServiceData = {
     
     // Mid-page CTA labels
     sectionCtas: {
+      afterTrustSection: "Schedule a Free Consultation",
       afterServices: "Talk to Our Cybersecurity Professionals",
       afterWhyChooseUs: "See Why Businesses Trust Us",
-      afterProcess: "Start Your Free Security Audit",
+      afterIndustries: "Find Out How We Protect Your Industry",
+      afterTestimonials: "Read More Client Success Stories",
+      afterProcess: "Start Step 1 — Book Your Free Security Audit",
     },
   },
 
@@ -3887,7 +4066,13 @@ export const mainServiceData = {
     description: "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers. As a trusted software testing company, we find bugs, security gaps, and performance issues before they ever reach your users, so your product works the first time and every time. Whether you need one round of manual testing or a full-time automation testing partner, our QA testing company is built to fit your release schedule, not slow it down.",
     heroBadge: "500+ Projects Tested",
     heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
-    
+
+    // Hero CTAs
+    heroCtas: {
+      primary: "Get a Free QA Consultation",
+      secondary: "Talk to Our QA Experts",
+    },
+
     // Hero Stats
     stats: [
       { value: "500+", label: "Projects Tested" },
@@ -3907,8 +4092,15 @@ export const mainServiceData = {
         "Flexible engagement: one-time testing, ongoing QA, or a dedicated QA team",
       ],
       closingText: "We work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
+      button: "Schedule a Free QA Review →",
     },
-    
+
+    // Our QA Testing Services (section heading)
+    ourServices: {
+      title: "Complete QA Testing Services and Solutions for Every Stage of Development",
+      description: "As a full-service software testing company, we cover every layer of your product — from a single feature to your entire platform. Here are our core QA testing services.",
+    },
+
     // Features/Services List
     features: [
       {
@@ -3981,8 +4173,11 @@ export const mainServiceData = {
       { name: "EduSmart", industry: "Education", icon: "GraduationCap" },
       { name: "LogiFlow", industry: "Logistics", icon: "Truck" },
     ],
-    
+
     // Benefits Section Data
+    benefitsSection: {
+      title: "Why Businesses Choose Our QA Testing Services",
+    },
     benefits: [
       "Fewer Bugs in Production — Catching issues before launch means fewer emergency fixes after.",
       "Faster Releases — Automated testing shortens the time between 'code complete' and 'ready to ship.'",
@@ -4191,8 +4386,11 @@ export const mainServiceData = {
         },
       ],
     },
-    
+
     // Client Success Stories (Testimonials)
+    testimonialsSection: {
+      title: "Success Stories",
+    },
     testimonials: [
       {
         quote: "ClickMasters caught bugs our own team missed for months. Our release process is faster now, and we ship with a lot more confidence.",
@@ -4223,7 +4421,12 @@ export const mainServiceData = {
         location: "USA",
       },
     ],
-    
+
+    // Process Section heading
+    processSection: {
+      title: "How Our QA Testing Services Company Works",
+    },
+
     // Process Steps
     processSteps: [
       {
@@ -4243,7 +4446,13 @@ export const mainServiceData = {
         description: "After fixes are made, we retest to confirm the issue is resolved and offer ongoing QA support for every future release.",
       },
     ],
-    
+
+    // Industries Section heading
+    industriesSection: {
+      title: "Industries That Rely on Our QA Expertise",
+      description: "Our QA testing services are trusted by teams across regulated and high-growth industries alike, including:",
+    },
+
     // Industries Data
     industries: [
       { name: "Healthcare", description: "HIPAA-aware testing for patient-facing and clinical software" },
@@ -4255,7 +4464,12 @@ export const mainServiceData = {
       { name: "Education", description: "Testing for learning platforms and student data systems" },
       { name: "Real Estate", description: "Testing for listing platforms and transaction workflows" },
     ],
-    
+
+    // FAQ Section heading
+    faqSection: {
+      title: "Questions Teams Ask Before They Hire a QA Partner",
+    },
+
     // Pricing
     pricing: [
       {
@@ -4362,9 +4576,12 @@ export const mainServiceData = {
     
     // Mid-page CTA labels
     sectionCtas: {
+      afterTrustSection: "Schedule a Free QA Review",
       afterServices: "Talk to Our QA Testing Experts",
       afterWhyChooseUs: "See Why Teams Trust Our QA Testing Company",
-      afterProcess: "Start Your Free QA Consultation",
+      afterIndustries: "Find Out How We Test for Your Industry",
+      afterTestimonials: "Read More Client Success Stories",
+      afterProcess: "Start Step 1 — Book Your Free QA Consultation",
     },
   },
 };

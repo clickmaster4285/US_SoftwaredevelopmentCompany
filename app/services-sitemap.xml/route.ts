@@ -1,6 +1,6 @@
 import { mainServicesData } from "../../data/main-services.js";
 
-const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com/";
+const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 
 function buildUrlElement(url: string, lastMod: string) {
   return `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastMod}</lastmod>\n  </url>`;
