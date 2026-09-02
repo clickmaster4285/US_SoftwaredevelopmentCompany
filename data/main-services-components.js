@@ -34,6 +34,34 @@ import {
   Quote,
   Sparkles,
   Workflow,
+  Search,
+  TrendingUp,
+  Hotel,
+  Tv2,
+  ShoppingCart,
+  Activity,
+  Stethoscope,
+  GraduationCap,
+  CreditCard,
+  MessageSquare,
+  Bot,
+  Users2,
+  Database,
+  BrainCircuit,
+  Network,
+  Repeat,
+  SlidersHorizontal,
+  CloudCog,
+  GitBranch,
+  GitPullRequest,
+  Container,
+  FileCode,
+  ArrowRightLeft,
+  PenTool,
+  Component,
+  Warehouse,
+  PieChart,
+  Boxes,
 } from "lucide-react";
 import { SectionHeading } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 
@@ -81,6 +109,34 @@ export function IconFor({ name }) {
     Handshake,
     ShoppingBag,
     Heart,
+    Search,
+    TrendingUp,
+    Hotel,
+    Tv2,
+    ShoppingCart,
+    Activity,
+    Stethoscope,
+    GraduationCap,
+    CreditCard,
+    MessageSquare,
+    Bot,
+    Users2,
+    Database,
+    BrainCircuit,
+    Network,
+    Repeat,
+    SlidersHorizontal,
+    CloudCog,
+    GitBranch,
+    GitPullRequest,
+    Container,
+    FileCode,
+    ArrowRightLeft,
+    PenTool,
+    Component,
+    Warehouse,
+    PieChart,
+    Boxes,
   };
 
   const IconComponent = name ? iconMap[name] : undefined;
@@ -129,13 +185,14 @@ export function MainServiceHero({ service }) {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground transition hover:opacity-90"
               >
-                Start a Project <ArrowRight className="h-4 w-4" />
+                {service.heroCtas?.primary || "Start a Project"}{" "}
+                <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href="#pricing"
                 className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-accent hover:text-accent-foreground"
               >
-                Book a Free Consultation
+                {service.heroCtas?.secondary || "Book a Free Consultation"}
               </a>
             </div>
           </div>
@@ -172,16 +229,21 @@ export function MainServiceHero({ service }) {
 
 // Explore Section Component
 export function ExploreSection({ service }) {
+  const ourServices = service.ourServices || {};
+  const exploreTitle = ourServices.title || service.servicesSection?.title || `Everything inside ${service.title}`;
+  const exploreCopy = ourServices.description || service.servicesSection?.description || "Choose the focused service line that best matches your product, platform, or operational goal.";
+  const servicesToRender = service.subServices || ourServices.subServices || ourServices.services || [];
+
   return (
     <section className="bg-background px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Explore"
-          title={`Everything inside ${service.title}`}
-          copy="Choose the focused service line that best matches your product, platform, or operational goal."
+          title={exploreTitle}
+          copy={exploreCopy}
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {(service.subServices || []).map((item) => (
+          {servicesToRender.map((item) => (
             <Link
               key={item.slug}
               href={`/${service.slug}/${item.slug}`}
@@ -236,14 +298,19 @@ export function TrustSection({ service }) {
               <p className="text-lg leading-8">
                 {trustData.description}
               </p>
-              {trustData.points.map((point, index) => (
+              {(trustData.paragraphs || []).map((paragraph, index) => (
+                <p key={index} className="text-base leading-7">
+                  {paragraph}
+                </p>
+              ))}
+              {(trustData.points || []).map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1.5 h-5 w-5 shrink-0 text-primary" />
                   <p className="text-base leading-7">{point}</p>
                 </div>
               ))}
               {trustData.closingText && (
-                <p className="mt-4 text-lg font-semibold text-foreground">
+                <p className="mt-4 text-lg ">
                   {trustData.closingText}
                 </p>
               )}
@@ -390,8 +457,14 @@ export function BenefitsSection({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Benefits"
-          title="Benefits of Our Software Development Services"
-          copy="Businesses choose our software development solutions for measurable, practical reasons."
+          title={
+            service.benefitsSection?.title ||
+            "Benefits of Our Software Development Services"
+          }
+          copy={
+            service.benefitsSection?.description ||
+            "Businesses choose our software development solutions for measurable, practical reasons."
+          }
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
@@ -400,7 +473,20 @@ export function BenefitsSection({ service }) {
               className="rounded-lg border border-border bg-card p-6 flex items-start gap-3"
             >
               <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-primary" />
-              <p className="text-sm leading-6 text-card-foreground">{benefit}</p>
+              {typeof benefit === "string" ? (
+                <p className="text-sm leading-6 text-card-foreground">
+                  {benefit}
+                </p>
+              ) : (
+                <div>
+                  <h3 className="text-base font-semibold text-card-foreground">
+                    {benefit.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                    {benefit.description}
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -418,8 +504,14 @@ export function TrustedClientsSection({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Trusted clients"
-          title={`${service.title} for teams with real stakes`}
-          copy={`We partner with organizations that need dependable ${service.title.toLowerCase()} delivery.`}
+          title={
+            service.trustedClientsSection?.title ||
+            `${service.title} for teams with real stakes`
+          }
+          copy={
+            service.trustedClientsSection?.description ||
+            `We partner with organizations that need dependable ${service.title.toLowerCase()} delivery.`
+          }
         />
         <div className="mt-14 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
           {clients.slice(0, 5).map((client) => (
@@ -498,8 +590,12 @@ export function ProcessSection({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Process"
-          title="Our Software Development Process"
-          copy="A clear, structured approach to delivering high-quality software."
+          title={service.processSection?.title || "Our Software Development Process"}
+          copy={
+            service.processSection
+              ? service.processSection.description
+              : "A clear, structured approach to delivering high-quality software."
+          }
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
@@ -536,33 +632,69 @@ export function TechStackSection({ service }) {
     aiAutomation: ["OpenAI", "custom machine learning integrations"],
   };
 
-  const allTech = [
-    ...(techData.frontend || []),
-    ...(techData.backend || []),
-    ...(techData.databases || []),
-    ...(techData.cmsCommerce || []),
-    ...(techData.cloudDevOps || []),
-    ...(techData.aiAutomation || []),
-  ];
+  // Prefer explicit labelled groups; otherwise collect every array-valued
+  // category so services can name their techStack groups freely.
+  const groups = Array.isArray(techData.groups) ? techData.groups : null;
+  const allTech = groups
+    ? []
+    : Array.from(
+        new Set(
+          Object.entries(techData)
+            .filter(
+              ([key, value]) =>
+                Array.isArray(value) &&
+                key !== "title" &&
+                key !== "description",
+            )
+            .flatMap(([, value]) => value),
+        ),
+      );
 
   return (
-    <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
+    <section className="border-y border-border bg-primary text-white px-5 py-24  md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Tech stack"
           title={techData.title}
           copy={techData.description}
         />
-        <div className="mt-14 flex flex-wrap justify-center gap-3">
-          {allTech.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
+        {groups ? (
+          <div className="mt-14 grid gap-8 md:grid-cols-2">
+            {groups.map((group) => (
+              <div key={group.label}>
+                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
+                  {group.label}
+                </h3>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {(group.items || []).map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-14 flex flex-wrap justify-center gap-3">
+            {allTech.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        )}
+        {techData.closingText ? (
+          <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
+            {techData.closingText}
+          </p>
+        ) : null}
       </div>
     </section>
   );
@@ -651,8 +783,11 @@ export function ClientSuccessStories({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Testimonials"
-          title="Client Success Stories"
-          copy="Hear from our clients about their experience working with us."
+          title={service.testimonialsSection?.title || "Client Success Stories"}
+          copy={
+            service.testimonialsSection?.description ||
+            "Hear from our clients about their experience working with us."
+          }
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
@@ -671,9 +806,11 @@ export function ClientSuccessStories({ service }) {
                 <p className="text-sm text-muted-foreground">
                   {testimonial.title}, {testimonial.company}
                 </p>
-                <p className="text-xs text-muted-foreground">
-                  {testimonial.location}
-                </p>
+                {testimonial.location ? (
+                  <p className="text-xs text-muted-foreground">
+                    {testimonial.location}
+                  </p>
+                ) : null}
               </div>
             </div>
           ))}
@@ -694,8 +831,11 @@ export function IndustriesSection({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Industries"
-          title="Industries We Serve"
-          copy="Our business software development experience spans regulated and high-growth sectors alike."
+          title={service.industriesSection?.title || "Industries We Serve"}
+          copy={
+            service.industriesSection?.description ||
+            "Our business software development experience spans regulated and high-growth sectors alike."
+          }
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {industries.map((industry) => (
@@ -727,8 +867,11 @@ export function PricingSection({ plans, service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Investment"
-          title={`${service.title} investment`}
-          copy={`Flexible engagement models for ${service.title.toLowerCase()} scoped to your timeline, team size, and goals.`}
+          title={service.pricingSection?.title || `${service.title} investment`}
+          copy={
+            service.pricingSection?.description ||
+            `Flexible engagement models for ${service.title.toLowerCase()} scoped to your timeline, team size, and goals.`
+          }
         />
         <div className="mt-14 grid gap-4 lg:grid-cols-3">
           {plans.map((plan, index) => (
@@ -788,7 +931,8 @@ export function FaqSection({ service }) {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="FAQ"
-          title={`Common questions about ${service.title.toLowerCase()}`}
+          title={service.faqsSection?.title || "Frequently Asked Questions"}
+          copy={service.faqsSection?.description}
         />
         <div className="mt-14 divide-y divide-border rounded-lg border border-border bg-card">
           {faqs.map((item) => (
@@ -808,23 +952,60 @@ export function FaqSection({ service }) {
   );
 }
 
+// Mid-page CTA band. Renders nothing unless the service supplies the label,
+// so services without sectionCtas are unchanged.
+export function SectionCta({ label }) {
+  if (!label) return null;
+
+  return (
+    <section className="bg-background px-5 pb-8 md:px-10">
+      <div className="mx-auto flex max-w-7xl justify-center">
+        <Link
+          href="/contact"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-bold text-primary-foreground transition hover:opacity-90"
+        >
+          {label} <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 // Final CTA Component
 export function FinalCTA({ service }) {
+  const cta = service.finalCta || {};
+
   return (
     <section className="bg-primary px-5 py-24 text-primary-foreground md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
           <MessageSquareText className="mb-8 h-7 w-7" />
           <h2 className="max-w-4xl text-[clamp(2.5rem,7vw,6rem)] font-semibold leading-[0.95] tracking-tight">
-            Ready to shape your {service.title.toLowerCase()} roadmap?
+            {cta.title ||
+              `Ready to shape your ${service.title.toLowerCase()} roadmap?`}
           </h2>
+          {cta.description ? (
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-primary-foreground/80">
+              {cta.description}
+            </p>
+          ) : null}
         </div>
-        <Link
-          href="/contact"
-          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-primary-foreground px-6 py-3 text-sm font-bold text-primary transition hover:opacity-90"
-        >
-          Book a call <ArrowRight className="h-4 w-4" />
-        </Link>
+        <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary-foreground px-6 py-3 text-sm font-bold text-primary transition hover:opacity-90"
+          >
+            {cta.primary || "Book a call"} <ArrowRight className="h-4 w-4" />
+          </Link>
+          {cta.secondary ? (
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border border-primary-foreground/30 px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary-foreground/10"
+            >
+              {cta.secondary}
+            </Link>
+          ) : null}
+        </div>
       </div>
     </section>
   );

@@ -1,9 +1,12 @@
 import ContactPage from "./ContactPage";
 
 export const metadata = {
-  title: "Contact Clickmasters | Start a Digital Product Project",
+  title: "Contact – Clickmasters Software Development Company",
   description:
-    "Contact Clickmasters to discuss software development, web apps, mobile apps, AI, automation, and product design projects.",
+    "Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we're here to help you get started.",
+  alternates: {
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/contact",
+  },
 };
 
 export default function Page() {

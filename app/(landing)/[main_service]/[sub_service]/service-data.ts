@@ -61,8 +61,21 @@ export type MainService = {
   heroImage?: string;
   stats?: Stat[];
   subServices?: SubService[];
+  ourServices?: {
+    title?: string;
+    description?: string;
+    subServices?: SubService[];
+  };
   features?: ServiceFeature[];
   pricing?: ServicePricingTier[];
+  pricingSection?: {
+    title?: string;
+    description?: string;
+  };
+  faqsSection?: {
+    title?: string;
+    description?: string;
+  };
   faqs?: ServiceFaq[];
   trustedClients?: TrustedClient[];
 };

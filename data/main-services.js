@@ -75,8 +75,32 @@ import {
   MessageSquare,
   GraduationCap,
   Building2,
+  BrainCircuit,
+  Network,
+  Repeat,
+  SlidersHorizontal,
+  CloudCog,
+  GitBranch,
+  GitPullRequest,
+  Container,
+  FileCode,
+  ArrowRightLeft,
+  PenTool,
+  Component,
+  Warehouse,
+  PieChart,
+  Boxes,
+  Heart,
+  Crosshair,
+  ClipboardCheck,
+  Laptop,
+  Radar,
+  Wrench,
+  CheckCircle,
+  RefreshCw,
+  PlayCircle,
 } from "lucide-react";
-import { enrichServiceData } from "./service-section-data";
+import { enrichServiceData } from "./service-section-data.js";
 
 /**
  * ICON MAPPING
@@ -160,6 +184,30 @@ export const iconMap = {
   MessageSquare,
   GraduationCap,
   Building2,
+  BrainCircuit,
+  Network,
+  Repeat,
+  SlidersHorizontal,
+  CloudCog,
+  GitBranch,
+  GitPullRequest,
+  Container,
+  FileCode,
+  ArrowRightLeft,
+  PenTool,
+  Component,
+  Warehouse,
+  PieChart,
+  Boxes,
+  Heart,
+  Crosshair,
+  ClipboardCheck,
+  Laptop,
+  Radar,
+  Wrench,
+  CheckCircle,
+  RefreshCw,
+  PlayCircle,
 };
 
 /**
@@ -553,6 +601,14 @@ export const mainServicesData = {
     ],
     subServices: [
       {
+        title: "Custom Web Development Services",
+        slug: "custom-web-development",
+        description: "Custom-coded web solutions built around your brand and workflows.",
+        icon: "Building",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
         title: "Web Application Development",
         slug: "web-application-development",
         description: "Modern web apps and business portals.",
@@ -578,7 +634,7 @@ export const mainServicesData = {
       },
       {
         title: "Progressive Web App Development",
-        slug: "progressive-web-app-development",
+        slug: "pwa-development",
         description: "Installable web apps with offline support.",
         icon: "Zap",
         heroImage:
@@ -656,6 +712,14 @@ export const mainServicesData = {
     ],
     subServices: [
       {
+        title: "Custom Mobile App Development",
+        slug: "custom-mobile-app-development",
+        description: "Apps designed around how your business actually operates.",
+        icon: "Building",
+        heroImage:
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
         title: "Android App Development",
         slug: "android-app-development",
         description: "Native Android apps.",
@@ -699,9 +763,9 @@ export const mainServicesData = {
   },
 
   // 4. DESIGN UI/UX
-  "design-ui-ux": {
+  "ui-ux-design-services": {
     title: "Design UI/UX",
-    slug: "design-ui-ux",
+    slug: "ui-ux-design-services",
     icon: "Palette",
     tagline: "Beautiful, User-Centered Design Solutions",
     description:
@@ -815,7 +879,7 @@ export const mainServicesData = {
       },
       {
         title: "AI Experts",
-        slug: "ai-experts",
+        slug: "ai-consulting",
         description: "Strategic AI advice.",
         icon: "Users",
         heroImage:
@@ -823,7 +887,7 @@ export const mainServicesData = {
       },
       {
         title: "AI Developers",
-        slug: "ai-developers",
+        slug: "custom-ai-app-development",
         description: "Custom AI apps.",
         icon: "Code2",
         heroImage:
@@ -831,7 +895,7 @@ export const mainServicesData = {
       },
       {
         title: "AI Prompt Engineers",
-        slug: "ai-prompt-engineers",
+        slug: "ai-prompt-engineering",
         description: "High-quality model tuning.",
         icon: "Edit3",
         heroImage:
@@ -879,7 +943,7 @@ export const mainServicesData = {
       },
       {
         title: "LLM Applications Development",
-        slug: "llm-applications-development",
+        slug: "llm-application-development",
         description: "Production AI tooling.",
         icon: "FileText",
         heroImage:
@@ -889,132 +953,234 @@ export const mainServicesData = {
   },
 
   // 6. MACHINE LEARNING
-  "machine-learning-ml": {
-    title: "Machine Learning (ML)",
-    slug: "machine-learning-ml",
-    icon: "Cpu",
-    tagline: "Intelligent Data-Driven Solutions",
-    description: "Harness ML to transform data into actionable insights.",
-    heroBadge: "50+ ML Models Deployed",
+  // "machine-learning-ml": {
+  //   title: "Machine Learning (ML)",
+  //   slug: "machine-learning-ml",
+  //   icon: "Cpu",
+  //   tagline: "Intelligent Data-Driven Solutions",
+  //   description: "Harness ML to transform data into actionable insights.",
+  //   heroBadge: "50+ ML Models Deployed",
+  //   heroImage:
+  //     "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //   stats: [
+  //     { value: "50+", label: "ML Models" },
+  //     { value: "95%", label: "Accuracy" },
+  //   ],
+  //   subServices: [
+  //     {
+  //       title: "Machine Learning Solutions",
+  //       slug: "machine-learning-solutions",
+  //       description: "Tailored ML systems.",
+  //       icon: "Brain",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Machine Learning Experts",
+  //       slug: "machine-learning-experts",
+  //       description: "Expert ML practitioners.",
+  //       icon: "Users",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Predictive Analytics",
+  //       slug: "predictive-analytics",
+  //       description: "Outcome forecasting.",
+  //       icon: "BarChart3",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Recommendation Systems",
+  //       slug: "recommendation-systems",
+  //       description: "Personalized engagement.",
+  //       icon: "Target",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Model Training & Optimization",
+  //       slug: "model-training-optimization",
+  //       description: "Performance tuning.",
+  //       icon: "Settings",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Deep Learning Solutions",
+  //       slug: "deep-learning-solutions",
+  //       description: "Advanced neural models.",
+  //       icon: "Cpu",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Deep Learning Experts",
+  //       slug: "deep-learning-experts",
+  //       description: "Specialized architectures.",
+  //       icon: "UserCheck",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //   ],
+  // },
+
+  // 6.5 MACHINE LEARNING DEVELOPMENT SERVICES
+  // Routing/menu/sitemap source for the rich entry in main-services-data.js
+  // (mainServiceData.machineLearningDevelopmentServices). Keep sub-service
+  // slugs in sync with that file or the Explore cards 404.
+  "machine-learning-development-services": {
+    title: "Machine Learning Development",
+    slug: "machine-learning-development-services",
+    icon: "BrainCircuit",
+    tagline: "Machine Learning Services",
+    description:
+      "Custom ML models, predictive analytics, and deep learning built for production.",
+    heroBadge: "40+ ML models deployed to production",
     heroImage:
-      "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
     stats: [
-      { value: "50+", label: "ML Models" },
-      { value: "95%", label: "Accuracy" },
+      { value: "40+", label: "ML Models Deployed" },
+      { value: "95%+", label: "Average Accuracy" },
     ],
     subServices: [
       {
         title: "Machine Learning Solutions",
         slug: "machine-learning-solutions",
-        description: "Tailored ML systems.",
-        icon: "Brain",
+        description: "Custom ML built around your business data.",
+        icon: "BrainCircuit",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Machine Learning Experts",
         slug: "machine-learning-experts",
-        description: "Expert ML practitioners.",
-        icon: "Users",
+        description: "Dedicated ML engineers and data scientists.",
+        icon: "Users2",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Predictive Analytics",
         slug: "predictive-analytics",
-        description: "Outcome forecasting.",
-        icon: "BarChart3",
+        description: "Forecast demand, risk, and trends.",
+        icon: "TrendingUp",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Recommendation Systems",
         slug: "recommendation-systems",
-        description: "Personalized engagement.",
+        description: "Personalization that lifts revenue.",
         icon: "Target",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Model Training & Optimization",
         slug: "model-training-optimization",
-        description: "Performance tuning.",
-        icon: "Settings",
+        description: "Accuracy up, inference costs down.",
+        icon: "SlidersHorizontal",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Deep Learning Solutions",
         slug: "deep-learning-solutions",
-        description: "Advanced neural models.",
-        icon: "Cpu",
+        description: "Neural models for complex problems.",
+        icon: "Layers3",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Deep Learning Experts",
         slug: "deep-learning-experts",
-        description: "Specialized architectures.",
-        icon: "UserCheck",
+        description: "Neural architectures for your data.",
+        icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Custom ML Model Development",
+        slug: "custom-ml-model-development",
+        description: "Models built on your proprietary data.",
+        icon: "Database",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "ML Model Development Services",
+        slug: "ml-model-development-services",
+        description: "Full-cycle model development.",
+        icon: "Repeat",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Machine Learning Solutions Development",
+        slug: "machine-learning-solutions-development",
+        description: "End-to-end ML with MLOps at scale.",
+        icon: "Workflow",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
     ],
   },
 
-  // 7. NLP & COMPUTER VISION
-  "nlp-computer-vision": {
-    title: "NLP & Computer Vision",
-    slug: "nlp-computer-vision",
-    icon: "Eye",
-    tagline: "Advanced Language & Vision Tech",
-    description: "Understand human language and images at scale.",
-    heroBadge: "Advanced AI Tech",
-    heroImage:
-      "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
-    subServices: [
-      {
-        title: "Natural Language Processing (NLP)",
-        slug: "nlp",
-        description: "Text understanding.",
-        icon: "MessageCircle",
-        heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Speech Recognition",
-        slug: "speech-recognition",
-        description: "Voice-to-text.",
-        icon: "Microscope",
-        heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Computer Vision",
-        slug: "computer-vision",
-        description: "Image understanding.",
-        icon: "Eye",
-        heroImage:
-          "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Image Processing",
-        slug: "image-processing",
-        description: "Enhancement & classification.",
-        icon: "Monitor",
-        heroImage:
-          "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Video Analytics",
-        slug: "video-analytics",
-        description: "Real-time intelligence.",
-        icon: "Monitor",
-        heroImage:
-          "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
-      },
-    ],
-  },
+  // // 7. NLP & COMPUTER VISION
+  // "nlp-computer-vision": {
+  //   title: "NLP & Computer Vision",
+  //   slug: "nlp-computer-vision",
+  //   icon: "Eye",
+  //   tagline: "Advanced Language & Vision Tech",
+  //   description: "Understand human language and images at scale.",
+  //   heroBadge: "Advanced AI Tech",
+  //   heroImage:
+  //     "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //   subServices: [
+  //     {
+  //       title: "Natural Language Processing (NLP)",
+  //       slug: "nlp",
+  //       description: "Text understanding.",
+  //       icon: "MessageCircle",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Speech Recognition",
+  //       slug: "speech-recognition",
+  //       description: "Voice-to-text.",
+  //       icon: "Microscope",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Computer Vision",
+  //       slug: "computer-vision",
+  //       description: "Image understanding.",
+  //       icon: "Eye",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Image Processing",
+  //       slug: "image-processing",
+  //       description: "Enhancement & classification.",
+  //       icon: "Monitor",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //     {
+  //       title: "Video Analytics",
+  //       slug: "video-analytics",
+  //       description: "Real-time intelligence.",
+  //       icon: "Monitor",
+  //       heroImage:
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //     },
+  //   ],
+  // },
 
   // 8. DATA SERVICES
   "data-services": {
@@ -1023,49 +1189,193 @@ export const mainServicesData = {
     icon: "Database",
     tagline: "Comprehensive Data Management",
     description: "Transform raw data into business assets.",
-    heroBadge: "100+ Data Projects",
+    heroBadge: "200+ data projects delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+    stats: [
+      { value: "200+", label: "Data Projects Delivered" },
+      { value: "3", label: "Cloud Certifications (AWS, Azure, GCP)" },
+      { value: "SOC 2", label: "Aligned & HIPAA-Ready Practices" },
+      { value: "2-3 wks", label: "Typical First Dashboard Turnaround" },
+    ],
+    trustedClients: [
+      { name: "Meridian Retail Group", industry: "Retail", icon: "ShoppingBag" },
+      { name: "Lakeshore Health Partners", industry: "Healthcare", icon: "Heart" },
+      { name: "Northbridge SaaS Solutions", industry: "SaaS", icon: "Cloud" },
+      { name: "Regional Bank", industry: "Finance", icon: "Coins" },
+      { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
+    ],
     subServices: [
       {
         title: "Data Science & Analytics",
         slug: "data-science-analytics",
-        description: "Data-driven strategy.",
+        description:
+          "Our data analytics services turn your numbers into a clear story, using statistics, machine learning, and clean data models to answer real business questions.",
         icon: "BarChart3",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Analytics Services Company | ClickMasters",
+        metaDescription:
+          "Data analytics services that turn your numbers into a clear story — move from guessing to knowing with ClickMasters.",
+        lead: "From guessing to knowing.",
+        highlights: [
+          "Customer churn prediction",
+          "Product forecasting",
+          "Machine learning models",
+          "Clean data models",
+        ],
       },
       {
         title: "Business Intelligence (BI)",
         slug: "business-intelligence",
-        description: "Dashboards and reports.",
-        icon: "BarChart",
+        description:
+          "Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time.",
+        icon: "LayoutDashboard",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Business Intelligence Services | ClickMasters",
+        metaDescription:
+          "Live BI dashboards and reports so your team sees sales, costs, and performance in one place, in real time.",
+        lead: "One place for all your numbers, in real time.",
+        highlights: [
+          "Live dashboards",
+          "Real-time reporting",
+          "Sales & cost visibility",
+          "No manual spreadsheets",
+        ],
       },
       {
         title: "Data Engineering",
         slug: "data-engineering",
-        description: "Reliable pipelines.",
+        description:
+          "Our data engineering services build the pipes that move your data safely from one system to another, with pipelines designed to scale.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Engineering Services Company | ClickMasters",
+        metaDescription:
+          "Data engineering services that build safe, scalable pipelines moving your data from system to system.",
+        lead: "Strong pipelines behind every good report.",
+        highlights: [
+          "Data pipelines",
+          "Scalable architecture",
+          "Safe data movement",
+          "Enterprise-grade quality",
+        ],
       },
       {
         title: "Data Warehousing",
         slug: "data-warehousing",
-        description: "Warehouse design.",
-        icon: "HardDrive",
+        description:
+          "We build cloud data warehouses that store all your business data in one safe, organized place, so every team works from the same numbers.",
+        icon: "Warehouse",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Data Warehousing Services | ClickMasters",
+        metaDescription:
+          "Cloud data warehouses that store all your business data in one safe, organized place — one version of the truth.",
+        lead: "One safe place for all your business data.",
+        highlights: [
+          "Cloud warehouses",
+          "Single source of truth",
+          "Organized storage",
+          "Cross-team alignment",
+        ],
       },
       {
         title: "Big Data Solutions",
         slug: "big-data-solutions",
-        description: "Large infrastructure.",
-        icon: "Database",
+        description:
+          "As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
+        icon: "Boxes",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Big Data Solutions Company | ClickMasters",
+        metaDescription:
+          "Big data services using Apache Spark, Hadoop, and Kafka to process huge data volumes fast and spot trends first.",
+        lead: "Millions of rows, processed fast.",
+        highlights: [
+          "Apache Spark",
+          "Hadoop",
+          "Kafka streaming",
+          "Trend detection",
+        ],
+      },
+      {
+        title: "Data Integration Services",
+        slug: "data-integration",
+        description:
+          "Our data integration services connect all your tools — CRM, accounting, marketing, support — so information flows automatically instead of being copied by hand.",
+        icon: "Plug",
+        heroImage:
+          "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Integration Services | ClickMasters",
+        metaDescription:
+          "Connect your CRM, accounting, marketing, and support tools so information flows automatically across your business.",
+        lead: "All your tools, talking to each other.",
+        highlights: [
+          "CRM integration",
+          "Accounting integration",
+          "Marketing & support tools",
+          "Automatic data flow",
+        ],
+      },
+      {
+        title: "Data Migration Services",
+        slug: "data-migration",
+        description:
+          "Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
+        icon: "ArrowRightLeft",
+        heroImage:
+          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Migration Services | ClickMasters",
+        metaDescription:
+          "Safe data migration from old systems to new — zero data loss, almost no downtime.",
+        lead: "Move systems without losing data.",
+        highlights: [
+          "Zero data loss",
+          "Minimal downtime",
+          "Old-to-new system moves",
+          "Safe handling",
+        ],
+      },
+      {
+        title: "Data Management & Governance",
+        slug: "data-management-governance",
+        description:
+          "Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
+        icon: "ShieldCheck",
+        heroImage:
+          "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Management & Governance Services | ClickMasters",
+        metaDescription:
+          "Data management services with clear access rules, keeping your data accurate and compliant with U.S. privacy laws.",
+        lead: "Clean, safe, organized data — by design.",
+        highlights: [
+          "Access rules",
+          "Data accuracy",
+          "U.S. privacy compliance",
+          "Organized governance",
+        ],
+      },
+      {
+        title: "Data Visualization Services",
+        slug: "data-visualization",
+        description:
+          "Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
+        icon: "PieChart",
+        heroImage:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Visualization Services | ClickMasters",
+        metaDescription:
+          "Turn raw numbers into simple charts, maps, and graphs anyone on your team can understand in seconds.",
+        lead: "Numbers anyone can read in seconds.",
+        highlights: [
+          "Charts & graphs",
+          "Maps",
+          "Simple reporting",
+          "Team-friendly visuals",
+        ],
       },
     ],
   },
@@ -1074,12 +1384,25 @@ export const mainServicesData = {
   "cloud-and-devops": {
     title: "Cloud & DevOps",
     slug: "cloud-and-devops",
-    icon: "Cloud",
+    icon: "CloudCog",
     tagline: "Modern Infrastructure Solutions",
     description: "Cloud-native solutions and release automation.",
     heroBadge: "200+ Migrations",
     heroImage:
       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    stats: [
+      { value: "3", label: "Major Cloud Platforms (AWS, Azure, GCP)" },
+      { value: "24/7", label: "Monitoring & Issue Response" },
+      { value: "1-2 wks", label: "Typical CI/CD Pipeline Setup" },
+      { value: "3+", label: "Regions Served (USA, UK, UAE)" },
+    ],
+    trustedClients: [
+      { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
+      { name: "E-commerce Business", industry: "Retail", icon: "ShoppingBag" },
+      { name: "FinTech Startup", industry: "Finance", icon: "Coins" },
+      { name: "Healthcare Company", industry: "Healthcare", icon: "Heart" },
+      { name: "Manufacturing Firm", industry: "Manufacturing", icon: "Factory" },
+    ],
     subServices: [
       {
         title: "Cloud Solutions",
@@ -1088,128 +1411,465 @@ export const mainServicesData = {
         icon: "Cloud",
         heroImage:
           "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Solutions for Your Business | Clickmasters",
+        metaDescription:
+          "Choose the right cloud setup on AWS, Azure, or Google Cloud with infrastructure and workflows working together from day one.",
+        lead: "The right cloud setup, from day one.",
+        highlights: [
+          "AWS, Azure & GCP",
+          "Cloud architecture",
+          "DevOps-aligned builds",
+          "Day-one readiness",
+        ],
       },
       {
         title: "DevOps Services",
         slug: "devops-services",
         description: "Delivery pipelines.",
-        icon: "Workflow",
+        icon: "GitBranch",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "DevOps Development Services | Clickmasters",
+        metaDescription:
+          "Connect development and operations so code moves from idea to production without delays — tools and workflows included.",
+        lead: "From idea to production, without delays.",
+        highlights: [
+          "Dev & ops alignment",
+          "Tool setup",
+          "Workflow design",
+          "Fewer mistakes",
+        ],
+      },
+      {
+        title: "DevOps Consulting",
+        slug: "devops-consulting",
+        description: "Strategic roadmaps and assessments.",
+        icon: "Compass",
+        heroImage:
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "DevOps Consulting Services | Clickmasters",
+        metaDescription:
+          "Expert DevOps consulting that reviews your setup and delivers a clear roadmap from planning to full rollout.",
+        lead: "A clear roadmap for where to start.",
+        highlights: [
+          "Setup review",
+          "Clear roadmap",
+          "Planning to rollout",
+          "Expert guidance",
+        ],
       },
       {
         title: "CI/CD Pipeline Setup",
-        slug: "cicd-pipeline-setup",
+        slug: "ci-cd-pipeline-setup",
         description: "Automated workflows.",
-        icon: "Settings",
+        icon: "GitPullRequest",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "CI/CD Pipeline Setup Services | Clickmasters",
+        metaDescription:
+          "Automated CI/CD pipelines that test and release code automatically — faster releases, fewer bugs.",
+        lead: "Releases that test and ship themselves.",
+        highlights: [
+          "Automated testing",
+          "Automated releases",
+          "Fewer manual steps",
+          "Fewer customer-facing bugs",
+        ],
       },
       {
-        title: "Containerization",
-        slug: "containerization",
+        title: "Containerization (Docker & Kubernetes)",
+        slug: "containerization-docker-kubernetes",
         description: "Docker & Kubernetes.",
-        icon: "Box",
+        icon: "Container",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Docker & Kubernetes Containerization | Clickmasters",
+        metaDescription:
+          "Package applications with Docker and manage them with Kubernetes — consistent runs and traffic-based scaling.",
+        lead: "Runs the same everywhere, scales on demand.",
+        highlights: [
+          "Docker packaging",
+          "Kubernetes management",
+          "Environment consistency",
+          "Auto-scaling",
+        ],
       },
       {
         title: "Infrastructure as Code",
         slug: "infrastructure-as-code",
         description: "Repeatable setup.",
-        icon: "FileText",
+        icon: "FileCode",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Infrastructure as Code (Terraform) Services | Clickmasters",
+        metaDescription:
+          "Turn your cloud setup into code with Terraform — repeatable, trackable, and easy to roll back.",
+        lead: "Your cloud setup, as code.",
+        highlights: [
+          "Terraform",
+          "Repeatable setups",
+          "Version tracking",
+          "Simple rollbacks",
+        ],
+      },
+      {
+        title: "Cloud Migration & Modernization",
+        slug: "cloud-migration-modernization",
+        description: "Zero-downtime migration.",
+        icon: "ArrowRightLeft",
+        heroImage:
+          "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Migration & Modernization Services | Clickmasters",
+        metaDescription:
+          "Careful, planned cloud migration with little to no downtime — modernize systems while your business keeps running.",
+        lead: "Move to the cloud without stopping your business.",
+        highlights: [
+          "Careful planning",
+          "Little to no downtime",
+          "System modernization",
+          "Business continuity",
+        ],
+      },
+      {
+        title: "Cloud Monitoring & Observability",
+        slug: "cloud-monitoring-observability",
+        description: "24/7 observability and alerts.",
+        icon: "Activity",
+        heroImage:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Monitoring & Observability Services | Clickmasters",
+        metaDescription:
+          "24/7 dashboards and alerts that watch your systems — know about problems before your customers do.",
+        lead: "Know before your customers do.",
+        highlights: [
+          "Live dashboards",
+          "Smart alerts",
+          "24/7 watching",
+          "Early problem detection",
+        ],
+      },
+      {
+        title: "Managed DevOps Services",
+        slug: "managed-devops-services",
+        description: "DevOps as a service.",
+        icon: "Settings",
+        heroImage:
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Managed DevOps Services (DevOps as a Service) | Clickmasters",
+        metaDescription:
+          "A full DevOps team on demand — we handle daily operations and infrastructure management while you focus on your product.",
+        lead: "A full DevOps team, on demand.",
+        highlights: [
+          "DevOps as a service",
+          "Daily operations handled",
+          "Full infrastructure management",
+          "No in-house hire needed",
+        ],
       },
     ],
   },
 
   // 10. CYBERSECURITY
-  cybersecurity: {
-    title: "Cybersecurity",
-    slug: "cybersecurity",
-    icon: "ShieldCheck",
-    tagline: "Comprehensive Security",
-    description: "Safeguard your data and reputation.",
-    heroBadge: "100+ Security Audits",
+  "cybersecurity-services": {
+    title: "Cybersecurity Services",
+    slug: "cybersecurity-services",
+    icon: "Shield",
+    tagline: "Comprehensive Security Solutions",
+    description:
+      "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat.",
+    heroBadge: "24/7 threat monitoring & response",
     heroImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+    stats: [
+      { value: "24/7", label: "Threat Monitoring & Response" },
+      { value: "100+", label: "Security Audits Completed" },
+      { value: "99.9%", label: "Threat Detection Rate" },
+      { value: "<15 min", label: "Average Response Time" },
+    ],
+    trustedClients: [
+      { name: "Financial Services Firm", industry: "Finance", icon: "Coins" },
+      { name: "Healthcare Provider", industry: "Healthcare", icon: "Heart" },
+      { name: "E-commerce Platform", industry: "Retail", icon: "ShoppingBag" },
+      { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
+      { name: "Manufacturing Company", industry: "Manufacturing", icon: "Factory" },
+    ],
     subServices: [
       {
-        title: "Cybersecurity Services",
-        slug: "cybersecurity-services",
-        description: "Security hardening.",
-        icon: "ShieldCheck",
-        heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
-      },
-      {
-        title: "Security Audits",
-        slug: "security-audits",
-        description: "Comprehensive audits.",
+        title: "Cybersecurity Risk Assessment Services",
+        slug: "cybersecurity-risk-assessment",
+        description:
+          "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cybersecurity Risk Assessment Services | Clickmasters",
+        metaDescription:
+          "Cybersecurity risk assessment services that find weak points before attackers do — get a clear plan to fix them.",
+        lead: "Find weak points before attackers do.",
+        highlights: ["Full IT review", "Ranked risk list", "Remediation plan", "Security baseline"],
       },
       {
         title: "Penetration Testing",
         slug: "penetration-testing",
-        description: "Controlled attacks.",
-        icon: "Target",
+        description:
+          "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
+        icon: "Crosshair",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Penetration Testing Services | Clickmasters",
+        metaDescription:
+          "Ethical hacking and penetration testing services that show where your defenses fail — fix gaps before real breaches.",
+        lead: "Ethical hacking that finds gaps before attackers do.",
+        highlights: ["Real-world attack simulation", "Vulnerability discovery", "Remediation guidance", "Security validation"],
       },
       {
-        title: "Compliance Management",
-        slug: "compliance-management",
-        description: "GDPR & SOC2.",
-        icon: "FileText",
+        title: "Security Audits & Compliance Management",
+        slug: "security-audits-compliance",
+        description:
+          "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
+        icon: "ClipboardCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Security Audits & Compliance Management | Clickmasters",
+        metaDescription:
+          "Security audits and compliance management for HIPAA, PCI-DSS, SOC 2, and other standards — stay audit-ready.",
+        lead: "Stay aligned with HIPAA, PCI-DSS, SOC 2, and more.",
+        highlights: ["Industry-standard audits", "Policy review", "Compliance alignment", "Audit preparation"],
+      },
+      {
+        title: "Network Security Services",
+        slug: "network-security",
+        description:
+          "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
+        icon: "Network",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Network Security Services | Clickmasters",
+        metaDescription:
+          "Network security services with firewalls, intrusion detection, and constant monitoring — protect your business network.",
+        lead: "Firewalls, intrusion detection, and constant monitoring.",
+        highlights: ["Firewall management", "Intrusion detection", "Traffic monitoring", "Malware protection"],
+      },
+      {
+        title: "Cloud Security Services",
+        slug: "cloud-security",
+        description:
+          "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
+        icon: "Cloud",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cloud Security Services | Clickmasters",
+        metaDescription:
+          "Cloud security services for AWS, Azure, and Google Cloud — protect against misconfigurations, data leaks, and unauthorized access.",
+        lead: "Protect your AWS, Azure, or Google Cloud environment.",
+        highlights: ["Misconfiguration detection", "Data leak prevention", "Access control", "Multi-cloud support"],
+      },
+      {
+        title: "Data Security Services",
+        slug: "data-security",
+        description:
+          "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
+        icon: "Database",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Data Security Services | Clickmasters",
+        metaDescription:
+          "Data security services with encryption, access controls, and backup strategies — keep sensitive data safe.",
+        lead: "Encryption, access controls, and safe backups.",
+        highlights: ["Data encryption", "Access controls", "Backup strategies", "Theft & loss prevention"],
+      },
+      {
+        title: "Application Security Services",
+        slug: "application-security",
+        description:
+          "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
+        icon: "Code2",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Application Security Services | Clickmasters",
+        metaDescription:
+          "Application security services that catch coding flaws and vulnerabilities — secure web and mobile apps.",
+        lead: "Catch flaws before attackers find them.",
+        highlights: ["Code review", "Vulnerability scanning", "Secure development", "Web & mobile apps"],
+      },
+      {
+        title: "Endpoint Security Services",
+        slug: "endpoint-security",
+        description:
+          "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
+        icon: "Laptop",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Endpoint Security Services | Clickmasters",
+        metaDescription:
+          "Endpoint security services that protect laptops, phones, and devices — secure every entry point.",
+        lead: "Protect every device your team uses.",
+        highlights: ["Device protection", "Laptop & mobile security", "Network access control", "Threat prevention"],
+      },
+      {
+        title: "Managed Cybersecurity Services & SOC",
+        slug: "managed-cybersecurity-soc",
+        description:
+          "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
+        icon: "Settings",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Managed Cybersecurity Services & SOC | Clickmasters",
+        metaDescription:
+          "Managed cybersecurity services with 24/7 SOC protection — we watch your systems so you don't have to.",
+        lead: "24/7 protection through a dedicated SOC.",
+        highlights: ["24/7 monitoring", "Dedicated SOC team", "Threat response", "Ongoing management"],
+      },
+      {
+        title: "Cyber Threat Detection & Management Services",
+        slug: "cyber-threat-detection",
+        description:
+          "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
+        icon: "Radar",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cyber Threat Detection & Management Services | Clickmasters",
+        metaDescription:
+          "Real-time threat detection and management services — catch threats early and respond in minutes, not days.",
+        lead: "Real-time monitoring that catches threats early.",
+        highlights: ["Real-time monitoring", "Early threat detection", "Rapid response", "Threat management"],
+      },
+      {
+        title: "Cybersecurity Consulting Services",
+        slug: "cybersecurity-consulting",
+        description:
+          "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
+        icon: "Compass",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Cybersecurity Consulting Services | Clickmasters",
+        metaDescription:
+          "Cybersecurity consulting services that build a full security roadmap tailored to your business size, industry, and budget.",
+        lead: "A security roadmap tailored to your business.",
+        highlights: ["Security strategy", "Business-aligned planning", "Budget-conscious solutions", "Roadmap development"],
+      },
+      {
+        title: "Custom Cybersecurity Software Development & Automation",
+        slug: "custom-cybersecurity-software",
+        description:
+          "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
+        icon: "Wrench",
+        heroImage:
+          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+        metaTitle: "Custom Cybersecurity Software Development | Clickmasters",
+        metaDescription:
+          "Custom cybersecurity software development and automation — build solutions that work together instead of creating manual work.",
+        lead: "Custom security solutions that work together.",
+        highlights: ["Custom development", "Security automation", "Tool integration", "Workflow optimization"],
       },
     ],
   },
 
-  // 11. TESTING & QA
-  "testing-and-qa": {
-    title: "Testing & QA",
+  // QA TESTING SERVICES
+  "qa-testing-services": {
+    title: "QA Testing Services",
+    slug: "qa-testing-services",
     icon: "TestTube",
-    slug: "testing-and-qa",
-    tagline: "Software Excellence",
-    description: "Comprehensive QA and testing strategies.",
-    heroBadge: "500+ Projects",
+    tagline: "QA Testing Services",
+    description:
+      "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers.",
+    heroBadge: "500+ Projects Tested",
     heroImage:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
     subServices: [
       {
-        title: "QA & Software Testing",
-        slug: "qa-software-testing",
-        description: "QA strategies.",
-        icon: "TestTube",
+        title: "Manual QA Testing Services",
+        slug: "manual-qa-testing",
+        description: "Human testers catch what scripts can't.",
+        icon: "Search",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Automated Testing",
-        slug: "automated-testing",
-        description: "Fast releases.",
+        title: "Automated QA Testing & Test Automation Services",
+        slug: "automated-qa-testing",
+        description: "Reusable test scripts for frequent releases.",
         icon: "Bot",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Performance Testing",
+        title: "Web Application Testing Services",
+        slug: "web-application-testing",
+        description: "Cross-browser, cross-device testing.",
+        icon: "Globe",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Mobile App Testing Services",
+        slug: "mobile-app-testing",
+        description: "Real device testing for iOS and Android.",
+        icon: "Smartphone",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "API Testing Services",
+        slug: "api-testing",
+        description: "Validate every endpoint and response.",
+        icon: "Workflow",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Performance Testing Services",
         slug: "performance-testing",
-        description: "System limits.",
+        description: "Find bottlenecks before users do.",
         icon: "Zap",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
       {
-        title: "Bug Fixing",
-        slug: "bug-fixing",
-        description: "Issue resolution.",
-        icon: "Settings",
+        title: "Security Testing Services",
+        slug: "security-testing",
+        description: "Find vulnerabilities before attackers do.",
+        icon: "Shield",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Functional Testing Services",
+        slug: "functional-testing",
+        description: "Verify every feature works as intended.",
+        icon: "CheckCircle",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Regression Testing Services",
+        slug: "regression-testing",
+        description: "Protect existing features from breaking.",
+        icon: "RefreshCw",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "End-to-End Testing Services",
+        slug: "end-to-end-testing",
+        description: "Test complete workflows, not just features.",
+        icon: "PlayCircle",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "QA Consulting Services",
+        slug: "qa-consulting",
+        description: "A practical roadmap to better QA.",
+        icon: "Compass",
+        heroImage:
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      },
+      {
+        title: "Enterprise QA Testing Services",
+        slug: "enterprise-qa-testing",
+        description: "Dedicated QA teams for complex systems.",
+        icon: "Building2",
         heroImage:
           "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
       },
@@ -1331,12 +1991,12 @@ export const getServiceData = (slug) => {
 export {
   enrichServiceData,
   SERVICE_SECTION_DATA,
-} from "./service-section-data";
+} from "./service-section-data.js";
 
 export {
   getWhyChooseUsData,
   DEFAULT_WHY_CHOOSE_US_BENEFITS,
-} from "./whyChooseUsData";
+} from "./whyChooseUsData.js";
 
 /**
  * Get all slugs for main service categories.

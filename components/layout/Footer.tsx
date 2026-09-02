@@ -1,19 +1,62 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Linkedin, Instagram, Twitter, Dribbble, Facebook } from "lucide-react";
 import mascot from "@/public/assets/footer-mascot.png";
+import logo from "@/public/cm-logos/logo.webp";
 
-const NAV_MAIN = [
-  { label: "Work", href: "#" },
-  { label: "Services", href: "/software-development" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+/* ───────────────── Data ───────────────── */
+
+// NEW: the four columns from the reference design
+const FOOTER_NAV = [
+  {
+    title: "Company",
+    items: [
+      { label: "About Us", href: "/about" },
+      { label: "Our Work", href: "#" },
+      { label: "Case Studies", href: "#" },
+      { label: "Contact Us", href: "/contact" },
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      { label: "Web Development", href: "/software-development" },
+      { label: "Mobile App Development", href: "#" },
+      { label: "UI/UX Design", href: "#" },
+      { label: "QA & Testing", href: "#" },
+      { label: "Maintenance & Support", href: "#" },
+    ],
+  },
+  {
+    title: "Solutions",
+    items: [
+      { label: "Custom Software Solutions", href: "#" },
+      { label: "Dedicated Teams", href: "#" },
+      { label: "MVP Development", href: "#" },
+      { label: "Cloud & DevOps", href: "#" },
+    ],
+  },
+  {
+    title: "Industries",
+    items: [
+      { label: "Healthcare", href: "#" },
+      { label: "FinTech", href: "#" },
+      { label: "E-commerce", href: "#" },
+      { label: "Education", href: "#" },
+      { label: "Logistics", href: "#" },
+    ],
+  },
 ];
 
-const NAV_SECONDARY = [
-  { label: "Clients", href: "#" },
-  { label: "Industries", href: "#" },
-  { label: "Blog", href: "#" },
+// NEW: social row next to contact info (per reference image)
+const TOP_SOCIALS = [
+  { label: "LinkedIn", href: "#", Icon: Linkedin },
+  { label: "Instagram", href: "#", Icon: Instagram },
+  { label: "X", href: "#", Icon: Twitter },
+  { label: "Dribbble", href: "#", Icon: Dribbble },
 ];
 
+// UNCHANGED
 const OFFICES = [
   {
     city: "San Francisco",
@@ -29,33 +72,45 @@ const OFFICES = [
   { city: "Belgrade", lines: ["Nušićeva 15, 11000", "Belgrade, Serbia"] },
 ];
 
+// UNCHANGED (bottom bar)
 const SOCIALS = [
-  { label: "Dr", href: "#", aria: "Dribbble" },
-  { label: "Bē", href: "#", aria: "Behance" },
-  { label: "IG", href: "#", aria: "Instagram" },
-  { label: "in", href: "#", aria: "LinkedIn" },
-  { label: "X", href: "#", aria: "X" },
-  { label: "f", href: "#", aria: "Facebook" },
+  { label: "Dribbble", href: "#", aria: "Dribbble", Icon: Dribbble },
+  { label: "Behance", href: "#", aria: "Behance", Icon: null },
+  { label: "Instagram", href: "#", aria: "Instagram", Icon: Instagram },
+  { label: "LinkedIn", href: "#", aria: "LinkedIn", Icon: Linkedin },
+  { label: "X", href: "#", aria: "X", Icon: Twitter },
+  { label: "Facebook", href: "#", aria: "Facebook", Icon: Facebook },
 ];
 
 export default function Footer() {
-  // Split email for better mobile display - fully visible, rendered on two lines
   const emailParts = {
     first: "sales@Clickmasters.softwaredevelopment",
     second: "company.com",
   };
   const emailFull = `${emailParts.first}${emailParts.second}`;
+  const PHONE_DISPLAY = "+1 325 202 4074";
+  const PHONE_TEL = "tel:+13252024074";
 
   return (
     <footer className="bg-[#f5f3ee] text-[#1a1a1a]">
-      {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-12 sm:pt-16 md:pt-20 lg:pt-28 pb-12 md:pb-16">
-        {/* Top row: CTA + Nav */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-8">
-          {/* Left CTA with mascot */}
-          <div className="lg:col-span-5 relative">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div className="relative w-[70px] sm:w-[80px] md:w-[100px] h-[90px] sm:h-[100px] md:h-[130px] shrink-0 -mt-2">
+        {/* ══ NEW: intro + contact + nav columns (reference design) ══ */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 lg:gap-16">
+          {/* Left: description + contact + socials */}
+          <div className="lg:col-span-4">
+            <Link href="/" className="inline-flex mb-6">
+              <Image
+                src={logo}
+                alt="Clickmasters Logo"
+                width={142}
+                height={32}
+                className="object-contain"
+              />
+            </Link>
+
+            <div className="flex items-start gap-4 sm:gap-5">
+              {/* Mascet — delete this wrapper if you don't want it */}
+              {/* <div className="relative w-[70px] sm:w-[80px] md:w-[100px] h-[90px] sm:h-[100px] md:h-[130px] shrink-0 -mt-2">
                 <Image
                   src={mascot}
                   alt=""
@@ -64,72 +119,84 @@ export default function Footer() {
                   fill
                   sizes="(max-width: 640px) 70px, (max-width: 768px) 80px, 100px"
                 />
-              </div>
-              <div className="w-full">
-                <h2 className="text-[clamp(2rem,4vw,4.5rem)] font-semibold tracking-tight leading-[1]">
-                  Let's Talk
-                </h2>
-                <div className="mt-4 space-y-1.5">
+              </div> */}
+
+              <p className="text-base sm:text-lg leading-relaxed max-w-sm font-medium">
+                ClickMasters is a software development company delivering
+                high-performance web, mobile, AI, SaaS, and cloud solutions for
+                startups and growing businesses.
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div className="mt-6 sm:mt-8 space-y-1.5">
+              <a
+                href={`mailto:${emailFull}`}
+                className="block text-sm sm:text-base md:text-lg font-medium hover:opacity-60 transition-opacity"
+              >
+                <span className="block whitespace-nowrap">
+                  {emailParts.first}
+                </span>
+                <span className="block whitespace-nowrap">
+                  {emailParts.second}
+                </span>
+              </a>
+              <a
+                href={PHONE_TEL}
+                className="block text-sm sm:text-base md:text-lg font-medium opacity-70 hover:opacity-100 transition-opacity"
+              >
+                {PHONE_DISPLAY}
+              </a>
+            </div>
+
+            {/* Social row */}
+            <ul className="mt-6 sm:mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm sm:text-base font-medium">
+              {TOP_SOCIALS.map((s, i) => (
+                <li key={s.label} className="flex items-center gap-3">
                   <a
-                    href={`mailto:${emailFull}`}
-                    className="block text-sm sm:text-base md:text-lg font-medium hover:opacity-60 transition-opacity"
+                    href={s.href}
+                    aria-label={s.label}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-black/10 bg-white/60 text-foreground opacity-70 hover:opacity-100 hover:border-primary/40 hover:text-primary transition-all duration-200"
                   >
-                    <span className="block whitespace-nowrap">{emailParts.first}</span>
-                    <span className="block whitespace-nowrap">{emailParts.second}</span>
+                    <s.Icon className="h-4 w-4" />
                   </a>
-                  <p className="text-sm sm:text-base md:text-lg opacity-70">
-                    +1 325 2024074
+                  {i < TOP_SOCIALS.length - 1 && (
+                    <span aria-hidden="true" className="opacity-30">
+                      |
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right: the four nav columns */}
+          <nav aria-label="Footer" className="lg:col-span-8 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 md:gap-x-8">
+              {FOOTER_NAV.map((col) => (
+                <div key={col.title}>
+                  <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 md:mb-5 font-medium">
+                    {col.title}
                   </p>
+                  <ul className="space-y-2.5 md:space-y-3">
+                    {col.items.map((item) => (
+                      <li key={item.label}>
+                        <a
+                          href={item.href}
+                          className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
+              ))}
             </div>
-          </div>
-
-          {/* Right Navigation columns */}
-          <div className="lg:col-span-7 lg:justify-self-end">
-            <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-20">
-              {/* Main nav */}
-              <div>
-                <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 md:mb-5 font-medium">
-                  Navigation
-                </p>
-                <ul className="space-y-2.5 md:space-y-3">
-                  {NAV_MAIN.map((item) => (
-                    <li key={item.label}>
-                      <a
-                        href={item.href}
-                        className="text-base sm:text-lg font-medium hover:opacity-60 transition-opacity"
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Secondary nav */}
-              <div>
-                <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 md:mb-5 font-medium">
-                  Explore
-                </p>
-                <ul className="space-y-2.5 md:space-y-3">
-                  {NAV_SECONDARY.map((item) => (
-                    <li key={item.label}>
-                      <a
-                        href={item.href}
-                        className="text-base sm:text-lg font-medium hover:opacity-60 transition-opacity"
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          </nav>
         </div>
 
-        {/* Offices row */}
+        {/* ══ UNCHANGED: Offices ══ */}
         <div className="mt-16 md:mt-20 lg:mt-24">
           <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-6 md:mb-8 font-medium">
             Offices
@@ -153,27 +220,25 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
+      {/* ══ UNCHANGED: Bottom bar ══ */}
       <div className="border-t border-[#1a1a1a]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-6 md:py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-            {/* Social links */}
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center">
               {SOCIALS.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   aria-label={s.aria}
-                  className="text-base sm:text-lg font-medium opacity-70 hover:opacity-100 transition-opacity"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-black/10 bg-white/60 text-foreground opacity-70 hover:opacity-100 hover:border-primary/40 hover:text-primary transition-all duration-200"
                 >
-                  {s.label}
+                  {s.Icon ? <s.Icon className="h-4 w-4" /> : s.label}
                 </a>
               ))}
             </div>
 
-            {/* Copyright + legal */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-xs sm:text-sm opacity-60 text-center">
-              <span className="w-full sm:w-auto">©2026 Clickmasterssoftwaredevelopmentcompany</span>
+              <span className="w-full sm:w-auto">©2026 Clickmasters</span>
               <span className="hidden sm:inline opacity-30">|</span>
               <div className="flex items-center gap-3 sm:gap-5">
                 <a href="#" className="hover:opacity-100 transition-opacity">

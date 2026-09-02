@@ -53,9 +53,8 @@ export default function ProjectsStack() {
           Selected Work
         </p>
         <h2 className="text-[clamp(2rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1] max-w-3xl">
-          Projects we've shipped{" "}
-          <span className="italic font-serif">recently</span>
-        </h2>
+  Recent Projects We’ve <span className="italic font-serif">Delivered</span>
+</h2>
       </div>
 
       <div

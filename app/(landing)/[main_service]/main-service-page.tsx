@@ -13,6 +13,7 @@ import {
   PainPointsSolutions,
   PricingSection,
   ProcessSection,
+  SectionCta,
   TechStackSection,
   TrustSection,
   TrustedClientsSection,
@@ -24,6 +25,11 @@ import { mainServiceData } from "@/data/main-services-data";
 type MainService = (typeof mainServiceData)[keyof typeof mainServiceData];
 
 export default function MainServicePage({ service }: { service: MainService }) {
+  // Only some services define mid-page CTA labels.
+  const sectionCtas = "sectionCtas" in service ? service.sectionCtas : undefined;
+
+  // Only some services define pricing tiers.
+  const pricingPlans = "pricing" in service ? service.pricing : undefined;
 
   return (
     <>
@@ -35,34 +41,35 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <TrustSection service={service} />
           
           <ExploreSection service={service} />
-          <PainPointsSolutions service={service} />
-          
+          <SectionCta label={sectionCtas?.afterServices} />
+          {/* <PainPointsSolutions service={service} /> */}
+
           {/* Benefits Section */}
           <BenefitsSection service={service} />
-          
-          <TrustedClientsSection service={service} />
-          <AppsSection />
-          
-          {/* Process Section */}
-          <ProcessSection service={service} />
-          
-          {/* Tech Stack Section */}
-          <TechStackSection service={service} />
-          
-          <FeaturedInsights />
-          
+
           {/* Why Choose Us Section */}
           <WhyChooseUsSection service={service} />
+          <SectionCta label={sectionCtas?.afterWhyChooseUs} />
+
+          {/* Pricing Section */}
+          <PricingSection plans={pricingPlans} service={service} />
+
+          {/* Tech Stack Section */}
+          <TechStackSection service={service} />
+
+          {/* Industries Section */}
+          <IndustriesSection service={service} />
           
           {/* Client Success Stories */}
           <ClientSuccessStories service={service} />
           
-          <PricingSection plans={service.pricing || []} service={service} />
+          {/* Process Section */}
+          <ProcessSection service={service} />
+          <SectionCta label={sectionCtas?.afterProcess} />
           
-          {/* Industries Section */}
-          <IndustriesSection service={service} />
-          
+          {/* FAQs */}
           <FaqSection service={service} />
+          
           <FinalCTA service={service} />
         </main>
       </PageFrame>
