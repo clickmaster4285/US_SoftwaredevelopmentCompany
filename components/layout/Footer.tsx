@@ -20,20 +20,29 @@ const FOOTER_NAV = [
   {
     title: "Services",
     items: [
-      { label: "Web Development", href: "/software-development" },
-      { label: "Mobile App Development", href: "#" },
-      { label: "UI/UX Design", href: "#" },
-      { label: "QA & Testing", href: "#" },
-      { label: "Maintenance & Support", href: "#" },
+      { label: "Web Development", href: "/web-development" },
+      { label: "Mobile App Development", href: "/mobile-app-development" },
+      { label: "UI/UX Design", href: "/ui-ux-design-services" },
+      { label: "QA & Testing", href: "/qa-testing-services" },
+      {
+        label: "Maintenance & Support",
+        href: "/support-and-outsourcing/maintenance-support",
+      },
     ],
   },
   {
     title: "Solutions",
     items: [
-      { label: "Custom Software Solutions", href: "#" },
-      { label: "Dedicated Teams", href: "#" },
-      { label: "MVP Development", href: "#" },
-      { label: "Cloud & DevOps", href: "#" },
+      {
+        label: "Custom Software Solutions",
+        href: "/software-development/custom-software-development",
+      },
+      {
+        label: "Dedicated Teams",
+        href: "/support-and-outsourcing/dedicated-development-teams",
+      },
+      { label: "MVP Development", href: "/software-development/mvp-development" },
+      { label: "Cloud & DevOps", href: "/cloud-and-devops" },
     ],
   },
   {
@@ -41,7 +50,7 @@ const FOOTER_NAV = [
     items: [
       { label: "Healthcare", href: "#" },
       { label: "FinTech", href: "#" },
-      { label: "E-commerce", href: "#" },
+      { label: "E-commerce", href: "/web-development/ecommerce-development" },
       { label: "Education", href: "#" },
       { label: "Logistics", href: "#" },
     ],
@@ -84,7 +93,7 @@ const SOCIALS = [
 
 export default function Footer() {
   const emailParts = {
-    first: "sales@Clickmasters.softwaredevelopment",
+    first: "sales@Clickmasterssoftwaredevelopment",
     second: "company.com",
   };
   const emailFull = `${emailParts.first}${emailParts.second}`;
@@ -181,12 +190,21 @@ export default function Footer() {
                   <ul className="space-y-2.5 md:space-y-3">
                     {col.items.map((item) => (
                       <li key={item.label}>
-                        <a
-                          href={item.href}
-                          className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
-                        >
-                          {item.label}
-                        </a>
+                        {item.href.startsWith("/") ? (
+                          <Link
+                            href={item.href}
+                            className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
+                          >
+                            {item.label}
+                          </Link>
+                        ) : (
+                          <a
+                            href={item.href}
+                            className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
+                          >
+                            {item.label}
+                          </a>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -247,9 +265,12 @@ export default function Footer() {
                 <a href="#" className="hover:opacity-100 transition-opacity">
                   Terms
                 </a>
-                <a href="#" className="hover:opacity-100 transition-opacity">
+                <Link
+                  href="/sitemap.xml"
+                  className="hover:opacity-100 transition-opacity"
+                >
                   Sitemap
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -3,20 +3,19 @@
 import { useState } from "react";
 import { ArrowRight, Loader2, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
-import {
-  PageFrame,
-  SectionHeading,
-} from "../[main_service]/[sub_service]/landing-primitives";
+import { PageFrame } from "../[main_service]/[sub_service]/landing-primitives";
 
 const contactItems = [
   {
     icon: Mail,
-    label: "sales@Clickmasterssoftwaredevelopmentcompany.com",
+    title: "Email Address",
+    value: "sales@Clickmasterssoftwaredevelopmentcompany.com",
   },
-  { icon: Phone, label: "+1 325 2024074" },
+  { icon: Phone, title: "Phone Number", value: "+1 325 2024074" },
   {
     icon: MapPin,
-    label: "Remote-first delivery across US, Europe, Canada, and Australia",
+    title: "Office Location",
+    value: "Remote-first delivery across US, Europe, Canada, and Australia",
   },
 ];
 
@@ -90,11 +89,6 @@ export default function ContactPage() {
               <h1 className="max-w-5xl text-[clamp(2.5rem,5vw,4.5rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
                 Contact Us
               </h1>
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
-                Ready to turn your software idea into reality? Talk to our
-                US-based development experts today. It only takes a few minutes
-                to get started.
-              </p>
             </div>
             <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-card">
               <Image
@@ -111,19 +105,27 @@ export default function ContactPage() {
       <section className="px-5 py-24 md:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <SectionHeading
-              eyebrow="Contact Info"
-              title="A direct line to the team."
-              copy="Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we're here to help you get started."
-            />
+            <h2 className="text-lg font-semibold uppercase tracking-[0.22em] text-primary">
+              Contact Info
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground md:text-lg">
+              Ready to turn your software idea into reality? Talk to our
+              US-based development experts today. It only takes a few minutes
+              to get started.
+            </p>
             <div className="mt-10 space-y-4">
               {contactItems.map((item) => (
                 <div
-                  key={item.label}
+                  key={item.title}
                   className="flex items-start gap-4 rounded-[8px] bg-white p-5 shadow-sm ring-1 ring-black/10"
                 >
-                  <item.icon className="mt-0.5 h-5 w-5 text-[#e05b35]" />
-                  <p className="font-medium leading-6">{item.label}</p>
+                  <item.icon className="mt-0.5 h-5 w-5 shrink-0 text-[#e05b35]" />
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                      {item.title}
+                    </p>
+                    <p className="mt-1 font-medium leading-6">{item.value}</p>
+                  </div>
                 </div>
               ))}
             </div>
