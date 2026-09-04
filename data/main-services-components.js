@@ -62,6 +62,10 @@ import {
   Warehouse,
   PieChart,
   Boxes,
+  Layout,
+  Zap,
+  Store,
+  LayoutDashboard,
 } from "lucide-react";
 import { SectionHeading } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 
@@ -137,6 +141,10 @@ export function IconFor({ name }) {
     Warehouse,
     PieChart,
     Boxes,
+    Layout,
+    Zap,
+    Store,
+    LayoutDashboard,
   };
 
   const IconComponent = name ? iconMap[name] : undefined;
@@ -177,7 +185,7 @@ export function MainServiceHero({ service }) {
             <h1 className="max-w-5xl text-[clamp(2.5rem,5vw,4.5rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
               {service.title}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl whitespace-pre-line">
               {service.description}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -227,12 +235,55 @@ export function MainServiceHero({ service }) {
   );
 }
 
-// Explore Section Component
+// ============================================
+// FEATURES SECTION - NEW (Displays service.features)
+// ============================================
+export function FeaturesSection({ service }) {
+  const features = service.features || [];
+
+  if (!features.length) return null;
+
+  return (
+    <section className="bg-secondary px-5 py-24 md:px-10">
+      <div className="mx-auto max-w-7xl">
+        <SectionHeading
+          eyebrow="Our Services"
+          title={service.ourServices?.title || `${service.title} Services`}
+          copy={service.ourServices?.description || "Comprehensive solutions tailored to your needs."}
+        />
+        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="rounded-lg border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
+                <IconFor name={feature.icon} />
+              </span>
+              <h3 className="text-xl font-semibold text-card-foreground">
+                {feature.title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================
+// EXPLORE SECTION (SubServices)
+// ============================================
 export function ExploreSection({ service }) {
   const ourServices = service.ourServices || {};
   const exploreTitle = ourServices.title || service.servicesSection?.title || `Everything inside ${service.title}`;
   const exploreCopy = ourServices.description || service.servicesSection?.description || "Choose the focused service line that best matches your product, platform, or operational goal.";
   const servicesToRender = service.subServices || ourServices.subServices || ourServices.services || [];
+
+  if (!servicesToRender.length) return null;
 
   return (
     <section className="bg-background px-5 py-24 md:px-10">
@@ -270,9 +321,9 @@ export function ExploreSection({ service }) {
   );
 }
 
-// Trust Section Component - REDESIGNED
-
-
+// ============================================
+// TRUST SECTION
+// ============================================
 export function TrustSection({ service }) {
   const trustData = service.trustSection || {
     title: "Software Development Company You Can Trust",
@@ -280,6 +331,14 @@ export function TrustSection({ service }) {
     points: [],
     closingText: "",
   };
+
+  // Use stats from service or fallback
+  const stats = service.stats || [
+    { value: "200+", label: "Projects Delivered" },
+    { value: "50+", label: "Expert Engineers" },
+    { value: "99.9%", label: "Uptime Guarantee" },
+    { value: "24/7", label: "Support" },
+  ];
 
   return (
     <section className="bg-secondary px-5 py-24 md:px-10">
@@ -295,7 +354,7 @@ export function TrustSection({ service }) {
               {trustData.title}
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
-              <p className="text-lg leading-8">
+              <p className="text-lg leading-8 whitespace-pre-line">
                 {trustData.description}
               </p>
               {(trustData.paragraphs || []).map((paragraph, index) => (
@@ -310,7 +369,7 @@ export function TrustSection({ service }) {
                 </div>
               ))}
               {trustData.closingText && (
-                <p className="mt-4 text-lg ">
+                <p className="mt-4 text-lg">
                   {trustData.closingText}
                 </p>
               )}
@@ -332,17 +391,10 @@ export function TrustSection({ service }) {
             </div>
           </div>
 
-          {/* Right Column - Stats Grid with Visual Design */}
-          {/* Added pt-48 for 4x the original padding */}
+          {/* Right Column - Stats Grid */}
           <div className="space-y-6 pt-48 lg:pt-56">
-            {/* Main Stats Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "200+", label: "Projects Delivered", icon: "Code2" },
-                { value: "50+", label: "Expert Engineers", icon: "Users" },
-                { value: "99.9%", label: "Uptime Guarantee", icon: "ShieldCheck" },
-                { value: "24/7", label: "Support", icon: "MessageSquareText" },
-              ].map((stat) => (
+              {stats.slice(0, 4).map((stat) => (
                 <div
                   key={stat.label}
                   className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition hover:shadow-lg hover:border-primary/20"
@@ -350,7 +402,7 @@ export function TrustSection({ service }) {
                   <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-primary/5 transition group-hover:bg-primary/10" />
                   <div className="relative">
                     <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-                      <IconFor name={stat.icon} />
+                      <IconFor name={stat.icon || "Code2"} />
                     </span>
                     <p className="mt-4 text-3xl font-bold text-foreground">{stat.value}</p>
                     <p className="mt-1 text-sm font-medium text-muted-foreground">{stat.label}</p>
@@ -359,7 +411,6 @@ export function TrustSection({ service }) {
               ))}
             </div>
 
-            {/* Trust Badge */}
             <div className="rounded-xl border border-border bg-gradient-to-br from-primary/5 to-secondary/5 p-6 text-center">
               <div className="flex items-center justify-center gap-2">
                 <ShieldCheck className="h-5 w-5 text-primary" />
@@ -374,8 +425,10 @@ export function TrustSection({ service }) {
     </section>
   );
 }
-// Company / Agency Narrative Section — renders a titled narrative block
-// (e.g. "Your Cloud DevOps Agency in the USA") with one or more paragraphs.
+
+// ============================================
+// COMPANY SECTION
+// ============================================
 export function CompanySection({ service }) {
   const data = service.companySection || {};
   if (!data.title) return null;
@@ -406,7 +459,9 @@ export function CompanySection({ service }) {
   );
 }
 
-// Pain Points Solutions Component
+// ============================================
+// PAIN POINTS SOLUTIONS
+// ============================================
 export function PainPointsSolutions({ service }) {
   const painPoints = [
     "Projects that start fast but become hard to maintain",
@@ -479,7 +534,9 @@ export function PainPointsSolutions({ service }) {
   );
 }
 
-// Benefits Section Component - NEW
+// ============================================
+// BENEFITS SECTION
+// ============================================
 export function BenefitsSection({ service }) {
   const benefits = service.benefits || [];
 
@@ -528,9 +585,13 @@ export function BenefitsSection({ service }) {
   );
 }
 
-// Trusted Clients Section Component
+// ============================================
+// TRUSTED CLIENTS SECTION
+// ============================================
 export function TrustedClientsSection({ service }) {
   const clients = service.trustedClients || [];
+
+  if (!clients.length) return null;
 
   return (
     <section className="bg-background px-5 py-24 md:px-10">
@@ -569,7 +630,9 @@ export function TrustedClientsSection({ service }) {
   );
 }
 
-// Apps Section Component
+// ============================================
+// APPS SECTION
+// ============================================
 export function AppsSection() {
   return (
     <section className="bg-muted px-5 py-24 md:px-10">
@@ -597,7 +660,9 @@ export function AppsSection() {
   );
 }
 
-// Process Section Component - Enhanced
+// ============================================
+// PROCESS SECTION
+// ============================================
 export function ProcessSection({ service }) {
   const steps = service.processSteps || [
     {
@@ -625,9 +690,8 @@ export function ProcessSection({ service }) {
           eyebrow="Process"
           title={service.processSection?.title || "Our Software Development Process"}
           copy={
-            service.processSection
-              ? service.processSection.description
-              : "A clear, structured approach to delivering high-quality software."
+            service.processSection?.description ||
+            "A clear, structured approach to delivering high-quality software."
           }
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -653,7 +717,9 @@ export function ProcessSection({ service }) {
   );
 }
 
-// Tech Stack Section Component - Enhanced
+// ============================================
+// TECH STACK SECTION
+// ============================================
 export function TechStackSection({ service }) {
   const techData = service.techStack || {
     title: "Technology We Use",
@@ -665,32 +731,29 @@ export function TechStackSection({ service }) {
     aiAutomation: ["OpenAI", "custom machine learning integrations"],
   };
 
-  // Prefer explicit labelled groups; otherwise collect every array-valued
-  // category so services can name their techStack groups freely.
-  const groups = Array.isArray(techData.groups) ? techData.groups : null;
-  const allTech = groups
-    ? []
-    : Array.from(
-        new Set(
-          Object.entries(techData)
-            .filter(
-              ([key, value]) =>
-                Array.isArray(value) &&
-                key !== "title" &&
-                key !== "description",
-            )
-            .flatMap(([, value]) => value),
-        ),
-      );
+  // Get all tech categories (excluding title, description)
+  const techCategories = Object.entries(techData)
+    .filter(
+      ([key, value]) =>
+        Array.isArray(value) &&
+        key !== "title" &&
+        key !== "description" &&
+        key !== "groups"
+    );
+
+  // If groups are explicitly defined, use them
+  const groups = techData.groups || null;
 
   return (
-    <section className="border-y border-border bg-primary text-white px-5 py-24  md:px-10">
+    <section className="border-y border-border bg-primary text-white px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Tech stack"
           title={techData.title}
           copy={techData.description}
+          className="text-white"
         />
+        
         {groups ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {groups.map((group) => (
@@ -712,17 +775,27 @@ export function TechStackSection({ service }) {
             ))}
           </div>
         ) : (
-          <div className="mt-14 flex flex-wrap justify-center gap-3">
-            {allTech.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
-              >
-                {item}
-              </span>
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {techCategories.map(([category, items]) => (
+              <div key={category}>
+                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
+                  {category.replace(/([A-Z])/g, ' $1').trim()}
+                </h3>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {(items || []).map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         )}
+        
         {techData.closingText ? (
           <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
             {techData.closingText}
@@ -733,7 +806,9 @@ export function TechStackSection({ service }) {
   );
 }
 
-// Featured Insights Component
+// ============================================
+// FEATURED INSIGHTS
+// ============================================
 export function FeaturedInsights() {
   const insights = [
     "How to scope a product build without bloating the first release",
@@ -766,7 +841,9 @@ export function FeaturedInsights() {
   );
 }
 
-// Why Choose Us Component - Enhanced
+// ============================================
+// WHY CHOOSE US SECTION
+// ============================================
 export function WhyChooseUsSection({ service }) {
   const whyData = service.whyChooseUs || {
     title: "Why Choose Clickmasters as Your Software Development Partner",
@@ -805,7 +882,9 @@ export function WhyChooseUsSection({ service }) {
   );
 }
 
-// Client Success Stories Component - NEW
+// ============================================
+// CLIENT SUCCESS STORIES (Testimonials)
+// ============================================
 export function ClientSuccessStories({ service }) {
   const testimonials = service.testimonials || [];
 
@@ -853,7 +932,9 @@ export function ClientSuccessStories({ service }) {
   );
 }
 
-// Industries Section Component - Enhanced
+// ============================================
+// INDUSTRIES SECTION
+// ============================================
 export function IndustriesSection({ service }) {
   const industries = service.industries || [];
 
@@ -891,7 +972,9 @@ export function IndustriesSection({ service }) {
   );
 }
 
-// Pricing Section Component
+// ============================================
+// PRICING SECTION
+// ============================================
 export function PricingSection({ plans, service }) {
   if (!plans || !plans.length) return null;
 
@@ -926,7 +1009,7 @@ export function PricingSection({ plans, service }) {
                 </p>
               ) : null}
               <div className="mt-7 space-y-3">
-                {(plan.features || []).slice(0, 4).map((feature) => (
+                {(plan.features || []).map((feature) => (
                   <div
                     key={feature}
                     className="flex gap-3 text-sm text-muted-foreground"
@@ -954,7 +1037,9 @@ export function PricingSection({ plans, service }) {
   );
 }
 
-// FAQ Section Component
+// ============================================
+// FAQ SECTION
+// ============================================
 export function FaqSection({ service }) {
   const faqs = service.faqs || [];
   if (!faqs.length) return null;
@@ -985,8 +1070,9 @@ export function FaqSection({ service }) {
   );
 }
 
-// Mid-page CTA band. Renders nothing unless the service supplies the label,
-// so services without sectionCtas are unchanged.
+// ============================================
+// SECTION CTA
+// ============================================
 export function SectionCta({ label }) {
   if (!label) return null;
 
@@ -1004,7 +1090,9 @@ export function SectionCta({ label }) {
   );
 }
 
-// Final CTA Component
+// ============================================
+// FINAL CTA
+// ============================================
 export function FinalCTA({ service }) {
   const cta = service.finalCta || {};
 
