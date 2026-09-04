@@ -1,13 +1,11 @@
 // main-service-page.js
 import { PageFrame } from "./[sub_service]/landing-primitives";
 import {
-  AppsSection,
   BenefitsSection,
   ClientSuccessStories,
   CompanySection,
   ExploreSection,
   FaqSection,
-  FeaturedInsights,
   FinalCTA,
   IndustriesSection,
   MainServiceHero,
@@ -40,6 +38,9 @@ export default function MainServicePage({ service }: { service: MainService }) {
           
           {/* Trust Section */}
           <TrustSection service={service} />
+
+          {/* Trusted Clients (social proof) */}
+          <TrustedClientsSection service={service} />
           
           <ExploreSection service={service} />
           <SectionCta label={sectionCtas?.afterServices} />
