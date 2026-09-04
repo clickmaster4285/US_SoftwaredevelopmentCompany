@@ -15,6 +15,8 @@ import {
   ArrowRight,
   Sparkles,
   ArrowUp,
+  ShieldCheck,
+  Award,
 } from "lucide-react";
 
 import type { LocationServiceData } from "@/data/location-service-data";
@@ -167,7 +169,7 @@ export default function LocationServicePage({ data }: Props) {
           (data.trustPoints?.length ?? 0) > 0) && (
           <section className="bg-secondary px-5 py-24 md:px-10">
             <div className="mx-auto max-w-7xl">
-              <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+              <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
                 <div>
                   {data.trustTitle && (
                     <h2 className="text-[clamp(2.2rem,4vw,3.5rem)] font-semibold leading-[1.05] tracking-tight text-foreground">
@@ -192,10 +194,56 @@ export default function LocationServicePage({ data }: Props) {
                     </div>
                   )}
                   {data.trustClosing && (
-                    <p className="mt-4 text-lg font-semibold text-foreground whitespace-pre-line">
+                    <p className="mt-4 text-lg text-foreground whitespace-pre-line">
                       {data.trustClosing}
                     </p>
                   )}
+                </div>
+
+                {/* Right side: Trust & Credibility Image Card */}
+                <div className="relative">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
+                    <Image
+                      src={data.trustImage || "/assets/why.png"}
+                      alt={data.trustTitle || "Trusted Software Development Team"}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                    {/* Subtle gradient overlay to enhance badge contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
+
+                    {/* Top Credibility Badge: ISO & Security */}
+                    <div className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/90 px-3.5 py-1.5 text-xs font-semibold text-foreground shadow-lg backdrop-blur-md">
+                      <ShieldCheck className="h-4 w-4 text-primary" />
+                      <span>ISO 27001 &amp; GDPR Compliant</span>
+                    </div>
+
+                    {/* Bottom Experience Metrics Card */}
+                    <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-border/80 bg-background/95 p-3.5 shadow-xl backdrop-blur-md">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                          <Award className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-bold text-foreground">
+                            500+ Projects Delivered
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            U.S. Enterprise &amp; Startups
+                          </p>
+                        </div>
+                      </div>
+                      <div className="hidden sm:block text-right">
+                        <p className="text-xs font-semibold text-primary">
+                          5+ Yrs Avg.
+                        </p>
+                        <p className="text-[11px] text-muted-foreground">
+                          Senior Engineers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
