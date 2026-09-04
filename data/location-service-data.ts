@@ -27,6 +27,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "Whether you need a software development partner Los Angeles for a single project or an ongoing software development outsourcing Los Angeles arrangement for your whole roadmap, Clickmasters scales with you.",
+    trustImage: "/assets/why.png",
     servicesTitle: "Our Software Development Services in Los Angeles",
     servicesDescription:
       "Clickmasters offers complete software development services Los Angeles businesses need to plan, build, launch, and maintain digital products. As a full-stack software development firm Los Angeles clients can rely on for more than one skill set, we cover every layer of your project under one roof.",
@@ -266,6 +267,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "Whether you need custom software development Houston companies use to run daily work, or ongoing software development outsourcing Houston teams use to grow their in-house team, Clickmasters can fit your needs. Many clients come to us after searching for software development in Houston that goes beyond a basic website builder, and they stay because we treat every project like a long-term custom software development company Houston partnership, not a one-time job.",
+    trustImage: "/uscontact.jpeg",
     servicesTitle: "Software Development Services We Offer in Houston",
     servicesDescription:
       "Clickmasters offers full software development services Houston businesses need, from the first idea to the final launch. We are a software development firm Houston clients use for more than just one job. We handle design, building, and support all in one place.",
@@ -506,6 +508,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "From custom software to ongoing development support, we build scalable solutions around your business needs.",
+    trustImage: "/assets/why.png",
     servicesTitle: "Software Development Services We Offer in New York",
     servicesDescription:
       "Clickmasters offers full software development services that New York businesses need, from the first idea to the final launch. We are a software development firm New York clients use for more than just one job. We handle design, building, and support all in one place.",
@@ -745,6 +748,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "Whether you need custom software development San Francisco projects or ongoing development support, Clickmasters builds scalable solutions around your business needs.",
+    trustImage: "/uscontact.jpeg",
     servicesTitle: "Our Software Development Services in San Francisco",
     servicesDescription:
       "Clickmasters offers full software development services San Francisco businesses need to launch strong and grow fast. As a complete San Francisco software development company, we cover every stage of the process, from planning and design to building, testing, launch, and ongoing support.",
@@ -1017,6 +1021,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "Whether you need custom software development or ongoing support, Clickmasters builds scalable solutions around your business needs.",
+    trustImage: "/assets/why.png",
     servicesTitle: "Our Software Development Services in Chicago",
     servicesDescription:
       "Clickmasters offers complete software development services for Chicago businesses, covering planning, design, building, testing, launch, and ongoing support.",
@@ -1268,6 +1273,7 @@ export const locationServiceData = {
     ],
     trustClosing:
       "Whether you need custom software development or ongoing support, Clickmasters builds scalable solutions around your business needs.",
+    trustImage: "/uscontact.jpeg",
     servicesTitle: "Our Software Development Services in Dallas",
     servicesDescription:
       "As a full-service software development agency in Dallas, we offer everything a growing business needs under one roof. Here is a look at our core software development services in Dallas:",
@@ -1522,6 +1528,7 @@ export type LocationServiceData = {
   trustDescription?: string;
   trustPoints?: string[];
   trustClosing?: string;
+  trustImage?: string;
 
   // Services
   servicesTitle?: string;
