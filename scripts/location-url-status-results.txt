@@ -1,0 +1,7 @@
+﻿200	https://clickmasterssoftwaredevelopmentcompany.com/locations
+200	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-los-angeles
+200	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-houston
+404	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-in-new-york
+404	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-san-francisco
+404	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-chicago
+404	https://clickmasterssoftwaredevelopmentcompany.com/locations/software-development-company-dallas
