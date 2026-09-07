@@ -29,7 +29,7 @@ export default function MainServicePage({ service }: { service: MainService }) {
         <TrustedClientsSection service={service} />
         <AppsSection />
         <ProcessPage service={service} />
-        <TechStackSection />
+        <TechStackSection service={service} />
         <FeaturedInsights />
         <WhyChooseUs service={service} />
         <PricingSection plans={service.pricing || []} service={service} />

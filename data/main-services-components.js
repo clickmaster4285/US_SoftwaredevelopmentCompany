@@ -286,7 +286,7 @@ export function ExploreSection({ service }) {
   if (!servicesToRender.length) return null;
 
   return (
-    <section className="bg-background px-5 py-24 md:px-10">
+    <section id="services" className="bg-background px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Explore"
@@ -324,6 +324,10 @@ export function ExploreSection({ service }) {
 // ============================================
 // TRUST SECTION
 // ============================================
+function normalizeSectionText(value) {
+  return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
 export function TrustSection({ service }) {
   const trustData = service.trustSection || {
     title: "Software Development Company You Can Trust",
@@ -339,6 +343,15 @@ export function TrustSection({ service }) {
     { value: "99.9%", label: "Uptime Guarantee" },
     { value: "24/7", label: "Support" },
   ];
+
+  const descriptionText = normalizeSectionText(trustData.description || "");
+  const uniquePoints = (trustData.points || []).filter(
+    (point) => !descriptionText.includes(normalizeSectionText(point)),
+  );
+  const closingText = trustData.closingText &&
+    !descriptionText.includes(normalizeSectionText(trustData.closingText))
+    ? trustData.closingText
+    : null;
 
   return (
     <section className="bg-secondary px-5 py-24 md:px-10">
@@ -362,15 +375,15 @@ export function TrustSection({ service }) {
                   {paragraph}
                 </p>
               ))}
-              {(trustData.points || []).map((point, index) => (
+              {uniquePoints.map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1.5 h-5 w-5 shrink-0 text-primary" />
                   <p className="text-base leading-7">{point}</p>
                 </div>
               ))}
-              {trustData.closingText && (
+              {closingText && (
                 <p className="mt-4 text-lg">
-                  {trustData.closingText}
+                  {closingText}
                 </p>
               )}
             </div>
@@ -743,16 +756,29 @@ export function TechStackSection({ service }) {
 
   // If groups are explicitly defined, use them
   const groups = techData.groups || null;
+  const closingText =
+    typeof techData.closingText === "string" && techData.closingText.trim()
+      ? techData.closingText.trim()
+      : null;
 
   return (
     <section className="border-y border-border bg-primary text-white px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          eyebrow="Tech stack"
-          title={techData.title}
-          copy={techData.description}
-          className="text-white"
-        />
+        {/* Local heading: SectionHeading hardcodes text-foreground (near-black),
+            which is unreadable on this dark bg-primary section */}
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary-foreground">
+            Tech stack
+          </p>
+          <h2 className="mt-4 text-[clamp(2rem,5vw,4.6rem)] font-semibold leading-[0.98] tracking-tight text-primary-foreground">
+            {techData.title}
+          </h2>
+          {techData.description ? (
+            <p className="mt-5 text-base leading-7 text-primary-foreground/80 md:text-lg">
+              {techData.description}
+            </p>
+          ) : null}
+        </div>
         
         {groups ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">
@@ -796,9 +822,9 @@ export function TechStackSection({ service }) {
           </div>
         )}
         
-        {techData.closingText ? (
+        {closingText ? (
           <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
-            {techData.closingText}
+            {closingText}
           </p>
         ) : null}
       </div>
@@ -849,6 +875,7 @@ export function WhyChooseUsSection({ service }) {
     title: "Why Choose Clickmasters as Your Software Development Partner",
     description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
     reasons: [],
+    closingText: "",
   };
 
   if (!whyData.reasons.length) return null;
@@ -861,21 +888,28 @@ export function WhyChooseUsSection({ service }) {
           title={whyData.title}
           copy={whyData.description}
         />
-        <div className="mt-14 grid gap-4 md:grid-cols-3">
+        <div className="mx-auto mt-12 max-w-3xl space-y-4">
           {whyData.reasons.map((reason) => (
-            <div
-              key={reason.title}
-              className="rounded-lg border border-border bg-card p-6"
-            >
-              <Target className="mb-4 h-6 w-6 text-primary" />
-              <h3 className="text-xl font-semibold text-card-foreground">
-                {reason.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            <div key={reason.title} className="flex items-start gap-3">
+              <span
+                className="text-sm leading-7 text-primary"
+                aria-hidden="true"
+              >
+                ●
+              </span>
+              <p className="text-base leading-7 text-muted-foreground">
+                <span className="font-semibold text-foreground">
+                  {reason.title}:{" "}
+                </span>
                 {reason.description}
               </p>
             </div>
           ))}
+          {whyData.closingText ? (
+            <p className="pt-2 text-base leading-7 text-muted-foreground">
+              {whyData.closingText}
+            </p>
+          ) : null}
         </div>
       </div>
     </section>

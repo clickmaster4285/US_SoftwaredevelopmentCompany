@@ -364,17 +364,51 @@ export function ProcessPage({ service }: { service: MainService }) {
   );
 }
 
-export function TechStackSection() {
+type TechStackData = {
+  title?: string;
+  description?: string;
+  closingText?: string;
+  groups?: Array<{ label: string; items?: string[] }>;
+};
+
+export function TechStackSection({
+  service,
+}: {
+  service?: MainService | null;
+}) {
+  // Data-driven when the service provides techStack; shared defaults otherwise.
+  // closingText renders only when the data actually provides it.
+  const techData = (
+    service as (MainService & {
+      techStack?: TechStackData & Record<string, unknown>;
+    }) | undefined
+  )?.techStack;
+  const title = techData?.title || "Modern tools with boring reliability.";
+  const copy =
+    techData?.description ||
+    "We choose stacks for maintainability, hiring reality, and production constraints.";
+  const chips: string[] = techData
+    ? Object.entries(techData)
+        .filter(
+          ([key, value]) =>
+            Array.isArray(value) &&
+            key !== "groups" &&
+            key !== "title" &&
+            key !== "description",
+        )
+        .flatMap(([, items]) => items as string[])
+    : techStack;
+  const closingText =
+    typeof techData?.closingText === "string" && techData.closingText.trim()
+      ? techData.closingText.trim()
+      : null;
+
   return (
     <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          eyebrow="Tech stack"
-          title="Modern tools with boring reliability."
-          copy="We choose stacks for maintainability, hiring reality, and production constraints."
-        />
+        <SectionHeading eyebrow="Tech stack" title={title} copy={copy} />
         <div className="mt-14 flex flex-wrap justify-center gap-3">
-          {techStack.map((item) => (
+          {chips.map((item) => (
             <span
               key={item}
               className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
@@ -383,6 +417,11 @@ export function TechStackSection() {
             </span>
           ))}
         </div>
+        {closingText ? (
+          <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
+            {closingText}
+          </p>
+        ) : null}
       </div>
     </section>
   );

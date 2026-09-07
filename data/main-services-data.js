@@ -51,7 +51,7 @@ softwareDevelopment: {
     {
       icon: "Cloud",
       title: "SaaS Product Development",
-      description: "Our SaaS development services take a product from idea to a multi-tenant, cloud-native application ready for recurring revenue including subscription billing, usage metering, and secure account architecture.",
+      description: "Our SaaS development services take a product from idea to a multi-tenant, cloud-native application ready for recurring revenue — including subscription billing, usage metering, and secure account architecture.",
     },
     {
       icon: "Globe",
@@ -66,7 +66,7 @@ softwareDevelopment: {
     {
       icon: "Brain",
       title: "AI Software Development Services",
-      description: "Our AI software development services help businesses add practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows into existing or new software, without over-engineering the solution.",
+      description: "Our AI software development services help businesses add practical AI features — automation, predictive analytics, intelligent search, and AI-assisted workflows — into existing or new software, without over-engineering the solution.",
     },
     {
       icon: "Workflow",
@@ -76,7 +76,7 @@ softwareDevelopment: {
     {
       icon: "Plug",
       title: "Application Development & API Integration",
-      description: "Our application development services include building and integrating APIs with the third-party tools your business already relies on payment processors, CRMs, ERPs, and internal systems so software fits into your existing operations rather than replacing them.",
+      description: "Our application development services include building and integrating APIs with the third-party tools your business already relies on — payment processors, CRMs, ERPs, and internal systems — so software fits into your existing operations rather than replacing them.",
     },
     {
       icon: "Compass",
@@ -300,12 +300,13 @@ softwareDevelopment: {
   // Benefits Section
   benefitsSection: {
     title: "Benefits of Our Software Development Services",
+    description: "Businesses choose our software development solutions for measurable, practical reasons:",
   },
   
   // Why Choose Us Data
   whyChooseUs: {
     title: "Why Choose Clickmasters as Your Software Development Partner",
-    description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:\nThis combination is why businesses evaluating software development companies in the USA consistently shortlist us among the best software development services for mid-market and enterprise projects.",
+    description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
     reasons: [
       {
         title: "Track record",
@@ -328,6 +329,7 @@ softwareDevelopment: {
         description: "fixed-scope builds, dedicated teams, or ongoing outsourced development",
       },
     ],
+    closingText: "This combination is why businesses evaluating software development companies in the USA consistently shortlist us among the best software development services for mid-market and enterprise projects.",
   },
   
   // Technology Stack Data
@@ -473,11 +475,11 @@ softwareDevelopment: {
     },
     {
       question: "How much does custom software development cost?",
-      answer: "Custom software development cost depends on scope. A minimum viable product (MVP) typically starts around $8,000 and takes 6-12 weeks. A full custom application generally ranges from $25,000-$60,000 over 3-6 months, while enterprise platforms with compliance and integration requirements can exceed $150,000 across 6-18 months.",
+      answer: "Custom software development cost depends on scope. A minimum viable product (MVP) typically starts around $8,000 and takes 6–12 weeks. A full custom application generally ranges from $25,000–$60,000 over 3–6 months, while enterprise platforms with compliance and integration requirements can exceed $150,000 across 6–18 months.",
     },
     {
       question: "How long does a software development project take?",
-      answer: "Most MVPs ship in 6-12 weeks, standard business applications take 3-6 months, and enterprise software programs run 6-18 months with phased releases roughly every two weeks.",
+      answer: "Most MVPs ship in 6–12 weeks, standard business applications take 3–6 months, and enterprise software programs run 6–18 months with phased releases roughly every two weeks.",
     },
     {
       question: "Do I own the source code after the project is complete?",
@@ -589,7 +591,7 @@ webDevelopment: {
       description: "From custom themes to app integrations, our Shopify development services help brands launch and scale stores that are fast, on-brand, and built to convert.",
     },
     {
-      icon: "Wordpress",
+      icon: "Store",
       title: "WooCommerce Development",
       description: "For businesses already on WordPress, our WooCommerce development services add secure, high-performance commerce functionality without rebuilding your entire site.",
     },
@@ -756,7 +758,7 @@ webDevelopment: {
       title: "WooCommerce Development",
       slug: "woocommerce-development",
       description: "For businesses already on WordPress, our WooCommerce development services add secure, high-performance commerce functionality without rebuilding your entire site.",
-      icon: "Wordpress",
+      icon: "Store",
       heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "WooCommerce Development Services | Clickmasters",
       metaDescription: "WooCommerce development services adding secure, high-performance commerce functionality to existing WordPress sites.",
@@ -992,12 +994,8 @@ webDevelopment: {
       question: "Can you redesign or modernize an existing website?",
       answer: "Absolutely. We audit your current site's performance, UX, and code quality, then rebuild or migrate it with minimal downtime and no lost SEO equity.",
     },
-    {
-      question: "Do you provide ongoing support after launch?",
-      answer: "Yes. We provide post-launch support, monitoring, security updates, and ongoing maintenance to keep your website fast, secure, and performing optimally.",
-    },
   ],
-  
+
   // Final CTA Section
   finalCta: {
     title: "Ready to Start Your Web Development Project?",
@@ -1332,14 +1330,14 @@ mobileDevelopment: {
   
   // Industries Data
   industries: [
-    { name: "Health & Wellness", description: "fitness tracking and health monitoring apps" },
+    { name: "Health & wellness", description: "fitness tracking and health monitoring apps" },
     { name: "Healthcare", description: "patient portals and medical record apps" },
-    { name: "Fintech and Finance", description: "secure payment and banking apps" },
-    { name: "Mobility and Logistics", description: "real-time tracking and delivery apps" },
+    { name: "Fintech and finance", description: "secure payment and banking apps" },
+    { name: "Mobility and logistics", description: "real-time tracking and delivery apps" },
     { name: "Education (EdTech)", description: "learning platforms and educational apps" },
-    { name: "Retail and E-commerce", description: "mobile shopping and marketplace apps" },
+    { name: "Retail and e-commerce", description: "mobile shopping and marketplace apps" },
   ],
-  
+
   // Pricing Section
   pricingSection: {
     title: "Mobile App Development Investment",
@@ -1446,18 +1444,18 @@ artificialIntelligence: {
   canonical: "https://clickmasterssoftwaredevelopmentcompany.com/artificial-intelligence-ai",
   
   // Hero Section
-  title: "Leading Artificial Intelligence Company for Modern U.S. Businesses",
+  title: "Artificial Intelligence Services",
   slug: "artificial-intelligence-ai",
   icon: "Brain",
-  tagline: "Artificial Intelligence Services",
+  tagline: "Leading Artificial Intelligence Company for Modern U.S. Businesses",
   description: "Clickmasters is an artificial intelligence company helping USA businesses design, build, and scale AI from AI chatbots and autonomous agents to enterprise-grade generative AI solutions. As a full-service artificial intelligence company, we turn AI experiments into production systems that cut costs, save time, and grow revenue.",
   heroBadge: "50+ AI Projects Delivered",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   
   // Hero CTAs
   heroCtas: {
-    primary: "Get a Free Consultation",
-    secondary: "Book a Discovery Call Today",
+    primary: "Book a Free AI Consultation",
+    secondary: "Talk to Our AI Development Team",
   },
   
   // Hero Stats
@@ -1471,7 +1469,7 @@ artificialIntelligence: {
   // Features/Services List
   features: [
     {
-      icon: "Brain",
+      icon: "Sparkles",
       title: "Generative AI Solutions",
       description: "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models — designed for accuracy, safety, and speed.",
     },
@@ -1496,7 +1494,7 @@ artificialIntelligence: {
       description: "As an experienced AI chatbot development company, we build conversational assistants for support, sales, and internal operations that actually resolve issues — not just deflect them.",
     },
     {
-      icon: "Users2",
+      icon: "Zap",
       title: "AI Agents Development",
       description: "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems, reducing manual work across departments.",
     },
@@ -1516,13 +1514,13 @@ artificialIntelligence: {
       description: "Custom model training, fine-tuning, and evaluation for teams that need AI tailored to proprietary data and specialized use cases.",
     },
     {
-      icon: "Network",
+      icon: "Layers",
       title: "LLM Application Development",
       description: "Production-grade LLM applications — including RAG (retrieval-augmented generation) systems — built with vector databases, evaluation pipelines, and monitoring.",
     },
   ],
   
-  // Our Artificial Intelligence Development Services
+  // Our AI Services
   ourServices: {
     title: "Our Artificial Intelligence Development Services",
     description: "We offer end-to-end artificial intelligence services and solutions — from strategy and prototyping to full-scale deployment and support. As a complete AI development company, we cover every layer of the AI stack.",
@@ -1534,21 +1532,21 @@ artificialIntelligence: {
       title: "Generative AI Solutions",
       slug: "generative-ai-solutions",
       description: "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models — designed for accuracy, safety, and speed.",
-      icon: "Brain",
+      icon: "Sparkles",
       heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Generative AI Solutions | Clickmasters",
       metaDescription: "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models.",
-      lead: "LLM-powered solutions designed for accuracy, safety, and speed.",
+      lead: "Production-grade generative AI solutions designed for accuracy, safety, and speed.",
       highlights: [
         "GPT, Claude, Gemini integration",
-        "Content generation",
-        "Automation tools",
         "Open-source model support",
+        "Content & automation tools",
+        "Safety & accuracy focused",
       ],
       pricing: [
-        { type: "AI Proof of Concept", investment: "$8,000+", timeline: "4-8 weeks" },
-        { type: "Production AI Application", investment: "$25,000+", timeline: "2-4 months" },
-        { type: "Enterprise AI Platform", investment: "$60,000+", timeline: "4-8 months" },
+        { type: "Proof of Concept", investment: "$8,000+", timeline: "4-8 weeks" },
+        { type: "Production Solution", investment: "$25,000+", timeline: "2-4 months" },
+        { type: "Enterprise Platform", investment: "$60,000+", timeline: "4-8 months" },
       ],
     },
     {
@@ -1562,25 +1560,35 @@ artificialIntelligence: {
       lead: "Strategic AI advice to identify high-ROI use cases and build a realistic roadmap.",
       highlights: [
         "Use case identification",
-        "AI roadmap planning",
-        "Technology selection",
-        "ROI assessment",
+        "ROI analysis",
+        "Tech stack selection",
+        "Roadmap planning",
+      ],
+      pricing: [
+        { type: "AI Strategy Session", investment: "$3,000+", timeline: "2-4 weeks" },
+        { type: "Full AI Assessment", investment: "$12,000+", timeline: "6-8 weeks" },
+        { type: "Enterprise AI Roadmap", investment: "$25,000+", timeline: "3-4 months" },
       ],
     },
     {
-      title: "AI Developers & Custom AI App Development",
-      slug: "custom-ai-development",
+      title: "Custom AI App Development",
+      slug: "custom-ai-app-development",
       description: "Our AI developers build custom AI applications — from internal tools to customer-facing products — tailored to your workflows, not a generic template.",
       icon: "Code2",
       heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Custom AI App Development | Clickmasters",
-      metaDescription: "Custom AI applications built by expert AI developers, tailored to your workflows and business needs.",
-      lead: "Custom AI applications tailored to your workflows, not a generic template.",
+      metaDescription: "Custom AI applications built by expert AI developers — from internal tools to customer-facing products.",
+      lead: "Custom AI applications tailored to your workflows, not generic templates.",
       highlights: [
-        "Internal AI tools",
-        "Customer-facing AI products",
-        "Workflow integration",
-        "Full source-code ownership",
+        "Internal & customer-facing apps",
+        "Workflow-specific design",
+        "Full-stack AI development",
+        "Scalable architecture",
+      ],
+      pricing: [
+        { type: "AI App MVP", investment: "$15,000+", timeline: "8-12 weeks" },
+        { type: "Full AI Application", investment: "$35,000+", timeline: "3-6 months" },
+        { type: "Enterprise AI Platform", investment: "$75,000+", timeline: "6-12 months" },
       ],
     },
     {
@@ -1590,13 +1598,18 @@ artificialIntelligence: {
       icon: "MessageSquare",
       heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "AI Prompt Engineering Services | Clickmasters",
-      metaDescription: "High-quality prompt design and model tuning for reliable, consistent AI results with reduced hallucinations.",
-      lead: "High-quality prompt design for reliable, consistent AI results.",
+      metaDescription: "Professional AI prompt engineering and model tuning for improved reliability and consistent results.",
+      lead: "High-quality prompt design that improves reliability and reduces hallucinations.",
       highlights: [
         "Prompt optimization",
-        "Model tuning",
-        "Reduced hallucinations",
-        "Consistent results",
+        "Model fine-tuning",
+        "Hallucination reduction",
+        "Consistent outputs",
+      ],
+      pricing: [
+        { type: "Prompt Optimization", investment: "$5,000+", timeline: "2-4 weeks" },
+        { type: "Full Prompt Engineering", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Model Tuning", investment: "$40,000+", timeline: "8-12 weeks" },
       ],
     },
     {
@@ -1604,63 +1617,83 @@ artificialIntelligence: {
       slug: "ai-chatbot-development",
       description: "As an experienced AI chatbot development company, we build conversational assistants for support, sales, and internal operations that actually resolve issues — not just deflect them.",
       icon: "Bot",
-      heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "AI Chatbot Development Services | Clickmasters",
-      metaDescription: "AI chatbot development for support, sales, and internal operations that actually resolve issues.",
-      lead: "Conversational assistants that actually resolve issues — not just deflect them.",
+      metaDescription: "Professional AI chatbot development for support, sales, and internal operations that actually resolve issues.",
+      lead: "Conversational AI assistants that resolve issues, not just deflect them.",
       highlights: [
-        "Customer support chatbots",
+        "Support chatbots",
         "Sales assistants",
         "Internal operations bots",
-        "Issue resolution",
+        "Multi-channel deployment",
+      ],
+      pricing: [
+        { type: "Basic Chatbot", investment: "$8,000+", timeline: "6-8 weeks" },
+        { type: "Advanced AI Chatbot", investment: "$25,000+", timeline: "8-12 weeks" },
+        { type: "Enterprise Chatbot Platform", investment: "$50,000+", timeline: "3-6 months" },
       ],
     },
     {
       title: "AI Agents Development",
       slug: "ai-agents-development",
       description: "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems, reducing manual work across departments.",
-      icon: "Users2",
-      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "AI Agents Development | Clickmasters",
+      icon: "Zap",
+      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "AI Agents Development Services | Clickmasters",
       metaDescription: "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems.",
-      lead: "Autonomous AI agents that complete multi-step tasks across your tools and systems.",
+      lead: "Autonomous AI agents that reduce manual work across departments.",
       highlights: [
-        "Multi-step task execution",
-        "Tool integration",
-        "Cross-department automation",
-        "Reduced manual work",
+        "Multi-step task automation",
+        "Cross-tool integration",
+        "Autonomous execution",
+        "Department-wide impact",
+      ],
+      pricing: [
+        { type: "Single AI Agent", investment: "$12,000+", timeline: "6-10 weeks" },
+        { type: "Multi-Agent System", investment: "$30,000+", timeline: "3-5 months" },
+        { type: "Enterprise Agent Platform", investment: "$65,000+", timeline: "6-12 months" },
       ],
     },
     {
       title: "AI Automation Systems",
-      slug: "ai-automation",
+      slug: "ai-automation-systems",
       description: "Intelligent automation that connects your AI models to real business processes — from lead qualification to document processing and reporting.",
       icon: "Workflow",
-      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "AI Automation Systems | Clickmasters",
-      metaDescription: "Intelligent automation connecting AI models to real business processes — lead qualification, document processing, and reporting.",
-      lead: "Intelligent automation connecting AI models to real business processes.",
+      metaDescription: "Intelligent automation connecting AI models to real business processes — lead qualification, document processing, reporting.",
+      lead: "Intelligent automation that connects AI to real business processes.",
       highlights: [
         "Lead qualification",
         "Document processing",
         "Automated reporting",
-        "Process integration",
+        "Process optimization",
+      ],
+      pricing: [
+        { type: "Single Process Automation", investment: "$10,000+", timeline: "4-8 weeks" },
+        { type: "Multi-Process Automation", investment: "$28,000+", timeline: "3-4 months" },
+        { type: "Enterprise Automation Suite", investment: "$55,000+", timeline: "6-12 months" },
       ],
     },
     {
       title: "AI Integration Services",
-      slug: "ai-integration",
+      slug: "ai-integration-services",
       description: "We integrate AI into your existing software — CRMs, ERPs, support desks, and internal APIs — so AI becomes part of your workflow, not a separate silo.",
       icon: "Plug",
       heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "AI Integration Services | Clickmasters",
-      metaDescription: "AI integration into existing software — CRMs, ERPs, support desks, and internal APIs.",
-      lead: "AI integrated into your workflow, not a separate silo.",
+      metaDescription: "Seamless AI integration with CRMs, ERPs, support desks, and internal APIs — AI becomes part of your workflow.",
+      lead: "AI integration that makes AI part of your workflow, not a separate silo.",
       highlights: [
         "CRM integration",
         "ERP integration",
         "Support desk integration",
         "API connectivity",
+      ],
+      pricing: [
+        { type: "Single Integration", investment: "$8,000+", timeline: "4-6 weeks" },
+        { type: "Multi-System Integration", investment: "$22,000+", timeline: "2-3 months" },
+        { type: "Enterprise Integration Suite", investment: "$45,000+", timeline: "4-8 months" },
       ],
     },
     {
@@ -1668,118 +1701,127 @@ artificialIntelligence: {
       slug: "ai-model-development",
       description: "Custom model training, fine-tuning, and evaluation for teams that need AI tailored to proprietary data and specialized use cases.",
       icon: "Database",
-      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "AI Model Development | Clickmasters",
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "AI Model Development Services | Clickmasters",
       metaDescription: "Custom AI model training, fine-tuning, and evaluation for proprietary data and specialized use cases.",
-      lead: "Custom AI model training tailored to proprietary data and specialized use cases.",
+      lead: "Custom AI models tailored to your proprietary data and specialized use cases.",
       highlights: [
         "Custom model training",
         "Fine-tuning",
         "Model evaluation",
-        "Proprietary data support",
+        "Specialized use cases",
+      ],
+      pricing: [
+        { type: "Model Fine-Tuning", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Custom Model Training", investment: "$35,000+", timeline: "3-5 months" },
+        { type: "Enterprise AI Model Suite", investment: "$80,000+", timeline: "6-12 months" },
       ],
     },
     {
       title: "LLM Application Development",
       slug: "llm-application-development",
       description: "Production-grade LLM applications — including RAG (retrieval-augmented generation) systems — built with vector databases, evaluation pipelines, and monitoring.",
-      icon: "Network",
+      icon: "Layers",
       heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "LLM Application Development | Clickmasters",
-      metaDescription: "Production-grade LLM applications including RAG systems with vector databases, evaluation pipelines, and monitoring.",
-      lead: "Production-grade LLM applications with RAG, vector databases, and monitoring.",
+      metaDescription: "Production-grade LLM applications with RAG systems, vector databases, evaluation pipelines, and monitoring.",
+      lead: "Production-grade LLM applications with RAG systems and evaluation pipelines.",
       highlights: [
-        "RAG systems",
-        "Vector databases",
+        "RAG system implementation",
+        "Vector database integration",
         "Evaluation pipelines",
         "Performance monitoring",
+      ],
+      pricing: [
+        { type: "RAG System MVP", investment: "$15,000+", timeline: "8-12 weeks" },
+        { type: "Production LLM Application", investment: "$35,000+", timeline: "4-6 months" },
+        { type: "Enterprise LLM Platform", investment: "$70,000+", timeline: "6-12 months" },
       ],
     },
   ],
   
-  // Trust Section Data
+  // Trust Section
   trustSection: {
     title: "Artificial Intelligence Company Built for Real Results",
     description: "Clickmasters is an artificial intelligence company delivering scalable AI solutions built around real business goals. Our AI developers, data engineers, and AI consultants specialize in machine learning, large language models, and intelligent automation.\nAs a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights. Whether you need an AI chatbot development company for customer support or an enterprise AI solutions partner, our artificial intelligence services and solutions are built to scale.\nOur AI development services combine secure engineering, transparent delivery, measurable ROI, and expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock.",
     points: [
-      "Specialists across the full AI stack — machine learning, NLP, computer vision, and generative AI, not generalists stretched thin",
-      "Reusable, proven patterns instead of one-off, throwaway builds",
-      "Transparent communication with regular demos, milestones, and full project visibility",
-      "Security and governance built in, not bolted on after launch",
-      "Real industry experience across SaaS, healthcare, finance, retail, logistics, and education",
-      "Support that continues after launch — monitoring, retraining, and optimization included",
+      "Secure engineering and transparent delivery",
+      "Measurable ROI on every AI initiative",
+      "Expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock",
+      "Custom AI solutions for every business need",
     ],
-    closingText: "As a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights.",
+    closingText: "Our artificial intelligence services and solutions are built to scale.",
   },
   
   // Trusted Clients
   trustedClients: [
-    { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
-    { name: "Healthcare System", industry: "Healthcare", icon: "Heart" },
+    { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
+    { name: "Healthcare Technology", industry: "Healthcare", icon: "Heart" },
     { name: "Regional Bank", industry: "Finance", icon: "Coins" },
     { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
-    { name: "Education Platform", industry: "Education", icon: "GraduationCap" },
-  ],
-  
-  // Benefits Section Data
-  benefits: [
-    "Faster Time to Value — we move AI from idea to production quickly, using proven architectures instead of reinventing the wheel on every project.",
-    "Lower Operational Costs — our AI automation systems reduce manual, repetitive work — freeing your team to focus on higher-value tasks.",
-    "Data-Driven Decisions — predictive analytics and AI-powered insights help you make faster, more confident business decisions.",
-    "Secure, Governed AI — every AI solution we build includes guardrails, access controls, and monitoring — so you stay compliant and in control.",
-    "Built to Scale — as a custom AI development company, we architect systems that grow with your user base and data volume, not just your first pilot.",
-    "Measurable ROI — we tie every AI initiative to clear business KPIs, so you always know what your AI investment is delivering.",
+    { name: "Retail Chain", industry: "Retail", icon: "ShoppingBag" },
   ],
   
   // Benefits Section
   benefitsSection: {
     title: "Why Businesses Choose Our AI Development Services",
+    description: "Our AI development services deliver real business value through proven approaches and measurable results.",
   },
+  benefits: [
+    "Faster time to value — we move AI from idea to production quickly using proven architectures",
+    "Lower operational costs — our AI automation systems reduce manual, repetitive work",
+    "Data-driven decisions — predictive analytics and AI-powered insights help you make faster, confident decisions",
+    "Secure, governed AI — every solution includes guardrails, access controls, and monitoring",
+    "Built to scale — we architect systems that grow with your user base and data volume",
+    "Measurable ROI — every AI initiative tied to clear business KPIs",
+  ],
   
-  // Why Choose Us Data
+  // Why Choose Us
   whyChooseUs: {
     title: "Why Choose Clickmasters as Your Artificial Intelligence Company?",
     description: "Choosing the right artificial intelligence company for your business isn't about the flashiest demo—it's about who can build, secure, and support AI in production. At Clickmasters, we focus on long-term partnerships and practical results, delivering reliable AI solutions that are designed to perform, scale, and create measurable business value.",
     reasons: [
       {
-        title: "AI stack specialists",
-        description: "machine learning, NLP, computer vision, and generative AI, not generalists stretched thin",
+        title: "Full AI stack specialists",
+        description: "Machine learning, NLP, computer vision, and generative AI — not generalists stretched thin",
       },
       {
-        title: "Proven patterns",
-        description: "reusable, proven patterns instead of one-off, throwaway builds",
+        title: "Reusable patterns",
+        description: "Proven, reusable patterns instead of one-off, throwaway builds",
       },
       {
-        title: "Transparent delivery",
-        description: "regular demos, milestones, and full project visibility",
+        title: "Transparent communication",
+        description: "Regular demos, milestones, and full project visibility",
       },
       {
-        title: "Security & governance",
-        description: "built in, not bolted on after launch",
+        title: "Security-first approach",
+        description: "Security and governance built in, not bolted on after launch",
       },
       {
         title: "Real industry experience",
-        description: "across SaaS, healthcare, finance, retail, logistics, and education",
+        description: "Across SaaS, healthcare, finance, retail, logistics, and education",
       },
       {
-        title: "Post-launch support",
-        description: "monitoring, retraining, and optimization included",
+        title: "Ongoing support",
+        description: "Monitoring, retraining, and optimization included after launch",
       },
     ],
+    closingText: "This combination is why businesses evaluating artificial intelligence companies consistently choose Clickmasters as their trusted AI development partner.",
   },
   
-  // Technology Stack Data
+  // Technology Stack
   techStack: {
     title: "AI Development Technologies Behind Our Solutions",
-    description: "We choose technology for reliability, maintainability, and long-term support — not trends.",
-    aiModels: ["OpenAI (GPT)", "Anthropic (Claude)", "Google Gemini", "open-source LLMs (Llama, Mistral)"],
-    mlData: ["Python", "TensorFlow", "PyTorch", "vector databases"],
-    infrastructure: ["AWS", "Azure", "AWS Bedrock", "Docker"],
-    applicationLayer: ["Next.js", "React", "Node.js", "PostgreSQL"],
-    closingText: "This combination lets our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
+    description: "We choose technology for reliability, maintainability, and long-term support — not trends. This combination lets our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
+    frontend: ["React", "Next.js"],
+    backend: ["Node.js", "Python"],
+    databases: ["PostgreSQL", "Vector Databases"],
+    cloudDevOps: ["AWS", "Azure", "AWS Bedrock", "Docker"],
+    aiAutomation: ["OpenAI", "Anthropic Claude", "Google Gemini", "Llama", "Mistral", "TensorFlow", "PyTorch"],
+    closingText: "Every technology decision is documented during the architecture phase, ensuring your AI solution is secure, scalable, and maintainable.",
   },
   
-  // Client Success Stories (Testimonials)
+  // Testimonials
   testimonialsSection: {
     title: "Success Stories",
   },
@@ -1789,28 +1831,28 @@ artificialIntelligence: {
       author: "Daniel Morgan",
       title: "Operations Director",
       company: "SaaS Company",
-      location: "",
+      location: "USA",
     },
     {
       quote: "Clickmasters' AI consulting team helped us choose the right solution instead of overspending on unnecessary technology. We launched in weeks and achieved exactly what we needed.",
       author: "Sarah Mitchell",
       title: "VP of Product",
       company: "Healthcare Technology Company",
-      location: "",
+      location: "USA",
     },
     {
       quote: "Clickmasters automated our document processing and saved our team hours every week. The AI solution paid for itself in less than three months.",
       author: "James Carter",
       title: "Finance Operations Lead",
       company: "Regional Bank",
-      location: "",
+      location: "USA",
     },
     {
       quote: "Clickmasters made the entire AI development process clear and transparent. Their RAG-based search solution now answers around 70% of our internal questions without a support ticket.",
       author: "Michael Bennett",
       title: "IT Manager",
       company: "Logistics Company",
-      location: "",
+      location: "USA",
     },
   ],
   
@@ -1818,8 +1860,6 @@ artificialIntelligence: {
   processSection: {
     title: "Our Artificial Intelligence Development Process",
   },
-  
-  // Process Steps
   processSteps: [
     {
       title: "Discovery & AI Strategy",
@@ -1844,15 +1884,13 @@ artificialIntelligence: {
     title: "Artificial Intelligence Services for Every Industry",
     description: "Our artificial intelligence development services are adapted to the operating reality of your industry — not a generic playbook.",
   },
-  
-  // Industries Data
   industries: [
     { name: "SaaS", description: "AI features, onboarding automation, in-app copilots" },
-    { name: "Healthcare", description: "clinical documentation support, patient triage assistants, HIPAA-aware workflows" },
-    { name: "Finance", description: "fraud detection, reporting automation, risk scoring" },
-    { name: "Retail", description: "personalization engines, demand forecasting, AI shopping assistants" },
-    { name: "Education", description: "adaptive learning tools, administrative automation" },
-    { name: "Logistics", description: "route optimization, demand prediction, real-time tracking intelligence" },
+    { name: "Healthcare", description: "Clinical documentation support, patient triage assistants, HIPAA-aware workflows" },
+    { name: "Finance", description: "Fraud detection, reporting automation, risk scoring" },
+    { name: "Retail", description: "Personalization engines, demand forecasting, AI shopping assistants" },
+    { name: "Education", description: "Adaptive learning tools, administrative automation" },
+    { name: "Logistics", description: "Route optimization, demand prediction, real-time tracking intelligence" },
   ],
   
   // Pricing Section
@@ -1860,19 +1898,18 @@ artificialIntelligence: {
     title: "AI Development Investment",
     description: "Flexible engagement models for AI development scoped to your timeline, team size, and goals.",
   },
-  
-  // Pricing
   pricing: [
     {
       type: "AI Proof of Concept",
       investment: "$8,000+",
       timeline: "4-8 weeks",
-      bestFor: "Validating AI feasibility for your use case",
+      bestFor: "Validating AI feasibility and ROI",
       features: [
         "Use case validation",
         "Model selection",
         "Prototype development",
-        "ROI assessment",
+        "ROI analysis",
+        "Full IP ownership",
       ],
     },
     {
@@ -1881,22 +1918,24 @@ artificialIntelligence: {
       timeline: "2-4 months",
       bestFor: "Chatbots, agents, and RAG systems",
       features: [
-        "Full application build",
-        "Integration with existing systems",
-        "Testing & evaluation",
-        "Deployment & monitoring",
+        "Full AI application",
+        "System integration",
+        "Security & governance",
+        "Evaluation pipeline",
+        "Full IP ownership",
       ],
     },
     {
       type: "Enterprise AI Platform",
       investment: "$60,000+",
-      timeline: "4-8 months",
-      bestFor: "Complex AI systems with governance and fine-tuning",
+      timeline: "4-12 months",
+      bestFor: "Complex AI platforms with governance",
       features: [
-        "Custom model training",
-        "Enterprise governance",
-        "Advanced security",
-        "Dedicated team & SLA",
+        "Multi-model orchestration",
+        "Fine-tuning & custom training",
+        "Enterprise security",
+        "24/7 monitoring & support",
+        "Full IP ownership",
       ],
     },
   ],
@@ -1905,8 +1944,6 @@ artificialIntelligence: {
   faqsSection: {
     title: "Frequently Asked Questions",
   },
-  
-  // FAQs
   faqs: [
     {
       question: "What is RAG, and do you implement it?",
@@ -1934,7 +1971,7 @@ artificialIntelligence: {
     },
   ],
   
-  // Final CTA Section
+  // Final CTA
   finalCta: {
     title: "Ready to Partner With a Trusted Artificial Intelligence Company?",
     description: "Partner with an artificial intelligence company that ships production AI, not just prototypes. Book a free consultation and let's map out the right AI solution for your business.",
@@ -1942,7 +1979,7 @@ artificialIntelligence: {
     secondary: "Talk to Our AI Development Team",
   },
   
-  // Mid-page CTA labels
+  // Mid-page CTAs
   sectionCtas: {
     afterServices: "Talk to Our AI Development Team",
     afterWhyChooseUs: "See Why Teams Trust Our AI Development Company",
@@ -1985,7 +2022,7 @@ machineLearning: {
   // Features/Services List
   features: [
     {
-      icon: "Brain",
+      icon: "Cpu",
       title: "Machine Learning Solutions",
       description: "Custom machine learning solutions built around your business data — from forecasting and classification to anomaly detection and process optimization.",
     },
@@ -1995,17 +2032,17 @@ machineLearning: {
       description: "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
     },
     {
-      icon: "BarChart3",
+      icon: "TrendingUp",
       title: "Predictive Analytics",
       description: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
     },
     {
-      icon: "TrendingUp",
+      icon: "Star",
       title: "Recommendation Systems",
       description: "Personalized recommendation systems that increase engagement and revenue by matching customers with the products, content, or services most relevant to them.",
     },
     {
-      icon: "SlidersHorizontal",
+      icon: "Settings",
       title: "Model Training & Optimization",
       description: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
     },
@@ -2015,17 +2052,17 @@ machineLearning: {
       description: "Deep learning solutions for complex, high-dimensional problems — including image recognition, natural language processing, and time-series forecasting.",
     },
     {
-      icon: "Cpu",
+      icon: "Database",
       title: "Deep Learning Experts",
       description: "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
     },
     {
-      icon: "Database",
+      icon: "Code2",
       title: "Custom ML Model Development",
       description: "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
     },
     {
-      icon: "Code2",
+      icon: "Layers",
       title: "ML Model Development Services",
       description: "Full-cycle ML model development services covering data preparation, feature engineering, model selection, training, and validation.",
     },
@@ -2036,7 +2073,7 @@ machineLearning: {
     },
   ],
   
-  // Our Machine Learning Development Services
+  // Our Machine Learning Services
   ourServices: {
     title: "Our Machine Learning Development Services",
     description: "We offer end-to-end machine learning development services — from data strategy and model design to deployment and ongoing optimization. As a complete ml software development company, we cover every stage of the ML lifecycle.",
@@ -2048,47 +2085,31 @@ machineLearning: {
       title: "Machine Learning Solutions",
       slug: "machine-learning-solutions",
       description: "Custom machine learning solutions built around your business data — from forecasting and classification to anomaly detection and process optimization.",
-      icon: "Brain",
+      icon: "Cpu",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Machine Learning Solutions | Clickmasters",
-      metaDescription: "Custom machine learning solutions built around your business data — forecasting, classification, anomaly detection, and process optimization.",
-      lead: "Custom machine learning solutions built around your business data.",
+      metaDescription: "Custom machine learning solutions for forecasting, classification, anomaly detection, and process optimization.",
+      lead: "Custom ML solutions built around your business data for real-world impact.",
       highlights: [
-        "Forecasting",
-        "Classification",
+        "Forecasting & classification",
         "Anomaly detection",
         "Process optimization",
+        "Business data integration",
       ],
       pricing: [
         { type: "ML Proof of Concept", investment: "$10,000+", timeline: "4-6 weeks" },
-        { type: "Production-Ready ML Model", investment: "$30,000+", timeline: "2-4 months" },
+        { type: "Production ML Solution", investment: "$30,000+", timeline: "2-4 months" },
         { type: "Enterprise ML Platform", investment: "$70,000+", timeline: "4-9 months" },
-      ],
-    },
-    {
-      title: "Machine Learning Experts",
-      slug: "machine-learning-experts",
-      description: "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
-      icon: "Users",
-      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Machine Learning Experts | Clickmasters",
-      metaDescription: "Dedicated machine learning experts and data scientists who design, train, and validate models for your specific use case.",
-      lead: "Dedicated ML experts and data scientists for your specific use case.",
-      highlights: [
-        "Model design",
-        "Training & validation",
-        "Use case specialization",
-        "Ongoing support",
       ],
     },
     {
       title: "Predictive Analytics",
       slug: "predictive-analytics",
       description: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
-      icon: "BarChart3",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      icon: "TrendingUp",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Predictive Analytics Services | Clickmasters",
-      metaDescription: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business.",
+      metaDescription: "Predictive analytics models for demand forecasting, risk detection, and trend identification built on your business data.",
       lead: "Forecast demand, detect risk, and identify trends before they impact your business.",
       highlights: [
         "Demand forecasting",
@@ -2096,37 +2117,52 @@ machineLearning: {
         "Trend identification",
         "Historical & real-time data",
       ],
+      pricing: [
+        { type: "Predictive Analytics POC", investment: "$12,000+", timeline: "4-6 weeks" },
+        { type: "Production Analytics Model", investment: "$35,000+", timeline: "2-4 months" },
+        { type: "Enterprise Analytics Suite", investment: "$75,000+", timeline: "5-9 months" },
+      ],
     },
     {
       title: "Recommendation Systems",
       slug: "recommendation-systems",
       description: "Personalized recommendation systems that increase engagement and revenue by matching customers with the products, content, or services most relevant to them.",
-      icon: "TrendingUp",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Recommendation Systems | Clickmasters",
-      metaDescription: "Personalized recommendation systems that increase engagement and revenue by matching customers with relevant products and content.",
-      lead: "Increase engagement and revenue with personalized recommendations.",
+      icon: "Star",
+      heroImage: "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Recommendation Systems Development | Clickmasters",
+      metaDescription: "Personalized recommendation systems that increase engagement and revenue through intelligent customer matching.",
+      lead: "Increase engagement and revenue with personalized product and content recommendations.",
       highlights: [
         "Product recommendations",
-        "Content recommendations",
-        "Service matching",
+        "Content personalization",
         "Engagement optimization",
+        "Revenue growth",
+      ],
+      pricing: [
+        { type: "Basic Recommendation System", investment: "$15,000+", timeline: "6-8 weeks" },
+        { type: "Advanced Personalization Engine", investment: "$40,000+", timeline: "3-5 months" },
+        { type: "Enterprise Recommendation Platform", investment: "$80,000+", timeline: "5-10 months" },
       ],
     },
     {
       title: "Model Training & Optimization",
       slug: "model-training-optimization",
       description: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
-      icon: "SlidersHorizontal",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      icon: "Settings",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Model Training & Optimization | Clickmasters",
-      metaDescription: "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while controlling inference costs.",
-      lead: "Rigorous training and optimization to maximize accuracy.",
+      metaDescription: "Professional model training, hyperparameter tuning, and optimization for maximum accuracy with controlled inference costs.",
+      lead: "Maximize accuracy while keeping inference costs under control.",
       highlights: [
         "Hyperparameter tuning",
         "Accuracy optimization",
-        "Inference cost control",
-        "Performance validation",
+        "Inference cost management",
+        "Performance benchmarking",
+      ],
+      pricing: [
+        { type: "Model Optimization", investment: "$8,000+", timeline: "3-4 weeks" },
+        { type: "Full Training Pipeline", investment: "$25,000+", timeline: "2-3 months" },
+        { type: "Enterprise Training Suite", investment: "$55,000+", timeline: "4-7 months" },
       ],
     },
     {
@@ -2134,63 +2170,62 @@ machineLearning: {
       slug: "deep-learning-solutions",
       description: "Deep learning solutions for complex, high-dimensional problems — including image recognition, natural language processing, and time-series forecasting.",
       icon: "Network",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Deep Learning Solutions | Clickmasters",
-      metaDescription: "Deep learning solutions for complex problems including image recognition, NLP, and time-series forecasting.",
-      lead: "Deep learning for complex, high-dimensional problems.",
+      metaDescription: "Deep learning solutions for image recognition, natural language processing, time-series forecasting, and complex problems.",
+      lead: "Deep learning for complex, high-dimensional problems like image recognition and NLP.",
       highlights: [
         "Image recognition",
         "Natural language processing",
         "Time-series forecasting",
         "Neural network architectures",
       ],
-    },
-    {
-      title: "Deep Learning Experts",
-      slug: "deep-learning-experts",
-      description: "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
-      icon: "Cpu",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Deep Learning Experts | Clickmasters",
-      metaDescription: "Deep learning experts designing neural network architectures from convolutional networks to transformer-based models.",
-      lead: "Neural network architectures from CNNs to transformers.",
-      highlights: [
-        "Convolutional networks",
-        "Transformer models",
-        "Architecture design",
-        "Data-specific solutions",
+      pricing: [
+        { type: "Deep Learning POC", investment: "$15,000+", timeline: "6-8 weeks" },
+        { type: "Production DL Solution", investment: "$45,000+", timeline: "3-5 months" },
+        { type: "Enterprise DL Platform", investment: "$90,000+", timeline: "6-12 months" },
       ],
     },
     {
       title: "Custom ML Model Development",
       slug: "custom-ml-model-development",
       description: "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
-      icon: "Database",
+      icon: "Code2",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Custom ML Model Development | Clickmasters",
-      metaDescription: "Custom ML model development from the ground up — trained on proprietary data and tuned for your business metrics.",
-      lead: "Custom models trained on proprietary data for your business metrics.",
+      metaDescription: "Custom ML models trained on your proprietary data and tuned for the metrics that matter to your business.",
+      lead: "Custom ML models built from the ground up for your proprietary data and business metrics.",
       highlights: [
         "Proprietary data training",
-        "Metric-focused tuning",
-        "Ground-up development",
-        "Full customization",
+        "Custom metric tuning",
+        "Full model ownership",
+        "Production-ready deployment",
+      ],
+      pricing: [
+        { type: "Custom ML Model", investment: "$20,000+", timeline: "2-3 months" },
+        { type: "Multiple ML Models", investment: "$50,000+", timeline: "4-6 months" },
+        { type: "Enterprise Model Suite", investment: "$100,000+", timeline: "6-12 months" },
       ],
     },
     {
       title: "ML Model Development Services",
       slug: "ml-model-development-services",
       description: "Full-cycle ML model development services covering data preparation, feature engineering, model selection, training, and validation.",
-      icon: "Code2",
+      icon: "Layers",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "ML Model Development Services | Clickmasters",
       metaDescription: "Full-cycle ML model development covering data preparation, feature engineering, model selection, training, and validation.",
-      lead: "Full-cycle ML model development from data prep to validation.",
+      lead: "Full-cycle ML model development from data preparation to validation.",
       highlights: [
         "Data preparation",
         "Feature engineering",
         "Model selection",
-        "Training & validation",
+        "Validation & testing",
+      ],
+      pricing: [
+        { type: "Single Model Development", investment: "$18,000+", timeline: "2-3 months" },
+        { type: "Multi-Model Development", investment: "$45,000+", timeline: "4-6 months" },
+        { type: "Enterprise ML Development", investment: "$85,000+", timeline: "6-12 months" },
       ],
     },
     {
@@ -2198,31 +2233,35 @@ machineLearning: {
       slug: "ml-solutions-development",
       description: "Complete machine learning solutions development — including MLOps pipelines for continuous training, deployment, and monitoring at scale.",
       icon: "Workflow",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Machine Learning Solutions Development | Clickmasters",
-      metaDescription: "Complete ML solutions development including MLOps pipelines for continuous training, deployment, and monitoring at scale.",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "ML Solutions Development | Clickmasters",
+      metaDescription: "Complete ML solutions with MLOps pipelines for continuous training, deployment, and monitoring at scale.",
       lead: "Complete ML solutions with MLOps for continuous training and deployment.",
       highlights: [
         "MLOps pipelines",
         "Continuous training",
-        "Scale deployment",
+        "Automated deployment",
         "Performance monitoring",
+      ],
+      pricing: [
+        { type: "ML Pipeline Setup", investment: "$20,000+", timeline: "2-3 months" },
+        { type: "Complete ML Platform", investment: "$50,000+", timeline: "4-6 months" },
+        { type: "Enterprise MLOps Suite", investment: "$95,000+", timeline: "6-12 months" },
       ],
     },
   ],
   
-  // Trust Section Data
+  // Trust Section
   trustSection: {
     title: "A Machine Learning Development Company Built on Engineering Discipline",
     description: "Clickmasters is a machine learning development company built for businesses that need models which perform in production, not just in a notebook. Our machine learning development services combine data engineering, statistical modeling, and software engineering — so the ML solutions we build are accurate, scalable, and maintainable long after launch.\nAs an AI ML development company, we don't hand you a black-box model and walk away. Every machine learning development service we offer includes clear documentation, performance benchmarks, and a plan for monitoring and retraining as your data evolves. Whether you need a single predictive model or a full machine learning development services agency to build your entire ML pipeline, our team scales to match your project.\nWe're recognized among ML development companies that prioritize transparent delivery, measurable outcomes, and long-term reliability — the standard every ML development service provider should be held to.",
     points: [
-      "Specialized Expertise — Predictive analytics, deep learning, NLP, and computer vision",
-      "Reliable Models — Thorough testing and validation before deployment",
-      "Clear Communication — Regular updates, demos, and transparent progress",
-      "Built for Production — MLOps, monitoring, versioning, and retraining from day one",
-      "Industry Experience — Solutions for SaaS, finance, healthcare, retail, and logistics",
+      "Data engineering, statistical modeling, and software engineering combined",
+      "Clear documentation and performance benchmarks for every model",
+      "Monitoring and retraining as your data evolves",
+      "Transparent delivery and measurable outcomes",
     ],
-    closingText: "We're recognized among ML development companies that prioritize transparent delivery, measurable outcomes, and long-term reliability — the standard every ML development service provider should be held to.",
+    closingText: "We deliver accurate, scalable, and maintainable ML solutions built for the real world.",
   },
   
   // Trusted Clients
@@ -2230,65 +2269,66 @@ machineLearning: {
     { name: "U.S. Retail Company", industry: "Retail", icon: "ShoppingBag" },
     { name: "U.S. Fintech Company", industry: "Finance", icon: "Coins" },
     { name: "U.S. Healthcare Provider", industry: "Healthcare", icon: "Heart" },
-    { name: "U.S. Online Retailer", industry: "E-commerce", icon: "Store" },
+    { name: "U.S. Online Retailer", industry: "E-commerce", icon: "ShoppingCart" },
     { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
-  ],
-  
-  // Benefits Section Data
-  benefits: [
-    "Faster Time to Value — We use proven ML frameworks and reusable pipelines to move from data exploration to a working model faster than building from scratch.",
-    "Higher Model Accuracy — Rigorous validation, cross-testing, and hyperparameter tuning ensure your models perform reliably on real-world data, not just training data.",
-    "Lower Operational Costs — Automated ML pipelines and optimized inference reduce the manual work and compute costs tied to running models at scale.",
-    "Scalable ML Infrastructure — As an AI ML development company, we architect ML systems that scale with your data volume and user growth, not just your first pilot.",
-    "Continuous Improvement — We monitor live model performance and retrain as your data shifts, so accuracy doesn't degrade over time.",
-    "Measurable Business Impact — Every machine learning development service we deliver is tied to clear KPIs — accuracy, cost savings, or revenue impact — so ROI is never a guessing game.",
   ],
   
   // Benefits Section
   benefitsSection: {
     title: "Benefits of Our Machine Learning Development Services",
+    description: "Our machine learning development services deliver real business value through proven approaches and measurable results.",
   },
+  benefits: [
+    "Faster time to value — we use proven ML frameworks and reusable pipelines to move from data exploration to a working model faster",
+    "Higher model accuracy — rigorous validation, cross-testing, and hyperparameter tuning ensure reliable performance on real-world data",
+    "Lower operational costs — automated ML pipelines and optimized inference reduce manual work and compute costs",
+    "Scalable ML infrastructure — we architect ML systems that scale with your data volume and user growth",
+    "Continuous improvement — we monitor live model performance and retrain as your data shifts, so accuracy doesn't degrade over time",
+    "Measurable business impact — every ML service is tied to clear KPIs — accuracy, cost savings, or revenue impact",
+  ],
   
-  // Why Choose Us Data
+  // Why Choose Us
   whyChooseUs: {
     title: "Why Choose Clickmasters for Machine Learning Development?",
     description: "Choosing a machine learning development company is about building models that work reliably in the real world. Here's what makes Clickmasters different:",
     reasons: [
       {
         title: "Specialized Expertise",
-        description: "Predictive analytics, deep learning, NLP, and computer vision",
+        description: "Predictive analytics, deep learning, NLP, and computer vision — not generalists stretched thin",
       },
       {
         title: "Reliable Models",
-        description: "Thorough testing and validation before deployment",
+        description: "Thorough testing and validation before deployment, not hoping things work in production",
       },
       {
         title: "Clear Communication",
-        description: "Regular updates, demos, and transparent progress",
+        description: "Regular updates, demos, and transparent progress on every project",
       },
       {
         title: "Built for Production",
-        description: "MLOps, monitoring, versioning, and retraining from day one",
+        description: "MLOps, monitoring, versioning, and retraining from day one, not as an afterthought",
       },
       {
         title: "Industry Experience",
-        description: "Solutions for SaaS, finance, healthcare, retail, and logistics",
+        description: "Solutions for SaaS, finance, healthcare, retail, and logistics with real-world results",
       },
     ],
+    closingText: "This combination is why businesses consistently choose Clickmasters as their trusted ML development partner.",
   },
   
-  // Technology Stack Data
+  // Technology Stack
   techStack: {
     title: "The Technology Powering Our Machine Learning Solutions",
-    description: "We choose technology for reliability, accuracy, and long-term maintainability — not trends.",
-    mlFrameworks: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
-    dataEngineering: ["Python", "Apache Spark", "Pandas", "SQL"],
-    mlops: ["MLflow", "Docker", "Kubernetes", "AWS SageMaker"],
-    infrastructure: ["AWS", "Azure", "Google Cloud Platform"],
-    closingText: "This combination lets our machine learning experts deliver ml development services that are accurate, scalable, and easy for your internal team to maintain long after launch.",
+    description: "We choose technology for reliability, accuracy, and long-term maintainability — not trends. This combination lets our machine learning experts deliver ml development services that are accurate, scalable, and easy for your internal team to maintain long after launch.",
+    frontend: ["React", "Next.js"],
+    backend: ["Python", "Node.js"],
+    databases: ["PostgreSQL", "Vector Databases", "Data Warehouses"],
+    cloudDevOps: ["AWS", "Azure", "Google Cloud Platform", "Docker", "Kubernetes"],
+    aiAutomation: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "MLflow", "AWS SageMaker", "Apache Spark", "Pandas"],
+    closingText: "Every technology decision is documented during the architecture phase, ensuring your ML solution is accurate, scalable, and maintainable.",
   },
   
-  // Client Success Stories (Testimonials)
+  // Testimonials
   testimonialsSection: {
     title: "Success Stories",
   },
@@ -2298,28 +2338,28 @@ machineLearning: {
       author: "Michael Carter",
       title: "Supply Chain Director",
       company: "U.S. Retail Company",
-      location: "",
+      location: "USA",
     },
     {
       quote: "We needed a fraud detection system that could handle high transaction volumes in real time. Clickmasters delivered a scalable solution that reduced false positives by 35%.",
       author: "Daniel Brooks",
       title: "Head of Risk",
       company: "U.S. Fintech Company",
-      location: "",
+      location: "USA",
     },
     {
       quote: "The predictive analytics solution helped our team identify important warning signs much earlier. It has now become an essential part of our daily workflow.",
       author: "Sarah Mitchell",
       title: "Clinical Operations Director",
       company: "U.S. Healthcare Provider",
-      location: "",
+      location: "USA",
     },
     {
       quote: "Clickmasters built a recommendation system that increased our average order value by 18%. The team was professional, responsive, and transparent about model performance.",
       author: "James Wilson",
       title: "E-Commerce Manager",
       company: "U.S. Online Retailer",
-      location: "",
+      location: "USA",
     },
   ],
   
@@ -2327,8 +2367,6 @@ machineLearning: {
   processSection: {
     title: "Our Machine Learning Development Process",
   },
-  
-  // Process Steps
   processSteps: [
     {
       title: "Data Discovery & Strategy",
@@ -2353,59 +2391,58 @@ machineLearning: {
     title: "Machine Learning Development Services for Every Industry",
     description: "Our machine learning development services are adapted to the operating reality of your industry — not a generic playbook.",
   },
-  
-  // Industries Data
   industries: [
-    { name: "SaaS", description: "churn prediction, usage analytics, in-app recommendation systems" },
-    { name: "Healthcare", description: "patient risk scoring, diagnostic support models, HIPAA-aware ML pipelines" },
-    { name: "Finance", description: "fraud detection, credit risk models, algorithmic forecasting" },
-    { name: "Retail", description: "demand forecasting, personalization engines, dynamic pricing models" },
-    { name: "Logistics", description: "route optimization, predictive maintenance, demand prediction" },
-    { name: "Manufacturing", description: "quality control automation, predictive maintenance, anomaly detection" },
+    { name: "SaaS", description: "Churn prediction, usage analytics, in-app recommendation systems" },
+    { name: "Healthcare", description: "Patient risk scoring, diagnostic support models, HIPAA-aware ML pipelines" },
+    { name: "Finance", description: "Fraud detection, credit risk models, algorithmic forecasting" },
+    { name: "Retail", description: "Demand forecasting, personalization engines, dynamic pricing models" },
+    { name: "Logistics", description: "Route optimization, predictive maintenance, demand prediction" },
+    { name: "Manufacturing", description: "Quality control automation, predictive maintenance, anomaly detection" },
   ],
   
   // Pricing Section
   pricingSection: {
     title: "Machine Learning Development Investment",
-    description: "Flexible engagement models for ML development scoped to your timeline, team size, and goals.",
+    description: "Flexible engagement models for ML development scoped to your timeline, data, and goals.",
   },
-  
-  // Pricing
   pricing: [
     {
       type: "ML Proof of Concept",
       investment: "$10,000+",
       timeline: "4-6 weeks",
-      bestFor: "Validating ML feasibility for your use case",
+      bestFor: "Validating ML feasibility and ROI",
       features: [
-        "Data assessment",
-        "Model selection",
-        "Proof of concept development",
-        "ROI validation",
+        "Use case validation",
+        "Data quality assessment",
+        "Model prototyping",
+        "ROI analysis",
+        "Full model ownership",
       ],
     },
     {
       type: "Production-Ready ML Model",
       investment: "$30,000+",
       timeline: "2-4 months",
-      bestFor: "Businesses needing reliable ML in production",
+      bestFor: "Businesses deploying ML in production",
       features: [
         "Full model development",
-        "Integration with existing systems",
-        "Testing & validation",
-        "Deployment & monitoring",
+        "Feature engineering",
+        "Production deployment",
+        "Performance monitoring",
+        "Full model ownership",
       ],
     },
     {
       type: "Enterprise ML Platform",
       investment: "$70,000+",
       timeline: "4-9 months",
-      bestFor: "Complex ML systems with MLOps and retraining",
+      bestFor: "Complex ML platforms with MLOps",
       features: [
-        "End-to-end ML pipeline",
-        "MLOps infrastructure",
+        "Multiple ML models",
+        "MLOps pipelines",
         "Continuous retraining",
-        "Dedicated team & SLA",
+        "24/7 monitoring",
+        "Full model ownership",
       ],
     },
   ],
@@ -2414,8 +2451,6 @@ machineLearning: {
   faqsSection: {
     title: "Frequently Asked Questions",
   },
-  
-  // FAQs
   faqs: [
     {
       question: "What machine learning development services does Clickmasters offer?",
@@ -2447,7 +2482,7 @@ machineLearning: {
     },
   ],
   
-  // Final CTA Section
+  // Final CTA
   finalCta: {
     title: "Ready to Put Machine Learning to Work for Your Business?",
     description: "Partner with a machine learning development company that ships production-ready models, not just prototypes. Book a free consultation and let's map out the right ML solution for your business.",
@@ -2455,7 +2490,7 @@ machineLearning: {
     secondary: "Talk to Our Machine Learning Development Team",
   },
   
-  // Mid-page CTA labels
+  // Mid-page CTAs
   sectionCtas: {
     afterServices: "Talk to Our Machine Learning Development Team",
     afterWhyChooseUs: "See Why Teams Trust Our ML Development Company",
@@ -2474,26 +2509,26 @@ uiUxDesign: {
   canonical: "https://clickmasterssoftwaredevelopmentcompany.com/ui-ux-design-services",
   
   // Hero Section
-  title: "UI/UX Design Services That Turn Visitors Into Customers",
+  title: "UI/UX Design Services",
   slug: "ui-ux-design-services",
-  icon: "PenTool",
-  tagline: "UI/UX Design Services",
+  icon: "Palette",
+  tagline: "UI/UX Design Services That Turn Visitors Into Customers",
   description: "Clickmasters offers complete UI/UX design services for websites, apps, and digital products. As a full-service UI/UX design agency in the USA, we combine research, strategy, and creativity to design experiences your users love — and that turn browsers into buyers. Whether you need a single landing page or a full ui ux design and development services package, our team is ready to help.",
-  heroBadge: "10+ Years of UI/UX Design Excellence",
+  heroBadge: "10+ years of design excellence",
   heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   
   // Hero CTAs
   heroCtas: {
     primary: "Get a Free UI/UX Design Quote",
-    secondary: "Explore Our UI/UX Services",
+    secondary: "Talk to Our UI/UX Design Team",
   },
   
   // Hero Stats
   stats: [
-    { value: "10+", label: "Years of Experience" },
-    { value: "500+", label: "Design Projects Delivered" },
+    { value: "10+", label: "Years of Design Excellence" },
+    { value: "500+", label: "Digital Products Designed" },
     { value: "98%", label: "Client Satisfaction Rate" },
-    { value: "4.9★", label: "Average Client Rating" },
+    { value: "4.9/5", label: "Average Client Rating" },
   ],
   
   // Features/Services List
@@ -2504,7 +2539,7 @@ uiUxDesign: {
       description: "Our core ui ux design service covers everything from visual design to user flows. We design interfaces that are simple to navigate, on-brand, and built to convert visitors into customers.",
     },
     {
-      icon: "Component",
+      icon: "Box",
       title: "Product Design",
       description: "We help you design digital products from the ground up. Our product design process blends UX research, UI design, and usability testing so your product launches with confidence.",
     },
@@ -2524,12 +2559,12 @@ uiUxDesign: {
       description: "Good design starts with understanding your users. Our UX research includes user interviews, surveys, and competitor analysis to guide every design ui ux decision we make.",
     },
     {
-      icon: "Boxes",
+      icon: "Layers",
       title: "Wireframing & Prototyping",
       description: "Before we design a single screen, we map out wireframes and interactive prototypes. This lets you test ideas and gather feedback early, avoiding costly changes later in development.",
     },
     {
-      icon: "Layers3",
+      icon: "Grid",
       title: "Design Systems",
       description: "We build reusable design systems that keep your brand consistent across every page, screen, and future update — saving your team time and budget down the road.",
     },
@@ -2550,34 +2585,39 @@ uiUxDesign: {
       icon: "PenTool",
       heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "UI/UX Design Services | Clickmasters",
-      metaDescription: "Core UI/UX design services covering visual design, user flows, and conversion-focused interfaces.",
-      lead: "Simple, on-brand interfaces built to convert visitors into customers.",
+      metaDescription: "Professional UI/UX design services covering visual design, user flows, and conversion-focused interfaces.",
+      lead: "Design interfaces that are simple to navigate, on-brand, and built to convert.",
       highlights: [
         "Visual design",
         "User flows",
-        "Conversion-focused",
-        "On-brand interfaces",
+        "Conversion optimization",
+        "Brand-aligned interfaces",
       ],
       pricing: [
-        { type: "Landing Page Design", investment: "$2,500+", timeline: "2-4 weeks" },
-        { type: "Full Website Design", investment: "$8,000+", timeline: "4-8 weeks" },
-        { type: "Complete Product Design", investment: "$20,000+", timeline: "8-16 weeks" },
+        { type: "Single Page Design", investment: "$2,000+", timeline: "1-2 weeks" },
+        { type: "Full Website Design", investment: "$8,000+", timeline: "4-6 weeks" },
+        { type: "Enterprise Design System", investment: "$25,000+", timeline: "8-12 weeks" },
       ],
     },
     {
       title: "Product Design",
       slug: "product-design",
       description: "We help you design digital products from the ground up. Our product design process blends UX research, UI design, and usability testing so your product launches with confidence.",
-      icon: "Component",
-      heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      icon: "Box",
+      heroImage: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Product Design Services | Clickmasters",
-      metaDescription: "Digital product design blending UX research, UI design, and usability testing for confident product launches.",
-      lead: "Digital products designed with research, testing, and confidence.",
+      metaDescription: "End-to-end product design services blending UX research, UI design, and usability testing for confident product launches.",
+      lead: "Design digital products from the ground up with research-driven confidence.",
       highlights: [
         "UX research",
         "UI design",
         "Usability testing",
-        "Confident launches",
+        "End-to-end product design",
+      ],
+      pricing: [
+        { type: "MVP Product Design", investment: "$10,000+", timeline: "4-6 weeks" },
+        { type: "Full Product Design", investment: "$25,000+", timeline: "8-12 weeks" },
+        { type: "Enterprise Product Suite", investment: "$50,000+", timeline: "12-16 weeks" },
       ],
     },
     {
@@ -2585,15 +2625,20 @@ uiUxDesign: {
       slug: "web-design",
       description: "As a trusted UX UI web design agency, we build responsive, fast-loading websites that look great on every screen and guide visitors toward taking action.",
       icon: "Globe",
-      heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Web Design Services | Clickmasters",
-      metaDescription: "Responsive, fast-loading websites that look great on every screen and guide visitors toward taking action.",
-      lead: "Responsive, fast-loading websites that guide visitors to action.",
+      metaDescription: "Professional web design services with responsive, fast-loading websites optimized for every screen and visitor action.",
+      lead: "Responsive, fast-loading websites that look great on every screen.",
       highlights: [
         "Responsive design",
-        "Fast-loading",
-        "Action-oriented",
-        "Multi-screen optimization",
+        "Fast loading",
+        "Cross-device compatibility",
+        "Conversion-focused",
+      ],
+      pricing: [
+        { type: "Landing Page Design", investment: "$2,500+", timeline: "1-3 weeks" },
+        { type: "Full Website Design", investment: "$8,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Web Platform", investment: "$30,000+", timeline: "8-14 weeks" },
       ],
     },
     {
@@ -2603,13 +2648,18 @@ uiUxDesign: {
       icon: "Smartphone",
       heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Mobile App Design Services | Clickmasters",
-      metaDescription: "iOS and Android app design with clean layouts, smooth navigation, and engaging interfaces.",
-      lead: "Clean, smooth, and engaging mobile app interfaces.",
+      metaDescription: "Professional mobile UI/UX design services for iOS and Android apps with clean layouts and smooth navigation.",
+      lead: "iOS and Android app design with interfaces users genuinely enjoy.",
       highlights: [
-        "iOS design",
-        "Android design",
+        "iOS & Android design",
         "Clean layouts",
         "Smooth navigation",
+        "Native platform guidelines",
+      ],
+      pricing: [
+        { type: "Single App Screen Design", investment: "$3,000+", timeline: "2-3 weeks" },
+        { type: "Full Mobile App Design", investment: "$12,000+", timeline: "6-10 weeks" },
+        { type: "Cross-Platform App Design", investment: "$35,000+", timeline: "10-16 weeks" },
       ],
     },
     {
@@ -2617,126 +2667,144 @@ uiUxDesign: {
       slug: "ux-research",
       description: "Good design starts with understanding your users. Our UX research includes user interviews, surveys, and competitor analysis to guide every design ui ux decision we make.",
       icon: "Search",
-      heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "UX Research Services | Clickmasters",
-      metaDescription: "User research including interviews, surveys, and competitor analysis to guide design decisions.",
-      lead: "User research that guides every design decision.",
+      metaDescription: "Comprehensive UX research including user interviews, surveys, and competitor analysis to guide design decisions.",
+      lead: "Understand your users through research to guide every design decision.",
       highlights: [
         "User interviews",
         "Surveys",
         "Competitor analysis",
-        "Data-driven design",
+        "Data-driven design decisions",
+      ],
+      pricing: [
+        { type: "UX Research Sprint", investment: "$4,000+", timeline: "2-3 weeks" },
+        { type: "Comprehensive UX Research", investment: "$12,000+", timeline: "4-6 weeks" },
+        { type: "Enterprise Research Program", investment: "$30,000+", timeline: "8-12 weeks" },
       ],
     },
     {
       title: "Wireframing & Prototyping",
       slug: "wireframing-prototyping",
       description: "Before we design a single screen, we map out wireframes and interactive prototypes. This lets you test ideas and gather feedback early, avoiding costly changes later in development.",
-      icon: "Boxes",
-      heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      icon: "Layers",
+      heroImage: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Wireframing & Prototyping Services | Clickmasters",
-      metaDescription: "Wireframes and interactive prototypes for early testing and feedback to avoid costly development changes.",
-      lead: "Test ideas early with wireframes and interactive prototypes.",
+      metaDescription: "Professional wireframing and interactive prototyping services to test ideas and gather feedback early.",
+      lead: "Map out wireframes and prototypes to test ideas before development.",
       highlights: [
-        "Wireframing",
         "Interactive prototypes",
-        "Early testing",
-        "Cost avoidance",
+        "Early feedback gathering",
+        "Cost-saving validation",
+        "User testing ready",
+      ],
+      pricing: [
+        { type: "Low-Fidelity Wireframes", investment: "$2,500+", timeline: "1-2 weeks" },
+        { type: "High-Fidelity Prototypes", investment: "$8,000+", timeline: "3-4 weeks" },
+        { type: "Full Interactive Prototype", investment: "$18,000+", timeline: "4-6 weeks" },
       ],
     },
     {
       title: "Design Systems",
       slug: "design-systems",
       description: "We build reusable design systems that keep your brand consistent across every page, screen, and future update — saving your team time and budget down the road.",
-      icon: "Layers3",
-      heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      icon: "Grid",
+      heroImage: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Design Systems Services | Clickmasters",
-      metaDescription: "Reusable design systems for consistent branding across every page, screen, and future update.",
-      lead: "Reusable design systems for consistent brand experience.",
+      metaDescription: "Build reusable design systems for brand consistency across pages, screens, and future updates.",
+      lead: "Reusable design systems that keep your brand consistent across every page and screen.",
       highlights: [
+        "Component libraries",
+        "Style guides",
         "Brand consistency",
-        "Reusable components",
-        "Time savings",
-        "Budget efficiency",
+        "Time & budget savings",
+      ],
+      pricing: [
+        { type: "Design System Foundation", investment: "$8,000+", timeline: "4-6 weeks" },
+        { type: "Full Design System", investment: "$20,000+", timeline: "8-12 weeks" },
+        { type: "Enterprise Design System", investment: "$45,000+", timeline: "12-16 weeks" },
       ],
     },
   ],
   
-  // Trust Section Data
+  // Trust Section
   trustSection: {
     title: "Trusted UI/UX Design Company in the USA",
     description: "At Clickmasters, we're more than just another UI/UX design services company. We're a team of designers, researchers, and strategists who care about how real people use your product. For over 10 years, we've partnered with startups, growing businesses, and enterprise brands to design websites and apps that are easy to use, look professional, and drive measurable results.\nAs a full-service UI/UX design and development company, we don't only make screens look attractive. Every wireframe, prototype, and pixel we create is backed by user research and your business goals. Whether you need a brand-new product designed from scratch or want to improve an existing website or app, our ui and ux design services are built to help you compete — and win — in a crowded digital market.\nWe've delivered ui ux design solutions for clients across industries such as SaaS, healthcare, fintech, and e-commerce, which is why many clients describe us as one of the top UI/UX design companies in the USA.",
     points: [
-      "Proven Experience — We've helped businesses across the USA create intuitive digital products that are designed around real user needs and business objectives",
-      "Full-Service Team — From UX research and wireframing to interface design and front-end development, our team provides complete UI UX design and development services under one roof",
-      "USA-Based Support — As a trusted UI/UX design company in USA, Clickmasters works with your schedule, understands the U.S. market, and keeps communication straightforward",
-      "Transparent Process — We keep you informed at every stage with clear timelines, project milestones, regular updates, and straightforward pricing",
-      "Results-Driven Design — We don't design interfaces just to look good. Our UI/UX design services focus on improving usability, engagement, conversions, signups, and other outcomes that matter to your business",
+      "10+ years of design excellence",
+      "Research-backed design decisions",
+      "Industry experience across SaaS, healthcare, fintech, and e-commerce",
+      "Measurable results and business impact",
     ],
-    closingText: "We've delivered ui ux design solutions for clients across industries such as SaaS, healthcare, fintech, and e-commerce, which is why many clients describe us as one of the top UI/UX design companies in the USA.",
+    closingText: "We design websites and apps that are easy to use, look professional, and drive measurable results.",
   },
   
   // Trusted Clients
   trustedClients: [
-    { name: "Northstar Digital Solutions", industry: "SaaS", icon: "Cloud" },
-    { name: "BrightPath Solutions", industry: "Healthcare", icon: "Heart" },
-    { name: "Summit Ridge Technologies", industry: "Technology", icon: "Code2" },
-    { name: "FinTech Innovations", industry: "Fintech", icon: "Coins" },
-    { name: "E-Commerce Direct", industry: "E-commerce", icon: "ShoppingBag" },
-  ],
-  
-  // Benefits Section Data
-  benefits: [
-    "Higher Conversion Rates: A clear, easy-to-use interface turns more visitors into paying customers.",
-    "Lower Development Costs: Catching design issues early means fewer expensive changes once developers start building.",
-    "Better User Retention: Products that are simple and pleasant to use keep customers coming back.",
-    "Stronger Brand Trust: Clean, professional design builds credibility with your audience from the first visit.",
-    "Faster Time to Market: Our streamlined ui ux design and development services help you launch faster.",
-    "Smarter, Data-Backed Decisions: Every design choice is guided by real user research and data, not guesswork.",
+    { name: "SaaS Platform", industry: "SaaS", icon: "Cloud" },
+    { name: "Healthcare System", industry: "Healthcare", icon: "Heart" },
+    { name: "Fintech Company", industry: "Finance", icon: "Coins" },
+    { name: "E-commerce Retailer", industry: "Retail", icon: "ShoppingBag" },
+    { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
   ],
   
   // Benefits Section
   benefitsSection: {
     title: "Benefits of Our UI/UX Design Services",
+    description: "Our UI/UX design services deliver measurable business value through user-centered design approaches.",
   },
+  benefits: [
+    "Higher conversion rates — a clear, easy-to-use interface turns more visitors into paying customers",
+    "Lower development costs — catching design issues early means fewer expensive changes once developers start building",
+    "Better user retention — products that are simple and pleasant to use keep customers coming back",
+    "Stronger brand trust — clean, professional design builds credibility with your audience from the first visit",
+    "Faster time to market — our streamlined ui ux design and development services help you launch faster",
+    "Smarter, data-backed decisions — every design choice is guided by real user research and data, not guesswork",
+  ],
   
-  // Why Choose Us Data
+  // Why Choose Us
   whyChooseUs: {
     title: "Why Choose Clickmasters as Your UI/UX Design Agency",
     description: "With so many UI/UX design companies in the USA to choose from, Clickmasters focuses on creating digital experiences that are easy to use, visually engaging, and built around your business goals. Here's why businesses choose us as their trusted UI/UX design agency:",
     reasons: [
       {
         title: "Proven Experience",
-        description: "We've helped businesses across the USA create intuitive digital products that are designed around real user needs and business objectives. Our experience has helped us build a strong reputation as a reliable UI/UX design agency.",
+        description: "We've helped businesses across the USA create intuitive digital products that are designed around real user needs and business objectives",
       },
       {
         title: "Full-Service Team",
-        description: "From UX research and wireframing to interface design and front-end development, our team provides complete UI UX design and development services under one roof. This keeps communication simple and eliminates the need to coordinate multiple vendors.",
+        description: "From UX research and wireframing to interface design and front-end development — complete UI UX design and development services under one roof",
       },
       {
         title: "USA-Based Support",
-        description: "As a trusted UI/UX design company in USA, Clickmasters works with your schedule, understands the U.S. market, and keeps communication straightforward throughout your project.",
+        description: "As a trusted UI/UX design company in USA, we work with your schedule, understand the U.S. market, and keep communication straightforward",
       },
       {
         title: "Transparent Process",
-        description: "We keep you informed at every stage with clear timelines, project milestones, regular updates, and straightforward pricing—so you always know what to expect.",
+        description: "Clear timelines, project milestones, regular updates, and straightforward pricing — so you always know what to expect",
       },
       {
         title: "Results-Driven Design",
-        description: "We don't design interfaces just to look good. Our UI/UX design services focus on improving usability, engagement, conversions, signups, and other outcomes that matter to your business.",
+        description: "We focus on improving usability, engagement, conversions, signups, and other outcomes that matter to your business",
       },
     ],
+    closingText: "This combination is why businesses consistently choose Clickmasters as their trusted UI/UX design partner.",
   },
   
-  // Technology & Tools Data
+  // Technology Stack
   techStack: {
     title: "Technology & Tools We Use",
-    description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products, including Figma, Adobe XD, Sketch, InVision, Maze, and Hotjar. On the development side, our team works with React, Flutter, Swift, and Kotlin, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
-    designTools: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
-    developmentTools: ["React", "Flutter", "Swift", "Kotlin"],
+    description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products. On the development side, our team works with modern frameworks, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
+    frontend: ["React", "Flutter", "Swift", "Kotlin"],
+    backend: ["Node.js", "Python"],
+    databases: ["PostgreSQL", "MongoDB"],
+    cloudDevOps: ["AWS", "Azure", "Docker"],
+    aiAutomation: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
+    closingText: "Our tool stack ensures your project moves seamlessly from design to a fully working product with no gaps between design and development.",
   },
   
-  // Client Success Stories (Testimonials)
+  // Testimonials
   testimonialsSection: {
     title: "Success Stories & Client Reviews",
   },
@@ -2746,21 +2814,21 @@ uiUxDesign: {
       author: "Michael Carter",
       title: "Product Manager",
       company: "Northstar Digital Solutions",
-      location: "",
+      location: "USA",
     },
     {
       quote: "What stood out was how much attention Clickmasters gave to our users before starting the actual design. The final interface feels intuitive, polished, and much more aligned with what our customers need.",
       author: "Sarah Mitchell",
       title: "Marketing Director",
       company: "BrightPath Solutions",
-      location: "",
+      location: "USA",
     },
     {
       quote: "Our previous website was outdated and difficult to navigate. Clickmasters gave it a cleaner, more modern experience that made it much easier for visitors to find what they needed.",
       author: "Daniel Brooks",
       title: "Founder",
       company: "Summit Ridge Technologies",
-      location: "",
+      location: "USA",
     },
   ],
   
@@ -2768,8 +2836,6 @@ uiUxDesign: {
   processSection: {
     title: "Our 4-Step UI/UX Design Process",
   },
-  
-  // Process Steps
   processSteps: [
     {
       title: "Discover & Research",
@@ -2792,67 +2858,62 @@ uiUxDesign: {
   // Industries Section
   industriesSection: {
     title: "Industries We Serve",
-    description: "No matter your industry, our team creates ui ux design solutions tailored to your users, your goals, and your market, including:",
+    description: "No matter your industry, our team creates ui ux design solutions tailored to your users, your goals, and your market.",
   },
-  
-  // Industries Data
   industries: [
-    { name: "SaaS & Technology", description: "platform design and user experience optimization" },
-    { name: "Healthcare", description: "patient portals and healthcare interfaces" },
-    { name: "E-commerce & Retail", description: "online store design and conversion optimization" },
-    { name: "Fintech & Banking", description: "secure and trusted financial interfaces" },
-    { name: "Logistics & Transportation", description: "operational and tracking interfaces" },
-    { name: "Education", description: "learning management and student platforms" },
-    { name: "Real Estate", description: "property listings and search interfaces" },
-    { name: "Startups & SaaS Founders", description: "product design from concept to launch" },
+    { name: "SaaS & Technology", description: "User-friendly software interfaces and platforms" },
+    { name: "Healthcare", description: "HIPAA-aware designs for patient portals and clinical tools" },
+    { name: "E-commerce & Retail", description: "Conversion-focused online store designs" },
+    { name: "Fintech & Banking", description: "Secure, trustworthy financial interfaces" },
+    { name: "Logistics & Transportation", description: "Operational efficiency through better design" },
+    { name: "Education", description: "Learning management systems and student platforms" },
+    { name: "Real Estate", description: "Property listing platforms and client portals" },
+    { name: "Startups & SaaS Founders", description: "MVP design and product validation" },
   ],
   
   // Pricing Section
   pricingSection: {
     title: "UI/UX Design Investment",
-    description: "Flexible engagement models for UI/UX design scoped to your timeline, team size, and goals.",
+    description: "Flexible engagement models for UI/UX design scoped to your product complexity and timeline.",
   },
-  
-  // Pricing
   pricing: [
     {
-      type: "Landing Page Design",
-      investment: "$2,500+",
-      timeline: "2-4 weeks",
-      bestFor: "Startups and businesses needing a single high-converting page",
+      type: "Single Page/Landing Page",
+      investment: "$2,000+",
+      timeline: "1-2 weeks",
+      bestFor: "Startups and small businesses needing a single page",
       features: [
-        "Research & discovery",
-        "Wireframing",
-        "Visual design",
-        "Mobile responsive",
-        "Developer handoff",
+        "UI/UX design",
+        "Responsive layout",
+        "Mobile optimization",
+        "Developer-ready handoff",
+        "Full design ownership",
       ],
     },
     {
-      type: "Full Website Design",
+      type: "Full Website/App Design",
       investment: "$8,000+",
       timeline: "4-8 weeks",
-      bestFor: "Growing businesses needing complete website redesign",
+      bestFor: "Growing businesses needing complete digital presence",
       features: [
         "UX research",
-        "Wireframing & prototyping",
-        "Visual design",
-        "Design system",
-        "Developer handoff",
+        "Wireframing",
+        "Full UI design",
+        "Interactive prototyping",
+        "Full design ownership",
       ],
     },
     {
-      type: "Complete Product Design",
-      investment: "$20,000+",
+      type: "Enterprise Design System",
+      investment: "$25,000+",
       timeline: "8-16 weeks",
-      bestFor: "Complex products requiring full research and design",
+      bestFor: "Large organizations needing brand consistency at scale",
       features: [
-        "Comprehensive UX research",
-        "Product strategy",
-        "Interactive prototypes",
-        "Design system",
-        "Usability testing",
-        "Developer handoff & support",
+        "Component libraries",
+        "Style guides",
+        "Design system documentation",
+        "Team training",
+        "Full design ownership",
       ],
     },
   ],
@@ -2861,8 +2922,6 @@ uiUxDesign: {
   faqsSection: {
     title: "Frequently Asked Questions",
   },
-  
-  // FAQs
   faqs: [
     {
       question: "What are UI/UX design services?",
@@ -2906,22 +2965,21 @@ uiUxDesign: {
     },
   ],
   
-  // Final CTA Section
+  // Final CTA
   finalCta: {
     title: "Ready to Design a Better User Experience?",
     description: "Partner with a UI/UX design agency that puts your users — and your business goals — first. Get in touch with Clickmasters today for a free consultation and a custom quote.",
     primary: "Get Your Free UI/UX Design Quote",
-    secondary: "",
+    secondary: "Talk to Our UI/UX Design Team",
   },
   
-  // Mid-page CTA labels
+  // Mid-page CTAs
   sectionCtas: {
     afterServices: "Talk to Our UI/UX Design Team",
     afterWhyChooseUs: "See Why Businesses Trust Us",
     afterProcess: "Start Your UI/UX Design Project Today",
   },
-},
-    // ============================================
+}, // ============================================
   // DATA SERVICES - NEW
   // ============================================
   // DATA SERVICES SERVICE
@@ -2933,32 +2991,32 @@ dataServices: {
   canonical: "https://clickmasterssoftwaredevelopmentcompany.com/data-services",
   
   // Hero Section
-  title: "Data Services Company USA — Smarter Data. Faster Growth.",
+  title: "Data Services",
   slug: "data-services",
   icon: "Database",
-  tagline: "Data Services",
+  tagline: "Data Services Company USA — Smarter Data. Faster Growth.",
   description: "ClickMasters is a trusted data services company that helps U.S. businesses collect, clean, and use their data the right way. As your dedicated data services provider, we turn messy spreadsheets and scattered systems into clear answers you can act on. From small startups to large enterprises, our custom data solutions help you save time, cut costs, and make better decisions every single day.",
-  heroBadge: "200+ Data Projects Delivered",
+  heroBadge: "200+ data projects delivered",
   heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   
   // Hero CTAs
   heroCtas: {
     primary: "Get Your Free Data Strategy Call",
-    secondary: "Explore Our Data Services",
+    secondary: "Book a Free Consultation",
   },
   
   // Hero Stats
   stats: [
     { value: "200+", label: "Data Projects Delivered" },
-    { value: "50+", label: "Data Engineers on Staff" },
     { value: "99.9%", label: "Data Accuracy Rate" },
+    { value: "50+", label: "Expert Data Engineers" },
     { value: "24/7", label: "Data Support & Monitoring" },
   ],
   
   // Features/Services List
   features: [
     {
-      icon: "BarChart3",
+      icon: "BarChart",
       title: "Data Science & Analytics",
       description: "Our data analytics services turn your numbers into a clear story. We use statistics, machine learning, and clean data models to answer real business questions — like which customers may leave, or which product will sell best next quarter. As a trusted data analytics company, we help you move from guessing to knowing.",
     },
@@ -2968,7 +3026,7 @@ dataServices: {
       description: "Good decisions need good dashboards. Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time — no more waiting on manual spreadsheets.",
     },
     {
-      icon: "Workflow",
+      icon: "Server",
       title: "Data Engineering",
       description: "Behind every good report is a strong data pipeline. Our data engineering services build the pipes that move your data safely from one system to another. As a full-service data engineering company, we design pipelines that scale — the same quality of work a data engineering company USA enterprises already trust would expect.",
     },
@@ -2978,7 +3036,7 @@ dataServices: {
       description: "We build cloud data warehouses that store all your business data in one safe, organized place. This means your sales, finance, and marketing teams all work from the same numbers, not five different versions of the truth.",
     },
     {
-      icon: "Cloud",
+      icon: "Cpu",
       title: "Big Data Solutions",
       description: "When your data grows into millions of rows from many sources, spreadsheets stop working. As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
     },
@@ -2988,17 +3046,17 @@ dataServices: {
       description: "Your business runs on many tools — CRM, accounting, marketing, support. Our data integration services connect them all, so information flows automatically instead of being copied by hand into spreadsheets.",
     },
     {
-      icon: "ArrowRightLeft",
+      icon: "Move",
       title: "Data Migration Services",
       description: "Moving to a new system can be risky if data gets lost or messy along the way. Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
     },
     {
-      icon: "ShieldCheck",
+      icon: "Shield",
       title: "Data Management & Governance",
       description: "Clean, safe, organized data does not happen by accident. Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
     },
     {
-      icon: "FileCode",
+      icon: "Eye",
       title: "Data Visualization Services",
       description: "Numbers are hard to read in tables. Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
     },
@@ -3016,21 +3074,21 @@ dataServices: {
       title: "Data Science & Analytics",
       slug: "data-science-analytics",
       description: "Our data analytics services turn your numbers into a clear story. We use statistics, machine learning, and clean data models to answer real business questions — like which customers may leave, or which product will sell best next quarter. As a trusted data analytics company, we help you move from guessing to knowing.",
-      icon: "BarChart3",
+      icon: "BarChart",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Science & Analytics Services | ClickMasters",
-      metaDescription: "Data analytics services using statistics, machine learning, and clean data models to answer real business questions.",
-      lead: "Turn your numbers into a clear story with data analytics.",
+      metaDescription: "Professional data analytics services using statistics, machine learning, and clean data models to answer real business questions.",
+      lead: "Turn your numbers into a clear story with statistics and machine learning.",
       highlights: [
-        "Statistical analysis",
-        "Machine learning",
-        "Data modeling",
-        "Business insights",
+        "Predictive analytics",
+        "Customer churn analysis",
+        "Sales forecasting",
+        "Machine learning models",
       ],
       pricing: [
-        { type: "Analytics Dashboard", investment: "$5,000+", timeline: "2-4 weeks" },
-        { type: "Full Analytics Solution", investment: "$15,000+", timeline: "2-3 months" },
-        { type: "Enterprise Analytics", investment: "$40,000+", timeline: "4-6 months" },
+        { type: "Analytics Report", investment: "$5,000+", timeline: "2-4 weeks" },
+        { type: "Full Data Analytics", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Analytics", investment: "$40,000+", timeline: "8-16 weeks" },
       ],
     },
     {
@@ -3038,31 +3096,41 @@ dataServices: {
       slug: "business-intelligence",
       description: "Good decisions need good dashboards. Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time — no more waiting on manual spreadsheets.",
       icon: "PieChart",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Business Intelligence Services | ClickMasters",
-      metaDescription: "Live dashboards and reports for real-time visibility into sales, costs, and performance.",
-      lead: "Live dashboards for real-time business visibility.",
+      metaDescription: "Professional BI services with live dashboards and real-time reports for sales, costs, and performance tracking.",
+      lead: "Live dashboards and reports that show your business performance in real time.",
       highlights: [
-        "Live dashboards",
-        "Real-time reporting",
-        "Performance tracking",
-        "Data visualization",
+        "Real-time dashboards",
+        "KPI tracking",
+        "Performance monitoring",
+        "Automated reporting",
+      ],
+      pricing: [
+        { type: "BI Dashboard", investment: "$4,000+", timeline: "2-3 weeks" },
+        { type: "Full BI Platform", investment: "$12,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise BI Suite", investment: "$35,000+", timeline: "8-14 weeks" },
       ],
     },
     {
       title: "Data Engineering",
       slug: "data-engineering",
       description: "Behind every good report is a strong data pipeline. Our data engineering services build the pipes that move your data safely from one system to another. As a full-service data engineering company, we design pipelines that scale — the same quality of work a data engineering company USA enterprises already trust would expect.",
-      icon: "Workflow",
+      icon: "Server",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Engineering Services | ClickMasters",
-      metaDescription: "Scalable data pipelines that move your data safely from one system to another.",
-      lead: "Scalable data pipelines for safe, reliable data movement.",
+      metaDescription: "Professional data engineering services building scalable data pipelines that move data safely between systems.",
+      lead: "Build scalable data pipelines that move your data safely between systems.",
       highlights: [
-        "Data pipeline design",
-        "ETL/ELT processes",
+        "ETL/ELT pipelines",
+        "Data transformation",
         "Scalable architecture",
-        "System integration",
+        "Real-time processing",
+      ],
+      pricing: [
+        { type: "Data Pipeline", investment: "$8,000+", timeline: "3-6 weeks" },
+        { type: "Full Data Platform", investment: "$25,000+", timeline: "6-12 weeks" },
+        { type: "Enterprise Data Engineering", investment: "$55,000+", timeline: "12-20 weeks" },
       ],
     },
     {
@@ -3070,112 +3138,140 @@ dataServices: {
       slug: "data-warehousing",
       description: "We build cloud data warehouses that store all your business data in one safe, organized place. This means your sales, finance, and marketing teams all work from the same numbers, not five different versions of the truth.",
       icon: "Database",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Warehousing Services | ClickMasters",
-      metaDescription: "Cloud data warehouses that store all your business data in one safe, organized place.",
-      lead: "Cloud data warehouses for single source of truth.",
+      metaDescription: "Cloud data warehouse solutions that store all business data in one safe, organized place for team-wide consistency.",
+      lead: "Store all your business data in one safe, organized cloud warehouse.",
       highlights: [
-        "Cloud data warehousing",
-        "Single source of truth",
-        "Data organization",
-        "Team alignment",
+        "Cloud data warehouses",
+        "Data centralization",
+        "Team-wide consistency",
+        "Scalable storage",
+      ],
+      pricing: [
+        { type: "Data Warehouse Setup", investment: "$10,000+", timeline: "4-8 weeks" },
+        { type: "Full Data Warehouse", investment: "$30,000+", timeline: "8-14 weeks" },
+        { type: "Enterprise Data Warehouse", investment: "$60,000+", timeline: "14-24 weeks" },
       ],
     },
     {
       title: "Big Data Solutions",
       slug: "big-data-solutions",
       description: "When your data grows into millions of rows from many sources, spreadsheets stop working. As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
-      icon: "Cloud",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      icon: "Cpu",
+      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Big Data Solutions | ClickMasters",
-      metaDescription: "Big data processing using Apache Spark, Hadoop, and Kafka for fast trend spotting.",
-      lead: "Process huge amounts of data fast with big data solutions.",
+      metaDescription: "Big data solutions using Apache Spark, Hadoop, and Kafka to process huge amounts of data fast and spot trends before competitors.",
+      lead: "Process huge amounts of data fast with big data tools and technologies.",
       highlights: [
         "Apache Spark",
-        "Hadoop",
-        "Kafka",
-        "Fast processing",
+        "Hadoop ecosystem",
+        "Kafka streaming",
+        "Real-time processing",
+      ],
+      pricing: [
+        { type: "Big Data POC", investment: "$12,000+", timeline: "4-8 weeks" },
+        { type: "Big Data Platform", investment: "$35,000+", timeline: "8-16 weeks" },
+        { type: "Enterprise Big Data", investment: "$75,000+", timeline: "16-28 weeks" },
       ],
     },
     {
       title: "Data Integration Services",
-      slug: "data-integration",
+      slug: "data-integration-services",
       description: "Your business runs on many tools — CRM, accounting, marketing, support. Our data integration services connect them all, so information flows automatically instead of being copied by hand into spreadsheets.",
       icon: "Plug",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Integration Services | ClickMasters",
-      metaDescription: "Connect CRM, accounting, marketing, and support tools for automatic data flow.",
-      lead: "Connect all your business tools for automatic data flow.",
+      metaDescription: "Data integration services connecting CRM, accounting, marketing, and support tools for automatic information flow.",
+      lead: "Connect all your business tools so information flows automatically.",
       highlights: [
         "CRM integration",
-        "Accounting integration",
-        "Marketing integration",
-        "Support integration",
+        "ERP integration",
+        "Marketing tool integration",
+        "Automated data flow",
+      ],
+      pricing: [
+        { type: "Single Integration", investment: "$5,000+", timeline: "2-4 weeks" },
+        { type: "Multi-System Integration", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Integration", investment: "$40,000+", timeline: "8-16 weeks" },
       ],
     },
     {
       title: "Data Migration Services",
-      slug: "data-migration",
+      slug: "data-migration-services",
       description: "Moving to a new system can be risky if data gets lost or messy along the way. Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
-      icon: "ArrowRightLeft",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      icon: "Move",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Migration Services | ClickMasters",
-      metaDescription: "Safe data migration from old systems to new ones with zero data loss and minimal downtime.",
-      lead: "Safe data migration with zero data loss and minimal downtime.",
+      metaDescription: "Professional data migration services moving data safely from old systems to new ones with zero data loss and minimal downtime.",
+      lead: "Move your data safely between systems with zero data loss and minimal downtime.",
       highlights: [
         "Zero data loss",
         "Minimal downtime",
-        "System transition",
-        "Data integrity",
+        "System-to-system migration",
+        "Data validation",
+      ],
+      pricing: [
+        { type: "Small Migration", investment: "$6,000+", timeline: "3-6 weeks" },
+        { type: "Medium Migration", investment: "$18,000+", timeline: "6-12 weeks" },
+        { type: "Enterprise Migration", investment: "$45,000+", timeline: "12-24 weeks" },
       ],
     },
     {
       title: "Data Management & Governance",
       slug: "data-management-governance",
       description: "Clean, safe, organized data does not happen by accident. Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
-      icon: "ShieldCheck",
+      icon: "Shield",
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Management & Governance | ClickMasters",
-      metaDescription: "Data management services with clear rules for access, accuracy, and U.S. privacy compliance.",
-      lead: "Clear rules for accurate, compliant data management.",
+      metaDescription: "Data management services with clear rules for data access, usage, and updates to ensure compliance with U.S. privacy laws.",
+      lead: "Set clear rules for who can see, use, and update your data.",
       highlights: [
         "Data governance",
         "Access control",
-        "Privacy compliance",
-        "Data accuracy",
+        "Compliance management",
+        "Data quality assurance",
+      ],
+      pricing: [
+        { type: "Data Governance Setup", investment: "$7,000+", timeline: "3-6 weeks" },
+        { type: "Full Data Management", investment: "$20,000+", timeline: "6-12 weeks" },
+        { type: "Enterprise Governance", investment: "$50,000+", timeline: "12-20 weeks" },
       ],
     },
     {
       title: "Data Visualization Services",
-      slug: "data-visualization",
+      slug: "data-visualization-services",
       description: "Numbers are hard to read in tables. Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
-      icon: "FileCode",
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      icon: "Eye",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Data Visualization Services | ClickMasters",
-      metaDescription: "Turn raw numbers into simple charts, maps, and graphs anyone can understand.",
-      lead: "Simple charts, maps, and graphs anyone can understand.",
+      metaDescription: "Data visualization services turning raw numbers into simple charts, maps, and graphs for easy team understanding.",
+      lead: "Turn raw numbers into simple charts and graphs that anyone can understand.",
       highlights: [
         "Interactive charts",
-        "Data maps",
-        "Visual graphs",
-        "Easy understanding",
+        "Custom dashboards",
+        "Data storytelling",
+        "Team-friendly visuals",
+      ],
+      pricing: [
+        { type: "Single Dashboard", investment: "$3,000+", timeline: "2-3 weeks" },
+        { type: "Full Visualization Suite", investment: "$12,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Visualization", investment: "$30,000+", timeline: "8-14 weeks" },
       ],
     },
   ],
   
-  // Trust Section Data
+  // Trust Section
   trustSection: {
     title: "A Trusted Data Solutions Company in the USA",
     description: "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team has delivered 200+ data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
     points: [
-      "U.S.-based team: We are a data services company USA businesses can call, meet, and trust — not an outsourced call center.",
-      "Full-service model: Need a data solutions agency, a data analytics agency, a data engineering agency, or a data consulting agency? You get all four under one contract.",
-      "Proven track record: 200+ projects delivered as a leading data solutions provider across finance, healthcare, and retail.",
-      "Fair, clear pricing: No hidden fees, whether you need a data analytics company for one report or a data engineering company for a full platform.",
-      "Security first: SOC 2-aligned, HIPAA-ready standards followed by our data management company on every project.",
-      "Fast, human support: Real people answer your questions — not a ticket stuck in a queue.",
+      "AWS, Azure, and Google Cloud certified engineers",
+      "200+ data projects delivered across the USA",
+      "SOC 2-aligned and HIPAA-ready security standards",
+      "One team for strategy, building, and ongoing support",
     ],
-    closingText: "Whether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
+    closingText: "We shape our data development services around your goals — not the other way around.",
   },
   
   // Trusted Clients
@@ -3183,69 +3279,70 @@ dataServices: {
     { name: "Meridian Retail Group", industry: "Retail", icon: "ShoppingBag" },
     { name: "Lakeshore Health Partners", industry: "Healthcare", icon: "Heart" },
     { name: "Northbridge SaaS Solutions", industry: "SaaS", icon: "Cloud" },
-    { name: "FinTech Analytics", industry: "Finance", icon: "Coins" },
-    { name: "SupplyChain Logistics", industry: "Logistics", icon: "Truck" },
-  ],
-  
-  // Benefits Section Data
-  benefits: [
-    "Faster decisions: Get clear answers in hours, not weeks, with fast data processing services.",
-    "Lower costs: Find and cut wasted spending across your business.",
-    "Better customer experience: Know what your customers want before they ask.",
-    "Safer data: Keep your business data services protected and compliant.",
-    "Room to grow: Our cloud data services scale up as your business gets bigger.",
-    "One trusted partner: Get data consulting services, building, and support from a single team.",
+    { name: "Regional Bank", industry: "Finance", icon: "Coins" },
+    { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
   ],
   
   // Benefits Section
   benefitsSection: {
     title: "Why Data Services Matter for Your Business",
+    description: "Our data services deliver real business value through faster decisions, lower costs, and better customer experiences.",
   },
+  benefits: [
+    "Faster decisions — get clear answers in hours, not weeks, with fast data processing services",
+    "Lower costs — find and cut wasted spending across your business",
+    "Better customer experience — know what your customers want before they ask",
+    "Safer data — keep your business data services protected and compliant",
+    "Room to grow — our cloud data services scale up as your business gets bigger",
+    "One trusted partner — get data consulting services, building, and support from a single team",
+  ],
   
-  // Why Choose Us Data
+  // Why Choose Us
   whyChooseUs: {
     title: "Why Choose ClickMasters as Your Data Services Company",
     description: "Many companies call themselves a data services provider. Here is what actually makes ClickMasters different:",
     reasons: [
       {
         title: "U.S.-based team",
-        description: "We are a data services company USA businesses can call, meet, and trust — not an outsourced call center.",
+        description: "We are a data services company USA businesses can call, meet, and trust — not an outsourced call center",
       },
       {
         title: "Full-service model",
-        description: "Need a data solutions agency, a data analytics agency, a data engineering agency, or a data consulting agency? You get all four under one contract.",
+        description: "Need a data solutions agency, a data analytics agency, a data engineering agency, or a data consulting agency? You get all four under one contract",
       },
       {
         title: "Proven track record",
-        description: "200+ projects delivered as a leading data solutions provider across finance, healthcare, and retail.",
+        description: "200+ projects delivered as a leading data solutions provider across finance, healthcare, and retail",
       },
       {
         title: "Fair, clear pricing",
-        description: "No hidden fees, whether you need a data analytics company for one report or a data engineering company for a full platform.",
+        description: "No hidden fees, whether you need a data analytics company for one report or a data engineering company for a full platform",
       },
       {
         title: "Security first",
-        description: "SOC 2-aligned, HIPAA-ready standards followed by our data management company on every project.",
+        description: "SOC 2-aligned, HIPAA-ready standards followed by our data management company on every project",
       },
       {
         title: "Fast, human support",
-        description: "Real people answer your questions — not a ticket stuck in a queue.",
+        description: "Real people answer your questions — not a ticket stuck in a queue",
       },
     ],
+    closingText: "This combination is why businesses consistently choose ClickMasters as their trusted data services partner.",
   },
   
-  // Technology Stack Data
+  // Technology Stack
   techStack: {
     title: "Technology We Use",
     description: "We stay hands-on with the tools that power modern cloud data services and data technology services, so you're never locked into outdated systems.",
-    cloudPlatforms: ["AWS", "Microsoft Azure", "Google Cloud"],
-    dataWarehousing: ["Snowflake", "Google BigQuery", "Amazon Redshift"],
-    bigData: ["Apache Spark", "Hadoop", "Kafka"],
-    biVisualization: ["Power BI", "Tableau", "Looker"],
-    languages: ["Python", "SQL", "R"],
+    frontend: ["React", "Next.js"],
+    backend: ["Python", "Node.js", "R"],
+    databases: ["PostgreSQL", "Snowflake", "Google BigQuery", "Amazon Redshift"],
+    cloudDevOps: ["AWS", "Microsoft Azure", "Google Cloud", "Docker", "Kubernetes"],
+    aiAutomation: ["Apache Spark", "Hadoop", "Kafka", "Power BI", "Tableau", "Looker"],
+    closingText: "We use modern tools so you're never locked into outdated systems.",
   },
   
-  // Client Success Stories (Testimonials)
+  // Testimonials
   testimonialsSection: {
     title: "What Our Clients Say",
   },
@@ -3255,21 +3352,21 @@ dataServices: {
       author: "Sarah Mitchell",
       title: "Operations Director",
       company: "Meridian Retail Group",
-      location: "",
+      location: "USA",
     },
     {
       quote: "We needed a data engineering company near me that could move fast without breaking anything. ClickMasters understood our requirements, handled the migration smoothly, and we had zero downtime.",
       author: "David Park",
       title: "IT Manager",
       company: "Lakeshore Health Partners",
-      location: "",
+      location: "USA",
     },
     {
       quote: "As a growing company, we didn't have an in-house data team. We were looking for data consulting services near me, and ClickMasters became the partner we needed. They helped us make sense of our numbers for the first time.",
       author: "Amanda Reyes",
       title: "Founder",
       company: "Northbridge SaaS Solutions",
-      location: "",
+      location: "USA",
     },
   ],
   
@@ -3277,8 +3374,6 @@ dataServices: {
   processSection: {
     title: "How We Work — Our 4-Step Process",
   },
-  
-  // Process Steps
   processSteps: [
     {
       title: "Discovery Call",
@@ -3301,60 +3396,60 @@ dataServices: {
   // Industries Section
   industriesSection: {
     title: "Industries We Serve",
+    description: "Our data services are adapted to the operating reality of your industry — not a generic playbook.",
   },
-  
-  // Industries Data
   industries: [
-    { name: "Healthcare", description: "secure patient data, reporting, and analytics" },
-    { name: "Finance & Banking", description: "risk analysis, fraud detection, compliance reporting" },
-    { name: "Retail & E-commerce", description: "customer insights, inventory, and sales forecasting" },
-    { name: "Manufacturing", description: "production data, predictive maintenance, supply data" },
-    { name: "Logistics & Supply Chain", description: "route data, tracking, demand planning" },
-    { name: "SaaS & Technology", description: "product analytics and usage data" },
+    { name: "Healthcare", description: "Secure patient data, reporting, and analytics" },
+    { name: "Finance & Banking", description: "Risk analysis, fraud detection, compliance reporting" },
+    { name: "Retail & E-commerce", description: "Customer insights, inventory, and sales forecasting" },
+    { name: "Manufacturing", description: "Production data, predictive maintenance, supply data" },
+    { name: "Logistics & Supply Chain", description: "Route data, tracking, demand planning" },
+    { name: "SaaS & Technology", description: "Product analytics and usage data" },
   ],
   
   // Pricing Section
   pricingSection: {
     title: "Data Services Investment",
-    description: "Flexible engagement models for data services scoped to your timeline, team size, and goals.",
+    description: "Flexible engagement models for data services scoped to your data complexity and business goals.",
   },
-  
-  // Pricing
   pricing: [
     {
-      type: "Analytics Dashboard",
-      investment: "$5,000+",
+      type: "Data Dashboard/Report",
+      investment: "$4,000+",
       timeline: "2-4 weeks",
-      bestFor: "Businesses needing a single dashboard or report",
+      bestFor: "Teams needing clear visual insights",
       features: [
-        "Data assessment",
+        "Data integration",
         "Dashboard design",
-        "BI tool setup",
-        "Training & handoff",
+        "KPI tracking",
+        "User training",
+        "Full data ownership",
       ],
     },
     {
-      type: "Full Analytics Solution",
+      type: "Data Engineering & Analytics",
       investment: "$15,000+",
-      timeline: "2-3 months",
-      bestFor: "Growing businesses needing complete data visibility",
+      timeline: "4-12 weeks",
+      bestFor: "Businesses building data infrastructure",
       features: [
-        "Data pipeline setup",
-        "Warehouse integration",
-        "Multiple dashboards",
-        "Team training",
+        "Data pipelines",
+        "Data warehousing",
+        "Analytics models",
+        "BI dashboards",
+        "Full data ownership",
       ],
     },
     {
       type: "Enterprise Data Platform",
-      investment: "$40,000+",
-      timeline: "4-6 months",
-      bestFor: "Complex organizations with enterprise data needs",
+      investment: "$50,000+",
+      timeline: "12-28 weeks",
+      bestFor: "Large organizations with complex data needs",
       features: [
-        "Full data engineering",
         "Big data processing",
+        "Data governance",
         "Advanced analytics",
-        "Dedicated support & SLA",
+        "24/7 monitoring",
+        "Full data ownership",
       ],
     },
   ],
@@ -3363,8 +3458,6 @@ dataServices: {
   faqsSection: {
     title: "Frequently Asked Questions",
   },
-  
-  // FAQs
   faqs: [
     {
       question: "What is a data services company?",
@@ -3392,15 +3485,15 @@ dataServices: {
     },
   ],
   
-  // Final CTA Section
+  // Final CTA
   finalCta: {
     title: "Ready to Put Your Data to Work?",
     description: "Stop guessing and start growing. Talk to our data services company today and see how our data analytics, data engineering, and big data services can help your business make better decisions.",
     primary: "Book Your Free Consultation",
-    secondary: "",
+    secondary: "Get a Free Data Strategy Call",
   },
   
-  // Mid-page CTA labels
+  // Mid-page CTAs
   sectionCtas: {
     afterServices: "Talk to Our Data Services Team",
     afterWhyChooseUs: "See Why Teams Trust Our Data Company",
@@ -3419,26 +3512,26 @@ cloudDevOps: {
   canonical: "https://clickmasterssoftwaredevelopmentcompany.com/cloud-devops-services",
   
   // Hero Section
-  title: "Cloud DevOps Services That Help Your Business Grow Faster",
+  title: "Cloud DevOps Services",
   slug: "cloud-devops-services",
-  icon: "CloudCog",
-  tagline: "Cloud DevOps Services",
+  icon: "Cloud",
+  tagline: "Cloud DevOps Services That Help Your Business Grow Faster",
   description: "Our Cloud DevOps Services help you build, automate, and manage your cloud systems, so your team can ship software faster, with fewer errors and lower costs. Clickmasters is a trusted cloud DevOps agency, and every cloud DevOps service we deliver is backed by a real cloud DevOps engineer, not just a sales team. Talk to us today and see how we can help.",
-  heroBadge: "200+ Cloud & DevOps Projects Delivered",
+  heroBadge: "100+ cloud projects delivered",
   heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   
   // Hero CTAs
   heroCtas: {
     primary: "Get a Free DevOps Consultation",
-    secondary: "Explore Our DevOps Services",
+    secondary: "Request a Free Quote",
   },
   
   // Hero Stats
   stats: [
-    { value: "200+", label: "Cloud & DevOps Projects Delivered" },
-    { value: "50+", label: "Certified Cloud Engineers" },
+    { value: "100+", label: "Cloud Projects Delivered" },
     { value: "99.9%", label: "Uptime Guarantee" },
-    { value: "24/7", label: "Monitoring & Support" },
+    { value: "24/7", label: "Cloud Monitoring & Support" },
+    { value: "30%", label: "Average Cost Reduction" },
   ],
   
   // Features/Services List
@@ -3449,7 +3542,7 @@ cloudDevOps: {
       description: "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
     },
     {
-      icon: "Workflow",
+      icon: "GitBranch",
       title: "DevOps Services",
       description: "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
     },
@@ -3459,12 +3552,12 @@ cloudDevOps: {
       description: "Not sure where to start? Our DevOps consulting services review your current setup and give you a clear roadmap. As a trusted DevOps consulting company, we guide you through every step, from planning to full rollout.",
     },
     {
-      icon: "GitBranch",
+      icon: "GitPullRequest",
       title: "CI/CD Pipeline Setup",
       description: "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
     },
     {
-      icon: "Container",
+      icon: "Boxes",
       title: "Containerization (Docker & Kubernetes)",
       description: "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
     },
@@ -3474,12 +3567,12 @@ cloudDevOps: {
       description: "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
     },
     {
-      icon: "ArrowRightLeft",
+      icon: "Move",
       title: "Cloud Migration & Modernization",
       description: "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
     },
     {
-      icon: "CloudCog",
+      icon: "Eye",
       title: "Cloud Monitoring & Observability",
       description: "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
     },
@@ -3504,35 +3597,40 @@ cloudDevOps: {
       description: "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
       icon: "Cloud",
       heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Cloud Solutions | Clickmasters",
-      metaDescription: "Cloud solutions for AWS, Azure, and Google Cloud with complete DevOps integration.",
-      lead: "Choose the right cloud setup with complete DevOps integration.",
+      metaTitle: "Cloud Solutions Services | Clickmasters",
+      metaDescription: "Professional cloud solutions for AWS, Azure, and Google Cloud with complete DevOps integration for your infrastructure and workflows.",
+      lead: "Choose the right cloud setup for your business with complete DevOps integration.",
       highlights: [
-        "AWS solutions",
-        "Azure solutions",
-        "Google Cloud solutions",
-        "DevOps integration",
+        "AWS, Azure, GCP expertise",
+        "Complete DevOps integration",
+        "Infrastructure planning",
+        "Workflow alignment",
       ],
       pricing: [
         { type: "Cloud Setup", investment: "$5,000+", timeline: "2-4 weeks" },
-        { type: "Full Cloud Migration", investment: "$15,000+", timeline: "2-3 months" },
-        { type: "Enterprise Cloud Platform", investment: "$40,000+", timeline: "4-8 months" },
+        { type: "Full Cloud Solution", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Cloud Platform", investment: "$40,000+", timeline: "8-16 weeks" },
       ],
     },
     {
       title: "DevOps Services",
       slug: "devops-services",
       description: "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
-      icon: "Workflow",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      icon: "GitBranch",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "DevOps Services | Clickmasters",
-      metaDescription: "Core DevOps services connecting development and operations for faster, error-free code delivery.",
-      lead: "Connect development and operations for faster, error-free delivery.",
+      metaDescription: "Professional DevOps services connecting development and operations teams for faster, error-free code delivery from idea to production.",
+      lead: "Connect your development and operations teams for faster, error-free delivery.",
       highlights: [
-        "DevOps implementation",
+        "DevOps tooling",
         "Workflow automation",
-        "Tool setup",
-        "Team integration",
+        "Team collaboration",
+        "Continuous delivery",
+      ],
+      pricing: [
+        { type: "DevOps Setup", investment: "$6,000+", timeline: "2-4 weeks" },
+        { type: "Full DevOps Solution", investment: "$18,000+", timeline: "4-10 weeks" },
+        { type: "Enterprise DevOps", investment: "$45,000+", timeline: "10-20 weeks" },
       ],
     },
     {
@@ -3542,45 +3640,60 @@ cloudDevOps: {
       icon: "Compass",
       heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "DevOps Consulting Services | Clickmasters",
-      metaDescription: "DevOps consulting to review your setup and provide a clear roadmap from planning to rollout.",
-      lead: "Clear roadmap from planning to full rollout.",
+      metaDescription: "Professional DevOps consulting to review your current setup, create a clear roadmap, and guide you through every step to full rollout.",
+      lead: "Get a clear roadmap and expert guidance for your DevOps transformation.",
       highlights: [
-        "Setup review",
-        "Roadmap planning",
-        "Implementation guidance",
+        "Current setup review",
+        "DevOps roadmap",
+        "Strategy planning",
         "Full rollout support",
+      ],
+      pricing: [
+        { type: "DevOps Assessment", investment: "$4,000+", timeline: "1-2 weeks" },
+        { type: "Full DevOps Consulting", investment: "$12,000+", timeline: "3-6 weeks" },
+        { type: "Enterprise DevOps Strategy", investment: "$30,000+", timeline: "6-12 weeks" },
       ],
     },
     {
       title: "CI/CD Pipeline Setup",
-      slug: "cicd-pipeline-setup",
+      slug: "ci-cd-pipeline-setup",
       description: "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
-      icon: "GitBranch",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "CI/CD Pipeline Setup | Clickmasters",
-      metaDescription: "CI/CD pipelines for automatic testing and release with fewer manual steps and bugs.",
-      lead: "Automatic testing and release with fewer bugs and faster releases.",
+      icon: "GitPullRequest",
+      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "CI/CD Pipeline Setup Services | Clickmasters",
+      metaDescription: "Professional CI/CD pipeline setup for automated testing and code releases with fewer bugs, faster releases, and reduced manual steps.",
+      lead: "Automated testing and releases with fewer bugs and faster delivery.",
       highlights: [
-        "CI/CD implementation",
-        "Automatic testing",
-        "Automated releases",
-        "Bug reduction",
+        "Automated testing",
+        "Continuous delivery",
+        "Faster releases",
+        "Reduced manual steps",
+      ],
+      pricing: [
+        { type: "Basic CI/CD Pipeline", investment: "$5,000+", timeline: "1-2 weeks" },
+        { type: "Full CI/CD Solution", investment: "$15,000+", timeline: "3-6 weeks" },
+        { type: "Enterprise CI/CD Platform", investment: "$35,000+", timeline: "6-12 weeks" },
       ],
     },
     {
       title: "Containerization (Docker & Kubernetes)",
-      slug: "containerization",
+      slug: "containerization-docker-kubernetes",
       description: "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
-      icon: "Container",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      icon: "Boxes",
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Containerization Services | Clickmasters",
-      metaDescription: "Docker and Kubernetes containerization for consistent application performance and scalability.",
-      lead: "Consistent application performance with Docker and Kubernetes.",
+      metaDescription: "Professional containerization services with Docker and Kubernetes for consistent application performance across all machines with automatic scaling.",
+      lead: "Package and manage applications with Docker and Kubernetes for consistent performance.",
       highlights: [
-        "Docker packaging",
-        "Kubernetes management",
+        "Docker containerization",
+        "Kubernetes orchestration",
+        "Automatic scaling",
         "Consistent performance",
-        "Auto-scaling",
+      ],
+      pricing: [
+        { type: "Containerization Setup", investment: "$6,000+", timeline: "2-4 weeks" },
+        { type: "Full Kubernetes Platform", investment: "$20,000+", timeline: "4-10 weeks" },
+        { type: "Enterprise Container Platform", investment: "$50,000+", timeline: "10-20 weeks" },
       ],
     },
     {
@@ -3588,92 +3701,114 @@ cloudDevOps: {
       slug: "infrastructure-as-code",
       description: "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
       icon: "FileCode",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Infrastructure as Code | Clickmasters",
-      metaDescription: "Infrastructure as Code using Terraform for repeatable, trackable, and rollback-ready cloud setups.",
-      lead: "Repeatable, trackable cloud setups with Terraform.",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Infrastructure as Code Services | Clickmasters",
+      metaDescription: "Professional Infrastructure as Code (IaC) services using Terraform for repeatable, trackable, and easy-to-roll-back cloud setups.",
+      lead: "Turn your cloud setup into repeatable, trackable, and easy-to-roll-back code.",
       highlights: [
-        "Terraform",
-        "Version-controlled infrastructure",
+        "Terraform expertise",
+        "Repeatable infrastructure",
+        "Version control",
         "Easy rollbacks",
-        "Repeatable setups",
+      ],
+      pricing: [
+        { type: "IaC Foundation", investment: "$7,000+", timeline: "2-4 weeks" },
+        { type: "Full IaC Platform", investment: "$22,000+", timeline: "4-10 weeks" },
+        { type: "Enterprise IaC Suite", investment: "$55,000+", timeline: "10-20 weeks" },
       ],
     },
     {
       title: "Cloud Migration & Modernization",
-      slug: "cloud-migration",
+      slug: "cloud-migration-modernization",
       description: "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
-      icon: "ArrowRightLeft",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-      metaTitle: "Cloud Migration Services | Clickmasters",
-      metaDescription: "Carefully planned cloud migration with minimal downtime while modernizing your systems.",
-      lead: "Careful migration with minimal downtime and modernization.",
+      icon: "Move",
+      heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Cloud Migration & Modernization | Clickmasters",
+      metaDescription: "Professional cloud migration and modernization services with minimal downtime and careful planning to keep your business running smoothly.",
+      lead: "Move to the cloud with minimal downtime and careful planning.",
       highlights: [
-        "Migration planning",
         "Minimal downtime",
+        "Careful planning",
         "System modernization",
         "Business continuity",
+      ],
+      pricing: [
+        { type: "Cloud Migration", investment: "$8,000+", timeline: "3-8 weeks" },
+        { type: "Full Modernization", investment: "$25,000+", timeline: "6-14 weeks" },
+        { type: "Enterprise Cloud Transformation", investment: "$60,000+", timeline: "14-28 weeks" },
       ],
     },
     {
       title: "Cloud Monitoring & Observability",
-      slug: "cloud-monitoring",
+      slug: "cloud-monitoring-observability",
       description: "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
-      icon: "CloudCog",
-      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      icon: "Eye",
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Cloud Monitoring & Observability | Clickmasters",
-      metaDescription: "24/7 dashboards and alerts for proactive issue detection before customers are affected.",
-      lead: "24/7 monitoring with proactive issue detection.",
+      metaDescription: "Professional cloud monitoring and observability services with 24/7 dashboards and alerts to catch issues before they impact customers.",
+      lead: "24/7 monitoring and alerts to catch issues before your customers do.",
       highlights: [
-        "Real-time dashboards",
-        "Proactive alerts",
-        "Performance monitoring",
-        "Issue detection",
+        "24/7 monitoring",
+        "Real-time alerts",
+        "Performance dashboards",
+        "Proactive issue detection",
+      ],
+      pricing: [
+        { type: "Monitoring Setup", investment: "$4,000+", timeline: "2-3 weeks" },
+        { type: "Full Observability Platform", investment: "$15,000+", timeline: "4-8 weeks" },
+        { type: "Enterprise Monitoring Suite", investment: "$40,000+", timeline: "8-16 weeks" },
       ],
     },
     {
       title: "Managed DevOps Services",
-      slug: "managed-devops",
+      slug: "managed-devops-services",
       description: "Don't want to hire a full in-house team? Our managed DevOps services give you a full team of experts on demand. Think of it as DevOps as a service — we handle the daily work while you focus on your product, backed by full cloud DevOps management services for your entire infrastructure.",
       icon: "Users",
       heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
       metaTitle: "Managed DevOps Services | Clickmasters",
-      metaDescription: "On-demand expert DevOps team handling daily operations while you focus on your product.",
-      lead: "On-demand DevOps experts handling daily operations.",
+      metaDescription: "Managed DevOps services providing a full team of experts on demand - DevOps as a service for your entire infrastructure while you focus on your product.",
+      lead: "Get a full DevOps team on demand while you focus on your product.",
       highlights: [
-        "Expert team on demand",
-        "Daily operations management",
-        "Infrastructure oversight",
-        "Product focus",
+        "Full DevOps team",
+        "Daily operations support",
+        "Infrastructure management",
+        "On-demand expertise",
+      ],
+      pricing: [
+        { type: "Monthly Retainer", investment: "$5,000+/mo", timeline: "Ongoing" },
+        { type: "Managed DevOps Team", investment: "$12,000+/mo", timeline: "Ongoing" },
+        { type: "Enterprise Managed Services", investment: "$25,000+/mo", timeline: "Ongoing" },
       ],
     },
   ],
   
-  // Trust Section Data
+  // Trust Section
   trustSection: {
     title: "A Cloud DevOps Company You Can Trust",
     description: "Clickmasters is a cloud DevOps company that works with businesses across the USA, UK, and UAE. We help teams move to the cloud, automate their daily work, and keep their systems running smoothly at all times.\nAs a full-service DevOps services company, we bring together skilled cloud engineers, automation experts, and support staff under one roof. Our team holds hands-on experience with AWS, Azure, and Google Cloud, and we follow proven DevOps consulting methods used by top enterprises around the world.\nWhether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals. We are proud to be a DevOps company USA teams trust, and we provide DevOps services USA and DevOps consulting services USA businesses turn to when they want real results, not empty promises.",
     points: [
-      "Certified engineers with real experience on AWS, Azure, and Google Cloud",
-      "A clear, step-by-step process with no hidden surprises",
-      "Honest, upfront pricing with no long-term lock-in",
-      "Experience serving clients across the USA, UK, and UAE",
-      "Fast response times and a dedicated support team",
-      "A top cloud DevOps services track record built on long-term client relationships",
+      "AWS, Azure, and Google Cloud certified engineers",
+      "Full-service DevOps company with skilled cloud engineers, automation experts, and support staff",
+      "Proven DevOps consulting methods used by top enterprises",
+      "Businesses across USA, UK, and UAE trust our DevOps services",
     ],
-    closingText: "Whether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals.",
+    closingText: "We build a plan that fits your business, your budget, and your goals.",
   },
   
   // Trusted Clients
   trustedClients: [
     { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
-    { name: "E-commerce Business", industry: "E-commerce", icon: "ShoppingBag" },
-    { name: "FinTech Startup", industry: "FinTech", icon: "Coins" },
+    { name: "E-commerce Business", industry: "Retail", icon: "ShoppingBag" },
+    { name: "FinTech Startup", industry: "Finance", icon: "Coins" },
     { name: "Healthcare Company", industry: "Healthcare", icon: "Heart" },
     { name: "Logistics Company", industry: "Logistics", icon: "Truck" },
   ],
   
-  // Benefits Section Data
+  // Benefits Section
+  benefitsSection: {
+    title: "Benefits of Working With Our DevOps Team",
+    description: "Our DevOps services deliver real business value through faster releases, lower costs, and stronger security.",
+  },
   benefits: [
     "Faster software releases with fewer bugs",
     "Lower cloud hosting and infrastructure costs",
@@ -3683,62 +3818,52 @@ cloudDevOps: {
     "Clear reporting so you always know what is happening",
   ],
   
-  // Benefits Section
-  benefitsSection: {
-    title: "Benefits of Working With Our DevOps Team",
-  },
-  
-  // Why Choose Us Data
+  // Why Choose Us
   whyChooseUs: {
     title: "Why Choose Clickmasters as Your DevOps Agency",
     description: "There are many companies that call themselves a DevOps agency, but not all of them deliver real results. Here is what sets our cloud DevOps consulting services apart:",
     reasons: [
       {
         title: "Certified engineers",
-        description: "with real experience on AWS, Azure, and Google Cloud",
+        description: "Real experience on AWS, Azure, and Google Cloud, not just theory",
       },
       {
-        title: "Clear process",
-        description: "a step-by-step process with no hidden surprises",
+        title: "Clear, step-by-step process",
+        description: "No hidden surprises, every stage documented and communicated",
       },
       {
-        title: "Honest pricing",
-        description: "upfront pricing with no long-term lock-in",
+        title: "Honest, upfront pricing",
+        description: "No long-term lock-in, transparent costs from the start",
       },
       {
         title: "Global experience",
-        description: "serving clients across the USA, UK, and UAE",
+        description: "Serving clients across the USA, UK, and UAE with local understanding",
       },
       {
-        title: "Fast response",
-        description: "fast response times and a dedicated support team",
+        title: "Fast response times",
+        description: "Dedicated support team that responds quickly and resolves issues",
       },
       {
         title: "Proven track record",
-        description: "built on long-term client relationships and results",
+        description: "Long-term client relationships and results our clients rank among the best cloud DevOps services they have used",
       },
     ],
+    closingText: "This combination is why businesses consistently choose Clickmasters as their trusted DevOps partner.",
   },
   
-  // Technology Stack Data
+  // Technology Stack
   techStack: {
     title: "Technology We Work With",
-    description: "Our cloud DevOps engineering services and DevOps engineering services are built on tools that are trusted by companies around the world:",
-    technologies: [
-      "AWS",
-      "Microsoft Azure",
-      "Google Cloud Platform (GCP)",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-      "Jenkins",
-      "GitHub Actions",
-      "Ansible",
-      "Prometheus & Grafana"
-    ],
+    description: "Our cloud DevOps engineering services and DevOps engineering services are built on tools that are trusted by companies around the world.",
+    frontend: ["React", "Next.js"],
+    backend: ["Node.js", "Python", "Go"],
+    databases: ["PostgreSQL", "MongoDB", "Redis"],
+    cloudDevOps: ["AWS", "Microsoft Azure", "Google Cloud Platform", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "Ansible", "Prometheus", "Grafana"],
+    aiAutomation: ["Custom automation workflows", "AI/ML integration"],
+    closingText: "We use trusted, enterprise-grade tools to build reliable, scalable DevOps solutions.",
   },
   
-  // Client Success Stories (Testimonials)
+  // Testimonials
   testimonialsSection: {
     title: "What Our Clients Say",
   },
@@ -3777,8 +3902,6 @@ cloudDevOps: {
   processSection: {
     title: "Our 4-Step Process",
   },
-  
-  // Process Steps
   processSteps: [
     {
       title: "Discovery & Assessment",
@@ -3798,72 +3921,65 @@ cloudDevOps: {
     },
   ],
   
-  // Company Section (Your Cloud DevOps Agency in the USA)
-  companySection: {
-    title: "Your Cloud DevOps Agency in the USA",
-    description: "Clickmasters works as a Cloud DevOps Agency USA businesses rely on, supporting companies from coast to coast alongside our clients in the UK and UAE. Some teams look for a DevOps Agency USA to handle day-to-day operations, while others need a full DevOps Development Agency USA to build new cloud systems from the ground up.\nWe also work as a DevOps Consulting Agency USA for teams that just need expert guidance, and as a Cloud DevOps Development Agency for companies building new cloud-native products. Whether you need us as a general DevOps Agency, a focused DevOps Services Agency, or a DevOps Solutions Agency and DevOps Automation Agency for a specific project, our DevOps Development Agency and DevOps Consulting Agency teams are ready to help.",
-  },
-  
   // Industries Section
   industriesSection: {
     title: "Industries We Serve",
-    description: "Our DevOps implementation services support businesses across many industries, including:",
+    description: "Our DevOps implementation services support businesses across many industries.",
   },
-  
-  // Industries Data
   industries: [
-    { name: "E-commerce & Retail", description: "scalable online stores and payment systems" },
-    { name: "Healthcare", description: "secure patient data and HIPAA-compliant systems" },
-    { name: "FinTech & Banking", description: "secure transaction and compliance systems" },
-    { name: "SaaS & Software", description: "multi-tenant platforms and continuous delivery" },
-    { name: "Manufacturing", description: "production systems and IoT infrastructure" },
-    { name: "Logistics & Supply Chain", description: "tracking and routing systems" },
-    { name: "Education Technology", description: "learning platforms and student data systems" },
-    { name: "Real Estate", description: "property management and listing platforms" },
+    { name: "E-commerce & Retail", description: "Scalable cloud infrastructure for online stores" },
+    { name: "Healthcare", description: "Secure, HIPAA-ready cloud environments" },
+    { name: "FinTech & Banking", description: "Compliant, high-security cloud systems" },
+    { name: "SaaS & Software", description: "Cloud-native platforms and CI/CD pipelines" },
+    { name: "Manufacturing", description: "Industrial IoT and supply chain automation" },
+    { name: "Logistics & Supply Chain", description: "Real-time tracking and route optimization" },
+    { name: "Education Technology", description: "Scalable learning platforms and student data" },
+    { name: "Real Estate", description: "Property management and listing platforms" },
   ],
   
   // Pricing Section
   pricingSection: {
     title: "DevOps Services Investment",
-    description: "Flexible engagement models for DevOps services scoped to your timeline, team size, and goals.",
+    description: "Flexible engagement models for DevOps services scoped to your infrastructure and business goals.",
   },
-  
-  // Pricing
   pricing: [
     {
-      type: "Cloud Setup",
-      investment: "$5,000+",
-      timeline: "2-4 weeks",
-      bestFor: "Businesses needing initial cloud infrastructure setup",
+      type: "DevOps Project Setup",
+      investment: "$6,000+",
+      timeline: "2-6 weeks",
+      bestFor: "Teams needing specific DevOps implementation",
       features: [
-        "Cloud assessment",
-        "Infrastructure setup",
-        "Basic automation",
-        "Initial monitoring",
-      ],
-    },
-    {
-      type: "Full Cloud Migration",
-      investment: "$15,000+",
-      timeline: "2-3 months",
-      bestFor: "Businesses migrating from on-premise to cloud",
-      features: [
-        "Migration planning",
+        "CI/CD pipeline setup",
+        "Containerization",
         "Infrastructure as Code",
-        "CI/CD pipeline",
-        "Monitoring & alerts",
+        "Monitoring setup",
+        "Full ownership",
       ],
     },
     {
-      type: "Enterprise Cloud Platform",
-      investment: "$40,000+",
-      timeline: "4-8 months",
-      bestFor: "Complex organizations with enterprise needs",
+      type: "Full DevOps Platform",
+      investment: "$20,000+",
+      timeline: "4-14 weeks",
+      bestFor: "Businesses building complete DevOps infrastructure",
       features: [
-        "Full DevOps implementation",
+        "Full cloud setup",
+        "Complete CI/CD pipeline",
         "Container orchestration",
-        "Advanced security",
-        "Dedicated support & SLA",
+        "Monitoring & observability",
+        "Full ownership",
+      ],
+    },
+    {
+      type: "Managed DevOps Services",
+      investment: "$5,000+/mo",
+      timeline: "Ongoing",
+      bestFor: "Teams needing ongoing DevOps support and management",
+      features: [
+        "24/7 monitoring",
+        "Ongoing support",
+        "Infrastructure management",
+        "Continuous optimization",
+        "Full ownership",
       ],
     },
   ],
@@ -3872,8 +3988,6 @@ cloudDevOps: {
   faqsSection: {
     title: "Frequently Asked Questions",
   },
-  
-  // FAQs
   faqs: [
     {
       question: "What is cloud DevOps?",
@@ -3905,19 +4019,19 @@ cloudDevOps: {
     },
   ],
   
-  // Final CTA Section
+  // Final CTA
   finalCta: {
     title: "Ready to Build a Faster, Safer Cloud Setup?",
     description: "Whether you need a one-time project or an ongoing DevOps service provider, our team is ready to help. Get in touch today and let's build a cloud and DevOps plan that fits your business.",
     primary: "Request a Free Quote",
-    secondary: "",
+    secondary: "Get a Free DevOps Consultation",
   },
   
-  // Mid-page CTA labels
+  // Mid-page CTAs
   sectionCtas: {
-    afterServices: "Talk to Our DevOps Team",
-    afterWhyChooseUs: "See Why Teams Trust Our DevOps Company",
-    afterProcess: "Start Your DevOps Project Today",
+    afterServices: "Talk to Our DevOps Engineering Team",
+    afterWhyChooseUs: "See Why Teams Trust Our DevOps Agency",
+    afterProcess: "Start Your Cloud DevOps Project Today",
   },
 },
 
@@ -4302,6 +4416,7 @@ cybersecurity: {
     penetrationTesting: ["Burp Suite", "Metasploit", "Nmap", "Kali Linux"],
     identityAccess: ["Okta", "Microsoft Entra ID", "Duo Security"],
     complianceGRC: ["Vanta", "Drata", "OneTrust"],
+    closingText: "We combine these tools with practical security engineering so your defenses remain visible, manageable, and aligned with your business risk.",
   },
   
   // Client Success Stories (Testimonials)
@@ -4878,6 +4993,7 @@ qaTesting: {
     mobileTesting: ["BrowserStack", "Sauce Labs", "Firebase Test Lab"],
     ciCdIntegration: ["Jenkins", "GitHub Actions", "GitLab CI", "Azure DevOps"],
     bugTracking: ["Jira", "TestRail", "Zephyr"],
+    closingText: "This testing toolkit gives your team repeatable coverage across web, mobile, API, performance, and security workflows without slowing down delivery.",
   },
   
   // Client Success Stories (Testimonials)
