@@ -1382,150 +1382,130 @@ export const mainServicesData = {
 
   // 9. CLOUD & DEVOPS
   "cloud-and-devops": {
-    title: "Cloud & DevOps",
-    slug: "cloud-and-devops",
-    icon: "CloudCog",
-    tagline: "Modern Infrastructure Solutions",
-    description: "Cloud-native solutions and release automation.",
-    heroBadge: "200+ Migrations",
-    heroImage:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-    stats: [
-      { value: "3", label: "Major Cloud Platforms (AWS, Azure, GCP)" },
-      { value: "24/7", label: "Monitoring & Issue Response" },
-      { value: "1-2 wks", label: "Typical CI/CD Pipeline Setup" },
-      { value: "3+", label: "Regions Served (USA, UK, UAE)" },
-    ],
-    trustedClients: [
-      { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
-      { name: "E-commerce Business", industry: "Retail", icon: "ShoppingBag" },
-      { name: "FinTech Startup", industry: "Finance", icon: "Coins" },
-      { name: "Healthcare Company", industry: "Healthcare", icon: "Heart" },
-      { name: "Manufacturing Firm", industry: "Manufacturing", icon: "Factory" },
-    ],
+    title: "Cloud DevOps Services ",
+    slug: "cloud-devops-services",
+    icon: "Cloud",
+    tagline: "",
+    description:
+      "Our Cloud DevOps Services help you build, automate, and manage your cloud systems, so your team can ship software faster, with fewer errors and lower costs. Clickmasters is a trusted cloud DevOps agency, and every cloud DevOps service we deliver is backed by a real cloud DevOps engineer, not just a sales team. Talk to us today and see how we can help.",
+    heroBadge: "",
+    heroImage: "",
+    stats: [],
+    trustedClients: [],
+    ourServices: {
+      title: "Our Cloud & DevOps Services",
+      description:
+        "We offer a complete set of DevOps services to help you plan, build, and manage your cloud environment from start to finish.",
+    },
     subServices: [
       {
         title: "Cloud Solutions",
         slug: "cloud-solutions",
-        description: "Architecture & migration.",
+        description:
+          "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
         icon: "Cloud",
         heroImage:
           "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Cloud Solutions for Your Business | Clickmasters",
-        metaDescription:
-          "Choose the right cloud setup on AWS, Azure, or Google Cloud with infrastructure and workflows working together from day one.",
-        lead: "The right cloud setup, from day one.",
+        lead: "Choose the right cloud setup for your business with complete DevOps integration.",
         highlights: [
-          "AWS, Azure & GCP",
-          "Cloud architecture",
-          "DevOps-aligned builds",
-          "Day-one readiness",
+          "AWS, Azure, GCP expertise",
+          "Complete DevOps integration",
+          "Infrastructure planning",
+          "Workflow alignment",
         ],
       },
       {
         title: "DevOps Services",
         slug: "devops-services",
-        description: "Delivery pipelines.",
+        description:
+          "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
         icon: "GitBranch",
         heroImage:
           "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "DevOps Development Services | Clickmasters",
-        metaDescription:
-          "Connect development and operations so code moves from idea to production without delays — tools and workflows included.",
-        lead: "From idea to production, without delays.",
+        lead: "Connect your development and operations teams for faster, error-free delivery.",
         highlights: [
-          "Dev & ops alignment",
-          "Tool setup",
-          "Workflow design",
-          "Fewer mistakes",
+          "DevOps tooling",
+          "Workflow automation",
+          "Team collaboration",
+          "Continuous delivery",
         ],
       },
       {
         title: "DevOps Consulting",
         slug: "devops-consulting",
-        description: "Strategic roadmaps and assessments.",
+        description:
+          "Not sure where to start? Our DevOps consulting services review your current setup and give you a clear roadmap. As a trusted DevOps consulting company, we guide you through every step, from planning to full rollout.",
         icon: "Compass",
         heroImage:
           "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "DevOps Consulting Services | Clickmasters",
-        metaDescription:
-          "Expert DevOps consulting that reviews your setup and delivers a clear roadmap from planning to full rollout.",
-        lead: "A clear roadmap for where to start.",
+        lead: "Get a clear roadmap and expert guidance for your DevOps transformation.",
         highlights: [
-          "Setup review",
-          "Clear roadmap",
-          "Planning to rollout",
-          "Expert guidance",
+          "Current setup review",
+          "DevOps roadmap",
+          "Strategy planning",
+          "Full rollout support",
         ],
       },
       {
         title: "CI/CD Pipeline Setup",
         slug: "ci-cd-pipeline-setup",
-        description: "Automated workflows.",
+        description:
+          "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
         icon: "GitPullRequest",
         heroImage:
           "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "CI/CD Pipeline Setup Services | Clickmasters",
-        metaDescription:
-          "Automated CI/CD pipelines that test and release code automatically — faster releases, fewer bugs.",
-        lead: "Releases that test and ship themselves.",
+        lead: "Automated testing and releases with fewer bugs and faster delivery.",
         highlights: [
           "Automated testing",
-          "Automated releases",
-          "Fewer manual steps",
-          "Fewer customer-facing bugs",
+          "Continuous delivery",
+          "Faster releases",
+          "Reduced manual steps",
         ],
       },
       {
         title: "Containerization (Docker & Kubernetes)",
         slug: "containerization-docker-kubernetes",
-        description: "Docker & Kubernetes.",
+        description:
+          "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
         icon: "Container",
         heroImage:
           "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Docker & Kubernetes Containerization | Clickmasters",
-        metaDescription:
-          "Package applications with Docker and manage them with Kubernetes — consistent runs and traffic-based scaling.",
-        lead: "Runs the same everywhere, scales on demand.",
+        lead: "Package and manage applications with Docker and Kubernetes for consistent performance.",
         highlights: [
-          "Docker packaging",
-          "Kubernetes management",
-          "Environment consistency",
-          "Auto-scaling",
+          "Docker containerization",
+          "Kubernetes orchestration",
+          "Automatic scaling",
+          "Consistent performance",
         ],
       },
       {
-        title: "Infrastructure as Code",
+        title: "Infrastructure as Code (IaC)",
         slug: "infrastructure-as-code",
-        description: "Repeatable setup.",
+        description:
+          "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
         icon: "FileCode",
         heroImage:
           "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Infrastructure as Code (Terraform) Services | Clickmasters",
-        metaDescription:
-          "Turn your cloud setup into code with Terraform — repeatable, trackable, and easy to roll back.",
-        lead: "Your cloud setup, as code.",
+        lead: "Turn your cloud setup into repeatable, trackable, and easy-to-roll-back code.",
         highlights: [
-          "Terraform",
-          "Repeatable setups",
-          "Version tracking",
-          "Simple rollbacks",
+          "Terraform expertise",
+          "Repeatable infrastructure",
+          "Version control",
+          "Easy rollbacks",
         ],
       },
       {
         title: "Cloud Migration & Modernization",
         slug: "cloud-migration-modernization",
-        description: "Zero-downtime migration.",
+        description:
+          "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
         icon: "ArrowRightLeft",
         heroImage:
           "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Cloud Migration & Modernization Services | Clickmasters",
-        metaDescription:
-          "Careful, planned cloud migration with little to no downtime — modernize systems while your business keeps running.",
-        lead: "Move to the cloud without stopping your business.",
+        lead: "Move to the cloud with minimal downtime and careful planning.",
         highlights: [
+          "Minimal downtime",
           "Careful planning",
-          "Little to no downtime",
           "System modernization",
           "Business continuity",
         ],
@@ -1533,40 +1513,39 @@ export const mainServicesData = {
       {
         title: "Cloud Monitoring & Observability",
         slug: "cloud-monitoring-observability",
-        description: "24/7 observability and alerts.",
+        description:
+          "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
         icon: "Activity",
         heroImage:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Cloud Monitoring & Observability Services | Clickmasters",
-        metaDescription:
-          "24/7 dashboards and alerts that watch your systems — know about problems before your customers do.",
-        lead: "Know before your customers do.",
+        lead: "24/7 monitoring and alerts to catch issues before your customers do.",
         highlights: [
-          "Live dashboards",
-          "Smart alerts",
-          "24/7 watching",
-          "Early problem detection",
+          "24/7 monitoring",
+          "Real-time alerts",
+          "Performance dashboards",
+          "Proactive issue detection",
         ],
       },
       {
         title: "Managed DevOps Services",
         slug: "managed-devops-services",
-        description: "DevOps as a service.",
+        description:
+          "Don't want to hire a full in-house team? Our managed DevOps services give you a full team of experts on demand. Think of it as DevOps as a service — we handle the daily work while you focus on your product, backed by full cloud DevOps management services for your entire infrastructure.",
         icon: "Settings",
         heroImage:
           "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
-        metaTitle: "Managed DevOps Services (DevOps as a Service) | Clickmasters",
-        metaDescription:
-          "A full DevOps team on demand — we handle daily operations and infrastructure management while you focus on your product.",
-        lead: "A full DevOps team, on demand.",
+        lead: "Get a full DevOps team on demand while you focus on your product.",
         highlights: [
-          "DevOps as a service",
-          "Daily operations handled",
-          "Full infrastructure management",
-          "No in-house hire needed",
+          "Full DevOps team",
+          "Daily operations support",
+          "Infrastructure management",
+          "On-demand expertise",
         ],
       },
     ],
+    features: [],
+    pricing: [],
+    faqs: [],
   },
 
   // 10. CYBERSECURITY

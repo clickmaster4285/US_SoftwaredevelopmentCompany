@@ -2255,13 +2255,7 @@ machineLearning: {
   trustSection: {
     title: "A Machine Learning Development Company Built on Engineering Discipline",
     description: "Clickmasters is a machine learning development company built for businesses that need models which perform in production, not just in a notebook. Our machine learning development services combine data engineering, statistical modeling, and software engineering — so the ML solutions we build are accurate, scalable, and maintainable long after launch.\nAs an AI ML development company, we don't hand you a black-box model and walk away. Every machine learning development service we offer includes clear documentation, performance benchmarks, and a plan for monitoring and retraining as your data evolves. Whether you need a single predictive model or a full machine learning development services agency to build your entire ML pipeline, our team scales to match your project.\nWe're recognized among ML development companies that prioritize transparent delivery, measurable outcomes, and long-term reliability — the standard every ML development service provider should be held to.",
-    points: [
-      "Data engineering, statistical modeling, and software engineering combined",
-      "Clear documentation and performance benchmarks for every model",
-      "Monitoring and retraining as your data evolves",
-      "Transparent delivery and measurable outcomes",
-    ],
-    closingText: "We deliver accurate, scalable, and maintainable ML solutions built for the real world.",
+    
   },
   
   // Trusted Clients
@@ -2319,13 +2313,27 @@ machineLearning: {
   // Technology Stack
   techStack: {
     title: "The Technology Powering Our Machine Learning Solutions",
-    description: "We choose technology for reliability, accuracy, and long-term maintainability — not trends. This combination lets our machine learning experts deliver ml development services that are accurate, scalable, and easy for your internal team to maintain long after launch.",
-    frontend: ["React", "Next.js"],
-    backend: ["Python", "Node.js"],
-    databases: ["PostgreSQL", "Vector Databases", "Data Warehouses"],
-    cloudDevOps: ["AWS", "Azure", "Google Cloud Platform", "Docker", "Kubernetes"],
-    aiAutomation: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "MLflow", "AWS SageMaker", "Apache Spark", "Pandas"],
-    closingText: "Every technology decision is documented during the architecture phase, ensuring your ML solution is accurate, scalable, and maintainable.",
+    description:
+      "We choose technology for reliability, accuracy, and long-term maintainability — not trends.",
+    groups: [
+      {
+        label: "ML & Deep Learning Frameworks",
+        items: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
+      },
+      {
+        label: "Data Engineering",
+        items: ["Python", "Apache Spark", "Pandas", "SQL"],
+      },
+      {
+        label: "MLOps & Deployment",
+        items: ["MLflow", "Docker", "Kubernetes", "AWS SageMaker"],
+      },
+      {
+        label: "Infrastructure",
+        items: ["AWS", "Azure", "Google Cloud Platform"],
+      },
+    ],
+    closingText: "This combination lets our machine learning experts deliver ml development services that are accurate, scalable, and easy for your internal team to maintain long after launch.",
   },
   
   // Testimonials
@@ -2731,13 +2739,7 @@ uiUxDesign: {
   trustSection: {
     title: "Trusted UI/UX Design Company in the USA",
     description: "At Clickmasters, we're more than just another UI/UX design services company. We're a team of designers, researchers, and strategists who care about how real people use your product. For over 10 years, we've partnered with startups, growing businesses, and enterprise brands to design websites and apps that are easy to use, look professional, and drive measurable results.\nAs a full-service UI/UX design and development company, we don't only make screens look attractive. Every wireframe, prototype, and pixel we create is backed by user research and your business goals. Whether you need a brand-new product designed from scratch or want to improve an existing website or app, our ui and ux design services are built to help you compete — and win — in a crowded digital market.\nWe've delivered ui ux design solutions for clients across industries such as SaaS, healthcare, fintech, and e-commerce, which is why many clients describe us as one of the top UI/UX design companies in the USA.",
-    points: [
-      "10+ years of design excellence",
-      "Research-backed design decisions",
-      "Industry experience across SaaS, healthcare, fintech, and e-commerce",
-      "Measurable results and business impact",
-    ],
-    closingText: "We design websites and apps that are easy to use, look professional, and drive measurable results.",
+    
   },
   
   // Trusted Clients
@@ -2795,13 +2797,18 @@ uiUxDesign: {
   // Technology Stack
   techStack: {
     title: "Technology & Tools We Use",
-    description: "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products. On the development side, our team works with modern frameworks, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
-    frontend: ["React", "Flutter", "Swift", "Kotlin"],
-    backend: ["Node.js", "Python"],
-    databases: ["PostgreSQL", "MongoDB"],
-    cloudDevOps: ["AWS", "Azure", "Docker"],
-    aiAutomation: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
-    closingText: "Our tool stack ensures your project moves seamlessly from design to a fully working product with no gaps between design and development.",
+    description:
+      "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products, including Figma, Adobe XD, Sketch, InVision, Maze, and Hotjar. On the development side, our team works with React, Flutter, Swift, and Kotlin, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
+    groups: [
+      {
+        label: "Design Tools",
+        items: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
+      },
+      {
+        label: "Development",
+        items: ["React", "Flutter", "Swift", "Kotlin"],
+      },
+    ],
   },
   
   // Testimonials
@@ -2861,14 +2868,14 @@ uiUxDesign: {
     description: "No matter your industry, our team creates ui ux design solutions tailored to your users, your goals, and your market.",
   },
   industries: [
-    { name: "SaaS & Technology", description: "User-friendly software interfaces and platforms" },
-    { name: "Healthcare", description: "HIPAA-aware designs for patient portals and clinical tools" },
-    { name: "E-commerce & Retail", description: "Conversion-focused online store designs" },
-    { name: "Fintech & Banking", description: "Secure, trustworthy financial interfaces" },
-    { name: "Logistics & Transportation", description: "Operational efficiency through better design" },
-    { name: "Education", description: "Learning management systems and student platforms" },
-    { name: "Real Estate", description: "Property listing platforms and client portals" },
-    { name: "Startups & SaaS Founders", description: "MVP design and product validation" },
+    { name: "SaaS & Technology" },
+    { name: "Healthcare" },
+    { name: "E-commerce & Retail" },
+    { name: "Fintech & Banking" },
+    { name: "Logistics & Transportation" },
+    { name: "Education" },
+    { name: "Real Estate" },
+    { name: "Startups & SaaS Founders" },
   ],
   
   // Pricing Section
@@ -3265,13 +3272,13 @@ dataServices: {
   trustSection: {
     title: "A Trusted Data Solutions Company in the USA",
     description: "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team has delivered 200+ data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
-    points: [
-      "AWS, Azure, and Google Cloud certified engineers",
-      "200+ data projects delivered across the USA",
-      "SOC 2-aligned and HIPAA-ready security standards",
-      "One team for strategy, building, and ongoing support",
-    ],
-    closingText: "We shape our data development services around your goals — not the other way around.",
+    // points: [
+    //   "AWS, Azure, and Google Cloud certified engineers",
+    //   "200+ data projects delivered across the USA",
+    //   "SOC 2-aligned and HIPAA-ready security standards",
+    //   "One team for strategy, building, and ongoing support",
+    // ],
+    // closingText: "We shape our data development services around your goals — not the other way around.",
   },
   
   // Trusted Clients
@@ -3333,13 +3340,30 @@ dataServices: {
   // Technology Stack
   techStack: {
     title: "Technology We Use",
-    description: "We stay hands-on with the tools that power modern cloud data services and data technology services, so you're never locked into outdated systems.",
-    frontend: ["React", "Next.js"],
-    backend: ["Python", "Node.js", "R"],
-    databases: ["PostgreSQL", "Snowflake", "Google BigQuery", "Amazon Redshift"],
-    cloudDevOps: ["AWS", "Microsoft Azure", "Google Cloud", "Docker", "Kubernetes"],
-    aiAutomation: ["Apache Spark", "Hadoop", "Kafka", "Power BI", "Tableau", "Looker"],
-    closingText: "We use modern tools so you're never locked into outdated systems.",
+    description:
+      "We stay hands-on with the tools that power modern cloud data services and data technology services, so you're never locked into outdated systems.",
+    groups: [
+      {
+        label: "Cloud Platforms",
+        items: ["AWS", "Microsoft Azure", "Google Cloud"],
+      },
+      {
+        label: "Data Warehousing",
+        items: ["Snowflake", "Google BigQuery", "Amazon Redshift"],
+      },
+      {
+        label: "Big Data & Streaming",
+        items: ["Apache Spark", "Hadoop", "Kafka"],
+      },
+      {
+        label: "BI & Visualization",
+        items: ["Power BI", "Tableau", "Looker"],
+      },
+      {
+        label: "Languages",
+        items: ["Python", "SQL", "R"],
+      },
+    ],
   },
   
   // Testimonials
@@ -3512,7 +3536,7 @@ cloudDevOps: {
   canonical: "https://clickmasterssoftwaredevelopmentcompany.com/cloud-devops-services",
   
   // Hero Section
-  title: "Cloud DevOps Services",
+  title: "Cloud DevOps Services That Help Your Business Grow Faster",
   slug: "cloud-devops-services",
   icon: "Cloud",
   tagline: "Cloud DevOps Services That Help Your Business Grow Faster",
@@ -3781,20 +3805,21 @@ cloudDevOps: {
       ],
     },
   ],
-  
+
   // Trust Section
   trustSection: {
     title: "A Cloud DevOps Company You Can Trust",
-    description: "Clickmasters is a cloud DevOps company that works with businesses across the USA, UK, and UAE. We help teams move to the cloud, automate their daily work, and keep their systems running smoothly at all times.\nAs a full-service DevOps services company, we bring together skilled cloud engineers, automation experts, and support staff under one roof. Our team holds hands-on experience with AWS, Azure, and Google Cloud, and we follow proven DevOps consulting methods used by top enterprises around the world.\nWhether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals. We are proud to be a DevOps company USA teams trust, and we provide DevOps services USA and DevOps consulting services USA businesses turn to when they want real results, not empty promises.",
-    points: [
-      "AWS, Azure, and Google Cloud certified engineers",
-      "Full-service DevOps company with skilled cloud engineers, automation experts, and support staff",
-      "Proven DevOps consulting methods used by top enterprises",
-      "Businesses across USA, UK, and UAE trust our DevOps services",
-    ],
-    closingText: "We build a plan that fits your business, your budget, and your goals.",
+    description:
+      "Clickmasters is a cloud DevOps company that works with businesses across the USA, UK, and UAE. We help teams move to the cloud, automate their daily work, and keep their systems running smoothly at all times.\nAs a full-service DevOps services company, we bring together skilled cloud engineers, automation experts, and support staff under one roof. Our team holds hands-on experience with AWS, Azure, and Google Cloud, and we follow proven DevOps consulting methods used by top enterprises around the world.\nWhether you are a startup setting up your first server or a large enterprise looking for enterprise DevOps services, our DevOps service provider team builds a plan that fits your business, your budget, and your goals. We are proud to be a DevOps company USA teams trust, and we provide DevOps services USA and DevOps consulting services USA businesses turn to when they want real results, not empty promises.",
   },
-  
+
+  // Agency Section
+  agencySection: {
+    title: "Your Cloud DevOps Agency in the USA",
+    description:
+      "Clickmasters works as a Cloud DevOps Agency USA businesses rely on, supporting companies from coast to coast alongside our clients in the UK and UAE. Some teams look for a DevOps Agency USA to handle day-to-day operations, while others need a full DevOps Development Agency USA to build new cloud systems from the ground up.\nWe also work as a DevOps Consulting Agency USA for teams that just need expert guidance, and as a Cloud DevOps Development Agency for companies building new cloud-native products. Whether you need us as a general DevOps Agency, a focused DevOps Services Agency, or a DevOps Solutions Agency and DevOps Automation Agency for a specific project, our DevOps Development Agency and DevOps Consulting Agency teams are ready to help.",
+  },
+
   // Trusted Clients
   trustedClients: [
     { name: "SaaS Company", industry: "SaaS", icon: "Cloud" },
@@ -3807,7 +3832,7 @@ cloudDevOps: {
   // Benefits Section
   benefitsSection: {
     title: "Benefits of Working With Our DevOps Team",
-    description: "Our DevOps services deliver real business value through faster releases, lower costs, and stronger security.",
+    // description: "Our DevOps services deliver real business value through faster releases, lower costs, and stronger security.",
   },
   benefits: [
     "Faster software releases with fewer bugs",
@@ -3824,43 +3849,40 @@ cloudDevOps: {
     description: "There are many companies that call themselves a DevOps agency, but not all of them deliver real results. Here is what sets our cloud DevOps consulting services apart:",
     reasons: [
       {
-        title: "Certified engineers",
-        description: "Real experience on AWS, Azure, and Google Cloud, not just theory",
+        
+        description: "Certified engineers with real experience on AWS, Azure, and Google Cloud",
       },
       {
-        title: "Clear, step-by-step process",
-        description: "No hidden surprises, every stage documented and communicated",
+        
+        description: " A clear, step-by-step process with no hidden surprises",
       },
       {
-        title: "Honest, upfront pricing",
-        description: "No long-term lock-in, transparent costs from the start",
+        
+        description: " Honest, upfront pricing with no long-term lock-in",
       },
       {
-        title: "Global experience",
-        description: "Serving clients across the USA, UK, and UAE with local understanding",
+       
+        description: " Experience serving clients across the USA, UK, and UAE",
       },
       {
-        title: "Fast response times",
-        description: "Dedicated support team that responds quickly and resolves issues",
+       
+        description: "Fast response times and a dedicated support team",
       },
       {
-        title: "Proven track record",
-        description: "Long-term client relationships and results our clients rank among the best cloud DevOps services they have used",
+       
+        description: "A top cloud DevOps services track record built on long-term client relationships and results our clients rank among the best cloud DevOps services they have used",
       },
     ],
-    closingText: "This combination is why businesses consistently choose Clickmasters as their trusted DevOps partner.",
+    closingText: "",
   },
   
   // Technology Stack
   techStack: {
     title: "Technology We Work With",
     description: "Our cloud DevOps engineering services and DevOps engineering services are built on tools that are trusted by companies around the world.",
-    frontend: ["React", "Next.js"],
-    backend: ["Node.js", "Python", "Go"],
-    databases: ["PostgreSQL", "MongoDB", "Redis"],
+  
     cloudDevOps: ["AWS", "Microsoft Azure", "Google Cloud Platform", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "Ansible", "Prometheus", "Grafana"],
-    aiAutomation: ["Custom automation workflows", "AI/ML integration"],
-    closingText: "We use trusted, enterprise-grade tools to build reliable, scalable DevOps solutions.",
+    
   },
   
   // Testimonials
@@ -3924,17 +3946,17 @@ cloudDevOps: {
   // Industries Section
   industriesSection: {
     title: "Industries We Serve",
-    description: "Our DevOps implementation services support businesses across many industries.",
+    description: "Our DevOps implementation services support businesses across many industries, including:",
   },
   industries: [
-    { name: "E-commerce & Retail", description: "Scalable cloud infrastructure for online stores" },
-    { name: "Healthcare", description: "Secure, HIPAA-ready cloud environments" },
-    { name: "FinTech & Banking", description: "Compliant, high-security cloud systems" },
-    { name: "SaaS & Software", description: "Cloud-native platforms and CI/CD pipelines" },
-    { name: "Manufacturing", description: "Industrial IoT and supply chain automation" },
-    { name: "Logistics & Supply Chain", description: "Real-time tracking and route optimization" },
-    { name: "Education Technology", description: "Scalable learning platforms and student data" },
-    { name: "Real Estate", description: "Property management and listing platforms" },
+    { name: "E-commerce & Retail" },
+    { name: "Healthcare" },
+    { name: "FinTech & Banking" },
+    { name: "SaaS & Software" },
+    { name: "Manufacturing" },
+    { name: "Logistics & Supply Chain" },
+    { name: "Education Technology" },
+    { name: "Real Estate" },
   ],
   
   // Pricing Section
@@ -4343,14 +4365,16 @@ cybersecurity: {
   // Trust Section Data
   trustSection: {
     title: "A Cybersecurity Services Company Built on Trust and Real Protection",
-    description: "Clickmasters is a US-based cybersecurity company built for one reason: to keep businesses safe from threats that grow more advanced every year. We are not a call center reselling security software. We are a hands-on cybersecurity service provider with engineers who test, monitor, and defend your systems every day.\nCyberattacks don't wait for a good time to happen. A single data breach can cost a company its customers' trust, its revenue, and in some cases, its future. That's why our cybersecurity consulting company approach starts with understanding your business first — what data you hold, what systems you run, and what a breach would actually cost you — before we recommend a single tool.\nWe work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+    description:
+      "Clickmasters is a US-based cybersecurity company built for one reason: to keep businesses safe from threats that grow more advanced every year. We are not a call center reselling security software. We are a hands-on cybersecurity service provider with engineers who test, monitor, and defend your systems every day.\nCyberattacks don't wait for a good time to happen. A single data breach can cost a company its customers' trust, its revenue, and in some cases, its future. That's why our cybersecurity consulting company approach starts with understanding your business first — what data you hold, what systems you run, and what a breach would actually cost you — before we recommend a single tool.\nWe work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+    pointsHeading: "What makes us a leading cybersecurity services company:",
     points: [
       "Certified security engineers with real-world attack and defense experience",
       "Clear, plain-English reporting — no confusing jargon",
       "Support for compliance frameworks like HIPAA, SOC 2, PCI-DSS, and GDPR",
       "Fast response times when something looks wrong",
     ],
-    closingText: "We work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
+    button: "Schedule a Free Consultation",
   },
   
   // Trusted Clients
@@ -4408,15 +4432,39 @@ cybersecurity: {
   // Technology Stack Data
   techStack: {
     title: "Technology Behind Our Cybersecurity Services",
-    description: "Our cybersecurity services and solutions are powered by proven, industry-trusted tools:",
-    networkSecurity: ["Firewalls", "Cisco", "Palo Alto", "Fortinet"],
-    threatDetection: ["Splunk", "IBM QRadar", "Microsoft Sentinel"],
-    cloudSecurity: ["AWS Security Hub", "Azure Security Center", "Google Chronicle"],
-    endpointProtection: ["CrowdStrike", "SentinelOne", "Microsoft Defender"],
-    penetrationTesting: ["Burp Suite", "Metasploit", "Nmap", "Kali Linux"],
-    identityAccess: ["Okta", "Microsoft Entra ID", "Duo Security"],
-    complianceGRC: ["Vanta", "Drata", "OneTrust"],
-    closingText: "We combine these tools with practical security engineering so your defenses remain visible, manageable, and aligned with your business risk.",
+    description:
+      "Our cybersecurity services and solutions are powered by proven, industry-trusted tools:",
+    groups: [
+      {
+        label: "Network Security",
+        items: ["Firewalls", "Cisco", "Palo Alto", "Fortinet"],
+      },
+      {
+        label: "Threat Detection & SIEM",
+        items: ["Splunk", "IBM QRadar", "Microsoft Sentinel"],
+      },
+      {
+        label: "Cloud Security",
+        items: ["AWS Security Hub", "Azure Security Center", "Google Chronicle"],
+      },
+      {
+        label: "Endpoint Protection",
+        items: ["CrowdStrike", "SentinelOne", "Microsoft Defender"],
+      },
+      {
+        label: "Penetration Testing",
+        items: ["Burp Suite", "Metasploit", "Nmap", "Kali Linux"],
+      },
+      {
+        label: "Identity & Access",
+        items: ["Okta", "Microsoft Entra ID", "Duo Security"],
+      },
+      {
+        label: "Compliance & GRC",
+        items: ["Vanta", "Drata", "OneTrust"],
+      },
+    ],
+    closingText: "This stack allows our cybersecurity company to deliver protection that works across your entire business, not just one part of it.",
   },
   
   // Client Success Stories (Testimonials)
@@ -4921,6 +4969,7 @@ qaTesting: {
   trustSection: {
     title: "A QA Testing Company Built Around Your Release Schedule",
     description: "ClickMasters is a US-focused QA testing services company built for teams that can't afford to ship broken software. We are not a testing checklist factory. We are a hands-on software QA company that acts like part of your team — writing test plans around your product, not a generic template.\nA single bug in production can cost more than the fix itself. It costs user trust, bad reviews, and support tickets that pull your developers away from building new features. That's why our QA and testing services start with understanding how your users actually use your product, then build a testing strategy around real-world scenarios, not just a checkbox exercise.\nWe work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
+    pointsHeading: "What makes us a trusted QA testing services company:",
     points: [
       "ISTQB-aligned testers with real production testing experience",
       "Clear, easy-to-read bug reports — no confusing technical jargon",
@@ -4993,7 +5042,7 @@ qaTesting: {
     mobileTesting: ["BrowserStack", "Sauce Labs", "Firebase Test Lab"],
     ciCdIntegration: ["Jenkins", "GitHub Actions", "GitLab CI", "Azure DevOps"],
     bugTracking: ["Jira", "TestRail", "Zephyr"],
-    closingText: "This testing toolkit gives your team repeatable coverage across web, mobile, API, performance, and security workflows without slowing down delivery.",
+    closingText: "This stack allows our QA testing company to deliver fast, reliable results that fit directly into your existing development workflow.",
   },
   
   // Client Success Stories (Testimonials)

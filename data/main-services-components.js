@@ -375,6 +375,11 @@ export function TrustSection({ service }) {
                   {paragraph}
                 </p>
               ))}
+              {trustData.pointsHeading ? (
+                <p className="text-base font-semibold leading-7 text-foreground">
+                  {trustData.pointsHeading}
+                </p>
+              ) : null}
               {uniquePoints.map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1.5 h-5 w-5 shrink-0 text-primary" />
@@ -565,8 +570,8 @@ export function BenefitsSection({ service }) {
             "Benefits of Our Software Development Services"
           }
           copy={
-            service.benefitsSection?.description ||
-            "Businesses choose our software development solutions for measurable, practical reasons."
+            service.benefitsSection?.description 
+            
           }
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -899,7 +904,7 @@ export function WhyChooseUsSection({ service }) {
               </span>
               <p className="text-base leading-7 text-muted-foreground">
                 <span className="font-semibold text-foreground">
-                  {reason.title}:{" "}
+                  {reason.title}{" "}
                 </span>
                 {reason.description}
               </p>
@@ -1160,6 +1165,28 @@ export function FinalCTA({ service }) {
               {cta.secondary}
             </Link>
           ) : null}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================
+// AGENCY SECTION
+// ============================================
+export function AgencySection({ service }) {
+  const data = service.agencySection;
+
+  if (!data) return null;
+
+  return (
+    <section className="bg-background px-5 py-24 md:px-10">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="text-[clamp(2.2rem,4vw,3.5rem)] font-semibold leading-[1.05] tracking-tight text-foreground">
+          {data.title}
+        </h2>
+        <div className="mt-6 max-w-3xl whitespace-pre-line text-lg leading-8 text-muted-foreground">
+          {data.description}
         </div>
       </div>
     </section>

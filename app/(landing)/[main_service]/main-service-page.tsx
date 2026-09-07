@@ -1,6 +1,7 @@
 // main-service-page.js
 import { PageFrame } from "./[sub_service]/landing-primitives";
 import {
+  AgencySection,
   BenefitsSection,
   ClientSuccessStories,
   ExploreSection,
@@ -38,6 +39,7 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <ProcessSection service={service} />
           <SectionCta label={service.sectionCtas?.afterProcess} />
           <PricingSection plans={service.pricing || []} service={service} />
+          <AgencySection service={service} />
           <FaqSection service={service} />
           <FinalCTA service={service} />
         </main>

@@ -886,68 +886,11 @@ export const SERVICE_SECTION_DATA = {
   },
 
   "cloud-and-devops": {
-    trustedClients: [
-      client("TechCorp", "Technology", "CircuitBoard"),
-      client("FinTrust", "Finance", "Coins"),
-      client("LogiFlow", "Logistics", "Truck"),
-      client("ScaleAPI", "SaaS", "Cloud"),
-      client("SecureBank", "Banking", "Landmark"),
-    ],
-    features: [
-      feature(
-        "Cloud Migration",
-        "AWS, Azure, and GCP with minimal downtime",
-        "Cloud",
-      ),
-      feature("CI/CD Automation", "Faster, safer releases", "Workflow"),
-      feature("Kubernetes Ops", "Container orchestration at scale", "Box"),
-    ],
-    stats: [
-      { value: "200+", label: "Cloud Migrations" },
-      { value: "99.9%", label: "Uptime SLA" },
-      { value: "50%", label: "Cost Reduction" },
-      { value: "24/7", label: "SRE Support" },
-    ],
-    pricing: [
-      tier("Cloud Audit", "$3,500+", "Cost and security review", "2–3 weeks", [
-        "Architecture review",
-        "Cost report",
-        "Security gaps",
-        "Remediation plan",
-      ]),
-      tier(
-        "DevOps Setup",
-        "$12,000+",
-        "CI/CD and infrastructure as code",
-        "4–8 weeks",
-        ["Pipeline setup", "IaC templates", "Staging/prod", "Runbooks"],
-      ),
-      tier(
-        "Managed Cloud",
-        "$8,000/mo+",
-        "Ongoing SRE and optimization",
-        "Monthly",
-        ["Monitoring", "Incident response", "Scaling", "Cost optimization"],
-      ),
-    ],
-    faqs: [
-      faq(
-        "Which cloud providers do you support?",
-        "Amazon Web Services, Microsoft Azure, and Google Cloud Platform including hybrid setups.",
-      ),
-      faq(
-        "Can you migrate us with zero downtime?",
-        "We use blue/green and canary strategies to minimize risk during cutover.",
-      ),
-      faq(
-        "Do you implement Kubernetes?",
-        "Yes. We design clusters, Helm charts, autoscaling, and observability with Prometheus/Grafana or cloud-native tools.",
-      ),
-      faq(
-        "How do you handle cloud security?",
-        "IAM hardening, secrets management, network segmentation, and compliance-aligned baselines (SOC2, ISO).",
-      ),
-    ],
+    trustedClients: [],
+    features: [],
+    stats: [],
+    pricing: [],
+    faqs: [],
   },
 
   cybersecurity: {

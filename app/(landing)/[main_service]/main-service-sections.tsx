@@ -387,6 +387,7 @@ export function TechStackSection({
   const copy =
     techData?.description ||
     "We choose stacks for maintainability, hiring reality, and production constraints.";
+  const groups = techData?.groups;
   const chips: string[] = techData
     ? Object.entries(techData)
         .filter(
@@ -407,16 +408,38 @@ export function TechStackSection({
     <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading eyebrow="Tech stack" title={title} copy={copy} />
-        <div className="mt-14 flex flex-wrap justify-center gap-3">
-          {chips.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
+        {groups?.length ? (
+          <div className="mt-14 grid gap-8 md:grid-cols-2">
+            {groups.map((group) => (
+              <div key={group.label} className="space-y-3">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary-foreground/80">
+                  {group.label}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {(group.items || []).map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-2 text-sm font-semibold"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-14 flex flex-wrap justify-center gap-3">
+            {chips.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        )}
         {closingText ? (
           <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
             {closingText}
