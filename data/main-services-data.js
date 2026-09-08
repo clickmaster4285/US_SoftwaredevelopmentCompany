@@ -910,12 +910,12 @@ webDevelopment: {
   
   // Industries Data
   industries: [
-    { name: "SaaS and technology", description: "scalable platforms and technology solutions" },
-    { name: "Healthcare", description: "secure patient portals and healthcare systems" },
-    { name: "Finance and fintech", description: "secure transaction systems and compliance tooling" },
-    { name: "Retail and e-commerce", description: "online stores and omnichannel solutions" },
-    { name: "Education", description: "learning management systems and educational platforms" },
-    { name: "Logistics and supply chain", description: "fleet management and tracking solutions" },
+    { name: "SaaS and technology" },
+    { name: "Healthcare" },
+    { name: "Finance and fintech" },
+    { name: "Retail and e-commerce" },
+    { name: "Education" },
+    { name: "Logistics and supply chain" },
   ],
   
   // Pricing Section
@@ -1330,12 +1330,12 @@ mobileDevelopment: {
   
   // Industries Data
   industries: [
-    { name: "Health & wellness", description: "fitness tracking and health monitoring apps" },
-    { name: "Healthcare", description: "patient portals and medical record apps" },
-    { name: "Fintech and finance", description: "secure payment and banking apps" },
-    { name: "Mobility and logistics", description: "real-time tracking and delivery apps" },
-    { name: "Education (EdTech)", description: "learning platforms and educational apps" },
-    { name: "Retail and e-commerce", description: "mobile shopping and marketplace apps" },
+    { name: "Health & wellness" },
+    { name: "Healthcare" },
+    { name: "Fintech and finance" },
+    { name: "Mobility and logistics" },
+    { name: "Education (EdTech)" },
+    { name: "Retail and e-commerce" },
   ],
 
   // Pricing Section
@@ -1744,13 +1744,13 @@ artificialIntelligence: {
   trustSection: {
     title: "Artificial Intelligence Company Built for Real Results",
     description: "Clickmasters is an artificial intelligence company delivering scalable AI solutions built around real business goals. Our AI developers, data engineers, and AI consultants specialize in machine learning, large language models, and intelligent automation.\nAs a custom AI development company, we create tailored solutions to reduce costs, automate operations, and unlock valuable data insights. Whether you need an AI chatbot development company for customer support or an enterprise AI solutions partner, our artificial intelligence services and solutions are built to scale.\nOur AI development services combine secure engineering, transparent delivery, measurable ROI, and expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock.",
-    points: [
-      "Secure engineering and transparent delivery",
-      "Measurable ROI on every AI initiative",
-      "Expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock",
-      "Custom AI solutions for every business need",
-    ],
-    closingText: "Our artificial intelligence services and solutions are built to scale.",
+    // points: [
+    //   "Secure engineering and transparent delivery",
+    //   "Measurable ROI on every AI initiative",
+    //   "Expertise across OpenAI, Anthropic, Google Gemini, and AWS Bedrock",
+    //   "Custom AI solutions for every business need",
+    // ],
+    // closingText: "Our artificial intelligence services and solutions are built to scale.",
   },
   
   // Trusted Clients
@@ -1765,15 +1765,14 @@ artificialIntelligence: {
   // Benefits Section
   benefitsSection: {
     title: "Why Businesses Choose Our AI Development Services",
-    description: "Our AI development services deliver real business value through proven approaches and measurable results.",
   },
   benefits: [
-    "Faster time to value — we move AI from idea to production quickly using proven architectures",
-    "Lower operational costs — our AI automation systems reduce manual, repetitive work",
-    "Data-driven decisions — predictive analytics and AI-powered insights help you make faster, confident decisions",
-    "Secure, governed AI — every solution includes guardrails, access controls, and monitoring",
-    "Built to scale — we architect systems that grow with your user base and data volume",
-    "Measurable ROI — every AI initiative tied to clear business KPIs",
+    "Faster Time to Value: We move AI from idea to production quickly, using proven architectures instead of reinventing the wheel on every project.",
+    "Lower Operational Costs: Our AI automation systems reduce manual, repetitive work — freeing your team to focus on higher-value tasks.",
+    "Data-Driven Decisions: Predictive analytics and AI-powered insights help you make faster, more confident business decisions.",
+    "Secure, Governed AI: Every AI solution we build includes guardrails, access controls, and monitoring — so you stay compliant and in control.",
+    "Built to Scale: As a custom AI development company, we architect systems that grow with your user base and data volume, not just your first pilot.",
+    "Measurable ROI: We tie every AI initiative to clear business KPIs, so you always know what your AI investment is delivering.",
   ],
   
   // Why Choose Us
@@ -1783,42 +1782,60 @@ artificialIntelligence: {
     reasons: [
       {
         title: "Full AI stack specialists",
-        description: "Machine learning, NLP, computer vision, and generative AI — not generalists stretched thin",
+        description:
+          "Specialists across the full AI stack — machine learning, NLP, computer vision, and generative AI, not generalists stretched thin",
       },
       {
-        title: "Reusable patterns",
-        description: "Proven, reusable patterns instead of one-off, throwaway builds",
+        title: "Reusable, proven patterns",
+        description:
+          "Reusable, proven patterns instead of one-off, throwaway builds",
       },
       {
         title: "Transparent communication",
-        description: "Regular demos, milestones, and full project visibility",
+        description:
+          "Transparent communication with regular demos, milestones, and full project visibility",
       },
       {
-        title: "Security-first approach",
-        description: "Security and governance built in, not bolted on after launch",
+        title: "Security and governance",
+        description:
+          "Security and governance built in, not bolted on after launch",
       },
       {
         title: "Real industry experience",
-        description: "Across SaaS, healthcare, finance, retail, logistics, and education",
+        description:
+          "Real industry experience across SaaS, healthcare, finance, retail, logistics, and education",
       },
       {
-        title: "Ongoing support",
-        description: "Monitoring, retraining, and optimization included after launch",
+        title: "Post-launch support",
+        description:
+          "Support that continues after launch — monitoring, retraining, and optimization included",
       },
     ],
-    closingText: "This combination is why businesses evaluating artificial intelligence companies consistently choose Clickmasters as their trusted AI development partner.",
   },
   
   // Technology Stack
   techStack: {
     title: "AI Development Technologies Behind Our Solutions",
-    description: "We choose technology for reliability, maintainability, and long-term support — not trends. This combination lets our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
-    frontend: ["React", "Next.js"],
-    backend: ["Node.js", "Python"],
-    databases: ["PostgreSQL", "Vector Databases"],
-    cloudDevOps: ["AWS", "Azure", "AWS Bedrock", "Docker"],
-    aiAutomation: ["OpenAI", "Anthropic Claude", "Google Gemini", "Llama", "Mistral", "TensorFlow", "PyTorch"],
-    closingText: "Every technology decision is documented during the architecture phase, ensuring your AI solution is secure, scalable, and maintainable.",
+    description: "We choose technology for reliability, maintainability, and long-term support — not trends.",
+    groups: [
+      {
+        label: "AI Models & Frameworks",
+        items: ["OpenAI (GPT)", "Anthropic (Claude)", "Google Gemini", "open-source LLMs (Llama, Mistral)"],
+      },
+      {
+        label: "ML & Data",
+        items: ["Python", "TensorFlow", "PyTorch", "vector databases"],
+      },
+      {
+        label: "Infrastructure",
+        items: ["AWS", "Azure", "AWS Bedrock", "Docker"],
+      },
+      {
+        label: "Application Layer",
+        items: ["Next.js", "React", "Node.js", "PostgreSQL"],
+      },
+    ],
+    closingText: "This combination lets our AI developers deliver AI development services that are secure, scalable, and easy for your internal team to maintain long after launch.",
   },
   
   // Testimonials
@@ -2103,6 +2120,27 @@ machineLearning: {
       ],
     },
     {
+      title: "Machine Learning Experts",
+      slug: "machine-learning-experts",
+      description: "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
+      icon: "Users",
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Machine Learning Experts | Clickmasters",
+      metaDescription: "Dedicated machine learning experts and data scientists who design, train, and validate models for your use case.",
+      lead: "A dedicated team of ML experts and data scientists for your specific use case.",
+      highlights: [
+        "Dedicated ML team",
+        "Model design & training",
+        "Validation & testing",
+        "Use-case specific solutions",
+      ],
+      pricing: [
+        { type: "ML Expert Engagement", investment: "$12,000+", timeline: "4-6 weeks" },
+        { type: "Dedicated ML Team", investment: "$35,000+", timeline: "2-4 months" },
+        { type: "Enterprise ML Staffing", investment: "$75,000+", timeline: "5-9 months" },
+      ],
+    },
+    {
       title: "Predictive Analytics",
       slug: "predictive-analytics",
       description: "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
@@ -2184,6 +2222,27 @@ machineLearning: {
         { type: "Deep Learning POC", investment: "$15,000+", timeline: "6-8 weeks" },
         { type: "Production DL Solution", investment: "$45,000+", timeline: "3-5 months" },
         { type: "Enterprise DL Platform", investment: "$90,000+", timeline: "6-12 months" },
+      ],
+    },
+    {
+      title: "Deep Learning Experts",
+      slug: "deep-learning-experts",
+      description: "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
+      icon: "Database",
+      heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      metaTitle: "Deep Learning Experts | Clickmasters",
+      metaDescription: "Deep learning experts who design neural network architectures suited to your data.",
+      lead: "Our deep learning experts design neural network architectures suited to your data.",
+      highlights: [
+        "Convolutional networks",
+        "Transformer-based models",
+        "Neural architecture design",
+        "Data-specific tuning",
+      ],
+      pricing: [
+        { type: "DL Expert Engagement", investment: "$15,000+", timeline: "6-8 weeks" },
+        { type: "Deep Learning Team", investment: "$45,000+", timeline: "3-5 months" },
+        { type: "Enterprise DL Suite", investment: "$90,000+", timeline: "6-12 months" },
       ],
     },
     {
@@ -2273,12 +2332,36 @@ machineLearning: {
     description: "Our machine learning development services deliver real business value through proven approaches and measurable results.",
   },
   benefits: [
-    "Faster time to value — we use proven ML frameworks and reusable pipelines to move from data exploration to a working model faster",
-    "Higher model accuracy — rigorous validation, cross-testing, and hyperparameter tuning ensure reliable performance on real-world data",
-    "Lower operational costs — automated ML pipelines and optimized inference reduce manual work and compute costs",
-    "Scalable ML infrastructure — we architect ML systems that scale with your data volume and user growth",
-    "Continuous improvement — we monitor live model performance and retrain as your data shifts, so accuracy doesn't degrade over time",
-    "Measurable business impact — every ML service is tied to clear KPIs — accuracy, cost savings, or revenue impact",
+    {
+      title: "Faster Time to Value",
+      description:
+        "We use proven ML frameworks and reusable pipelines to move from data exploration to a working model faster than building from scratch.",
+    },
+    {
+      title: "Higher Model Accuracy",
+      description:
+        "Rigorous validation, cross-testing, and hyperparameter tuning ensure your models perform reliably on real-world data, not just training data.",
+    },
+    {
+      title: "Lower Operational Costs",
+      description:
+        "Automated ML pipelines and optimized inference reduce the manual work and compute costs tied to running models at scale.",
+    },
+    {
+      title: "Scalable ML Infrastructure",
+      description:
+        "As an AI ML development company, we architect ML systems that scale with your data volume and user growth, not just your first pilot.",
+    },
+    {
+      title: "Continuous Improvement",
+      description:
+        "We monitor live model performance and retrain as your data shifts, so accuracy doesn't degrade over time.",
+    },
+    {
+      title: "Measurable Business Impact",
+      description:
+        "Every machine learning development service we deliver is tied to clear KPIs — accuracy, cost savings, or revenue impact — so ROI is never a guessing game.",
+    },
   ],
   
   // Why Choose Us
@@ -2288,26 +2371,25 @@ machineLearning: {
     reasons: [
       {
         title: "Specialized Expertise",
-        description: "Predictive analytics, deep learning, NLP, and computer vision — not generalists stretched thin",
+        description: "Predictive analytics, deep learning, NLP, and computer vision.",
       },
       {
         title: "Reliable Models",
-        description: "Thorough testing and validation before deployment, not hoping things work in production",
+        description: "Thorough testing and validation before deployment.",
       },
       {
         title: "Clear Communication",
-        description: "Regular updates, demos, and transparent progress on every project",
+        description: "Regular updates, demos, and transparent progress.",
       },
       {
         title: "Built for Production",
-        description: "MLOps, monitoring, versioning, and retraining from day one, not as an afterthought",
+        description: "MLOps, monitoring, versioning, and retraining from day one.",
       },
       {
         title: "Industry Experience",
-        description: "Solutions for SaaS, finance, healthcare, retail, and logistics with real-world results",
+        description: "Solutions for SaaS, finance, healthcare, retail, and logistics.",
       },
     ],
-    closingText: "This combination is why businesses consistently choose Clickmasters as their trusted ML development partner.",
   },
   
   // Technology Stack
@@ -2799,16 +2881,16 @@ uiUxDesign: {
     title: "Technology & Tools We Use",
     description:
       "Our UX UI design agency uses industry-leading tools to design, prototype, and test digital products, including Figma, Adobe XD, Sketch, InVision, Maze, and Hotjar. On the development side, our team works with React, Flutter, Swift, and Kotlin, so your project moves smoothly from design straight into a fully working product — with no gaps between design ui ux and development.",
-    groups: [
-      {
-        label: "Design Tools",
-        items: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
-      },
-      {
-        label: "Development",
-        items: ["React", "Flutter", "Swift", "Kotlin"],
-      },
-    ],
+    // groups: [
+    //   {
+    //     label: "Design Tools",
+    //     items: ["Figma", "Adobe XD", "Sketch", "InVision", "Maze", "Hotjar"],
+    //   },
+    //   {
+    //     label: "Development",
+    //     items: ["React", "Flutter", "Swift", "Kotlin"],
+    //   },
+    // ],
   },
   
   // Testimonials
@@ -3293,15 +3375,14 @@ dataServices: {
   // Benefits Section
   benefitsSection: {
     title: "Why Data Services Matter for Your Business",
-    description: "Our data services deliver real business value through faster decisions, lower costs, and better customer experiences.",
   },
   benefits: [
-    "Faster decisions — get clear answers in hours, not weeks, with fast data processing services",
-    "Lower costs — find and cut wasted spending across your business",
-    "Better customer experience — know what your customers want before they ask",
-    "Safer data — keep your business data services protected and compliant",
-    "Room to grow — our cloud data services scale up as your business gets bigger",
-    "One trusted partner — get data consulting services, building, and support from a single team",
+    "Faster decisions: get clear answers in hours, not weeks, with fast data processing services",
+    "Lower costs: find and cut wasted spending across your business",
+    "Better customer experience: know what your customers want before they ask",
+    "Safer data: keep your business data services protected and compliant",
+    "Room to grow: our cloud data services scale up as your business gets bigger",
+    "One trusted partner: get data consulting services, building, and support from a single team",
   ],
   
   // Why Choose Us

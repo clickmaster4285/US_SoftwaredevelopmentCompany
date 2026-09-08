@@ -881,9 +881,10 @@ export function WhyChooseUsSection({ service }) {
     description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
     reasons: [],
     closingText: "",
+    paragraph: "",
   };
 
-  if (!whyData.reasons.length) return null;
+  if (!whyData.reasons?.length && !whyData.paragraph) return null;
 
   return (
     <section className="bg-background px-5 py-24 md:px-10">
@@ -894,22 +895,30 @@ export function WhyChooseUsSection({ service }) {
           copy={whyData.description}
         />
         <div className="mx-auto mt-12 max-w-3xl space-y-4">
-          {whyData.reasons.map((reason) => (
-            <div key={reason.title} className="flex items-start gap-3">
-              <span
-                className="text-sm leading-7 text-primary"
-                aria-hidden="true"
-              >
-                ●
-              </span>
-              <p className="text-base leading-7 text-muted-foreground">
-                <span className="font-semibold text-foreground">
-                  {reason.title}{" "}
+          {whyData.paragraph ? (
+            <p className="text-base leading-7 text-muted-foreground">
+              {whyData.paragraph}
+            </p>
+          ) : (
+            whyData.reasons.map((reason) => (
+              <div key={reason.title} className="flex items-start gap-3">
+                <span
+                  className="text-sm leading-7 text-primary"
+                  aria-hidden="true"
+                >
+                  ●
                 </span>
-                {reason.description}
-              </p>
-            </div>
-          ))}
+                <p className="text-base leading-7 text-muted-foreground">
+                  {reason.title ? (
+                    <span className="font-semibold text-foreground">
+                      {reason.title}{" "}
+                    </span>
+                  ) : null}
+                  {reason.description}
+                </p>
+              </div>
+            ))
+          )}
           {whyData.closingText ? (
             <p className="pt-2 text-base leading-7 text-muted-foreground">
               {whyData.closingText}
