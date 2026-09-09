@@ -730,6 +730,16 @@ export function ProcessSection({ service }) {
             </div>
           ))}
         </div>
+        {service.sectionCtas?.afterProcess && (
+          <div className="mt-12 flex justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-bold text-primary-foreground transition hover:opacity-90"
+            >
+              {service.sectionCtas.afterProcess} <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -1125,7 +1135,7 @@ export function SectionCta({ label }) {
   if (!label) return null;
 
   return (
-    <section className="bg-background px-5 pb-8 md:px-10">
+    <section className="bg-background px-5 py-1 md:px-10">
       <div className="mx-auto flex max-w-7xl justify-center">
         <Link
           href="/contact"
