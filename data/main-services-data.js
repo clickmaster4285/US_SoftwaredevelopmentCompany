@@ -1571,7 +1571,7 @@ artificialIntelligence: {
       ],
     },
     {
-      title: "Custom AI App Development",
+      title: "AI Developers & Custom AI App Development",
       slug: "custom-ai-app-development",
       description: "Our AI developers build custom AI applications — from internal tools to customer-facing products — tailored to your workflows, not a generic template.",
       icon: "Code2",

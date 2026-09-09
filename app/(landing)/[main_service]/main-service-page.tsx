@@ -37,7 +37,6 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <SectionCta label={service.sectionCtas?.afterWhyChooseUs} />
           <ClientSuccessStories service={service} />
           <ProcessSection service={service} />
-          <SectionCta label={service.sectionCtas?.afterProcess} />
           <PricingSection plans={service.pricing || []} service={service} />
           <AgencySection service={service} />
           <FaqSection service={service} />
