@@ -2720,7 +2720,7 @@ const aiModelDevelopmentOverride = {
   title: "AI Model Development",
   serviceName: "AI Model Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "AI Model Development | Fine-Tuning, Custom Models & MLOps | ClickMasters",
   metaDescription:
@@ -3068,7 +3068,7 @@ const dataEngineeringOverride = {
   title: "Data Engineering Company Building Robust Data Foundations",
   serviceName: "Data Engineering",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Data Engineering Services | ETL, Data Lakes & Warehousing | ClickMasters",
   metaDescription:
@@ -11064,7 +11064,7 @@ const uiUxDesignOverride = {
   title: "UI/UX Design Services for B2B Software",
   serviceName: "UI/UX Design",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "UI/UX Design Services | B2B Product & Web App Design | ClickMasters",
   metaDescription:
@@ -11736,7 +11736,7 @@ const productDesignOverride = {
   title: "Product Design Services",
   serviceName: "Product Design",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Product Design Services | UX-Led B2B Software Design | ClickMasters",
   metaDescription:
@@ -12060,7 +12060,7 @@ const webDesignOverride = {
   title: "Web Design Services",
   serviceName: "Web Design",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Web Design Services | Conversion-Focused B2B Web Design | ClickMasters",
   metaDescription:
@@ -12367,7 +12367,7 @@ const mobileAppDesignOverride = {
   title: "Mobile App Design Services",
   serviceName: "Mobile App Design",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Mobile App Design Services | iOS & Android UX Design | ClickMasters",
   metaDescription:
@@ -12690,7 +12690,7 @@ const uxResearchOverride = {
   title: "UX Research Services",
   serviceName: "UX Research",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "UX Research Services | User Research & Usability Testing | ClickMasters",
   metaDescription:
@@ -12993,7 +12993,7 @@ const wireframingPrototypingOverride = {
   title: "Wireframing & Prototyping Services",
   serviceName: "Wireframing & Prototyping",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Wireframing & Prototyping Services | Figma Prototypes | ClickMasters",
   metaDescription:
@@ -13283,7 +13283,7 @@ const designSystemsOverride = {
   title: "Design Systems Services",
   serviceName: "Design Systems",
   heroImage:
-    "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Design Systems Services | Figma + Storybook Component Libraries | ClickMasters",
   metaDescription:
@@ -14314,7 +14314,7 @@ const machineLearningSolutionsOverride = {
   title: "Machine Learning Solutions Company",
   serviceName: "Machine Learning Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Machine Learning Solutions Company | Custom ML Models for B2B | ClickMasters",
   metaDescription:
@@ -14767,7 +14767,7 @@ const predictiveAnalyticsOverride = {
   title: "Predictive Analytics Services",
   serviceName: "Predictive Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Predictive Analytics Services | ML Forecasting & Prediction | ClickMasters",
   metaDescription:
@@ -15091,7 +15091,7 @@ const recommendationSystemsOverride = {
   title: "Recommendation Systems",
   serviceName: "Recommendation Systems",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Recommendation System Development | Collaborative & Content-Based | ClickMasters",
   metaDescription:
@@ -15437,7 +15437,7 @@ const modelTrainingOptimisationOverride = {
   title: "Model Training & Optimisation",
   serviceName: "Model Training & Optimisation",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Model Training & Optimisation Services | Hyperparameter Tuning | ClickMasters",
   metaDescription:
@@ -15755,7 +15755,7 @@ const deepLearningSolutionsOverride = {
   title: "Deep Learning Solutions",
   serviceName: "Deep Learning Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Deep Learning Solutions | Neural Networks & PyTorch | ClickMasters",
   metaDescription:
@@ -17961,7 +17961,7 @@ const dataScienceAnalyticsOverride = {
   title: "Data Science & Analytics Services",
   serviceName: "Data Science & Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Data Science & Analytics Services | BI, Data Engineering & Insights | ClickMasters",
   metaDescription:
@@ -18406,7 +18406,7 @@ const businessIntelligenceOverride = {
   title: "Business Intelligence Services",
   serviceName: "Business Intelligence",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Business Intelligence Services | BI Dashboards & Analytics | ClickMasters",
   metaDescription:
@@ -18718,7 +18718,7 @@ const dataWarehousingOverride = {
   title: "Data Warehousing Services",
   serviceName: "Data Warehousing",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Data Warehousing Services | Snowflake, BigQuery & Redshift | ClickMasters",
   metaDescription:
@@ -19031,7 +19031,7 @@ const dataVisualizationOverride = {
   title: "Data Visualization Services",
   serviceName: "Data Visualization",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Data Visualization Services | Dashboards & Interactive Charts | ClickMasters",
   metaDescription:
@@ -19342,7 +19342,7 @@ const bigDataSolutionsOverride = {
   title: "Big Data Solutions",
   serviceName: "Big Data Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle:
     "Big Data Solutions | Spark, Kafka & Data Lakehouse | ClickMasters",
   metaDescription:

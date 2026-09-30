@@ -31,9 +31,20 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  const canonical = `/${main_service}/${sub_service}`;
+  const title = `${subService.title} | ${service.title} | Clickmasters`;
+
   return {
-    title: `${subService.title} | ${service.title} | Clickmasters`,
+    title,
     description: subService.description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title,
+      description: subService.description,
+      url: canonical,
+    },
   };
 }
 

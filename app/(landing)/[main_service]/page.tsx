@@ -33,12 +33,19 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  const canonical = `/${main_service}`;
+
   if (dedicatedService) {
     return {
       title: dedicatedService.metaTitle,
       description: dedicatedService.metaDescription,
       alternates: {
-        canonical: dedicatedService.canonical,
+        canonical,
+      },
+      openGraph: {
+        title: dedicatedService.metaTitle,
+        description: dedicatedService.metaDescription,
+        url: canonical,
       },
     };
   }
@@ -46,6 +53,14 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: `${service.title} | Clickmasters`,
     description: service.description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title: `${service.title} | Clickmasters`,
+      description: service.description,
+      url: canonical,
+    },
   };
 }
 

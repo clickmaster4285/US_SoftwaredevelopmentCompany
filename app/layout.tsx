@@ -1,8 +1,10 @@
 import "./globals.css";
 import Providers from "./providers";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Software Development Company – Custom Web & App Experts",
   description:
     "A trusted software development company offering custom web design, mobile app development & AI solutions for startups. Start your project today!",
@@ -11,7 +13,8 @@ export const metadata: Metadata = {
     description:
       "A trusted software development company offering custom web design, mobile app development & AI solutions for startups. Start your project today!",
     type: "website",
-    url: "https://clickmasterssoftwaredevelopmentcompany.com/",
+    siteName: "Clickmasters Software Development Company",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
@@ -21,9 +24,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "-tXrCr3W7GaCtu7v9t18TqvsR4ClJjeh2HdQwtV9jUc",
-  },
-  alternates: {
-    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/",
   },
 };
 

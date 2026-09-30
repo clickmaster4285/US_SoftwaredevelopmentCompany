@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import Navbar from "@/components/layout/Navbar";
+import { pageUrl } from "@/lib/site";
 import Footer from "@/components/layout/Footer";
 import {
   CheckCircle2,
@@ -46,7 +46,7 @@ export default function LocationServicePage({ data }: Props) {
       "@type": "ProfessionalService",
       name: "Clickmasters",
       description: data.metaDescription,
-      url: `https://clickmasters.com/${data.slug}`,
+      url: pageUrl(`/locations/${data.slug}`),
       address: {
         "@type": "PostalAddress",
         addressLocality: "Dallas",
@@ -71,21 +71,10 @@ export default function LocationServicePage({ data }: Props) {
 
   return (
     <>
-      <Head>
-        <title>{data.metaTitle || "Software Development Company"}</title>
-        <meta name="description" content={data.metaDescription || ""} />
-        <link rel="canonical" href={`https://clickmasters.com/${data.slug}`} />
-        <meta property="og:title" content={data.metaTitle} />
-        <meta property="og:description" content={data.metaDescription} />
-        {data.heroImage && (
-          <meta property="og:image" content={data.heroImage} />
-        )}
-        <meta name="robots" content="index, follow" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: generateSchema() }}
-        />
-      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateSchema() }}
+      />
 
       <div className="min-h-screen bg-background text-foreground">
         <Navbar />

@@ -12,6 +12,15 @@ export const metadata = {
   title: "Software Development Company Locations | Clickmasters",
   description:
     "Find software development services in your area. Clickmasters serves businesses across Los Angeles and beyond with custom software, web, mobile, and AI solutions.",
+  alternates: {
+    canonical: "/locations",
+  },
+  openGraph: {
+    title: "Software Development Company Locations | Clickmasters",
+    description:
+      "Find software development services in your area. Clickmasters serves businesses across Los Angeles and beyond with custom software, web, mobile, and AI solutions.",
+    url: "/locations",
+  },
 };
 
 export default function LocationsPage() {

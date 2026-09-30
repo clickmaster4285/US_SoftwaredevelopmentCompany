@@ -35,12 +35,12 @@ export async function generateMetadata({ params }: PageProps) {
     title: data.metaTitle,
     description: data.metaDescription,
     alternates: {
-      canonical: `https://clickmasters.com/${slug}`,
+      canonical: `/locations/${slug}`,
     },
     openGraph: {
       title: data.metaTitle,
       description: data.metaDescription,
-      url: `https://clickmasters.com/${slug}`,
+      url: `/locations/${slug}`,
       siteName: "Clickmasters",
       locale: "en_US",
       type: "website",

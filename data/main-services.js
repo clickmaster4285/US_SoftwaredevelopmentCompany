@@ -772,7 +772,7 @@ export const mainServicesData = {
       "Our design team creates intuitive, engaging experiences that users love.",
     heroBadge: "Award-Winning Design Team",
     heroImage:
-      "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "300+", label: "Design Projects" },
       { value: "95%", label: "User Satisfaction" },
@@ -788,7 +788,7 @@ export const mainServicesData = {
         description: "User-first interfaces.",
         icon: "Palette",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Product Design",
@@ -796,7 +796,7 @@ export const mainServicesData = {
         description: "End-to-end product thinking.",
         icon: "Package",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Web Design",
@@ -804,7 +804,7 @@ export const mainServicesData = {
         description: "Modern web layouts.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Mobile App Design",
@@ -820,7 +820,7 @@ export const mainServicesData = {
         description: "Research-backed decisions.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Wireframing & Prototyping",
@@ -828,7 +828,7 @@ export const mainServicesData = {
         description: "Rapid prototypes.",
         icon: "Edit3",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "Design Systems",
@@ -836,7 +836,7 @@ export const mainServicesData = {
         description: "Reusable language.",
         icon: "LayoutDashboard",
         heroImage:
-          "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
       },
     ],
   },
@@ -923,7 +923,7 @@ export const mainServicesData = {
         description: "Intelligent automation.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "AI Integration Services",
@@ -939,7 +939,7 @@ export const mainServicesData = {
         description: "Custom model training.",
         icon: "Cpu",
         heroImage:
-          "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
       },
       {
         title: "LLM Applications Development",
@@ -961,7 +961,7 @@ export const mainServicesData = {
   //   description: "Harness ML to transform data into actionable insights.",
   //   heroBadge: "50+ ML Models Deployed",
   //   heroImage:
-  //     "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //   stats: [
   //     { value: "50+", label: "ML Models" },
   //     { value: "95%", label: "Accuracy" },
@@ -973,7 +973,7 @@ export const mainServicesData = {
   //       description: "Tailored ML systems.",
   //       icon: "Brain",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Machine Learning Experts",
@@ -981,7 +981,7 @@ export const mainServicesData = {
   //       description: "Expert ML practitioners.",
   //       icon: "Users",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Predictive Analytics",
@@ -989,7 +989,7 @@ export const mainServicesData = {
   //       description: "Outcome forecasting.",
   //       icon: "BarChart3",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Recommendation Systems",
@@ -997,7 +997,7 @@ export const mainServicesData = {
   //       description: "Personalized engagement.",
   //       icon: "Target",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Model Training & Optimization",
@@ -1005,7 +1005,7 @@ export const mainServicesData = {
   //       description: "Performance tuning.",
   //       icon: "Settings",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Deep Learning Solutions",
@@ -1013,7 +1013,7 @@ export const mainServicesData = {
   //       description: "Advanced neural models.",
   //       icon: "Cpu",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Deep Learning Experts",
@@ -1021,7 +1021,7 @@ export const mainServicesData = {
   //       description: "Specialized architectures.",
   //       icon: "UserCheck",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   //     },
   //   ],
   // },
@@ -1558,7 +1558,7 @@ export const mainServicesData = {
       "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat.",
     heroBadge: "24/7 threat monitoring & response",
     heroImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "24/7", label: "Threat Monitoring & Response" },
       { value: "100+", label: "Security Audits Completed" },
@@ -1580,7 +1580,7 @@ export const mainServicesData = {
           "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Cybersecurity Risk Assessment Services | Clickmasters",
         metaDescription:
           "Cybersecurity risk assessment services that find weak points before attackers do — get a clear plan to fix them.",
@@ -1594,7 +1594,7 @@ export const mainServicesData = {
           "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
         icon: "Crosshair",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Penetration Testing Services | Clickmasters",
         metaDescription:
           "Ethical hacking and penetration testing services that show where your defenses fail — fix gaps before real breaches.",
@@ -1608,7 +1608,7 @@ export const mainServicesData = {
           "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
         icon: "ClipboardCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Security Audits & Compliance Management | Clickmasters",
         metaDescription:
           "Security audits and compliance management for HIPAA, PCI-DSS, SOC 2, and other standards — stay audit-ready.",
@@ -1622,7 +1622,7 @@ export const mainServicesData = {
           "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
         icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Network Security Services | Clickmasters",
         metaDescription:
           "Network security services with firewalls, intrusion detection, and constant monitoring — protect your business network.",
@@ -1636,7 +1636,7 @@ export const mainServicesData = {
           "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Cloud Security Services | Clickmasters",
         metaDescription:
           "Cloud security services for AWS, Azure, and Google Cloud — protect against misconfigurations, data leaks, and unauthorized access.",
@@ -1650,7 +1650,7 @@ export const mainServicesData = {
           "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Data Security Services | Clickmasters",
         metaDescription:
           "Data security services with encryption, access controls, and backup strategies — keep sensitive data safe.",
@@ -1664,7 +1664,7 @@ export const mainServicesData = {
           "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Application Security Services | Clickmasters",
         metaDescription:
           "Application security services that catch coding flaws and vulnerabilities — secure web and mobile apps.",
@@ -1678,7 +1678,7 @@ export const mainServicesData = {
           "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
         icon: "Laptop",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Endpoint Security Services | Clickmasters",
         metaDescription:
           "Endpoint security services that protect laptops, phones, and devices — secure every entry point.",
@@ -1692,7 +1692,7 @@ export const mainServicesData = {
           "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
         icon: "Settings",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Managed Cybersecurity Services & SOC | Clickmasters",
         metaDescription:
           "Managed cybersecurity services with 24/7 SOC protection — we watch your systems so you don't have to.",
@@ -1706,7 +1706,7 @@ export const mainServicesData = {
           "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
         icon: "Radar",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Cyber Threat Detection & Management Services | Clickmasters",
         metaDescription:
           "Real-time threat detection and management services — catch threats early and respond in minutes, not days.",
@@ -1720,7 +1720,7 @@ export const mainServicesData = {
           "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Cybersecurity Consulting Services | Clickmasters",
         metaDescription:
           "Cybersecurity consulting services that build a full security roadmap tailored to your business size, industry, and budget.",
@@ -1734,7 +1734,7 @@ export const mainServicesData = {
           "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
         icon: "Wrench",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3a58f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
         metaTitle: "Custom Cybersecurity Software Development | Clickmasters",
         metaDescription:
           "Custom cybersecurity software development and automation — build solutions that work together instead of creating manual work.",
