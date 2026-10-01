@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import SubServicePage from "./SubServicePage";
-import { services } from "./service-data";
+import { resolveService, services } from "./service-data";
 
 type PageProps = {
   params: Promise<{
@@ -20,7 +20,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const { main_service, sub_service } = await params;
-  const service = services[main_service];
+  const service = resolveService(main_service);
   const subService = service?.subServices?.find(
     (item) => item.slug === sub_service,
   );
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function Page({ params }: PageProps) {
   const { main_service, sub_service } = await params;
-  const service = services[main_service];
+  const service = resolveService(main_service);
   const subService = service?.subServices?.find(
     (item) => item.slug === sub_service,
   );

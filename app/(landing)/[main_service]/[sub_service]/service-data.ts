@@ -3,6 +3,7 @@ import {
   iconMap,
   mainServicesData,
 } from "@/data/main-services";
+import { mainServiceData } from "@/data/main-services-data";
 
 export type IconName = keyof typeof iconMap;
 
@@ -80,14 +81,57 @@ export type MainService = {
   trustedClients?: TrustedClient[];
 };
 
+function mergeSubServices(
+  preferred: SubService[] = [],
+  fallback: SubService[] = [],
+) {
+  const seen = new Set<string>();
+  const merged: SubService[] = [];
+
+  for (const item of [...preferred, ...fallback]) {
+    if (!item?.slug || seen.has(item.slug)) continue;
+    seen.add(item.slug);
+    merged.push(item);
+  }
+
+  return merged;
+}
+
+const legacyAliases: Record<string, string> = {};
+
 export const services = Object.keys(mainServicesData).reduce(
-  (acc, slug) => {
-    const service = getServiceData(slug);
-    if (service) {
-      acc[slug] = service as MainService;
+  (acc, key) => {
+    const service = getServiceData(key) as MainService | null;
+    if (!service?.slug) return acc;
+
+    acc[service.slug] = service;
+    if (key !== service.slug) {
+      legacyAliases[key] = service.slug;
     }
     return acc;
   },
   {} as Record<string, MainService>,
 );
+
+for (const richService of Object.values(mainServiceData) as MainService[]) {
+  if (!richService?.slug) continue;
+
+  const existing = services[richService.slug];
+  services[richService.slug] = existing
+    ? {
+        ...existing,
+        ...richService,
+        slug: richService.slug,
+        subServices: mergeSubServices(
+          richService.subServices,
+          existing.subServices,
+        ),
+      }
+    : richService;
+}
+
+export function resolveService(slug: string) {
+  return services[slug] ?? services[legacyAliases[slug]];
+}
+
 export { iconMap };

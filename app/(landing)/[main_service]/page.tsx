@@ -3,7 +3,7 @@ import DedicatedMainServicePage from "./main-service-page";
 import LegacyMainServicePage from "./MainServicePage";
 import { mainServiceData } from "@/data/main-services-data";
 import { mainServicesData } from "@/data/main-services";
-import { services } from "./[sub_service]/service-data";
+import { resolveService } from "./[sub_service]/service-data";
 
 type PageProps = {
   params: Promise<{
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps) {
   const dedicatedService = Object.values(mainServiceData).find(
     (entry) => entry.slug === main_service,
   );
-  const service = dedicatedService ?? services[main_service];
+  const service = dedicatedService ?? resolveService(main_service);
 
   if (!service) {
     return {
@@ -74,7 +74,7 @@ export default async function Page({ params }: PageProps) {
     return <DedicatedMainServicePage service={dedicatedService} />;
   }
 
-  const service = services[main_service];
+  const service = resolveService(main_service);
   if (!service) {
     notFound();
   }
