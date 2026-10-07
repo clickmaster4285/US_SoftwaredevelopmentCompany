@@ -348,7 +348,7 @@ export default function CaseStudyPage() {
         <PartsSection parts={caseStudy.parts} />
       </div>
 
-      <FunSection />
+      {/* <FunSection /> */}
 
       <CtaSection />
     </main>
