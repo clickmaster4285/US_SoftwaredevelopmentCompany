@@ -202,3 +202,23 @@
     opacity: 0.7;
   }
 }
+/* Hide scrollbar but keep scroll functionality */
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE / Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome / Safari / Opera */
+  }
+}
+
+/* Optional: kill the page-level scrollbar entirely (keeps scroll working) */
+html,
+body {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}

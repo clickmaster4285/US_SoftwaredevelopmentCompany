@@ -32,8 +32,7 @@ const contactItems = [
   {
     icon: MapPin,
     label: "Office Location",
-    value:
-      "Remote-first delivery across US, Europe, Canada, and Australia",
+    value: "Remote-first delivery across US, Europe, Canada, and Australia",
   },
 ];
 
@@ -45,8 +44,7 @@ export const metadata = {
   description:
     "Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we’re here to help you get started.",
   alternates: {
-    canonical:
-      "https://clickmasterssoftwaredevelopmentcompany.com/contact",
+    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/contact",
   },
 };
 
@@ -127,9 +125,7 @@ export default function ContactPage() {
         message: "",
       });
     } catch {
-      setErrorMsg(
-        "Network error. Please check your connection and try again.",
-      );
+      setErrorMsg("Network error. Please check your connection and try again.");
       setStatus("error");
     }
   };
@@ -189,9 +185,7 @@ export default function ContactPage() {
                   <item.icon className="mt-0.5 h-5 w-5 shrink-0 text-[#e05b35]" />
 
                   <div>
-                    <p className="font-semibold leading-6">
-                      {item.label}
-                    </p>
+                    <p className="font-semibold leading-6">{item.label}</p>
 
                     <p className="mt-1 text-sm leading-6 text-black/60">
                       {item.value}
@@ -257,7 +251,6 @@ export default function ContactPage() {
 
             <label className="mt-5 grid gap-2 text-sm font-semibold">
               Project notes
-
               <textarea
                 name="message"
                 value={form.message}

@@ -13,7 +13,10 @@ const FOOTER_NAV = [
     items: [
       { label: "About Us", href: "/about" },
       { label: "Our Work", href: "/software-development" },
-      { label: "Case Studies", href: "/software-development/custom-software-development" },
+      {
+        label: "Case Studies",
+        href: "/software-development/custom-software-development",
+      },
       { label: "Contact Us", href: "/contact" },
     ],
   },
@@ -30,9 +33,18 @@ const FOOTER_NAV = [
   {
     title: "Solutions",
     items: [
-      { label: "Custom Software Solutions", href: "/software-development/custom-software-development" },
-      { label: "Dedicated Teams", href: "/support-and-outsourcing/dedicated-development-teams" },
-      { label: "MVP Development", href: "/software-development/mvp-development" },
+      {
+        label: "Custom Software Solutions",
+        href: "/software-development/custom-software-development",
+      },
+      {
+        label: "Dedicated Teams",
+        href: "/support-and-outsourcing/dedicated-development-teams",
+      },
+      {
+        label: "MVP Development",
+        href: "/software-development/mvp-development",
+      },
       { label: "Cloud & DevOps", href: "/cloud-and-devops" },
     ],
   },

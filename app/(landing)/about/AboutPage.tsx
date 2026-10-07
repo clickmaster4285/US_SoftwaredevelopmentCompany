@@ -1,9 +1,22 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, Shield, Users, Award, Zap } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Shield,
+  Users,
+  Award,
+  Zap,
+} from "lucide-react";
 import {
   IconFor,
   PageFrame,
@@ -48,10 +61,26 @@ const values = [
 ];
 
 const trustBadges = [
-  { icon: Shield, label: "ISO 27001 Certified", description: "Information security management you can audit" },
-  { icon: Shield, label: "GDPR Compliant", description: "Data handling that meets EU standards by default" },
-  { icon: Users, label: "100+ 5-Star Reviews", description: "Verifiable, not just claimed" },
-  { icon: Award, label: "Production-grade code", description: "Every build is tested before it ships" },
+  {
+    icon: Shield,
+    label: "ISO 27001 Certified",
+    description: "Information security management you can audit",
+  },
+  {
+    icon: Shield,
+    label: "GDPR Compliant",
+    description: "Data handling that meets EU standards by default",
+  },
+  {
+    icon: Users,
+    label: "100+ 5-Star Reviews",
+    description: "Verifiable, not just claimed",
+  },
+  {
+    icon: Award,
+    label: "Production-grade code",
+    description: "Every build is tested before it ships",
+  },
 ];
 
 const stats = [
@@ -79,7 +108,7 @@ function useInViewOnce<T extends HTMLElement>(threshold = 0.2) {
           observer.disconnect();
         }
       },
-      { threshold }
+      { threshold },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -294,14 +323,23 @@ export default function AboutPage() {
 
       {/* Hero Section with consistent font styling */}
       <div className="relative">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 overflow-hidden"
+        >
           <div
             className="ab-blob-a absolute -left-20 -top-10 h-[380px] w-[380px] rounded-full opacity-[0.16]"
-            style={{ background: "radial-gradient(circle, #e05b35, transparent 70%)", filter: "blur(90px)" }}
+            style={{
+              background: "radial-gradient(circle, #e05b35, transparent 70%)",
+              filter: "blur(90px)",
+            }}
           />
           <div
             className="ab-blob-b absolute right-0 top-1/4 h-[340px] w-[340px] rounded-full opacity-[0.12]"
-            style={{ background: "radial-gradient(circle, #e05b35, transparent 70%)", filter: "blur(90px)" }}
+            style={{
+              background: "radial-gradient(circle, #e05b35, transparent 70%)",
+              filter: "blur(90px)",
+            }}
           />
         </div>
         <div className="relative px-5 pt-24 pb-12 md:px-10 md:pt-32 md:pb-16">
@@ -321,7 +359,13 @@ export default function AboutPage() {
 
               {/* Description */}
               <p className="mt-6 text-base md:text-lg leading-relaxed text-black/70 max-w-2xl">
-                Clickmasters is a full-stack software development company based in the USA, helping startups and growing businesses turn ideas into products that work and look like they mean it. We combine senior engineering, sharp UI/UX design, and applied AI to build web platforms, mobile apps, and automation systems that hold up under real-world use. No bloated teams, no six-month "discovery phases" just people who ship.
+                Clickmasters is a full-stack software development company based
+                in the USA, helping startups and growing businesses turn ideas
+                into products that work and look like they mean it. We combine
+                senior engineering, sharp UI/UX design, and applied AI to build
+                web platforms, mobile apps, and automation systems that hold up
+                under real-world use. No bloated teams, no six-month "discovery
+                phases" just people who ship.
               </p>
 
               {/* Badge */}
@@ -354,21 +398,30 @@ export default function AboutPage() {
       </div>
 
       {/* Trust Bar - Stats (count-up on scroll) */}
-      <section ref={statsRef} className="border-b border-black/5 px-5 py-12 md:px-10">
+      <section
+        ref={statsRef}
+        className="border-b border-black/5 px-5 py-12 md:px-10"
+      >
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {stats.map((stat, i) => (
               <div
                 key={stat.label}
                 className={`text-center ${statsInView ? "ab-rise" : "opacity-0"}`}
-                style={{ animationDelay: statsInView ? `${i * 0.12}s` : undefined }}
+                style={{
+                  animationDelay: statsInView ? `${i * 0.12}s` : undefined,
+                }}
               >
                 <div className="text-3xl font-bold text-[#e05b35] md:text-4xl tabular-nums">
                   <CountStat value={stat.number} start={statsInView} />
                 </div>
                 <div
                   className="mx-auto mt-2 h-[2px] w-8 bg-[#e05b35]/40 ab-underline"
-                  style={{ animationDelay: statsInView ? `${0.2 + i * 0.12}s` : undefined }}
+                  style={{
+                    animationDelay: statsInView
+                      ? `${0.2 + i * 0.12}s`
+                      : undefined,
+                  }}
                 />
                 <div className="mt-2 text-sm text-black/60">{stat.label}</div>
               </div>
@@ -432,11 +485,17 @@ export default function AboutPage() {
               <Reveal delay={0.15}>
                 <p className="mt-6 text-lg leading-relaxed text-black/70">
                   Since then, we've shipped{" "}
-                  <strong className="font-semibold text-[#e05b35]">200+ projects</strong> across
-                  automotive, retail tech, fintech, and e-commerce from MVPs launched in{" "}
-                  <strong className="font-semibold text-[#e05b35]">4–6 weeks</strong> to enterprise
-                  platforms built to scale past a million users. Every project runs through the same
-                  core team: strategists, designers, and engineers who stay accountable from the first
+                  <strong className="font-semibold text-[#e05b35]">
+                    200+ projects
+                  </strong>{" "}
+                  across automotive, retail tech, fintech, and e-commerce from
+                  MVPs launched in{" "}
+                  <strong className="font-semibold text-[#e05b35]">
+                    4–6 weeks
+                  </strong>{" "}
+                  to enterprise platforms built to scale past a million users.
+                  Every project runs through the same core team: strategists,
+                  designers, and engineers who stay accountable from the first
                   wireframe to post-launch support.
                 </p>
               </Reveal>
@@ -462,7 +521,9 @@ export default function AboutPage() {
               {/* Floating badge */}
               <div className="absolute -bottom-4 -right-4 bg-white rounded-full shadow-xl px-5 py-3 flex items-center gap-3 border border-black/5">
                 <span className="flex h-3 w-3 rounded-full bg-[#e05b35] animate-pulse" />
-                <span className="text-sm font-semibold text-[#171717]">8+ Years Experience</span>
+                <span className="text-sm font-semibold text-[#171717]">
+                  8+ Years Experience
+                </span>
               </div>
             </Reveal>
           </div>
@@ -508,9 +569,11 @@ export default function AboutPage() {
                   <span
                     className="ab-ring absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                     style={{
-                      background: "conic-gradient(from var(--ab-angle, 0deg), #e05b35, transparent 40%, transparent 60%, #e05b35)",
+                      background:
+                        "conic-gradient(from var(--ab-angle, 0deg), #e05b35, transparent 40%, transparent 60%, #e05b35)",
                       padding: "2px",
-                      WebkitMask: "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+                      WebkitMask:
+                        "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
                       WebkitMaskComposite: "xor",
                       maskComposite: "exclude",
                     }}
@@ -520,7 +583,9 @@ export default function AboutPage() {
                   </span>
                 </div>
                 <h4 className="text-sm font-semibold">{badge.label}</h4>
-                <p className="max-w-[14rem] text-xs text-black/50">{badge.description}</p>
+                <p className="max-w-[14rem] text-xs text-black/50">
+                  {badge.description}
+                </p>
               </Reveal>
             ))}
           </div>
@@ -573,14 +638,23 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="relative overflow-hidden bg-[#171717] px-5 py-24 text-white md:px-10">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+        >
           <div
             className="ab-blob-a absolute -left-16 top-0 h-[420px] w-[420px] rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, #e05b35, transparent 70%)", filter: "blur(100px)" }}
+            style={{
+              background: "radial-gradient(circle, #e05b35, transparent 70%)",
+              filter: "blur(100px)",
+            }}
           />
           <div
             className="ab-blob-b absolute -right-16 bottom-0 h-[420px] w-[420px] rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, #e05b35, transparent 70%)", filter: "blur(100px)" }}
+            style={{
+              background: "radial-gradient(circle, #e05b35, transparent 70%)",
+              filter: "blur(100px)",
+            }}
           />
           <div
             className="absolute inset-0 opacity-[0.04]"
@@ -607,12 +681,16 @@ export default function AboutPage() {
 
           <Reveal delay={0.2}>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/70">
-              Whether you need an MVP in six weeks or a platform rebuild that won't break under
-              scale, Clickmasters brings the same senior team from kickoff to launch.
+              Whether you need an MVP in six weeks or a platform rebuild that
+              won't break under scale, Clickmasters brings the same senior team
+              from kickoff to launch.
             </p>
           </Reveal>
 
-          <Reveal delay={0.3} className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <Reveal
+            delay={0.3}
+            className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          >
             <Link
               href="/contact"
               className="ab-shine-btn inline-flex items-center gap-2 rounded-full bg-[#e05b35] px-8 py-4 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#c94d2a]"
@@ -670,7 +748,9 @@ function ManifestoRow({
       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e05b35]/10 transition-transform duration-300 group-hover:scale-110">
         <value.icon className="h-5 w-5 text-[#e05b35]" />
       </span>
-      <p className="text-lg font-semibold leading-snug text-black/90 sm:text-xl">{value.text}</p>
+      <p className="text-lg font-semibold leading-snug text-black/90 sm:text-xl">
+        {value.text}
+      </p>
     </div>
   );
 }

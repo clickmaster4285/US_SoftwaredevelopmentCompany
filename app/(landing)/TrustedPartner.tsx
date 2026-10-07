@@ -72,7 +72,7 @@ export default function TrustedPartnerSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.25 },
     );
 
     observer.observe(el);
@@ -139,7 +139,10 @@ export default function TrustedPartnerSection() {
       `}</style>
 
       {/* Ambient glow blobs same two-tone pair as IndustriesSection */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.08]">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.08]"
+      >
         <div
           className="absolute -top-32 -right-32 h-[600px] w-[600px] rounded-full blur-3xl"
           style={{ background: "var(--chart-2)" }}
@@ -155,7 +158,8 @@ export default function TrustedPartnerSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.06]"
         style={{
-          backgroundImage: "radial-gradient(var(--foreground) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(var(--foreground) 1px, transparent 1px)",
           backgroundSize: "24px 24px",
         }}
       />
@@ -177,7 +181,8 @@ export default function TrustedPartnerSection() {
           inView ? "tp-glow" : ""
         }`}
         style={{
-          background: "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, var(--chart-1) 0%, transparent 70%)",
           opacity: 0.12,
         }}
       />
@@ -217,16 +222,14 @@ export default function TrustedPartnerSection() {
             style={{ animationDelay: "0.2s" }}
           >
             <p>
-              Clickmasters is a software development company USA clients turn
-              to when they need more than just code they need a real
-              partner. We work as a dependable software development agency,
-              mixing solid engineering with smart planning and clear
-              communication.
+              Clickmasters is a software development company USA clients turn to
+              when they need more than just code they need a real partner. We
+              work as a dependable software development agency, mixing solid
+              engineering with smart planning and clear communication.
             </p>
             <p>
-              We build software development solutions for healthcare,
-              fintech, logistics, and e-commerce businesses across the United
-              States.
+              We build software development solutions for healthcare, fintech,
+              logistics, and e-commerce businesses across the United States.
             </p>
           </div>
 
@@ -241,8 +244,10 @@ export default function TrustedPartnerSection() {
                     inView ? "tp-chip" : "opacity-0"
                   }`}
                   style={{
-                    borderColor: "color-mix(in oklch, " + accent + " 35%, var(--border))",
-                    backgroundColor: "color-mix(in oklch, " + accent + " 8%, transparent)",
+                    borderColor:
+                      "color-mix(in oklch, " + accent + " 35%, var(--border))",
+                    backgroundColor:
+                      "color-mix(in oklch, " + accent + " 8%, transparent)",
                     animationDelay: inView ? `${0.35 + i * 0.08}s` : undefined,
                   }}
                 >
@@ -261,7 +266,9 @@ export default function TrustedPartnerSection() {
                   key={item.title}
                   className={`flex gap-4 ${inView ? "tp-rise" : "opacity-0"}`}
                   style={
-                    inView ? { animationDelay: `${0.5 + i * 0.12}s` } : undefined
+                    inView
+                      ? { animationDelay: `${0.5 + i * 0.12}s` }
+                      : undefined
                   }
                 >
                   <span
@@ -350,25 +357,34 @@ export default function TrustedPartnerSection() {
                   <li
                     key={cert.code}
                     className={`group flex items-center gap-4 px-6 py-5 ${
-                      i !== CERTIFICATIONS.length - 1 ? "border-b border-border" : ""
+                      i !== CERTIFICATIONS.length - 1
+                        ? "border-b border-border"
+                        : ""
                     } transition-colors duration-300 ${inView ? "tp-row" : "opacity-0"}`}
-                    style={{
-                      ...(inView ? { animationDelay: `${rowDelay}s` } : {}),
-                      ["--row-accent" as string]: accent,
-                    } as CSSProperties}
+                    style={
+                      {
+                        ...(inView ? { animationDelay: `${rowDelay}s` } : {}),
+                        ["--row-accent" as string]: accent,
+                      } as CSSProperties
+                    }
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.backgroundColor =
                         "color-mix(in oklch, " + accent + " 6%, transparent)";
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                      (e.currentTarget as HTMLElement).style.backgroundColor =
+                        "transparent";
                     }}
                   >
                     <span
                       className={`shrink-0 font-mono text-[10px] tracking-[0.15em] text-muted-foreground ${
                         inView ? "tp-id" : "opacity-0"
                       }`}
-                      style={inView ? { animationDelay: `${rowDelay + 0.08}s` } : undefined}
+                      style={
+                        inView
+                          ? { animationDelay: `${rowDelay + 0.08}s` }
+                          : undefined
+                      }
                     >
                       {cert.id}
                     </span>
@@ -376,7 +392,10 @@ export default function TrustedPartnerSection() {
                     <span
                       className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-[11px] font-bold tracking-tight"
                       style={{
-                        backgroundColor: "color-mix(in oklch, " + accent + " 16%, var(--secondary))",
+                        backgroundColor:
+                          "color-mix(in oklch, " +
+                          accent +
+                          " 16%, var(--secondary))",
                         color: accent,
                       }}
                     >
@@ -396,7 +415,12 @@ export default function TrustedPartnerSection() {
                       className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border transition-transform duration-300 group-hover:scale-110"
                       style={{ borderColor: accent, color: accent }}
                     >
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                      >
                         <path
                           d="M2 6.2L4.8 9L10 3"
                           stroke="currentColor"

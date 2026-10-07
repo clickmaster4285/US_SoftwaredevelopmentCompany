@@ -148,12 +148,12 @@ export function IconFor({ name }) {
   };
 
   const IconComponent = name ? iconMap[name] : undefined;
-  
+
   if (!IconComponent) {
     console.warn(`Icon "${name}" not found in iconMap, using fallback`);
     return <Code2 className="h-5 w-5" />;
   }
-  
+
   return <IconComponent className="h-5 w-5" />;
 }
 
@@ -163,7 +163,6 @@ export function MainServiceHero({ service }) {
     <section className="relative overflow-hidden bg-background px-5 py-10 md:px-10 md:py-16">
       <div className="absolute inset-x-0 top-0 h-px bg-border" />
       <div className="mx-auto max-w-7xl">
-      
         <nav className="mb-8 flex items-center gap-2 text-sm font-medium">
           <Link
             href="/"
@@ -249,7 +248,10 @@ export function FeaturesSection({ service }) {
         <SectionHeading
           eyebrow="Our Services"
           title={service.ourServices?.title || `${service.title} Services`}
-          copy={service.ourServices?.description || "Comprehensive solutions tailored to your needs."}
+          copy={
+            service.ourServices?.description ||
+            "Comprehensive solutions tailored to your needs."
+          }
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
@@ -279,9 +281,19 @@ export function FeaturesSection({ service }) {
 // ============================================
 export function ExploreSection({ service }) {
   const ourServices = service.ourServices || {};
-  const exploreTitle = ourServices.title || service.servicesSection?.title || `Everything inside ${service.title}`;
-  const exploreCopy = ourServices.description || service.servicesSection?.description || "Choose the focused service line that best matches your product, platform, or operational goal.";
-  const servicesToRender = service.subServices || ourServices.subServices || ourServices.services || [];
+  const exploreTitle =
+    ourServices.title ||
+    service.servicesSection?.title ||
+    `Everything inside ${service.title}`;
+  const exploreCopy =
+    ourServices.description ||
+    service.servicesSection?.description ||
+    "Choose the focused service line that best matches your product, platform, or operational goal.";
+  const servicesToRender =
+    service.subServices ||
+    ourServices.subServices ||
+    ourServices.services ||
+    [];
 
   if (!servicesToRender.length) return null;
 
@@ -348,10 +360,11 @@ export function TrustSection({ service }) {
   const uniquePoints = (trustData.points || []).filter(
     (point) => !descriptionText.includes(normalizeSectionText(point)),
   );
-  const closingText = trustData.closingText &&
+  const closingText =
+    trustData.closingText &&
     !descriptionText.includes(normalizeSectionText(trustData.closingText))
-    ? trustData.closingText
-    : null;
+      ? trustData.closingText
+      : null;
 
   return (
     <section className="bg-secondary px-5 py-24 md:px-10">
@@ -386,11 +399,7 @@ export function TrustSection({ service }) {
                   <p className="text-base leading-7">{point}</p>
                 </div>
               ))}
-              {closingText && (
-                <p className="mt-4 text-lg">
-                  {closingText}
-                </p>
-              )}
+              {closingText && <p className="mt-4 text-lg">{closingText}</p>}
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -422,8 +431,12 @@ export function TrustSection({ service }) {
                     <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <IconFor name={stat.icon || "Code2"} />
                     </span>
-                    <p className="mt-4 text-3xl font-bold text-foreground">{stat.value}</p>
-                    <p className="mt-1 text-sm font-medium text-muted-foreground">{stat.label}</p>
+                    <p className="mt-4 text-3xl font-bold text-foreground">
+                      {stat.value}
+                    </p>
+                    <p className="mt-1 text-sm font-medium text-muted-foreground">
+                      {stat.label}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -461,10 +474,7 @@ export function CompanySection({ service }) {
   return (
     <section className="bg-background px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          eyebrow="Why Work With Us"
-          title={data.title}
-        />
+        <SectionHeading eyebrow="Why Work With Us" title={data.title} />
         <div className="mx-auto mt-10 max-w-4xl space-y-5 text-center">
           {paragraphs.map((paragraph, index) => (
             <p key={index} className="text-lg leading-8 text-muted-foreground">
@@ -569,10 +579,7 @@ export function BenefitsSection({ service }) {
             service.benefitsSection?.title ||
             "Benefits of Our Software Development Services"
           }
-          copy={
-            service.benefitsSection?.description 
-            
-          }
+          copy={service.benefitsSection?.description}
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
@@ -685,19 +692,23 @@ export function ProcessSection({ service }) {
   const steps = service.processSteps || [
     {
       title: "Discovery & Requirement Analysis",
-      description: "We start by understanding your business goals, users, and constraints, then translate them into a scoped technical plan and realistic timeline.",
+      description:
+        "We start by understanding your business goals, users, and constraints, then translate them into a scoped technical plan and realistic timeline.",
     },
     {
       title: "Architecture & UX/UI Design",
-      description: "Our architects choose a stack suited to your scale and compliance needs, while designers map user flows and interfaces before development begins.",
+      description:
+        "Our architects choose a stack suited to your scale and compliance needs, while designers map user flows and interfaces before development begins.",
     },
     {
       title: "Agile Development & Quality Assurance",
-      description: "Engineers build in two-week sprints with continuous testing, code review, and regular demos, so issues are caught early, and progress stays visible.",
+      description:
+        "Engineers build in two-week sprints with continuous testing, code review, and regular demos, so issues are caught early, and progress stays visible.",
     },
     {
       title: "Deployment, Support & Iteration",
-      description: "After launch, we monitor performance, patch security issues, and support ongoing feature development as your business grows.",
+      description:
+        "After launch, we monitor performance, patch security issues, and support ongoing feature development as your business grows.",
     },
   ];
 
@@ -706,7 +717,9 @@ export function ProcessSection({ service }) {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Process"
-          title={service.processSection?.title || "Our Software Development Process"}
+          title={
+            service.processSection?.title || "Our Software Development Process"
+          }
           copy={
             service.processSection?.description ||
             "A clear, structured approach to delivering high-quality software."
@@ -736,7 +749,8 @@ export function ProcessSection({ service }) {
               href="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-bold text-primary-foreground transition hover:opacity-90"
             >
-              {service.sectionCtas.afterProcess} <ArrowRight className="h-4 w-4" />
+              {service.sectionCtas.afterProcess}{" "}
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         )}
@@ -751,7 +765,8 @@ export function ProcessSection({ service }) {
 export function TechStackSection({ service }) {
   const techData = service.techStack || {
     title: "Technology We Use",
-    description: "Our software development services are built on modern, well-supported technology chosen for long-term maintainability, not just what is trending.",
+    description:
+      "Our software development services are built on modern, well-supported technology chosen for long-term maintainability, not just what is trending.",
     frontend: ["React", "Next.js"],
     backend: ["Node.js", "Python"],
     databases: ["PostgreSQL", "MongoDB"],
@@ -760,14 +775,13 @@ export function TechStackSection({ service }) {
   };
 
   // Get all tech categories (excluding title, description)
-  const techCategories = Object.entries(techData)
-    .filter(
-      ([key, value]) =>
-        Array.isArray(value) &&
-        key !== "title" &&
-        key !== "description" &&
-        key !== "groups"
-    );
+  const techCategories = Object.entries(techData).filter(
+    ([key, value]) =>
+      Array.isArray(value) &&
+      key !== "title" &&
+      key !== "description" &&
+      key !== "groups",
+  );
 
   // If groups are explicitly defined, use them
   const groups = techData.groups || null;
@@ -794,7 +808,7 @@ export function TechStackSection({ service }) {
             </p>
           ) : null}
         </div>
-        
+
         {groups ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {groups.map((group) => (
@@ -820,7 +834,7 @@ export function TechStackSection({ service }) {
             {techCategories.map(([category, items]) => (
               <div key={category}>
                 <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
-                  {category.replace(/([A-Z])/g, ' $1').trim()}
+                  {category.replace(/([A-Z])/g, " $1").trim()}
                 </h3>
                 <div className="mt-4 flex flex-wrap gap-3">
                   {(items || []).map((item) => (
@@ -836,7 +850,7 @@ export function TechStackSection({ service }) {
             ))}
           </div>
         )}
-        
+
         {closingText ? (
           <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-7 text-primary-foreground/80">
             {closingText}
@@ -888,7 +902,8 @@ export function FeaturedInsights() {
 export function WhyChooseUsSection({ service }) {
   const whyData = service.whyChooseUs || {
     title: "Why Choose Clickmasters as Your Software Development Partner",
-    description: "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
+    description:
+      "There is no shortage of software development companies competing for your project. Here is what separates our software engineering services from a typical vendor:",
     reasons: [],
     closingText: "",
     paragraph: "",

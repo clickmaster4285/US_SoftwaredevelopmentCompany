@@ -43,12 +43,14 @@ const faqData: FaqItem[] = [
       "We build software development solutions for healthcare, fintech, e-commerce, logistics, real estate, education, and manufacturing businesses, among others.",
   },
   {
-    question: "Does Clickmasters provide support after the software is launched?",
+    question:
+      "Does Clickmasters provide support after the software is launched?",
     answer:
       "Yes. Every project includes support after launch, with ongoing maintenance and upgrade options for the long run.",
   },
   {
-    question: "How is Clickmasters different from other software development companies?",
+    question:
+      "How is Clickmasters different from other software development companies?",
     answer:
       "Clickmasters brings together experienced developers, honest pricing, and strong skills in AI software development services, cloud systems, and enterprise software giving you the reliability of an in-house team with the flexibility of an outside software development firm.",
   },
@@ -71,7 +73,7 @@ function useReveal<T extends HTMLElement>(delayMs = 0) {
           return () => clearTimeout(t);
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
     );
 
     observer.observe(node);
@@ -81,7 +83,12 @@ function useReveal<T extends HTMLElement>(delayMs = 0) {
   return { ref, visible };
 }
 
-function FaqRow({ item, index, isOpen, onToggle }: {
+function FaqRow({
+  item,
+  index,
+  isOpen,
+  onToggle,
+}: {
   item: FaqItem;
   index: number;
   isOpen: boolean;
@@ -138,9 +145,21 @@ function FaqRow({ item, index, isOpen, onToggle }: {
 /** Decorative, animated graphic for the right rail abstract "build & ship" motif. */
 function FaqVisual() {
   const badges = [
-    { icon: Rocket, label: "8-12 wk MVP", className: "top-6 -left-6 lg:-left-10" },
-    { icon: ShieldCheck, label: "Post-launch support", className: "bottom-16 -right-4 lg:-right-10" },
-    { icon: MessageSquareCode, label: "Weekly updates", className: "top-1/2 -right-8 lg:-right-14" },
+    {
+      icon: Rocket,
+      label: "8-12 wk MVP",
+      className: "top-6 -left-6 lg:-left-10",
+    },
+    {
+      icon: ShieldCheck,
+      label: "Post-launch support",
+      className: "bottom-16 -right-4 lg:-right-10",
+    },
+    {
+      icon: MessageSquareCode,
+      label: "Weekly updates",
+      className: "top-1/2 -right-8 lg:-right-14",
+    },
   ];
 
   return (
@@ -175,7 +194,10 @@ function FaqVisual() {
 
       {/* soft morphing blob backdrop - softer pastel colors */}
       <div className="absolute w-80 h-80 bg-blue-100/40 faq-anim-blob blur-2xl" />
-      <div className="absolute w-72 h-72 bg-purple-100/30 faq-anim-blob blur-2xl" style={{ animationDelay: "-3s" }} />
+      <div
+        className="absolute w-72 h-72 bg-purple-100/30 faq-anim-blob blur-2xl"
+        style={{ animationDelay: "-3s" }}
+      />
       <div className="absolute w-64 h-64 border border-primary/10 rounded-full faq-anim-spin-slow" />
       <div className="absolute w-64 h-64 border border-dashed border-primary/8 rounded-full" />
 
@@ -228,7 +250,8 @@ function FaqVisual() {
 
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const { ref: headerRef, visible: headerVisible } = useReveal<HTMLDivElement>();
+  const { ref: headerRef, visible: headerVisible } =
+    useReveal<HTMLDivElement>();
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -243,7 +266,9 @@ export function FaqSection() {
         <div
           ref={headerRef}
           className={`max-w-2xl mb-12 lg:mb-16 transition-all duration-700 ease-out ${
-            headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
           }`}
         >
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary mb-3">
@@ -254,7 +279,8 @@ export function FaqSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground text-lg">
-            Get answers to the most common questions about our software development services.
+            Get answers to the most common questions about our software
+            development services.
           </p>
         </div>
 

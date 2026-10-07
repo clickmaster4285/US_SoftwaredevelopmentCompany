@@ -32,7 +32,14 @@ const BENEFITS = [
     rotate: 2,
     icon: (
       <>
-        <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.4" fill="none" />
+        <circle
+          cx="12"
+          cy="12"
+          r="8.5"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          fill="none"
+        />
         <path
           d="M14.5 9.3c-.4-.7-1.3-1.2-2.5-1.2-1.6 0-2.7.9-2.7 2s1 1.6 2.7 2c1.7.4 2.7 1 2.7 2.1s-1.1 2-2.7 2c-1.2 0-2.1-.5-2.5-1.2M12 6.7v1.2M12 16.1v1.2"
           stroke="currentColor"
@@ -50,7 +57,16 @@ const BENEFITS = [
     rotate: -1,
     icon: (
       <>
-        <rect x="8" y="8" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.4" fill="none" />
+        <rect
+          x="8"
+          y="8"
+          width="8"
+          height="8"
+          rx="1.5"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          fill="none"
+        />
         <path
           d="M12 4.5v2M12 17.5v2M4.5 12h2M17.5 12h2M6.5 6.5l1.4 1.4M16.1 16.1l1.4 1.4M6.5 17.5l1.4-1.4M16.1 7.9l1.4-1.4"
           stroke="currentColor"
@@ -62,18 +78,32 @@ const BENEFITS = [
   },
   {
     title: "Flexible plans",
-    detail: "Scale from a single developer to a full team as your roadmap changes.",
+    detail:
+      "Scale from a single developer to a full team as your roadmap changes.",
     rotate: 2,
     icon: (
       <>
-        <path d="M4.5 8h15M4.5 8a2 2 0 1 1 0-.01M8.5 8a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" fill="none" />
-        <path d="M4.5 16h15M15.5 16a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" fill="none" />
+        <path
+          d="M4.5 8h15M4.5 8a2 2 0 1 1 0-.01M8.5 8a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          fill="none"
+        />
+        <path
+          d="M4.5 16h15M15.5 16a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          fill="none"
+        />
       </>
     ),
   },
   {
     title: "Strong security",
-    detail: "Security reviews and best practices are built into every sprint, not bolted on at the end.",
+    detail:
+      "Security reviews and best practices are built into every sprint, not bolted on at the end.",
     rotate: -2,
     icon: (
       <path
@@ -88,12 +118,27 @@ const BENEFITS = [
   },
   {
     title: "Weekly updates",
-    detail: "Clear, weekly check-ins so you always know exactly where your project stands.",
+    detail:
+      "Clear, weekly check-ins so you always know exactly where your project stands.",
     rotate: 1,
     icon: (
       <>
-        <rect x="4.5" y="5.5" width="15" height="14" rx="2" stroke="currentColor" strokeWidth="1.4" fill="none" />
-        <path d="M4.5 9.5h15M8 3.5v3M16 3.5v3M8.3 13.3h2M13.7 13.3h2M8.3 16.3h2M13.7 16.3h2" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <rect
+          x="4.5"
+          y="5.5"
+          width="15"
+          height="14"
+          rx="2"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          fill="none"
+        />
+        <path
+          d="M4.5 9.5h15M8 3.5v3M16 3.5v3M8.3 13.3h2M13.7 13.3h2M8.3 16.3h2M13.7 16.3h2"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
       </>
     ),
   },
@@ -103,10 +148,40 @@ const BENEFITS = [
     rotate: -1,
     icon: (
       <>
-        <path d="M4.5 13v-1a7.5 7.5 0 1 1 15 0v1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" fill="none" />
-        <rect x="3.5" y="13" width="3.5" height="5" rx="1.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
-        <rect x="17" y="13" width="3.5" height="5" rx="1.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
-        <path d="M17 18v.5a3 3 0 0 1-3 3h-2" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" fill="none" />
+        <path
+          d="M4.5 13v-1a7.5 7.5 0 1 1 15 0v1"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          fill="none"
+        />
+        <rect
+          x="3.5"
+          y="13"
+          width="3.5"
+          height="5"
+          rx="1.2"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          fill="none"
+        />
+        <rect
+          x="17"
+          y="13"
+          width="3.5"
+          height="5"
+          rx="1.2"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          fill="none"
+        />
+        <path
+          d="M17 18v.5a3 3 0 0 1-3 3h-2"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          fill="none"
+        />
       </>
     ),
   },
@@ -162,14 +237,24 @@ function BenefitCard({
         } as CSSProperties
       }
     >
-      <span aria-hidden="true" className="bn-ring pointer-events-none absolute inset-0 rounded-2xl" />
-      <span aria-hidden="true" className="bn-ring-mask pointer-events-none absolute inset-[1px] rounded-2xl bg-card" />
-      <span aria-hidden="true" className="bn-spotlight pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <span
+        aria-hidden="true"
+        className="bn-ring pointer-events-none absolute inset-0 rounded-2xl"
+      />
+      <span
+        aria-hidden="true"
+        className="bn-ring-mask pointer-events-none absolute inset-[1px] rounded-2xl bg-card"
+      />
+      <span
+        aria-hidden="true"
+        className="bn-spotlight pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      />
 
       <div
         className="bn-tilt relative"
         style={{
-          transform: "rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg))",
+          transform:
+            "rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg))",
         }}
       >
         <div className="mb-5 flex items-center justify-between">
@@ -180,7 +265,11 @@ function BenefitCard({
                 "linear-gradient(155deg, color-mix(in oklch, var(--accent) 16%, var(--secondary)), var(--secondary))",
             }}
           >
-            <svg viewBox="0 0 24 24" className="relative z-10 h-5 w-5" style={{ color: "var(--accent)" }}>
+            <svg
+              viewBox="0 0 24 24"
+              className="relative z-10 h-5 w-5"
+              style={{ color: "var(--accent)" }}
+            >
               {benefit.icon}
             </svg>
             <span
@@ -204,14 +293,21 @@ function BenefitCard({
                 className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60"
                 style={{ backgroundColor: "var(--accent)" }}
               />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "var(--accent)" }} />
+              <span
+                className="relative inline-flex h-1.5 w-1.5 rounded-full"
+                style={{ backgroundColor: "var(--accent)" }}
+              />
             </span>
             Active
           </span>
         </div>
 
-        <h3 className="text-base font-bold text-foreground md:text-lg">{benefit.title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{benefit.detail}</p>
+        <h3 className="text-base font-bold text-foreground md:text-lg">
+          {benefit.title}
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {benefit.detail}
+        </p>
 
         <div className="mt-5 h-px w-full overflow-hidden rounded-full bg-border">
           <div
@@ -242,7 +338,7 @@ export default function BenefitsSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     observer.observe(el);
@@ -250,7 +346,10 @@ export default function BenefitsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden px-6 py-24 md:py-32">
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden px-6 py-24 md:py-32"
+    >
       <style>{`
         @keyframes bn-rise-in {
           from { opacity: 0; transform: translateY(18px); }
@@ -392,7 +491,8 @@ export default function BenefitsSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
         style={{
-          backgroundImage: "radial-gradient(var(--foreground) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(var(--foreground) 1px, transparent 1px)",
           backgroundSize: "22px 22px",
         }}
       />
@@ -427,7 +527,8 @@ export default function BenefitsSection() {
           >
             Benefits of Choosing Our
             <br />
-            Software Development <span className="font-serif italic">Company</span>
+            Software Development{" "}
+            <span className="font-serif italic">Company</span>
           </h2>
 
           <p
@@ -436,14 +537,20 @@ export default function BenefitsSection() {
             }`}
             style={{ animationDelay: "0.18s" }}
           >
-            When you work with Clickmasters, your business gets a real advantage:
+            When you work with Clickmasters, your business gets a real
+            advantage:
           </p>
         </div>
 
         {/* Benefit tiles */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {BENEFITS.map((benefit, i) => (
-            <BenefitCard key={benefit.title} benefit={benefit} index={i} inView={inView} />
+            <BenefitCard
+              key={benefit.title}
+              benefit={benefit}
+              index={i}
+              inView={inView}
+            />
           ))}
         </div>
       </div>

@@ -440,8 +440,7 @@ export const locationServiceData = {
           "Look for a software development company in Houston with a strong portfolio, clear pricing, direct access to senior developers, and regular communication. Clickmasters gives you references, a written timeline, and a fixed quote before any work starts.",
       },
       {
-        question:
-          "How much does custom software development cost in Houston?",
+        question: "How much does custom software development cost in Houston?",
         answer:
           "Most custom software projects in Houston start around $15,000 for a small app and can go past $250,000 for a large business platform. Clickmasters gives you a fixed quote after a short call, based on what you need.",
       },
@@ -680,8 +679,7 @@ export const locationServiceData = {
           "Look for a software development company in New York with a strong portfolio, clear pricing, direct access to senior developers, and regular communication. Clickmasters gives you references, a written timeline, and a fixed quote before any work starts.",
       },
       {
-        question:
-          "How much does custom software development cost in New York?",
+        question: "How much does custom software development cost in New York?",
         answer:
           "Most custom software projects in New York start around $15,000 for a small app and can go past $250,000 for a large business platform. Clickmasters gives you a fixed quote after a short call, based on what you need.",
       },
@@ -827,8 +825,7 @@ export const locationServiceData = {
     ],
     benefitsClosing:
       "These benefits are why many local businesses now search for an affordable software development company in San Francisco and choose Clickmasters as their long-term technology partner.",
-    whyChooseTitle:
-      "Why Choose Clickmasters as Your San Francisco IT Company",
+    whyChooseTitle: "Why Choose Clickmasters as Your San Francisco IT Company",
     whyChooseDescription:
       "Ask any founder to name the top software companies in San Francisco, and you will hear stories about missed deadlines and unclear pricing. Clickmasters was built to be different, one of the best software companies in San Francisco that actually keeps its word.",
     whyChoosePoints: [
@@ -1240,8 +1237,7 @@ export const locationServiceData = {
           "Yes. Our software developers work remotely with clients across Chicago, matching your working hours and sharing updates through Slack and Zoom, just like a local, in-house team.",
       },
     ],
-    closingTitle:
-      "Ready to build software that grows your Chicago business?",
+    closingTitle: "Ready to build software that grows your Chicago business?",
     closingDescription:
       "Clickmasters is more than just another name on a list of software development companies in Chicago. We are a local partner ready to turn your idea into working software that helps your business grow.",
     closingCtaText: "Get a Free Quote",
@@ -1342,8 +1338,7 @@ export const locationServiceData = {
     servicesClosing:
       "Not sure which service is right for you? Talk to our team — we will help you pick the best solution for your business, free of charge.",
     servicesCtaText: "Talk to Our Team About Your Project",
-    benefitsTitle:
-      "Benefits of Hiring Our Dallas Software Development Company",
+    benefitsTitle: "Benefits of Hiring Our Dallas Software Development Company",
     benefitsDescription:
       "Choosing the right software development partner in Dallas can change the way your business runs. Here is what you get when you work with Clickmasters:",
     benefits: [
@@ -1488,7 +1483,8 @@ export const locationServiceData = {
           "Yes. Our team can update, modernize, or add new features to software you already use, so you do not always need to start from scratch.",
       },
       {
-        question: "Do you offer ongoing support after the software is launched?",
+        question:
+          "Do you offer ongoing support after the software is launched?",
         answer:
           "Yes. Every project from our software development company in Dallas includes support after launch, so your software stays secure, updated, and running smoothly.",
       },
@@ -1591,7 +1587,9 @@ export type LocationServiceData = {
 // ============================================
 // HELPER FUNCTIONS
 // ============================================
-export function getLocationServiceData(slug: string): LocationServiceData | null {
+export function getLocationServiceData(
+  slug: string,
+): LocationServiceData | null {
   return locationServiceData[slug as keyof typeof locationServiceData] || null;
 }
 

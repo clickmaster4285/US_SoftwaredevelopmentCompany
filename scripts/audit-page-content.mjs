@@ -43,7 +43,7 @@ function collectChecks(service) {
   if (service.trustSection) {
     add("Trust Section", "title", service.trustSection.title);
     (service.trustSection.points || []).forEach((p, i) =>
-      add("Trust Section", `point ${i + 1}`, p)
+      add("Trust Section", `point ${i + 1}`, p),
     );
   }
 
@@ -51,39 +51,66 @@ function collectChecks(service) {
     if (typeof b === "string") {
       // benefits like "Title: description" or "Title — description"
       const head = b.split(/[:\u2014]/)[0];
-      checks.push({ section: "Benefits", label: `benefit ${i + 1}`, text: b, alt: head });
+      checks.push({
+        section: "Benefits",
+        label: `benefit ${i + 1}`,
+        text: b,
+        alt: head,
+      });
     } else if (b && b.title) {
       checks.push({ section: "Benefits", label: b.title, text: b.title });
     }
   });
 
-  if (service.benefitsSection) add("Benefits heading", "title", service.benefitsSection.title);
+  if (service.benefitsSection)
+    add("Benefits heading", "title", service.benefitsSection.title);
 
   if (service.whyChooseUs) {
     add("Why Choose Us", "title", service.whyChooseUs.title);
     (service.whyChooseUs.reasons || []).forEach((r) =>
-      add("Why Choose Us", `reason: ${r.title}`, r.title)
+      add("Why Choose Us", `reason: ${r.title}`, r.title),
     );
   }
 
   if (service.techStack) {
     const ts = service.techStack;
-    (ts.groups || []).forEach((g) => (g.items || []).forEach((it) => add("Tech Stack", it, it)));
-    ["frontend", "backend", "databases", "cloudDevOps", "aiAutomation", "native", "crossPlatform", "backend", "data", "aiModelsFrameworks", "mlData", "infrastructure", "applicationLayer"].forEach((k) => {
+    (ts.groups || []).forEach((g) =>
+      (g.items || []).forEach((it) => add("Tech Stack", it, it)),
+    );
+    [
+      "frontend",
+      "backend",
+      "databases",
+      "cloudDevOps",
+      "aiAutomation",
+      "native",
+      "crossPlatform",
+      "backend",
+      "data",
+      "aiModelsFrameworks",
+      "mlData",
+      "infrastructure",
+      "applicationLayer",
+    ].forEach((k) => {
       (ts[k] || []).forEach((it) => add("Tech Stack", it, it));
     });
   }
 
-  if (service.industriesSection) add("Industries heading", "title", service.industriesSection.title);
-  (service.industries || []).forEach((ind) => add("Industries", ind.name, ind.name));
+  if (service.industriesSection)
+    add("Industries heading", "title", service.industriesSection.title);
+  (service.industries || []).forEach((ind) =>
+    add("Industries", ind.name, ind.name),
+  );
 
-  if (service.testimonialsSection) add("Testimonials heading", "title", service.testimonialsSection.title);
+  if (service.testimonialsSection)
+    add("Testimonials heading", "title", service.testimonialsSection.title);
   (service.testimonials || []).forEach((t, i) => {
     add("Testimonials", `author ${i + 1}`, t.author);
     if (t.company) add("Testimonials", `company ${i + 1}`, t.company);
   });
 
-  if (service.processSection) add("Process heading", "title", service.processSection.title);
+  if (service.processSection)
+    add("Process heading", "title", service.processSection.title);
   (service.processSteps || []).forEach((p) => add("Process", p.title, p.title));
 
   (service.pricing || []).forEach((p) => {
@@ -96,11 +123,14 @@ function collectChecks(service) {
   if (service.finalCta) {
     add("Final CTA", "title", service.finalCta.title);
     add("Final CTA", "primary button", service.finalCta.primary);
-    if (service.finalCta.secondary) add("Final CTA", "secondary button", service.finalCta.secondary);
+    if (service.finalCta.secondary)
+      add("Final CTA", "secondary button", service.finalCta.secondary);
   }
 
   if (service.sectionCtas) {
-    Object.entries(service.sectionCtas).forEach(([k, v]) => add("Section CTAs", k, v));
+    Object.entries(service.sectionCtas).forEach(([k, v]) =>
+      add("Section CTAs", k, v),
+    );
   }
 
   (service.subServices || []).forEach((s) => {
@@ -115,7 +145,9 @@ for (const [key, service] of Object.entries(mainServiceData)) {
   const slug = service.slug;
   let html = "";
   try {
-    const res = await fetch(`${BASE}/${slug}`, { signal: AbortSignal.timeout(180000) });
+    const res = await fetch(`${BASE}/${slug}`, {
+      signal: AbortSignal.timeout(180000),
+    });
     html = await res.text();
   } catch (e) {
     results[slug] = { error: String(e) };
@@ -139,7 +171,11 @@ for (const [key, service] of Object.entries(mainServiceData)) {
     seen.add(k);
     return true;
   });
-  results[slug] = { total: checks.length, missingCount: uniq.length, missing: uniq };
+  results[slug] = {
+    total: checks.length,
+    missingCount: uniq.length,
+    missing: uniq,
+  };
 }
 
 for (const [slug, r] of Object.entries(results)) {

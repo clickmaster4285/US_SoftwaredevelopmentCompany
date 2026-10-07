@@ -155,9 +155,13 @@ export function MainServiceHero({ service }: { service: MainService }) {
 
 export function ExploreSection({ service }: { service: MainService }) {
   const ourServices = service.ourServices || {};
-  const exploreTitle = ourServices.title || `Everything inside ${service.title}`;
-  const exploreCopy = ourServices.description || "Choose the focused service line that best matches your product, platform, or operational goal.";
-  const servicesToRender: SubService[] = ourServices.subServices || service.subServices || [];
+  const exploreTitle =
+    ourServices.title || `Everything inside ${service.title}`;
+  const exploreCopy =
+    ourServices.description ||
+    "Choose the focused service line that best matches your product, platform, or operational goal.";
+  const servicesToRender: SubService[] =
+    ourServices.subServices || service.subServices || [];
 
   return (
     <section className="bg-background px-5 py-24 md:px-10">
@@ -379,9 +383,11 @@ export function TechStackSection({
   // Data-driven when the service provides techStack; shared defaults otherwise.
   // closingText renders only when the data actually provides it.
   const techData = (
-    service as (MainService & {
-      techStack?: TechStackData & Record<string, unknown>;
-    }) | undefined
+    service as
+      | (MainService & {
+          techStack?: TechStackData & Record<string, unknown>;
+        })
+      | undefined
   )?.techStack;
   const title = techData?.title || "Modern tools with boring reliability.";
   const copy =

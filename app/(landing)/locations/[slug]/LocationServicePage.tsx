@@ -98,7 +98,9 @@ export default function LocationServicePage({ data }: Props) {
                 Locations
               </Link>
               <ChevronRight className="h-4 w-4 text-muted-foreground" />
-              <span className="font-semibold text-foreground">{data.title}</span>
+              <span className="font-semibold text-foreground">
+                {data.title}
+              </span>
             </nav>
 
             <div
@@ -194,7 +196,9 @@ export default function LocationServicePage({ data }: Props) {
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
                     <Image
                       src={data.trustImage || "/assets/why.png"}
-                      alt={data.trustTitle || "Trusted Software Development Team"}
+                      alt={
+                        data.trustTitle || "Trusted Software Development Team"
+                      }
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
@@ -556,7 +560,9 @@ export default function LocationServicePage({ data }: Props) {
         )}
 
         {/* ===== SECTION 11: CLOSING CTA ===== */}
-        {(data.closingTitle || data.closingDescription || data.closingCtaText) && (
+        {(data.closingTitle ||
+          data.closingDescription ||
+          data.closingCtaText) && (
           <section className="bg-background px-5 py-24 md:px-10">
             <div className="mx-auto max-w-3xl text-center">
               {data.closingTitle && (
