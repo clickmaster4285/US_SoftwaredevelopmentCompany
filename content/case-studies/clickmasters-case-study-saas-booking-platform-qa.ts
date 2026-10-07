@@ -51,7 +51,7 @@ export type CaseStudy = {
 };
 
 export const caseStudy: CaseStudy = {
-  slug: "clickmasters-case-study-saas-booking-platform-qa",
+  slug: "pre-launch-qa-for-a-saas-booking-platform",
   meta: {
     publishedAt: "2026-10-05",
     updatedAt: "2026-10-05",

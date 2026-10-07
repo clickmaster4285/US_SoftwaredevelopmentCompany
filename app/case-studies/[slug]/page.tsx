@@ -9,12 +9,20 @@ import {
   type Block,
   type Part,
 } from "@/content/case-studies/clickmasters-case-study-saas-booking-platform-qa";
-import { AtAGlanceSection, HeroSection } from "./Header";
-import { CtaSection, FunSection } from "./Footer";
-import { AnimatedCard, AnimatedTable } from "./Table";
+import {
+  AtAGlanceSection,
+  HeroSection,
+} from "../../../components/case-studies/Header";
+import {
+  CtaSection,
+  FunSection,
+} from "../../../components/case-studies/Footer";
+import {
+  AnimatedCard,
+  AnimatedTable,
+} from "../../../components/case-studies/Table";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
-
 
 /* ------------------------------------------------------------------ */
 /* Shared eyebrow + accent heading                                     */
@@ -184,7 +192,6 @@ function BlockRenderer({ block }: { block: Block }) {
     case "image":
       return (
         <figure className="rounded-2xl overflow-hidden border border-[oklch(0.18_0.02_250)]/12">
-
           <img
             src={block.src}
             alt={block.alt}
@@ -256,7 +263,9 @@ function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
 
   return (
     <ListTag
-      ref={listRef}
+      ref={(element: HTMLOListElement | HTMLUListElement | null) => {
+        listRef.current = element;
+      }}
       className="relative -mx-6 md:-mx-10 divide-y divide-[oklch(0.18_0.02_250)]/10 border-y border-[oklch(0.18_0.02_250)]/10"
     >
       {items.map((item, i) => (
@@ -288,7 +297,6 @@ function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
     </ListTag>
   );
 }
-
 
 const FUN_ITEMS = [
   {
@@ -323,24 +331,22 @@ export default function CaseStudyPage() {
     h1: string;
     intro: string;
     disclaimer?: string;
-    atAGlance?: { label: string; value: string }[];
+    atAGlanceTitle: string;
+    atAGlance: { label: string; value: string }[];
     primaryCta?: { label: string; href: string };
     secondaryCta?: { label: string; href: string };
   };
 
   return (
     <main className="relative bg-[oklch(0.97_0.005_80)] text-[oklch(0.18_0.02_250)] overflow-hidden">
-
-
       <HeroSection hero={hero} />
 
-      <AtAGlanceSection
-        title={caseStudy.hero.atAGlanceTitle}
-        rows={caseStudy.hero.atAGlance}
-      />
+      <AtAGlanceSection title={hero.atAGlanceTitle} rows={hero.atAGlance} />
 
-      <div className="bg-white"> <PartsSection parts={caseStudy.parts} /></div>
-     
+      <div className="bg-white">
+        {" "}
+        <PartsSection parts={caseStudy.parts} />
+      </div>
 
       <FunSection />
 

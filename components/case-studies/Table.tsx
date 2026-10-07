@@ -40,8 +40,6 @@ const cardIcons = [
   Zap,
 ];
 
-
-
 export function AnimatedTable({ rows }: { rows: string[][] }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -223,18 +221,7 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
   );
 }
 
-
-
-
-
-
-export function AnimatedCard({
-  title,
-  body,
-}: {
-  title: string;
-  body: string;
-}) {
+export function AnimatedCard({ title, body }: { title: string; body: string }) {
   const ref = useRef<HTMLDivElement>(null);
 
   const [Icon] = useState(() => {
@@ -316,4 +303,3 @@ export function AnimatedCard({
     </div>
   );
 }
-

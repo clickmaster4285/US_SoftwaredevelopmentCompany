@@ -13,7 +13,7 @@ const CASE_STUDIES = [
     label: "Pre-launch QA for a SaaS Booking Platform",
     description:
       "End-to-end QA on a multi-tenant booking SaaS ahead of public launch — regression, load, and payment-flow testing.",
-    href: "/case-studies/clickmasters-case-study-saas-booking-platform-qa",
+    href: "/case-studies/pre-launch-qa-for-a-saas-booking-platform",
   },
 ];
 
