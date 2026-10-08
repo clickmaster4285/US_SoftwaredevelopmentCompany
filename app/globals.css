@@ -222,3 +222,15 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+
+html:has([data-case-studies-layout]),
+body:has([data-case-studies-layout]) {
+  scrollbar-width: auto;
+}
+
+html:has([data-case-studies-layout])::-webkit-scrollbar,
+body:has([data-case-studies-layout])::-webkit-scrollbar {
+  display: initial;
+  width: auto;
+  height: auto;
+}
