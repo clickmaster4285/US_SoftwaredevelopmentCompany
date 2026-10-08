@@ -15,6 +15,16 @@ export type Block =
       height: number;
       caption?: string;
     }
+  | {
+      kind: "video";
+      src: string;
+      alt: string;
+      caption?: string;
+      controls?: boolean;
+      autoPlay?: boolean;
+      muted?: boolean;
+      loop?: boolean;
+    }
   | { kind: "table"; rows: string[][] }
   | {
       kind: "card";
@@ -616,6 +626,16 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "This case study sets out how Clickmasters plans and runs that work. It is a risk-based manual test that starts where a launch failure would hurt most: double bookings, payment and booking statuses drifting apart, and one business seeing another's data. It ends with a reproducible defect log, a clear fix-first or go verdict, and a retest of every fix.",
         },
+        {
+          kind: "video",
+          src: "/case-study1.mp4",
+          alt: "Summary video showing a Clickmasters project walkthrough",
+          caption: "Summary video",
+          controls: false,
+          autoPlay: true,
+          muted: true,
+          loop: true,
+        },
       ],
     },
     {
@@ -1090,56 +1110,52 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "Exact OS and browser versions are recorded on every report.",
         },
-        {
-          kind: "heading",
-          level: 2,
-          text: "How we document a bug",
-        },
-        {
-          kind: "para",
-          text: "This is a format sample with synthetic data, not a finding.",
-        },
-        {
-          kind: "list",
-          items: [
-            "Title: Booking: slot stays blocked after the deposit payment expires",
-          ],
-        },
-        {
-          kind: "list",
-          items: ["Type and severity: Bug, High"],
-        },
-        {
-          kind: "list",
-          items: [
-            "Device and browser: iPhone, Safari; exact versions recorded per session",
-          ],
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "Steps to reproduce:",
-        },
-        {
-          kind: "list",
-          items: [
-            "Open the public booking link of TEST Salon A.",
-            "Choose service TEST Cut 30, staff TEST Staff 1, tomorrow at 10:00.",
-            "Enter customer details and continue to payment.",
-            "On the Mollie test screen choose Expired and continue.",
-            "Reopen the booking link and look at tomorrow at 10:00.",
-          ],
-          ordered: true,
-        },
-        {
-          kind: "list",
-          items: [
-            "Expected result: the booking shows as cancelled and 10:00 is offered again.",
-            "Actual result: 10:00 is not offered; the dashboard shows the booking as awaiting payment.",
-            "Evidence: screen recording and two screenshots; reproduced 3 of 3 attempts.",
-          ],
-          ordered: false,
-        },
+
+
+
+
+{
+  kind: "heading",
+  level: 2,
+  text: "How we document a bug",
+},
+{
+  kind: "para",
+  text: "This is a format sample with synthetic data, not a finding.",
+},
+{
+  kind: "list",
+  ordered: false,
+  items: [
+    "Title: Booking: slot stays blocked after the deposit payment expires",
+    "Type and severity: Bug, High",
+    "Device and browser: iPhone, Safari; exact versions recorded per session",
+    "Expected result: the booking shows as cancelled and 10:00 is offered again.",
+    "Actual result: 10:00 is not offered; the dashboard shows the booking as awaiting payment.",
+    "Evidence: screen recording and two screenshots; reproduced 3 of 3 attempts.",
+  ],
+},
+{
+  kind: "heading",
+  level: 3,
+  text: "Steps to reproduce:",
+},
+{
+  kind: "list",
+  ordered: true,
+  items: [
+    "Open the public booking link of TEST Salon A.",
+    "Choose service TEST Cut 30, staff TEST Staff 1, tomorrow at 10:00.",
+    "Enter customer details and continue to payment.",
+    "On the Mollie test screen choose Expired and continue.",
+    "Reopen the booking link and look at tomorrow at 10:00.",
+  ],
+},
+
+    
+
+
+        
         {
           kind: "heading",
           level: 2,

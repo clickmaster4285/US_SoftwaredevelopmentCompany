@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -156,6 +156,71 @@ function BlockList({ blocks }: { blocks: Block[] }) {
   );
 }
 
+function VideoBlock({ block }: { block: Extract<Block, { kind: "video" }> }) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const playOnVisible = () => {
+      const rect = video.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight * 1.2 && rect.bottom > 0;
+
+      if (isVisible) {
+        video.muted = true;
+        video.playsInline = true;
+        void video.play().catch(() => undefined);
+      } else {
+        video.pause();
+      }
+    };
+
+    playOnVisible();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+
+        if (entry.isIntersecting) {
+          video.muted = true;
+          video.playsInline = true;
+          void video.play().catch(() => undefined);
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [block.src]);
+
+  return (
+    <figure className="rounded-2xl overflow-hidden border border-[oklch(0.18_0.02_250)]/12 bg-black">
+      <video
+        ref={videoRef}
+        src={block.src}
+        aria-label={block.alt}
+        title={block.alt}
+        controls={false}
+        autoPlay={block.autoPlay ?? true}
+        muted={block.muted ?? true}
+        loop={block.loop ?? true}
+        playsInline
+        preload="metadata"
+        className="w-full h-auto max-h-[70vh] object-cover"
+      />
+      {block.caption && (
+        <figcaption className="px-4 py-3 text-xs opacity-60">
+          {block.caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
 function BlockRenderer({ block }: { block: Block }) {
   switch (block.kind) {
     case "heading":
@@ -206,6 +271,9 @@ function BlockRenderer({ block }: { block: Block }) {
         </figure>
       );
 
+    case "video":
+      return <VideoBlock block={block} />;
+
     case "code":
       return (
         <pre className="rounded-xl border border-[oklch(0.18_0.02_250)]/12 bg-white/70 p-5 overflow-x-auto text-xs md:text-sm no-scrollbar">
@@ -225,7 +293,16 @@ function BlockRenderer({ block }: { block: Block }) {
 /* List                                                                */
 /* ------------------------------------------------------------------ */
 
-function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
+function ListBlock({
+  items,
+  ordered,
+}: {
+  items: (
+    | string
+    | { text: string; children?: string[]; childrenOrdered?: boolean }
+  )[];
+  ordered?: boolean;
+}) {
   const listRef = useRef<HTMLOListElement | HTMLUListElement>(null);
 
   useGSAP(
@@ -238,8 +315,10 @@ function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
       ).matches;
 
       const rows = root.querySelectorAll<HTMLElement>("[data-list-row]");
+      const children = root.querySelectorAll<HTMLElement>("[data-list-child]");
+
       if (reduceMotion) {
-        gsap.set(rows, { opacity: 1, y: 0 });
+        gsap.set([...rows, ...children], { opacity: 1, y: 0 });
         return;
       }
 
@@ -255,6 +334,22 @@ function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
           scrollTrigger: { trigger: root, start: "top 85%" },
         },
       );
+
+      if (children.length) {
+        gsap.fromTo(
+          children,
+          { y: 12, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.45,
+            ease: "power2.out",
+            stagger: 0.04,
+            delay: 0.15,
+            scrollTrigger: { trigger: root, start: "top 85%" },
+          },
+        );
+      }
     },
     { scope: listRef, dependencies: [] },
   );
@@ -268,58 +363,85 @@ function ListBlock({ items, ordered }: { items: string[]; ordered?: boolean }) {
       }}
       className="relative -mx-6 md:-mx-10 divide-y divide-[oklch(0.18_0.02_250)]/10 border-y border-[oklch(0.18_0.02_250)]/10"
     >
-      {items.map((item, i) => (
-        <li
-          key={i}
-          data-list-row
-          className="group relative grid grid-cols-[auto_1fr] md:grid-cols-[88px_1fr] gap-5 md:gap-10 items-baseline px-6 md:px-10 py-6 md:py-7 will-change-transform transition-colors duration-500 hover:bg-[oklch(0.18_0.02_250)]/[0.03]"
-        >
-          <div
-            aria-hidden
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(circle at 0% 0%, oklch(0.65 0.18 250 / 0.10), transparent 55%)",
-            }}
-          />
+      {items.map((raw, i) => {
+        const item = typeof raw === "string" ? { text: raw } : raw;
+        const children = item.children ?? [];
+        const hasChildren = children.length > 0;
+        const ChildTag: "ol" | "ul" =
+          (item.childrenOrdered ?? ordered) ? "ol" : "ul";
 
-          <span className="relative select-none font-mono text-xs md:text-sm tracking-[0.2em] opacity-40 pt-1 tabular-nums">
-            {ordered
-              ? String(i + 1).padStart(2, "0")
-              : `— ${String(i + 1).padStart(2, "0")}`}
-          </span>
+        return (
+          <li
+            key={i}
+            data-list-row
+            className="group relative px-6 md:px-10 py-6 md:py-7 will-change-transform transition-colors duration-500 hover:bg-[oklch(0.18_0.02_250)]/[0.03]"
+          >
+            {/* hover glow */}
+            <div
+              aria-hidden
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(circle at 0% 0%, oklch(0.65 0.18 250 / 0.10), transparent 55%)",
+              }}
+            />
 
-          <p className="relative text-[15px] md:text-lg leading-relaxed opacity-90 max-w-none">
-            {item}
-          </p>
-        </li>
-      ))}
+            {/* top row: index + text */}
+            <div className="relative grid grid-cols-[56px_1fr] md:grid-cols-[88px_1fr] gap-5 md:gap-10 items-baseline">
+              <span className="select-none font-mono text-xs md:text-sm tracking-[0.2em] opacity-40 pt-1 tabular-nums">
+                {ordered
+                  ? String(i + 1).padStart(2, "0")
+                  : `— ${String(i + 1).padStart(2, "0")}`}
+              </span>
+
+              <p className="text-[15px] md:text-lg leading-relaxed opacity-90 max-w-none">
+                {item.text}
+              </p>
+            </div>
+
+            {/* nested children — indented to align with the parent's text column */}
+            {hasChildren && (
+              <div className="relative mt-4 md:mt-5 ml-[76px] md:ml-[128px]">
+                <ChildTag
+                  className={[
+                    "space-y-2.5 md:space-y-3",
+                    "pl-4 md:pl-6",
+                   
+                    ChildTag === "ol" ? "list-decimal" : "list-none",
+                  ].join(" ")}
+                >
+                  {children.map((child, j) => (
+                    <li
+                      key={j}
+                      data-list-child
+                      className={[
+                        "text-[14px] md:text-[15px] leading-relaxed opacity-75",
+                        "will-change-transform transition-opacity duration-300 hover:opacity-100",
+                        ChildTag === "ol"
+                          ? "pl-2 marker:font-mono marker:text-xs marker:opacity-50"
+                          : "",
+                      ].join(" ")}
+                    >
+                      {ChildTag === "ul" && (
+                        <span
+                          aria-hidden
+                          className="mr-3 inline-block h-1 w-1 -translate-y-[2px] rounded-full bg-[oklch(0.18_0.02_250)]/40 align-middle"
+                        />
+                      )}
+                      {child}
+                    </li>
+                  ))}
+                </ChildTag>
+              </div>
+            )}
+          </li>
+        );
+      })}
     </ListTag>
   );
 }
 
-const FUN_ITEMS = [
-  {
-    k: "Signal",
-    v: "Every charter maps to one line in the brief — nothing invented.",
-  },
-  {
-    k: "Coverage",
-    v: "Twenty charters, three plan tiers, two payment paths, one tenant edge case.",
-  },
-  {
-    k: "Effort",
-    v: "16–22 h launch-critical path; 32–46 h for full coverage including retest.",
-  },
-  {
-    k: "Cadence",
-    v: "Daily written status, a shared board, and a single threaded channel.",
-  },
-  {
-    k: "Exit",
-    v: "You keep the charters, the evidence, and the retest log. No lock-in.",
-  },
-];
+
 
 /* ------------------------------------------------------------------ */
 /* Page                                                                */

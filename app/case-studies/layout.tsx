@@ -7,10 +7,10 @@ export default function CaseStudiesLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div data-case-studies-layout>
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
