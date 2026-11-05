@@ -35,7 +35,7 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <BenefitsSection service={service} />
           <WhyChooseUsSection service={service} />
           <SectionCta label={service.sectionCtas?.afterWhyChooseUs} />
-          <ClientSuccessStories service={service} />
+          <ClientSuccessStories />
           <ProcessSection service={service} />
           <PricingSection plans={service.pricing || []} service={service} />
           <AgencySection service={service} />
