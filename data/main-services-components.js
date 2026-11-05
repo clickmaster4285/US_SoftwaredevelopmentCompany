@@ -1,5 +1,6 @@
 // main-service-components.js
 import Link from "next/link";
+import { isRetiredSub } from "../lib/site-routes.mjs";
 import {
   ArrowRight,
   BarChart3,
@@ -157,6 +158,25 @@ export function IconFor({ name }) {
   return <IconComponent className="h-5 w-5" />;
 }
 
+const DELIVERY_FACTS = [
+  { value: "Written", label: "Scope before build" },
+  { value: "Owned", label: "Code stays with you" },
+  { value: "Remote", label: "Video and phone delivery" },
+  { value: "Reviewed", label: "Checks before release" },
+];
+
+function deliveryBadge(badge) {
+  const text = String(badge || "").trim();
+  if (!text || /award|certif|iso\b|partner|\d/i.test(text)) {
+    return "Remote-first delivery";
+  }
+  return text;
+}
+
+function isUnverifiedClaim(text) {
+  return /\d|award|certif|iso\b|istqb|★|5-star/i.test(String(text || ""));
+}
+
 // Hero Component with integrated Breadcrumb
 export function MainServiceHero({ service }) {
   return (
@@ -179,7 +199,7 @@ export function MainServiceHero({ service }) {
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-primary" />
-              {service.heroBadge || "Main service"}
+              {deliveryBadge(service.heroBadge)}
             </div>
             <h1 className="max-w-5xl text-[clamp(2.5rem,5vw,4.5rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
               {service.title}
@@ -207,15 +227,15 @@ export function MainServiceHero({ service }) {
             {service.heroImage ? (
               <img
                 src={service.heroImage}
-                alt=""
+                alt={service.title || ""}
                 className="absolute inset-0 h-full w-full object-cover opacity-80"
               />
             ) : null}
             <div className="absolute inset-0 bg-background/45" />
             <div className="absolute inset-x-6 bottom-6 grid gap-3 sm:grid-cols-2">
-              {(service.stats || []).slice(0, 4).map((stat) => (
+              {DELIVERY_FACTS.map((stat) => (
                 <div
-                  key={`${stat.value}-${stat.label}`}
+                  key={stat.label}
                   className="rounded-lg border border-border bg-card/90 p-4 backdrop-blur"
                 >
                   <p className="text-2xl font-semibold text-card-foreground">
@@ -306,7 +326,9 @@ export function ExploreSection({ service }) {
           copy={exploreCopy}
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {servicesToRender.map((item) => (
+          {servicesToRender
+            .filter((item) => !isRetiredSub(service.slug, item.slug))
+            .map((item) => (
             <Link
               key={item.slug}
               href={`/${service.slug}/${item.slug}`}
@@ -348,17 +370,13 @@ export function TrustSection({ service }) {
     closingText: "",
   };
 
-  // Use stats from service or fallback
-  const stats = service.stats || [
-    { value: "200+", label: "Projects Delivered" },
-    { value: "50+", label: "Expert Engineers" },
-    { value: "99.9%", label: "Uptime Guarantee" },
-    { value: "24/7", label: "Support" },
-  ];
+  const stats = DELIVERY_FACTS;
 
   const descriptionText = normalizeSectionText(trustData.description || "");
   const uniquePoints = (trustData.points || []).filter(
-    (point) => !descriptionText.includes(normalizeSectionText(point)),
+    (point) =>
+      !descriptionText.includes(normalizeSectionText(point)) &&
+      !isUnverifiedClaim(point),
   );
   const closingText =
     trustData.closingText &&
@@ -446,7 +464,7 @@ export function TrustSection({ service }) {
               <div className="flex items-center justify-center gap-2">
                 <ShieldCheck className="h-5 w-5 text-primary" />
                 <p className="text-sm font-semibold text-foreground">
-                  Trusted by startups and enterprises across the USA
+                  Remote-first delivery, with scope agreed in writing
                 </p>
               </div>
             </div>
@@ -613,46 +631,8 @@ export function BenefitsSection({ service }) {
 // ============================================
 // TRUSTED CLIENTS SECTION
 // ============================================
-export function TrustedClientsSection({ service }) {
-  const clients = service.trustedClients || [];
-
-  if (!clients.length) return null;
-
-  return (
-    <section className="bg-background px-5 py-24 md:px-10">
-      <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          eyebrow="Trusted clients"
-          title={
-            service.trustedClientsSection?.title ||
-            `${service.title} for teams with real stakes`
-          }
-          copy={
-            service.trustedClientsSection?.description ||
-            `We partner with organizations that need dependable ${service.title.toLowerCase()} delivery.`
-          }
-        />
-        <div className="mt-14 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
-          {clients.slice(0, 5).map((client) => (
-            <div
-              key={client.name}
-              className="rounded-lg border border-border bg-card p-5"
-            >
-              <span className="mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
-                <IconFor name={client.icon} />
-              </span>
-              <h3 className="font-semibold text-card-foreground">
-                {client.name}
-              </h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                {client.industry}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+export function TrustedClientsSection() {
+  return null;
 }
 
 // ============================================
@@ -958,48 +938,23 @@ export function WhyChooseUsSection({ service }) {
 // ============================================
 // CLIENT SUCCESS STORIES (Testimonials)
 // ============================================
-export function ClientSuccessStories({ service }) {
-  const testimonials = service.testimonials || [];
-
-  if (!testimonials.length) return null;
-
+export function ClientSuccessStories() {
   return (
     <section className="bg-muted px-5 py-24 md:px-10">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-3xl">
         <SectionHeading
-          eyebrow="Testimonials"
-          title={service.testimonialsSection?.title || "Client Success Stories"}
-          copy={
-            service.testimonialsSection?.description ||
-            "Hear from our clients about their experience working with us."
-          }
+          eyebrow="Case study"
+          title="One written client result"
+          copy="We publish a client result only when that client has agreed to a written case study."
         />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="rounded-lg border border-border bg-card p-6 flex flex-col"
-            >
-              <Quote className="mb-4 h-6 w-6 text-primary" />
-              <p className="flex-1 text-sm leading-7 text-card-foreground">
-                "{testimonial.quote}"
-              </p>
-              <div className="mt-6 pt-4 border-t border-border">
-                <p className="font-semibold text-card-foreground">
-                  {testimonial.author}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonial.title}, {testimonial.company}
-                </p>
-                {testimonial.location ? (
-                  <p className="text-xs text-muted-foreground">
-                    {testimonial.location}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-          ))}
-        </div>
+        <p className="mt-8 text-lg leading-8 text-muted-foreground">
+          <Link
+            href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
+            className="font-semibold text-primary"
+          >
+            Pre-launch QA for a SaaS booking platform
+          </Link>
+        </p>
       </div>
     </section>
   );

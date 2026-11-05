@@ -9,7 +9,6 @@ import {
   Compass,
   Layers3,
   MessageSquareText,
-  Quote,
   Sparkles,
   Workflow,
 } from "lucide-react";
@@ -20,6 +19,21 @@ import type {
   ServicePricingTier,
   SubService,
 } from "./[sub_service]/service-data";
+
+const DELIVERY_FACTS = [
+  { value: "Written", label: "Scope before build" },
+  { value: "Owned", label: "Code stays with you" },
+  { value: "Remote", label: "Video and phone delivery" },
+  { value: "Reviewed", label: "Checks before release" },
+];
+
+function deliveryBadge(badge?: string) {
+  const text = String(badge || "").trim();
+  if (!text || /award|certif|iso\b|partner|\d/i.test(text)) {
+    return "Remote-first delivery";
+  }
+  return text;
+}
 
 const appIdeas = [
   "Customer portals",
@@ -100,7 +114,7 @@ export function MainServiceHero({ service }: { service: MainService }) {
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
             <Sparkles className="h-3.5 w-3.5 text-primary" />
-            {service.heroBadge || "Main service"}
+            {deliveryBadge(service.heroBadge)}
           </div>
           <h1 className="max-w-5xl text-[clamp(3rem,8vw,8rem)] font-semibold leading-[0.95] tracking-tight text-foreground">
             {service.title}
@@ -127,15 +141,15 @@ export function MainServiceHero({ service }: { service: MainService }) {
           {service.heroImage ? (
             <img
               src={service.heroImage}
-              alt=""
+              alt={service.title || ""}
               className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
           ) : null}
           <div className="absolute inset-0 bg-background/45" />
           <div className="absolute inset-x-6 bottom-6 grid gap-3 sm:grid-cols-2">
-            {(service.stats || []).slice(0, 4).map((stat) => (
+            {DELIVERY_FACTS.map((stat) => (
               <div
-                key={`${stat.value}-${stat.label}`}
+                key={stat.label}
                 className="rounded-lg border border-border bg-card/90 p-4 backdrop-blur"
               >
                 <p className="text-2xl font-semibold text-card-foreground">
@@ -271,38 +285,8 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
   );
 }
 
-export function TrustedClientsSection({ service }: { service: MainService }) {
-  const clients = service.trustedClients || [];
-
-  return (
-    <section className="bg-background px-5 py-24 md:px-10">
-      <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          eyebrow="Trusted clients"
-          title={`${service.title} for teams with real stakes`}
-          copy={`We partner with organizations that need dependable ${service.title.toLowerCase()} delivery.`}
-        />
-        <div className="mt-14 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
-          {clients.slice(0, 5).map((client) => (
-            <div
-              key={client.name}
-              className="rounded-lg border border-border bg-card p-5"
-            >
-              <span className="mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
-                <IconFor name={client.icon} />
-              </span>
-              <h3 className="font-semibold text-card-foreground">
-                {client.name}
-              </h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                {client.industry}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+export function TrustedClientsSection(_props: { service: MainService }) {
+  return null;
 }
 
 export function AppsSection() {
@@ -609,17 +593,22 @@ export function IndustriesSection() {
   );
 }
 
-export function TestimonialsSection({ service }: { service: MainService }) {
+export function TestimonialsSection(_props: { service: MainService }) {
   return (
     <section className="bg-background px-5 py-24 md:px-10">
-      <div className="mx-auto max-w-4xl text-center">
-        <Quote className="mx-auto h-8 w-8 text-primary" />
-        <p className="mt-8 text-[clamp(1.8rem,4vw,3.5rem)] font-semibold leading-tight text-foreground">
-          The team gave us the clarity, delivery rhythm, and technical depth we
-          needed to move {service.title.toLowerCase()} from plan to production.
-        </p>
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-          Product leadership team
+      <div className="mx-auto max-w-3xl">
+        <SectionHeading
+          eyebrow="Case study"
+          title="One written client result"
+          copy="We publish a client result only when that client has agreed to a written case study."
+        />
+        <p className="mt-8 text-lg leading-8 text-muted-foreground">
+          <Link
+            href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
+            className="font-semibold text-primary"
+          >
+            Pre-launch QA for a SaaS booking platform
+          </Link>
         </p>
       </div>
     </section>

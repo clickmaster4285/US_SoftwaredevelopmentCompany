@@ -27,7 +27,7 @@ export const SERVICE_SECTION_DATA = {
       "Get the best software development services from Clickmasters. Build custom, scalable software solutions with expert developers. Get started today!",
     heroBadge: "200+ Software Projects Delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Software Projects Delivered" },
       { value: "50+", label: "Expert Engineers on Staff" },
@@ -111,7 +111,7 @@ export const SERVICE_SECTION_DATA = {
           "Replace generic, off-the-shelf tools with software built around how your business actually operates.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Software Development Company | ClickMasters",
         metaDescription:
           "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
@@ -143,7 +143,7 @@ export const SERVICE_SECTION_DATA = {
           "Multi-department systems that integrate with existing tools and scale across teams without downtime.",
         icon: "Building2",
         heroImage:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
         metaTitle:
           "Enterprise Software Development Company | Custom ERP & B2B Systems",
         lead: "Enterprise software built for multi-department systems with role-based access and seamless integrations.",
@@ -161,7 +161,7 @@ export const SERVICE_SECTION_DATA = {
           "Cloud-native applications ready for recurring revenue with subscription billing and secure account architecture.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=40&w=640&auto=format&fit=crop",
         lead: "From idea to revenue-generating SaaS platform including billing, usage metering, and multi-tenant architecture.",
         highlights: [
           "Multi-tenant architecture",
@@ -177,7 +177,7 @@ export const SERVICE_SECTION_DATA = {
           "Modern web applications on React, Next.js, and Node.js that stay fast, accessible, and easy to maintain.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         lead: "Modern, well-supported stacks (React, Next.js, Node.js) for fast, accessible, and maintainable web platforms.",
         highlights: [
           "React & Next.js",
@@ -193,7 +193,7 @@ export const SERVICE_SECTION_DATA = {
           "Native and cross-platform mobile apps connected to the same backend and APIs as your web platform.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         lead: "Native and cross-platform builds for iOS and Android with consistent data across all devices.",
         highlights: [
           "iOS & Android development",
@@ -209,7 +209,7 @@ export const SERVICE_SECTION_DATA = {
           "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows.",
         icon: "Brain",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         lead: "Add practical AI features to existing or new software without over-engineering the solution.",
         highlights: [
           "Automation & predictive analytics",
@@ -225,7 +225,7 @@ export const SERVICE_SECTION_DATA = {
           "A single accountable team across frontend, backend, and infrastructure for consistent architecture.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         lead: "Full stack development with a single accountable team across frontend, backend, and infrastructure.",
         highlights: [
           "Frontend & backend development",
@@ -241,7 +241,7 @@ export const SERVICE_SECTION_DATA = {
           "Build and integrate APIs with payment processors, CRMs, ERPs, and internal systems.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         lead: "API integrations that make software fit into your existing operations not replace them.",
         highlights: [
           "Payment processor integration",
@@ -257,7 +257,7 @@ export const SERVICE_SECTION_DATA = {
           "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         lead: "Strategic consulting to scope roadmaps, choose tech stacks, and plan budgets before any code is written.",
         highlights: [
           "Roadmap planning",
@@ -273,7 +273,7 @@ export const SERVICE_SECTION_DATA = {
           "Dedicated developers who work inside your existing sprint process and tools.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         lead: "Extend your engineering capacity with dedicated developers who work inside your existing sprint process and tools.",
         highlights: [
           "Dedicated engineering teams",

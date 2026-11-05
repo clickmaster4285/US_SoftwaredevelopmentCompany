@@ -11,7 +11,7 @@ export const locationServiceData = {
     slug: "software-development-company-los-angeles",
     title: "Software Development Company Los Angeles",
     heroBadge: "Trusted Los Angeles Software Development Company",
-    heroImage: "/locations/hero-los-angeles.jpg",
+    heroImage: "/locations/hero-los-angeles-sm.jpg",
     intro:
       "Clickmasters is a software development company Los Angeles businesses turn to when they need working software, not just promises. We are a hands-on software development agency Los Angeles founders and operations teams call when they want custom software built right the first time. Whether you run a startup in Silicon Beach, a fintech firm downtown, or a growing retail brand in the Valley, our Los Angeles software development team designs, builds, and supports the web, mobile, and AI products your business runs on.\n\nFrom the first discovery call to post-launch support, our software developers Los Angeles clients rely on stay hands-on with your project. No handoffs to a call center. No vague timelines. Just a software development company in Los Angeles that ships on schedule and stands behind its work.",
     ctaText: "Get a Free Quote From a Los Angeles Software Development Company",
@@ -20,14 +20,14 @@ export const locationServiceData = {
     trustDescription:
       "Los Angeles is home to hundreds of software development companies, so it is fair to ask why Clickmasters is different. We built our software development agency around one idea: businesses do not need more code; they need software that solves a real problem and keeps working after launch.\n\nAs a full-service software company Los Angeles teams work with directly, we combine experienced engineers, clear communication, and honest pricing. Every Los Angeles software developer on our team works in short, visible sprints, so you always know what is being built and when it will ship. We currently support 120+ companies across the United States, including a growing base of clients across Los Angeles, Orange County, and the wider Southern California region.",
     trustPoints: [
-      "500+ software projects delivered for U.S. businesses",
+      "Scope, timeline, and price agreed in writing before development starts",
       "5+ years of hands-on experience per developer, not entry-level teams",
-      "ISO 27001 certified and GDPR compliant development process",
+      "Security reviews and privacy-conscious handling of customer data",
       "One point of contact from your first call through launch and support",
     ],
     trustClosing:
       "Whether you need a software development partner Los Angeles for a single project or an ongoing software development outsourcing Los Angeles arrangement for your whole roadmap, Clickmasters scales with you.",
-    trustImage: "/assets/why.png",
+    trustImage: "/assets/why-photo.webp",
     servicesTitle: "Our Software Development Services in Los Angeles",
     servicesDescription:
       "Clickmasters offers complete software development services Los Angeles businesses need to plan, build, launch, and maintain digital products. As a full-stack software development firm Los Angeles clients can rely on for more than one skill set, we cover every layer of your project under one roof.",
@@ -189,7 +189,7 @@ export const locationServiceData = {
       "San Fernando Valley",
     ],
     locationsClosing:
-      "No matter which part of Los Angeles your business calls home, our software development company in Los Angeles is ready to meet by video call, phone, or in person to scope your project.",
+      "No matter which part of Los Angeles your business calls home, our software development company in Los Angeles is ready to meet by video call or phone to scope your project.",
     locationsCtaText: "Talk to a Los Angeles Software Development Team",
     faqs: [
       {
@@ -237,7 +237,7 @@ export const locationServiceData = {
     closingTitle:
       "Ready to work with a software development company in Los Angeles that treats your project like its own?",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in Los Angeles. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in Los Angeles. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Start Your Project With Clickmasters",
   },
 
@@ -251,7 +251,7 @@ export const locationServiceData = {
     slug: "software-development-company-houston",
     title: "Software Development Company Houston",
     heroBadge: "Trusted Software Development Company in Houston",
-    heroImage: "/locations/hero-houston.jpg",
+    heroImage: "/locations/hero-houston-sm.jpg",
     intro:
       "Clickmasters is a software development company Houston businesses call when they need software built just for them. We are a software development team Houston owners, managers, and IT leads bring in when they want custom software that fits their exact needs, not a generic tool that almost works.\n\nFrom the Energy Corridor to the Texas Medical Center, our Houston software development team builds websites, mobile apps, and AI tools for businesses across the city. We are a full-service software company Houston teams trust for new projects and for fixing old systems too. We bring skilled engineers, clear pricing, and weekly updates to every project.\n\nIf you are looking for a professional software development company Houston teams can count on for the long run, or you just need help with one project, Clickmasters can help. We also work with businesses that already know what they want built and just need the right team for custom software development in Houston.",
     ctaText: "Request a Free Project Quote From Our Houston Team",
@@ -260,9 +260,9 @@ export const locationServiceData = {
     trustDescription:
       "Houston runs on energy, healthcare, logistics, and manufacturing. Each of these industries needs software built by people who understand how the business works. Clickmasters is that kind of software development partner Houston companies can count on, and a Houston software company that treats every client like a long-term partner, not just another name on a long list of software development companies in Houston.\n\nOur approach is simple. We give you senior software developers Houston clients can talk to directly. We write down every decision so nothing is stuck in one person's head. And we give you a fixed price before any code is written. We currently work with 120+ companies across the country, including a growing group of clients in Houston and the wider Gulf Coast area.",
     trustPoints: [
-      "500+ software projects delivered for U.S. businesses",
+      "Scope, timeline, and price agreed in writing before development starts",
       "Senior engineers only, no junior-heavy teams",
-      "ISO 27001 certified and GDPR compliant development",
+      "Security reviews and privacy-conscious handling of customer data",
       "One dedicated project lead from start to finish",
     ],
     trustClosing:
@@ -430,7 +430,7 @@ export const locationServiceData = {
       "Pearland",
     ],
     locationsClosing:
-      "Wherever your business is located in the Houston area, we can connect by video call, phone, or in person to discuss your project. If you're ready to hire experienced software developers in Houston, our team is here to help.",
+      "Wherever your business is located in the Houston area, we can connect by video call or phone to discuss your project. If you're ready to hire experienced software developers in Houston, our team is here to help.",
     locationsCtaText: "Schedule a Call With Our Houston Team",
     faqs: [
       {
@@ -477,7 +477,7 @@ export const locationServiceData = {
     closingTitle:
       "Ready to work with a software development company in Houston that treats your project like its own?",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in Houston. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in Houston. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Start Your Project With Clickmasters",
   },
 
@@ -491,7 +491,7 @@ export const locationServiceData = {
     slug: "software-development-company-in-new-york",
     title: "Software Development Company in New York",
     heroBadge: "Trusted Software Development Company in New York",
-    heroImage: "/locations/hero-new-york.jpg",
+    heroImage: "/locations/hero-new-york-sm.jpg",
     intro:
       "Clickmasters is a software development company in New York helping businesses build solutions around their specific needs. We work with founders, operations teams, and IT leaders who need reliable software that fits their processes.\n\nFrom Manhattan to Brooklyn and beyond, our software development agency builds websites, mobile apps, AI solutions, and custom software for businesses across New York City. Every project includes experienced developers, clear pricing, and regular updates.\n\nWhether you need custom software development in New York or support with an existing system, Clickmasters is ready to help you build the right solution.",
     ctaText: "Request a Free Project Quote From Our New York Team",
@@ -500,14 +500,14 @@ export const locationServiceData = {
     trustDescription:
       "New York businesses need software that fits their goals and day-to-day operations. Clickmasters provides custom software development with senior developers, clear communication, and reliable project management.",
     trustPoints: [
-      "500+ software projects delivered",
+      "Scope, timeline, and price agreed in writing before development starts",
       "Senior development team",
-      "ISO 27001 certified and GDPR compliant",
+      "Security reviews and privacy-conscious delivery",
       "Dedicated project lead",
     ],
     trustClosing:
       "From custom software to ongoing development support, we build scalable solutions around your business needs.",
-    trustImage: "/assets/why.png",
+    trustImage: "/assets/why-photo.webp",
     servicesTitle: "Software Development Services We Offer in New York",
     servicesDescription:
       "Clickmasters offers full software development services that New York businesses need, from the first idea to the final launch. We are a software development firm New York clients use for more than just one job. We handle design, building, and support all in one place.",
@@ -716,7 +716,7 @@ export const locationServiceData = {
     closingTitle:
       "Ready to work with a software development company in New York that treats your project like its own?",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in New York. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in New York. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Start Your Project With Clickmasters",
   },
 
@@ -730,18 +730,18 @@ export const locationServiceData = {
     slug: "software-development-company-san-francisco",
     title: "Software Development Company in San Francisco",
     heroBadge: "Trusted Software Development Company in San Francisco",
-    heroImage: "/locations/hero-san-francisco.jpg",
+    heroImage: "/locations/hero-san-francisco-sm.jpg",
     intro:
       "Looking for a software development company in San Francisco that builds real, working software, not just promises? Clickmasters is a software development company San Francisco businesses trust to design, build, and grow custom websites, mobile apps, and AI tools. We work as a hands-on software development agency San Francisco startups, growing companies, and large enterprises rely on to turn ideas into secure, easy-to-use products.\n\nFrom your first idea to the final launch, our software developers San Francisco businesses hire handle every step: planning, design, coding, testing, and support after launch.",
     ctaText: "Get a Free Quote from Our San Francisco Team",
     ctaHref: "/contact",
     trustTitle: "A Software Development Company in San Francisco",
     trustDescription:
-      "Clickmasters is a custom software development company San Francisco businesses trust for reliable, scalable solutions. As a software development firm San Francisco companies rely on, we combine strong engineering with clear communication and full code ownership.\n\nFrom a software solutions company San Francisco startups recommend to a full-stack development company San Francisco enterprises trust, we build tailored solutions. Our SaaS development company San Francisco, MVP development company San Francisco, and application development company San Francisco services help businesses turn ideas into working products.\n\nAs a trusted software development company San Francisco, we work with AWS, Azure, and Google Cloud while following ISO 27001 and GDPR standards.",
+      "Clickmasters is a custom software development company San Francisco businesses trust for reliable, scalable solutions. As a software development firm San Francisco companies rely on, we combine strong engineering with clear communication and full code ownership.\n\nFrom a software solutions company San Francisco startups recommend to a full-stack development company San Francisco enterprises trust, we build tailored solutions. Our SaaS development company San Francisco, MVP development company San Francisco, and application development company San Francisco services help businesses turn ideas into working products.\n\nAs a trusted software development company San Francisco, we work with AWS, Azure, and Google Cloud and treat customer data with access controls and written handling rules.",
     trustPoints: [
-      "500+ software projects delivered for U.S. businesses",
+      "Scope, timeline, and price agreed in writing before development starts",
       "5+ years of hands-on experience per developer",
-      "ISO 27001 certified and GDPR compliant development",
+      "Security reviews and privacy-conscious handling of customer data",
       "One dedicated project lead from start to finish",
     ],
     trustClosing:
@@ -829,7 +829,7 @@ export const locationServiceData = {
     whyChooseDescription:
       "Ask any founder to name the top software companies in San Francisco, and you will hear stories about missed deadlines and unclear pricing. Clickmasters was built to be different, one of the best software companies in San Francisco that actually keeps its word.",
     whyChoosePoints: [
-      "Proven results: 500+ successful projects delivered for clients across the United States.",
+      "Proven results: scope, timeline, and price agreed in writing before development starts.",
       "Real experience: Our team of top software developers San Francisco relies on average 5+ years of hands-on, real-world work.",
       "Full transparency: Clear milestones, timelines, and no hidden costs, ever.",
       "One point of contact: A single person guides your project from the first call to final launch.",
@@ -933,7 +933,7 @@ export const locationServiceData = {
       "Pacific Heights",
     ],
     locationsClosing:
-      "Wherever your business is located in the San Francisco Bay Area, we can connect by video call, phone, or in person to discuss your project.",
+      "Wherever your business is located in the San Francisco Bay Area, we can connect by video call or phone to discuss your project.",
     locationsCtaText: "Book a Free Call With Our San Francisco Team Today",
     faqs: [
       {
@@ -988,7 +988,7 @@ export const locationServiceData = {
     closingTitle:
       "Ready to build something great? Get in touch with Clickmasters, your software development company in San Francisco, today.",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in San Francisco. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in San Francisco. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Start Your Project With Clickmasters",
   },
 
@@ -1002,23 +1002,23 @@ export const locationServiceData = {
     slug: "software-development-company-chicago",
     title: "Software Development Company in Chicago You Can Trust",
     heroBadge: "Trusted Software Development Company in Chicago",
-    heroImage: "/locations/hero-chicago.jpg",
+    heroImage: "/locations/hero-chicago-sm.jpg",
     intro:
       "Clickmasters is a software development company in Chicago that helps local businesses build software that actually works. From your first idea to the final launch, we design, build, and support custom software, websites, and mobile apps made for Chicago companies. Whether you run a startup in the Loop or a growing business out in the suburbs, our software development team is ready to help.\n\nAs a full-service custom software development company in Chicago, we handle web development, mobile app development, AI, and cloud work under one roof. You get one team, one point of contact, and one clear plan.",
     ctaText: "Get a Free Quote",
     ctaHref: "/contact",
     trustTitle: "Your Chicago Software Development Partner",
     trustDescription:
-      "Clickmasters is a software development agency built for businesses that want real results, not empty promises. As a software development company serving Chicago and the wider United States, we have helped startups, small businesses, and large companies turn their ideas into working software.\n\nOur developers hold AWS, Azure, and Google Cloud certifications, and our process follows ISO 27001 and GDPR standards to keep your data safe. Every project is fully documented, so nothing lives only in one person's head, and every agreement is written down before a single line of code ships.\n\nWe do not believe in one-size-fits-all templates. Every project starts with your goals, your users, and your budget. That is how a custom software development company in Chicago should work.",
+      "Clickmasters is a software development agency built for businesses that want real results, not empty promises. As a software development company serving Chicago and the wider United States, we have helped startups, small businesses, and large companies turn their ideas into working software.\n\nOur developers work in AWS, Azure, and Google Cloud, and we keep customer data behind access controls and written handling rules. Every project is fully documented, so nothing lives only in one person's head, and every agreement is written down before a single line of code ships.\n\nWe do not believe in one-size-fits-all templates. Every project starts with your goals, your users, and your budget. That is how a custom software development company in Chicago should work.",
     trustPoints: [
-      "500+ successful projects delivered for U.S. businesses",
-      "AWS, Azure, and Google Cloud certified developers",
-      "ISO 27001 certified and GDPR compliant development",
+      "Scope, timeline, and price agreed in writing before development starts",
+      "Hands-on experience with AWS, Azure, and Google Cloud",
+      "Security reviews and privacy-conscious handling of customer data",
       "One dedicated project lead from start to finish",
     ],
     trustClosing:
       "Whether you need custom software development or ongoing support, Clickmasters builds scalable solutions around your business needs.",
-    trustImage: "/assets/why.png",
+    trustImage: "/assets/why-photo.webp",
     servicesTitle: "Our Software Development Services in Chicago",
     servicesDescription:
       "Clickmasters offers complete software development services for Chicago businesses, covering planning, design, building, testing, launch, and ongoing support.",
@@ -1092,7 +1092,7 @@ export const locationServiceData = {
     whyChooseDescription:
       "There are many software development companies in Chicago. Here is what sets Clickmasters apart:",
     whyChoosePoints: [
-      "Proven results — 500+ successful projects delivered for U.S. businesses, with real, verifiable case studies instead of generic claims.",
+      "Proven results — scope, timeline, and price are agreed in writing. A client result is published only when that client agrees to a case study.",
       "Real experience — Our developers average 5+ years of hands-on experience, not a junior-heavy bench.",
       "Full transparency — Clear milestones, clear timelines, and no hidden costs, ever.",
       "One point of contact — You get a single account manager from kickoff to launch, not a rotating cast of strangers.",
@@ -1239,7 +1239,7 @@ export const locationServiceData = {
     ],
     closingTitle: "Ready to build software that grows your Chicago business?",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in Chicago. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in Chicago. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Get a Free Quote",
   },
 
@@ -1253,7 +1253,7 @@ export const locationServiceData = {
     slug: "software-development-company-dallas",
     title: "Software Development Company in Dallas",
     heroBadge: "Trusted Software Development Company in Dallas",
-    heroImage: "/locations/hero-dallas.jpg",
+    heroImage: "/locations/hero-dallas-sm.jpg",
     intro:
       "Looking for a software development company in Dallas that actually understands your business? Clickmasters is a Dallas software development company that builds custom software, mobile apps, and AI-powered tools for local businesses of every size. Whether you are a startup that needs its first product or an established company that wants to replace old, slow systems, our team of expert developers is ready to help.\n\nAs a trusted software development company in Dallas, we do not believe in one-size-fits-all software. We sit down with you, learn how your business works, and build a solution that fits your goals, your budget, and your timeline. From the first phone call to the day your software goes live, we work as your true technology partner, not just an outside vendor.",
     ctaText: "Get a Free Quote",
@@ -1262,9 +1262,9 @@ export const locationServiceData = {
     trustDescription:
       "Clickmasters is a custom software development company in Dallas built on one simple idea: technology should make business easier, not harder. Our team of software developers in Dallas has years of hands-on experience building websites, mobile apps, cloud systems, and AI tools for real companies with real problems to solve.\n\nWe are proud to be a software development firm in Dallas that puts honesty and clear communication first. You will always know what stage your project is in, what it costs, and when it will be ready. That kind of trust is why so many Dallas business owners keep coming back to us for every new software idea they have.\n\nOur developers hold real-world experience across many industries, follow modern security best practices, and stay up to date with the latest tools in AI, cloud computing, and mobile technology. This is what makes us a professional software development company in Dallas that businesses can depend on for the long run.",
     trustPoints: [
-      "500+ successful projects delivered for U.S. businesses",
-      "AWS, Azure, and Google Cloud certified developers",
-      "ISO 27001 certified and GDPR compliant development",
+      "Scope, timeline, and price agreed in writing before development starts",
+      "Hands-on experience with AWS, Azure, and Google Cloud",
+      "Security reviews and privacy-conscious handling of customer data",
       "One dedicated project lead from start to finish",
     ],
     trustClosing:
@@ -1440,7 +1440,7 @@ export const locationServiceData = {
       "Start your project with a Dallas software development company that keeps things simple and honest. Reach out today for a free consultation.",
     locationsTitle: "Software Development Locations We Serve in Dallas",
     locationsDescription:
-      "Clickmasters works with businesses across Dallas and the surrounding DFW area. Our team supports local businesses with custom software development, whether you prefer to meet online or in person.",
+      "Clickmasters works with businesses across Dallas and the surrounding DFW area. Our team supports local businesses with custom software development, and we meet by video or phone rather than from a local storefront.",
     locations: [
       "Downtown Dallas",
       "Uptown Dallas",
@@ -1492,12 +1492,12 @@ export const locationServiceData = {
         question:
           "Why should I choose a local software development company in Dallas?",
         answer:
-          "Working with a local software development company in Dallas means faster communication, in-person meetings when needed, and a team that understands the Dallas business environment. It is one more reason business owners search for a software development company near me instead of working with a distant, unknown team.",
+          "Clickmasters serves Dallas remotely. You get overlapping U.S. business hours, video meetings, and a team that can learn the Dallas market from you. We do not keep a local office or offer in-person meetings as part of the engagement.",
       },
     ],
     closingTitle: "Let's Build Your Software — Together",
     closingDescription:
-      "Clickmasters is more than just another name on a list of software development companies in Dallas. We are a local partner ready to turn your idea into working software that helps your business grow.",
+      "Clickmasters is more than just another name on a list of software development companies in Dallas. We are a remote-first team that serves this area by video and phone, and we turn your idea into working software that helps your business grow.",
     closingCtaText: "Get a Free Quote",
   },
 };

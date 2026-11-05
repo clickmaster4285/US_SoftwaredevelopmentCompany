@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import HomePage from "./home-client";
 import { pageUrl } from "@/lib/site";
+import { breadcrumbSchema, faqSchema, JsonLd } from "@/components/seo/JsonLd";
+import { homeFaqs } from "@/data/home-faqs";
 
 const homeUrl = pageUrl("/");
 
@@ -14,5 +16,13 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([{ name: "Home", path: "/" }])}
+      />
+      <JsonLd data={faqSchema(homeFaqs)} />
+      <HomePage />
+    </>
+  );
 }

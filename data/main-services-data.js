@@ -29,7 +29,7 @@ export const mainServiceData = {
       "Software Development Services from Clickmasters help businesses across the USA build reliable, scalable, and custom software solutions. We design and develop web applications, enterprise platforms, SaaS products, and other software tailored to your business needs. Our experienced engineers use agile development and provide full source-code ownership, so you get a practical solution built for long-term growth.\nFrom the initial discovery call to development, launch, and ongoing support, our team works closely with you at every stage. We have experience delivering production-ready software for startups and enterprises across industries including healthcare, finance, logistics, and SaaS.",
     heroBadge: "200+ software projects delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -125,7 +125,7 @@ export const mainServiceData = {
           "Our custom software development services replace generic, off-the-shelf tools with software built around how your business actually operates. We handle bespoke software development for internal workflows, customer-facing platforms, and everything in between, using an architecture chosen for your specific scale and compliance needs.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Software Development Services | Clickmasters",
         metaDescription:
           "Bespoke software development services tailored to your business workflows, scale, and compliance requirements.",
@@ -157,7 +157,7 @@ export const mainServiceData = {
           "For larger organizations, our enterprise software development and enterprise application development services focus on multi-department systems that need to integrate with existing tools, enforce role-based access, and scale across teams without downtime.",
         icon: "Building2",
         heroImage:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Enterprise Software Development Services | Clickmasters",
         metaDescription:
           "Enterprise software development for multi-department systems with role-based access and seamless integrations.",
@@ -176,7 +176,7 @@ export const mainServiceData = {
           "Our SaaS development services take a product from idea to a multi-tenant, cloud-native application ready for recurring revenue — including subscription billing, usage metering, and secure account architecture.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "SaaS Product Development Services | Clickmasters",
         metaDescription:
           "SaaS development services from idea to multi-tenant, cloud-native applications with subscription billing and secure account architecture.",
@@ -195,7 +195,7 @@ export const mainServiceData = {
           "We design and build web application development projects on modern, well-supported stacks (React, Next.js, Node.js), so your platform stays fast, accessible, and easy for future developers to maintain.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Web Application Development Services | Clickmasters",
         metaDescription:
           "Web application development on modern stacks like React, Next.js, and Node.js for fast, accessible, and maintainable platforms.",
@@ -214,7 +214,7 @@ export const mainServiceData = {
           "Our mobile app development services cover native and cross-platform builds for iOS and Android, connected to the same backend and APIs as your web platform so your data stays consistent across devices.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Mobile App Development Services | Clickmasters",
         metaDescription:
           "Native and cross-platform mobile app development for iOS and Android with consistent data across devices.",
@@ -233,7 +233,7 @@ export const mainServiceData = {
           "Our AI software development services help businesses add practical AI features — automation, predictive analytics, intelligent search, and AI-assisted workflows — into existing or new software, without over-engineering the solution.",
         icon: "Brain",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Software Development Services | Clickmasters",
         metaDescription:
           "AI software development services for practical AI features including automation, predictive analytics, intelligent search, and AI-assisted workflows.",
@@ -252,7 +252,7 @@ export const mainServiceData = {
           "Our full stack development services give you a single accountable team across frontend, backend, and infrastructure, which reduces handoff delays and keeps architecture decisions consistent end to end.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Full Stack Development Services | Clickmasters",
         metaDescription:
           "Full stack development services with a single accountable team across frontend, backend, and infrastructure.",
@@ -271,7 +271,7 @@ export const mainServiceData = {
           "Our application development services include building and integrating APIs with the third-party tools your business already relies on — payment processors, CRMs, ERPs, and internal systems — so software fits into your existing operations rather than replacing them.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Application Development & API Integration | Clickmasters",
         metaDescription:
           "Application development and API integration services with payment processors, CRMs, ERPs, and internal systems.",
@@ -290,7 +290,7 @@ export const mainServiceData = {
           "Not every engagement starts with a build. Our software consulting services help you scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget before a single line of code is written.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Software Consulting Services | Clickmasters",
         metaDescription:
           "Software consulting services to scope roadmaps, choose tech stacks, audit legacy systems, and plan budgets.",
@@ -309,7 +309,7 @@ export const mainServiceData = {
           "For companies that need to extend their engineering capacity, our software development outsourcing and offshore software development options provide dedicated developers who work inside your existing sprint process and tools.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Software Development Outsourcing | Clickmasters",
         metaDescription:
           "Software development outsourcing and offshore software development with dedicated developers working inside your existing sprint process and tools.",
@@ -320,6 +320,51 @@ export const mainServiceData = {
           "Sprint cadence alignment",
           "Engineering capacity extension",
         ],
+      },
+      {
+        title: "MVP Development",
+        slug: "mvp-development",
+        description:
+          "A production-ready first version of the product, scoped to the workflows that prove demand, with a path to the full build once the release is in users' hands.",
+        icon: "Rocket",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
+      },
+      {
+        title: "Desktop Application Development",
+        slug: "desktop-application-development",
+        description:
+          "Desktop software for teams that need installed tools, offline work, and tight control over files and devices.",
+        icon: "Monitor",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
+      },
+      {
+        title: "Microservices Architecture",
+        slug: "microservices-architecture",
+        description:
+          "Split a monolith into services with clear boundaries, independent deploys, and an integration contract the rest of the product can rely on.",
+        icon: "Layers3",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
+      },
+      {
+        title: "Backend Development",
+        slug: "backend-development",
+        description:
+          "APIs, data models, auth, and background jobs that the product and its integrations actually run on.",
+        icon: "Server",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
+      },
+      {
+        title: "Frontend Development",
+        slug: "frontend-development",
+        description:
+          "Interfaces built for the workflows your users repeat, with accessible markup and a codebase the next developer can change.",
+        icon: "Code2",
+        heroImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
     ],
 
@@ -639,7 +684,7 @@ export const mainServiceData = {
       "Clickmasters is a full-service web development company helping USA businesses launch fast, secure, and high-converting websites and web applications. Whether you need a brand-new business website, a custom web app, or a scalable e-commerce store, our web development services are built around one goal — turning your website into your best-performing sales channel.\nAs a trusted web development agency, we combine clean engineering, conversion-focused design, and technical SEO from day one, so your site is fast, findable on Google and AI search tools, and ready to scale as your business grows.",
     heroBadge: "500+ websites and web apps launched",
     heroImage:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -735,7 +780,7 @@ export const mainServiceData = {
           "Every project we build is custom web development, coded around your workflows, your brand, and your customers — never a locked-down template. This is the foundation of everything we deliver as a website development company.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Web Development Services | Clickmasters",
         metaDescription:
           "Custom web development services coded around your workflows, brand, and customers — never a locked-down template.",
@@ -771,7 +816,7 @@ export const mainServiceData = {
           "We design and build secure, scalable web applications — customer portals, internal dashboards, booking systems, and SaaS products — using modern frameworks with clean, maintainable code.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Web Application Development Services | Clickmasters",
         metaDescription:
           "Secure, scalable web applications including customer portals, internal dashboards, booking systems, and SaaS products.",
@@ -790,7 +835,7 @@ export const mainServiceData = {
           "From marketing sites to multi-page corporate websites, our website development services focus on speed, mobile responsiveness, and SEO-friendly structure so your site converts visitors into leads.",
         icon: "Layout",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Website Development Services | Clickmasters",
         metaDescription:
           "Website development services focused on speed, mobile responsiveness, and SEO-friendly structure to convert visitors into leads.",
@@ -809,7 +854,7 @@ export const mainServiceData = {
           "We build installable, app-like websites with offline support and push notifications, giving your users a native-app experience directly from the browser.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Progressive Web App (PWA) Development | Clickmasters",
         metaDescription:
           "Installable, app-like websites with offline support and push notifications for a native-app experience from the browser.",
@@ -822,13 +867,22 @@ export const mainServiceData = {
         ],
       },
       {
+        title: "PWA Development",
+        slug: "pwa-development",
+        description:
+          "Installable web apps with offline support, aimed at teams that want an app-like experience without a separate store release.",
+        icon: "Zap",
+        heroImage:
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
+      },
+      {
         title: "Headless CMS Development",
         slug: "headless-cms-development",
         description:
           "Our headless CMS development separates your content from your front end, giving your team flexible publishing tools and your developers the freedom to build faster, more customized experiences.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Headless CMS Development Services | Clickmasters",
         metaDescription:
           "Headless CMS development that separates content from front end for flexible publishing and faster development.",
@@ -847,7 +901,7 @@ export const mainServiceData = {
           "For businesses that need speed and security at scale, our JAMstack development approach delivers static-first architecture with lightning-fast load times and lower hosting overhead.",
         icon: "Zap",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "JAMstack Development Services | Clickmasters",
         metaDescription:
           "JAMstack development delivering static-first architecture with lightning-fast load times and lower hosting overhead.",
@@ -866,7 +920,7 @@ export const mainServiceData = {
           "As an experienced web design and development agency, we build scalable online stores that handle high traffic, complex catalogs, and secure checkout — without slowing down.",
         icon: "ShoppingBag",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "E-Commerce Development Services | Clickmasters",
         metaDescription:
           "Scalable online stores that handle high traffic, complex catalogs, and secure checkout — without slowing down.",
@@ -885,7 +939,7 @@ export const mainServiceData = {
           "Need full control over your storefront design? Our headless e-commerce solutions decouple the front end from the backend, so you can build unique, high-converting shopping experiences on any platform.",
         icon: "ShoppingCart",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Headless E-Commerce Solutions | Clickmasters",
         metaDescription:
           "Headless e-commerce solutions that decouple front end from backend for unique, high-converting shopping experiences.",
@@ -904,7 +958,7 @@ export const mainServiceData = {
           "From custom themes to app integrations, our Shopify development services help brands launch and scale stores that are fast, on-brand, and built to convert.",
         icon: "Store",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Shopify Development Services | Clickmasters",
         metaDescription:
           "Shopify development services including custom themes and app integrations for fast, on-brand, conversion-focused stores.",
@@ -923,7 +977,7 @@ export const mainServiceData = {
           "For businesses already on WordPress, our WooCommerce development services add secure, high-performance commerce functionality without rebuilding your entire site.",
         icon: "Store",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "WooCommerce Development Services | Clickmasters",
         metaDescription:
           "WooCommerce development services adding secure, high-performance commerce functionality to existing WordPress sites.",
@@ -944,7 +998,7 @@ export const mainServiceData = {
         "For over a decade, Clickmasters has worked as a dependable web development company for startups, growing SMBs, and enterprise teams across the United States. Our developers, designers, and QA engineers have shipped 500+ websites and web applications across retail, healthcare, finance, SaaS, real estate, and logistics.\nWe are not a template shop. Every engagement starts with real discovery — understanding your business goals, your users, and your growth plan — before a single line of code is written. That is what separates a true web development agency from a freelancer with a website builder.",
       points: [
         "500+ websites and web apps launched for U.S. and global clients",
-        "98% client satisfaction rate across completed projects",
+        "A written scope and a named contact on every completed project",
         "In-house team of developers, UI/UX designers, and QA specialists",
         "Offices supporting clients across San Francisco, New York, Austin, and Denver",
         "Transparent pricing, fixed milestones, and direct access to your project team",
@@ -1225,7 +1279,7 @@ export const mainServiceData = {
       "Clickmasters is a mobile app development company helping U.S. founders, startups, and established brands take an idea from sketch to a live app on the App Store and Google Play. Our mobile app developers build native iOS and Android apps, plus cross-platform products with Flutter and React Native, so you launch on the right platform without overpaying for the wrong one.\nIf you're comparing a mobile app development agency for a new build, or looking to hire mobile app developers to rescue a stalled project, our team plans the architecture, designs the experience, and ships an app built to handle real users from day one.",
     heroBadge: "100+ apps published across iOS and Android",
     heroImage:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -1276,7 +1330,7 @@ export const mainServiceData = {
           "Every engagement is custom mobile app development — no recycled templates or generic starter kits. We design the data model, the UX, and the backend around how your business actually operates.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Mobile App Development Services | Clickmasters",
         metaDescription:
           "Custom mobile app development with tailored data modeling, UX, and backend around your business operations.",
@@ -1308,7 +1362,7 @@ export const mainServiceData = {
           "From concept to launch, our core mobile app development service covers UX design, engineering, QA, and store submission for both new products and app rebuilds.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Mobile App Development Services | Clickmasters",
         metaDescription:
           "From concept to launch — UX design, engineering, QA, and store submission for new products and app rebuilds.",
@@ -1327,7 +1381,7 @@ export const mainServiceData = {
           "Our iOS app development services use Swift and native Apple frameworks to build fast, secure apps that follow Apple's Human Interface Guidelines and pass App Store review the first time.",
         icon: "Cpu",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "iOS App Development Services | Clickmasters",
         metaDescription:
           "Native iOS apps built with Swift and Apple frameworks following Apple's Human Interface Guidelines.",
@@ -1346,7 +1400,7 @@ export const mainServiceData = {
           "As an Android app development company, we build in Kotlin for performance, device compatibility, and a smooth path through Google Play's review process.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Android App Development Services | Clickmasters",
         metaDescription:
           "Native Android apps built with Kotlin for performance, device compatibility, and Google Play review.",
@@ -1365,7 +1419,7 @@ export const mainServiceData = {
           "Need iOS and Android together on one budget? Our cross-platform app development services share a single codebase across both platforms, cutting development time without cutting quality.",
         icon: "Layers3",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cross-Platform App Development Services | Clickmasters",
         metaDescription:
           "Cross-platform app development with a single codebase across iOS and Android.",
@@ -1384,7 +1438,7 @@ export const mainServiceData = {
           "Our Flutter app development team builds apps with one consistent UI across every device, ideal for brands that want pixel-perfect design on both iOS and Android.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Flutter App Development Services | Clickmasters",
         metaDescription:
           "Flutter app development with consistent UI and pixel-perfect design across every device.",
@@ -1403,7 +1457,7 @@ export const mainServiceData = {
           "For teams that want fast iteration and easy long-term maintenance, our React Native development services deliver near-native performance with a JavaScript-based, shared codebase.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "React Native Development Services | Clickmasters",
         metaDescription:
           "React Native development delivering near-native performance with a JavaScript-based shared codebase.",
@@ -1707,7 +1761,7 @@ export const mainServiceData = {
       "Clickmasters is an artificial intelligence company helping USA businesses design, build, and scale AI from AI chatbots and autonomous agents to enterprise-grade generative AI solutions. As a full-service artificial intelligence company, we turn AI experiments into production systems that cut costs, save time, and grow revenue.",
     heroBadge: "50+ AI Projects Delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -1803,7 +1857,7 @@ export const mainServiceData = {
           "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models — designed for accuracy, safety, and speed.",
         icon: "Sparkles",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Generative AI Solutions | Clickmasters",
         metaDescription:
           "LLM-powered content, automation, and internal tools built on GPT, Claude, Gemini, and open-source models.",
@@ -1839,7 +1893,7 @@ export const mainServiceData = {
           "Strategic AI advice from experienced AI consultants to help you identify high-ROI use cases, avoid costly missteps, and build a realistic AI roadmap.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Consulting Services | Clickmasters",
         metaDescription:
           "Strategic AI consulting to identify high-ROI use cases, avoid costly missteps, and build a realistic AI roadmap.",
@@ -1875,7 +1929,7 @@ export const mainServiceData = {
           "Our AI developers build custom AI applications — from internal tools to customer-facing products — tailored to your workflows, not a generic template.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom AI App Development | Clickmasters",
         metaDescription:
           "Custom AI applications built by expert AI developers — from internal tools to customer-facing products.",
@@ -1911,7 +1965,7 @@ export const mainServiceData = {
           "High-quality prompt design and model tuning that improves reliability, reduces hallucinations, and gets more consistent results from your AI systems.",
         icon: "MessageSquare",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Prompt Engineering Services | Clickmasters",
         metaDescription:
           "Professional AI prompt engineering and model tuning for improved reliability and consistent results.",
@@ -1947,7 +2001,7 @@ export const mainServiceData = {
           "As an experienced AI chatbot development company, we build conversational assistants for support, sales, and internal operations that actually resolve issues — not just deflect them.",
         icon: "Bot",
         heroImage:
-          "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Chatbot Development Services | Clickmasters",
         metaDescription:
           "Professional AI chatbot development for support, sales, and internal operations that actually resolve issues.",
@@ -1983,7 +2037,7 @@ export const mainServiceData = {
           "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems, reducing manual work across departments.",
         icon: "Zap",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Agents Development Services | Clickmasters",
         metaDescription:
           "Autonomous AI agents that plan, execute, and complete multi-step tasks across your tools and systems.",
@@ -2019,7 +2073,7 @@ export const mainServiceData = {
           "Intelligent automation that connects your AI models to real business processes — from lead qualification to document processing and reporting.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Automation Systems | Clickmasters",
         metaDescription:
           "Intelligent automation connecting AI models to real business processes — lead qualification, document processing, reporting.",
@@ -2055,7 +2109,7 @@ export const mainServiceData = {
           "We integrate AI into your existing software — CRMs, ERPs, support desks, and internal APIs — so AI becomes part of your workflow, not a separate silo.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Integration Services | Clickmasters",
         metaDescription:
           "Seamless AI integration with CRMs, ERPs, support desks, and internal APIs — AI becomes part of your workflow.",
@@ -2091,7 +2145,7 @@ export const mainServiceData = {
           "Custom model training, fine-tuning, and evaluation for teams that need AI tailored to proprietary data and specialized use cases.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "AI Model Development Services | Clickmasters",
         metaDescription:
           "Custom AI model training, fine-tuning, and evaluation for proprietary data and specialized use cases.",
@@ -2127,7 +2181,7 @@ export const mainServiceData = {
           "Production-grade LLM applications — including RAG (retrieval-augmented generation) systems — built with vector databases, evaluation pipelines, and monitoring.",
         icon: "Layers",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         metaTitle: "LLM Application Development | Clickmasters",
         metaDescription:
           "Production-grade LLM applications with RAG systems, vector databases, evaluation pipelines, and monitoring.",
@@ -2488,7 +2542,7 @@ export const mainServiceData = {
       "Clickmasters delivers custom machine learning development services for USA businesses — from predictive analytics and recommendation systems to deep learning and enterprise-grade ML platforms. As a full-cycle machine learning development company, we help you go from raw data to production-ready models that drive measurable results.",
     heroBadge: "40+ ML Models Deployed to Production",
     heroImage:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -2584,7 +2638,7 @@ export const mainServiceData = {
           "Custom machine learning solutions built around your business data — from forecasting and classification to anomaly detection and process optimization.",
         icon: "Cpu",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Machine Learning Solutions | Clickmasters",
         metaDescription:
           "Custom machine learning solutions for forecasting, classification, anomaly detection, and process optimization.",
@@ -2620,7 +2674,7 @@ export const mainServiceData = {
           "A dedicated team of machine learning experts and data scientists who design, train, and validate models suited to your specific use case.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Machine Learning Experts | Clickmasters",
         metaDescription:
           "Dedicated machine learning experts and data scientists who design, train, and validate models for your use case.",
@@ -2656,7 +2710,7 @@ export const mainServiceData = {
           "Predictive analytics models that forecast demand, detect risk, and identify trends before they impact your business — built on your historical and real-time data.",
         icon: "TrendingUp",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Predictive Analytics Services | Clickmasters",
         metaDescription:
           "Predictive analytics models for demand forecasting, risk detection, and trend identification built on your business data.",
@@ -2692,7 +2746,7 @@ export const mainServiceData = {
           "Personalized recommendation systems that increase engagement and revenue by matching customers with the products, content, or services most relevant to them.",
         icon: "Star",
         heroImage:
-          "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Recommendation Systems Development | Clickmasters",
         metaDescription:
           "Personalized recommendation systems that increase engagement and revenue through intelligent customer matching.",
@@ -2728,7 +2782,7 @@ export const mainServiceData = {
           "Rigorous model training, hyperparameter tuning, and optimization to maximize accuracy while keeping inference costs under control.",
         icon: "Settings",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Model Training & Optimization | Clickmasters",
         metaDescription:
           "Professional model training, hyperparameter tuning, and optimization for maximum accuracy with controlled inference costs.",
@@ -2764,7 +2818,7 @@ export const mainServiceData = {
           "Deep learning solutions for complex, high-dimensional problems — including image recognition, natural language processing, and time-series forecasting.",
         icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Deep Learning Solutions | Clickmasters",
         metaDescription:
           "Deep learning solutions for image recognition, natural language processing, time-series forecasting, and complex problems.",
@@ -2800,7 +2854,7 @@ export const mainServiceData = {
           "Our deep learning experts design neural network architectures suited to your data, from convolutional networks to transformer-based models.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Deep Learning Experts | Clickmasters",
         metaDescription:
           "Deep learning experts who design neural network architectures suited to your data.",
@@ -2836,7 +2890,7 @@ export const mainServiceData = {
           "Custom ML model development from the ground up — trained on your proprietary data and tuned for the metrics that matter to your business.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom ML Model Development | Clickmasters",
         metaDescription:
           "Custom ML models trained on your proprietary data and tuned for the metrics that matter to your business.",
@@ -2872,7 +2926,7 @@ export const mainServiceData = {
           "Full-cycle ML model development services covering data preparation, feature engineering, model selection, training, and validation.",
         icon: "Layers",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "ML Model Development Services | Clickmasters",
         metaDescription:
           "Full-cycle ML model development covering data preparation, feature engineering, model selection, training, and validation.",
@@ -2908,7 +2962,7 @@ export const mainServiceData = {
           "Complete machine learning solutions development — including MLOps pipelines for continuous training, deployment, and monitoring at scale.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "ML Solutions Development | Clickmasters",
         metaDescription:
           "Complete ML solutions with MLOps pipelines for continuous training, deployment, and monitoring at scale.",
@@ -3299,7 +3353,7 @@ export const mainServiceData = {
       "Clickmasters offers complete UI/UX design services for websites, apps, and digital products. As a full-service UI/UX design agency in the USA, we combine research, strategy, and creativity to design experiences your users love — and that turn browsers into buyers. Whether you need a single landing page or a full ui ux design and development services package, our team is ready to help.",
     heroBadge: "10+ years of design excellence",
     heroImage:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -3377,7 +3431,7 @@ export const mainServiceData = {
           "Our core ui ux design service covers everything from visual design to user flows. We design interfaces that are simple to navigate, on-brand, and built to convert visitors into customers.",
         icon: "PenTool",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
         metaTitle: "UI/UX Design Services | Clickmasters",
         metaDescription:
           "Professional UI/UX design services covering visual design, user flows, and conversion-focused interfaces.",
@@ -3413,7 +3467,7 @@ export const mainServiceData = {
           "We help you design digital products from the ground up. Our product design process blends UX research, UI design, and usability testing so your product launches with confidence.",
         icon: "Box",
         heroImage:
-          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Product Design Services | Clickmasters",
         metaDescription:
           "End-to-end product design services blending UX research, UI design, and usability testing for confident product launches.",
@@ -3449,7 +3503,7 @@ export const mainServiceData = {
           "As a trusted UX UI web design agency, we build responsive, fast-loading websites that look great on every screen and guide visitors toward taking action.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Web Design Services | Clickmasters",
         metaDescription:
           "Professional web design services with responsive, fast-loading websites optimized for every screen and visitor action.",
@@ -3485,7 +3539,7 @@ export const mainServiceData = {
           "Looking for mobile UI/UX design services? We design iOS and Android apps with clean layouts, smooth navigation, and interfaces users genuinely enjoy using.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Mobile App Design Services | Clickmasters",
         metaDescription:
           "Professional mobile UI/UX design services for iOS and Android apps with clean layouts and smooth navigation.",
@@ -3521,7 +3575,7 @@ export const mainServiceData = {
           "Good design starts with understanding your users. Our UX research includes user interviews, surveys, and competitor analysis to guide every design ui ux decision we make.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "UX Research Services | Clickmasters",
         metaDescription:
           "Comprehensive UX research including user interviews, surveys, and competitor analysis to guide design decisions.",
@@ -3557,7 +3611,7 @@ export const mainServiceData = {
           "Before we design a single screen, we map out wireframes and interactive prototypes. This lets you test ideas and gather feedback early, avoiding costly changes later in development.",
         icon: "Layers",
         heroImage:
-          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Wireframing & Prototyping Services | Clickmasters",
         metaDescription:
           "Professional wireframing and interactive prototyping services to test ideas and gather feedback early.",
@@ -3593,7 +3647,7 @@ export const mainServiceData = {
           "We build reusable design systems that keep your brand consistent across every page, screen, and future update — saving your team time and budget down the road.",
         icon: "Grid",
         heroImage:
-          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Design Systems Services | Clickmasters",
         metaDescription:
           "Build reusable design systems for brand consistency across pages, screens, and future updates.",
@@ -3926,7 +3980,7 @@ export const mainServiceData = {
       "ClickMasters is a trusted data services company that helps U.S. businesses collect, clean, and use their data the right way. As your dedicated data services provider, we turn messy spreadsheets and scattered systems into clear answers you can act on. From small startups to large enterprises, our custom data solutions help you save time, cut costs, and make better decisions every single day.",
     heroBadge: "200+ data projects delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -4016,7 +4070,7 @@ export const mainServiceData = {
           "Our data analytics services turn your numbers into a clear story. We use statistics, machine learning, and clean data models to answer real business questions — like which customers may leave, or which product will sell best next quarter. As a trusted data analytics company, we help you move from guessing to knowing.",
         icon: "BarChart",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Science & Analytics Services | ClickMasters",
         metaDescription:
           "Professional data analytics services using statistics, machine learning, and clean data models to answer real business questions.",
@@ -4052,7 +4106,7 @@ export const mainServiceData = {
           "Good decisions need good dashboards. Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time — no more waiting on manual spreadsheets.",
         icon: "PieChart",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Business Intelligence Services | ClickMasters",
         metaDescription:
           "Professional BI services with live dashboards and real-time reports for sales, costs, and performance tracking.",
@@ -4088,7 +4142,7 @@ export const mainServiceData = {
           "Behind every good report is a strong data pipeline. Our data engineering services build the pipes that move your data safely from one system to another. As a full-service data engineering company, we design pipelines that scale — the same quality of work a data engineering company USA enterprises already trust would expect.",
         icon: "Server",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Engineering Services | ClickMasters",
         metaDescription:
           "Professional data engineering services building scalable data pipelines that move data safely between systems.",
@@ -4124,7 +4178,7 @@ export const mainServiceData = {
           "We build cloud data warehouses that store all your business data in one safe, organized place. This means your sales, finance, and marketing teams all work from the same numbers, not five different versions of the truth.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Warehousing Services | ClickMasters",
         metaDescription:
           "Cloud data warehouse solutions that store all business data in one safe, organized place for team-wide consistency.",
@@ -4160,7 +4214,7 @@ export const mainServiceData = {
           "When your data grows into millions of rows from many sources, spreadsheets stop working. As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
         icon: "Cpu",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Big Data Solutions | ClickMasters",
         metaDescription:
           "Big data solutions using Apache Spark, Hadoop, and Kafka to process huge amounts of data fast and spot trends before competitors.",
@@ -4196,7 +4250,7 @@ export const mainServiceData = {
           "Your business runs on many tools — CRM, accounting, marketing, support. Our data integration services connect them all, so information flows automatically instead of being copied by hand into spreadsheets.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Integration Services | ClickMasters",
         metaDescription:
           "Data integration services connecting CRM, accounting, marketing, and support tools for automatic information flow.",
@@ -4232,7 +4286,7 @@ export const mainServiceData = {
           "Moving to a new system can be risky if data gets lost or messy along the way. Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
         icon: "Move",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Migration Services | ClickMasters",
         metaDescription:
           "Professional data migration services moving data safely from old systems to new ones with zero data loss and minimal downtime.",
@@ -4268,7 +4322,7 @@ export const mainServiceData = {
           "Clean, safe, organized data does not happen by accident. Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
         icon: "Shield",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Management & Governance | ClickMasters",
         metaDescription:
           "Data management services with clear rules for data access, usage, and updates to ensure compliance with U.S. privacy laws.",
@@ -4304,7 +4358,7 @@ export const mainServiceData = {
           "Numbers are hard to read in tables. Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
         icon: "Eye",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Visualization Services | ClickMasters",
         metaDescription:
           "Data visualization services turning raw numbers into simple charts, maps, and graphs for easy team understanding.",
@@ -4664,7 +4718,7 @@ export const mainServiceData = {
       "Our Cloud DevOps Services help you build, automate, and manage your cloud systems, so your team can ship software faster, with fewer errors and lower costs. Clickmasters is a trusted cloud DevOps agency, and every cloud DevOps service we deliver is backed by a real cloud DevOps engineer, not just a sales team. Talk to us today and see how we can help.",
     heroBadge: "100+ cloud projects delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -4754,7 +4808,7 @@ export const mainServiceData = {
           "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Solutions Services | Clickmasters",
         metaDescription:
           "Professional cloud solutions for AWS, Azure, and Google Cloud with complete DevOps integration for your infrastructure and workflows.",
@@ -4786,7 +4840,7 @@ export const mainServiceData = {
           "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
         icon: "GitBranch",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "DevOps Services | Clickmasters",
         metaDescription:
           "Professional DevOps services connecting development and operations teams for faster, error-free code delivery from idea to production.",
@@ -4822,7 +4876,7 @@ export const mainServiceData = {
           "Not sure where to start? Our DevOps consulting services review your current setup and give you a clear roadmap. As a trusted DevOps consulting company, we guide you through every step, from planning to full rollout.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "DevOps Consulting Services | Clickmasters",
         metaDescription:
           "Professional DevOps consulting to review your current setup, create a clear roadmap, and guide you through every step to full rollout.",
@@ -4858,7 +4912,7 @@ export const mainServiceData = {
           "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
         icon: "GitPullRequest",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "CI/CD Pipeline Setup Services | Clickmasters",
         metaDescription:
           "Professional CI/CD pipeline setup for automated testing and code releases with fewer bugs, faster releases, and reduced manual steps.",
@@ -4894,7 +4948,7 @@ export const mainServiceData = {
           "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
         icon: "Boxes",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Containerization Services | Clickmasters",
         metaDescription:
           "Professional containerization services with Docker and Kubernetes for consistent application performance across all machines with automatic scaling.",
@@ -4930,7 +4984,7 @@ export const mainServiceData = {
           "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
         icon: "FileCode",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Infrastructure as Code Services | Clickmasters",
         metaDescription:
           "Professional Infrastructure as Code (IaC) services using Terraform for repeatable, trackable, and easy-to-roll-back cloud setups.",
@@ -4966,7 +5020,7 @@ export const mainServiceData = {
           "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
         icon: "Move",
         heroImage:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Migration & Modernization | Clickmasters",
         metaDescription:
           "Professional cloud migration and modernization services with minimal downtime and careful planning to keep your business running smoothly.",
@@ -5002,7 +5056,7 @@ export const mainServiceData = {
           "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
         icon: "Eye",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Monitoring & Observability | Clickmasters",
         metaDescription:
           "Professional cloud monitoring and observability services with 24/7 dashboards and alerts to catch issues before they impact customers.",
@@ -5038,7 +5092,7 @@ export const mainServiceData = {
           "Don't want to hire a full in-house team? Our managed DevOps services give you a full team of experts on demand. Think of it as DevOps as a service — we handle the daily work while you focus on your product, backed by full cloud DevOps management services for your entire infrastructure.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Managed DevOps Services | Clickmasters",
         metaDescription:
           "Managed DevOps services providing a full team of experts on demand - DevOps as a service for your entire infrastructure while you focus on your product.",
@@ -5371,7 +5425,7 @@ export const mainServiceData = {
       "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat.\nFrom a single security audit to full-time managed protection, our team acts as your cybersecurity agency, on call and ready.",
     heroBadge: "10+ Years of Cybersecurity Excellence",
     heroImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -5480,7 +5534,7 @@ export const mainServiceData = {
           "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cybersecurity Risk Assessment Services | Clickmasters",
         metaDescription:
           "Comprehensive IT environment review to find weak points with clear, ranked risks and simple fixes.",
@@ -5516,7 +5570,7 @@ export const mainServiceData = {
           "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
         icon: "ShieldCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Penetration Testing Services | Clickmasters",
         metaDescription:
           "Ethical hacking to identify system vulnerabilities before real attackers exploit them.",
@@ -5535,7 +5589,7 @@ export const mainServiceData = {
           "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
         icon: "FileCode",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Security Audits & Compliance Management | Clickmasters",
         metaDescription:
           "Full security audits and compliance management for HIPAA, PCI-DSS, SOC 2, and industry standards.",
@@ -5554,7 +5608,7 @@ export const mainServiceData = {
           "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
         icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Network Security Services | Clickmasters",
         metaDescription:
           "Protect your business network with firewalls, intrusion detection, and constant traffic monitoring.",
@@ -5573,7 +5627,7 @@ export const mainServiceData = {
           "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Security Services | Clickmasters",
         metaDescription:
           "Protect AWS, Azure, and Google Cloud environments from misconfigurations, data leaks, and unauthorized access.",
@@ -5592,7 +5646,7 @@ export const mainServiceData = {
           "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Security Services | Clickmasters",
         metaDescription:
           "Encryption, access controls, and backup strategies to protect sensitive customer and company data.",
@@ -5611,7 +5665,7 @@ export const mainServiceData = {
           "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Application Security Services | Clickmasters",
         metaDescription:
           "Web and mobile application security testing to catch coding flaws and vulnerabilities early.",
@@ -5630,7 +5684,7 @@ export const mainServiceData = {
           "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Endpoint Security Services | Clickmasters",
         metaDescription:
           "Protect every laptop, phone, and device connected to your network from attackers.",
@@ -5650,7 +5704,7 @@ export const mainServiceData = {
           "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Managed Cybersecurity Services | Clickmasters",
         metaDescription:
           "24/7 protection through a dedicated Security Operations Center (SOC) watching your systems day and night.",
@@ -5669,7 +5723,7 @@ export const mainServiceData = {
           "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
         icon: "Brain",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Threat Detection & Management | Clickmasters",
         metaDescription:
           "Real-time monitoring to catch threats early and respond to attacks in minutes, not days.",
@@ -5688,7 +5742,7 @@ export const mainServiceData = {
           "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cybersecurity Consulting Services | Clickmasters",
         metaDescription:
           "Build a full security roadmap based on your business size, industry, and budget.",
@@ -5707,7 +5761,7 @@ export const mainServiceData = {
           "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Cybersecurity Software Development | Clickmasters",
         metaDescription:
           "Custom cybersecurity solutions, automation, and integration services for seamless security tool operation.",
@@ -6111,7 +6165,7 @@ export const mainServiceData = {
       "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers. As a trusted software testing company, we find bugs, security gaps, and performance issues before they ever reach your users, so your product works the first time and every time.\nWhether you need one round of manual testing or a full-time automation testing partner, our QA testing company is built to fit your release schedule, not slow it down.",
     heroBadge: "10+ Years of QA Excellence",
     heroImage:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
 
     // Hero CTAs
     heroCtas: {
@@ -6220,7 +6274,7 @@ export const mainServiceData = {
           "Some bugs only a human eye can catch. Our manual QA testing services use real testers to explore your app the way real users do, catching usability issues and edge cases that automated scripts often miss.",
         icon: "Bug",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Manual QA Testing Services | ClickMasters",
         metaDescription:
           "Manual QA testing using real testers to catch usability issues and edge cases that automated scripts miss.",
@@ -6256,7 +6310,7 @@ export const mainServiceData = {
           "For products that release often, our automation testing company builds reusable test scripts that run fast, catch regressions early, and plug directly into your CI/CD pipeline.",
         icon: "Repeat",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Automated QA Testing Services | ClickMasters",
         metaDescription:
           "Reusable test scripts that run fast, catch regressions early, and plug into your CI/CD pipeline.",
@@ -6275,7 +6329,7 @@ export const mainServiceData = {
           "We test your website or web app across browsers, screen sizes, and devices to make sure every user gets a smooth, working experience, no matter how they access your site.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Web Application Testing Services | ClickMasters",
         metaDescription:
           "Cross-browser and cross-device testing for smooth, working web experiences.",
@@ -6294,7 +6348,7 @@ export const mainServiceData = {
           "Our mobile app testing services cover iOS and Android apps across real devices and operating system versions, catching crashes, layout issues, and performance problems before launch.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Mobile App Testing Services | ClickMasters",
         metaDescription:
           "iOS and Android app testing across real devices and OS versions for crashes, layout, and performance.",
@@ -6313,7 +6367,7 @@ export const mainServiceData = {
           "APIs are the backbone of modern software. Our API testing services check that your endpoints return the right data, handle errors correctly, and stay stable under real traffic.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "API Testing Services | ClickMasters",
         metaDescription:
           "API testing for correct data, error handling, and stability under real traffic.",
@@ -6332,7 +6386,7 @@ export const mainServiceData = {
           "We simulate real user load to see how your application holds up under pressure. Our performance testing services catch slowdowns and crashes before your busiest day exposes them.",
         icon: "Rocket",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Performance Testing Services | ClickMasters",
         metaDescription:
           "Real user load simulation to catch slowdowns and crashes before peak traffic.",
@@ -6351,7 +6405,7 @@ export const mainServiceData = {
           "Our security testing services check your application for common vulnerabilities, weak access controls, and data exposure risks, helping you fix issues before attackers find them.",
         icon: "ShieldCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Security Testing Services | ClickMasters",
         metaDescription:
           "Application security testing for vulnerabilities, weak access controls, and data exposure risks.",
@@ -6370,7 +6424,7 @@ export const mainServiceData = {
           "We verify that every feature works exactly the way it's supposed to. Our functional testing services confirm your software matches your requirements, button by button, flow by flow.",
         icon: "CheckCircle2",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Functional Testing Services | ClickMasters",
         metaDescription:
           "Feature-by-feature verification that your software matches requirements.",
@@ -6389,7 +6443,7 @@ export const mainServiceData = {
           "New code shouldn't break old features. Our regression testing services re-check existing functionality after every update, so new releases don't quietly break what already worked.",
         icon: "RefreshCw",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Regression Testing Services | ClickMasters",
         metaDescription:
           "Re-check existing functionality after every update to prevent new code from breaking old features.",
@@ -6408,7 +6462,7 @@ export const mainServiceData = {
           "We test complete user journeys from start to finish, not just isolated features, so you know your entire workflow works the way a real customer would experience it.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "End-to-End Testing Services | ClickMasters",
         metaDescription:
           "Complete user journey testing from start to finish for seamless workflows.",
@@ -6427,7 +6481,7 @@ export const mainServiceData = {
           "Not sure where your QA process is falling short? Our QA consulting services review your current testing approach and build a practical roadmap to improve coverage, speed, and release confidence.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         metaTitle: "QA Consulting Services | ClickMasters",
         metaDescription:
           "QA process review and practical roadmap for improved coverage, speed, and release confidence.",
@@ -6446,7 +6500,7 @@ export const mainServiceData = {
           "Large, complex systems need a structured approach. Our enterprise QA testing services provide dedicated testing teams, detailed reporting, and processes built to scale with your organization.",
         icon: "Building2",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Enterprise QA Testing Services | ClickMasters",
         metaDescription:
           "Dedicated testing teams, detailed reporting, and scalable processes for complex enterprise systems.",

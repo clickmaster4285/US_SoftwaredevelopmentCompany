@@ -86,7 +86,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
 ];
 
-export const AWARD_WORD = "awards";
+export const AWARD_WORD = "studio";
 
 /* ============================================================================
    Services Dive Section
@@ -340,74 +340,46 @@ export const STEPS = [
 
 export const TESTIMONIALS = [
   {
-    name: "★★★★★ Operations Director",
-    role: "Logistics Startup Texas",
+    name: "Written scope",
+    role: "Before development",
     quote:
-      "Clickmasters Software Development Company rebuilt our dispatch system from scratch. What used to take hours of manual work now runs on its own. Our delivery times dropped by 30% in just three months.",
+      "The quote names the milestone, the people, and what is out of scope. A late request is added with a revised date or parked in writing.",
     accent: "oklch(0.78 0.14 50)",
   },
   {
-    name: "★★★★★ Founder",
-    role: "HealthTech Platform California",
+    name: "Client-owned code",
+    role: "Handoff",
     quote:
-      "We needed a patient portal built fast and built right. The team at Clickmasters Software Development Company delivered a working version in eight weeks and is still our development partner today.",
+      "Repositories, infrastructure notes, and credentials transfer to you. The work is not locked in a vendor account.",
     accent: "oklch(0.75 0.16 200)",
   },
   {
-    name: "★★★★★ CTO",
-    role: "Fintech Company New York",
+    name: "Remote-first",
+    role: "How we meet",
     quote:
-      "Clickmasters Software Development Company understood our compliance needs right away. The custom software development services we got were exactly what a fintech product needs.",
+      "Clickmasters does not keep a local office. Working sessions happen by video and phone, overlapping U.S. business hours.",
     accent: "oklch(0.78 0.15 320)",
   },
   {
-    name: "★★★★★ VP Marketing",
-    role: "E-commerce Brand Florida",
+    name: "Reviewed release",
+    role: "Before launch",
     quote:
-      "Our new online store, built by Clickmasters Software Development Company, increased mobile sales by 24%. The UI/UX design work alone was worth it.",
+      "Functional checks run on the agreed workflows. A demo recording is not treated as a substitute for a staging sign-off.",
     accent: "oklch(0.80 0.14 110)",
   },
   {
-    name: "★★★★★ Owner",
-    role: "Manufacturing Firm Ohio",
+    name: "One case study",
+    role: "Published work",
     quote:
-      "The maintenance dashboard built by Clickmasters Software Development Company has already helped us avoid two major equipment failures.",
+      "We publish a client result only when that client has agreed to a written case study. The current one covers pre-launch QA for a SaaS booking platform.",
     accent: "oklch(0.76 0.15 25)",
   },
   {
-    name: "★★★★★ Product Manager",
-    role: "EdTech Startup Illinois",
+    name: "Named contact",
+    role: "During the build",
     quote:
-      "Clickmasters Software Development Company delivered our learning platform on time. Their Testing & QA process caught issues we never would have found ourselves.",
+      "You get one engineering contact who knows the deployment, plus rollback notes for the production window you choose.",
     accent: "oklch(0.75 0.16 260)",
-  },
-  {
-    name: "★★★★★ CEO",
-    role: "PropTech Company Arizona",
-    quote:
-      "We talked to several software development companies before choosing Clickmasters Software Development Company. Their plan was the clearest, and they delivered exactly what they promised.",
-    accent: "oklch(0.78 0.14 160)",
-  },
-  {
-    name: "★★★★★ Director of IT",
-    role: "Enterprise Retailer Georgia",
-    quote:
-      "As an enterprise software development partner, Clickmasters Software Development Company connected with our older systems without a single major issue.",
-    accent: "oklch(0.78 0.15 80)",
-  },
-  {
-    name: "★★★★★ Founder",
-    role: "AI Startup Washington",
-    quote:
-      "The AI software development services team at Clickmasters Software Development Company built and launched our recommendation tool in half the time our old vendor promised.",
-    accent: "oklch(0.77 0.14 140)",
-  },
-  {
-    name: "★★★★★ Operations Lead",
-    role: "Supply Chain Company North Carolina",
-    quote:
-      "Quick to respond, easy to talk to, and always on top of things. Clickmasters Software Development Company is now our go-to partner for every new project.",
-    accent: "oklch(0.79 0.15 60)",
   },
 ];
 

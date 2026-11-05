@@ -1,6 +1,13 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import SubServicePage from "./SubServicePage";
 import { resolveService, services } from "./service-data";
+import { destinationFor, isRetiredSub } from "@/lib/site-routes.mjs";
+import { fitDescription, fitTitle } from "@/lib/seo";
+import {
+  breadcrumbSchema,
+  JsonLd,
+  serviceSchema,
+} from "@/components/seo/JsonLd";
 
 type PageProps = {
   params: Promise<{
@@ -11,10 +18,12 @@ type PageProps = {
 
 export function generateStaticParams() {
   return Object.values(services).flatMap((service) =>
-    (service.subServices || []).map((subService) => ({
-      main_service: service.slug,
-      sub_service: subService.slug,
-    })),
+    (service.subServices || [])
+      .filter((subService) => !isRetiredSub(service.slug, subService.slug))
+      .map((subService) => ({
+        main_service: service.slug,
+        sub_service: subService.slug,
+      })),
   );
 }
 
@@ -32,19 +41,23 @@ export async function generateMetadata({ params }: PageProps) {
   }
 
   const canonical = `/${main_service}/${sub_service}`;
-  const title = `${subService.title} | ${service.title} | Clickmasters`;
+  const title = fitTitle(subService.metaTitle || subService.title);
+  const description = fitDescription(
+    subService.metaDescription || subService.description,
+    subService.title,
+  );
 
   return {
     title,
-    description: subService.description,
+    description,
     alternates: {
       canonical,
     },
-    openGraph: {
-      title,
-      description: subService.description,
-      url: canonical,
-    },
+      openGraph: {
+        title,
+        description,
+        url: canonical,
+      },
   };
 }
 
@@ -59,5 +72,32 @@ export default async function Page({ params }: PageProps) {
     notFound();
   }
 
-  return <SubServicePage service={service} subService={subService} />;
+  const target = destinationFor(main_service, sub_service);
+  if (target) redirect(target);
+
+  const path = `/${service.slug}/${subService.slug}`;
+  const description = fitDescription(
+    subService.metaDescription || subService.description,
+    subService.title,
+  );
+
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: service.title, path: `/${service.slug}` },
+          { name: subService.title, path },
+        ])}
+      />
+      <JsonLd
+        data={serviceSchema({
+          name: subService.title,
+          description,
+          path,
+        })}
+      />
+      <SubServicePage service={service} subService={subService} />
+    </>
+  );
 }

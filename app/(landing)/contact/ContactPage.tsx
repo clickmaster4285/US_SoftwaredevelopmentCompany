@@ -39,15 +39,6 @@ const contactItems = [
 const inputClass =
   "h-12 rounded-[8px] border border-white/12 bg-white/8 px-4 text-white outline-none transition placeholder:text-white/35 focus:border-[#f6c85f]";
 
-export const metadata = {
-  title: "Contact – Clickmasters Software Development Company",
-  description:
-    "Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we’re here to help you get started.",
-  alternates: {
-    canonical: "https://clickmasterssoftwaredevelopmentcompany.com/contact",
-  },
-};
-
 export default function ContactPage() {
   const [form, setForm] = useState({
     name: "",
@@ -164,6 +155,72 @@ export default function ContactPage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-border bg-secondary px-5 py-20 md:px-10">
+        <div className="mx-auto max-w-3xl space-y-5 text-base leading-8 text-muted-foreground md:text-lg">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground">
+            What to send with the first note
+          </h2>
+          <p>
+            A useful first message names the product, who uses it, and what
+            has to be true on the day it ships. If you already have a
+            repository, a design file, or a system that cannot be replaced,
+            include that. If you only have a problem statement, that is enough
+            to start. We do not need a finished specification before the first
+            conversation.
+          </p>
+          <p>
+            Clickmasters is remote-first. There is no local office to visit.
+            The working sessions happen by video and phone, overlapping U.S.
+            business hours. You will talk with someone who can discuss scope,
+            not only a scheduling inbox. After that conversation you receive a
+            written outline: what is included, what is excluded, a timeline,
+            and a price. The form on this page is the start of that outline,
+            not a commitment to build.
+          </p>
+          <p>
+            Tell us the constraints that change the plan. A payment provider,
+            a customer-data rule, an existing mobile app, or a date that
+            cannot move all belong in the note. If a third party owns an API
+            you depend on, say so. Those facts decide whether the first
+            release is a narrow workflow or a larger system, and they keep the
+            quote from assuming work you did not ask for.
+          </p>
+          <p>
+            You can also name the engagement shape. Some teams want a first
+            version they can put in front of users. Some want engineers added
+            to a backlog they already run. Some want a maintenance window on
+            software that is already live. The reply will say which of those
+            we are quoting, and it will point at the service line that matches,
+            such as software development, web development, mobile, or QA,
+            instead of treating every request as the same package.
+          </p>
+          <p>
+            If a written case study is useful while you decide, read the{" "}
+            <a
+              href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
+              className="font-semibold text-foreground underline"
+            >
+              pre-launch QA engagement for a SaaS booking platform
+            </a>
+            . We publish a client result only when that client has agreed to
+            it. We do not attach certification badges or partner logos to this
+            page. You can also start from{" "}
+            <a href="/software-development" className="font-semibold text-foreground underline">
+              software development
+            </a>
+            ,{" "}
+            <a href="/web-development" className="font-semibold text-foreground underline">
+              web development
+            </a>
+            , or{" "}
+            <a href="/mobile-app-development" className="font-semibold text-foreground underline">
+              mobile app development
+            </a>{" "}
+            if you already know the service line.
+          </p>
         </div>
       </section>
 

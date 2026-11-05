@@ -173,7 +173,7 @@ export const caseStudy: CaseStudy = {
       },
       {
         anchor: "free QA scoping call",
-        href: "/free-qa-scoping-call",
+        href: "/contact",
       },
       {
         anchor: "Contact Clickmasters",
@@ -231,7 +231,7 @@ export const caseStudy: CaseStudy = {
     ],
     primaryCta: {
       label: "Book a free QA scoping call",
-      href: "/free-qa-scoping-call",
+      href: "/contact",
     },
     secondaryCta: {
       label: "Contact Clickmasters",
@@ -604,7 +604,7 @@ export const caseStudy: CaseStudy = {
     body: "Contact Clickmasters with a short description of your platform. We will reply with scoping questions and a written estimate for both scope options. The launch-critical option covers the three priority areas end to end; the full coverage option adds every rule, status, plan tier and device.",
     primary: {
       label: "Book a free QA scoping call",
-      href: "/free-qa-scoping-call",
+      href: "/contact",
     },
     secondary: {
       label: "Contact Clickmasters",

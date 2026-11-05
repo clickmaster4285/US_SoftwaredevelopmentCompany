@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import audienceAgencies from "@/public/assets/audience-agencies.jpg";
-import audienceCreators from "@/public/assets/audience-creators.jpg";
-import audienceMarketing from "@/public/assets/audience-marketing.jpg";
+import audienceAgencies from "@/public/assets/audience-agencies-sm.jpg";
+import audienceCreators from "@/public/assets/audience-creators-sm.jpg";
+import audienceMarketing from "@/public/assets/audience-marketing-sm.jpg";
 
 const AUDIENCE_SLIDES = [
   {

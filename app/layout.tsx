@@ -2,6 +2,11 @@ import "./globals.css";
 import Providers from "./providers";
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/site";
+import {
+  JsonLd,
+  organizationSchema,
+  websiteSchema,
+} from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -35,6 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background text-foreground">
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={websiteSchema()} />
         <Providers>{children}</Providers>
       </body>
     </html>

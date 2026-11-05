@@ -16,6 +16,8 @@ export type SubService = {
   title: string;
   slug: string;
   description: string;
+  metaTitle?: string;
+  metaDescription?: string;
   icon?: IconName;
   heroImage?: string;
   lead?: string;

@@ -1,3 +1,5 @@
+import { redirectRules } from "./lib/site-routes.mjs";
+
 const isProd = process.env.NODE_ENV === "production";
 
 const contentSecurityPolicy = [
@@ -29,6 +31,9 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  async redirects() {
+    return redirectRules();
+  },
   async headers() {
     return [
       {
@@ -46,6 +51,10 @@ const nextConfig = {
     "192.168.88.*", // 👈 Or allow all on this subnet
   ],
   images: {
+    deviceSizes: [640, 750, 828],
+    imageSizes: [64, 96, 128, 256, 384],
+    formats: ["image/webp"],
+    qualities: [60, 75],
     remotePatterns: [
       {
         protocol: "https",

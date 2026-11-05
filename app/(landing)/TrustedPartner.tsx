@@ -15,22 +15,22 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 const CERTIFICATIONS = [
   {
-    id: "CRD—01",
-    code: "AWS",
-    label: "AWS Certified",
-    detail: "Solutions Architect · SysOps Administrator",
+    id: "DLV—01",
+    code: "DOC",
+    label: "Written decisions",
+    detail: "Architecture and API choices stay in the repository",
   },
   {
-    id: "CRD—02",
-    code: "AZ",
-    label: "Azure Certified",
-    detail: "Solutions Architect Expert",
+    id: "DLV—02",
+    code: "IP",
+    label: "Client-owned code",
+    detail: "Repositories and assets transfer to you",
   },
   {
-    id: "CRD—03",
-    code: "GCP",
-    label: "GCP Certified",
-    detail: "Professional Cloud Architect",
+    id: "DLV—03",
+    code: "QA",
+    label: "Reviewed before release",
+    detail: "Testing is part of delivery, not a separate promise",
   },
 ];
 
@@ -313,7 +313,7 @@ export default function TrustedPartnerSection() {
               inView ? "tp-rise" : "opacity-0"
             }`}
           >
-            Engineering credentials on file
+            How delivery is run
           </p>
 
           <div
@@ -338,13 +338,13 @@ export default function TrustedPartnerSection() {
             {/* ledger header */}
             <div className="flex items-center justify-between border-b border-border px-6 py-3.5">
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Credential Ledger
+                Delivery practices
               </span>
               <span
                 className="font-mono text-[10px] uppercase tracking-[0.2em]"
                 style={{ color: "var(--chart-1)" }}
               >
-                Verified
+                In writing
               </span>
             </div>
 

@@ -69,14 +69,15 @@ export default function Testimonials3DRoom() {
           }}
         >
           <p className="text-xs uppercase tracking-[0.4em] opacity-60 mb-4">
-            Success Stories & Reviews
+            How delivery is run
           </p>
           <h2 className="text-[clamp(2rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1]">
-            Here's what real clients{" "}
-            <span className="italic font-serif">say</span>
+            What is written into the{" "}
+            <span className="italic font-serif">engagement</span>
           </h2>
           <p className="mt-6 text-sm md:text-base opacity-70 max-w-2xl mx-auto">
-            about working with our software development agency.
+            A client result is published only when that client agrees to a
+            case study.
           </p>
         </div>
 
@@ -248,11 +249,11 @@ function Card({
           0{index + 1} / 0{TESTIMONIALS.length}
         </span>
         <span className="text-[10px] uppercase tracking-[0.3em] opacity-50">
-          Testimonial
+          Delivery
         </span>
       </div>
       <p className="text-2xl md:text-[1.75rem] font-serif italic leading-[1.3] text-[oklch(0.97_0.005_80)]">
-        &ldquo;{card.quote}&rdquo;
+        {card.quote}
       </p>
       <div className="mt-8 flex items-center gap-4">
         <div

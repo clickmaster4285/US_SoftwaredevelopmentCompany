@@ -4,19 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
-import { pageUrl } from "@/lib/site";
 import Footer from "@/components/layout/Footer";
 import {
   CheckCircle2,
   ChevronRight,
   Plus,
   Minus,
-  Quote,
   ArrowRight,
   Sparkles,
   ArrowUp,
-  ShieldCheck,
-  Award,
 } from "lucide-react";
 
 import type { LocationServiceData } from "@/data/location-service-data";
@@ -40,42 +36,12 @@ export default function LocationServicePage({ data }: Props) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const generateSchema = () => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      name: "Clickmasters",
-      description: data.metaDescription,
-      url: pageUrl(`/locations/${data.slug}`),
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Dallas",
-        addressRegion: "TX",
-        addressCountry: "US",
-      },
-      areaServed: data.locations || ["Dallas"],
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Software Development Services",
-        itemListElement:
-          data.serviceLines?.map((service, index) => ({
-            "@type": "Offer",
-            position: index + 1,
-            name: service.title,
-            description: service.description,
-          })) || [],
-      },
-    };
-    return JSON.stringify(schema);
-  };
+  const serviceArea = data.locations?.length
+    ? data.locations.slice(0, 4).join(", ")
+    : data.title;
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: generateSchema() }}
-      />
-
       <div className="min-h-screen bg-background text-foreground">
         <Navbar />
 
@@ -125,6 +91,15 @@ export default function LocationServicePage({ data }: Props) {
                     {data.intro}
                   </div>
                 )}
+                <p className="mt-6 max-w-2xl text-base leading-7 text-foreground">
+                  Service area: Clickmasters is remote-first and does not keep
+                  a local office in this city. We work with clients across{" "}
+                  {serviceArea}
+                  {data.locations && data.locations.length > 4
+                    ? ", and nearby communities"
+                    : ""}{" "}
+                  by video and phone during U.S. business hours.
+                </p>
                 {(data.ctaText || data.ctaHref) && (
                   <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                     <Link
@@ -195,7 +170,7 @@ export default function LocationServicePage({ data }: Props) {
                 <div className="relative">
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
                     <Image
-                      src={data.trustImage || "/assets/why.png"}
+                      src={data.trustImage || "/assets/why-photo.webp"}
                       alt={
                         data.trustTitle || "Trusted Software Development Team"
                       }
@@ -206,33 +181,27 @@ export default function LocationServicePage({ data }: Props) {
                     {/* Subtle gradient overlay to enhance badge contrast */}
                     <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
 
-                    {/* Top Credibility Badge: ISO & Security */}
-                    <div className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/90 px-3.5 py-1.5 text-xs font-semibold text-foreground shadow-lg backdrop-blur-md">
-                      <ShieldCheck className="h-4 w-4 text-primary" />
-                      <span>ISO 27001 &amp; GDPR Compliant</span>
-                    </div>
-
                     {/* Bottom Experience Metrics Card */}
                     <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-border/80 bg-background/95 p-3.5 shadow-xl backdrop-blur-md">
                       <div className="flex items-center gap-3">
                         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                          <Award className="h-5 w-5" />
+                          <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
                           <p className="text-sm font-bold text-foreground">
-                            500+ Projects Delivered
+                            Written scope
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            U.S. Enterprise &amp; Startups
+                            Agreed before development starts
                           </p>
                         </div>
                       </div>
                       <div className="hidden sm:block text-right">
                         <p className="text-xs font-semibold text-primary">
-                          5+ Yrs Avg.
+                          Remote-first
                         </p>
                         <p className="text-[11px] text-muted-foreground">
-                          Senior Engineers
+                          Video and phone
                         </p>
                       </div>
                     </div>
@@ -446,51 +415,25 @@ export default function LocationServicePage({ data }: Props) {
         )}
 
         {/* ===== SECTION 8: TESTIMONIALS ===== */}
-        {(data.testimonials?.length ?? 0) > 0 && (
-          <section className="bg-secondary px-5 py-24 md:px-10">
-            <div className="mx-auto max-w-7xl">
-              {data.testimonialsTitle && (
-                <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-tight text-foreground">
-                  {data.testimonialsTitle}
-                </h2>
-              )}
-              {data.testimonialsDescription && (
-                <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
-                  {data.testimonialsDescription}
-                </p>
-              )}
-              <div className="mt-14 grid gap-6 md:grid-cols-3">
-                {data.testimonials!.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className="relative rounded-lg border border-border bg-card p-6 hover:shadow-lg transition-shadow"
-                  >
-                    <div className="mb-2 text-yellow-400 text-sm font-bold">
-                      ★★★★★
-                    </div>
-                    <Quote className="mb-4 h-8 w-8 text-primary/20" />
-                    <p className="text-base leading-7 text-muted-foreground">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </p>
-                    <div className="mt-6">
-                      <p className="text-sm font-semibold text-foreground">
-                        {testimonial.author}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {testimonial.role}, {testimonial.company}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              {data.testimonialsClosing && (
-                <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
-                  {data.testimonialsClosing}
-                </p>
-              )}
-            </div>
-          </section>
-        )}
+        <section className="bg-secondary px-5 py-24 md:px-10">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-tight text-foreground">
+              Written client results
+            </h2>
+            <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
+              We publish a client result only when that client has agreed to a
+              written case study.
+            </p>
+            <p className="mt-6 text-lg">
+              <Link
+                href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
+                className="font-semibold text-primary"
+              >
+                Pre-launch QA for a SaaS booking platform
+              </Link>
+            </p>
+          </div>
+        </section>
 
         {/* ===== SECTION 9: LOCATIONS ===== */}
         {(data.locationsTitle || (data.locations?.length ?? 0) > 0) && (

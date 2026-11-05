@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import ContactPage from "./ContactPage";
+import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
 
 const CONTACT_URL =
   "https://clickmasterssoftwaredevelopmentcompany.com/contact";
-const CONTACT_TITLE = "Contact – Clickmasters Software Development Company";
-const CONTACT_DESCRIPTION =
-  "Have a software project in mind? Talk to our development experts in the US today. Whether you need a custom app, web platform, or software solution, we're here to help you get started.";
+const CONTACT_TITLE = fitTitle("Contact");
+const CONTACT_DESCRIPTION = fitDescription(
+  "Have a software project in mind? Talk with Clickmasters about a custom app, web platform, or software build. We reply with scope, timeline, and a quote.",
+  "Contact Clickmasters",
+);
 
 export const metadata: Metadata = {
   title: CONTACT_TITLE,
@@ -37,29 +41,22 @@ export const metadata: Metadata = {
 
 const contactSchema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Clickmasters Software Development Company",
+  "@type": "ContactPage",
+  name: "Contact Clickmasters",
   description: CONTACT_DESCRIPTION,
   url: CONTACT_URL,
-  email: "sales@Clickmasterssoftwaredevelopmentcompany.com",
-  telephone: "+1 325 2024074",
-  areaServed: ["United States", "Europe", "Canada", "Australia"],
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "sales",
-    email: "sales@Clickmasterssoftwaredevelopmentcompany.com",
-    telephone: "+1 325 2024074",
-    areaServed: ["US", "Europe", "Canada", "Australia"],
-    availableLanguage: "English",
-  },
+  mainEntity: { "@id": "https://clickmasterssoftwaredevelopmentcompany.com/#organization" },
 };
 
 export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      <JsonLd data={contactSchema} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ])}
       />
       <ContactPage />
     </>

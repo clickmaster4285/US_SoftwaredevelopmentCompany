@@ -55,7 +55,7 @@ const values = [
     icon: CheckCircle2,
   },
   {
-    text: "Earn trust through transparency ISO 27001 and GDPR compliance",
+    text: "Earn trust through transparency written scope, access notes, and a named contact",
     icon: Shield,
   },
 ];
@@ -63,18 +63,13 @@ const values = [
 const trustBadges = [
   {
     icon: Shield,
-    label: "ISO 27001 Certified",
-    description: "Information security management you can audit",
-  },
-  {
-    icon: Shield,
-    label: "GDPR Compliant",
-    description: "Data handling that meets EU standards by default",
+    label: "Access controls",
+    description: "Customer data stays behind named accounts and written handling rules",
   },
   {
     icon: Users,
-    label: "100+ 5-Star Reviews",
-    description: "Verifiable, not just claimed",
+    label: "Remote-first team",
+    description: "We serve clients by video and phone, without a local storefront",
   },
   {
     icon: Award,
@@ -84,10 +79,10 @@ const trustBadges = [
 ];
 
 const stats = [
-  { number: "200+", label: "Projects delivered" },
-  { number: "8+", label: "Years combined engineering experience" },
-  { number: "15+", label: "Industries served" },
-  { number: "24/7", label: "Support coverage" },
+  { label: "Written scope", detail: "Agreed before development starts" },
+  { label: "Client-owned code", detail: "Repositories transfer to you" },
+  { label: "Remote-first", detail: "Delivery by video and phone" },
+  { label: "Reviewed releases", detail: "Checks run before anything ships" },
 ];
 
 /* ---------------------------------------------------------------------- */
@@ -140,36 +135,6 @@ function Reveal({
   );
 }
 
-function CountStat({ value, start }: { value: string; start: boolean }) {
-  const match = value.match(/^(\d+)(.*)$/);
-  const [display, setDisplay] = useState(match ? "0" : value);
-
-  useEffect(() => {
-    if (!match || !start) return;
-    const target = parseInt(match[1], 10);
-    const duration = 1200;
-    const startTime = performance.now();
-
-    let raf: number;
-    const tick = (now: number) => {
-      const progress = Math.min((now - startTime) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setDisplay(Math.round(eased * target).toString());
-      if (progress < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [start]);
-
-  if (!match) return <>{value}</>;
-  return (
-    <>
-      {display}
-      {match[2]}
-    </>
-  );
-}
 
 /* ---------------------------------------------------------------------- */
 
@@ -412,8 +377,8 @@ export default function AboutPage() {
                   animationDelay: statsInView ? `${i * 0.12}s` : undefined,
                 }}
               >
-                <div className="text-3xl font-bold text-[#e05b35] md:text-4xl tabular-nums">
-                  <CountStat value={stat.number} start={statsInView} />
+                <div className="text-xl font-bold text-[#e05b35] md:text-2xl">
+                  {stat.label}
                 </div>
                 <div
                   className="mx-auto mt-2 h-[2px] w-8 bg-[#e05b35]/40 ab-underline"
@@ -423,7 +388,7 @@ export default function AboutPage() {
                       : undefined,
                   }}
                 />
-                <div className="mt-2 text-sm text-black/60">{stat.label}</div>
+                <div className="mt-2 text-sm text-black/60">{stat.detail}</div>
               </div>
             ))}
           </div>
@@ -505,7 +470,7 @@ export default function AboutPage() {
             <Reveal delay={0.2} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl ab-image-float">
                 <Image
-                  src="/assets/why.png"
+                  src="/assets/why-photo.webp"
                   alt="Clickmasters team - Software Development Company"
                   width={600}
                   height={500}

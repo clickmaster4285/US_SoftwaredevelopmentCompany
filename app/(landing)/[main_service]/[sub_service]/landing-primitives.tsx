@@ -60,6 +60,7 @@ export function Hero({
   title,
   copy,
   image,
+  imageAlt = "",
   badge,
   ctaHref = "/contact",
 }: {
@@ -67,6 +68,7 @@ export function Hero({
   title: string;
   copy: string;
   image?: string;
+  imageAlt?: string;
   badge?: string;
   ctaHref?: string;
 }) {
@@ -75,7 +77,7 @@ export function Hero({
       {image ? (
         <img
           src={image}
-          alt=""
+          alt={imageAlt}
           className="absolute inset-0 h-full w-full object-cover"
         />
       ) : (

@@ -1,5 +1,8 @@
 import { notFound } from "next/navigation";
 import LocationServicePage from "./LocationServicePage";
+import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
+import { SITE_URL } from "@/lib/site";
 import {
   getLocationServiceData,
   getAllLocationServiceSlugs,
@@ -31,15 +34,18 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  const title = fitTitle(data.metaTitle);
+  const description = fitDescription(data.metaDescription, data.title);
+
   return {
-    title: data.metaTitle,
-    description: data.metaDescription,
+    title,
+    description,
     alternates: {
       canonical: `/locations/${slug}`,
     },
     openGraph: {
-      title: data.metaTitle,
-      description: data.metaDescription,
+      title,
+      description,
       url: `/locations/${slug}`,
       siteName: "Clickmasters",
       locale: "en_US",
@@ -57,8 +63,8 @@ export async function generateMetadata({ params }: PageProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: data.metaTitle,
-      description: data.metaDescription,
+      title,
+      description,
       images: data.heroImage ? [data.heroImage] : [],
     },
     robots: {
@@ -79,5 +85,33 @@ export default async function Page({ params }: PageProps) {
     notFound();
   }
 
-  return <LocationServicePage data={data} />;
+  const description = fitDescription(data.metaDescription, data.title);
+  const areaServed = (data.locations?.length ? data.locations : [data.title]).map(
+    (name) => ({ "@type": "AdministrativeArea", name }),
+  );
+
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Locations", path: "/locations" },
+          { name: data.title, path: `/locations/${data.slug}` },
+        ])}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: data.title,
+          serviceType: "Software development",
+          description,
+          url: `${SITE_URL}/locations/${data.slug}`,
+          provider: { "@id": `${SITE_URL}/#organization` },
+          areaServed,
+        }}
+      />
+      <LocationServicePage data={{ ...data, testimonials: [] }} />
+    </>
+  );
 }

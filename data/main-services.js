@@ -101,6 +101,7 @@ import {
   PlayCircle,
 } from "lucide-react";
 import { enrichServiceData } from "./service-section-data.js";
+import { isRetiredSub } from "../lib/site-routes.mjs";
 
 /**
  * ICON MAPPING
@@ -237,7 +238,7 @@ export const mainServicesData = {
       "We craft custom software solutions that streamline operations, enhance productivity, and drive business growth.",
     heroBadge: "10+ Enterprise Solutions Delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Projects Delivered" },
       { value: "99.9%", label: "Uptime Guarantee" },
@@ -301,7 +302,7 @@ export const mainServicesData = {
           "Tailored software for specific business goals built around your workflows, not generic templates.",
         icon: "Target",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Software Development Company | ClickMasters",
         metaDescription:
           "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
@@ -334,7 +335,7 @@ export const mainServicesData = {
           "Scalable enterprise platforms and workflows for multi-department systems.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
         metaTitle:
           "Enterprise Software Development Company | Custom ERP & B2B Systems",
         lead: "Enterprise software built for operational complexity - not around it.",
@@ -353,7 +354,7 @@ export const mainServicesData = {
           "Cloud-based SaaS products with recurring value and subscription billing.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=40&w=640&auto=format&fit=crop",
         lead: "From idea to revenue-generating SaaS platform in one engagement.",
         highlights: [
           "Multi-tenant architecture",
@@ -370,7 +371,7 @@ export const mainServicesData = {
           "Fast MVP releases to validate ideas and product-market fit.",
         icon: "Rocket",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "6-12 weeks to launch",
           "Core workflows only",
@@ -385,7 +386,7 @@ export const mainServicesData = {
           "Modern web applications built on React, Next.js, and Node.js.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "React & Next.js",
           "Node.js backend",
@@ -400,7 +401,7 @@ export const mainServicesData = {
           "Native and cross-platform mobile apps for iOS and Android.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "iOS & Android",
           "Cross-platform options",
@@ -415,7 +416,7 @@ export const mainServicesData = {
           "Practical AI features automation, predictive analytics, intelligent search, and AI-assisted workflows.",
         icon: "Brain",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "OpenAI integrations",
           "Predictive analytics",
@@ -430,7 +431,7 @@ export const mainServicesData = {
           "Reliable desktop apps for business operations and internal workflows.",
         icon: "Monitor",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Cross-platform desktop",
           "Native performance",
@@ -445,7 +446,7 @@ export const mainServicesData = {
           "Robust APIs and third-party integrations with CRMs, ERPs, and payment processors.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "REST & GraphQL APIs",
           "Payment processor integration",
@@ -460,7 +461,7 @@ export const mainServicesData = {
           "Distributed systems built for scale and independent deployability.",
         icon: "Puzzle",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Service independence",
           "Container orchestration",
@@ -475,7 +476,7 @@ export const mainServicesData = {
           "Secure, high-performance backend services with Node.js and Python.",
         icon: "Server",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Node.js & Python",
           "PostgreSQL & MongoDB",
@@ -490,7 +491,7 @@ export const mainServicesData = {
           "Responsive, accessible frontend experiences with React and Next.js.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "React & Next.js",
           "Responsive design",
@@ -505,7 +506,7 @@ export const mainServicesData = {
           "End-to-end product development with a single accountable team.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Frontend & backend",
           "Cloud infrastructure",
@@ -520,7 +521,7 @@ export const mainServicesData = {
           "Scope a roadmap, choose a tech stack, audit legacy systems, and plan a realistic budget.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Roadmap planning",
           "Tech stack selection",
@@ -535,7 +536,7 @@ export const mainServicesData = {
           "Dedicated developers who work inside your existing sprint process and tools.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         highlights: [
           "Dedicated engineering teams",
           "Existing process integration",
@@ -630,7 +631,7 @@ export const mainServicesData = {
       "We build modern, responsive websites and web applications that captivate audiences.",
     heroBadge: "500+ Websites Launched",
     heroImage:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "500+", label: "Websites Built" },
       { value: "98%", label: "Satisfaction" },
@@ -648,7 +649,7 @@ export const mainServicesData = {
           "Custom-coded web solutions built around your brand and workflows.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Web Application Development",
@@ -656,7 +657,7 @@ export const mainServicesData = {
         description: "Modern web apps and business portals.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
         metaTitle:
           "Web Application Development Company | Custom Web Apps for B2B",
         lead: "Custom web applications built for performance, scale, and business outcomes.",
@@ -672,7 +673,7 @@ export const mainServicesData = {
         description: "SEO-friendly websites that convert.",
         icon: "Globe2",
         heroImage:
-          "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Progressive Web App Development",
@@ -680,7 +681,7 @@ export const mainServicesData = {
         description: "Installable web apps with offline support.",
         icon: "Zap",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Headless CMS Development",
@@ -688,7 +689,7 @@ export const mainServicesData = {
         description: "Flexible content systems.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "JAMstack Development",
@@ -696,7 +697,7 @@ export const mainServicesData = {
         description: "Fast static-first web architectures.",
         icon: "Zap",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "E-commerce Development",
@@ -704,7 +705,7 @@ export const mainServicesData = {
         description: "Scalable online stores.",
         icon: "ShoppingCart",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Headless E-commerce",
@@ -712,7 +713,7 @@ export const mainServicesData = {
         description: "Composable commerce for modern stores.",
         icon: "Package",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Shopify Development",
@@ -720,7 +721,7 @@ export const mainServicesData = {
         description: "Custom Shopify stores.",
         icon: "Store",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "WooCommerce Development",
@@ -728,7 +729,7 @@ export const mainServicesData = {
         description: "WordPress commerce support.",
         icon: "ShoppingBag",
         heroImage:
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -743,7 +744,7 @@ export const mainServicesData = {
       "Transform your ideas into powerful mobile applications for iOS and Android.",
     heroBadge: "100+ Apps Published",
     heroImage:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "100+", label: "Apps Published" },
       { value: "4.8★", label: "Avg Rating" },
@@ -760,7 +761,7 @@ export const mainServicesData = {
           "Apps designed around how your business actually operates.",
         icon: "Building",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Android App Development",
@@ -768,7 +769,7 @@ export const mainServicesData = {
         description: "Native Android apps.",
         icon: "Bot",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "iOS App Development",
@@ -776,7 +777,7 @@ export const mainServicesData = {
         description: "Native iOS apps.",
         icon: "Target",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Cross-Platform App Development",
@@ -784,7 +785,7 @@ export const mainServicesData = {
         description: "Shared-code apps.",
         icon: "Layers3",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Flutter App Development",
@@ -792,7 +793,7 @@ export const mainServicesData = {
         description: "Flutter apps with consistent UI.",
         icon: "Sparkles",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "React Native Development",
@@ -800,7 +801,7 @@ export const mainServicesData = {
         description: "React Native apps.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -813,9 +814,9 @@ export const mainServicesData = {
     tagline: "Beautiful, User-Centered Design Solutions",
     description:
       "Our design team creates intuitive, engaging experiences that users love.",
-    heroBadge: "Award-Winning Design Team",
+    heroBadge: "Product design and research",
     heroImage:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "300+", label: "Design Projects" },
       { value: "95%", label: "User Satisfaction" },
@@ -831,7 +832,7 @@ export const mainServicesData = {
         description: "User-first interfaces.",
         icon: "Palette",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Product Design",
@@ -839,7 +840,7 @@ export const mainServicesData = {
         description: "End-to-end product thinking.",
         icon: "Package",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Web Design",
@@ -847,7 +848,7 @@ export const mainServicesData = {
         description: "Modern web layouts.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Mobile App Design",
@@ -855,7 +856,7 @@ export const mainServicesData = {
         description: "Mobile-first design systems.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "UX Research",
@@ -863,7 +864,7 @@ export const mainServicesData = {
         description: "Research-backed decisions.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Wireframing & Prototyping",
@@ -871,7 +872,7 @@ export const mainServicesData = {
         description: "Rapid prototypes.",
         icon: "Edit3",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Design Systems",
@@ -879,7 +880,7 @@ export const mainServicesData = {
         description: "Reusable language.",
         icon: "LayoutDashboard",
         heroImage:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -894,7 +895,7 @@ export const mainServicesData = {
       "Leverage AI to automate processes, gain insights, and innovate.",
     heroBadge: "Leading AI Innovators",
     heroImage:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "50+", label: "AI Projects" },
       { value: "97%", label: "Accuracy" },
@@ -910,7 +911,7 @@ export const mainServicesData = {
         description: "LLM-powered automation.",
         icon: "Brain",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Generative AI Solutions Company | Custom AI for B2B",
         lead: "Generative AI that ships to production - not just proof of concept.",
         highlights: [
@@ -926,7 +927,7 @@ export const mainServicesData = {
         description: "Strategic AI advice.",
         icon: "Users",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Developers",
@@ -934,7 +935,7 @@ export const mainServicesData = {
         description: "Custom AI apps.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Prompt Engineers",
@@ -942,7 +943,7 @@ export const mainServicesData = {
         description: "High-quality model tuning.",
         icon: "Edit3",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Chatbot Development",
@@ -950,7 +951,7 @@ export const mainServicesData = {
         description: "Conversational assistants.",
         icon: "BotMessageSquare",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Agents Development",
@@ -958,7 +959,7 @@ export const mainServicesData = {
         description: "Autonomous agents.",
         icon: "Bot",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Automation Systems",
@@ -966,7 +967,7 @@ export const mainServicesData = {
         description: "Intelligent automation.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Integration Services",
@@ -974,7 +975,7 @@ export const mainServicesData = {
         description: "Integrate AI everywhere.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "AI Model Development",
@@ -982,7 +983,7 @@ export const mainServicesData = {
         description: "Custom model training.",
         icon: "Cpu",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "LLM Applications Development",
@@ -990,7 +991,7 @@ export const mainServicesData = {
         description: "Production AI tooling.",
         icon: "FileText",
         heroImage:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -1004,7 +1005,7 @@ export const mainServicesData = {
   //   description: "Harness ML to transform data into actionable insights.",
   //   heroBadge: "50+ ML Models Deployed",
   //   heroImage:
-  //     "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //   stats: [
   //     { value: "50+", label: "ML Models" },
   //     { value: "95%", label: "Accuracy" },
@@ -1016,7 +1017,7 @@ export const mainServicesData = {
   //       description: "Tailored ML systems.",
   //       icon: "Brain",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Machine Learning Experts",
@@ -1024,7 +1025,7 @@ export const mainServicesData = {
   //       description: "Expert ML practitioners.",
   //       icon: "Users",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Predictive Analytics",
@@ -1032,7 +1033,7 @@ export const mainServicesData = {
   //       description: "Outcome forecasting.",
   //       icon: "BarChart3",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Recommendation Systems",
@@ -1040,7 +1041,7 @@ export const mainServicesData = {
   //       description: "Personalized engagement.",
   //       icon: "Target",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Model Training & Optimization",
@@ -1048,7 +1049,7 @@ export const mainServicesData = {
   //       description: "Performance tuning.",
   //       icon: "Settings",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Deep Learning Solutions",
@@ -1056,7 +1057,7 @@ export const mainServicesData = {
   //       description: "Advanced neural models.",
   //       icon: "Cpu",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Deep Learning Experts",
@@ -1064,7 +1065,7 @@ export const mainServicesData = {
   //       description: "Specialized architectures.",
   //       icon: "UserCheck",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   //     },
   //   ],
   // },
@@ -1082,7 +1083,7 @@ export const mainServicesData = {
       "Custom ML models, predictive analytics, and deep learning built for production.",
     heroBadge: "40+ ML models deployed to production",
     heroImage:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "40+", label: "ML Models Deployed" },
       { value: "95%+", label: "Average Accuracy" },
@@ -1094,7 +1095,7 @@ export const mainServicesData = {
         description: "Custom ML built around your business data.",
         icon: "BrainCircuit",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Machine Learning Experts",
@@ -1102,7 +1103,7 @@ export const mainServicesData = {
         description: "Dedicated ML engineers and data scientists.",
         icon: "Users2",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Predictive Analytics",
@@ -1110,7 +1111,7 @@ export const mainServicesData = {
         description: "Forecast demand, risk, and trends.",
         icon: "TrendingUp",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Recommendation Systems",
@@ -1118,7 +1119,7 @@ export const mainServicesData = {
         description: "Personalization that lifts revenue.",
         icon: "Target",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Model Training & Optimization",
@@ -1126,7 +1127,7 @@ export const mainServicesData = {
         description: "Accuracy up, inference costs down.",
         icon: "SlidersHorizontal",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Deep Learning Solutions",
@@ -1134,7 +1135,7 @@ export const mainServicesData = {
         description: "Neural models for complex problems.",
         icon: "Layers3",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Deep Learning Experts",
@@ -1142,7 +1143,7 @@ export const mainServicesData = {
         description: "Neural architectures for your data.",
         icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Custom ML Model Development",
@@ -1150,7 +1151,7 @@ export const mainServicesData = {
         description: "Models built on your proprietary data.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "ML Model Development Services",
@@ -1158,15 +1159,15 @@ export const mainServicesData = {
         description: "Full-cycle model development.",
         icon: "Repeat",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Machine Learning Solutions Development",
-        slug: "machine-learning-solutions-development",
+        slug: "ml-solutions-development",
         description: "End-to-end ML with MLOps at scale.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -1180,7 +1181,7 @@ export const mainServicesData = {
   //   description: "Understand human language and images at scale.",
   //   heroBadge: "Advanced AI Tech",
   //   heroImage:
-  //     "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=40&w=640&auto=format&fit=crop",
   //   subServices: [
   //     {
   //       title: "Natural Language Processing (NLP)",
@@ -1188,7 +1189,7 @@ export const mainServicesData = {
   //       description: "Text understanding.",
   //       icon: "MessageCircle",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Speech Recognition",
@@ -1196,7 +1197,7 @@ export const mainServicesData = {
   //       description: "Voice-to-text.",
   //       icon: "Microscope",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Computer Vision",
@@ -1204,7 +1205,7 @@ export const mainServicesData = {
   //       description: "Image understanding.",
   //       icon: "Eye",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Image Processing",
@@ -1212,7 +1213,7 @@ export const mainServicesData = {
   //       description: "Enhancement & classification.",
   //       icon: "Monitor",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=40&w=640&auto=format&fit=crop",
   //     },
   //     {
   //       title: "Video Analytics",
@@ -1220,7 +1221,7 @@ export const mainServicesData = {
   //       description: "Real-time intelligence.",
   //       icon: "Monitor",
   //       heroImage:
-  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
+  //         "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=40&w=640&auto=format&fit=crop",
   //     },
   //   ],
   // },
@@ -1234,7 +1235,7 @@ export const mainServicesData = {
     description: "Transform raw data into business assets.",
     heroBadge: "200+ data projects delivered",
     heroImage:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Data Projects Delivered" },
       { value: "3", label: "Cloud Certifications (AWS, Azure, GCP)" },
@@ -1264,7 +1265,7 @@ export const mainServicesData = {
           "Our data analytics services turn your numbers into a clear story, using statistics, machine learning, and clean data models to answer real business questions.",
         icon: "BarChart3",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Analytics Services Company | ClickMasters",
         metaDescription:
           "Data analytics services that turn your numbers into a clear story — move from guessing to knowing with ClickMasters.",
@@ -1283,7 +1284,7 @@ export const mainServicesData = {
           "Our BI experts build live dashboards and reports so your team can see sales, costs, and performance in one place, updated in real time.",
         icon: "LayoutDashboard",
         heroImage:
-          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Business Intelligence Services | ClickMasters",
         metaDescription:
           "Live BI dashboards and reports so your team sees sales, costs, and performance in one place, in real time.",
@@ -1302,7 +1303,7 @@ export const mainServicesData = {
           "Our data engineering services build the pipes that move your data safely from one system to another, with pipelines designed to scale.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Engineering Services Company | ClickMasters",
         metaDescription:
           "Data engineering services that build safe, scalable pipelines moving your data from system to system.",
@@ -1321,7 +1322,7 @@ export const mainServicesData = {
           "We build cloud data warehouses that store all your business data in one safe, organized place, so every team works from the same numbers.",
         icon: "Warehouse",
         heroImage:
-          "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Data Warehousing Services | ClickMasters",
         metaDescription:
           "Cloud data warehouses that store all your business data in one safe, organized place — one version of the truth.",
@@ -1340,7 +1341,7 @@ export const mainServicesData = {
           "As a big data services company, we use tools like Apache Spark, Hadoop, and Kafka to process huge amounts of data fast, so you spot trends before your competitors do.",
         icon: "Boxes",
         heroImage:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Big Data Solutions Company | ClickMasters",
         metaDescription:
           "Big data services using Apache Spark, Hadoop, and Kafka to process huge data volumes fast and spot trends first.",
@@ -1354,12 +1355,12 @@ export const mainServicesData = {
       },
       {
         title: "Data Integration Services",
-        slug: "data-integration",
+        slug: "data-integration-services",
         description:
           "Our data integration services connect all your tools — CRM, accounting, marketing, support — so information flows automatically instead of being copied by hand.",
         icon: "Plug",
         heroImage:
-          "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Integration Services | ClickMasters",
         metaDescription:
           "Connect your CRM, accounting, marketing, and support tools so information flows automatically across your business.",
@@ -1373,12 +1374,12 @@ export const mainServicesData = {
       },
       {
         title: "Data Migration Services",
-        slug: "data-migration",
+        slug: "data-migration-services",
         description:
           "Our data migration services move your data safely from old systems to new ones, with zero data loss and almost no downtime.",
         icon: "ArrowRightLeft",
         heroImage:
-          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Migration Services | ClickMasters",
         metaDescription:
           "Safe data migration from old systems to new — zero data loss, almost no downtime.",
@@ -1397,7 +1398,7 @@ export const mainServicesData = {
           "Our data management services set clear rules for who can see, use, and update your data, keeping it accurate and compliant with U.S. privacy laws.",
         icon: "ShieldCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Management & Governance Services | ClickMasters",
         metaDescription:
           "Data management services with clear access rules, keeping your data accurate and compliant with U.S. privacy laws.",
@@ -1411,12 +1412,12 @@ export const mainServicesData = {
       },
       {
         title: "Data Visualization Services",
-        slug: "data-visualization",
+        slug: "data-visualization-services",
         description:
           "Our data visualization services turn raw numbers into simple charts, maps, and graphs that anyone on your team can understand in seconds, not hours.",
         icon: "PieChart",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Visualization Services | ClickMasters",
         metaDescription:
           "Turn raw numbers into simple charts, maps, and graphs anyone on your team can understand in seconds.",
@@ -1456,7 +1457,7 @@ export const mainServicesData = {
           "Our cloud solutions help you choose the right cloud setup for your business, whether that is AWS, Azure, or Google Cloud. We deliver complete DevOps solutions alongside your cloud build, so your infrastructure and your workflows work together from day one.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
         lead: "Choose the right cloud setup for your business with complete DevOps integration.",
         highlights: [
           "AWS, Azure, GCP expertise",
@@ -1472,7 +1473,7 @@ export const mainServicesData = {
           "Our core DevOps services connect your development and operations teams so code moves from idea to production without delays. From our DevOps development services to daily support, we set up the tools and workflows your team needs to work faster and with fewer mistakes.",
         icon: "GitBranch",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         lead: "Connect your development and operations teams for faster, error-free delivery.",
         highlights: [
           "DevOps tooling",
@@ -1488,7 +1489,7 @@ export const mainServicesData = {
           "Not sure where to start? Our DevOps consulting services review your current setup and give you a clear roadmap. As a trusted DevOps consulting company, we guide you through every step, from planning to full rollout.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?q=40&w=640&auto=format&fit=crop",
         lead: "Get a clear roadmap and expert guidance for your DevOps transformation.",
         highlights: [
           "Current setup review",
@@ -1504,7 +1505,7 @@ export const mainServicesData = {
           "We build CI/CD pipelines that test and release your code automatically. As part of our DevOps automation services, this means fewer manual steps, faster releases, and fewer bugs reaching your customers.",
         icon: "GitPullRequest",
         heroImage:
-          "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=40&w=640&auto=format&fit=crop",
         lead: "Automated testing and releases with fewer bugs and faster delivery.",
         highlights: [
           "Automated testing",
@@ -1520,7 +1521,7 @@ export const mainServicesData = {
           "We package your applications using Docker and manage them with Kubernetes, so your software runs the same way on every machine and scales up or down as traffic changes.",
         icon: "Container",
         heroImage:
-          "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=40&w=640&auto=format&fit=crop",
         lead: "Package and manage applications with Docker and Kubernetes for consistent performance.",
         highlights: [
           "Docker containerization",
@@ -1536,7 +1537,7 @@ export const mainServicesData = {
           "Using tools like Terraform, we turn your cloud setup into code. This makes your DevOps infrastructure services repeatable, easy to track, and simple to roll back if something goes wrong.",
         icon: "FileCode",
         heroImage:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
         lead: "Turn your cloud setup into repeatable, trackable, and easy-to-roll-back code.",
         highlights: [
           "Terraform expertise",
@@ -1552,7 +1553,7 @@ export const mainServicesData = {
           "Moving from old servers to the cloud can feel risky. Our team plans and runs the migration carefully, with little to no downtime, so your business keeps running while we modernize your systems.",
         icon: "ArrowRightLeft",
         heroImage:
-          "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=40&w=640&auto=format&fit=crop",
         lead: "Move to the cloud with minimal downtime and careful planning.",
         highlights: [
           "Minimal downtime",
@@ -1568,7 +1569,7 @@ export const mainServicesData = {
           "We set up dashboards and alerts that watch your systems around the clock. If something looks wrong, your team knows about it before your customers do.",
         icon: "Activity",
         heroImage:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
         lead: "24/7 monitoring and alerts to catch issues before your customers do.",
         highlights: [
           "24/7 monitoring",
@@ -1584,7 +1585,7 @@ export const mainServicesData = {
           "Don't want to hire a full in-house team? Our managed DevOps services give you a full team of experts on demand. Think of it as DevOps as a service — we handle the daily work while you focus on your product, backed by full cloud DevOps management services for your entire infrastructure.",
         icon: "Settings",
         heroImage:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=40&w=640&auto=format&fit=crop",
         lead: "Get a full DevOps team on demand while you focus on your product.",
         highlights: [
           "Full DevOps team",
@@ -1609,7 +1610,7 @@ export const mainServicesData = {
       "Clickmasters offers cybersecurity services that protect your business from hackers, data leaks, and downtime — before they happen, not after. As a trusted cybersecurity services company in the USA, we help businesses of every size find weak spots, stop attacks, and stay compliant, so you can focus on running your business instead of worrying about the next threat.",
     heroBadge: "24/7 threat monitoring & response",
     heroImage:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
     stats: [
       { value: "24/7", label: "Threat Monitoring & Response" },
       { value: "100+", label: "Security Audits Completed" },
@@ -1635,7 +1636,7 @@ export const mainServicesData = {
           "We review your entire IT environment to find weak points before attackers do. Our cybersecurity risk assessment services give you a clear, ranked list of risks and a simple plan to fix them.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cybersecurity Risk Assessment Services | Clickmasters",
         metaDescription:
           "Cybersecurity risk assessment services that find weak points before attackers do — get a clear plan to fix them.",
@@ -1654,7 +1655,7 @@ export const mainServicesData = {
           "Our ethical hackers try to break into your systems the same way a real attacker would. This penetration testing shows you exactly where your defenses fail, so you can fix it before it becomes a real breach.",
         icon: "Crosshair",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Penetration Testing Services | Clickmasters",
         metaDescription:
           "Ethical hacking and penetration testing services that show where your defenses fail — fix gaps before real breaches.",
@@ -1673,7 +1674,7 @@ export const mainServicesData = {
           "We check your systems and policies against industry standards and run full security audits. Our compliance management service keeps you aligned with HIPAA, PCI-DSS, SOC 2, and other rules your business must follow.",
         icon: "ClipboardCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Security Audits & Compliance Management | Clickmasters",
         metaDescription:
           "Security audits and compliance management for HIPAA, PCI-DSS, SOC 2, and other standards — stay audit-ready.",
@@ -1692,7 +1693,7 @@ export const mainServicesData = {
           "We protect your business network from unauthorized access, malware, and outside attacks using firewalls, intrusion detection, and constant traffic monitoring as part of our network security services.",
         icon: "Network",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Network Security Services | Clickmasters",
         metaDescription:
           "Network security services with firewalls, intrusion detection, and constant monitoring — protect your business network.",
@@ -1711,7 +1712,7 @@ export const mainServicesData = {
           "As more businesses move to the cloud, our cloud security services protect your AWS, Azure, or Google Cloud environment from misconfigurations, data leaks, and unauthorized access.",
         icon: "Cloud",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cloud Security Services | Clickmasters",
         metaDescription:
           "Cloud security services for AWS, Azure, and Google Cloud — protect against misconfigurations, data leaks, and unauthorized access.",
@@ -1730,7 +1731,7 @@ export const mainServicesData = {
           "Your data is your business. Our data security services use encryption, access controls, and backup strategies to keep sensitive customer and company data safe from theft or loss.",
         icon: "Database",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Data Security Services | Clickmasters",
         metaDescription:
           "Data security services with encryption, access controls, and backup strategies — keep sensitive data safe.",
@@ -1749,7 +1750,7 @@ export const mainServicesData = {
           "We test and secure your web and mobile applications from the inside out. Our application security services catch coding flaws and vulnerabilities before an attacker finds them first.",
         icon: "Code2",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Application Security Services | Clickmasters",
         metaDescription:
           "Application security services that catch coding flaws and vulnerabilities — secure web and mobile apps.",
@@ -1768,7 +1769,7 @@ export const mainServicesData = {
           "Every laptop, phone, and device connected to your network is a possible entry point for attackers. Our endpoint security services protect every device your team uses to work.",
         icon: "Laptop",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Endpoint Security Services | Clickmasters",
         metaDescription:
           "Endpoint security services that protect laptops, phones, and devices — secure every entry point.",
@@ -1782,12 +1783,12 @@ export const mainServicesData = {
       },
       {
         title: "Managed Cybersecurity Services & SOC",
-        slug: "managed-cybersecurity-soc",
+        slug: "managed-cybersecurity",
         description:
           "Not every business needs a full internal security team. Our managed cybersecurity services give you 24/7 protection through a dedicated security operations center that watches your systems day and night.",
         icon: "Settings",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Managed Cybersecurity Services & SOC | Clickmasters",
         metaDescription:
           "Managed cybersecurity services with 24/7 SOC protection — we watch your systems so you don't have to.",
@@ -1801,12 +1802,12 @@ export const mainServicesData = {
       },
       {
         title: "Cyber Threat Detection & Management Services",
-        slug: "cyber-threat-detection",
+        slug: "threat-detection",
         description:
           "We use real-time monitoring tools to catch threats early. Our cyber threat detection and management services help you respond to attacks in minutes, not days.",
         icon: "Radar",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle:
           "Cyber Threat Detection & Management Services | Clickmasters",
         metaDescription:
@@ -1826,7 +1827,7 @@ export const mainServicesData = {
           "Need a strategy before you need a tool? Our cybersecurity consulting services help you build a full security roadmap based on your business size, industry, and budget.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Cybersecurity Consulting Services | Clickmasters",
         metaDescription:
           "Cybersecurity consulting services that build a full security roadmap tailored to your business size, industry, and budget.",
@@ -1840,12 +1841,12 @@ export const mainServicesData = {
       },
       {
         title: "Custom Cybersecurity Software Development & Automation",
-        slug: "custom-cybersecurity-software",
+        slug: "cybersecurity-software-development",
         description:
           "Sometimes off-the-shelf tools aren't enough. Our cybersecurity software development team builds custom cybersecurity solutions, along with automation and integration services, so your security tools work together instead of creating more manual work.",
         icon: "Wrench",
         heroImage:
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
         metaTitle: "Custom Cybersecurity Software Development | Clickmasters",
         metaDescription:
           "Custom cybersecurity software development and automation — build solutions that work together instead of creating manual work.",
@@ -1870,7 +1871,7 @@ export const mainServicesData = {
       "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers.",
     heroBadge: "500+ Projects Tested",
     heroImage:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
     subServices: [
       {
         title: "Manual QA Testing Services",
@@ -1878,7 +1879,7 @@ export const mainServicesData = {
         description: "Human testers catch what scripts can't.",
         icon: "Search",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Automated QA Testing & Test Automation Services",
@@ -1886,7 +1887,7 @@ export const mainServicesData = {
         description: "Reusable test scripts for frequent releases.",
         icon: "Bot",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Web Application Testing Services",
@@ -1894,7 +1895,7 @@ export const mainServicesData = {
         description: "Cross-browser, cross-device testing.",
         icon: "Globe",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Mobile App Testing Services",
@@ -1902,7 +1903,7 @@ export const mainServicesData = {
         description: "Real device testing for iOS and Android.",
         icon: "Smartphone",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "API Testing Services",
@@ -1910,7 +1911,7 @@ export const mainServicesData = {
         description: "Validate every endpoint and response.",
         icon: "Workflow",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Performance Testing Services",
@@ -1918,7 +1919,7 @@ export const mainServicesData = {
         description: "Find bottlenecks before users do.",
         icon: "Zap",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Security Testing Services",
@@ -1926,7 +1927,7 @@ export const mainServicesData = {
         description: "Find vulnerabilities before attackers do.",
         icon: "Shield",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Functional Testing Services",
@@ -1934,7 +1935,7 @@ export const mainServicesData = {
         description: "Verify every feature works as intended.",
         icon: "CheckCircle",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Regression Testing Services",
@@ -1942,7 +1943,7 @@ export const mainServicesData = {
         description: "Protect existing features from breaking.",
         icon: "RefreshCw",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "End-to-End Testing Services",
@@ -1950,7 +1951,7 @@ export const mainServicesData = {
         description: "Test complete workflows, not just features.",
         icon: "PlayCircle",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "QA Consulting Services",
@@ -1958,7 +1959,7 @@ export const mainServicesData = {
         description: "A practical roadmap to better QA.",
         icon: "Compass",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Enterprise QA Testing Services",
@@ -1966,7 +1967,7 @@ export const mainServicesData = {
         description: "Dedicated QA teams for complex systems.",
         icon: "Building2",
         heroImage:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -1977,50 +1978,56 @@ export const mainServicesData = {
     slug: "blockchain-and-web3",
     icon: "Link2",
     tagline: "Decentralized Future Solutions",
-    description: "DApps and blockchain infrastructure.",
+    description:
+      "Blockchain product work covering the network, contracts, application interface, tests, and a handover of the repositories and deployment notes.",
     heroBadge: "50+ Web3 Projects",
     heroImage:
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
     subServices: [
       {
         title: "Blockchain Development",
         slug: "blockchain-development",
-        description: "Blockchain platforms.",
+        description:
+          "Network choice, node setup, the data the chain stores, and the application that reads and writes it.",
         icon: "Link2",
         heroImage:
-          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Smart Contract Development",
         slug: "smart-contract-development",
-        description: "Secure code.",
+        description:
+          "Contract logic, the tests around each function that moves value, and the deployment steps for the network you choose.",
         icon: "FileText",
         heroImage:
-          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "DApp Development",
         slug: "dapp-development",
-        description: "Decentralized apps.",
+        description:
+          "The user interface, wallet connection, and the contract calls behind the main workflow of a decentralized application.",
         icon: "Globe2",
         heroImage:
-          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Crypto Wallets",
         slug: "crypto-wallet-development",
-        description: "Asset handling.",
+        description:
+          "Key handling, transaction signing, and the screens a person uses to send, receive, and review assets.",
         icon: "CreditCard",
         heroImage:
-          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "NFT Marketplaces",
         slug: "nft-marketplace-development",
-        description: "NFT tooling.",
+        description:
+          "Listings, ownership checks, and the purchase flow, with the contract and the interface scoped as one engagement.",
         icon: "Package",
         heroImage:
-          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -2031,42 +2038,47 @@ export const mainServicesData = {
     slug: "support-and-outsourcing",
     icon: "Headphones",
     tagline: "Dedicated Support Solutions",
-    description: "Expert technical support on-demand.",
+    description:
+      "Maintenance, dedicated teams, staff augmentation, and technical support, each scoped with a named contact and access that stays with you.",
     heroBadge: "200+ Support Contracts",
     heroImage:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
     subServices: [
       {
         title: "Maintenance & Support",
         slug: "maintenance-support",
-        description: "Ongoing product support.",
+        description:
+          "Defect fixes, dependency updates, and a written list of what sits inside the monthly maintenance window.",
         icon: "Settings",
         heroImage:
-          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Dedicated Dev Teams",
         slug: "dedicated-development-teams",
-        description: "Engineering continuity.",
+        description:
+          "A squad that stays on your backlog, with a named lead, your issue tracker, and a sprint cadence you can see.",
         icon: "Users2",
         heroImage:
-          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Staff Augmentation",
         slug: "staff-augmentation",
-        description: "Scale your team.",
+        description:
+          "Engineers added to your existing process, working in your repository and standups under a written scope.",
         icon: "UserCheck",
         heroImage:
-          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
       },
       {
         title: "Technical Support",
         slug: "technical-support",
-        description: "Reliable support.",
+        description:
+          "Incident response, environment access, and a handover note for each issue that is closed.",
         icon: "Headset",
         heroImage:
-          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
       },
     ],
   },
@@ -2140,7 +2152,9 @@ export const serviceMenuSections = Object.values(mainServicesData).map(
     icon: main.icon,
     slug: main.slug,
     items: main.subServices
-      ? main.subServices.map((sub) => ({
+      ? main.subServices
+          .filter((sub) => !isRetiredSub(main.slug, sub.slug))
+          .map((sub) => ({
           title: sub.title,
           slug: sub.slug,
           icon: sub.icon,

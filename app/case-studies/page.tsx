@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { caseStudies } from "@/content/case-studies";
+import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -250,6 +251,12 @@ export default function CaseStudiesPage() {
 
   return (
     <main className="relative text-[oklch(0.18_0.02_250)] overflow-hidden min-h-screen">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Case studies", path: "/case-studies" },
+        ])}
+      />
       <AmbientBackground />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
@@ -277,9 +284,54 @@ export default function CaseStudiesPage() {
             className="mt-7 text-base md:text-lg opacity-70 max-w-xl leading-relaxed"
           >
             {published.length} {published.length === 1 ? "study" : "studies"} —
-            QA engagements, AI experiments, and operational deep-dives. Each one
-            is a working document, not a highlight reel.
+            written only when the client has agreed. Each one records scope,
+            what shipped, and what was left out.
           </p>
+          <div className="mt-8 space-y-5 text-base leading-8 opacity-75">
+            <p>
+              A case study here is a delivery note, not a logo wall. It names
+              the product problem, the checks that ran before launch, and the
+              handover the client kept. If a result is not written down with
+              the client&apos;s permission, it does not appear on this page.
+            </p>
+            <p>
+              The current study covers pre-launch QA for a SaaS booking
+              platform: what was tested, which defects were fixed before
+              release, and how the team decided the product was ready. Use it
+              when you want to see how a QA engagement is scoped, rather than
+              a list of unnamed testimonials.
+            </p>
+            <p>
+              Related service lines sit next to that work.{" "}
+              <Link href="/software-development" className="underline">
+                Software development
+              </Link>
+              ,{" "}
+              <Link href="/web-development" className="underline">
+                web development
+              </Link>
+              ,{" "}
+              <Link href="/mobile-app-development" className="underline">
+                mobile app development
+              </Link>
+              , and{" "}
+              <Link href="/qa-testing-services" className="underline">
+                QA testing
+              </Link>{" "}
+              each have their own pages with scope, process, and pricing
+              guidance. This index stays focused: one published study, linked
+              in full, instead of a grid of unnamed reviews.
+            </p>
+            <p>
+              If you are comparing vendors, ask for the same three things this
+              study shows: a written scope, the checks that ran before launch,
+              and who owns the repository afterward. Those questions apply
+              whether the work is a booking platform, an internal tool, or a
+              first release. Start from the study, then talk through a quote
+              on the contact page if the shape of the engagement matches what
+              you need.
+            </p>
+          </div>
         </div>
 
         {/* ── Grid ── */}

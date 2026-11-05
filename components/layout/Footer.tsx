@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Linkedin, Instagram, Twitter, Dribbble, Facebook } from "lucide-react";
-import mascot from "@/public/assets/footer-mascot.png";
+import mascot from "@/public/assets/footer-mascot.webp";
 import logo from "@/public/cm-logos/logo.webp";
 
 /* ───────────────── Data ───────────────── */
@@ -68,20 +68,13 @@ const TOP_SOCIALS = [
   { label: "Dribbble", href: "#", Icon: Dribbble },
 ];
 
-// UNCHANGED
-const OFFICES = [
-  {
-    city: "San Francisco",
-    lines: ["300 Broadway,", "San Francisco, CA 94133"],
-  },
-  { city: "New York", lines: ["148 Lafayette St,", "New York, NY 10013"] },
-  { city: "Austin", lines: ["600 Congress Ave,", "Austin, TX 78701"] },
-  { city: "Denver", lines: ["1700 Lincoln St 17th fl,", "Denver, CO 80203"] },
-  {
-    city: "Lisbon",
-    lines: ["Av. Alm. Reis 139, 1150-015", "Lisbon, Portugal"],
-  },
-  { city: "Belgrade", lines: ["Nušićeva 15, 11000", "Belgrade, Serbia"] },
+const SERVICE_AREAS = [
+  "Los Angeles",
+  "Houston",
+  "New York",
+  "San Francisco",
+  "Chicago",
+  "Dallas",
 ];
 
 // UNCHANGED (bottom bar)
@@ -208,27 +201,19 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* ══ UNCHANGED: Offices ══ */}
         <div className="mt-16 md:mt-20 lg:mt-24">
-          <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-6 md:mb-8 font-medium">
-            Offices
+          <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 font-medium">
+            Service area
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 md:gap-6">
-            {OFFICES.map((o) => (
-              <div key={o.city}>
-                <p className="text-sm font-semibold mb-2 tracking-tight">
-                  {o.city}
-                </p>
-                <address className="not-italic text-xs sm:text-sm leading-relaxed opacity-60">
-                  {o.lines.map((l) => (
-                    <span key={l} className="block">
-                      {l}
-                    </span>
-                  ))}
-                </address>
-              </div>
-            ))}
-          </div>
+          <p className="max-w-3xl text-sm leading-7 opacity-70">
+            Clickmasters is remote-first and does not publish a street
+            address. We work with clients in{" "}
+            {SERVICE_AREAS.join(", ")} by video and phone.{" "}
+            <Link href="/locations" className="font-semibold underline">
+              See service areas
+            </Link>
+            .
+          </p>
         </div>
       </div>
 

@@ -6,7 +6,6 @@ import DominateSection from "@/app/(landing)/DominateSection";
 import ComparisonSection from "@/app/(landing)/ComparisonSection";
 import AwardsSection from "@/app/(landing)/AwardsSection";
 import AudienceCarousel from "@/app/(landing)/AudienceCarousel";
-import LogoMarquee from "@/app/(landing)/LogoMarquee";
 import Testimonials3DRoom from "@/app/(landing)/Testimonials3DRoom";
 import StudioPath from "@/app/(landing)/StudioPath";
 import SpaceJourney from "@/app/(landing)/SpaceJourney";
@@ -197,7 +196,6 @@ export default function HomePage() {
       <TrustedPartner />
       <DominateSection />
       <StudioPath />
-      <LogoMarquee />
       <ComparisonSection />
       <IndustrySection />
       <AwardsSection />

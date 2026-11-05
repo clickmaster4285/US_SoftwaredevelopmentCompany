@@ -1,4 +1,5 @@
 import { mainServicesData } from "../../data/main-services.js";
+import { isRetiredSub } from "../../lib/site-routes.mjs";
 
 const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 
@@ -10,18 +11,19 @@ function collectServiceRoutes() {
   const routes = new Set<string>();
   const lastMod = new Date().toISOString().split("T")[0];
 
-  Object.entries(mainServicesData).forEach(([mainServiceSlug, service]) => {
-    if (!mainServiceSlug) return;
+  Object.values(mainServicesData).forEach((service) => {
+    const hub = service?.slug;
+    if (!hub) return;
 
-    routes.add(`${siteUrl}/${mainServiceSlug}`);
+    routes.add(`${siteUrl}/${hub}`);
 
     const subServices = Array.isArray(service?.subServices)
       ? service.subServices
       : [];
 
     subServices.forEach((subService) => {
-      if (!subService?.slug) return;
-      routes.add(`${siteUrl}/${mainServiceSlug}/${subService.slug}`);
+      if (!subService?.slug || isRetiredSub(hub, subService.slug)) return;
+      routes.add(`${siteUrl}/${hub}/${subService.slug}`);
     });
   });
 

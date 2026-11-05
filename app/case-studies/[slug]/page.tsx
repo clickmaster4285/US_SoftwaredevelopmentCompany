@@ -259,7 +259,7 @@ function BlockRenderer({ block }: { block: Block }) {
         <figure className="rounded-2xl overflow-hidden border border-[oklch(0.18_0.02_250)]/12">
           <img
             src={block.src}
-            alt={block.alt}
+            alt={block.alt || ""}
             className="w-full h-auto object-cover"
             loading="lazy"
           />

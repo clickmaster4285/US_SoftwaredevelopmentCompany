@@ -126,7 +126,7 @@ export default function AwardsSection() {
     <section
       ref={sectionRef}
       className="relative w-full bg-[#10122b] text-white"
-      aria-label="Awards"
+      aria-label="Selected work"
     >
       <div
         ref={pinRef}
@@ -173,10 +173,10 @@ export default function AwardsSection() {
         {/* Header copy */}
         <div className="relative z-10 mx-auto max-w-7xl px-6 pt-10 md:pt-16">
           <p className="text-xs mt-10 uppercase tracking-[0.3em] text-white/50">
-            Recognition
+            Selected work
           </p>
           <h2 className="mt-3 max-w-2xl text-2xl font-medium leading-tight md:text-5xl">
-            Award-winning work, recognized worldwide.
+            Product work from recent client builds.
           </h2>
         </div>
 
@@ -213,7 +213,7 @@ export default function AwardsSection() {
                 >
                   <img
                     src={typeof c.src == "string" ? c.src : c.src.src}
-                    alt="Award"
+                    alt=""
                     loading="lazy"
                     width={512}
                     height={704}

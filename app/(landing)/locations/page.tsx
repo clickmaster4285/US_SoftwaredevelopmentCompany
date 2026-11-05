@@ -7,18 +7,24 @@ import {
   getLocationServiceData,
   getAllLocationServiceSlugs,
 } from "@/data/location-service-data";
+import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
+
+const title = fitTitle("Software development locations");
+const description = fitDescription(
+  "Clickmasters is remote-first and serves software clients in Los Angeles, Houston, New York, San Francisco, Chicago, and Dallas by video and phone.",
+  "Software development locations",
+);
 
 export const metadata = {
-  title: "Software Development Company Locations | Clickmasters",
-  description:
-    "Find software development services in your area. Clickmasters serves businesses across Los Angeles and beyond with custom software, web, mobile, and AI solutions.",
+  title,
+  description,
   alternates: {
     canonical: "/locations",
   },
   openGraph: {
-    title: "Software Development Company Locations | Clickmasters",
-    description:
-      "Find software development services in your area. Clickmasters serves businesses across Los Angeles and beyond with custom software, web, mobile, and AI solutions.",
+    title,
+    description,
     url: "/locations",
   },
 };
@@ -35,6 +41,12 @@ export default function LocationsPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Locations", path: "/locations" },
+        ])}
+      />
       <Navbar />
 
       {/* Hero */}
@@ -62,14 +74,14 @@ export default function LocationsPage() {
                 Software Development Company Locations
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
-                Find a software development partner near you. Clickmasters
-                serves businesses across the United States with custom software,
-                web, mobile, and AI solutions.
+                Clickmasters is remote-first. These pages describe the metro
+                areas we serve by video and phone. We do not run a local office
+                in these cities.
               </p>
             </div>
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border shadow-xl">
               <Image
-                src="/locations/hero-locations.jpg"
+                src="/locations/hero-locations-sm.jpg"
                 alt="Clickmasters Software Development Company Locations"
                 fill
                 priority

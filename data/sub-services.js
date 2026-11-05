@@ -665,7 +665,7 @@ const baseServices = serviceMenuSections.flatMap((section) =>
       title: item.title,
       serviceName: item.title,
       heroImage:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1332&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=40&w=640&auto=format&fit=crop",
       metaDescription: `${item.title} services by ClickMasters. Expert ${item.title.toLowerCase()} for scalable, secure, and business-focused digital products.`,
       lead: `Our ${item.title.toLowerCase()} services help you plan, build, and scale with clear timelines, quality engineering, and long-term support.`,
       highlights: [
@@ -695,7 +695,7 @@ const customSoftwareDevelopmentOverride = {
     "Custom Software Development Company That Delivers Software Built to Scale Your Business",
   serviceName: "Custom Software Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Custom Software Development Company | USA, Europe, Canada | ClickMasters",
   metaDescription:
@@ -1032,7 +1032,7 @@ const enterpriseSoftwareDevelopmentOverride = {
     "Enterprise Software Development Company for B2B Organizations in USA, Europe and Canada",
   serviceName: "Enterprise Software Development",
   heroImage:
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Enterprise Software Development Company | Custom ERP & B2B Systems | ClickMasters",
   metaDescription:
@@ -1418,7 +1418,7 @@ const aiAgentsDevelopmentOverride = {
   title: "AI Agents Development Company",
   serviceName: "AI Agents Development",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "AI Agents Development Company | Custom Autonomous AI Agents for B2B | ClickMasters",
   metaDescription:
@@ -1879,7 +1879,7 @@ const aiAutomationSystemsOverride = {
   title: "AI Automation Systems",
   serviceName: "AI Automation Systems",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "AI Automation Systems | Intelligent Workflow Automation | ClickMasters",
   metaDescription:
@@ -2265,7 +2265,7 @@ const aiChatbotDevelopmentOverride = {
   title: "AI Chatbot Development Company",
   serviceName: "AI Chatbot Development",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "AI Chatbot Development Company | Custom LLM Chatbots for B2B | ClickMasters",
   metaDescription:
@@ -2720,7 +2720,7 @@ const aiModelDevelopmentOverride = {
   title: "AI Model Development",
   serviceName: "AI Model Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "AI Model Development | Fine-Tuning, Custom Models & MLOps | ClickMasters",
   metaDescription:
@@ -3068,7 +3068,7 @@ const dataEngineeringOverride = {
   title: "Data Engineering Company Building Robust Data Foundations",
   serviceName: "Data Engineering",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Data Engineering Services | ETL, Data Lakes & Warehousing | ClickMasters",
   metaDescription:
@@ -3306,7 +3306,7 @@ const generativeAiSolutionsOverride = {
   title: "Generative AI Solutions Company",
   serviceName: "Generative AI Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Generative AI Solutions Company | Custom AI Development for B2B | ClickMasters",
   metaDescription:
@@ -3790,7 +3790,7 @@ const mobileAppDevelopmentOverride = {
     "Mobile App Development Company Building Production Ready iOS & Android Applications",
   serviceName: "Mobile App Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Mobile App Development Company | iOS, Android & Cross-Platform | ClickMasters",
   metaDescription:
@@ -4163,7 +4163,7 @@ const saasProductDevelopmentOverride = {
     "SaaS Product Development Company for Founders and B2B Teams in USA, Europe and Canada",
   serviceName: "SaaS Product Development",
   heroImage:
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "SaaS Product Development Company | Build & Launch Your SaaS Platform | ClickMasters",
   metaDescription:
@@ -4591,7 +4591,7 @@ const websiteDevelopmentOverride = {
   title: "Website Development Company Building B2B Growth Assets",
   serviceName: "Website Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Website Development Company | B2B Websites & Lead Gen | ClickMasters",
   metaDescription:
@@ -4902,7 +4902,7 @@ const webApplicationDevelopmentOverride = {
     "Web Application Development Company Building High-Performance B2B Solutions",
   serviceName: "Web Application Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Web Application Development Company | Custom Web Apps | ClickMasters",
   metaDescription:
@@ -5293,7 +5293,7 @@ const mvpDevelopmentOverride = {
     "MVP Development Company That Builds Production Ready Products for Startups in USA, Europe and Canada",
   serviceName: "MVP Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "MVP Development Company | Build Production-Ready MVPs | ClickMasters",
   metaDescription:
@@ -5665,7 +5665,7 @@ const desktopApplicationDevelopmentOverride = {
     "Desktop Application Development Company for B2B Enterprises in USA, Europe and Canada",
   serviceName: "Desktop Application Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Desktop Application Development Company | Electron, Tauri & Native | ClickMasters",
   metaDescription:
@@ -6032,7 +6032,7 @@ const apiDevelopmentIntegrationOverride = {
   title: "API Development & Integration Services Connecting Enterprise Systems",
   serviceName: "API Development & Integration",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "API Development & Integration Services | REST, GraphQL & Webhooks",
   metaDescription:
@@ -6324,7 +6324,7 @@ const backendDevelopmentOverride = {
     "Backend Development Company Building High-Performance Server-Side Systems",
   serviceName: "Backend Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Backend Development Company | Node.js, Python & Go APIs",
   metaDescription:
     "ClickMasters builds production-grade backend systems. REST & GraphQL APIs, real-time systems, and background job processing for B2B companies.",
@@ -6586,7 +6586,7 @@ const frontendDevelopmentOverride = {
     "Frontend Development Company Building High-Performance React & Next.js Applications",
   serviceName: "Frontend Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Frontend Development Company | React & Next.js Experts",
   metaDescription:
     "ClickMasters builds production-grade React and Next.js applications for B2B companies. Lighthouse 90+, WCAG 2.1 AA, and TypeScript strict mode as standard.",
@@ -6857,7 +6857,7 @@ const fullStackDevelopmentOverride = {
     "Full Stack Development Company Building Complete End-to-End Applications",
   serviceName: "Full Stack Development",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Full Stack Development Company | Next.js, Node.js & Python Experts",
   metaDescription:
@@ -7109,7 +7109,7 @@ const microservicesArchitectureOverride = {
     "Microservices Architecture Design & Development for Scalable B2B Systems",
   serviceName: "Microservices Architecture",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Microservices Architecture Design | Monolith to Microservices Migration",
   metaDescription:
@@ -7390,7 +7390,7 @@ const progressiveWebDevelopmentOverride = {
     "Progressive Web App (PWA) Development Company Building Installable Web Apps",
   serviceName: "PWA Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Progressive Web App (PWA) Development Company | ClickMasters",
   metaDescription:
     "ClickMasters builds offline-capable, installable Progressive Web Apps (PWA) for B2B companies. 30-50% cost of native apps. Lighthouse 100 PWA score.",
@@ -7705,7 +7705,7 @@ const headlessCmsDevelopmentOverride = {
     "Headless CMS Development Company Building Omnichannel Content Systems",
   serviceName: "Headless CMS Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Headless CMS Development Company | Contentful, Sanity & Strapi",
   metaDescription:
     "ClickMasters builds omnichannel content systems using Contentful, Sanity, Strapi & Prismic. decoupled architectures with Next.js frontends.",
@@ -7987,7 +7987,7 @@ const headlessEcommerceOverride = {
     "Headless E-commerce Development Company Building Composable Storefronts",
   serviceName: "Headless E-commerce",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Headless E-commerce Development | Next.js, Medusa & Shopify API",
   metaDescription:
     "ClickMasters builds high-performance headless e-commerce storefronts. Decoupled frontends for maximum speed, scale, and design freedom.",
@@ -8317,7 +8317,7 @@ const shopifyDevelopmentOverride = {
     "Shopify & Shopify Plus Development Company Building High-Growth Stores",
   serviceName: "Shopify Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Shopify & Shopify Plus Development Company | ClickMasters",
   metaDescription:
     "ClickMasters builds custom Shopify and Shopify Plus stores. Theme development, app integration, and B2B solutions for scaling brands.",
@@ -8633,7 +8633,7 @@ const androidAppDevelopmentOverride = {
   title: "Android App Development Company | Native Kotlin & Jetpack Compose",
   serviceName: "Android App Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Android App Development Company | Native Kotlin & Jetpack Compose | ClickMasters",
   metaDescription:
@@ -8990,7 +8990,7 @@ const crossPlatformAppDevelopmentOverride = {
   title: "Cross-Platform App Development | React Native & Flutter",
   serviceName: "Cross-Platform App Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Cross-Platform App Development | React Native & Flutter | ClickMasters",
   metaDescription:
@@ -9348,7 +9348,7 @@ const iosAppDevelopmentOverride = {
   title: "iOS App Development Company | Native Swift & SwiftUI",
   serviceName: "iOS App Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "iOS App Development Company | Native Swift & SwiftUI | ClickMasters",
   metaDescription:
@@ -9707,7 +9707,7 @@ const flutterAppDevelopmentOverride = {
   title: "Flutter App Development Company | iOS & Android From One Codebase",
   serviceName: "Flutter App Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Flutter App Development Company | iOS & Android From One Codebase | ClickMasters",
   metaDescription:
@@ -10064,7 +10064,7 @@ const reactNativeDevelopmentOverride = {
   title: "React Native Development Company | iOS & Android in TypeScript",
   serviceName: "React Native Development",
   heroImage:
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "React Native Development Company | iOS & Android in TypeScript | ClickMasters",
   metaDescription:
@@ -10426,7 +10426,7 @@ const woocommerceDevelopmentOverride = {
   title: "WooCommerce Development Company for WordPress-Native Commerce",
   serviceName: "WooCommerce Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "WooCommerce Development Company | Custom WordPress Commerce",
   metaDescription:
     "Custom WooCommerce development for WordPress-native teams. Scalable, secure, and integrated commerce platforms built to convert.",
@@ -10740,7 +10740,7 @@ const ecommerceDevelopmentOverride = {
     "E-commerce Development Company Building High-Converting Commerce Platforms",
   serviceName: "E-commerce Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "E-commerce Development Company | Shopify, WooCommerce & Headless",
   metaDescription:
     "ClickMasters builds high-converting e-commerce stores. Shopify, WooCommerce, Headless, and Custom B2B platforms for startups and enterprise.",
@@ -11064,7 +11064,7 @@ const uiUxDesignOverride = {
   title: "UI/UX Design Services for B2B Software",
   serviceName: "UI/UX Design",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "UI/UX Design Services | B2B Product & Web App Design | ClickMasters",
   metaDescription:
@@ -11445,7 +11445,7 @@ const jamstackDevelopmentOverride = {
     "JAMstack Development Company Building High-Performance Edge-First Sites",
   serviceName: "JAMstack Development",
   heroImage:
-    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?q=40&w=640&auto=format&fit=crop",
   metaTitle: "JAMstack Development Company | Next.js, Gatsby & Astro Experts",
   metaDescription:
     "ClickMasters builds high-performance JAMstack sites using Next.js, Gatsby & Astro. Sub-second loads, global edge distribution, and zero server maintenance.",
@@ -11736,7 +11736,7 @@ const productDesignOverride = {
   title: "Product Design Services",
   serviceName: "Product Design",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Product Design Services | UX-Led B2B Software Design | ClickMasters",
   metaDescription:
@@ -12060,7 +12060,7 @@ const webDesignOverride = {
   title: "Web Design Services",
   serviceName: "Web Design",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Web Design Services | Conversion-Focused B2B Web Design | ClickMasters",
   metaDescription:
@@ -12367,7 +12367,7 @@ const mobileAppDesignOverride = {
   title: "Mobile App Design Services",
   serviceName: "Mobile App Design",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Mobile App Design Services | iOS & Android UX Design | ClickMasters",
   metaDescription:
@@ -12690,7 +12690,7 @@ const uxResearchOverride = {
   title: "UX Research Services",
   serviceName: "UX Research",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "UX Research Services | User Research & Usability Testing | ClickMasters",
   metaDescription:
@@ -12993,7 +12993,7 @@ const wireframingPrototypingOverride = {
   title: "Wireframing & Prototyping Services",
   serviceName: "Wireframing & Prototyping",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Wireframing & Prototyping Services | Figma Prototypes | ClickMasters",
   metaDescription:
@@ -13283,7 +13283,7 @@ const designSystemsOverride = {
   title: "Design Systems Services",
   serviceName: "Design Systems",
   heroImage:
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Design Systems Services | Figma + Storybook Component Libraries | ClickMasters",
   metaDescription:
@@ -13596,7 +13596,7 @@ const aiIntegrationServicesOverride = {
   title: "AI Integration Services",
   serviceName: "AI Integration Services",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "AI Integration Services | Add AI to Your Existing Software | ClickMasters",
   metaDescription:
@@ -13952,7 +13952,7 @@ const llmApplicationsDevelopmentOverride = {
   title: "LLM Applications Development",
   serviceName: "LLM Applications Development",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "LLM Application Development | Production LLM Products | ClickMasters",
   metaDescription:
@@ -14314,7 +14314,7 @@ const machineLearningSolutionsOverride = {
   title: "Machine Learning Solutions Company",
   serviceName: "Machine Learning Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Machine Learning Solutions Company | Custom ML Models for B2B | ClickMasters",
   metaDescription:
@@ -14767,7 +14767,7 @@ const predictiveAnalyticsOverride = {
   title: "Predictive Analytics Services",
   serviceName: "Predictive Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Predictive Analytics Services | ML Forecasting & Prediction | ClickMasters",
   metaDescription:
@@ -15091,7 +15091,7 @@ const recommendationSystemsOverride = {
   title: "Recommendation Systems",
   serviceName: "Recommendation Systems",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Recommendation System Development | Collaborative & Content-Based | ClickMasters",
   metaDescription:
@@ -15437,7 +15437,7 @@ const modelTrainingOptimisationOverride = {
   title: "Model Training & Optimisation",
   serviceName: "Model Training & Optimisation",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Model Training & Optimisation Services | Hyperparameter Tuning | ClickMasters",
   metaDescription:
@@ -15755,7 +15755,7 @@ const deepLearningSolutionsOverride = {
   title: "Deep Learning Solutions",
   serviceName: "Deep Learning Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Deep Learning Solutions | Neural Networks & PyTorch | ClickMasters",
   metaDescription:
@@ -16089,7 +16089,7 @@ const naturalLanguageProcessingOverride = {
   title: "Natural Language Processing Services",
   serviceName: "Natural Language Processing",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Natural Language Processing Services | NLP Development | ClickMasters",
   metaDescription:
@@ -16392,7 +16392,7 @@ const speechRecognitionOverride = {
   title: "Speech Recognition Services",
   serviceName: "Speech Recognition",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Speech Recognition Services | Transcription & Voice AI | ClickMasters",
   metaDescription:
@@ -16702,7 +16702,7 @@ const textAnalyticsOverride = {
   title: "Text Analytics Services",
   serviceName: "Text Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Text Analytics Services | Customer Feedback & Contract Analysis | ClickMasters",
   metaDescription:
@@ -17014,7 +17014,7 @@ const computerVisionOverride = {
   title: "Computer Vision Services",
   serviceName: "Computer Vision",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Computer Vision Services | Image Recognition & Object Detection | ClickMasters",
   metaDescription:
@@ -17327,7 +17327,7 @@ const imageProcessingOverride = {
   title: "Image Processing Services",
   serviceName: "Image Processing",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Image Processing Services | Automated Image Enhancement & Analysis | ClickMasters",
   metaDescription:
@@ -17643,7 +17643,7 @@ const videoAnalyticsOverride = {
   title: "Video Analytics Services",
   serviceName: "Video Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Video Analytics Services | AI Video Analysis & Object Tracking | ClickMasters",
   metaDescription:
@@ -17961,7 +17961,7 @@ const dataScienceAnalyticsOverride = {
   title: "Data Science & Analytics Services",
   serviceName: "Data Science & Analytics",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Data Science & Analytics Services | BI, Data Engineering & Insights | ClickMasters",
   metaDescription:
@@ -18406,7 +18406,7 @@ const businessIntelligenceOverride = {
   title: "Business Intelligence Services",
   serviceName: "Business Intelligence",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Business Intelligence Services | BI Dashboards & Analytics | ClickMasters",
   metaDescription:
@@ -18718,7 +18718,7 @@ const dataWarehousingOverride = {
   title: "Data Warehousing Services",
   serviceName: "Data Warehousing",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Data Warehousing Services | Snowflake, BigQuery & Redshift | ClickMasters",
   metaDescription:
@@ -19031,7 +19031,7 @@ const dataVisualizationOverride = {
   title: "Data Visualization Services",
   serviceName: "Data Visualization",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Data Visualization Services | Dashboards & Interactive Charts | ClickMasters",
   metaDescription:
@@ -19342,7 +19342,7 @@ const bigDataSolutionsOverride = {
   title: "Big Data Solutions",
   serviceName: "Big Data Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Big Data Solutions | Spark, Kafka & Data Lakehouse | ClickMasters",
   metaDescription:
@@ -19709,7 +19709,7 @@ const webScrapingDataExtractionOverride = {
   title: "Web Scraping & Data Extraction Services",
   serviceName: "Web Scraping & Data Extraction",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Web Scraping & Data Extraction Services | Python Crawlers | ClickMasters",
   metaDescription:
@@ -20032,7 +20032,7 @@ const businessProcessAutomationOverride = {
   title: "Business Process Automation Services",
   serviceName: "Business Process Automation",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Business Process Automation Services | Custom BPA for B2B | ClickMasters",
   metaDescription:
@@ -20429,7 +20429,7 @@ const workflowAutomationOverride = {
   title: "Workflow Automation Services",
   serviceName: "Workflow Automation",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Workflow Automation Services | n8n, Make & Zapier | ClickMasters",
   metaDescription:
     "ClickMasters builds workflow automation systems n8n, Make.com, Zapier, and custom automation pipelines that connect your tools and eliminate manual handoffs for B2B companies worldwide.",
@@ -20751,7 +20751,7 @@ const systemIntegrationOverride = {
   title: "System Integration Services",
   serviceName: "System Integration",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "System Integration Services | ERP, CRM & SaaS Integration | ClickMasters",
   metaDescription:
@@ -21067,7 +21067,7 @@ const apiIntegrationOverride = {
   title: "API Integration Services",
   serviceName: "API Integration",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "API Integration Services | Third-Party API Development | ClickMasters",
   metaDescription:
@@ -21394,7 +21394,7 @@ const cloudSolutionsOverride = {
   title: "Cloud Solutions & Migration",
   serviceName: "Cloud Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Cloud Solutions & Migration Services | AWS, GCP, Azure | ClickMasters",
   metaDescription:
@@ -21726,7 +21726,7 @@ const cloudNativeDevelopmentOverride = {
   title: "Cloud-Native Development",
   serviceName: "Cloud-Native Development",
   heroImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Cloud-Native Development Services | Microservices & Kubernetes | ClickMasters",
   metaDescription:
@@ -22045,7 +22045,7 @@ const devopsServicesOverride = {
   title: "DevOps Services",
   serviceName: "DevOps Services",
   heroImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "DevOps Services | CI/CD, Infrastructure Automation & Monitoring | ClickMasters",
   metaDescription:
@@ -22352,7 +22352,7 @@ const devsecopsOverride = {
   title: "DevSecOps Services",
   serviceName: "DevSecOps",
   heroImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "DevSecOps Services | Security in CI/CD & Cloud Infrastructure | ClickMasters",
   metaDescription:
@@ -22714,7 +22714,7 @@ const serverlessArchitectureOverride = {
   title: "Serverless Architecture Services",
   serviceName: "Serverless Architecture",
   heroImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Serverless Architecture Services | AWS Lambda & Serverless Framework | ClickMasters",
   metaDescription:
@@ -23064,7 +23064,7 @@ const databaseDesignOverride = {
   title: "Database Design Services",
   serviceName: "Database Design",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Database Design Services | PostgreSQL & Schema Architecture | ClickMasters",
   metaDescription:
@@ -23395,7 +23395,7 @@ const databaseManagementOverride = {
   title: "Database Management Services",
   serviceName: "Database Management",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Database Management Services | Managed PostgreSQL & DBA | ClickMasters",
   metaDescription:
@@ -23726,7 +23726,7 @@ const dataMigrationOverride = {
   title: "Data Migration Services",
   serviceName: "Data Migration",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Data Migration Services | Database Migration & ETL | ClickMasters",
   metaDescription:
@@ -24040,7 +24040,7 @@ const sqlNosqlSolutionsOverride = {
   title: "SQL & NoSQL Database Solutions",
   serviceName: "SQL & NoSQL Solutions",
   heroImage:
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "SQL & NoSQL Database Solutions | PostgreSQL, MongoDB & Redis | ClickMasters",
   metaDescription:
@@ -24387,7 +24387,7 @@ const cybersecurityServicesOverride = {
   title: "Cybersecurity Services for B2B Software Companies",
   serviceName: "Cybersecurity Services",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Cybersecurity Services Company | Pen Testing, Audits & Compliance | ClickMasters",
   metaDescription:
@@ -24808,7 +24808,7 @@ const securityAuditsOverride = {
   title: "Security Audit Services",
   serviceName: "Security Audits",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Security Audit Services | Application & Cloud Security Review | ClickMasters",
   metaDescription:
@@ -25132,7 +25132,7 @@ const penetrationTestingOverride = {
   title: "Penetration Testing Services",
   serviceName: "Penetration Testing",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Penetration Testing Services | Web App & API Pen Testing | ClickMasters",
   metaDescription:
@@ -25438,7 +25438,7 @@ const vulnerabilityAssessmentOverride = {
   title: "Vulnerability Assessment Services",
   serviceName: "Vulnerability Assessment",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Vulnerability Assessment Services | CVE Scanning & Risk Prioritisation | ClickMasters",
   metaDescription:
@@ -25761,7 +25761,7 @@ const complianceRiskManagementOverride = {
   title: "Compliance & Risk Management Services",
   serviceName: "Compliance & Risk Management",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Compliance & Risk Management Services | SOC 2, GDPR & ISO 27001 | ClickMasters",
   metaDescription:
@@ -26087,7 +26087,7 @@ const applicationSecurityOverride = {
   title: "Application Security Services",
   serviceName: "Application Security",
   heroImage:
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Application Security Services | Secure Software Development | ClickMasters",
   metaDescription:
@@ -26412,6 +26412,15 @@ const applicationSecurityOverride = {
     },
   ],
 };
+const manualQaTestingOverride = {
+  slug: "manual-qa-testing",
+  categorySlug: "qa-testing-services",
+  sectionId: "manual-qa-testing",
+  category: "QA & Software Testing",
+  title: "Manual QA Testing Services",
+  serviceName: "Manual QA Testing",
+  heroImage:
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
   metaDescription:
     "ClickMasters delivers manual testing exploratory testing, UAT, regression testing, and usability testing for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers manual testing for B2B companies across the USA, Europe, Canada, and Australia. Exploratory testing that finds the bugs test cases never thought to look for. UAT that validates the product from the user's perspective before release. Regression testing that confirms existing functionality is unbroken after a change. Test case documentation that makes the next release faster. Cross-browser and cross-device testing. And the detailed bug reports with reproduction steps that engineering teams can act on immediately.",
@@ -26720,7 +26729,7 @@ const performanceTestingOverride = {
   title: "Performance Testing Services",
   serviceName: "Performance Testing",
   heroImage:
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Performance Testing Services | API & Web Performance Testing | ClickMasters",
   metaDescription:
@@ -27043,7 +27052,7 @@ const maintenanceSupportOverride = {
   title: "Software Maintenance & Support Services",
   serviceName: "Software Maintenance & Support",
   heroImage:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Software Maintenance & Support Services | Ongoing Development | ClickMasters",
   metaDescription:
@@ -27345,7 +27354,7 @@ const dedicatedDevelopmentTeamsOverride = {
   title: "Dedicated Development Teams",
   serviceName: "Dedicated Development Teams",
   heroImage:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Dedicated Development Team | Hire a Software Team | ClickMasters",
   metaDescription:
     "ClickMasters provides dedicated development teams full-stack, backend, frontend, and AI engineers that work exclusively on your product for B2B companies in the USA, Europe, Canada & Australia.",
@@ -27665,7 +27674,7 @@ const itOutsourcingOverride = {
   title: "IT Outsourcing Services",
   serviceName: "IT Outsourcing",
   heroImage:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "IT Outsourcing Services | Software Development Outsourcing | ClickMasters",
   metaDescription:
@@ -27954,7 +27963,7 @@ const staffAugmentationOverride = {
   title: "Staff Augmentation Services",
   serviceName: "Staff Augmentation",
   heroImage:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Staff Augmentation Services | Hire Remote Engineers | ClickMasters",
   metaDescription:
@@ -28265,7 +28274,7 @@ const technicalSupportOverride = {
   title: "Technical Support Services",
   serviceName: "Technical Support",
   heroImage:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Technical Support Services | L1, L2 & L3 Software Support | ClickMasters",
   metaDescription:
@@ -28578,7 +28587,7 @@ const augmentedRealityDevelopmentOverride = {
   title: "Augmented Reality Development",
   serviceName: "AR Development",
   heroImage:
-    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Augmented Reality Development | ARKit, ARCore & WebAR | ClickMasters",
   metaDescription:
@@ -28885,7 +28894,7 @@ const virtualRealityDevelopmentOverride = {
   title: "Virtual Reality Development Services",
   serviceName: "VR Development",
   heroImage:
-    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Virtual Reality Development Services | Meta Quest & SteamVR | ClickMasters",
   metaDescription:
@@ -29207,7 +29216,7 @@ const mixedRealitySolutionsOverride = {
   title: "Mixed Reality Solutions",
   serviceName: "Mixed Reality",
   heroImage:
-    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Mixed Reality Development | HoloLens 2 & Apple Vision Pro | ClickMasters",
   metaDescription:
@@ -29519,7 +29528,7 @@ const iotDevelopmentOverride = {
   title: "IoT Development Services",
   serviceName: "IoT Development",
   heroImage:
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "IoT Development Services | Connected Device Solutions | ClickMasters",
   metaDescription:
@@ -29847,7 +29856,7 @@ const smartSystemsDevelopmentOverride = {
   title: "Smart Systems Development",
   serviceName: "Smart Systems Development",
   heroImage:
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Smart Systems Development | BMS & Predictive Maintenance | ClickMasters",
   metaDescription:
@@ -30166,7 +30175,7 @@ const industrialIoTOverride = {
   title: "Industrial IoT (IIoT) Development",
   serviceName: "Industrial IoT",
   heroImage:
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Industrial IoT (IIoT) Development | OPC-UA & OEE | ClickMasters",
   metaDescription:
     "ClickMasters builds IIoT systems OPC-UA/Modbus PLC connectivity, OEE monitoring, SCADA integration, and edge computing for manufacturing B2B companies worldwide.",
@@ -30484,7 +30493,7 @@ const embeddedSystemsDevelopmentOverride = {
   title: "Embedded Systems Development",
   serviceName: "Embedded Systems Development",
   heroImage:
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=40&w=640&auto=format&fit=crop",
   metaTitle: "Embedded Systems Development | Firmware & RTOS | ClickMasters",
   metaDescription:
     "ClickMasters develops embedded firmware bare-metal C/C++, FreeRTOS, Zephyr, BSP porting, and low-power design for B2B hardware products in the USA, Europe, Canada & Australia.",
@@ -30807,7 +30816,7 @@ const blockchainDevelopmentOverride = {
   title: "Blockchain Development Company",
   serviceName: "Blockchain Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Blockchain Development Company | Smart Contracts, DApps & Web3 | ClickMasters",
   metaDescription:
@@ -31245,7 +31254,7 @@ const smartContractDevelopmentOverride = {
   title: "Smart Contract Development Services",
   serviceName: "Smart Contract Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Smart Contract Development Services | Solidity & Ethereum | ClickMasters",
   metaDescription:
@@ -31575,7 +31584,7 @@ const dappDevelopmentOverride = {
   title: "DApp Development Services",
   serviceName: "DApp Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "DApp Development Services | Decentralised Application | ClickMasters",
   metaDescription:
@@ -31904,7 +31913,7 @@ const web3DevelopmentOverride = {
   title: "Web3 Development Services",
   serviceName: "Web3 Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Web3 Development Services | Blockchain Integration & dApps | ClickMasters",
   metaDescription:
@@ -32230,7 +32239,7 @@ const cryptoWalletDevelopmentOverride = {
   title: "Crypto Wallet Development Services",
   serviceName: "Crypto Wallet Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Crypto Wallet Development Services | Web & Mobile Wallets | ClickMasters",
   metaDescription:
@@ -32560,7 +32569,7 @@ const nftMarketplaceDevelopmentOverride = {
   title: "NFT Marketplace Development Services",
   serviceName: "NFT Marketplace Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "NFT Marketplace Development Services | Custom NFT Platform | ClickMasters",
   metaDescription:
@@ -32880,7 +32889,7 @@ const tokenDevelopmentOverride = {
   title: "Token Development Services",
   serviceName: "Token Development",
   heroImage:
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=40&w=640&auto=format&fit=crop",
   metaTitle:
     "Token Development Services | ERC-20 & Tokenomics Design | ClickMasters",
   metaDescription:
@@ -33296,6 +33305,7 @@ const serviceOverrides = /* @__PURE__ */ new Map([
   [mixedRealitySolutionsOverride.slug, mixedRealitySolutionsOverride],
   [nftMarketplaceDevelopmentOverride.slug, nftMarketplaceDevelopmentOverride],
   [penetrationTestingOverride.slug, penetrationTestingOverride],
+  [manualQaTestingOverride.slug, manualQaTestingOverride],
   [performanceTestingOverride.slug, performanceTestingOverride],
   [securityAuditsOverride.slug, securityAuditsOverride],
   [smartContractDevelopmentOverride.slug, smartContractDevelopmentOverride],

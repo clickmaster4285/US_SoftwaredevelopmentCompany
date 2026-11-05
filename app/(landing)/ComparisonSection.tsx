@@ -9,14 +9,14 @@ const COMPARISON_ROWS: {
 }[] = [
   {
     label: "Proven Results",
-    us: "500+ successful projects for US clients",
+    us: "A written case study when the client agrees",
     inhouse: "Limited track record",
     freelancers: "Inconsistent outcomes",
     agencies: "Generic case studies",
   },
   {
     label: "Team Experience",
-    us: "5+ years real-world experience per developer",
+    us: "Senior engineers on the agreed scope",
     inhouse: "Mixed skill levels",
     freelancers: "Variable expertise",
     agencies: "Junior-heavy teams",
