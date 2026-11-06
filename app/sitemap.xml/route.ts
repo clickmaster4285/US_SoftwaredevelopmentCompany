@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 const lastModified = new Date().toISOString();
 

@@ -91,7 +91,10 @@ export function MainServiceBreadcrumb({ service }: { service: MainService }) {
   return (
     <div className="relative z-20 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-5 py-4 md:px-10">
-        <nav className="flex items-center gap-2 text-sm font-medium">
+        <nav
+          aria-label="Breadcrumb"
+          className="flex items-center gap-2 text-sm font-medium"
+        >
           <Link
             href="/"
             className="text-muted-foreground transition-colors hover:text-primary"

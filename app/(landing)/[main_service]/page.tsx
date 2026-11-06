@@ -18,6 +18,9 @@ type PageProps = {
   }>;
 };
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const slugs = new Set([
     ...Object.values(mainServiceData).map((service) => service.slug),

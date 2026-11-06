@@ -1,6 +1,8 @@
 import { mainServicesData } from "../../data/main-services.js";
 import { isRetiredSub } from "../../lib/site-routes.mjs";
 
+export const dynamic = "force-static";
+
 const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 
 function buildUrlElement(url: string, lastMod: string) {

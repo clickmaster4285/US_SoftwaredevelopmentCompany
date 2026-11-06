@@ -1,5 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { getAllLocationServiceSlugs } from "@/data/location-service-data";
+
+export const dynamic = "force-static";
 
 const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 
@@ -112,6 +115,11 @@ async function collectPageRoutes() {
   }
 
   await walk(appDir);
+
+  routes.add("/locations");
+  for (const slug of getAllLocationServiceSlugs()) {
+    routes.add(`/locations/${slug}`);
+  }
 
   return Array.from(routes).sort();
 }

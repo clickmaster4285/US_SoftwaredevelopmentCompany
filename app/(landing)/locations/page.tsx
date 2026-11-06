@@ -16,6 +16,8 @@ const description = fitDescription(
   "Software development locations",
 );
 
+export const dynamic = "force-static";
+
 export const metadata = {
   title,
   description,
@@ -53,7 +55,10 @@ export default function LocationsPage() {
       <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-px bg-border" />
         <div className="mx-auto max-w-7xl">
-          <nav className="mb-8 flex items-center gap-2 text-sm font-medium">
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-8 flex items-center gap-2 text-sm font-medium"
+          >
             <Link
               href="/"
               className="text-muted-foreground transition-colors hover:text-primary"
@@ -77,6 +82,22 @@ export default function LocationsPage() {
                 Clickmasters is remote-first. These pages describe the metro
                 areas we serve by video and phone. We do not run a local office
                 in these cities.
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground">
+                The work itself is the same catalog as{" "}
+                <Link
+                  href="/software-development"
+                  className="font-semibold text-primary"
+                >
+                  Software Development
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/support-and-outsourcing"
+                  className="font-semibold text-primary"
+                >
+                  Support & Outsourcing
+                </Link>.
               </p>
             </div>
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border shadow-xl">

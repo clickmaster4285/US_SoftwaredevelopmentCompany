@@ -4,6 +4,8 @@ import { pageUrl } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, JsonLd } from "@/components/seo/JsonLd";
 import { homeFaqs } from "@/data/home-faqs";
 
+export const dynamic = "force-static";
+
 const homeUrl = pageUrl("/");
 
 export const metadata: Metadata = {

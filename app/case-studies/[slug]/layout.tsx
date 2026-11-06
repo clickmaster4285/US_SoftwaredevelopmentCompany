@@ -3,6 +3,9 @@ import { caseStudies } from "@/content/case-studies";
 import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 type LayoutProps = {
   children: React.ReactNode;
   params: Promise<{ slug: string }>;

@@ -2,6 +2,8 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { fitDescription, fitTitle } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 const title = fitTitle("Case studies");
 const description = fitDescription(
   "Delivery write-ups from Clickmasters software projects, including scope, testing, and what shipped.",

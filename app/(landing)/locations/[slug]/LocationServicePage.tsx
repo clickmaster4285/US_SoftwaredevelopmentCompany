@@ -16,6 +16,10 @@ import {
 } from "lucide-react";
 
 import type { LocationServiceData } from "@/data/location-service-data";
+import {
+  linksForServiceLine,
+  otherLocationLinks,
+} from "@/lib/contextual-links";
 
 type Props = {
   data: LocationServiceData;
@@ -49,7 +53,10 @@ export default function LocationServicePage({ data }: Props) {
         <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
           <div className="absolute inset-x-0 top-0 h-px bg-border" />
           <div className="mx-auto max-w-7xl">
-            <nav className="mb-6 flex items-center gap-2 text-sm font-medium flex-wrap">
+            <nav
+              aria-label="Breadcrumb"
+              className="mb-6 flex items-center gap-2 text-sm font-medium flex-wrap"
+            >
               <Link
                 href="/"
                 className="text-muted-foreground transition-colors hover:text-primary"
@@ -228,19 +235,52 @@ export default function LocationServicePage({ data }: Props) {
               )}
               {(data.serviceLines?.length ?? 0) > 0 && (
                 <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {data.serviceLines!.map((item, index) => (
-                    <div
-                      key={index}
-                      className="rounded-lg border border-border bg-card p-6 text-card-foreground hover:shadow-lg transition-shadow"
-                    >
-                      <h3 className="text-2xl font-semibold tracking-tight">
-                        {item.title}
-                      </h3>
-                      <p className="mt-3 text-sm leading-6 text-muted-foreground whitespace-pre-line">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
+                  {data.serviceLines!.map((item) => {
+                    const links = linksForServiceLine(item.title);
+                    const card = (
+                      <>
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                          {item.title}
+                        </h3>
+                        <p className="mt-3 text-sm leading-6 text-muted-foreground whitespace-pre-line">
+                          {item.description}
+                        </p>
+                        {links.length > 1 ? (
+                          <p className="mt-4 text-sm leading-6">
+                            {links.map((link) => (
+                              <Link
+                                key={link.href}
+                                href={link.href}
+                                className="mr-4 mt-2 inline-block font-semibold text-primary"
+                              >
+                                {link.label}
+                              </Link>
+                            ))}
+                          </p>
+                        ) : null}
+                      </>
+                    );
+                    const className =
+                      "rounded-lg border border-border bg-card p-6 text-card-foreground hover:shadow-lg transition-shadow";
+
+                    if (links.length === 1) {
+                      return (
+                        <Link
+                          key={item.title}
+                          href={links[0].href}
+                          className={className}
+                        >
+                          {card}
+                        </Link>
+                      );
+                    }
+
+                    return (
+                      <div key={item.title} className={className}>
+                        {card}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
               {data.servicesClosing && (
@@ -248,6 +288,27 @@ export default function LocationServicePage({ data }: Props) {
                   {data.servicesClosing}
                 </p>
               )}
+              <p className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground">
+                Post-launch maintenance is scoped separately under{" "}
+                <Link
+                  href="/support-and-outsourcing/maintenance-support"
+                  className="font-semibold text-primary"
+                >
+                  Maintenance & Support
+                </Link>{", inside "}
+                <Link
+                  href="/support-and-outsourcing"
+                  className="font-semibold text-primary"
+                >
+                  Support & Outsourcing
+                </Link>{". The broader catalog starts at "}
+                <Link
+                  href="/software-development"
+                  className="font-semibold text-primary"
+                >
+                  Software Development
+                </Link>.
+              </p>
               {data.servicesCtaText && (
                 <div className="mt-10">
                   <Link
@@ -471,6 +532,25 @@ export default function LocationServicePage({ data }: Props) {
                   {data.locationsClosing}
                 </p>
               )}
+              <h3 className="mt-10 text-xl font-semibold text-foreground">
+                Other metros we serve
+              </h3>
+              <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
+                Clickmasters is remote-first and also works by video and phone
+                with clients in these metros.
+              </p>
+              <ul className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+                {otherLocationLinks(`/locations/${data.slug}`).map((page) => (
+                  <li key={page.href}>
+                    <Link
+                      href={page.href}
+                      className="block rounded-lg border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary"
+                    >
+                      {page.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
               {data.locationsCtaText && (
                 <div className="mt-6">
                   <Link

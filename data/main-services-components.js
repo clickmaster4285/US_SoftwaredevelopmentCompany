@@ -183,7 +183,10 @@ export function MainServiceHero({ service }) {
     <section className="relative overflow-hidden bg-background px-5 py-10 md:px-10 md:py-16">
       <div className="absolute inset-x-0 top-0 h-px bg-border" />
       <div className="mx-auto max-w-7xl">
-        <nav className="mb-8 flex items-center gap-2 text-sm font-medium">
+        <nav
+          aria-label="Breadcrumb"
+          className="mb-8 flex items-center gap-2 text-sm font-medium"
+        >
           <Link
             href="/"
             className="text-muted-foreground transition-colors hover:text-primary"

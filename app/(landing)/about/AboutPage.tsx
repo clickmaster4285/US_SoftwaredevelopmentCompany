@@ -22,7 +22,13 @@ import {
   PageFrame,
   SectionHeading,
 } from "../[main_service]/[sub_service]/landing-primitives";
-import { services } from "../[main_service]/[sub_service]/service-data";
+
+type CapabilityLink = {
+  slug: string;
+  title: string;
+  description: string;
+  icon?: string;
+};
 
 /**
  * About page advanced animation pass
@@ -138,7 +144,11 @@ function Reveal({
 
 /* ---------------------------------------------------------------------- */
 
-export default function AboutPage() {
+export default function AboutPage({
+  capabilities,
+}: {
+  capabilities: CapabilityLink[];
+}) {
   const [statsRef, statsInView] = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
@@ -568,9 +578,7 @@ export default function AboutPage() {
             />
           </Reveal>
           <div className="mt-14 divide-y divide-black/10 border-t border-b border-black/10">
-            {Object.values(services)
-              .slice(0, 6)
-              .map((service, i) => (
+            {capabilities.map((service, i) => (
                 <Reveal key={service.slug} delay={i * 0.06}>
                   <Link
                     href={`/${service.slug}`}

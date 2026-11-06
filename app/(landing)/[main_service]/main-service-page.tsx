@@ -17,6 +17,7 @@ import {
   WhyChooseUsSection,
 } from "@/data/main-services-components";
 import { mainServiceData } from "@/data/main-services-data";
+import ServiceAreaLinks from "@/components/seo/ServiceAreaLinks";
 
 // Type definition for service data
 type MainService = (typeof mainServiceData)[keyof typeof mainServiceData];
@@ -40,6 +41,7 @@ export default function MainServicePage({ service }: { service: MainService }) {
           <PricingSection plans={service.pricing || []} service={service} />
           <AgencySection service={service} />
           <FaqSection service={service} />
+          <ServiceAreaLinks path={`/${service.slug}`} />
           <FinalCTA service={service} />
         </main>
       </PageFrame>

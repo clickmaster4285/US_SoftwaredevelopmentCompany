@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { caseStudies } from "@/content/case-studies";
 
+export const dynamic = "force-static";
+
 const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
 
 export async function GET() {

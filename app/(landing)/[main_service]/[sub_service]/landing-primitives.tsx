@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BadgeCheck, Sparkles } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { iconMap, type IconName, type Stat } from "./service-data";
+import { iconMap } from "@/data/main-services";
 
 const defaultStats = [
   { value: "10+", label: "Years shipping digital products" },
@@ -121,7 +121,11 @@ export function Hero({
   );
 }
 
-export function StatsBand({ stats = defaultStats }: { stats?: Stat[] }) {
+export function StatsBand({
+  stats = defaultStats,
+}: {
+  stats?: Array<{ value: string; label: string }>;
+}) {
   const display = stats.length >= 3 ? stats : defaultStats;
 
   return (
@@ -142,7 +146,8 @@ export function StatsBand({ stats = defaultStats }: { stats?: Stat[] }) {
   );
 }
 
-export function IconFor({ name }: { name?: IconName }) {
-  const Icon = name ? iconMap[name] : Sparkles;
+export function IconFor({ name }: { name?: string }) {
+  const Icon =
+    (name && (iconMap as Record<string, typeof Sparkles>)[name]) || Sparkles;
   return <Icon className="h-5 w-5" />;
 }

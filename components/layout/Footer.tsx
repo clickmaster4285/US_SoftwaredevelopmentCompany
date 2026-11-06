@@ -45,7 +45,7 @@ const FOOTER_NAV = [
         label: "MVP Development",
         href: "/software-development/mvp-development",
       },
-      { label: "Cloud & DevOps", href: "/cloud-and-devops" },
+      { label: "Cloud & DevOps", href: "/cloud-devops-services" },
     ],
   },
   {

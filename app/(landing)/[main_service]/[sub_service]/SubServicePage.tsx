@@ -2,7 +2,12 @@ import { CheckCircle2, Clock3, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { isRetiredSub } from "@/lib/site-routes.mjs";
 import { catalogWordCount, lookupCatalog } from "@/lib/catalog-page";
+import {
+  extraLinksForPath,
+  locationLinksForPath,
+} from "@/lib/contextual-links";
 import { buildServiceArticle } from "@/lib/service-copy";
+import { InlineLinks } from "@/components/seo/InlineLinks";
 import { Hero, PageFrame, SectionHeading } from "./landing-primitives";
 import ProcessSection from "./process-section";
 import { CatalogArticle, FallbackArticle } from "./CatalogArticle";
@@ -34,19 +39,31 @@ export default function SubServicePage({
     highlights,
     pricing: subService.pricing || [],
   });
-  const siblings = (service.subServices || [])
-    .filter(
-      (item) =>
-        item.slug !== subService.slug &&
-        !isRetiredSub(service.slug, item.slug),
-    )
-    .slice(0, 2);
+  const path = `/${service.slug}/${subService.slug}`;
+  const siblingPool = (service.subServices || []).filter(
+    (item) =>
+      item.slug !== subService.slug && !isRetiredSub(service.slug, item.slug),
+  );
+  const siblings =
+    service.slug === "support-and-outsourcing"
+      ? siblingPool
+      : siblingPool.slice(0, 2);
+  const siblingHrefs = new Set(
+    siblings.map((item) => `/${service.slug}/${item.slug}`),
+  );
+  const areaLinks = locationLinksForPath(path);
+  const moreLinks = extraLinksForPath(path).filter(
+    (link) => link.href !== `/${service.slug}` && !siblingHrefs.has(link.href),
+  );
 
   return (
     <PageFrame>
       <div className="relative z-20 border-b border-border bg-background/80 backdrop-blur-md pt-20 md:pt-24">
         <div className="mx-auto max-w-7xl px-5 py-4 md:px-10">
-          <nav className="flex items-center gap-2 text-sm font-medium">
+          <nav
+            aria-label="Breadcrumb"
+            className="flex items-center gap-2 text-sm font-medium"
+          >
             <Link
               href="/"
               className="text-muted-foreground transition-colors hover:text-primary"
@@ -161,41 +178,50 @@ export default function SubServicePage({
               className="font-semibold text-[#e05b35]"
             >
               {service.title}
-            </Link>
-            .
-            {siblings[0] ? (
+            </Link>.
+            {siblings.length > 0 ? (
               <>
                 {" "}
                 Teams with an adjacent problem often compare it with{" "}
-                <Link
-                  href={`/${service.slug}/${siblings[0].slug}`}
+                <InlineLinks
                   className="font-semibold text-[#e05b35]"
-                >
-                  {siblings[0].title}
-                </Link>
+                  links={siblings.map((item) => ({
+                    href: `/${service.slug}/${item.slug}`,
+                    label: item.title,
+                  }))}
+                />.{" "}
               </>
-            ) : null}
-            {siblings[1] ? (
-              <>
-                {" "}
-                or{" "}
-                <Link
-                  href={`/${service.slug}/${siblings[1].slug}`}
-                  className="font-semibold text-[#e05b35]"
-                >
-                  {siblings[1].title}
-                </Link>
-              </>
-            ) : null}
-            . For a written delivery narrative, read the{" "}
+            ) : (
+              " "
+            )}
+            For a written delivery narrative, read the{" "}
             <Link href={CASE_STUDY} className="font-semibold text-[#e05b35]">
               SaaS booking platform QA case study
             </Link>{" "}
             and the rest of the{" "}
             <Link href="/case-studies" className="font-semibold text-[#e05b35]">
               case studies
-            </Link>
-            .
+            </Link>.
+            {moreLinks.length > 0 ? (
+              <>
+                {" "}
+                See also{" "}
+                <InlineLinks
+                  className="font-semibold text-[#e05b35]"
+                  links={moreLinks}
+                />.{" "}
+              </>
+            ) : null}
+            {areaLinks.length > 0 ? (
+              <>
+                Clickmasters is remote-first and works by video and phone with
+                clients in{" "}
+                <InlineLinks
+                  className="font-semibold text-[#e05b35]"
+                  links={areaLinks}
+                />.
+              </>
+            ) : null}
           </p>
         </div>
       </section>

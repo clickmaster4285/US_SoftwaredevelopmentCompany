@@ -2,6 +2,7 @@ import { PageFrame } from "./[sub_service]/landing-primitives";
 import { FallbackArticle } from "./[sub_service]/CatalogArticle";
 import type { MainService } from "./[sub_service]/service-data";
 import { buildServiceArticle } from "@/lib/service-copy";
+import ServiceAreaLinks from "@/components/seo/ServiceAreaLinks";
 import {
   AppsSection,
   ExploreSection,
@@ -53,6 +54,7 @@ export default function MainServicePage({ service }: { service: MainService }) {
         <IndustriesSection />
         <TestimonialsSection service={service} />
         <FaqSection service={service} />
+        <ServiceAreaLinks path={`/${service.slug}`} />
         <FinalCTA service={service} />
       </main>
     </PageFrame>

@@ -3,6 +3,8 @@ import ContactPage from "./ContactPage";
 import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 const CONTACT_URL =
   "https://clickmasterssoftwaredevelopmentcompany.com/contact";
 const CONTACT_TITLE = fitTitle("Contact");
