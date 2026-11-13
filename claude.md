@@ -1,5 +1,16 @@
 For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMARY references an older, more elaborate folder structure (admin/auth/api/models). The current repo is significantly slimmer than what that doc describes see "Current State" below for what is actually on disk.
 
+# Work Log: 2026-11-11 — ERP / headless CMS integration
+
+- Config from env only: `CMS_API_URL` (public API = `https://apierp.clickmasters.pk`, NOT `erp.clickmasters.pk`, which is the ERP's frontend), `CMS_SITE_DOMAIN`, `NEXT_PUBLIC_CMS_LIVE_POLL_SECONDS` (default 3), `CMS_ALLOW_CUSTOM_JS` (off). Empty `CMS_API_URL` = integration off.
+- `lib/cms/`: `config.ts` (fetch, 60s cache, 30s down-backoff), `site.ts` (A1 nav/colors), `cms.ts` (A2/A3 pages + A7 SEO), `erp-edits.ts` (B1/B2 + edited SEO), `erp-edits-shared.ts` (parse/validate edits), `erp-edits-dom.ts` (B4 apply/revert engine), `safe.ts` (URL/color sanitizers).
+- Created pages: `[main_service]` / `[sub_service]` now `dynamicParams = true` + `revalidate = 60` and fall back to `components/cms/CmsRoute` for slugs they don't own; depth ≥3 via `[main_service]/[sub_service]/[...rest]`. Rendered with site design by `components/cms/CmsPageFrame` + `CmsSectionRenderer` + `components/cms/sections/*`.
+- Edited pages: `components/cms/ErpPageEdits.tsx` mounted first in `<body>` (root layout); edited SEO via `withEditedPageSeo` in every code-owned route's metadata.
+- Live updates: browser polls `/api/erp-edits` and `/api/cms-page-status` on load, navigation, tab focus + every 3s; edits re-applied in place, created pages refreshed via `router.refresh()` (rendered signature in `data-cms-signature`).
+- Navbar/Footer take optional ERP props; with no props their markup is byte-identical to before.
+- CSP: `img-src`/`media-src` allow `https:`; `frame-src` allows YouTube-nocookie + Vimeo.
+- As of this date the domain `clickmasterssoftwaredevelopmentcompany.com` is NOT registered in the ERP ("Website not found") — add it there before anything appears.
+
 # Work Log: 2026-06-05 Around 6 PM
 
 ## User Request

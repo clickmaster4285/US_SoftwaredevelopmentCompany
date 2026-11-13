@@ -1,8 +1,12 @@
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import type { Metadata } from "next";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 export const dynamic = "force-static";
+// Re-check ERP page edits (SEO) about once a minute.
+export const revalidate = 60;
 
 const title = fitTitle("Case studies");
 const description = fitDescription(
@@ -10,7 +14,7 @@ const description = fitDescription(
   "Case studies",
 );
 
-export const metadata = {
+const baseMetadata: Metadata = {
   title,
   description,
   alternates: {
@@ -22,6 +26,12 @@ export const metadata = {
     url: "/case-studies",
   },
 };
+
+// Edited-page SEO for /case-studies. Child routes override every field this
+// can set except robots, which app/case-studies/[slug]/layout.tsx resets.
+export function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/case-studies", baseMetadata);
+}
 
 export default function CaseStudiesLayout({
   children,

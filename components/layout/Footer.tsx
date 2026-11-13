@@ -87,7 +87,23 @@ const SOCIALS = [
   { label: "Facebook", href: "#", aria: "Facebook", Icon: Facebook },
 ];
 
-export default function Footer() {
+/** Optional ERP/CMS overrides for pages created in the ERP. Without props the
+ * default ClickMasters footer renders unchanged. */
+export type FooterColumn = {
+  title: string;
+  items: { label: string; href: string; newTab?: boolean }[];
+};
+
+export default function Footer({
+  columns,
+  tagline,
+  copyright,
+}: {
+  columns?: FooterColumn[];
+  tagline?: string;
+  copyright?: string;
+} = {}) {
+  const navColumns = columns?.length ? columns : FOOTER_NAV;
   const emailParts = {
     first: "sales@Clickmasters.softwaredevelopment",
     second: "company.com",
@@ -127,9 +143,8 @@ export default function Footer() {
               </div> */}
 
               <p className="text-base sm:text-lg leading-relaxed max-w-sm font-medium">
-                ClickMasters is a software development company delivering
-                high-performance web, mobile, AI, SaaS, and cloud solutions for
-                startups and growing businesses.
+                {tagline ||
+                  "ClickMasters is a software development company delivering high-performance web, mobile, AI, SaaS, and cloud solutions for startups and growing businesses."}
               </p>
             </div>
 
@@ -178,16 +193,19 @@ export default function Footer() {
           {/* Right: the four nav columns */}
           <nav aria-label="Footer" className="lg:col-span-8 w-full">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 md:gap-x-8">
-              {FOOTER_NAV.map((col) => (
+              {navColumns.map((col: FooterColumn) => (
                 <div key={col.title}>
                   <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 md:mb-5 font-medium">
                     {col.title}
                   </p>
                   <ul className="space-y-2.5 md:space-y-3">
                     {col.items.map((item) => (
-                      <li key={item.label}>
+                      <li key={`${item.label}-${item.href}`}>
                         <a
                           href={item.href}
+                          {...(item.newTab
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
                           className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
                         >
                           {item.label}
@@ -235,7 +253,9 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-xs sm:text-sm opacity-60 text-center">
-              <span className="w-full sm:w-auto">©2026 Clickmasters</span>
+              <span className="w-full sm:w-auto">
+                {copyright || "©2026 Clickmasters"}
+              </span>
               <span className="hidden sm:inline opacity-30">|</span>
               <div className="flex items-center gap-3 sm:gap-5">
                 <a href="#" className="hover:opacity-100 transition-opacity">
