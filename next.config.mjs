@@ -10,9 +10,12 @@ const contentSecurityPolicy = [
   "object-src 'none'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://images.unsplash.com https://cdn.jsdelivr.net",
+  // https: — images on pages created in the ERP can live on any HTTPS host.
+  "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  "media-src 'self' blob: data:",
+  "media-src 'self' blob: data: https:",
+  // ERP "video" sections embed YouTube / Vimeo only (ids parsed server-side).
+  "frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com",
   "connect-src 'self' https://crm.clickmasters.pk",
   isProd ? "upgrade-insecure-requests" : "",
 ]

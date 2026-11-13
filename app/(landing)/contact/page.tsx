@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import ContactPage from "./ContactPage";
 import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 export const dynamic = "force-static";
+// Re-check ERP page edits (SEO) about once a minute.
+export const revalidate = 60;
 
 const CONTACT_URL =
   "https://clickmasterssoftwaredevelopmentcompany.com/contact";
@@ -13,7 +16,7 @@ const CONTACT_DESCRIPTION = fitDescription(
   "Contact Clickmasters",
 );
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: CONTACT_TITLE,
   description: CONTACT_DESCRIPTION,
   alternates: {
@@ -49,6 +52,10 @@ const contactSchema = {
   url: CONTACT_URL,
   mainEntity: { "@id": "https://clickmasterssoftwaredevelopmentcompany.com/#organization" },
 };
+
+export function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/contact", baseMetadata);
+}
 
 export default function Page() {
   return (

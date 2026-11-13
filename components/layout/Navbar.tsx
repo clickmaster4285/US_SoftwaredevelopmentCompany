@@ -33,7 +33,91 @@ const SOCIAL = [
   { label: "Dribbble", href: "#" },
 ];
 
-export default function Navbar() {
+/** Optional ERP/CMS navigation (pages created in the ERP). Without it the
+ * default ClickMasters navigation below renders unchanged. */
+export type NavbarItem = {
+  label: string;
+  href: string;
+  newTab?: boolean;
+  children?: NavbarItem[];
+};
+
+function newTabProps(newTab?: boolean) {
+  return newTab ? { target: "_blank", rel: "noopener noreferrer" } : {};
+}
+
+function NavDropdown({ item, className }: { item: NavbarItem; className: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      onFocus={() => setOpen(true)}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);
+      }}
+    >
+      <a
+        href={item.href || "#"}
+        {...newTabProps(item.newTab)}
+        aria-haspopup="true"
+        aria-expanded={open}
+        className={[
+          "relative flex items-center gap-1 px-4 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300",
+          className,
+        ].join(" ")}
+        onClick={item.href ? undefined : (e) => e.preventDefault()}
+      >
+        {item.label}
+        <ChevronDown
+          className={[
+            "h-3 w-3 opacity-60 transition-transform duration-300",
+            open ? "rotate-180" : "rotate-0",
+          ].join(" ")}
+        />
+      </a>
+      <div
+        className={[
+          "absolute left-1/2 top-full z-50 pt-3 -translate-x-1/2 transition-all duration-300 ease-out",
+          open
+            ? "visible opacity-100 translate-y-0"
+            : "invisible opacity-0 -translate-y-1 pointer-events-none",
+        ].join(" ")}
+      >
+        <div className="w-[300px] rounded-2xl bg-white/95 shadow-xl shadow-black/[0.08] ring-1 ring-black/[0.06] backdrop-blur-2xl p-2">
+          {(item.children ?? []).map((child) => (
+            <a
+              key={`${child.label}-${child.href}`}
+              href={child.href}
+              {...newTabProps(child.newTab)}
+              className="block rounded-xl px-3 py-2.5 text-[13.5px] font-medium text-[oklch(0.20_0.02_250)] transition-colors hover:bg-black/[0.03]"
+            >
+              {child.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Navbar({
+  items,
+  cta,
+}: {
+  items?: NavbarItem[];
+  cta?: { label: string; href: string };
+} = {}) {
+  const ctaHref = cta?.href || "/contact";
+  const ctaLabel = cta?.label || "Get in touch";
+  const mobileLinks: { label: string; href: string; newTab?: boolean }[] =
+    items
+      ? items.flatMap((item) => [
+          ...(item.href ? [item] : []),
+          ...(item.children ?? []).filter((child) => child.href),
+        ])
+      : NAV_LINKS;
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [caseOpen, setCaseOpen] = useState(false);
@@ -104,7 +188,27 @@ export default function Navbar() {
 
             {/* ── Desktop Links ── */}
             <div className="hidden md:flex items-center gap-1">
-              {NAV_LINKS.map((link) => {
+              {items ? items.map((item) =>
+                item.children?.length ? (
+                  <NavDropdown
+                    key={`${item.label}-${item.href}`}
+                    item={item}
+                    className={linkClasses}
+                  />
+                ) : (
+                  <a
+                    key={`${item.label}-${item.href}`}
+                    href={item.href}
+                    {...newTabProps(item.newTab)}
+                    className={[
+                      "relative px-4 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300",
+                      linkClasses,
+                    ].join(" ")}
+                  >
+                    {item.label}
+                  </a>
+                ),
+              ) : NAV_LINKS.map((link) => {
                 if (link.hasMegaMenu) {
                   return (
                     <MegaMenu
@@ -215,7 +319,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               {/* CTA Button desktop */}
               <a
-                href="/contact"
+                href={ctaHref}
                 className={[
                   "hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-300",
                   scrolled
@@ -223,7 +327,7 @@ export default function Navbar() {
                     : "bg-primary text-white shadow-md shadow-gray-500/20 hover:shadow-lg hover:shadow-gray-500/30 hover:scale-[1.03]",
                 ].join(" ")}
               >
-                Get in touch
+                {ctaLabel}
                 <svg
                   className="h-3.5 w-3.5"
                   fill="none"
@@ -346,10 +450,11 @@ export default function Navbar() {
 
           {/* Links */}
           <div className="px-5 pt-6 pb-4">
-            {NAV_LINKS.map((link, i) => (
+            {mobileLinks.map((link, i) => (
               <a
-                key={link.label}
+                key={`${link.label}-${link.href}`}
                 href={link.href}
+                {...newTabProps(link.newTab)}
                 onClick={closeMobile}
                 className="group flex items-center justify-between border-b border-black/[0.06] py-4 transition-colors hover:border-gray-300"
                 style={{
@@ -372,10 +477,10 @@ export default function Navbar() {
           {/* CTA */}
           <div className="px-5 pt-4 pb-6">
             <a
-              href="/contact"
+              href={ctaHref}
               className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 text-base font-semibold text-white shadow-lg shadow-gray-500/20 transition-all hover:shadow-xl hover:shadow-gray-500/30 hover:scale-[1.02]"
             >
-              Get in touch
+              {ctaLabel}
               <svg
                 className="h-4 w-4"
                 fill="none"

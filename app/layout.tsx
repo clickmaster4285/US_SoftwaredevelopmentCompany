@@ -2,6 +2,7 @@ import "./globals.css";
 import Providers from "./providers";
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/site";
+import ErpPageEdits from "@/components/cms/ErpPageEdits";
 import {
   JsonLd,
   organizationSchema,
@@ -40,6 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background text-foreground">
+        {/* ERP page edits — first in <body> so its cleanup runs before React
+            touches the page DOM on navigation. Renders nothing. */}
+        <ErpPageEdits />
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
         <Providers>{children}</Providers>

@@ -11,6 +11,9 @@ import {
   JsonLd,
   serviceSchema,
 } from "@/components/seo/JsonLd";
+import type { Metadata } from "next";
+import CmsRoute, { cmsRouteMetadata } from "@/components/cms/CmsRoute";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 type PageProps = {
   params: Promise<{
@@ -19,7 +22,11 @@ type PageProps = {
 };
 
 export const dynamic = "force-static";
-export const dynamicParams = false;
+// Slugs this route doesn't own fall back to pages created in the ERP (rendered
+// on demand, then cached); unknown slugs still end in the normal 404.
+export const dynamicParams = true;
+// Re-check ERP edits / created pages about once a minute.
+export const revalidate = 60;
 
 export function generateStaticParams() {
   const slugs = new Set([
@@ -32,15 +39,17 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const { main_service } = await params;
+  return withEditedPageSeo(`/${main_service}`, await baseMetadata(main_service));
+}
+
+async function baseMetadata(main_service: string): Promise<Metadata> {
   const dedicatedService = Object.values(mainServiceData).find(
     (entry) => entry.slug === main_service,
   );
   const service = dedicatedService ?? resolveService(main_service);
 
   if (!service) {
-    return {
-      title: "Service Not Found | Clickmasters",
-    };
+    return cmsRouteMetadata(`/${main_service}`);
   }
 
   const canonical = `/${main_service}`;
@@ -93,7 +102,8 @@ export default async function Page({ params }: PageProps) {
 
   const service = dedicatedService ?? resolveService(main_service);
   if (!service) {
-    notFound();
+    // Not a code-owned service: a page created in the ERP, or the normal 404.
+    return <CmsRoute path={`/${main_service}`} />;
   }
 
   const description = fitDescription(

@@ -9,6 +9,8 @@ import {
 } from "@/data/location-service-data";
 import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
+import type { Metadata } from "next";
 
 const title = fitTitle("Software development locations");
 const description = fitDescription(
@@ -17,8 +19,10 @@ const description = fitDescription(
 );
 
 export const dynamic = "force-static";
+// Re-check ERP page edits (SEO) about once a minute.
+export const revalidate = 60;
 
-export const metadata = {
+const baseMetadata: Metadata = {
   title,
   description,
   alternates: {
@@ -30,6 +34,10 @@ export const metadata = {
     url: "/locations",
   },
 };
+
+export function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/locations", baseMetadata);
+}
 
 export default function LocationsPage() {
   const locations = getAllLocationServiceSlugs()

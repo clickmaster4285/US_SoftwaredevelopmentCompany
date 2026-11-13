@@ -8,6 +8,8 @@ import {
   getAllLocationServiceSlugs,
   type LocationServiceData,
 } from "@/data/location-service-data";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
+import type { Metadata } from "next";
 
 type PageProps = {
   params: Promise<{
@@ -17,12 +19,19 @@ type PageProps = {
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
+// Re-check ERP page edits (SEO) about once a minute.
+export const revalidate = 60;
 
 export function generateStaticParams() {
   return getAllLocationServiceSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  return withEditedPageSeo(`/locations/${slug}`, await baseMetadata({ params }));
+}
+
+async function baseMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const data = getLocationServiceData(slug);
 

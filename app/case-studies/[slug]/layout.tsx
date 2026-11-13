@@ -2,9 +2,13 @@ import { notFound } from "next/navigation";
 import { caseStudies } from "@/content/case-studies";
 import { breadcrumbSchema, JsonLd } from "@/components/seo/JsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
+import type { Metadata } from "next";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
+// Re-check ERP page edits (SEO) about once a minute.
+export const revalidate = 60;
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -16,6 +20,17 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: LayoutProps) {
+  const { slug } = await params;
+  // robots: null so edited SEO of /case-studies (parent layout) never leaks here.
+  return withEditedPageSeo(`/case-studies/${slug}`, {
+    robots: null,
+    ...(await baseMetadata({ params })),
+  });
+}
+
+async function baseMetadata({
+  params,
+}: Pick<LayoutProps, "params">): Promise<Metadata> {
   const { slug } = await params;
   const study = caseStudies[slug as keyof typeof caseStudies];
   if (!study) return { title: "Case study not found | Clickmasters" };
