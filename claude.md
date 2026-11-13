@@ -2,6 +2,7 @@ For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMA
 
 # Work Log: 2026-11-11 — ERP / headless CMS integration
 
+- Created pages use the site's own theme; ERP colours apply only with `CMS_USE_ERP_COLORS=true` (gated in `CmsPageFrame`).
 - Config from env only: `CMS_API_URL` (public API = `https://apierp.clickmasters.pk`, NOT `erp.clickmasters.pk`, which is the ERP's frontend), `CMS_SITE_DOMAIN`, `NEXT_PUBLIC_CMS_LIVE_POLL_SECONDS` (default 3), `CMS_ALLOW_CUSTOM_JS` (off). Empty `CMS_API_URL` = integration off.
 - `lib/cms/`: `config.ts` (fetch, 60s cache, 30s down-backoff), `site.ts` (A1 nav/colors), `cms.ts` (A2/A3 pages + A7 SEO), `erp-edits.ts` (B1/B2 + edited SEO), `erp-edits-shared.ts` (parse/validate edits), `erp-edits-dom.ts` (B4 apply/revert engine), `safe.ts` (URL/color sanitizers).
 - Created pages: `[main_service]` / `[sub_service]` now `dynamicParams = true` + `revalidate = 60` and fall back to `components/cms/CmsRoute` for slugs they don't own; depth ≥3 via `[main_service]/[sub_service]/[...rest]`. Rendered with site design by `components/cms/CmsPageFrame` + `CmsSectionRenderer` + `components/cms/sections/*`.

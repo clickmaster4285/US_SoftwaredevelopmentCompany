@@ -3,8 +3,10 @@
 // - Navbar / Footer are the ClickMasters components. ERP navigation (A1 site
 //   navigation, the page's context.navigation, or the page's header/footer
 //   section) replaces their links only when the ERP provides some.
-// - ERP colours (A1 design.colors, overridden by the page's design.colors) are
-//   mapped onto the theme tokens for this page only; other pages are untouched.
+// - Colours are the site's own theme (globals.css) by default, so created
+//   pages look like the rest of the site. Only with CMS_USE_ERP_COLORS=true are
+//   the ERP colours (A1 design.colors, overridden by the page's design.colors)
+//   mapped onto the theme tokens for this page.
 // - customCode: css → filtered <style>; html → allow-list sanitizer;
 //   js → only with CMS_ALLOW_CUSTOM_JS=true (explicit opt-in).
 import type { CSSProperties } from "react";
@@ -69,7 +71,8 @@ function themeVars(primary: string, secondary: string): CSSProperties {
     // Defaults = the site's own theme (globals.css).
     "--cms-brand": "var(--primary)",
     "--cms-brand-foreground": "var(--primary-foreground)",
-    "--cms-dark": "oklch(0.18 0.02 250)",
+    // The site's own dark navy (globals.css light-theme --foreground).
+    "--cms-dark": "oklch(0.129 0.042 264.695)",
     "--cms-on-dark-primary": "#ffffff",
     "--cms-on-dark-primary-foreground": "oklch(0.18 0.02 250)",
   };
@@ -128,8 +131,14 @@ export default function CmsPageFrame({
     : (site?.footer ?? []);
   const columns = footerColumns(footerNav);
 
-  const primary = page.colors.primary || site?.colors.primary || "";
-  const secondary = page.colors.secondary || site?.colors.secondary || "";
+  // Site theme unless ERP colours are explicitly opted into.
+  const useErpColors = process.env.CMS_USE_ERP_COLORS === "true";
+  const primary = useErpColors
+    ? page.colors.primary || site?.colors.primary || ""
+    : "";
+  const secondary = useErpColors
+    ? page.colors.secondary || site?.colors.secondary || ""
+    : "";
 
   const css = filterCss(page.customCode.css);
   const allowJs =
