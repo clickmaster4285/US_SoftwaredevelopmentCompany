@@ -64,7 +64,7 @@ export default function CmsHero({
       >
         <CmsImg
           src={data.image}
-          alt={data.alt}
+          alt={data.alt || data.heading}
           eager
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -135,7 +135,7 @@ export default function CmsHero({
           <div className="overflow-hidden rounded-[2rem] border border-border bg-muted shadow-xl shadow-black/5">
             <CmsImg
               src={data.image}
-              alt={data.alt}
+              alt={data.alt || data.heading}
               eager
               className="aspect-[4/3] h-full w-full object-cover"
             />

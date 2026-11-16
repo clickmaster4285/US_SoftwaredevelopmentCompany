@@ -63,7 +63,7 @@ export function CmsImageBlock({
       <div className="overflow-hidden rounded-[2rem] border border-border bg-muted">
         <CmsImg
           src={data.image}
-          alt={data.alt}
+          alt={data.alt || data.caption}
           className="h-auto w-full object-cover"
         />
       </div>
@@ -116,7 +116,7 @@ export function CmsImageText({
         >
           <CmsImg
             src={data.image}
-            alt={data.alt}
+            alt={data.alt || data.heading}
             className="aspect-[4/3] h-full w-full object-cover"
           />
         </div>

@@ -8,6 +8,7 @@ import {
 } from "@/lib/contextual-links";
 import { buildServiceArticle } from "@/lib/service-copy";
 import { InlineLinks } from "@/components/seo/InlineLinks";
+import { heroImageAlt } from "@/lib/media";
 import { Hero, PageFrame, SectionHeading } from "./landing-primitives";
 import ProcessSection from "./process-section";
 import { CatalogArticle, FallbackArticle } from "./CatalogArticle";
@@ -39,6 +40,7 @@ export default function SubServicePage({
     highlights,
     pricing: subService.pricing || [],
   });
+  const heroImage = subService.heroImage || service.heroImage;
   const path = `/${service.slug}/${subService.slug}`;
   const siblingPool = (service.subServices || []).filter(
     (item) =>
@@ -88,8 +90,8 @@ export default function SubServicePage({
         eyebrow={service.title}
         title={subService.title}
         copy={subService.lead || subService.description}
-        image={subService.heroImage || service.heroImage}
-        imageAlt=""
+        image={heroImage}
+        imageAlt={heroImageAlt(subService.title, heroImage)}
       />
       <section className="px-5 py-24 md:px-10">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">

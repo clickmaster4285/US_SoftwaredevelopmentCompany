@@ -1,6 +1,7 @@
 // main-service-components.js
 import Link from "next/link";
 import { isRetiredSub } from "../lib/site-routes.mjs";
+import { heroImageAlt } from "../lib/media";
 import {
   ArrowRight,
   BarChart3,
@@ -230,7 +231,7 @@ export function MainServiceHero({ service }) {
             {service.heroImage ? (
               <img
                 src={service.heroImage}
-                alt={service.title || ""}
+                alt={heroImageAlt(service.title || "", service.heroImage)}
                 className="absolute inset-0 h-full w-full object-cover opacity-80"
               />
             ) : null}

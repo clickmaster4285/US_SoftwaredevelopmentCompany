@@ -16,7 +16,7 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: "Clickmasters",
     url: SITE_URL,
-    email: "sales@Clickmasters.softwaredevelopmentcompany.com",
+    email: "sales@Clickmasterssoftwaredevelopmentcompany.com",
     telephone: "+1-325-202-4074",
     description:
       "Remote-first software development company building custom web, mobile, and AI products for businesses in the United States and abroad.",

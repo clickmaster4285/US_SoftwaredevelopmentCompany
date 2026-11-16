@@ -25,6 +25,11 @@ export type CatalogPage = {
   faqs?: Array<{ question?: string; answer?: string }>;
 };
 
+/**
+ * Route slug -> catalog slug, for routes whose written content is stored under
+ * a different spelling. Each target must be the same service and must not be
+ * rendered by another route (that would publish the same text at two URLs).
+ */
 const CONTENT_ALIASES: Record<string, string> = {
   "data-integration-services": "data-integration",
   "data-migration-services": "data-migration",
@@ -32,7 +37,15 @@ const CONTENT_ALIASES: Record<string, string> = {
   "ml-solutions-development": "machine-learning-solutions-development",
   "threat-detection": "cyber-threat-detection",
   "cybersecurity-software-development": "custom-cybersecurity-software",
+  "llm-application-development": "llm-applications-development",
+  "ecommerce-development": "e-commerce-development",
+  "headless-ecommerce": "headless-e-commerce",
+  "model-training-optimization": "model-training-optimisation",
+  "security-audits-compliance": "security-audits",
 };
+
+/** Below this, a catalog entry is an auto-generated stub, not written content. */
+const MIN_CATALOG_WORDS = 180;
 
 function words(value: string) {
   return value.split(/\s+/).filter(Boolean).length;
@@ -95,9 +108,15 @@ export function lookupCatalog(slug: string): CatalogPage | null {
     slug.endsWith("-services") ? slug.replace(/-services$/, "") : "",
   ].filter(Boolean);
 
+  // Prefer written content over a stub: the catalog also holds ~85-word
+  // auto-generated entries, and an exact-slug stub must not shadow the alias
+  // that carries the real page copy.
+  let stub: CatalogPage | null = null;
   for (const candidate of candidates) {
     const page = getServicePage(candidate) as CatalogPage | undefined;
-    if (page) return page;
+    if (!page) continue;
+    if (catalogWordCount(page) >= MIN_CATALOG_WORDS) return page;
+    stub ??= page;
   }
-  return null;
+  return stub;
 }

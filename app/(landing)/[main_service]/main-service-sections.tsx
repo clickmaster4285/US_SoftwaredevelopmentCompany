@@ -13,6 +13,8 @@ import {
   Workflow,
 } from "lucide-react";
 import { iconMap } from "@/data/main-services";
+import { isRetiredSub } from "@/lib/site-routes.mjs";
+import { heroImageAlt } from "@/lib/media";
 import { SectionHeading } from "./[sub_service]/landing-primitives";
 import type {
   MainService,
@@ -144,7 +146,7 @@ export function MainServiceHero({ service }: { service: MainService }) {
           {service.heroImage ? (
             <img
               src={service.heroImage}
-              alt={service.title || ""}
+              alt={heroImageAlt(service.title, service.heroImage)}
               className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
           ) : null}
@@ -177,8 +179,12 @@ export function ExploreSection({ service }: { service: MainService }) {
   const exploreCopy =
     ourServices.description ||
     "Choose the focused service line that best matches your product, platform, or operational goal.";
-  const servicesToRender: SubService[] =
-    ourServices.subServices || service.subServices || [];
+  // Retired/consolidated URLs redirect; never link to them.
+  const servicesToRender: SubService[] = (
+    ourServices.subServices ||
+    service.subServices ||
+    []
+  ).filter((item) => !isRetiredSub(service.slug, item.slug));
 
   return (
     <section className="bg-background px-5 py-24 md:px-10">
