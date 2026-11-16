@@ -60,7 +60,7 @@ export function Hero({
   title,
   copy,
   image,
-  imageAlt = "",
+  imageAlt,
   badge,
   ctaHref = "/contact",
 }: {
@@ -68,7 +68,8 @@ export function Hero({
   title: string;
   copy: string;
   image?: string;
-  imageAlt?: string;
+  /** Required: describe the photo, or pass "" only if it is purely decorative. */
+  imageAlt: string;
   badge?: string;
   ctaHref?: string;
 }) {

@@ -12,6 +12,11 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 type CaseStudyEntry = (typeof caseStudies)[keyof typeof caseStudies];
 
+/** Year of an ISO date in UTC, so server and browser agree in every timezone. */
+function utcYear(iso: string) {
+  return new Date(iso).getUTCFullYear();
+}
+
 function getHeroText(study: CaseStudyEntry, key: string) {
   const value = study.hero[key];
   return typeof value === "string" ? value : "";
@@ -177,7 +182,7 @@ function CaseStudyCard({ study }: { study: CaseStudyEntry }) {
         <span>{getHeroText(study, "eyebrow")}</span>
         <span className="flex items-center gap-2">
           <span className="size-1 rounded-full bg-[oklch(0.65_0.18_250)]" />
-          {new Date(study.meta.updatedAt).getFullYear()}
+          {utcYear(study.meta.updatedAt)}
         </span>
       </div>
 
@@ -247,6 +252,11 @@ export default function CaseStudiesPage() {
 
   const published = Object.values(caseStudies).filter(
     (study) => study.meta.status !== "draft",
+  );
+  // From the content, not the visitor's clock: new Date() here differed
+  // between the static render and hydration (React error #418).
+  const lastUpdatedYear = Math.max(
+    ...published.map((study) => utcYear(study.meta.updatedAt)),
   );
 
   return (
@@ -361,7 +371,7 @@ export default function CaseStudiesPage() {
           </span>
           <span className="flex items-center gap-2">
             <span className="size-1 rounded-full bg-[oklch(0.65_0.18_250)]" />
-            Updated {new Date().getFullYear()}
+            {published.length > 0 ? `Updated ${lastUpdatedYear}` : null}
           </span>
         </div>
       </div>

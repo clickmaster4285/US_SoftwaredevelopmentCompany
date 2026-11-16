@@ -224,8 +224,12 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
 export function AnimatedCard({ title, body }: { title: string; body: string }) {
   const ref = useRef<HTMLDivElement>(null);
 
+  // Derived from the title, not Math.random(): a random pick differs between
+  // the server render and hydration, which threw React error #418.
   const [Icon] = useState(() => {
-    return cardIcons[Math.floor(Math.random() * cardIcons.length)];
+    let hash = 0;
+    for (const ch of title) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+    return cardIcons[hash % cardIcons.length];
   });
 
   useGSAP(

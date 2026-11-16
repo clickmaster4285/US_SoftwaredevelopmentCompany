@@ -23,6 +23,9 @@ export default function HomePage() {
   const slotRef = useRef<HTMLSpanElement>(null);
   const [progress, setProgress] = useState(0);
   const [slot, setSlot] = useState({ x: 0, y: 0, w: 0, h: 0 });
+  // Starts at the server's default and is measured before paint: reading
+  // window during render gave the server and the browser different clip-paths.
+  const [viewport, setViewport] = useState({ w: 1920, h: 1080 });
   const slotSize = "0.75em";
 
   useEffect(() => {
@@ -50,6 +53,11 @@ export default function HomePage() {
       if (!element) return;
       const rect = element.getBoundingClientRect();
       setSlot({ x: rect.left, y: rect.top, w: rect.width, h: rect.height });
+      setViewport((prev) =>
+        prev.w === window.innerWidth && prev.h === window.innerHeight
+          ? prev
+          : { w: window.innerWidth, h: window.innerHeight },
+      );
     };
 
     measureSlot();
@@ -65,8 +73,8 @@ export default function HomePage() {
     progress < 0.5
       ? 2 * progress * progress
       : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-  const vw = typeof window !== "undefined" ? window.innerWidth : 1920;
-  const vh = typeof window !== "undefined" ? window.innerHeight : 1080;
+  const vw = viewport.w;
+  const vh = viewport.h;
   const expansion = eased;
   const sx = slot.x;
   const sy = slot.y;

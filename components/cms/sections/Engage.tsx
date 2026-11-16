@@ -142,7 +142,7 @@ export function CmsContact({
           <div className="mt-10 overflow-hidden rounded-3xl border border-border">
             <CmsImg
               src={data.image}
-              alt=""
+              alt={data.heading}
               className="aspect-[16/10] w-full object-cover"
             />
           </div>
@@ -299,7 +299,7 @@ export function CmsPosts({
               {post.image ? (
                 <CmsImg
                   src={post.image}
-                  alt=""
+                  alt={post.title}
                   className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                 />
               ) : (

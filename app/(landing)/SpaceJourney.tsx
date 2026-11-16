@@ -10,6 +10,35 @@ import { RING_COUNT, STAR_COUNT, buildChapters } from "@/app/(landing)/data";
 
 gsap.registerPlugin(ScrollTrigger);
 
+/**
+ * Seeded random (mulberry32). Star positions are rendered on the server and
+ * again during hydration; Math.random() gave each side different positions.
+ */
+function seededRandom(seed: number) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function makeStars(
+  count: number,
+  seed: number,
+  minSize: number,
+  sizeRange: number,
+) {
+  const rand = seededRandom(seed);
+  return Array.from({ length: count }, () => ({
+    x: rand() * 100,
+    y: rand() * 100,
+    s: minSize + rand() * sizeRange,
+  }));
+}
+
 export default function SpaceJourney() {
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
@@ -44,32 +73,11 @@ export default function SpaceJourney() {
   const chapters = useMemo(() => buildChapters({ c1, c2, c3, c4 }), []);
 
   const starsNear = useMemo(
-    () =>
-      Array.from({ length: STAR_COUNT.near }, () => ({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        s: 1 + Math.random() * 2.5,
-      })),
+    () => makeStars(STAR_COUNT.near, 1, 1, 2.5),
     [],
   );
-  const starsMid = useMemo(
-    () =>
-      Array.from({ length: STAR_COUNT.mid }, () => ({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        s: 0.8 + Math.random() * 1.6,
-      })),
-    [],
-  );
-  const starsFar = useMemo(
-    () =>
-      Array.from({ length: STAR_COUNT.far }, () => ({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        s: 0.4 + Math.random() * 1,
-      })),
-    [],
-  );
+  const starsMid = useMemo(() => makeStars(STAR_COUNT.mid, 2, 0.8, 1.6), []);
+  const starsFar = useMemo(() => makeStars(STAR_COUNT.far, 3, 0.4, 1), []);
   const rings = useMemo(() => Array.from({ length: RING_COUNT }), []);
 
   useEffect(() => {

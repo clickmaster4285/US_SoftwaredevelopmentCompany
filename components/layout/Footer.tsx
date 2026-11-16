@@ -105,7 +105,7 @@ export default function Footer({
 } = {}) {
   const navColumns = columns?.length ? columns : FOOTER_NAV;
   const emailParts = {
-    first: "sales@Clickmasters.softwaredevelopment",
+    first: "sales@Clickmasterssoftwaredevelopment",
     second: "company.com",
   };
   const emailFull = `${emailParts.first}${emailParts.second}`;
