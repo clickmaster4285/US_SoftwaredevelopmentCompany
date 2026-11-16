@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronDown } from "lucide-react";
 import MegaMenu from "./MegaMenu";
+import ProductsMenu, { MobileProductsSection } from "./ProductsMenu";
 import { serviceMenuSections } from "@/data/main-services";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,6 +20,7 @@ const CASE_STUDIES = [
 
 const NAV_LINKS = [
   { label: "Services", href: "/software-development", hasMegaMenu: true },
+  { label: "Products", href: "/products", hasProductMenu: true },
   { label: "Solutions", href: "#solutions" },
   { label: "Resources", href: "#resources" },
   { label: "Case Studies", href: "/case-studies", hasCaseStudyMenu: true },
@@ -229,6 +231,10 @@ export default function Navbar({
                   );
                 }
 
+                if (link.hasProductMenu) {
+                  return <ProductsMenu key={link.label} className={linkClasses} />;
+                }
+
                 if (link.hasCaseStudyMenu) {
                   return (
                     <div
@@ -405,7 +411,7 @@ export default function Navbar({
         {/* Panel */}
         <div
           className={[
-            "absolute inset-x-0 top-0 bg-white/95 backdrop-blur-2xl shadow-2xl transition-all duration-500 ease-out",
+            "absolute inset-x-0 top-0 max-h-[100dvh] overflow-y-auto bg-white/95 backdrop-blur-2xl shadow-2xl transition-all duration-500 ease-out",
             mobileOpen
               ? "translate-y-0 opacity-100"
               : "-translate-y-8 opacity-0",
@@ -450,28 +456,59 @@ export default function Navbar({
 
           {/* Links */}
           <div className="px-5 pt-6 pb-4">
-            {mobileLinks.map((link, i) => (
-              <a
-                key={`${link.label}-${link.href}`}
-                href={link.href}
-                {...newTabProps(link.newTab)}
-                onClick={closeMobile}
-                className="group flex items-center justify-between border-b border-black/[0.06] py-4 transition-colors hover:border-gray-300"
-                style={{
-                  transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms",
-                  opacity: mobileOpen ? 1 : 0,
-                  transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
-                  transition: `all 0.4s ease ${mobileOpen ? i * 60 : 0}ms`,
-                }}
-              >
-                <span className="text-xl font-medium text-[oklch(0.20_0.02_250)] transition-colors group-hover:text-gray-600">
-                  {link.label}
-                </span>
-                <span className="text-[11px] font-medium tracking-[0.2em] text-[oklch(0.20_0.02_250)]/30">
-                  0{i + 1}
-                </span>
-              </a>
-            ))}
+            {items
+              ? mobileLinks.map((link, i) => (
+                  <a
+                    key={`${link.label}-${link.href}`}
+                    href={link.href}
+                    {...newTabProps(link.newTab)}
+                    onClick={closeMobile}
+                    className="group flex items-center justify-between border-b border-black/[0.06] py-4 transition-colors hover:border-gray-300"
+                    style={{
+                      transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms",
+                      opacity: mobileOpen ? 1 : 0,
+                      transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
+                      transition: `all 0.4s ease ${mobileOpen ? i * 60 : 0}ms`,
+                    }}
+                  >
+                    <span className="text-xl font-medium text-[oklch(0.20_0.02_250)] transition-colors group-hover:text-gray-600">
+                      {link.label}
+                    </span>
+                    <span className="text-[11px] font-medium tracking-[0.2em] text-[oklch(0.20_0.02_250)]/30">
+                      0{i + 1}
+                    </span>
+                  </a>
+                ))
+              : NAV_LINKS.map((link, i) =>
+                  link.hasProductMenu ? (
+                    <MobileProductsSection
+                      key={link.label}
+                      index={i}
+                      menuOpen={mobileOpen}
+                      onNavigate={closeMobile}
+                    />
+                  ) : (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      onClick={closeMobile}
+                      className="group flex items-center justify-between border-b border-black/[0.06] py-4 transition-colors hover:border-gray-300"
+                      style={{
+                        transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms",
+                        opacity: mobileOpen ? 1 : 0,
+                        transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
+                        transition: `all 0.4s ease ${mobileOpen ? i * 60 : 0}ms`,
+                      }}
+                    >
+                      <span className="text-xl font-medium text-[oklch(0.20_0.02_250)] transition-colors group-hover:text-gray-600">
+                        {link.label}
+                      </span>
+                      <span className="text-[11px] font-medium tracking-[0.2em] text-[oklch(0.20_0.02_250)]/30">
+                        0{i + 1}
+                      </span>
+                    </a>
+                  ),
+                )}
           </div>
 
           {/* CTA */}
