@@ -312,7 +312,7 @@ const costFactors = [
   "Maintenance and support level after go-live.",
 ];
 
-function Section({
+export function Section({
   id,
   eyebrow,
   title,
@@ -417,7 +417,7 @@ function SourceOfTruth() {
   );
 }
 
-function Prose({ children }: { children: ReactNode }) {
+export function Prose({ children }: { children: ReactNode }) {
   return (
     <div className="max-w-3xl space-y-5 text-base leading-7 text-muted-foreground">
       {children}
@@ -425,13 +425,13 @@ function Prose({ children }: { children: ReactNode }) {
   );
 }
 
-function CompareTable({
+export function CompareTable({
   caption,
   headers,
   rows,
 }: {
   caption: string;
-  headers: [string, string, string];
+  headers: string[];
   rows: string[][];
 }) {
   return (
@@ -439,15 +439,13 @@ function CompareTable({
       <div className="grid gap-3 md:hidden">
         {rows.map((row) => (
           <article key={row[0]} className="rounded-2xl border border-border bg-white p-4">
-            <h3 className="font-semibold">{row[0]}</h3>
-            <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              <span className="font-medium text-foreground">{headers[1]}. </span>
-              {row[1]}
-            </p>
-            <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              <span className="font-medium text-foreground">{headers[2]}. </span>
-              {row[2]}
-            </p>
+            <p className="font-semibold">{row[0]}</p>
+            {headers.slice(1).map((header, index) => (
+              <p key={header} className="mt-2 text-sm leading-6 text-muted-foreground first-of-type:mt-3">
+                <span className="font-medium text-foreground">{header}. </span>
+                {row[index + 1]}
+              </p>
+            ))}
           </article>
         ))}
       </div>
@@ -468,7 +466,7 @@ function CompareTable({
             <tr key={row[0]} className="border-t border-border align-top">
               {row.map((cell, index) => (
                 <td
-                  key={cell}
+                  key={`${index}-${cell}`}
                   className={
                     index === 0
                       ? "px-4 py-3 font-medium text-foreground"
