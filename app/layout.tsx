@@ -39,6 +39,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (GTM-N4W55GFS) — first in <head>, loaded once for every page. */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-N4W55GFS"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());`,
+          }}
+        />
+      </head>
       <body className="bg-background text-foreground">
         {/* ERP page edits — first in <body> so its cleanup runs before React
             touches the page DOM on navigation. Renders nothing. */}
