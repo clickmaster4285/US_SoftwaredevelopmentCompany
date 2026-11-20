@@ -1,6 +1,7 @@
 import "./globals.css";
 import Providers from "./providers";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { SITE_URL } from "@/lib/site";
 import ErpPageEdits from "@/components/cms/ErpPageEdits";
 import {
@@ -8,6 +9,8 @@ import {
   organizationSchema,
   websiteSchema,
 } from "@/components/seo/JsonLd";
+
+const GTM_ID = "GTM-WT6MM33D";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -43,6 +46,26 @@ export default function RootLayout({
         {/* ERP page edits — first in <body> so its cleanup runs before React
             touches the page DOM on navigation. Renders nothing. */}
         <ErpPageEdits />
+        {/* Google Tag Manager */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});`}
+        </Script>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
+        />
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
         <Providers>{children}</Providers>
