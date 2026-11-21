@@ -567,6 +567,21 @@ export const practiceTypes = [
     icon: "TrendingUp",
     text: "Adding providers and sites quickly. Requirements include multi-entity architecture, standardized workflows, strong permissions, scalable cloud infrastructure and APIs for future apps and portals.",
   },
+  {
+    title: "Dental Practices",
+    icon: "Smile",
+    text: "Chairs, hygienists and recall cycles. Practice management software for dentists needs chair and hygienist scheduling, treatment-plan tracking and six-month recall reminders. The practice management software dental groups use must also report by chair and handle dental insurance claims.",
+  },
+  {
+    title: "Therapy and Mental Health Practices",
+    icon: "Brain",
+    text: "Recurring sessions and sensitive records. Practice management software for mental health providers needs stricter access to session notes and telehealth visits. The practice management software therapy clinics use must also track session series, therapist caseloads and visit limits.",
+  },
+  {
+    title: "Optometry and Eye Care Practices",
+    icon: "Eye",
+    text: "Exams plus optical sales. The practice management software optometry practices use needs exam-lane scheduling, optical orders, frame and lens inventory, and vision plans billed alongside medical insurance.",
+  },
 ];
 
 export const pmsVsClinicRows = [
@@ -1046,7 +1061,7 @@ export const whyClickMasters = [
   ],
   [
     "Web Application Development",
-    "Secure, responsive web applications for staff who work across desktops, tablets and remote locations.",
+    "Secure, web-based medical practice management software for staff who work across desktops, tablets and remote locations.",
   ],
   [
     "Mobile Application Development",
@@ -1114,7 +1129,7 @@ export const practiceFaqs = [
     question:
       "What is the difference between practice management software and EHR?",
     answer:
-      "Practice management software runs the business: scheduling, accounts, billing, claims, payments and reporting. An EHR holds the clinical record: diagnoses, medications, results, notes and care history that can be shared across providers. Most practices use both. Integrating them means patients are registered once and coded clinical work flows directly into billing.",
+      "Practice management software runs the business: scheduling, accounts, billing, claims, payments and reporting. An EHR holds the clinical record: diagnoses, medications, results, notes and care history that can be shared across providers. Most practices use both. Integrating them means patients are registered once and coded clinical work flows directly into billing. Smaller practices sometimes prefer combined medical records practice management software, which we can build as one product.",
   },
   {
     question: "Can practice management software manage multiple physicians?",
@@ -1124,7 +1139,7 @@ export const practiceFaqs = [
   {
     question: "Does medical practice software support billing?",
     answer:
-      "Yes. Billing is a core function. Charges are created from completed encounters using your fee schedule and codes, self-pay invoices are issued, insured charges flow into claims, payments are posted and patient statements are sent. Practices with complex billing teams can also connect a dedicated medical billing or revenue cycle platform.",
+      "Yes. Billing is a core function. Charges are created from completed encounters using your fee schedule and codes, self-pay invoices are issued, insured charges flow into claims, payments are posted and patient statements are sent. Practices that want medical billing and practice management software in one platform can have both built on the same database, while those with complex billing teams can connect a dedicated revenue cycle platform instead.",
   },
   {
     question: "Can it manage insurance claims workflows?",

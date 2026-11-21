@@ -164,6 +164,8 @@ const contents = [
   { href: "#emr-features", label: "Features" },
   { href: "#benefits", label: "Benefits" },
   { href: "#organizations", label: "Organizations" },
+  { href: "#system-types", label: "System types" },
+  { href: "#emr-selection", label: "Buying guide" },
   { href: "#cloud-vs-on-premise", label: "Cloud vs on-premise" },
   { href: "#integration", label: "Integration" },
   { href: "#security", label: "HIPAA & security" },
@@ -503,6 +505,18 @@ export default function EmrPage() {
                 or organization. It records what happened during care: why the
                 patient came in, what the clinician found, what was diagnosed,
                 what was ordered and prescribed, and what the follow-up plan is.
+                Electronic Medical Records EMR software uses the same
+                patient-chart purpose while its modules and deployment model
+                are shaped by the organization&apos;s workflow.
+                The practical electronic medical record system definition is
+                therefore a controlled clinical database that combines
+                patient history, documentation, orders and results in one
+                workflow. Related abbreviations include EMR and, when the record
+                is designed to move across care organizations, EHR.
+                In healthcare purchasing discussions, electronic medical health
+                records software is a broader term often used for the same
+                category, although EHR software usually means a record designed
+                to be shared across organizations.
               </p>
               <p>
                 A well-built EMR does more than store documents. It captures
@@ -729,6 +743,146 @@ export default function EmrPage() {
                 </article>
               );
             })}
+          </div>
+        </Section>
+
+        {/* System types */}
+        <Section
+          id="system-types"
+          eyebrow="Options"
+          title="Types of Electronic Medical Record Systems"
+        >
+          <Prose>
+            <p>
+              There is no single EMR format that fits every organization. The
+              right choice depends on care setting, scale, specialty,
+              interoperability and budget. A practical list of options includes:
+              an electronic medical record systems list may cover cloud and
+              on-premise platforms, practice and specialty software, hospital
+              systems, and custom EMR products.
+            </p>
+          </Prose>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              [
+                "Cloud-based EMR systems",
+                "Hosted applications with lower infrastructure management, secure remote access and subscription or usage-based pricing.",
+              ],
+              [
+                "On-premise EMR systems",
+                "Software operated in an organization's own data center, often chosen for strict infrastructure control or legacy integration.",
+              ],
+              [
+                "Practice EMR software",
+                "Focused records for independent practices, with fast charting, scheduling, e-prescribing and billing handoffs.",
+              ],
+              [
+                "Hospital EMR systems",
+                "Clinical records connected to inpatient, emergency, pharmacy, laboratory and radiology workflows.",
+              ],
+              [
+                "Specialty and therapist EMRs",
+                "Configured notes, outcome measures, treatment plans and permissions for specialties or therapy practices.",
+              ],
+              [
+                "Custom EMR platforms",
+                "Purpose-built systems for distinctive workflows, HealthTech products or organizations that need to control integrations and the data model.",
+              ],
+            ].map(([title, text]) => (
+              <article
+                key={title}
+                className="rounded-2xl border border-border bg-white p-5"
+              >
+                <h3 className="font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {text}
+                </p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 max-w-4xl text-base leading-7 text-muted-foreground">
+            To compare electronic medical record systems fairly, include
+            implementation, migration, interfaces, training and ongoing support
+            in the total cost. A lower software license may not produce the
+            lowest five-year cost if workflows or integrations require extensive
+            workarounds.
+          </p>
+        </Section>
+
+        {/* Selection guide */}
+        <Section
+          id="emr-selection"
+          eyebrow="Buying guide"
+          title="Choosing Electronic Medical Records EMRs for Your Organization"
+        >
+          <div className="grid gap-6 lg:grid-cols-2">
+            <article className="rounded-3xl border border-border bg-white p-6">
+              <h3 className="text-xl font-semibold">
+                Electronic medical record systems for hospitals
+              </h3>
+              <div className="mt-3">
+              <Prose>
+                <p>
+                  Hospital selection requires more than a good outpatient chart.
+                  Evaluate admission, discharge and transfer workflows, inpatient
+                  orders, clinical decision support, pharmacy, laboratory and
+                  radiology interfaces, role-based access, and downtime
+                  procedures. The system should connect safely to the hospital
+                  information system and preserve a complete clinical context
+                  across departments.
+                </p>
+              </Prose>
+              </div>
+            </article>
+            <article className="rounded-3xl border border-border bg-white p-6">
+              <h3 className="text-xl font-semibold">
+                Electronic medical record systems for therapists
+              </h3>
+              <div className="mt-3">
+              <Prose>
+                <p>
+                  For therapy practices, useful EMRs support psychotherapy and
+                  progress notes, treatment plans, outcome measures, scheduling,
+                  secure messaging and controlled access to sensitive records.
+                  Template flexibility matters, as do state requirements, coding
+                  or billing workflows, and safeguards for highly confidential
+                  behavioral-health information.
+                </p>
+              </Prose>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-8 rounded-3xl bg-[#f0fdfa] p-6 md:p-8">
+            <h3 className="text-xl font-semibold">
+              How to compare EMR software companies
+            </h3>
+            <div className="mt-3">
+            <Prose>
+              <p>
+                Electronic medical record systems companies may supply a
+                licensed product, an implementation service or a custom
+                development platform. When comparing an electronic medical
+                record software company, ask which workflows it has delivered,
+                how it handles data ownership and migration, how it tests
+                integrations, whether it provides security documentation, and
+                what support and training are included after go-live.
+              </p>
+              <p>
+                Electronic Medical Records (EMRs) should be assessed against
+                real use cases rather than a marketing feature list. Run a
+                proof of concept, involve clinicians and administrators, and
+                compare licensing, implementation, integration and support cost
+                over the full contract period.
+              </p>
+              <p>
+                For budgeting, electronic medical record system cost should
+                include licenses or development, hosting, interfaces, migration,
+                security testing, training, maintenance and the staff time
+                required for implementation.
+              </p>
+            </Prose>
+            </div>
           </div>
         </Section>
 

@@ -9,7 +9,7 @@ export const limsTitle =
   "Laboratory Information Management System (LIMS) Software";
 
 export const limsDescription =
-  "Custom Laboratory Information Management System (LIMS) for US labs: sample tracking, instrument integration, QC, audit trails and Part 11-ready design.";
+  "Laboratory Information Management System Software for US labs: sample tracking, workflow, data management, QC, audit trails and Part 11-ready design.";
 
 export const PRODUCT_NAME = "Laboratory Information Management System (LIMS)";
 

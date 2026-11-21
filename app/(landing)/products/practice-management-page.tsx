@@ -36,6 +36,9 @@ import {
   UsersRound,
   Wallet,
   Workflow,
+  Smile,
+  Brain,
+  Eye,
   type LucideIcon,
 } from "lucide-react";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
@@ -109,6 +112,9 @@ const ICONS: Record<string, LucideIcon> = {
   UsersRound,
   Wallet,
   Workflow,
+  Smile,
+  Brain,
+  Eye,
 };
 
 export function practiceManagementSchema() {
@@ -512,7 +518,10 @@ export default function PracticeManagementPage() {
                 management systems for independent physicians, multi-physician
                 practices, specialist groups and growing healthcare
                 organizations that need more control than spreadsheets and
-                generic tools can offer.
+                generic tools can offer. The same platform works as medical
+                office practice management software for a single site and as
+                practice manager software medical groups use to oversee
+                several locations.
               </p>
               <p>
                 We are a custom software development company. Every project
@@ -565,7 +574,10 @@ export default function PracticeManagementPage() {
               financial operations. Its purpose is to make sure every patient
               visit is scheduled correctly, documented for billing, charged
               accurately, paid for and reported on, without staff having to
-              re-enter the same information in several places.
+              re-enter the same information in several places. It is the
+              practice management system healthcare administrators rely on
+              for the business side, while the clinical record lives in the
+              EHR or EMR.
             </p>
           </Prose>
 
@@ -899,8 +911,9 @@ export default function PracticeManagementPage() {
         >
           <Prose>
             <p>
-              Healthcare practice management software adapts to very different
-              organizations. The practice management solutions for doctors
+              Practice management software for healthcare has to adapt to very
+              different organizations, from solo physicians to dental, therapy
+              and optometry practices. The practice management solutions for doctors
               described below are configured, or custom-built, to match each
               model.
             </p>
@@ -1057,8 +1070,12 @@ export default function PracticeManagementPage() {
             ))}
           </ul>
           <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            If a ready-made product already fits, it may be the better choice.
-            We&apos;ll help you decide honestly before you commit.
+            Lists of the top medical practice management software rarely
+            account for your specialties, payers and locations. The best
+            medical practice management software for your organization is the
+            one that fits those workflows, so if a ready-made product already
+            fits, it may be the better choice. We&apos;ll help you decide
+            honestly before you commit.
           </p>
           <CtaBand
             title="Not sure which way to go?"
@@ -1340,7 +1357,9 @@ export default function PracticeManagementPage() {
               ClickMasters is a remote-first software development company
               building web, mobile, AI, SaaS and cloud solutions for startups,
               growing businesses and larger organizations. Healthcare is one of
-              the industries we serve.
+              the industries we serve, and our team builds medical practice
+              management software systems alongside clinic, EHR, EMR and
+              billing products.
             </p>
           </Prose>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -1368,7 +1387,7 @@ export default function PracticeManagementPage() {
               <p className="mt-4 text-base leading-7 text-white/80">
                 If your practice is running on a patchwork of calendars,
                 spreadsheets and disconnected billing tools, let&apos;s map out
-                a better system together. You&apos;ll leave the consultation
+                a medical practice management solution that fits. You&apos;ll leave the consultation
                 with a clear picture of what to build, in what order, and what
                 it will take.
               </p>

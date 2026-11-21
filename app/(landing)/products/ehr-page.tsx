@@ -591,8 +591,8 @@ export default function EhrPage() {
               system. It captures, organizes, stores and shares a patient&apos;s
               health information digitally, so the record covers that
               person&apos;s care over time instead of a single visit. A paper
-              chart sits in one filing cabinet. An electronic health record
-              system makes the same information available, under access
+              chart sits in one filing cabinet. Electronic health record
+              system software makes the same information available, under access
               controls, to every authorized clinician involved in the
               patient&apos;s care.
             </p>
@@ -758,8 +758,8 @@ export default function EhrPage() {
             <p>
               Most healthcare organizations don&apos;t struggle with how much
               data they have. They struggle because the data is scattered,
-              inconsistent and hard to trust. Purpose-built healthcare records
-              management software fixes the structure underneath.
+              inconsistent and hard to trust. Purpose-built electronic health
+              records systems software fixes the structure underneath.
             </p>
           </Prose>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -797,8 +797,9 @@ export default function EhrPage() {
         >
           <Prose>
             <p>
-              Each module below can be configured, extended or left out to suit
-              your organization. The feature set of a custom EHR is decided
+              Electronic health record programs that have numerous
+              capabilities can become hard to use, so each module below can be
+              configured, extended or left out to suit your organization. The feature set of a custom EHR is decided
               during discovery, not fixed in advance.
             </p>
           </Prose>
@@ -936,8 +937,8 @@ export default function EhrPage() {
         >
           <Prose>
             <p>
-              EHR requirements vary a great deal with size, specialty mix and
-              care setting. A custom build lets the system fit the organization
+              Electronic health record systems in healthcare vary a great deal
+              with size, specialty mix and care setting. A custom build lets the system fit the organization
               instead of the other way round.
             </p>
           </Prose>
@@ -1047,7 +1048,10 @@ export default function EhrPage() {
               Interoperability is what turns an EHR into a connected clinical
               platform rather than a digital filing cabinet. Interoperable EHR
               software exchanges data in formats other systems understand, with
-              security and consistent meaning.
+              security and consistent meaning. We also use the HL7 EHR System
+              Functional Model, which describes the functions an electronic
+              health record system (EHR-S) should provide, as a checklist
+              during discovery.
             </p>
           </Prose>
           <DiagramFigure
@@ -1196,8 +1200,10 @@ export default function EhrPage() {
               When a ready-made EHR may be a better fit:{" "}
             </span>
             if you need standard workflows quickly with minimal internal IT
-            involvement, an established commercial product can be the sensible
-            choice. A good partner will tell you honestly which option suits
+            involvement, ready-made electronic health record software
+            solutions can be the sensible choice. This is often the case for
+            electronic health record systems for small businesses, such as a
+            single-doctor clinic. A good partner will tell you honestly which option suits
             you.
           </p>
         </Section>
@@ -1305,7 +1311,7 @@ export default function EhrPage() {
           <Prose>
             <p>
               Every custom EHR is scoped individually, so there is no fixed
-              price. Cost depends mainly on:
+              electronic health record software cost. It depends mainly on:
             </p>
           </Prose>
           <ul className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
@@ -1347,7 +1353,9 @@ export default function EhrPage() {
         >
           <Prose>
             <p>
-              Clickmasters is a remote-first software development company. We
+              Many electronic health record software companies sell one fixed
+              product. Clickmasters is a remote-first software development
+              company that builds around your workflows instead. We
               work with written scope, a single engineering point of contact,
               and source code that belongs to the client. Healthcare and
               HealthTech is one of our core industries.

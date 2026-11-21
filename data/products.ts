@@ -340,11 +340,14 @@ export const productIndustries: ProductIndustry[] = [
         slug: "fitness-booking-and-scheduling-software",
         title: "Fitness Booking & Scheduling Software",
         description:
-          "Let clients book sessions and keep trainers, rooms, and class capacity on one calendar.",
+          "Fitness booking software lets clients book sessions and keeps trainers, rooms, and class capacity on one calendar. Fitness schedule software is that calendar: who is teaching, which room is free, and how many spots are left.",
         points: [
           "Client self-booking",
           "Rooms, trainers, and capacity",
           "Cancellations and open slots",
+          "Fitness class scheduling software sets the class, the instructor, the room, and the capacity.",
+          "Fitness center scheduling software covers rooms and trainers across the center.",
+          "Fitness studio booking software keeps studio classes, instructors, and open spots on the same calendar.",
         ],
       },
     ],

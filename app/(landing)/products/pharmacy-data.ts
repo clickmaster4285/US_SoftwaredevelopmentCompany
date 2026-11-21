@@ -9,7 +9,7 @@ export const pharmacyTitle =
   "Pharmacy Management System | Custom Pharmacy Software";
 
 export const pharmacyDescription =
-  "Custom pharmacy management system for US pharmacies: dispensing, inventory, POS, insurance billing and multi-location control. Get a free consultation.";
+  "Cloud-based pharmacy management system for US retail, independent and multi-location pharmacies: dispensing, inventory, POS, insurance billing, technician workflows and complete medication management.";
 
 export const PRODUCT_NAME = "Pharmacy Management System";
 
@@ -496,7 +496,7 @@ export const pharmacyFaqs = [
   {
     question: "What is a pharmacy management system?",
     answer:
-      "A pharmacy management system is software that runs a pharmacy's core operations: prescription intake and dispensing, clinical checks, insurance billing, point of sale, inventory, purchasing, patient records and reporting. It connects these tasks in one place, so staff don't have to re-enter data or track stock by hand.",
+      "A pharmacy management system is complete pharmacy management software that runs a pharmacy's core operations: prescription intake and dispensing, clinical checks, insurance billing, point of sale, inventory, purchasing, patient records and medication management. It connects these tasks in one place, so pharmacy staff don't have to re-enter data or track stock by hand.",
   },
   {
     question: "What features should pharmacy management software include?",
@@ -533,6 +533,48 @@ export const pharmacyFaqs = [
     question: "Can one system manage multiple pharmacy locations?",
     answer:
       "Yes. A multi-location pharmacy management system centralizes users, pricing and formulary, shows stock across every store, supports inter-store transfers and reports by store or for the whole group. A cloud deployment makes this much simpler.",
+  },
+  {
+    question:
+      "Which pharmacy management system is best for a retail pharmacy?",
+    answer:
+      "The best pharmacy management system for a retail pharmacy depends on prescription volume, front-store POS needs, insurance partners, location count and workflow preferences. Evaluate dispensing speed, inventory control, technician tasks, claim performance, e-prescribing, reporting and the vendor's US support. A hands-on workflow test is more useful than choosing from a feature checklist alone.",
+  },
+  {
+    question:
+      "How can pharmacy technicians use pharmacy management software?",
+    answer:
+      "Technicians can receive and enter prescriptions, verify patient and insurance information, prepare refill requests, scan stock and fill prescriptions, queue will-call orders, receive inventory and assist with claims follow-up. Role-based permissions should prevent technicians from performing pharmacist-only verification or clinical approval tasks.",
+  },
+  {
+    question:
+      "What can a pharmacy management system dashboard show?",
+    answer:
+      "A practical dashboard can show pending prescriptions, verification and filling queues, ready-for-pickup orders, rejected claims, low stock, approaching expiries, daily sales, waiting patients and staff workload. Managers can also filter inventory, margin and location reports.",
+  },
+  {
+    question:
+      "Is a pharmacy management system available as an app or for online use?",
+    answer:
+      "Yes. Pharmacy operations commonly use secure web applications on counter, office and mobile devices. A pharmacy management system app may support patient refills, delivery updates or refill reminders, while a pharmacy management system website or browser-based workflow application gives staff access to dispensing, inventory and claims online.",
+  },
+  {
+    question:
+      "How is artificial intelligence used in pharmacy medication management?",
+    answer:
+      "A pharmacy management system using artificial intelligence can assist with forecasting demand, identifying refill patterns, summarizing claims exceptions and prioritizing clinical or operational alerts. It should support - not replace - pharmacist review. Medication interaction decisions, dispensing verification and controlled-substance controls should remain governed by validated rules and licensed clinical databases.",
+  },
+  {
+    question:
+      "How do we compare pharmacy management software companies?",
+    answer:
+      "Compare implementation experience, US pharmacy integrations, regulatory support, data ownership, migration plans, security documentation, role controls, reporting, service levels and total cost. Ask pharmacy management software companies for references from similar independent, retail, specialty or multi-location operations.",
+  },
+  {
+    question:
+      "What should a pharmacy look for in a pharmacy management system USA deployment?",
+    answer:
+      "For a US pharmacy, confirm NCPDP SCRIPT and Telecommunication support, PBM and insurer connections, NDC and drug database coverage, state board and PDMP requirements, DEA controls where applicable, HIPAA-aware hosting, DSCSA features and US-based implementation or support. Confirm the software handles local tax, payment and data-retention rules before purchase.",
   },
   {
     question: "How much does custom pharmacy management software cost?",

@@ -467,7 +467,7 @@ export const benefits = [
   },
   {
     title: "Scalable Clinic Operations",
-    text: "When the clinic adds doctors, services or branches, the system grows with it instead of being replaced.",
+    text: "When the clinic adds doctors, services or branches, the clinic management software system grows with it instead of being replaced.",
     example:
       "Opening a second branch means configuring a new location, not migrating to new software.",
   },
@@ -812,7 +812,7 @@ export const whyClickMasters = [
   },
   {
     title: "Web and Mobile Development",
-    text: "We can deliver a web-based clinic system for staff, and mobile apps for doctors or patients where your project needs them.",
+    text: "We can deliver a web-based clinic system for staff, and a clinic management system app for doctors or patients where your project needs it.",
   },
   {
     title: "Scalable Software Architecture",

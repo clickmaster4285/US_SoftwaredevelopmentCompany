@@ -114,7 +114,7 @@ export function limsSchema() {
         url,
         image: pageUrl(limsImages.dashboard.src),
         description:
-          "Custom laboratory information management system development for US laboratories, covering sample tracking, instrument integration, quality control, audit trails and validation-ready design.",
+          "Custom laboratory information management system software for US laboratories, covering sample tracking, instrument integration, quality control, audit trails and validation-ready design.",
       },
       {
         "@type": "BreadcrumbList",
@@ -511,15 +511,17 @@ export default function LimsPage() {
                   can&apos;t keep up.
                 </p>
                 <p>
-                  A Laboratory Information Management System (LIMS) brings this
-                  work into one controlled system. It tracks each sample from
-                  receipt to disposal, assigns tests, captures instrument
-                  results, enforces QC rules, manages reagents and equipment,
-                  and keeps an audit trail of every action.
+                  Laboratory Information Management System Software brings this
+                  work into one controlled system. The Laboratory Information
+                  Management System (LIMS) tracks each sample from receipt to
+                  disposal, assigns tests, captures instrument results, enforces
+                  QC rules, manages reagents and equipment, and keeps an audit
+                  trail of every action.
                 </p>
                 <p>
-                  Clickmasters plans and builds custom LIMS software for US
-                  laboratories whose workflows don&apos;t fit a generic product.
+                  Clickmasters plans and builds LIMS software for laboratories
+                  in the United States whose workflows don&apos;t fit a generic
+                  product.
                   That includes clinical and diagnostic labs, pharmaceutical and
                   biotech labs, and environmental, food and manufacturing QC
                   labs. We scope the product, the timeline and the quote before
@@ -709,9 +711,9 @@ export default function LimsPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
               <p className="text-base leading-7 text-muted-foreground">
-                Good sample tracking answers three questions at any moment:
-                where is the sample, what state is it in, and who is responsible
-                for it?
+                Laboratory sample management software answers three questions
+                at any moment: where is the sample, what state is it in, and
+                who is responsible for it?
               </p>
               <p className="mt-4 text-base leading-7 text-muted-foreground">
                 A custom LIMS supports this with:
@@ -784,7 +786,9 @@ export default function LimsPage() {
           <Prose>
             <p>
               Instrument integration is often the biggest source of value in a
-              LIMS project, and the hardest part to get right.
+              LIMS project, and the hardest part to get right. Laboratory data
+              management software then keeps each captured result structured,
+              checked and tied to the sample, method and instrument behind it.
             </p>
           </Prose>
           <DiagramFigure
@@ -916,10 +920,11 @@ export default function LimsPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
               <p className="text-base leading-7 text-muted-foreground">
-                Commercial LIMS platforms are powerful, but they often need
-                costly configuration, consultants and workarounds before they
-                fit a specific laboratory. Custom LIMS software development
-                makes sense when:
+                Commercial laboratory management software is powerful, but it
+                often needs costly configuration, consultants and workarounds
+                before it fits a specific laboratory. The best LIMS software
+                follows the lab&apos;s own methods instead of forcing those
+                workarounds. Custom LIMS software development makes sense when:
               </p>
               <CheckList items={customReasons} className="mt-5" />
             </div>

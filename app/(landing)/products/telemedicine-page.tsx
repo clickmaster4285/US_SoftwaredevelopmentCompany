@@ -442,12 +442,12 @@ export default function TelemedicinePage() {
                 <p>
                   Patients now expect to see a clinician without a waiting room,
                   a commute or a week-long wait for an appointment. Healthcare
-                  organizations want to reach patients in rural areas, cut
-                  avoidable ER visits and follow chronic conditions between
-                  visits. Telemedicine software makes both possible. It connects
-                  patients and providers through secure video, audio and
-                  messaging, moves intake and scheduling online, and brings home
-                  health data into the care team&apos;s workflow.
+                  organizations want a telemedicine platform for rural areas,
+                  to cut avoidable ER visits and follow chronic conditions
+                  between visits. Telemedicine software makes both possible. It
+                  connects patients and providers through secure video, audio
+                  and messaging, moves intake and scheduling online, and brings
+                  home health data into the care team&apos;s workflow.
                 </p>
                 <p>
                   A good telemedicine platform is more than a video call. It
@@ -459,9 +459,10 @@ export default function TelemedicinePage() {
                 </p>
                 <p>
                   Clickmasters designs and builds custom telemedicine software
-                  for US hospitals, practices, clinics, mental health providers,
-                  healthcare networks and telehealth startups. We scope the
-                  product, the timeline and the quote before development starts.
+                  and telehealth software solutions for US hospitals, practices,
+                  clinics, mental health providers, healthcare networks and
+                  telehealth startups. We scope the product, the timeline and
+                  the quote before development starts.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -642,6 +643,13 @@ export default function TelemedicinePage() {
             headers={["Organization", "What the platform must do well"]}
             rows={organizationRows}
           />
+          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+            Mental health groups need a telemedicine platform for mental health:
+            recurring sessions, group rooms and stricter handling of sensitive
+            records. Telehealth software for therapists follows the same
+            pattern, with session notes and a waiting room that does not expose
+            one client to another.
+          </p>
         </Section>
 
         {/* Video */}
@@ -704,7 +712,7 @@ export default function TelemedicinePage() {
         >
           <Prose>
             <p>
-              Telemedicine scheduling software adds rules that in-person
+              Telehealth appointment software adds rules that in-person
               scheduling doesn&apos;t have:
             </p>
           </Prose>
@@ -795,6 +803,12 @@ export default function TelemedicinePage() {
             <div>
               <p className="text-lg font-semibold">EHR/EMR integration:</p>
               <TitledCards items={ehrItems} className="mt-4" />
+              <p className="mt-6 text-base leading-7 text-muted-foreground">
+                Telemedicine EHR software launches beside the shared chart and
+                writes the visit back. Telemedicine EMR software does the same
+                job inside one practice. Telehealth EMR software is the name
+                many clinics use for that practice-level connection.
+              </p>
             </div>
           </div>
         </Section>
@@ -910,8 +924,11 @@ export default function TelemedicinePage() {
         >
           <Prose>
             <p>
-              Off-the-shelf telehealth tools work for basic video visits. Custom
-              development makes sense when:
+              Off-the-shelf telehealth tools work for basic video visits.
+              Telehealth software companies and telehealth software vendors
+              usually sell that general product. The best telemedicine software
+              for a given organization is the one that matches its states,
+              specialties and chart. Custom development makes sense when:
             </p>
           </Prose>
           <TitledCards

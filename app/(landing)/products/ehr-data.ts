@@ -408,7 +408,7 @@ export const featureGroups: EhrFeatureGroup[] = [
         title: "Secure Cloud-Based Record Management",
         icon: "CloudCog",
         does: "hosts the EHR on secure cloud infrastructure, or on-premises or hybrid infrastructure where required.",
-        how: "cloud-based EHR software can use encrypted storage, network isolation, automated backups, multi-zone redundancy and monitoring. Configuration and contracts with the hosting provider determine the final security posture.",
+        how: "cloud-hosted electronic health records management software can use encrypted storage, network isolation, automated backups, multi-zone redundancy and monitoring. Configuration and contracts with the hosting provider determine the final security posture.",
         problem:
           "fragile on-site servers, limited remote access and weak disaster recovery.",
         value:
@@ -529,7 +529,7 @@ export const organizations: {
   {
     title: "Private Medical Practices",
     icon: "Stethoscope",
-    text: "EHR software for medical practices should be fast, simple and low maintenance. Practices tend to need efficient charting, e-prescribing, lab integration and close coordination with scheduling and billing. Many practices run their EHR alongside Clinic Management Software that handles appointments, visit flow and front-desk operations.",
+    text: "Electronic health record software for practitioners in private practice should be fast, simple and low maintenance. Practices tend to need efficient charting, e-prescribing, lab integration and close coordination with scheduling and billing. Many practices run their EHR alongside Clinic Management Software that handles appointments, visit flow and front-desk operations.",
     link: {
       anchor: "Clinic Management Software",
       slug: "clinic-management-software",
@@ -1045,11 +1045,11 @@ export const whyClickmasters = [
   ],
   [
     "Web application development",
-    "secure, responsive clinical and administrative web apps.",
+    "secure, responsive clinical and administrative web apps, including electronic health record online software that clinicians open in any browser.",
   ],
   [
     "Mobile application development",
-    "iOS and Android apps for clinicians or patients where your use case needs them.",
+    "iOS and Android apps for clinicians or patients, such as an electronic health record healthcare app for viewing results and visit notes on the go.",
   ],
   [
     "Scalable architecture",

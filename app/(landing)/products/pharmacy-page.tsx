@@ -106,7 +106,7 @@ export function pharmacySchema() {
         url,
         image: pageUrl(pharmacyImages.dashboard.src),
         description:
-          "Custom pharmacy management system development for US pharmacies, covering prescription dispensing, inventory, POS, insurance billing and multi-location management.",
+          "Cloud-based pharmacy management system development for US pharmacies, covering prescription dispensing, medication management, inventory, POS, insurance billing, technician workflows and multi-location management.",
       },
       {
         "@type": "BreadcrumbList",
@@ -153,6 +153,7 @@ const contents = [
   { href: "#how-it-works", label: "How it works" },
   { href: "#pharmacy-features", label: "Features" },
   { href: "#business-types", label: "Business types" },
+  { href: "#pharmacy-platform", label: "Online platform" },
   { href: "#inventory", label: "Inventory" },
   { href: "#dispensing", label: "Dispensing" },
   { href: "#pos-billing", label: "POS & billing" },
@@ -451,6 +452,9 @@ export default function PharmacyPage() {
                   keeping the shelves stocked with the right drugs. Every step
                   is recorded against the patient, the pharmacist and the
                   product.
+                  Modern online and cloud-based pharmacy management software
+                  gives independent, retail and chain pharmacies a shared view
+                  of prescriptions, medication inventory and counter activity.
                 </p>
                 <p>
                   Clickmasters designs and builds custom pharmacy management
@@ -610,6 +614,66 @@ export default function PharmacyPage() {
             , so that the pharmacist verifies against the same patient record
             the care team uses.
           </p>
+        </Section>
+
+        {/* Pharmacy platform */}
+        <Section
+          id="pharmacy-platform"
+          eyebrow="Digital pharmacy operations"
+          title="Online, Cloud-Based Pharmacy Management Software"
+        >
+          <div className="grid gap-6 lg:grid-cols-3">
+            {[
+              [
+                "Pharmacy management system dashboard",
+                "A role-based dashboard brings prescription queues, will-call orders, rejected claims, short-dated inventory, sales and staff activity into one view. Each pharmacy, regional manager or technician sees the tasks relevant to their permissions.",
+              ],
+              [
+                "Pharmacy technicians and medication workflows",
+                "Pharmacy technician software roles can cover prescription entry, patient verification, refill requests, barcode filling, will-call organization and inventory receiving. The pharmacist remains responsible for clinical screening and final verification.",
+              ],
+              [
+                "App and online access",
+                "A pharmacy management system app or secure pharmacy management system website can support patient refills, prescription status, appointment or delivery notifications and payment. Staff dispensing and claims workflows should use purpose-built counter, pharmacy and mobile interfaces.",
+              ],
+              [
+                "Retail pharmacy operations",
+                "For a retail pharmacy management system, peak-hour queues, drive-through pickup, front-store POS, patient messaging, insurance copays, loyalty and daily sales reporting need to work together rather than through separate tools.",
+              ],
+              [
+                "Artificial intelligence assistance",
+                "Modern pharmacy medication management systems can use artificial intelligence to forecast demand, summarize recurring claims issues, route support work and rank operational exceptions. AI recommendations remain subject to licensed drug data, pharmacist review and auditable decision rules.",
+              ],
+              [
+                "Complete pharmacy software",
+                "A complete pharmacy management software platform covers dispensing, inventory, POS, billing, patients, reporting, integrations and controlled-substance records. The right design includes your wholesaler, PBM, e-prescribing and accounting connections.",
+              ],
+            ].map(([title, text]) => (
+              <article
+                key={title}
+                className="rounded-2xl border border-border bg-white p-5"
+              >
+                <h3 className="font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {text}
+                </p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 rounded-3xl bg-[#ecfdf5] p-6 md:p-8">
+            <h3 className="text-xl font-semibold">
+              Comparing pharmacy management software companies
+            </h3>
+            <p className="mt-3 max-w-4xl text-sm leading-7 text-muted-foreground">
+              Pharmacy management software companies for the USA should be
+              evaluated on US e-prescribing and PBM integrations, state and DEA
+              requirements, role-based technician workflows, data migration,
+              hosting, support, ownership and total operating cost. For chain,
+              retail or online pharmacy operations, also verify multi-location
+              inventory, central reporting, delivery integrations and the
+              ability to grow without per-store workarounds.
+            </p>
+          </div>
         </Section>
 
         {/* Inventory */}

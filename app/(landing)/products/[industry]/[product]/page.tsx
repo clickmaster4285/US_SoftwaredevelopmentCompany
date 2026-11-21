@@ -58,6 +58,126 @@ import PracticeManagementPage, {
   practiceManagementSchema,
   practiceTitle,
 } from "../../practice-management-page";
+import YogaStudioPage, {
+  YS_PATH,
+  ysDescription,
+  ysImages,
+  ysOgDescription,
+  ysOgTitle,
+  ysSchema,
+  ysTitle,
+} from "../../yoga-studio-page";
+import MembershipPage, {
+  MM_PATH,
+  mmDescription,
+  mmImages,
+  mmOgDescription,
+  mmOgTitle,
+  mmSchema,
+  mmTitle,
+} from "../../membership-page";
+import SportsClubPage, {
+  SC_PATH,
+  scDescription,
+  scImages,
+  scOgDescription,
+  scOgTitle,
+  scSchema,
+  scTitle,
+} from "../../sports-club-page";
+import PersonalTrainerPage, {
+  PT_PATH,
+  ptDescription,
+  ptImages,
+  ptOgDescription,
+  ptOgTitle,
+  ptSchema,
+  ptTitle,
+} from "../../personal-trainer-page";
+import FitnessClubPage, {
+  FC_PATH,
+  fcDescription,
+  fcImages,
+  fcSchema,
+  fcTitle,
+} from "../../fitness-club-page";
+import GymPage, {
+  GYM_PATH,
+  gymDescription,
+  gymImages,
+  gymSchema,
+  gymTitle,
+} from "../../gym-page";
+import AssetPage, {
+  ASSET_PATH,
+  assetDescription,
+  assetImages,
+  assetSchema,
+  assetTitle,
+} from "../../asset-page";
+import BpmPage, {
+  BPM_PATH,
+  bpmDescription,
+  bpmImages,
+  bpmSchema,
+  bpmTitle,
+} from "../../bpm-page";
+import DmsPage, {
+  DMS_PATH,
+  dmsDescription,
+  dmsImages,
+  dmsSchema,
+  dmsTitle,
+} from "../../dms-page";
+import ScmPage, {
+  SCM_PATH,
+  scmDescription,
+  scmImages,
+  scmSchema,
+  scmTitle,
+} from "../../scm-page";
+import InventoryPage, {
+  INVENTORY_PATH,
+  inventoryDescription,
+  inventoryImages,
+  inventorySchema,
+  inventoryTitle,
+} from "../../inventory-page";
+import AttendancePage, {
+  ATTENDANCE_PATH,
+  attendanceDescription,
+  attendanceImages,
+  attendanceSchema,
+  attendanceTitle,
+} from "../../attendance-page";
+import PayrollPage, {
+  PAYROLL_PATH,
+  payrollDescription,
+  payrollImages,
+  payrollSchema,
+  payrollTitle,
+} from "../../payroll-page";
+import HrmsPage, {
+  HRMS_PATH,
+  hrmsDescription,
+  hrmsImages,
+  hrmsSchema,
+  hrmsTitle,
+} from "../../hrms-page";
+import CrmPage, {
+  CRM_PATH,
+  crmDescription,
+  crmImages,
+  crmSchema,
+  crmTitle,
+} from "../../crm-page";
+import ErpPage, {
+  ERP_PATH,
+  erpDescription,
+  erpImages,
+  erpSchema,
+  erpTitle,
+} from "../../erp-page";
 import {
   findProduct,
   industryPath,
@@ -92,6 +212,326 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!match) return {};
 
   const path = productPath(match.industry.slug, match.product.slug);
+  if (path === YS_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: ysTitle },
+      description: ysDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: ysOgTitle,
+        description: ysOgDescription,
+        url: path,
+        images: [
+          {
+            url: ysImages.og.src,
+            width: ysImages.og.width,
+            height: ysImages.og.height,
+            alt: ysImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === MM_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: mmTitle },
+      description: mmDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: mmOgTitle,
+        description: mmOgDescription,
+        url: path,
+        images: [
+          {
+            url: mmImages.og.src,
+            width: mmImages.og.width,
+            height: mmImages.og.height,
+            alt: mmImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === SC_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: scTitle },
+      description: scDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: scOgTitle,
+        description: scOgDescription,
+        url: path,
+        images: [
+          {
+            url: scImages.og.src,
+            width: scImages.og.width,
+            height: scImages.og.height,
+            alt: scImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === PT_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: ptTitle },
+      description: ptDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: ptOgTitle,
+        description: ptOgDescription,
+        url: path,
+        images: [
+          {
+            url: ptImages.og.src,
+            width: ptImages.og.width,
+            height: ptImages.og.height,
+            alt: ptImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === FC_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: fcTitle },
+      description: fcDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: fcTitle,
+        description: fcDescription,
+        url: path,
+        images: [
+          {
+            url: fcImages.og.src,
+            width: fcImages.og.width,
+            height: fcImages.og.height,
+            alt: fcImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === GYM_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: gymTitle },
+      description: gymDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: gymTitle,
+        description: gymDescription,
+        url: path,
+        images: [
+          {
+            url: gymImages.og.src,
+            width: gymImages.og.width,
+            height: gymImages.og.height,
+            alt: gymImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === ASSET_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: assetTitle },
+      description: assetDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: assetTitle,
+        description: assetDescription,
+        url: path,
+        images: [
+          {
+            url: assetImages.og.src,
+            width: assetImages.og.width,
+            height: assetImages.og.height,
+            alt: assetImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === BPM_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: bpmTitle },
+      description: bpmDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: bpmTitle,
+        description: bpmDescription,
+        url: path,
+        images: [
+          {
+            url: bpmImages.og.src,
+            width: bpmImages.og.width,
+            height: bpmImages.og.height,
+            alt: bpmImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === DMS_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: dmsTitle },
+      description: dmsDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: dmsTitle,
+        description: dmsDescription,
+        url: path,
+        images: [
+          {
+            url: dmsImages.og.src,
+            width: dmsImages.og.width,
+            height: dmsImages.og.height,
+            alt: dmsImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === SCM_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: scmTitle },
+      description: scmDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: scmTitle,
+        description: scmDescription,
+        url: path,
+        images: [
+          {
+            url: scmImages.og.src,
+            width: scmImages.og.width,
+            height: scmImages.og.height,
+            alt: scmImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === INVENTORY_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: inventoryTitle },
+      description: inventoryDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: inventoryTitle,
+        description: inventoryDescription,
+        url: path,
+        images: [
+          {
+            url: inventoryImages.og.src,
+            width: inventoryImages.og.width,
+            height: inventoryImages.og.height,
+            alt: inventoryImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === ATTENDANCE_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: attendanceTitle },
+      description: attendanceDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: attendanceTitle,
+        description: attendanceDescription,
+        url: path,
+        images: [
+          {
+            url: attendanceImages.og.src,
+            width: attendanceImages.og.width,
+            height: attendanceImages.og.height,
+            alt: attendanceImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === PAYROLL_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: payrollTitle },
+      description: payrollDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: payrollTitle,
+        description: payrollDescription,
+        url: path,
+        images: [
+          {
+            url: payrollImages.og.src,
+            width: payrollImages.og.width,
+            height: payrollImages.og.height,
+            alt: payrollImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === HRMS_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: hrmsTitle },
+      description: hrmsDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: hrmsTitle,
+        description: hrmsDescription,
+        url: path,
+        images: [
+          {
+            url: hrmsImages.og.src,
+            width: hrmsImages.og.width,
+            height: hrmsImages.og.height,
+            alt: hrmsImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === CRM_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: crmTitle },
+      description: crmDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: crmTitle,
+        description: crmDescription,
+        url: path,
+        images: [
+          {
+            url: crmImages.og.src,
+            width: crmImages.og.width,
+            height: crmImages.og.height,
+            alt: crmImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
+  if (path === ERP_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: erpTitle },
+      description: erpDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: erpTitle,
+        description: erpDescription,
+        url: path,
+        images: [
+          {
+            url: erpImages.og.src,
+            width: erpImages.og.width,
+            height: erpImages.og.height,
+            alt: erpImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
   if (path === TELE_PATH) {
     return withEditedPageSeo(path, {
       title: { absolute: teleTitle },
@@ -300,6 +740,150 @@ export default async function Page({ params }: PageProps) {
       <>
         <JsonLd data={hospitalManagementSchema()} />
         <HospitalManagementPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === YS_PATH) {
+    return (
+      <>
+        <JsonLd data={ysSchema()} />
+        <YogaStudioPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === MM_PATH) {
+    return (
+      <>
+        <JsonLd data={mmSchema()} />
+        <MembershipPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === SC_PATH) {
+    return (
+      <>
+        <JsonLd data={scSchema()} />
+        <SportsClubPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === PT_PATH) {
+    return (
+      <>
+        <JsonLd data={ptSchema()} />
+        <PersonalTrainerPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === FC_PATH) {
+    return (
+      <>
+        <JsonLd data={fcSchema()} />
+        <FitnessClubPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === GYM_PATH) {
+    return (
+      <>
+        <JsonLd data={gymSchema()} />
+        <GymPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === ASSET_PATH) {
+    return (
+      <>
+        <JsonLd data={assetSchema()} />
+        <AssetPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === BPM_PATH) {
+    return (
+      <>
+        <JsonLd data={bpmSchema()} />
+        <BpmPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === DMS_PATH) {
+    return (
+      <>
+        <JsonLd data={dmsSchema()} />
+        <DmsPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === SCM_PATH) {
+    return (
+      <>
+        <JsonLd data={scmSchema()} />
+        <ScmPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === INVENTORY_PATH) {
+    return (
+      <>
+        <JsonLd data={inventorySchema()} />
+        <InventoryPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === ATTENDANCE_PATH) {
+    return (
+      <>
+        <JsonLd data={attendanceSchema()} />
+        <AttendancePage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === PAYROLL_PATH) {
+    return (
+      <>
+        <JsonLd data={payrollSchema()} />
+        <PayrollPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === HRMS_PATH) {
+    return (
+      <>
+        <JsonLd data={hrmsSchema()} />
+        <HrmsPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === CRM_PATH) {
+    return (
+      <>
+        <JsonLd data={crmSchema()} />
+        <CrmPage />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === ERP_PATH) {
+    return (
+      <>
+        <JsonLd data={erpSchema()} />
+        <ErpPage />
       </>
     );
   }

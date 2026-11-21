@@ -101,6 +101,9 @@ const featureList = [
   "Discharge management",
   "Reports and analytics",
   "Role-based access control",
+  "Queue and token management",
+  "Visitor and attendant management",
+  "Patient and doctor mobile apps",
 ];
 
 export function hospitalManagementSchema() {
@@ -205,7 +208,7 @@ const problems = [
 
 const modules: { title: string; level: "Core" | "Configurable"; text: string }[] = [
   { title: "Patient Registration and Management", level: "Core", text: "Create a unique medical record number for every patient, capture demographics, contacts, guardians and insurance details, and search instantly by name, phone or ID. Returning patients are recognized, so records are not duplicated." },
-  { title: "Appointment Scheduling", level: "Core", text: "Manage doctor calendars, time slots, walk-ins and follow-ups. Front-desk staff see real availability, can reschedule in seconds, and keep queues moving with token or sequence numbers." },
+  { title: "Appointment Scheduling", level: "Core", text: "Manage doctor calendars, time slots, walk-ins and follow-ups. Front-desk staff see real availability, can reschedule in seconds. A built-in hospital queue management system issues token numbers and shows waiting status on display screens, so patients know when they will be seen." },
   { title: "Electronic Medical Records (EMR)", level: "Core", text: "Record vitals, complaints, history, diagnoses, clinical notes, orders and prescriptions in a structured digital chart. Doctors review past visits and results in one view instead of flipping through paper files." },
   { title: "Electronic Health Records (EHR)", level: "Configurable", text: "Where a hospital needs to share records with outside providers, labs or networks, the EMR can be extended toward EHR-style data exchange. Interoperability standards such as HL7 or FHIR are scoped per project." },
   { title: "Doctor and Staff Management", level: "Core", text: "Maintain profiles for doctors, nurses, technicians and administrative staff, with departments, specialties, schedules and duty rosters. Link consultants to their fees and service charges." },
@@ -222,6 +225,9 @@ const modules: { title: string; level: "Core" | "Configurable"; text: string }[]
   { title: "Insurance and Claims Management", level: "Configurable", text: "Record payers and policies, check coverage, split bills between patient and insurer, and prepare claim documents. Electronic claim submission depends on your payers and clearinghouse and is scoped per project." },
   { title: "Discharge Management", level: "Core", text: "Generate discharge summaries from the stay's records, confirm medication and follow-up instructions, settle the final bill and release the bed in one coordinated process." },
   { title: "Reports and Analytics", level: "Core", text: "Daily collections, department revenue, OPD and IPD volumes, bed occupancy, pharmacy sales and stock reports, with exports for finance teams. Custom dashboards can be added." },
+  { title: "Visitor and Attendant Management", level: "Configurable", text: "Works as a hospital visitor management system: register visitors and patient attendants at the gate, issue passes linked to the admitted patient, and enforce ward visiting hours and visitor limits." },
+  { title: "Quality and Incident Tracking", level: "Configurable", text: "Record incidents, infection control indicators, audit checklists and patient feedback. This data supports your hospital quality management system and makes accreditation preparation easier." },
+  { title: "Patient and Doctor Mobile Apps", level: "Configurable", text: "A hospital management system mobile app lets patients book appointments, view lab reports and pay bills, while doctors check schedules and results on the go. Apps connect to the same patient record." },
   { title: "Role-Based Access Control", level: "Core", text: "Define what each role can view, create, edit or approve. A pharmacist sees prescriptions, a cashier sees bills, and only authorized clinicians see full clinical notes." },
   { title: "Multi-Department Coordination", level: "Core", text: "Orders, results, transfers and charges flow between departments automatically, and multi-branch setups can share patient records and consolidated reporting." },
 ];
@@ -246,6 +252,7 @@ const benefits = [
   { title: "Inventory tracking", text: "Pharmacy and store stock levels, expiries and consumption are visible, making purchasing decisions easier." },
   { title: "Operational reporting", text: "Management reports are generated from live data instead of being compiled by hand at month end." },
   { title: "Reduced repetitive data entry", text: "Information captured once at registration flows to every later step, saving staff time and reducing typing errors." },
+  { title: "Easy-to-learn interface", text: "The hospital management system interface is arranged by role, so reception, nurses, pharmacy and billing each see the screens they use daily, which shortens training." },
   { title: "A foundation for growth", text: "New departments, branches or integrations can be added to the same platform instead of buying another standalone tool." },
 ];
 
@@ -567,10 +574,10 @@ export default function HospitalManagementPage() {
               A hospital runs on hundreds of handoffs every day. A patient checks in at the front desk, waits for a doctor, gets sent for a blood test, returns with results, receives a prescription, pays a bill and, if admitted, moves through wards, theatres and discharge. When every one of those steps lives in a separate spreadsheet, paper register or standalone tool, staff spend their time chasing information instead of acting on it.
             </p>
             <p>
-              The ClickMasters Hospital Management System brings those handoffs into one place. Registration creates a single patient record. Every department that touches the patient (consultation, laboratory, radiology, pharmacy, nursing, billing) reads from and writes to that same record. Administrators see what is happening across the hospital without calling each department for an update.
+              ClickMasters hospital management system software brings those handoffs into one place. Registration creates a single patient record. Every department that touches the patient (consultation, laboratory, radiology, pharmacy, nursing, billing) reads from and writes to that same record. Administrators see what is happening across the hospital without calling each department for an update.
             </p>
             <p>
-              We approach HMS as a configurable product, not a one-size-fits-all box. Our team maps your departments, approval chains and billing rules first, then configures the modules you need. Where your workflows go beyond standard configuration, our{" "}
+              We approach HMS as a configurable product, not a one-size-fits-all box. Our team maps your departments, approval chains and billing rules first, then configures the modules you need. When you need a custom hospital management system because your workflows go beyond standard configuration, our{" "}
               <Link href="/software-development" className="font-medium text-foreground underline underline-offset-4">
                 custom software development services
               </Link>{" "}
@@ -708,7 +715,7 @@ export default function HospitalManagementPage() {
         <Section id="who" title="Who can use our hospital management system?">
           <Prose>
             <p>
-              Because modules are selected per project, the same platform can be scaled down for a single-site facility or scaled up for a group of hospitals.
+              Because modules are selected per project, our hospital management system solutions can be scaled down for a single-site facility or scaled up for a group of hospitals.
             </p>
             <p>
               We also offer hospital management software for small hospitals and clinics that need fewer modules today but want room to grow.
@@ -744,7 +751,7 @@ export default function HospitalManagementPage() {
           </h3>
           <Prose>
             <p className="mt-5">
-              A cloud-based hospital management system runs on hosted infrastructure and is accessed securely through a browser or app. An on-premise system runs on servers inside or controlled directly by the hospital. Both are valid choices; the right one depends on your IT capacity, connectivity, budget and data policies.
+              A cloud-based hospital management system runs on hosted infrastructure, and staff use the hospital management system application securely through a browser or mobile device. An on-premise system runs on servers inside or controlled directly by the hospital. Both are valid choices; the right one depends on your IT capacity, connectivity, budget and data policies.
             </p>
           </Prose>
           <CompareTable
@@ -828,7 +835,7 @@ export default function HospitalManagementPage() {
         <Section id="why-us" title="Why choose ClickMasters for hospital management software?">
           <Prose>
             <p>
-              ClickMasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. We treat a hospital management system as a long-term software partnership, not a one-time installation.
+              ClickMasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. Many hospital management software companies sell a fixed package; we treat a hospital management system as a long-term software partnership, not a one-time installation.
             </p>
             <p>
               You can read more{" "}
