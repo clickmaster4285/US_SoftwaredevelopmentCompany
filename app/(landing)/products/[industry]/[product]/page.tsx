@@ -58,6 +58,17 @@ import PracticeManagementPage, {
   practiceManagementSchema,
   practiceTitle,
 } from "../../practice-management-page";
+import ProductSeoPage, { productSeoMetadata, productSeoSchema } from "../../product-seo-page";
+import { productSeoPages } from "../../product-seo-registry";
+import FitnessBookingPage, {
+  FB_PATH,
+  fbDescription,
+  fbImages,
+  fbOgDescription,
+  fbOgTitle,
+  fbSchema,
+  fbTitle,
+} from "../../fitness-booking-page";
 import YogaStudioPage, {
   YS_PATH,
   ysDescription,
@@ -212,6 +223,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!match) return {};
 
   const path = productPath(match.industry.slug, match.product.slug);
+  const seoPage = productSeoPages[path];
+  if (seoPage) return withEditedPageSeo(path, productSeoMetadata(seoPage));
+  if (path === FB_PATH) {
+    return withEditedPageSeo(path, {
+      title: { absolute: fbTitle },
+      description: fbDescription,
+      alternates: { canonical: path },
+      openGraph: {
+        title: fbOgTitle,
+        description: fbOgDescription,
+        url: path,
+        images: [
+          {
+            url: fbImages.og.src,
+            width: fbImages.og.width,
+            height: fbImages.og.height,
+            alt: fbImages.og.alt,
+          },
+        ],
+      },
+    });
+  }
   if (path === YS_PATH) {
     return withEditedPageSeo(path, {
       title: { absolute: ysTitle },
@@ -740,6 +773,25 @@ export default async function Page({ params }: PageProps) {
       <>
         <JsonLd data={hospitalManagementSchema()} />
         <HospitalManagementPage />
+      </>
+    );
+  }
+
+  const seoPage = productSeoPages[productPath(match.industry.slug, match.product.slug)];
+  if (seoPage) {
+    return (
+      <>
+        <JsonLd data={productSeoSchema(seoPage)} />
+        <ProductSeoPage data={seoPage} />
+      </>
+    );
+  }
+
+  if (productPath(match.industry.slug, match.product.slug) === FB_PATH) {
+    return (
+      <>
+        <JsonLd data={fbSchema()} />
+        <FitnessBookingPage />
       </>
     );
   }
