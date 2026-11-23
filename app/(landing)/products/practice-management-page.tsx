@@ -907,7 +907,7 @@ export default function PracticeManagementPage() {
         <Section
           id="who-benefits"
           eyebrow="Practice models"
-          title="Who Can Benefit From This Software?"
+          title="Practice Management Software by Specialty and Practice Model"
         >
           <Prose>
             <p>
@@ -1071,7 +1071,9 @@ export default function PracticeManagementPage() {
           </ul>
           <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
             Lists of the top medical practice management software rarely
-            account for your specialties, payers and locations. The best
+            account for your specialties, payers and locations, and packaged
+            medical practice management software systems are built for the
+            average practice rather than yours. The best
             medical practice management software for your organization is the
             one that fits those workflows, so if a ready-made product already
             fits, it may be the better choice. We&apos;ll help you decide
@@ -1285,7 +1287,9 @@ export default function PracticeManagementPage() {
               integrations, expected scale, security needs and hosting
               preferences. The options below come from the ClickMasters
               development toolkit. They are candidate choices, not the stack of
-              an existing product.
+              an existing product. Most practices choose web based medical
+              practice management software, so staff sign in from a browser at
+              any location with nothing to install.
             </p>
           </Prose>
           <DiagramFigure

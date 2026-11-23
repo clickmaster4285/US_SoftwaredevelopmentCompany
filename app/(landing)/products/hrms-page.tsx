@@ -402,8 +402,8 @@ export default function HrmsPage() {
           <Prose>
             <p>
               HRMS stands for <strong className="text-foreground">human resource management system</strong>.
-              If you searched human resource management HRM explained in 10 minutes, the useful
-              version is shorter: HRM is the practice of hiring, paying and developing people, and
+              Human resource management (HRM) explained simply: HRM is the practice of hiring,
+              paying and developing people, and
               HRMS software is the platform that runs those processes across the employee lifecycle,
               from recruiting and onboarding through day-to-day administration, time off,
               performance, development and offboarding.

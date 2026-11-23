@@ -544,7 +544,7 @@ export const pharmacyFaqs = [
     question:
       "How can pharmacy technicians use pharmacy management software?",
     answer:
-      "Technicians can receive and enter prescriptions, verify patient and insurance information, prepare refill requests, scan stock and fill prescriptions, queue will-call orders, receive inventory and assist with claims follow-up. Role-based permissions should prevent technicians from performing pharmacist-only verification or clinical approval tasks.",
+      "Pharmacy management software for pharmacy technicians lets them receive and enter prescriptions, verify patient and insurance information, prepare refill requests, scan stock and fill prescriptions, queue will-call orders, receive inventory and assist with claims follow-up. Role-based permissions should prevent technicians from performing pharmacist-only verification or clinical approval tasks.",
   },
   {
     question:

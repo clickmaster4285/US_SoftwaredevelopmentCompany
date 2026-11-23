@@ -208,7 +208,7 @@ const problems = [
 
 const modules: { title: string; level: "Core" | "Configurable"; text: string }[] = [
   { title: "Patient Registration and Management", level: "Core", text: "Create a unique medical record number for every patient, capture demographics, contacts, guardians and insurance details, and search instantly by name, phone or ID. Returning patients are recognized, so records are not duplicated." },
-  { title: "Appointment Scheduling", level: "Core", text: "Manage doctor calendars, time slots, walk-ins and follow-ups. Front-desk staff see real availability, can reschedule in seconds. A built-in hospital queue management system issues token numbers and shows waiting status on display screens, so patients know when they will be seen." },
+  { title: "Appointment Scheduling and Queues", level: "Core", text: "Manage doctor calendars, time slots, walk-ins and follow-ups. Front-desk staff see real availability, can reschedule in seconds. A built-in hospital queue management system issues token numbers and shows waiting status on display screens, so patients know when they will be seen." },
   { title: "Electronic Medical Records (EMR)", level: "Core", text: "Record vitals, complaints, history, diagnoses, clinical notes, orders and prescriptions in a structured digital chart. Doctors review past visits and results in one view instead of flipping through paper files." },
   { title: "Electronic Health Records (EHR)", level: "Configurable", text: "Where a hospital needs to share records with outside providers, labs or networks, the EMR can be extended toward EHR-style data exchange. Interoperability standards such as HL7 or FHIR are scoped per project." },
   { title: "Doctor and Staff Management", level: "Core", text: "Maintain profiles for doctors, nurses, technicians and administrative staff, with departments, specialties, schedules and duty rosters. Link consultants to their fees and service charges." },
@@ -225,9 +225,9 @@ const modules: { title: string; level: "Core" | "Configurable"; text: string }[]
   { title: "Insurance and Claims Management", level: "Configurable", text: "Record payers and policies, check coverage, split bills between patient and insurer, and prepare claim documents. Electronic claim submission depends on your payers and clearinghouse and is scoped per project." },
   { title: "Discharge Management", level: "Core", text: "Generate discharge summaries from the stay's records, confirm medication and follow-up instructions, settle the final bill and release the bed in one coordinated process." },
   { title: "Reports and Analytics", level: "Core", text: "Daily collections, department revenue, OPD and IPD volumes, bed occupancy, pharmacy sales and stock reports, with exports for finance teams. Custom dashboards can be added." },
-  { title: "Visitor and Attendant Management", level: "Configurable", text: "Works as a hospital visitor management system: register visitors and patient attendants at the gate, issue passes linked to the admitted patient, and enforce ward visiting hours and visitor limits." },
-  { title: "Quality and Incident Tracking", level: "Configurable", text: "Record incidents, infection control indicators, audit checklists and patient feedback. This data supports your hospital quality management system and makes accreditation preparation easier." },
-  { title: "Patient and Doctor Mobile Apps", level: "Configurable", text: "A hospital management system mobile app lets patients book appointments, view lab reports and pay bills, while doctors check schedules and results on the go. Apps connect to the same patient record." },
+  { title: "Hospital Visitor Management System", level: "Configurable", text: "Register visitors and patient attendants at the gate, issue passes linked to the admitted patient, and enforce ward visiting hours and visitor limits." },
+  { title: "Hospital Quality Management System", level: "Configurable", text: "Record incidents, infection control indicators, audit checklists, corrective actions and patient feedback. This data supports your quality program and makes accreditation preparation easier; accreditation outcomes depend on your own processes." },
+  { title: "Hospital Management System Mobile App", level: "Configurable", text: "A patient and doctor mobile app lets patients book appointments, view lab reports and pay bills, while doctors check schedules and results on the go. Apps connect to the same patient record." },
   { title: "Role-Based Access Control", level: "Core", text: "Define what each role can view, create, edit or approve. A pharmacist sees prescriptions, a cashier sees bills, and only authorized clinicians see full clinical notes." },
   { title: "Multi-Department Coordination", level: "Core", text: "Orders, results, transfers and charges flow between departments automatically, and multi-branch setups can share patient records and consolidated reporting." },
 ];
@@ -525,7 +525,7 @@ export default function HospitalManagementPage() {
             Complete healthcare management software
           </p>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-            One connected platform for patient registration, appointments, medical records, billing, pharmacy, laboratory, wards and reporting. Built and configured by ClickMasters around the way your hospital actually works.
+            Hospital management system software that connects patient registration, appointments, medical records, billing, pharmacy, laboratory, wards and reporting in one platform. Built and configured by ClickMasters around the way your hospital actually works.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -638,18 +638,18 @@ export default function HospitalManagementPage() {
             ))}
           </div>
           <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
-            An integrated hospital management system does not replace good clinical judgment or good management. It removes the friction around them, so people spend more time on patients and less time looking for information.
+            An integrated HMS does not replace good clinical judgment or good management. It removes the friction around them, so people spend more time on patients and less time looking for information.
           </p>
         </Section>
 
         <Section
           id="modules"
           eyebrow="Scope"
-          title="Complete hospital management system features and modules"
+          title="Hospital management system software features and modules"
         >
           <Prose>
             <p>
-              Below are the hospital management system modules available in our HMS scope. Every hospital is different, so modules are selected and configured during requirement analysis. We label each one so you know what to expect.
+              Below are the hospital management system features available in our HMS scope. Every hospital is different, so modules are selected and configured during requirement analysis. We label each one so you know what to expect.
             </p>
           </Prose>
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
@@ -737,7 +737,7 @@ export default function HospitalManagementPage() {
         >
           <Prose>
             <p>
-              Many facilities still run on paper registers, spreadsheets and disconnected tools. Here is how that compares with an integrated hospital management system.
+              Many facilities still run on paper registers, spreadsheets and disconnected tools. Here is how that compares with an integrated system.
             </p>
           </Prose>
           <CompareTable
@@ -816,10 +816,10 @@ export default function HospitalManagementPage() {
           </p>
         </Section>
 
-        <Section id="cost" title="How much does hospital management software cost?">
+        <Section id="cost" title="How much does hospital management system software cost?">
           <Prose>
             <p>
-              There is no honest single price for a hospital management system, because two hospitals rarely need the same thing. A 20-bed facility with OPD, pharmacy and billing has very different needs from a multi-specialty hospital with theatres, ICU, imaging and insurance integration. These are the factors that shape the cost:
+              There is no honest single price for hospital software, because two hospitals rarely need the same thing. A 20-bed facility with OPD, pharmacy and billing has very different needs from a multi-specialty hospital with theatres, ICU, imaging and insurance integration. These are the factors that shape the cost:
             </p>
           </Prose>
           <ul className="mt-6 max-w-3xl list-disc space-y-2 pl-5 text-sm leading-6 text-muted-foreground">
@@ -832,10 +832,10 @@ export default function HospitalManagementPage() {
           </p>
         </Section>
 
-        <Section id="why-us" title="Why choose ClickMasters for hospital management software?">
+        <Section id="why-us" title="Choosing among hospital management software companies">
           <Prose>
             <p>
-              ClickMasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. Many hospital management software companies sell a fixed package; we treat a hospital management system as a long-term software partnership, not a one-time installation.
+              When you compare hospital management software companies, look at how they handle your workflows, integrations, data migration and support after launch, not only the feature list. ClickMasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. Many vendors sell a fixed package; we treat hospital management system software as a long-term partnership, not a one-time installation.
             </p>
             <p>
               You can read more{" "}

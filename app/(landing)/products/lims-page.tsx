@@ -915,7 +915,7 @@ export default function LimsPage() {
         <Section
           id="custom-lims"
           eyebrow="Build for your lab"
-          title="Custom LIMS Software Development"
+          title="Custom Laboratory Information Management System Development"
         >
           <div className="grid gap-10 lg:grid-cols-2">
             <div>

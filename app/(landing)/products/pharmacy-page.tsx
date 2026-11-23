@@ -634,7 +634,7 @@ export default function PharmacyPage() {
               ],
               [
                 "App and online access",
-                "A pharmacy management system app or secure pharmacy management system website can support patient refills, prescription status, appointment or delivery notifications and payment. Staff dispensing and claims workflows should use purpose-built counter, pharmacy and mobile interfaces.",
+                "A pharmacy management system app or secure pharmacy management system website lets patients use the pharmacy management system online for refills, prescription status, appointment or delivery notifications and payment. Staff dispensing and claims workflows should use purpose-built counter, pharmacy and mobile interfaces.",
               ],
               [
                 "Retail pharmacy operations",
@@ -642,7 +642,7 @@ export default function PharmacyPage() {
               ],
               [
                 "Artificial intelligence assistance",
-                "Modern pharmacy medication management systems can use artificial intelligence to forecast demand, summarize recurring claims issues, route support work and rank operational exceptions. AI recommendations remain subject to licensed drug data, pharmacist review and auditable decision rules.",
+                "A modern pharmacy medication management system can use artificial intelligence to forecast demand, summarize recurring claims issues, route support work and rank operational exceptions. AI recommendations remain subject to licensed drug data, pharmacist review and auditable decision rules.",
               ],
               [
                 "Complete pharmacy software",

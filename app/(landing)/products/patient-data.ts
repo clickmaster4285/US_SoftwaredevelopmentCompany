@@ -251,7 +251,7 @@ export const benefits = [
 export const organizationRows = [
   [
     "Hospitals",
-    "Enterprise master patient index, outpatient department scheduling, pre-admission registration, patient flow across departments",
+    "A hospital patient management system needs an enterprise master patient index, outpatient department scheduling, pre-admission registration and patient flow across departments",
   ],
   [
     "Private medical practices",
@@ -652,7 +652,7 @@ export const patientFaqs = [
     question:
       "Is patient management software the same as practice management software?",
     answer:
-      "They overlap on scheduling and registration. Practice management software also covers billing, claims and practice finances. Patient management software goes deeper into intake, communication, portals, patient flow and care coordination. Many organizations use both, connected through shared patient and appointment data.",
+      "They overlap on scheduling and registration. Practice management software is the system that runs the business of a practice, so it also covers billing, claims and practice finances. Patient management software goes deeper into intake, communication, portals, patient flow and care coordination. Many organizations use both, connected through shared patient and appointment data.",
   },
   {
     question: "What features should a patient management system include?",

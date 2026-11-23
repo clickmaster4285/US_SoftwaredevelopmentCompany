@@ -1132,6 +1132,22 @@ export const practiceFaqs = [
       "Practice management software runs the business: scheduling, accounts, billing, claims, payments and reporting. An EHR holds the clinical record: diagnoses, medications, results, notes and care history that can be shared across providers. Most practices use both. Integrating them means patients are registered once and coded clinical work flows directly into billing. Smaller practices sometimes prefer combined medical records practice management software, which we can build as one product.",
   },
   {
+    question: "Is there practice management software for dentists?",
+    answer:
+      "Yes. Practice management software for dentists adds dental-specific workflows to the core scheduling and billing modules: chair and hygienist scheduling, treatment plans with phased procedures, six-month recall reminders, dental insurance claims and production reporting by provider and chair. We can build a dedicated dental system or add dental modules to a multi-specialty platform.",
+  },
+  {
+    question:
+      "Can practice management software support therapy and mental health practices?",
+    answer:
+      "Yes. Therapy and mental health practices need recurring session scheduling, therapist caseloads, authorization and visit-limit tracking, telehealth sessions and stricter access controls around session notes. These rules are configured in the permissions model so only the right clinicians see sensitive information, while billing staff see what they need to submit claims.",
+  },
+  {
+    question: "Does practice management software work for optometry practices?",
+    answer:
+      "Yes. Optometry and eye care practices combine medical visits with retail. Their software needs exam-lane and pre-test scheduling, optical orders, frame and lens inventory, and billing that handles vision plans alongside medical insurance. These modules can share the same patient record and reporting as the rest of the practice.",
+  },
+  {
     question: "Can practice management software manage multiple physicians?",
     answer:
       "Yes. Each physician has a profile with specialty, locations, visit types, billing identifiers and schedule templates, while the practice shares one calendar, patient database and billing system. Schedulers can search across providers for the first suitable slot, and reports show appointments, productivity and collections for each physician.",

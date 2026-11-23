@@ -22,7 +22,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Software for hospitals, clinics, pharmacies, and labs that need patient records, visits, and billing in one place.",
     lead:
-      "A patient moves from registration to the visit, the test, the medicine, and the bill. These products keep that record in one system for the hospital, the clinic, the pharmacy, and the lab.",
+      "A patient moves from registration to the visit, the test, the medicine, and the bill. These products keep that record in one system for the hospital, the clinic, the pharmacy, and the lab: hospital management system software, clinic management software, medical practice management software, electronic health records (EHR) and electronic medical records (EMR) software, a pharmacy management system, a laboratory information management system, medical billing software, patient management software and telemedicine software.",
     audiences: ["Hospitals", "Clinics and practices", "Pharmacies", "Diagnostic labs"],
     icon: "Stethoscope",
     products: [
@@ -35,6 +35,8 @@ export const productIndustries: ProductIndustry[] = [
           "Admissions, wards, and bed status",
           "Clinical notes tied to each stay",
           "Billing linked to the patient visit",
+          "Hospital queue and visitor management",
+          "Custom hospital management system software",
         ],
       },
       {
@@ -46,6 +48,7 @@ export const productIndustries: ProductIndustry[] = [
           "Appointment calendar for providers",
           "Visit notes and patient history",
           "Clinic billing and receipts",
+          "Clinic management software with a staff app",
         ],
       },
       {
@@ -57,6 +60,7 @@ export const productIndustries: ProductIndustry[] = [
           "Provider schedules and rooms",
           "Claims and payment tracking",
           "Front-desk and clinical handoff",
+          "Practice management software for dental, therapy and mental health practices",
         ],
       },
       {
@@ -68,6 +72,7 @@ export const productIndustries: ProductIndustry[] = [
           "Longitudinal patient chart",
           "Shared access for the care team",
           "History of diagnoses and results",
+          "Electronic health record system software for care teams",
         ],
       },
       {
@@ -79,6 +84,7 @@ export const productIndustries: ProductIndustry[] = [
           "Encounter notes and charts",
           "Problem, medication, and allergy lists",
           "Search across the practice record",
+          "Electronic medical records EMR software for practices",
         ],
       },
       {
@@ -90,6 +96,7 @@ export const productIndustries: ProductIndustry[] = [
           "Prescription intake and dispensing",
           "Stock levels and expiries",
           "Supplier and purchase records",
+          "Cloud based pharmacy management system",
         ],
       },
       {
@@ -101,6 +108,7 @@ export const productIndustries: ProductIndustry[] = [
           "Sample intake and barcodes",
           "Test status through the lab",
           "Result review and reporting",
+          "Laboratory sample and workflow management software",
         ],
       },
       {
@@ -112,6 +120,7 @@ export const productIndustries: ProductIndustry[] = [
           "Claims prepared from visits",
           "Payments, denials, and balances",
           "Billing reports for the practice",
+          "Medical billing and coding software with clearinghouse integration",
         ],
       },
       {
@@ -123,6 +132,7 @@ export const productIndustries: ProductIndustry[] = [
           "Registration and demographics",
           "Visit history and follow-ups",
           "Searchable patient list",
+          "Patient management solutions for clinics and hospitals",
         ],
       },
       {
@@ -134,6 +144,7 @@ export const productIndustries: ProductIndustry[] = [
           "Online booking for virtual visits",
           "Video consult for patient and clinician",
           "Visit notes stored with the chart",
+          "Telemedicine software with EHR and EMR integration",
         ],
       },
     ],
@@ -144,7 +155,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Systems for finance, people, customers, inventory, and the processes that keep a company running.",
     lead:
-      "A company runs on people, customers, stock, documents, and the steps between them. Each product here covers one of those jobs, so a department can start with the system it actually needs.",
+      "A company runs on people, customers, stock, documents, and the steps between them. Each product here covers one of those jobs, so a department can start with the system it actually needs: enterprise resource planning (ERP) software, customer relationship management (CRM) software, a human resource management system (HRMS), payroll management software, an employee attendance management system, inventory management software, supply chain management software, a document management system, business process management software and asset management software.",
     audiences: ["Operations teams", "Finance and HR", "Sales teams", "Warehouse and procurement"],
     icon: "Building2",
     products: [
@@ -157,6 +168,7 @@ export const productIndustries: ProductIndustry[] = [
           "Finance and operational records together",
           "Inventory tied to orders and purchasing",
           "Shared reports across departments",
+          "Enterprise resource planning ERP software solution",
         ],
       },
       {
@@ -168,6 +180,7 @@ export const productIndustries: ProductIndustry[] = [
           "Leads, accounts, and contacts",
           "Pipeline stages and follow-ups",
           "Activity history on every deal",
+          "Customer relationship management CRM software system",
         ],
       },
       {
@@ -179,6 +192,7 @@ export const productIndustries: ProductIndustry[] = [
           "Employee records in one place",
           "Leave requests and approvals",
           "Hiring steps through to joining",
+          "Human resource management system HRMS for growing teams",
         ],
       },
       {
@@ -190,6 +204,7 @@ export const productIndustries: ProductIndustry[] = [
           "Pay runs and salary components",
           "Deductions and adjustments",
           "Payslips and payroll history",
+          "Payroll management solutions for small business",
         ],
       },
       {
@@ -201,6 +216,7 @@ export const productIndustries: ProductIndustry[] = [
           "Check-in and shift records",
           "Late arrivals and absences",
           "Attendance ready for payroll",
+          "Employee time attendance software with a tracker app",
         ],
       },
       {
@@ -212,6 +228,7 @@ export const productIndustries: ProductIndustry[] = [
           "On-hand stock by location",
           "Receipts, issues, and transfers",
           "Reorder points and low-stock alerts",
+          "Cloud inventory management software with barcode scanning",
         ],
       },
       {
@@ -223,6 +240,7 @@ export const productIndustries: ProductIndustry[] = [
           "Suppliers and purchase orders",
           "Order status across the chain",
           "Receipt against what was ordered",
+          "Supply chain management SCM software with risk management",
         ],
       },
       {
@@ -234,6 +252,7 @@ export const productIndustries: ProductIndustry[] = [
           "Central library for files",
           "Permissions by team or role",
           "Version history on each document",
+          "Cloud based document management system software",
         ],
       },
       {
@@ -245,6 +264,7 @@ export const productIndustries: ProductIndustry[] = [
           "Process steps and owners",
           "Requests moving through approval",
           "Visibility into stalled work",
+          "Business process management BPM software and automation",
         ],
       },
       {
@@ -256,6 +276,7 @@ export const productIndustries: ProductIndustry[] = [
           "Asset register and ownership",
           "Maintenance and service history",
           "Status from purchase to retirement",
+          "Asset management software for IT, utilities and facilities",
         ],
       },
     ],

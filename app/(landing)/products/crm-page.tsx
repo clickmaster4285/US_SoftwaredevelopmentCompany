@@ -428,7 +428,7 @@ export default function CrmPage() {
                   they found you, what they&apos;ve discussed with your team, what they&apos;ve bought,
                   and what should happen next.
                 </p>
-                <p>A CRM platform typically does three jobs:</p>
+                <p>Customer relationship management software platforms typically do three jobs:</p>
               </Prose>
               <ol className="mt-5 grid gap-3">
                 {threeJobs.map(([title, text], index) => (
@@ -758,8 +758,9 @@ export default function CrmPage() {
           <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
             Customer relationship management software companies and customer relationship
             management software providers usually sell a general pipeline. A third path is often
-            the right one: extend an existing CRM with customer relationship management CRM apps,
-            portals and integrations rather than replacing it.
+            the right one: extend an existing CRM with customer relationship management CRM software
+            applications, such as customer relationship management CRM apps, portals and integrations,
+            rather than replacing it.
           </p>
         </Section>
 

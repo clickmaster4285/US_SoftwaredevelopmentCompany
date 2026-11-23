@@ -24,7 +24,12 @@ import route from "./logistics-route-data";
 import maintenance from "./logistics-maintenance-data";
 import dispatch from "./logistics-dispatch-data";
 import courier from "./logistics-courier-data";
+import reProperty from "./realestate-property-data";
+import reCrm from "./realestate-crm-data";
+import reRental from "./realestate-rental-data";
+import reListing from "./realestate-listing-data";
+import reConstruction from "./realestate-construction-data";
 
-const pages: ProductPageData[] = [school, college, university, lms, sis, exam, coaching, course, grocery, retailPos, restaurantPos, retailInventory, ecommerce, marketplace, wms, oms, fleet, delivery, tms, route, maintenance, dispatch, courier];
+const pages: ProductPageData[] = [school, college, university, lms, sis, exam, coaching, course, grocery, retailPos, restaurantPos, retailInventory, ecommerce, marketplace, wms, oms, fleet, delivery, tms, route, maintenance, dispatch, courier, reProperty, reCrm, reRental, reListing, reConstruction];
 
 export const productSeoPages: Record<string, ProductPageData> = Object.fromEntries(pages.map((p) => [p.path, p]));
