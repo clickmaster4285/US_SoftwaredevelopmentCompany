@@ -313,11 +313,14 @@ export function ExploreSection({ service }) {
     ourServices.description ||
     service.servicesSection?.description ||
     "Choose the focused service line that best matches your product, platform, or operational goal.";
-  const servicesToRender =
+  // Filter before the empty check: a consolidated hub (all subs retired)
+  // otherwise rendered the Explore heading over an empty grid.
+  const servicesToRender = (
     service.subServices ||
     ourServices.subServices ||
     ourServices.services ||
-    [];
+    []
+  ).filter((item) => !isRetiredSub(service.slug, item.slug));
 
   if (!servicesToRender.length) return null;
 
@@ -331,7 +334,6 @@ export function ExploreSection({ service }) {
         />
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {servicesToRender
-            .filter((item) => !isRetiredSub(service.slug, item.slug))
             .map((item) => (
             <Link
               key={item.slug}

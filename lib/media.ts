@@ -5,7 +5,8 @@ export function resolveMediaSrc(image: string | StaticImageData): string {
 }
 
 /**
- * What the stock hero photos actually show, keyed by Unsplash photo id.
+ * What the stock hero photos actually show, keyed by the photo id in the
+ * local file name (public/images/photo-<id>.jpg, originally from ).
  * Each entry was written from viewing the image. Add an entry when a new
  * photo is introduced; unknown photos fall back to the page subject alone.
  */
@@ -39,9 +40,7 @@ const STOCK_PHOTO_DESCRIPTIONS: Record<string, string> = {
 };
 
 function stockPhotoDescription(src?: string) {
-  const id = src?.match(
-    /images\.unsplash\.com\/photo-([0-9a-f]+-[0-9a-f]+)/i,
-  )?.[1];
+  const id = src?.match(/\/images\/photo-([0-9a-f]+-[0-9a-f]+)\.jpg/i)?.[1];
   return id ? STOCK_PHOTO_DESCRIPTIONS[id] : undefined;
 }
 
