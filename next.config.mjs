@@ -58,13 +58,6 @@ const nextConfig = {
     imageSizes: [64, 96, 128, 256, 384],
     formats: ["image/webp"],
     qualities: [60, 75],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-    ],
   },
 };
 

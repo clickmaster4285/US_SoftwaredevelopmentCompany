@@ -186,6 +186,8 @@ export function ExploreSection({ service }: { service: MainService }) {
     []
   ).filter((item) => !isRetiredSub(service.slug, item.slug));
 
+  if (!servicesToRender.length) return null;
+
   return (
     <section className="bg-background px-5 py-24 md:px-10">
       <div className="mx-auto max-w-7xl">

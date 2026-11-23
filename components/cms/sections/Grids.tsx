@@ -545,7 +545,7 @@ export function CmsBento({
               <>
                 <CmsImg
                   src={item.image}
-                  alt={item.title}
+                  alt=""
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-black/10" />
