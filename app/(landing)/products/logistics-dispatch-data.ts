@@ -468,6 +468,12 @@ const page: ProductPageData = {
       title: "How to Choose Truck Dispatch Software",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "There is no single best dispatch management software. Trucking fleets differ in size, freight type, lanes and how much dispatchers rely on load boards, so buyers usually compare options against their own daily workflow. These are the points worth checking:",
+          ],
+        },
+        {
           type: "checkGrid",
           items: [
             "Fleet size and number of dispatchers",

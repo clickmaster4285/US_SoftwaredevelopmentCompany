@@ -80,7 +80,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "A **courier management system** (also called courier management software, courier software or a parcel management system) is a platform that runs a courier company's bookings, pricing, pickups, hub operations, last-mile delivery, tracking, cash on delivery and billing. It covers:",
+            "A **courier management system** (also called courier management software, courier software, a courier service management system or a parcel management system) is a platform that runs a courier company's bookings, pricing, pickups, hub operations, last-mile delivery, tracking, cash on delivery and billing. It covers:",
           ],
         },
         {
@@ -183,6 +183,12 @@ const page: ProductPageData = {
       title: "How a Courier Management System Works",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "An end-to-end courier service management system follows each parcel from booking to settlement, with a scan or record at every handover:",
+          ],
+        },
+        {
           type: "numbered",
           cols: 5,
           items: [
@@ -209,6 +215,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Merchants choose the courier that is easiest to work with. A courier booking system gives every business customer a portal to create shipments, check prices with a rate calculator, print labels, request pickups and download invoices, plus an API for merchants whose stores should create shipments automatically.",
+            "Because it runs in the browser, an online courier management system needs nothing installed at the merchant's site. A web based courier management system also lets counter staff, hub teams and franchise agents work from any computer with a login.",
           ],
         },
         { type: "figure", image: "booking", caption: "Merchant booking portal with rate calculator and bulk upload" },
@@ -250,6 +257,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Hubs are where courier networks win or lose time. Parcels are scanned in from pickup routes, sorted by destination, put into sealed bags and loaded onto linehaul trucks under a manifest. At the destination hub, bags are opened, parcels are sorted to delivery routes and assigned to riders. Every scan updates tracking and catches missorts before they travel.",
+            "That scan discipline is what makes an efficient courier service management system in practice: fewer parcels handled twice, fewer missorts and faster turnaround between inbound and outbound trucks.",
           ],
         },
         {
@@ -372,6 +380,10 @@ const page: ProductPageData = {
           ],
         },
         { type: "figure", image: "analytics", caption: "Delivery success, returns, hub throughput and revenue by merchant" },
+        {
+          type: "note",
+          text: "Scan history, delivery attempts and address data can also support an AI-powered courier service management system, for example models that flag addresses likely to fail, forecast hub volume for staffing or suggest delivery windows. These are optional additions scoped against your own data, not default features.",
+        },
       ],
     },
     {
@@ -401,6 +413,12 @@ const page: ProductPageData = {
       eyebrow: "Compare",
       title: "Courier Management System vs. Delivery Management Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "The two are easy to confuse because both handle the last mile. A courier delivery management system is built for carriers serving many merchants, with rate cards, hubs and COD remittance, while delivery management software serves a single business delivering its own orders.",
+          ],
+        },
         {
           type: "table",
           caption: "Courier software compared with delivery management software",
@@ -445,6 +463,10 @@ const page: ProductPageData = {
             ["Partner carriers", "Handover and tracking APIs for other carriers"],
           ],
         },
+        {
+          type: "note",
+          text: "An API-first design also keeps the platform open to future delivery methods. An autonomous courier service management system that hands parcels to delivery robots or drones would depend on hardware and regulations that are still developing; with documented APIs, such channels could be connected later as another type of rider or partner.",
+        },
       ],
     },
     {
@@ -452,6 +474,12 @@ const page: ProductPageData = {
       eyebrow: "Reliability & security",
       title: "Reliability, Data Privacy and Security",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "A secure courier service management system limits each user to the data their role needs and keeps a record of every scan and cash event, so disputes and investigations start from facts:",
+          ],
+        },
         {
           type: "checklist",
           icon: "Lock",
@@ -487,6 +515,10 @@ const page: ProductPageData = {
             ["Pricing", "Per-shipment or per-user fees", "Build cost plus hosting and maintenance you control"],
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
           ],
+        },
+        {
+          type: "note",
+          text: "Either way, most courier companies run a cloud-based courier service management system so hubs, riders and merchants work from the same live data and capacity can grow for peak season. With custom software, you choose the hosting provider and region.",
         },
       ],
     },
@@ -610,7 +642,7 @@ const page: ProductPageData = {
       blocks: [
         {
           type: "cost",
-          intro: "The cost of custom courier software depends on:",
+          intro: "The cost of custom courier management system software depends on:",
           items: [
             "Number of hubs, franchises and riders",
             "Merchant portal, API and plugin needs",

@@ -38,7 +38,7 @@ const page: ProductPageData = {
     subhead: "Plan, tender, track and pay for every load from one system, so each shipment has an owner, a status and a cost you can explain.",
     paragraphs: [
       "A transportation management system is the software that runs freight from the moment an order needs to move until the carrier invoice is paid. It turns orders into loads, picks the right mode and carrier, tenders the load, books dock appointments, tracks the shipment, captures proof of delivery and audits the freight bill against the agreed rate.",
-      "Clickmasters designs and builds custom TMS software for US shippers, manufacturers, distributors, third-party logistics providers and freight brokers, shaped around your lanes, your carriers, your customers and the systems you already run.",
+      "Clickmasters designs and builds custom TMS (transportation management system) software for US shippers, manufacturers, distributors, third-party logistics providers and freight brokers. The result is a logistics transportation management system shaped around your lanes, your carriers, your customers and the systems you already run.",
     ],
     image: "dashboard",
     caption: "Shipments in transit, on-time rate, open tenders, exceptions and spend by mode",
@@ -67,7 +67,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Most transportation teams start with email, spreadsheets and carrier websites. An order comes in, someone calls three carriers for a quote, books the cheapest one, emails the warehouse a pickup time and then checks the carrier's site twice a day to see where the truck is. When the invoice arrives weeks later, nobody remembers whether the detention charge was agreed.",
-            "That works for a handful of loads a week. It breaks down as volume grows: partial loads that could have been combined ship separately, contract rates get ignored, customers call for status updates the team doesn't have, and freight bills are paid without being checked. Transportation is often one of a company's largest controllable costs, and without a system it is one of the least visible.",
+            "That works for a handful of loads a week. It breaks down as volume grows: partial loads that could have been combined ship separately, contract rates get ignored, customers call for status updates the team doesn't have, and freight bills are paid without being checked. Transportation is often one of a company's largest controllable costs, and without a system it is one of the least visible. That gap is what transportation management systems (TMS) were built to close.",
           ],
         },
       ],
@@ -95,6 +95,12 @@ const page: ProductPageData = {
             ["Delivery", "Proof of delivery, claims and returns"],
             ["Settlement", "Freight audit, invoice matching, billing and payment"],
             ["Insight", "Cost per shipment, lanes, carrier scorecards and on-time rate"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Naming varies by region. US buyers usually say transportation management system, while UK, European and Asian teams more often say transport management system, and product listings mix both. A TMS transport management system and a TMS transportation management system describe the same category of software, and so do transport management systems sold under either name. These transportation management software systems are different from transportation systems management, a public-sector discipline for improving road and traffic networks, and from transportation system management plans written by cities and regional agencies.",
           ],
         },
         {
@@ -136,6 +142,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Carrier connectivity, tracking data and rating engines depend on the providers and carriers you work with.",
+            "Together, these modules make an automated transportation management system: rules handle routine rating, tendering, document generation and invoice matching, so planners spend their time on exceptions. An advanced transportation management system may also add load optimization, dynamic routing guides or predictive ETAs; those are scoped only where your freight volume justifies them.",
           ],
         },
         {
@@ -171,7 +178,7 @@ const page: ProductPageData = {
             { title: "EDI and API Connectivity", icon: "Webhook", text: "Electronic tenders, status updates and invoices exchanged with carriers and trading partners.", solves: "Phone and email updates." },
             { title: "Multi-Site and Multi-Company", icon: "Building2", text: "Several warehouses, plants, business units or customers managed with their own rules and shared carriers.", value: "Control across the whole network." },
             { title: "Carrier Scorecards", icon: "Award", text: "On-time pickup and delivery, tender acceptance, claims and invoice accuracy by carrier.", value: "Award freight based on performance." },
-            { title: "Freight Analytics", icon: "BarChart3", text: "Spend by mode, lane, customer and carrier, cost per shipment, cost per pound and on-time rate.", value: "Decisions based on real freight data." },
+            { title: "Freight Analytics", icon: "BarChart3", text: "Spend by mode, lane, customer and carrier, cost per shipment, cost per pound and on-time rate, shown on a transport management system dashboard for planners and finance.", value: "Decisions based on real freight data." },
           ],
         },
         { type: "cta", label: "Build a Custom Transportation Management System" },
@@ -227,6 +234,12 @@ const page: ProductPageData = {
         },
         { type: "figure", image: "loadPlanning", caption: "Orders consolidated into loads with weight, cube and pallet utilization" },
         {
+          type: "prose",
+          paragraphs: [
+            "Shippers of bulk goods such as grain, aggregates, chemicals and steel often need multimodal transportation management systems: rail, barge, freight by truck and short-sea legs planned as one shipment, with handoffs and transload points between modes. A rail transportation management system adds railcar orders, car tracking, demurrage and transload scheduling to the standard truckload workflow.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "For daily multi-stop delivery routes rather than freight loads, see our [route optimization software](/products/logistics-transportation-software/route-optimization-software).",
         },
@@ -241,6 +254,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A TMS keeps carrier relationships organized: who serves which lanes, at what contract rate, with what equipment and how reliably. When a load is ready, the system rates it against every eligible contract, adds fuel and accessorials, and tenders it to the primary carrier. If the carrier rejects or doesn't respond in time, the tender moves to the next carrier in the routing guide, or to a spot quote.",
+            "This is the core of a multi-carrier transport management system: one place to rate, tender and track across every carrier you use, instead of a separate website or portal per carrier.",
           ],
         },
         {
@@ -354,6 +368,21 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "A transportation management system for brokers centers on customer quotes, carrier sourcing and margin per load. When buyers compare options for the best transportation management system for freight brokers, they usually weigh load board connections, carrier vetting data, credit checks and how quickly a rate confirmation goes out. A 3PL transportation management system adds multi-client rules, client-specific billing and customer portals on top of the same core.",
+            "Mixed operations need both sides in one place. In a combined transportation management system, brokerage, asset-based and dedicated loads share customers, lanes and reporting while keeping separate cost and margin. Teams looking for the best transportation management system for asset-based carriers usually check whether it connects to dispatch, ELD and maintenance data, so own-fleet and brokered loads can be compared on the same terms.",
+            "Trucking companies have a different starting point than shippers. A transportation management system for trucking links loads to the company's own tractors, trailers and drivers, and a truck transport management system for a carrier also handles driver pay, fuel and hours-of-service data from ELDs.",
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Some operations need specialized rules. In a transportation management system, healthcare shipments such as lab specimens, pharmaceuticals and medical devices need temperature ranges, chain-of-custody records and tight delivery windows. A livestock transportation management system, sometimes called a cattle transportation management system by ranchers and feedlots, records head counts, loading times, rest stops and health papers; in the UK and Australia the same tool is usually called a livestock transport management system.",
+            "Passenger transport is a separate category. A school transportation management system plans bus routes, stops and student rosters, and an employee transport management system schedules shuttles and cabs around staff shifts. Clickmasters scopes those as separate products, because they move people rather than freight.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "Carriers dispatching their own drivers and trucks usually need a [truck dispatch software](/products/logistics-transportation-software/truck-dispatch-management-software) dispatch board alongside, or instead of, a shipper-style TMS.",
         },
@@ -393,6 +422,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "A TMS rarely runs alone. It exchanges data with other transportation software, logistics management system modules in your ERP, and the carrier and customer systems below. Some teams already own a licensed TMS and need custom software for transport management system extensions, such as a carrier portal, an audit module or an integration the vendor doesn't offer, built on top of the existing software. Transport management system vendors usually expose APIs for this kind of work.",
+          ],
+        },
+        {
           type: "titledList",
           cols: 4,
           icon: "Plug",
@@ -419,6 +454,12 @@ const page: ProductPageData = {
       title: "Ready-Made vs. Custom TMS Software",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Most transportation management system companies sell a SaaS transportation management system: a cloud transportation management system licensed per shipment, per user or per site. That is quick to start and suits standard workflows. A custom build can also be a cloud based transportation management system, but it runs in a cloud account you control, with your own rules and integrations. Large shippers with many business units sometimes need an enterprise transportation management system with multi-company rules, approval chains and single sign-on, which is where ready-made products are most often stretched.",
+          ],
+        },
+        {
           type: "table",
           caption: "Ready-made compared with custom TMS software",
           headers: ["", "Ready-made", "Custom"],
@@ -438,7 +479,13 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Transportation Management System Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        {
+          type: "prose",
+          paragraphs: [
+            "Each build is a web based transportation management system: planners, carriers and customers work in the browser, with mobile apps for drivers where needed. For operations outside the US, the same web based transport management system can be set up with local units, currencies and languages, as a cloud based transport management system hosted in the region you choose.",
+            "Clickmasters can deliver:",
+          ],
+        },
         {
           type: "checklist",
           items: [
@@ -488,6 +535,13 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose a Transportation Management System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Buyers comparing transportation management system providers usually shortlist on workflow fit first, then integrations, support and total cost. Published lists of top transportation management systems, or of the best transportation management system for a given industry, are a starting point, but a demo with your own lanes, carriers and invoices tells you more.",
+            "There is no single list of the best transportation management systems: B2B distributors, North America cross-border shippers and parcel-heavy retailers each weigh features differently. Advanced transportation management systems with optimization engines help high-volume networks, while smaller shippers may get more value from clean rating, tendering and audit.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -560,6 +614,12 @@ const page: ProductPageData = {
       title: "TMS Software Development Process",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Building transportation management systems software is mostly rules and integration work, so the process spends real time on rating logic, carrier connections and testing with your own freight data.",
+          ],
+        },
+        {
           type: "steps",
           items: [
             ["Discovery", "Freight profile, modes, carriers, customers and systems."],
@@ -596,6 +656,12 @@ const page: ProductPageData = {
           ],
           panel: "There's no fixed price. Clickmasters agrees scope, timeline and quote before development starts, and can start with one site or mode before a wider rollout.",
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Buyers outside the US often ask about transport management system cost or a transport management system price per user. For a custom build, the answer depends on scope rather than a license tier, and hosting and support costs are agreed up front.",
+          ],
+        },
       ],
     },
   ],
@@ -603,7 +669,8 @@ const page: ProductPageData = {
   faqs: [
     { question: "What is a transportation management system?", answer: "A transportation management system (TMS) is software that plans, executes, tracks and settles freight shipments. It turns orders into loads, selects modes and carriers, tenders loads, schedules appointments, tracks shipments and audits carrier invoices." },
     { question: "What does TMS software do?", answer: "TMS software handles order intake, load planning and consolidation, carrier rates and tendering, shipping documents, appointment scheduling, shipment tracking, proof of delivery, freight audit, payment and freight analytics." },
-    { question: "Who uses TMS software?", answer: "Shippers such as manufacturers, distributors and retailers use a TMS to buy and manage freight. Freight brokers and 3PLs use it to quote customers, source carriers, manage margins and bill customers." },
+    { question: "Who uses TMS software?", answer: "Shippers such as manufacturers, distributors and retailers use a TMS to buy and manage freight. Freight brokers and 3PLs use it to quote customers, source carriers, manage margins and bill customers. Carriers that also broker freight use TMS (transportation management systems) alongside their dispatch tools." },
+    { question: "Are TMS software and a transportation management system the same thing?", answer: "Yes. TMS software, transportation management system software and transport management system software are names for the same category of freight planning and execution software. The terms differ mainly by region and vendor." },
     { question: "What is the difference between a TMS and a WMS?", answer: "A WMS manages inventory and work inside the warehouse: receiving, storage, picking and packing. A TMS manages what happens after the freight leaves the dock: planning, carriers, tracking and freight costs." },
     { question: "What is the difference between a TMS and fleet management software?", answer: "A TMS plans and buys transportation, often from outside carriers. Fleet management software manages the vehicles and drivers a company owns, including location, utilization, fuel and maintenance." },
     { question: "Can a TMS handle LTL and full truckload?", answer: "Yes. A TMS can rate and tender parcel, LTL, volume LTL, full truckload, intermodal and expedited shipments, and choose the mode based on weight, cube, cost and service level." },
@@ -622,7 +689,7 @@ const page: ProductPageData = {
     title: "Build a TMS Around Your Freight",
     paragraphs: [
       "Whether you ship a few dozen loads a week or run a brokerage moving freight for hundreds of customers, the right TMS starts with your lanes, your carriers and your customers.",
-      "Tell Clickmasters Software Development Company how freight moves today and where cost, visibility or paperwork hurt the most. We'll recommend the modules and integrations you need and scope the first release of your custom TMS software.",
+      "Tell Clickmasters Software Development Company how freight moves today and where cost, visibility or paperwork hurt the most. We'll recommend the modules and integrations you need and scope the first release of your custom transportation management system (TMS) software.",
     ],
   },
   primaryCta: "Discuss Your TMS Requirements",

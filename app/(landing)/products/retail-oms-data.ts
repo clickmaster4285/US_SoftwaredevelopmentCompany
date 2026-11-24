@@ -38,7 +38,7 @@ const page: ProductPageData = {
     subhead: "Capture every order in one place, promise stock you actually have, and send each order to the location that can fulfill it best.",
     paragraphs: [
       "An order management system is the hub between where customers buy and where orders are fulfilled. It collects orders from your website, marketplaces, stores, B2B portal, call center and EDI partners; checks real-time inventory across warehouses, stores and suppliers; routes each order by rules; tracks fulfillment; keeps customers informed; and handles changes, cancellations and returns.",
-      "Clickmasters designs and builds custom OMS software for US retailers, direct-to-consumer brands, wholesalers and distributors, shaped around your channels, your fulfillment network and the promises you make to customers.",
+      "Clickmasters designs and builds custom OMS software for US retailers, direct-to-consumer brands, wholesalers and distributors. Whether you need a retail order management system for stores and web, a wholesale order management system for trade accounts or an integrated order management system that ties every channel to your ERP and warehouse, it is shaped around your channels, your fulfillment network and the promises you make to customers.",
     ],
     image: "dashboard",
     caption: "Orders by channel, fulfillment status, SLA risk and exceptions",
@@ -68,6 +68,7 @@ const page: ProductPageData = {
           paragraphs: [
             "A growing retailer rarely sells in just one place. Orders arrive from the website, two or three marketplaces, a wholesale portal, phone calls and in-store kiosks. Inventory sits in a warehouse, several stores and a drop-ship supplier's building. Each channel has its own admin screen, and nobody sees the whole picture.",
             "The results are familiar: a marketplace sells the last unit that a store already sold, an order ships from the far warehouse while a nearby store had stock, a customer calls three times to ask where a package is, and a return bought online cannot be processed in a store. OMS software brings those orders, that inventory and those decisions into one system.",
+            "Spreadsheets and channel admin screens work until volume grows. An automated order management system replaces copy-and-paste with rules: orders are validated, allocated and released without anyone touching them, and staff step in only for exceptions.",
           ],
         },
       ],
@@ -95,6 +96,13 @@ const page: ProductPageData = {
             ["Communication", "Confirmations, shipping updates and delivery notices"],
             ["Changes and returns", "Edits, cancellations, exchanges, RMAs and refunds"],
             ["Insight", "SLAs, cycle time, split shipments and fulfillment cost"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Names vary. Buyers search for an OMS, order management system, ordering management system, orders management system or, less often, a management order system; all of these describe the same category of software. Whatever name a vendor gives the system, order management is the core job: one reliable record for each order from checkout to return.",
+            "A sales order management system inside an ERP mainly records orders for invoicing and accounting. A customer order management system, retail or wholesale, also handles the customer-facing side: promises, notifications, changes and returns.",
           ],
         },
         {
@@ -209,6 +217,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Omnichannel order management starts with one standard order record, no matter where the sale happened. Each channel connector translates orders into that format and sends status, tracking and inventory updates back, so the customer sees the same truth on every channel.",
+            "A multichannel order management system, also written multi-channel order management system, connects each sales channel to one order queue. An omnichannel order management system (sometimes spelled omni-channel order management system) goes further, sharing inventory, order history and returns across all of them, so a customer can buy online, pick up in a store and return by mail.",
           ],
         },
         {
@@ -222,6 +231,13 @@ const page: ProductPageData = {
             ["B2B portal", "Customer portal or sales rep entry", "Order confirmations, invoices, shipments"],
             ["Call center", "Agent order entry in the service console", "Order status for agents"],
             ["EDI partners", "Purchase orders (850) from retail partners", "Acknowledgements (855), ship notices (856), invoices (810)"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "For online sellers, an ecommerce order management system (often written e-commerce order management system) puts web store and marketplace orders side by side. It is usually an online order management system accessed in the browser, so operations staff can run the order management system online from the office, a store or home. The order management system ecommerce teams use every day should also handle marketplace-specific rules such as acknowledgement deadlines, cancellation reasons and shipping SLAs.",
+            "Comparing ecommerce order management systems usually starts with connectors: which web platforms, marketplaces and EDI partners are supported, and how new ones are added. An order management system for ecommerce is only as useful as the channels it can reach.",
           ],
         },
         { type: "figure", image: "detail", caption: "One order with split fulfillment, payments and full timeline" },
@@ -255,6 +271,12 @@ const page: ProductPageData = {
             ["Store sellable rules", "Exclude display, damaged or low-stock store items"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Because promising depends on accurate stock, many retailers look for an order and inventory management system rather than two separate tools. For a smaller network, the OMS can act as a stock and order management system on its own. Larger retailers often keep a dedicated inventory platform and run the inventory and order management system as two connected services that share stock positions in real time.",
+          ],
+        },
         { type: "figure", image: "inventory", caption: "On hand, reserved, safety stock and available-to-promise by location" },
         {
           type: "linkPanel",
@@ -271,6 +293,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Order routing is where an OMS earns its keep. For every order, rules weigh where stock is, how far each location is from the customer, what shipping will cost, how busy each location is and what delivery date was promised. Distributed order management applies those rules across a network of warehouses, stores and suppliers.",
+            "A distributed order management system applies these rules per order line, not just per order, so one basket can ship from a warehouse and a store when that is faster or cheaper. Retail distributed order management systems also need store protection and daily capacity rules, which warehouse-focused distributed order management systems often lack. This is the core of an order management system for omnichannel retail fulfillment.",
           ],
         },
         {
@@ -299,6 +322,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Stores are often the closest inventory to the customer. With ship-from-store and buy online, pick up in store (BOPIS), store associates use a mobile app to pick, pack and stage online orders, notify customers when orders are ready and confirm the handoff at the counter or curbside.",
+            "In effect, the store app is a mobile order management system for associates: they see assigned orders, pick lists and pickup queues on a handheld device instead of a back-office PC.",
             "Store associate apps can be built for iOS and Android from one codebase through Clickmasters' [cross-platform app development](/mobile-app-development/cross-platform-app-development) practice.",
           ],
         },
@@ -415,6 +439,13 @@ const page: ProductPageData = {
             ["Global sellers", "Multiple currencies, warehouses and tax rules"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Each model shapes the build. A B2B order management system needs customer price lists, credit limits, payment terms and EDI. A grocery order management system needs delivery slots, substitutions and weight-based pricing, while a manufacturing order management system ties orders to production schedules and make-to-order lead times. Retailers that run their own delivery vans can extend the OMS into an order and delivery management system with route schedules and proof of delivery.",
+            "An order management system for retailers with stores treats each store as a fulfillment location. An order management system for small business can start with order capture, inventory sync and routing to one warehouse, then add stores and returns as the business grows.",
+          ],
+        },
       ],
     },
     {
@@ -433,6 +464,10 @@ const page: ProductPageData = {
             ["Users", "E-commerce, operations, customer service", "Warehouse staff and supervisors", "Finance, purchasing, management"],
             ["Customer-facing", "Yes: status, notifications, returns", "Indirectly", "Rarely"],
           ],
+        },
+        {
+          type: "note",
+          text: "Some vendors sell a warehouse order management system that combines order handling with warehouse execution. That can work for a single building, but once orders ship from stores, 3PLs and suppliers, a separate OMS above the WMS is usually cleaner. In the same way, the order management system, supply chain planning tools and the ERP each keep their own job and exchange data rather than overlap.",
         },
       ],
     },
@@ -463,6 +498,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "In an enterprise order management system, integrations often outnumber screens: many channels, warehouses, ERPs and partner feeds, each with its own formats, retry rules and error handling.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "High-volume or complex data flows can be designed with our [data integration services](/data-services/data-integration-services) team.",
         },
@@ -484,6 +525,12 @@ const page: ProductPageData = {
             ["Returns", "Standard RMA flow", "Your policies, dispositions and exchange rules"],
             ["Pricing model", "Per-order or percentage-of-GMV fees", "Build cost plus hosting and maintenance you control"],
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "A SaaS order management system is quick to start and usually priced per order or by GMV, while a custom build gives you control over rules, integrations and data. Either way, most retailers now run a cloud order management system rather than servers in their own building. When comparing a cloud based order management system with a custom one, look at connector coverage, rule flexibility and how fees change as volume grows. When evaluating software for order management system needs, judge it on the workflows it supports rather than the length of its feature list.",
           ],
         },
       ],
@@ -535,6 +582,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Clickmasters typically deploys the order management system cloud-first, on the hosting provider you choose, so capacity can grow for holiday peaks and shrink afterward.",
+          ],
+        },
+        {
           type: "caution",
           text: "PCI DSS and privacy obligations depend on your payment providers, configuration and procedures as well as the software. Clickmasters keeps card data out of the OMS by using tokenized gateway integrations; it does not certify compliance.",
         },
@@ -558,6 +611,12 @@ const page: ProductPageData = {
             "Clear SLA and exception management",
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "For a multichannel order management system retail teams can rely on, the largest gains usually come from shared inventory and smarter routing rather than from any single feature.",
+          ],
+        },
         { type: "note", text: "Results depend on your channels, fulfillment network, data quality and adoption. No specific cost or revenue outcome is guaranteed." },
       ],
     },
@@ -566,6 +625,13 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose OMS Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "A list of top order management systems is a starting point, but rankings rarely reflect your channels and fulfillment network. What a buyer calls the best order management system for large apparel retailers, with many sizes, colors and stores, is not the same as the best order management system for logistics providers handling orders for many clients, and the best order management system for B2B ecommerce must handle pricing and terms that consumer-focused tools skip.",
+            "Published lists of the best order management systems for multi-channel retail or the best cloud based order management systems often group very different products together. Before talking to order management system vendors, write down your needs against the checklist below; it makes it easier to tell whether an order management system solution, packaged or custom, actually fits.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -667,7 +733,7 @@ const page: ProductPageData = {
     { question: "Can an OMS integrate with Shopify and marketplaces?", answer: "Yes. A custom OMS can connect to e-commerce platforms and marketplaces through their APIs to receive orders and send back acknowledgements, tracking and inventory levels." },
     { question: "Can it handle B2B and EDI orders?", answer: "Yes. Wholesale orders with customer pricing, purchase order numbers and payment terms can be entered in a portal or received by EDI, with acknowledgements, ship notices and invoices sent back." },
     { question: "How does an OMS help customer service teams?", answer: "Agents see the order, payments, shipments, tracking and returns on one screen, and can edit, cancel, reship, refund or create orders within their permissions, which speeds up every inquiry." },
-    { question: "Is an OMS only for large retailers?", answer: "No. Growing brands selling on two or more channels or shipping from more than one location benefit early. A first release can cover order capture, inventory sync and routing, with stores and returns added later." },
+    { question: "Is an OMS only for large retailers?", answer: "No. Retail order management systems are not only for large chains. Growing brands selling on two or more channels or shipping from more than one location benefit early. A first release can cover order capture, inventory sync and routing, with stores and returns added later." },
     { question: "How much does a custom order management system cost?", answer: "It depends on channels, fulfillment locations, routing rules, store fulfillment, returns, integrations, order volume and data migration. Clickmasters agrees scope, timeline and a quote before development starts." },
     { question: "How long does it take to implement OMS software?", answer: "A first release with one or two channels, inventory sync and routing to a warehouse is much shorter than a full omnichannel rollout with stores, drop-ship and EDI. The timeline is set during scoping, usually starting with a pilot channel." },
   ],

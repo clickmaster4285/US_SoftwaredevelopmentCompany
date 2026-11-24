@@ -479,7 +479,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Checkout, catalog, warehouse, and order software for stores, restaurants, and online sellers.",
     lead:
-      "A store takes the order, keeps the stock, and knows what has shipped. These products cover the counter, the catalog, the marketplace, and the warehouse behind them.",
+      "A store takes the order, keeps the stock, and knows what has shipped. These products cover the counter, the catalog, the marketplace, and the warehouse behind them: retail POS software, an e-commerce management platform, multi-vendor marketplace software, a WMS warehouse management system, an order management system, restaurant POS software, grocery store management software and a retail inventory management system.",
     audiences: ["Retail stores", "Online shops", "Marketplaces", "Restaurants and grocery"],
     icon: "Store",
     products: [
@@ -579,7 +579,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Fleet, dispatch, delivery, and route software for carriers, couriers, and transport teams.",
     lead:
-      "A transport business lives on vehicles, routes, and the status of each shipment. These products cover the fleet, the dispatch board, maintenance, and the last mile.",
+      "A transport business lives on vehicles, routes, and the status of each shipment. These products cover the fleet, the dispatch board, maintenance, and the last mile: fleet management software, a transportation management system, truck dispatch management software, delivery management software, vehicle maintenance management software, route optimization software and a courier management system.",
     audiences: ["Fleets", "Carriers", "Dispatch desks", "Courier companies"],
     icon: "Truck",
     products: [
@@ -668,7 +668,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Software for property owners, agents, and builders who manage rentals, listings, and job sites.",
     lead:
-      "Property work is the listing, the tenant, the rent, and the job that puts the building up. These products keep those records for agencies, landlords, and construction teams.",
+      "Property work is the listing, the tenant, the rent, and the job that puts the building up. These products keep those records for agencies, landlords, and construction teams: property management software, real estate CRM software, a rental management system, a real estate listing platform and construction project management software.",
     audiences: ["Property managers", "Agencies", "Landlords", "Construction teams"],
     icon: "House",
     products: [

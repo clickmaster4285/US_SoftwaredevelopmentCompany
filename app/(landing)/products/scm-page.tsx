@@ -729,8 +729,8 @@ export default function ScmPage() {
             track clinical supplies so a stockout is visible before it reaches a ward. Pharmaceutical
             supply chain management software adds lot and expiry to that chain. Food supply chain
             management software and foodservice supply chain management software follow ingredients
-            from supplier to kitchen or store. Construction supply chain software tracks
-            materials against a job site. A supply chain management system in e commerce has to
+            from supplier to kitchen or store. Supply chain management software construction teams
+            use tracks materials against a job site. A supply chain management system in e commerce has to
             reserve stock when the order is paid and show when inbound supply will cover a backorder.
           </p>
           <div className="mt-8">
@@ -752,7 +752,9 @@ export default function ScmPage() {
                 management software small business teams can actually run is that set. The best supply
                 chain management software for small business is the focused system, not an enterprise
                 planning suite. It is often built around spreadsheets and email that are already being
-                outgrown, and integrated with existing accounting or e-commerce tools.
+                outgrown, and integrated with existing accounting or e-commerce tools. Supply chain
+                management software startups choose usually follows the same pattern: start with
+                suppliers and purchase orders, then add planning as volume grows.
               </p>
             </article>
             <article id="enterprise" className="scroll-mt-28 rounded-3xl p-6 text-white md:p-8" style={{ backgroundColor: DARK }}>
@@ -855,9 +857,11 @@ export default function ScmPage() {
             People ask what is the best supply chain management software. Lists of the top supply
             chain management software companies and top 10 supply chain management software roundups
             compare the suites that supply chain management software vendors publish, and a supply chain
-            management tools list is the same kind of directory. Smaller tools often cover one gap, such
-            as visibility, rather than the whole chain. The right platform for a given company is the one
-            that matches its suppliers and systems. Ask for a supply chain management software demo of a
+            management tools list is the same kind of directory. A top 5 supply chain management software
+            shortlist usually names the same supply chain management software leaders, and smaller tools
+            often cover one gap, such as visibility, rather than the whole chain. The best software supply
+            chain management platform for a given company is the one that matches its suppliers and
+            systems. Ask for a supply chain management software demo of a
             late shipment and the orders it affects.
           </p>
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

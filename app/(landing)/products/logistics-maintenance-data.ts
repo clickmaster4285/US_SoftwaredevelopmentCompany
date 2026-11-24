@@ -344,6 +344,12 @@ const page: ProductPageData = {
       title: "Fleet Maintenance Software for Different Operations",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "The same vehicle fleet maintenance management software can serve very different operations once schedules, inspection forms and work order steps are configured for the vehicles and equipment each fleet actually runs.",
+          ],
+        },
+        {
           type: "table",
           caption: "Maintenance needs by fleet type",
           headers: ["Fleet type", "Typical needs"],

@@ -37,7 +37,7 @@ const page: ProductPageData = {
     subhead: "Fast checkout, accurate inventory and one customer record across every store, every associate and your online shop.",
     paragraphs: [
       "Retail POS software is where a sale happens, but it is also where inventory changes, customers are recognized, returns are handled and cash is counted. For specialty retailers selling apparel, footwear, electronics, home goods, beauty, sporting goods or gifts, the point of sale has to understand sizes and colors, serial numbers, gift cards, exchanges and orders placed online but picked up in store.",
-      "Clickmasters designs and builds custom retail point of sale systems for US boutiques, specialty chains and growing multi-store brands, shaped around your products, your store teams and the way your customers like to buy.",
+      "Clickmasters designs and builds custom retail point of sale systems for US boutiques, specialty chains and growing multi-store brands, shaped around your products, your store teams and the way your customers like to buy. Whether you need POS software for retail shop counters with two registers or POS software for retail chains with dozens of locations, the work starts with how your stores actually sell.",
     ],
     image: "dashboard",
     caption: "Sales by store, top variants, BOPIS orders and low stock at a glance",
@@ -97,6 +97,13 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Retail POS system software differs from a basic cash register app because it keeps the sale, the stock and the customer in one record. Retail point of sale POS software also gives managers a back office for catalog, pricing, promotions and reports, so a POS retail software setup is as much an operations tool as a checkout tool.",
+            "Many retailers describe what they need as retail POS and inventory management software, because the two can't really be separated: retail POS software with inventory built in updates stock on every sale, return and transfer instead of waiting for an overnight import. For each retailer, POS software should fit the product mix and the number of stores, not the other way around.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "The point of sale is the store-facing core of the wider [retail and e-commerce software](/products/retail-ecommerce-software) family, and it shares catalog, inventory and payment foundations with the other retail products.",
         },
@@ -135,6 +142,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Payment processing, hardware and third-party services depend on the providers you choose.",
+            "The retail POS software features below can be combined into a POS retail software solution that matches your stores, from a single counter to a multi-location chain with online sales.",
           ],
         },
         {
@@ -386,6 +394,14 @@ const page: ProductPageData = {
             ["Multi-store specialty chains", "Central catalog and pricing, transfers, store comparison"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "General retail POS software covers checkout, stock and customers, but each store type adds its own rules. Apparel retail POS software needs the size and color matrix and easy exchanges, so POS software for clothing retail is usually built around variants and seasonal markdowns. Bookstore retail POS software works from ISBN lookup, special orders and used-book trade-ins, while thrift retail POS software handles one-of-a-kind items, donation intake and consignment splits.",
+            "Liquor retail POS software adds age verification prompts, case and bottle pricing and state-specific tax rules. Retail POS software for hardware store operations needs units of measure, cut-to-length items and contractor charge accounts. Pet retailers often ask for the best POS software for small multi-store pet retailers (US owners in particular want loyalty, auto-ship and grooming bookings in one place); the answer depends on which of those workflows matter most to your stores.",
+            "In every case, POS software for retail store teams should be judged on how it handles the store's day, and retail store POS software for a chain should also give head office central control. That is why POS system software for retail store operations is scoped from your own workflows rather than a generic template.",
+          ],
+        },
       ],
     },
     {
@@ -405,6 +421,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Grocery retail POS software shares the checkout core with specialty retail but adds scales, PLU codes, perishables and EBT, which is why the two are usually configured differently.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "Running a food business? See our [restaurant POS software](/products/retail-ecommerce-software/restaurant-pos-software) for table service and kitchen workflows, or [grocery store management software](/products/retail-ecommerce-software/grocery-store-management-software) for weighed items and perishables.",
         },
@@ -419,6 +441,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "The POS sits at the center of the store's technology. Clickmasters' [API development and integration](/software-development/api-development-integration) team connects it to the hardware and services you already use.",
+            "Cloud retail POS software can run in a browser on tablets and counter terminals, and the same back end can power retail POS software for Windows registers where stores already own that hardware. Retail POS software for PC setups keeps existing scanners, printers and cash drawers in use, while online retail POS software features such as e-commerce sync share the same catalog and stock with your web store.",
           ],
         },
         {
@@ -486,7 +509,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Retail POS Software Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["Clickmasters builds custom software (POS, retail inventory, e-commerce and the integrations between them) and can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -532,6 +555,13 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose a Retail Point of Sale System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Searches for the best retail POS software, the best POS retail software or the best POS software for retail stores return long lists, but no list knows your product mix, return rules or store count. The best POS software for retail store teams is the one your associates can use quickly and your managers can trust for stock and cash.",
+            "Owners looking for the best POS software for small retail business needs, or the best retail POS software for small business budgets, should weigh setup effort, hardware reuse and support hours as heavily as features. For buyers comparing retail software, POS features matter most when they match daily work, so test the POS software retail associates will use every day with real scenarios: an exchange, a missing size, a BOPIS pickup and an end-of-day close.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [

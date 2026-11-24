@@ -38,7 +38,7 @@ const page: ProductPageData = {
     subhead: "Turn the day's stops into practical routes that respect every time window, vehicle and shift, then keep them right as the day changes.",
     paragraphs: [
       "Route optimization software takes a list of stops and a fleet of vehicles and works out who should go where, in what order and at what time. Instead of a dispatcher dragging pins on a map every morning, the system plans multi-stop routes that respect customer time windows, vehicle capacity, driver shifts, breaks and skills, then sends each driver an ordered stop list and each customer an accurate ETA.",
-      "Clickmasters designs and builds custom route planning software for US delivery fleets, distributors, field service companies and logistics operators, shaped around your constraints, your systems and the way your dispatchers actually plan.",
+      "Clickmasters designs and builds custom route planning and optimization software for US delivery fleets, distributors, field service companies and logistics operators, shaped around your constraints, your systems and the way your dispatchers actually plan.",
     ],
     image: "dashboard",
     caption: "Color-coded routes, stops per driver, planned miles and ETAs for today",
@@ -80,7 +80,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "**Route optimization software** (also called route planning software or a multi-stop route planner) uses algorithms to assign stops to vehicles and sequence them into efficient routes. Unlike a map app that finds the fastest path between two points, it solves the whole day at once. It covers:",
+            "**Route optimization software** (also called route planning software, routing optimization software, route optimizer software or a multi-stop route planner) uses algorithms to assign stops to vehicles and sequence them into efficient routes. Unlike a map app that finds the fastest path between two points, it solves the whole day at once. It covers:",
           ],
         },
         {
@@ -223,6 +223,12 @@ const page: ProductPageData = {
             ["Depots", "Two warehouses and drivers who start from home", "Start and end location per vehicle"],
             ["Priorities", "Medical supplies must be delivered first", "Priority levels and must-serve stops"],
             ["Road restrictions", "Low bridge on the direct route", "Truck-routing map data, where available"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Heavy vehicles add another layer. Truck route optimization software has to plan around bridge heights, weight limits, restricted roads and dock access, so a plan that works for a cargo van may not be legal or safe for a 26-foot box truck or a tractor-trailer.",
           ],
         },
         {
@@ -390,6 +396,12 @@ const page: ProductPageData = {
       title: "Route Planning Software for Every Kind of Fleet",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "The optimization engine is the same across industries; the constraints and objectives change. Last mile route optimization software is tuned for hundreds of small stops, tight customer windows and accurate ETAs, while delivery route optimization software for wholesale distributors focuses on pallets, early dock windows and recurring customers.",
+          ],
+        },
+        {
           type: "table",
           caption: "Route planning needs by industry",
           headers: ["Industry", "Typical routing needs"],
@@ -404,6 +416,10 @@ const page: ProductPageData = {
             ["School and passenger transport", "Fixed pickup times, rider lists, vehicle capacity"],
             ["Sales and merchandising teams", "Visit frequencies, territories, store appointments"],
           ],
+        },
+        {
+          type: "note",
+          text: "Some fleets need very specific rules. School bus route optimization software works with fixed bell times, rider lists, ride-time limits and safe stop locations, and garbage truck route optimization software plans recurring collection days, container capacity and trips to the disposal site when the truck is full.",
         },
       ],
     },
@@ -426,6 +442,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "The difference matters most at fleet scale. Fleet route optimization software plans every vehicle at once and rebalances work between them, which a directions app cannot do even when each individual route looks reasonable on its own.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "Fleets that also need vehicle tracking, fuel, driver behavior and asset utilization should pair routing with [fleet management software](/products/logistics-transportation-software/fleet-management-software).",
         },
@@ -441,6 +463,10 @@ const page: ProductPageData = {
           paragraphs: [
             "Route planning sits between the systems that create orders and the systems that track vehicles. Clickmasters' [API development and integration](/software-development/api-development-integration) team connects it to the tools you already use:",
           ],
+        },
+        {
+          type: "note",
+          text: "Route optimization software for logistics operations is only as good as the data it receives, so integrations usually matter as much as the algorithm.",
         },
         {
           type: "titledList",
@@ -563,6 +589,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose Route Planning Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "There is no single best route optimization software. Logistics operations differ too much, so the right choice depends on how closely a system models your own constraints, and buyers usually test candidates with their own historical orders. Points worth comparing:",
+          ],
+        },
         {
           type: "checkGrid",
           items: [

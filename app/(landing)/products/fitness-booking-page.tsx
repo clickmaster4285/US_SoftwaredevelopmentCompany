@@ -473,7 +473,8 @@ export default function FitnessBookingPage() {
             <p>
               <strong className="text-foreground">Fitness booking software</strong> lets clients reserve classes, sessions
               and resources online. <strong className="text-foreground">Fitness scheduling software</strong> is the calendar
-              behind it: who is teaching, which room is free and how much capacity is left. Together they manage:
+              behind it: who is teaching, which room is free and how much capacity is left. Some buyers call the pair
+              fitness schedule software. Together they manage:
             </p>
           </Prose>
           <TitledList items={whatItManages} className="mt-6 sm:grid-cols-2 lg:grid-cols-4" />

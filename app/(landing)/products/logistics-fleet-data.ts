@@ -98,6 +98,15 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Buyers use many names for the same category. Whether a team searches for fleet manager software, vehicle fleet manager software, software for fleet management or a fleet management system software platform, the core job is the same: one record for every vehicle, driver and trip. Commercial fleet management software for a delivery or service company covers cars, vans and trucks. Auto fleet management software and automobile fleet management software usually describe the same idea for light-duty company cars, and car fleet management software adds pool booking, mileage records and employee assignments.",
+            "Many fleets also need fleet and asset management software, because trailers, generators, tools and other equipment matter as much as the vehicles. Fleet asset management software (sometimes called asset fleet management software) tracks each unit's location, hours, assignments and condition, and fleet and equipment management software extends the same records to powered equipment without a license plate. Service companies add fleet service management software features such as job-site geofences and technician ETAs; for them, service fleet management software and vehicle fleet management software are one system rather than two.",
+            "Under the hood, fleet management systems software is built from a few layers: device data ingestion, a fleet database, a web dashboard, a driver app and reporting. A fleet management software system built this way can grow module by module. Fleet tracking management software (the live map and trip history) is usually the first layer delivered, followed by fleet management tracking software features such as stop reports and geofence events. Off-the-shelf fleet management software solutions bundle these layers together, while custom fleet vehicle management software lets you choose which ones to build first.",
+            "In the software, fleet manager, dispatcher, mechanic and driver roles each see their own screens, and day-to-day fleet software management (user access, device onboarding and alert rules) stays with your own admins.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "Fleet management sits at the center of the [logistics and transportation software](/products/logistics-transportation-software) family, alongside planning, dispatch, delivery and maintenance systems that read from the same vehicle and driver records.",
         },
@@ -224,6 +233,12 @@ const page: ProductPageData = {
             ["Playback", "Replay a day's driving for disputes and coaching"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "GPS fleet management software depends on connected devices: plug-in OBD-II trackers, hardwired units, battery-powered asset tags and OEM telematics. IoT fleet management software ingests those device messages, filters out bad GPS fixes and stores them as trips. Whether you call it fleet management GPS software or GPS tracking fleet management software, the useful output is the same: accurate locations, stop records and a history you can search. Fleet management GPS tracking software also has to handle dead zones and devices that go offline without losing trip data.",
+          ],
+        },
         { type: "figure", image: "trips", caption: "A day's trips, stops, idling and geofence entries for one vehicle" },
         {
           type: "linkPanel",
@@ -257,6 +272,12 @@ const page: ProductPageData = {
         },
         { type: "figure", image: "drivers", caption: "Driver scorecards ranked by safety events per 100 miles" },
         {
+          type: "prose",
+          paragraphs: [
+            "Fleet driver management software ties these scores to the driver record, so licenses, training and coaching history sit beside the events. Fleet safety management software adds written policies, coaching tasks and driver sign-offs. When an incident happens, fleet accident management software features record the location, speed, video clip, photos and witness details from the driver app, then track the claim, repair and insurance steps. When fleets compare the best fleet accident management software options, they usually look at how quickly a driver can report an accident from the scene and how easily that record reaches the insurer and the shop.",
+          ],
+        },
+        {
           type: "note",
           text: "Safety scoring should follow a written policy that drivers understand. Telematics data can be sensitive; access is limited by role and retention rules are set during scoping.",
         },
@@ -288,6 +309,12 @@ const page: ProductPageData = {
           ],
         },
         { type: "figure", image: "fuel", caption: "Fuel card transactions matched to vehicles, with MPG and exceptions" },
+        {
+          type: "prose",
+          paragraphs: [
+            "Fleet fuel management software works best when it reads both fuel cards and telematics, because a fill-up only makes sense next to the vehicle's location and odometer. A fleet fuel management system software module can also import bulk fuel dispensed from yard tanks. For mixed fleets, the same fuel fleet management software can include electric vehicles: EV fleet management software (or electric vehicle fleet management software) tracks state of charge, range and charging cost, and fleet EV charger management software features show depot charger status, charging sessions and which vehicle is plugged into which charger, where the charger network exposes that data.",
+          ],
+        },
       ],
     },
     {
@@ -300,6 +327,7 @@ const page: ProductPageData = {
           paragraphs: [
             "Driver vehicle inspection reports catch problems before they become breakdowns. A mobile DVIR app guides drivers through a checklist, captures photos of defects and sends them straight to the shop, where a mechanic records the repair and signs off before the vehicle goes back out.",
             "Defects can flow directly into [vehicle maintenance software](/products/logistics-transportation-software/vehicle-maintenance-management-software) as work orders, so nothing reported on a phone gets lost on the way to the shop.",
+            "Inspections are one half of maintenance. Fleet maintenance management software (also searched as fleet management maintenance software or fleet management and maintenance software) schedules preventive service, turns defects into work orders and records parts and labor. Fleet repair management software tracks each repair from defect to sign-off, while fleet maintenance manager software gives the shop lead a queue of vehicles that are due, in service or waiting on parts. The best fleet maintenance management software for a given fleet is usually the one mechanics actually keep up to date, so the shop screens matter as much as the reports. Shops that stock their own parts can add fleet inventory management software features for parts bins, reorder points and costs charged to each vehicle.",
           ],
         },
         { type: "figure", image: "inspections", caption: "Pre-trip checklist, defect photo and mechanic sign-off", variant: "diagram" },
@@ -376,6 +404,23 @@ const page: ProductPageData = {
             ["Rental and leasing", "Asset location, mileage, recovery and usage-based billing"],
             ["Student and passenger transport", "Route adherence, stop arrival times and driver behavior"],
             ["Electric and mixed fleets", "Charge levels, range, charging costs and conventional vehicles together"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "**Trucking and freight.** Truck fleet management software for carriers combines long-haul tracking, ELD hours, fuel tax mileage and trailer locations. ELD fleet management software shows duty status next to each truck, so dispatchers know who can legally take the next load. When carriers compare what is marketed as the best fleet management software for trucking, or the leading fleet management software for trucking industry operations, the questions that matter are which ELDs and trailer trackers it supports and how well it handles fuel and maintenance; the best truck fleet management software for one carrier can be a poor fit for another. Custom trucking fleet management software lets you keep the devices you already have, and the fleet management software trucking teams use every day can double as logistics fleet management software tied to loads in a TMS.",
+            "**Delivery fleets.** Delivery fleet management software focuses on stops, ETAs, arrival records and idle time on dense routes. Teams looking for the best AI fleet management software for tech-enabled delivery usually mean features such as predicted arrival times, anomaly alerts on fuel or idling and ranked coaching lists. These are possible where there is enough clean data, and they are scoped as optional modules rather than assumed.",
+            "**Buses and passenger transport.** Bus fleet management software tracks route adherence, stop arrival times and driver behavior. School bus fleet management software adds student route schedules, parent arrival notifications and pre-trip inspections, while public transport fleet management software and bus transport fleet management software serve transit operators with block assignments, garage reports and on-time performance. More broadly, transport fleet management software and transportation fleet management software cover any operator moving people or goods on scheduled routes. Taxi fleet management software adds shift assignments, vehicles shared between drivers and trip-level earnings data.",
+            "**Rental, leasing and shared vehicles.** Rental fleet management software tracks availability, check-out and check-in mileage, fuel levels, damage photos and recovery of overdue units. Car rental fleet management software adds reservations and branch transfers, and mid-sized car rental fleet management software has to work for operators with a handful of branches rather than a national network. Equipment rental fleet management software tracks engine hours, delivery to job sites and off-rent pickups; rental houses comparing the top rental fleet management software for heavy equipment rental usually look at hour-meter accuracy and billing integration. Fleet lease management software records lease terms, mileage allowances and return dates so lease-end charges are not a surprise.",
+            "Organizations that share cars between departments look for the best fleet management software for shared vehicle pools, with booking, key handover and usage reports. Universities and business parks look for the best fleet management software for campus micromobility, covering scooters, e-bikes and shuttles. Companies that reimburse personal vehicles alongside company cars often need cost management software for mixed company and employee car fleets, so reimbursement and ownership costs can be compared per mile.",
+            "**Construction and heavy equipment.** Construction fleet management software tracks pickups, dump trucks, trailers and heavy machines across job sites. Heavy equipment fleet management software and construction equipment fleet management software record engine hours, idle hours, location and service intervals for excavators, loaders and dozers. Crane fleet management software adds inspection certificates, operator qualifications and lift-site assignments, and concrete pump fleet management software adds boom-hour tracking and pour schedules. Equipment fleet management software in construction usually has to read OEM telematics from several manufacturers, which is why contractors ask for the top multi brand fleet management software for construction rather than a tool tied to one brand.",
+            "Contractors researching the top construction fleet management software for mid-size contractors often weigh ease of use and job-costing integration over a long feature list. Fleet management software for construction is usually judged on payback: when contractors ask which is the best fleet management software for construction ROI, or which option delivers fleet management software with the best ROI in construction, the honest answer depends on how much idle time, theft, rental spend and missed service the fleet has today, and a pilot is the way to measure it.",
+            "**Forklifts, AGVs and warehouse equipment.** Forklift fleet management software (also called lift truck fleet management software) tracks operator access, impact events, battery charging and hours for warehouse trucks. AGV fleet management software for automated guided vehicles usually comes from the AGV vendor; a custom system can bring its status and utilization data into the same reports as the rest of the fleet.",
+            "**Government, public safety and emergency services.** Government fleet management software, or fleet management software for government agencies, supports utilization reviews, replacement planning, motor pools and public works vehicles. Police fleet management software tracks patrol vehicle assignments, upfit equipment and take-home use. Fire department fleet management software and fire service fleet management software track apparatus readiness, pump tests and out-of-service status, and ambulance fleet management software focuses on unit availability, daily checks and restocking. Public agencies usually have their own procurement rules, so these systems are scoped and quoted to fit them.",
+            "**Utilities, energy, agriculture and field services.** Utility fleet management software handles large mixed fleets of bucket trucks, service vans and trailers across regions, and utilities fleet management software for multi-service providers adds storm-response and mutual-aid reporting. Oil and gas fleet management software adds remote-site geofences, lone-worker check-ins and tracking for heavy haul and water trucks. Agriculture fleet management software tracks tractors, sprayers and farm trucks by field and season. Pest control fleet & asset management software ties each service van to the equipment, products and routes its technician carries.",
+            "**Marine, aviation and drones.** Marine fleet management software, also called maritime fleet management software or vessel fleet management software, tracks vessel positions from AIS or satellite feeds along with crew, fuel and maintenance. Ship fleet management software for larger operators adds voyage records and port calls, while boat fleet management software serves smaller tour, rental and workboat operators. Operators researching the best maritime asset management software, global shipping fleets in particular, tend to prioritize satellite data costs and survey records. Vessel inspection management software for US fleets records inspections, findings and corrective actions against the operator's own checklists; it supports, but does not replace, Coast Guard or classification society requirements. Aircraft fleet management software and drone fleet management software follow a similar pattern (asset records, utilization, maintenance intervals and pilot qualifications), with aviation-specific rules scoped during discovery.",
+            "Fleet management software for complex commercial fleets often combines several of these types under one company: trucks, vans, equipment and electric vehicles spread across many depots and business units, all reporting into one system.",
           ],
         },
       ],
@@ -477,6 +522,13 @@ const page: ProductPageData = {
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "The delivery model matters as much as the feature list. Most ready-made products are cloud based fleet management software sold as fleet management software (SaaS) subscriptions. A custom system can also run as cloud fleet management software, hosted in your own cloud account so the data stays in your database. Either way, online fleet management software means managers use a web based fleet management software dashboard from any browser, and drivers use mobile fleet management software on their phones. When comparing fleet management software, cloud hosting costs, uptime and data export terms belong in the comparison.",
+            "Telematics resellers and logistics providers sometimes need white label fleet management software that carries their own brand and can be offered to their customers. A custom build can support multi-tenant accounts, per-customer branding and reseller billing for that model.",
+          ],
+        },
       ],
     },
     {
@@ -533,6 +585,13 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose a Fleet Management System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Buyers comparing fleet management software companies, or deciding on a fleet management software provider, often start from published lists of the best fleet management software or the top fleet management software. Those lists are a starting point, but the best vehicle fleet management software for your operation is the one that fits your vehicles, devices and workflows. It helps to score competing fleet management softwares against the same checklist, and to ask each fleet management software company how it handles your hardware, your data and your reporting.",
+            "Fleet size changes the priorities. Small fleet management software, or fleet management software for small fleets of a few vans or trucks, should be quick to set up and simple to use, and small business fleet management software usually needs live tracking, fuel and maintenance reminders before anything else. Owners looking for the best fleet management software for small businesses, or fleet management software for small business budgets, often ask about the best fleet cost management software for SMEs, since cost visibility is where value shows up first. What counts as the best fleet management software for small business use depends on how many vehicles, which devices and which workflows are involved. Fleet management software for large fleets and fleet management software for enterprises adds multi-depot roles, single sign-on, ERP and HR integrations, data warehouse exports and a depot-by-depot rollout.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -615,6 +674,12 @@ const page: ProductPageData = {
             "Data migration, rollout and support",
           ],
           panel: "There's no fixed price. Clickmasters agrees scope, timeline and quote before development starts, and can start with a pilot depot before a full rollout.",
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Fleet management software pricing for ready-made products is usually a monthly fee per vehicle plus hardware. A custom system is priced as a build plus hosting and ongoing support, so it is worth comparing total cost over several years rather than the first invoice.",
+          ],
         },
       ],
     },

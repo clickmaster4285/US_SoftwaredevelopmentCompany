@@ -364,7 +364,10 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
                 <p>
                   Clickmasters designs, builds and integrates custom fitness and sports management software for US
                   businesses and organizations. That can be a focused product for one need, or a connected platform
-                  for members, athletes, coaches, facilities and finances.
+                  for members, athletes, coaches, facilities and finances: gym management software, a fitness club
+                  management system, yoga studio management software, sports club management software, personal
+                  trainer management software, membership management software, and fitness booking and scheduling
+                  software.
                 </p>
               </div>
               <div className="mt-8">

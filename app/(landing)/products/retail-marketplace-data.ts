@@ -274,6 +274,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "How money moves is the heart of any marketplace. When a buyer pays, the payment provider splits the funds: the operator's commission and fees, payment processing costs and the seller's share, which is held until fulfillment or a return window passes and then paid out on schedule. Refunds and disputes reverse the right amounts automatically.",
+            "Operators comparing invoice automation software for multi-vendor marketplaces usually want commission invoices, seller fee statements and payout reports generated from the same transaction records, so finance teams are not rebuilding them in spreadsheets each month.",
           ],
         },
         {
@@ -337,6 +338,12 @@ const page: ProductPageData = {
             ["Policy enforcement", "Warnings, listing removal, suspensions and appeals"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Returns need the same structure as disputes. Multi-vendor marketplace return software has to apply each seller's return policy, issue labels, track the item back to the right seller and adjust that seller's balance. When reviewing multi-vendor marketplace returns management software, check that refunds, commissions and payouts update together when a return closes.",
+          ],
+        },
         { type: "figure", image: "disputes", caption: "Dispute case timeline, messages and seller rating" },
       ],
     },
@@ -359,6 +366,13 @@ const page: ProductPageData = {
             ["Auto parts and industrial", "Fitment data, part numbers, compatibility search"],
             ["Digital goods", "Licenses, downloads and creator payouts"],
             ["Niche community marketplaces", "Membership, curation and community features"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Multi-vendor farm marketplace software connects growers, co-ops and food producers with buyers, and usually needs seasonal availability, harvest dates, weight-based pricing, pickup points and local delivery windows.",
+            "Multi-vendor marketplace software for retailers lets an existing store add third-party sellers to its own site, extending the catalog while keeping one checkout, one customer account and the retailer's brand.",
           ],
         },
       ],
@@ -535,6 +549,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose a Marketplace Platform",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "There is no single best multi-vendor marketplace software for every business; the right choice depends on your model, sellers and growth plans. Use the checklist below to compare options against how your marketplace will actually run.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [

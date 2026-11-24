@@ -493,7 +493,9 @@ export default function SportsClubPage() {
           <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
             It&apos;s part of the wider family of <BodyLink link={scLinks.pillar} />, with a focus on the{" "}
             <strong className="text-foreground">club as an organization</strong>, not on a single team, a single venue or a
-            fitness membership.
+            fitness membership. Buyers comparing sports management softwares will see the broader term sports
+            management software used for leagues, academies and venues too. A soccer club management software setup,
+            for example, centers on age groups, rosters and seasons.
           </p>
           <h3 className="mt-12 text-2xl font-semibold tracking-tight">Sports Club Software vs. Fitness Club and Gym Software</h3>
           <CompareTable
@@ -551,6 +553,11 @@ export default function SportsClubPage() {
           <div className="mt-8">
             <AppFigure image={scImages.membership} caption="Membership database by category, household and renewal" />
           </div>
+          <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
+            Sports club membership management software keeps every member, household and category in one database.
+            Sports membership management software then ties renewals, fees and eligibility to that record, so a lapsed
+            membership is visible before a player is registered for the season.
+          </p>
           <LinkPanel>
             When membership plans, renewals, access and payment status are the main focus, dedicated{" "}
             <BodyLink link={scLinks.membership} /> keeps access and payments attached to the right person.
@@ -572,6 +579,10 @@ export default function SportsClubPage() {
         {/* Coaches */}
         <Section id="coaches" eyebrow="Coaching" title="Coach and Training Management">
           <CheckList items={coachPoints} className="max-w-5xl md:grid-cols-2" />
+          <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
+            Sports class management software handles the sessions that sit outside team training, such as skills
+            clinics, holiday camps and beginner programs, with capacity, coach assignment and attendance for each one.
+          </p>
           <div className="mt-8">
             <AppFigure image={scImages.training} caption="Practices by venue and coach for the week" />
           </div>
@@ -596,6 +607,10 @@ export default function SportsClubPage() {
         {/* Facilities */}
         <Section id="facilities" eyebrow="Venues" title="Sports Facility and Booking Management">
           <TitledList items={facilityPoints} icon={MapPin} className="sm:grid-cols-2 lg:grid-cols-4" />
+          <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
+            Sports venue management software allocates fields, courts and pool lanes by hour, so team practices, member
+            bookings and outside hire never claim the same slot.
+          </p>
           <div className="mt-8">
             <AppFigure image={scImages.facility} caption="Fields, courts and pool by hour: teams first, then members and hire" />
           </div>

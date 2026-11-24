@@ -69,6 +69,7 @@ const page: ProductPageData = {
           paragraphs: [
             "A grocery store sells thousands of items, many of them perishable, on thin margins and at high speed. Bananas are priced by the pound, yogurt expires in two weeks, the bread vendor delivers straight to the shelf, and a weekly ad changes hundreds of prices every Wednesday. A general retail system that was built for t-shirts and phone cases struggles with all of it.",
             "When the POS, the inventory spreadsheet, the ordering sheets and the online store don't talk to each other, the problems are predictable: shelf prices that don't match the register, produce thrown away because nobody saw it expiring, out-of-stocks on the items customers come in for, vendor invoices that don't match what was delivered, and no clear view of shrink. Grocery store management software is built to close those gaps.",
+            "Good software for grocery store management treats the register, the back room and the online store as one operation, so a sale, a delivery or a markdown updates the same record everywhere.",
           ],
         },
       ],
@@ -81,7 +82,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "**Grocery store management software** (also called grocery store software, supermarket management software or a grocery retail system) is a platform that runs a grocery store's sales, inventory, purchasing and customer programs from one product catalog. It covers:",
+            "**Grocery store management software** (also called grocery store software, supermarket management software, grocery store operations management software or a grocery retail system) is a platform that runs a grocery store's sales, inventory, purchasing and customer programs from one product catalog. It covers:",
           ],
         },
         {
@@ -210,6 +211,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Grocery POS software has to handle more than barcodes. A single basket can include a scanned box of cereal, a pound and a half of apples from the lane scale, a deli package with a price-embedded barcode, a six-pack that needs an ID check and an EBT-eligible split. The checkout screen must make all of that fast for cashiers and clear for customers.",
+            "Because every scan also reduces stock, grocery store POS & inventory management software keeps the lane and the shelf count in step. Stores that run checkout in one tool and stock in another usually end up reconciling the two by hand at the end of each day.",
           ],
         },
         {
@@ -240,6 +242,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Fresh departments drive traffic and margin, and they are also where most waste happens. Perishable inventory tracking records batches and expiry dates at receiving, alerts staff before product reaches its sell-by date, suggests markdowns and records waste or donations by reason, so the store can see what it loses and why.",
+            "Inventory management software for a grocery store has to track dates as well as quantities, because two cases of the same yogurt can expire a week apart. Grocers comparing the best expiry date management software for grocery stores should check whether dates are captured at receiving, whether alerts are sorted by department and days left, and whether markdowns and waste are recorded in the same place.",
           ],
         },
         {
@@ -258,7 +261,7 @@ const page: ProductPageData = {
         { type: "figure", image: "perishables", caption: "Batches, expiry dates, markdown suggestions and waste by department" },
         {
           type: "linkPanel",
-          text: "Retailers whose biggest challenge is stock accuracy across many SKUs and locations may also want our [retail inventory management system](/products/retail-ecommerce-software/retail-inventory-management-system).",
+          text: "Retailers looking for grocery inventory management software for retail store formats that also carry general merchandise, or whose biggest challenge is stock accuracy across many SKUs and locations, may also want our [retail inventory management system](/products/retail-ecommerce-software/retail-inventory-management-system).",
         },
       ],
     },
@@ -271,6 +274,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Grocers buy from wholesalers, local farms and direct-store-delivery vendors like bread, snack, beverage and dairy routes. Each has its own schedule, minimums and paperwork. Grocery purchasing software builds suggested orders from real sales, sends purchase orders, checks deliveries against them and matches vendor invoices before payment.",
+            "Purchasing is where grocery store inventory management software pays off most directly: when on-hand counts, sales velocity and open orders live in one system, buyers order what the shelf actually needs instead of working from last week's sheet.",
           ],
         },
         {
@@ -667,6 +671,7 @@ const page: ProductPageData = {
     { question: "How does grocery software track perishable items?", answer: "It records batches and sell-by or use-by dates at receiving, alerts staff before items expire, suggests markdowns, and logs waste or donations by reason so perishable losses are visible by department." },
     { question: "Can grocery store software reduce shrink?", answer: "It helps by tracking waste, damages, markdowns, receiving variances and count differences by reason and department, so managers can see where losses happen and act on them. Results depend on store processes." },
     { question: "Does grocery store management software support EBT and SNAP?", answer: "It can identify EBT-eligible items and split tenders, working through a certified payment processor. The store also needs its own SNAP authorization from the USDA to accept EBT." },
+    { question: "What should inventory management software for grocery store operations include?", answer: "It should track stock by store and location in real time, record batches and expiry dates, suggest reorders from sales and lead times, support DSD receiving and cycle counts, and report shrink and waste by department." },
     { question: "Can it automate reordering?", answer: "Yes. Suggested orders can be calculated from sales velocity, lead times, shelf capacity, min/max levels and upcoming promotions, then reviewed and sent to vendors as purchase orders." },
     { question: "How are DSD vendor deliveries handled?", answer: "Direct store deliveries are checked in at the back door with a handheld scanner against expected quantities and costs, variances are flagged, and the receipt is matched to the vendor invoice before payment." },
     { question: "Can grocery software manage weekly ads and promotions?", answer: "Yes. Temporary price reductions, BOGO, mix-and-match, multi-buy and member prices can be scheduled to start and end automatically, with shelf labels printed for each change." },

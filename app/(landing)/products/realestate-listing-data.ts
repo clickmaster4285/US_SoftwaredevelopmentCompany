@@ -326,6 +326,7 @@ const page: ProductPageData = {
           paragraphs: [
             "Traffic is only valuable if inquiries reach an agent quickly. Every listing page can offer a question form, a tour request, an open house RSVP and call or text buttons. Each inquiry is tagged with the listing, the search that led to it and the visitor's saved favorites, then routed to the listing agent, a team or an area specialist.",
             "Leads can flow straight into your [real estate CRM software](/products/real-estate-property-management/real-estate-crm-software), so agents follow up from one pipeline instead of a shared inbox.",
+            "It is easy to list trending online lead generation real estate platforms for businesses, but leads bought from portals are often shared with other agents. A listing platform you own captures inquiries on your own pages, so you control the follow-up, the data and the cost per lead over time.",
           ],
         },
         {
@@ -416,6 +417,12 @@ const page: ProductPageData = {
             ["Vacation and short-term rentals", "Calendars, nightly rates, booking requests"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Commercial real estate listing platforms work differently from residential home search. The commercial real estate listing platforms US brokers rely on tend to organize inventory by space rather than by property, with suite sizes, lease rates and terms, zoning, loading and parking details, downloadable brochures and inquiry forms that capture the prospect's company and space requirements.",
+          ],
+        },
       ],
     },
     {
@@ -449,6 +456,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A listing platform connects to data, mapping and marketing services. Clickmasters builds these connections through its [API development and integration](/software-development/api-development-integration) practice.",
+            "Offline marketing can connect too. Brokerages comparing the best platforms for real estate direct mail lists for just-listed and just-sold postcards can have the listing platform export eligible addresses or opted-in contacts to their mailing provider, subject to MLS data rules and the provider's own terms.",
           ],
         },
         {

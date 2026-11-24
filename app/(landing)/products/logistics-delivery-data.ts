@@ -67,7 +67,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Running your own deliveries starts simply: a few drivers, a printed list of addresses and a group chat. As volume grows, the cracks show. Dispatchers juggle orders from the website, the store and the sales team. Drivers zigzag across town because stops were assigned in the order they came in. Customers call to ask when their order will arrive, and nobody knows for sure. A signed paper slip gets lost, and a dispute over a missing package turns into one person's word against another's.",
-            "Each of those problems costs money: extra miles and overtime, missed delivery windows, failed first attempts, refunds and lost repeat customers. A delivery platform replaces the whiteboard and phone calls with one connected workflow, from the moment an order is placed to the moment a driver captures proof of delivery.",
+            "Each of those problems costs money: extra miles and overtime, missed delivery windows, failed first attempts, refunds and lost repeat customers. Logistics delivery and management software replaces the whiteboard and phone calls with one connected workflow, from the moment an order is placed to the moment a driver captures proof of delivery.",
           ],
         },
       ],
@@ -80,7 +80,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "**Delivery management software** (also called a delivery management system or last-mile delivery software) is a platform that plans, dispatches, tracks and records local deliveries made by your own drivers or delivery partners. It covers:",
+            "**Delivery management software** (also called a delivery management system, last-mile delivery management software or logistics delivery management software) is a platform that plans, dispatches, tracks and records local deliveries made by your own drivers or delivery partners. It covers:",
           ],
         },
         {
@@ -240,6 +240,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Delivery dispatch software turns a list of orders into a plan. Dispatchers see every unassigned stop, every driver's shift and every vehicle's capacity on one board. Stops can be assigned automatically by zone and capacity, then reviewed and adjusted by hand before routes are released to drivers.",
+            "Together, the dispatch board and stop sequencing work as delivery route management software for teams that don't need a separate optimization engine: routes are built, checked and sent to the driver app from the same screen.",
           ],
         },
         { type: "figure", image: "dispatch", caption: "Dispatch board with auto-assignment by zone, vehicle capacity and driver shift" },
@@ -349,6 +350,12 @@ const page: ProductPageData = {
             ["Same-day retail", "Orders after the morning plan", "Dynamic insertion into live routes"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Restaurant delivery management software has to move faster than most. Food delivery management software usually dispatches an order as soon as the kitchen marks it ready, keeps each run to one or two stops so the food arrives hot, and gives the customer an ETA that updates as the driver moves.",
+          ],
+        },
         { type: "figure", image: "coldChain", caption: "Cold-chain readings per stop and out-of-range alerts" },
       ],
     },
@@ -357,6 +364,12 @@ const page: ProductPageData = {
       eyebrow: "Insight",
       title: "Delivery Performance Analytics",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Reporting is also where the platform works as delivery driver management software: scorecards show on-time rate, stops per hour and exceptions by driver, so coaching is based on facts. Adding vehicles, mileage and telematics data brings in parts of delivery fleet management software, such as cost per vehicle and utilization by route.",
+          ],
+        },
         {
           type: "table",
           caption: "Delivery reports and what they show",
@@ -381,6 +394,13 @@ const page: ProductPageData = {
       title: "Delivery Software for Businesses That Run Their Own Fleet",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "The core platform stays the same across industries, but the configuration changes. Retailers evaluating ecommerce delivery management software usually focus on checkout slots, tracking links and easy returns, while grocery delivery management software adds substitutions, cold-chain records and short delivery windows.",
+            "Meal-kit and prepared-food companies need meal delivery management software that handles recurring weekly orders and temperature logs, and delivery management software for restaurants and ghost kitchens is built around fast dispatch and short routes.",
+          ],
+        },
+        {
           type: "table",
           caption: "Delivery needs by business type",
           headers: ["Business type", "Typical needs"],
@@ -396,6 +416,10 @@ const page: ProductPageData = {
             ["Laundry and service businesses", "Pickups and drop-offs on the same route"],
           ],
         },
+        {
+          type: "note",
+          text: "Route-based distributors have their own needs. Propane delivery management software typically tracks tank levels, recurring fill schedules and driver qualifications for hazardous materials, and water delivery management software handles standing bottle orders, empty-bottle returns and customer deposits. Both run on the same dispatch, driver app and proof-of-delivery core.",
+        },
       ],
     },
     {
@@ -403,6 +427,12 @@ const page: ProductPageData = {
       eyebrow: "Compare",
       title: "Delivery Management Software vs. Courier Management System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Both kinds of system move parcels and packages, so the terms overlap. Package delivery management software for a retailer delivering its own orders is built around one brand's customers, while parcel delivery management software for a carrier serving many merchants needs hubs, sorting and merchant billing. Companies looking for courier delivery management software to run a third-party courier business should start from the comparison below.",
+          ],
+        },
         {
           type: "table",
           caption: "In-house delivery software compared with a courier management system",
@@ -490,6 +520,10 @@ const page: ProductPageData = {
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
           ],
         },
+        {
+          type: "note",
+          text: "Delivery management software for small business teams with a handful of drivers does not have to be a large project. A focused first release with order import, a dispatch board and a driver app with proof of delivery can be extended later as volume grows.",
+        },
       ],
     },
     {
@@ -497,7 +531,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Delivery Management Software Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["When you commission custom software for delivery management, Clickmasters can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -542,6 +576,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose Delivery Management Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "There is no single best delivery management software for every business. Buyers usually judge the options against their own order volume, delivery promises, integrations and budget; these are the points worth comparing:",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -637,7 +677,7 @@ const page: ProductPageData = {
     { question: "Can customers track their delivery in real time?", answer: "Yes. Customers can receive a branded tracking link showing the driver's progress and a live ETA, plus SMS or email updates when the order is out for delivery, nearly there and delivered." },
     { question: "Can delivery software assign drivers automatically?", answer: "Yes. Stops can be assigned automatically by zone, vehicle capacity, driver skills, shift times and workload, then reviewed and adjusted by a dispatcher before routes are released." },
     { question: "Does delivery software include route optimization?", answer: "It can include route sequencing that respects windows, capacity and service times. Larger operations with complex constraints often add dedicated route optimization software." },
-    { question: "Can it handle same-day delivery?", answer: "Yes. Same-day orders can be accepted until a cut-off and inserted into live routes or dispatched to a dedicated same-day driver or delivery partner." },
+    { question: "Can it handle same-day delivery?", answer: "Yes. Same-day orders can be accepted until a cut-off and inserted into live routes or dispatched to a dedicated same-day driver or delivery partner. Businesses that need on-demand delivery management software can also dispatch each order as soon as it is placed, without waiting for a planned route." },
     { question: "How are failed deliveries handled?", answer: "The driver records a reason and photo, the customer receives a reschedule link, and the reattempt or return to the depot is planned automatically on a later route." },
     { question: "Can drivers collect cash on delivery?", answer: "Yes. Cash, check or card payments can be recorded in the driver app, with end-of-day totals per driver for reconciliation. Card payments run through a certified payment processor." },
     { question: "Does the driver app work offline?", answer: "It can be built with offline mode so drivers keep working without signal, with stop updates and proof of delivery synced when the connection returns." },

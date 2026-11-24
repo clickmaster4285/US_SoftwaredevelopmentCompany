@@ -38,7 +38,7 @@ const page: ProductPageData = {
     subhead: "Fill vacancies faster, screen applicants consistently, sign leases online and collect rent on time from one connected system.",
     paragraphs: [
       "A rental management system follows every unit through its lifecycle: listed while vacant, shown to prospects, applied for, screened, leased, paid for every month, renewed or turned over. Instead of spreadsheets, paper applications, payment apps and email threads, landlords and leasing teams see each unit, tenant and dollar in one place.",
-      "Clickmasters designs and builds custom rental property management software for US landlords, small and mid-size rental portfolios, student housing, build-to-rent communities and short-term rental operators, shaped around your units, your leasing process and your local rules.",
+      "Clickmasters designs and builds custom rental property management software for landlords across the US, small and mid-size rental portfolios, student housing, build-to-rent communities and short-term rental operators, shaped around your units, your leasing process and your local rules.",
     ],
     image: "dashboard",
     caption: "Occupancy, rent collected, vacancies, applications and renewals at a glance",
@@ -68,6 +68,7 @@ const page: ProductPageData = {
           paragraphs: [
             "With a handful of units, a spreadsheet and a payment app feel manageable. Then the portfolio grows. A unit sits empty for three weeks because nobody followed up on showing requests. Two applicants are screened differently. A lease renewal date slips past. Rent arrives through four channels, someone pays half, and the late fee is waived for one tenant but not another.",
             "Each of those gaps costs money, and some create legal risk. Rental software brings the steps into one workflow, so every vacancy, application, lease and payment is tracked the same way, whether you manage ten doors or two thousand.",
+            "If you are managing rental property, software should remove handoffs rather than add another login. For owners of several rental properties, management software that connects leasing, rent and maintenance usually replaces three or four separate tools.",
           ],
         },
       ],
@@ -80,7 +81,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "A **rental management system** (also called rental property management software or landlord software) is a platform that manages residential rental units from vacancy to move-out. It covers:",
+            "A **rental management system** (also called rental property management software, property rental management software or landlord software) is a platform that manages residential rental units from vacancy to move-out. You may also see it described as real estate rental property management software or rental property manager software. It covers:",
           ],
         },
         {
@@ -371,6 +372,8 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Many portfolios mix long-term leases with furnished or vacation units. Short-term rental management adds a nightly calendar, bookings synced from listing channels through a channel manager integration, cleaning turnovers between stays, and nightly rates that change by season or demand.",
+            "Buyers look for this under several names: vacation rental property management software for beach and mountain homes, holiday rental property management software in markets where \"holiday let\" is the usual term, or short-term rental property management software for furnished city apartments. The labels differ, but the core workflow is the same: calendar, channels, cleaning and taxes.",
+            "Property management software for vacation rentals also has to serve the owners behind the units. Vacation rental software for property managers typically adds owner statements, owner-block dates on the calendar and cleaning crews assigned by property, while vacation rental property manager software for a single host can stay much simpler. Property management software for short term rentals that sits in the same system as your long-term leases avoids keeping two tenant and payment records.",
           ],
         },
         {
@@ -399,6 +402,12 @@ const page: ProductPageData = {
       title: "Rental Software for Every Kind of Portfolio",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Residential rental property management software has to fit very different operations, from one landlord with a duplex to a team leasing hundreds of apartments. Custom software for managing rental properties is shaped around the portfolio type rather than forcing every owner into the same screens.",
+          ],
+        },
+        {
           type: "table",
           caption: "Rental management needs by portfolio type",
           headers: ["Portfolio type", "Typical needs"],
@@ -420,6 +429,12 @@ const page: ProductPageData = {
       eyebrow: "Compare",
       title: "Rental Management System vs. Property Management Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Teams comparing software for property management, rental leasing or both should start with who they work for. A landlord leasing their own units needs a rental system. A firm managing units for other owners needs full property management software; rental workflows are then one module inside it. In property management, rental software is sometimes sold as a standalone add-on, so check whether the two share one tenant and ledger record.",
+          ],
+        },
         {
           type: "table",
           caption: "Rental management system compared with property management software",
@@ -464,6 +479,10 @@ const page: ProductPageData = {
             ["Messaging", "Email and SMS providers for notices and reminders"],
           ],
         },
+        {
+          type: "note",
+          text: "Accounting is the most common integration request. Landlords who keep their books in Quicken sometimes search for Quicken rental property management software or Quicken rental property manager software, meaning a rental tool whose rent and expense data can be exported in a file format Quicken can import. QuickBooks rental property management software usually means syncing charges, payments and deposits with QuickBooks through its API. A custom system can provide an export or an integration, depending on what the accounting product supports; QuickBooks and Quicken are third-party products, and the rental system works alongside them rather than replacing them.",
+        },
       ],
     },
     {
@@ -474,7 +493,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "Rental applications contain Social Security numbers, income documents and screening reports, so data protection is part of the design. Custom rental software can include:",
+            "Most landlords today expect cloud based rental property management software they can open from any device, which means applicant and payment data lives on hosted servers rather than an office PC. Rental applications contain Social Security numbers, income documents and screening reports, so data protection is part of the design. Custom rental software can include:",
           ],
         },
         {
@@ -511,6 +530,13 @@ const page: ProductPageData = {
             ["Tenant app", "Vendor-branded", "Your brand on web and mobile"],
             ["Pricing model", "Per-unit monthly subscription", "Build cost plus hosting and maintenance you control"],
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Ready-made products dominate searches for the best free rental property management software or the best rental property management software under $100 a month. Free and low-cost tiers typically limit the number of units, pass payment or screening fees on to tenants, keep e-signature or owner reports behind higher plans, or store your data in the vendor's format. For a landlord with a few doors, that trade-off can be reasonable; for a growing portfolio, check what the price actually includes before migrating.",
+            "Custom software to manage rental properties makes sense when your leasing process, fee structure or mix of long- and short-term units does not fit a vendor's defaults. With custom software, rental property management follows your process, and you decide which features to build first.",
           ],
         },
       ],
@@ -571,6 +597,14 @@ const page: ProductPageData = {
       title: "How to Choose Rental Property Management Software",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Searches such as \"best rental property management software 2026\" return ranked lists that change every year and rarely reflect your portfolio. Rather than asking which product is the best software for rental property management in general, ask which one fits your units, leasing process and states. The checklist below works whether you are comparing ready-made products or scoping custom software for rental property management.",
+            "Portfolio size changes the answer. The best property management software for managing 50 rental units is usually lightweight: online applications, leases, rent collection and a simple rent roll. The best property management software for managing 250 rental units needs role-based access for a leasing team, a vacancy board, bulk renewals and owner reporting.",
+            "When buyers look for the best value property management software for managing 250 rental units, compare total cost over several years, including per-unit subscription fees, tenant-paid fees, add-ons and migration, not just the monthly price. Lists of the most innovative property management software for managing 250 rental units are useful for ideas, but a feature only adds value if your team will use it.",
+          ],
+        },
+        {
           type: "checkGrid",
           items: [
             "Number of units and property types",
@@ -588,6 +622,10 @@ const page: ProductPageData = {
             "Data security for applicant records",
             "Migration, training and support",
           ],
+        },
+        {
+          type: "note",
+          text: "The best software to manage rental properties for one owner can be the wrong fit for another. Whether you self-manage or hire someone to manage rental property, software choices should be tested with your own units: run a sample vacancy, application, lease and rent payment through a demo or prototype before committing.",
         },
       ],
     },
@@ -631,6 +669,12 @@ const page: ProductPageData = {
             ["Support", "Monitoring, updates and new features."],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "After launch, day-to-day rental property software management, such as user access, updates, backups and new integrations, is covered by the support plan you choose, so your team can focus on leasing instead of maintaining the system.",
+          ],
+        },
       ],
     },
     {
@@ -668,17 +712,19 @@ const page: ProductPageData = {
     { question: "What is a rent roll?", answer: "A rent roll is a report listing every unit with its tenant, lease dates, monthly rent, charges, payments and balance. Rental software keeps it updated in real time." },
     { question: "Can it manage lease renewals and rent increases?", answer: "Yes. The system alerts you before notice periods, sends renewal offers with new terms and rent, and records signed renewals, following the notice rules you configure." },
     { question: "Does it support short-term and vacation rentals?", answer: "It can. A nightly calendar, channel manager sync, cleaning turnovers, nightly pricing rules and occupancy tax tracking can sit alongside long-term leases in the same system." },
+    { question: "What is the best property management software for short term rentals?", answer: "It depends on your channels, unit count and whether you also hold long-term leases. When comparing the best short term rental property management software, check channel manager sync, cleaning turnover tasks, nightly pricing rules and occupancy tax tracking. For the best property management software for vacation rentals, also check owner statements and owner-block dates. Ask the same questions of any property management software. Vacation rentals depend on accurate calendars more than any other feature." },
+    { question: "What is the best software for managing rental properties?", answer: "There is no single answer. The best software for managing rental property depends on the number of units, the rental types and the states you operate in. A landlord with a few homes may find the best rental property manager software is a simple tool for leases and online rent, while a larger operator needs screening, renewals and owner reports. Shortlist products, or a custom build, against your own workflows rather than a generic list of the best rental property software. Management teams should also check migration, training and support." },
     { question: "Is there a tenant app?", answer: "There can be. A tenant portal or branded iOS and Android app lets tenants pay rent, view their lease, submit maintenance requests and message the landlord." },
     { question: "What is the difference between a rental management system and property management software?", answer: "A rental system focuses on leasing units and collecting rent. Property management software runs a whole management business, adding trust accounting, owner disbursements, vendor management and full maintenance operations." },
     { question: "Can it list vacancies on rental websites?", answer: "Yes, through listing syndication: available units are published to your website and to listing sites that offer feeds or APIs, from one listing record." },
-    { question: "Is rental management software suitable for a small landlord?", answer: "Yes. A small landlord can start with online applications, leases and rent collection, then add screening integrations, a tenant app and reports as the portfolio grows." },
+    { question: "Is rental management software suitable for a small landlord?", answer: "Yes. A small landlord can start with online applications, leases and rent collection, then add screening integrations, a tenant app and reports as the portfolio grows. For owners who manage rental properties, software that starts small and adds modules avoids a second migration later." },
     { question: "How much does a custom rental management system cost?", answer: "It depends on units, rental types, integrations for screening, payments and e-signature, listing and channel feeds, apps, reporting and data migration. Clickmasters agrees scope, timeline and a quote before development starts." },
     { question: "Can I move my tenants and leases from spreadsheets or another system?", answer: "Yes. Units, tenants, leases, charges and balances can be migrated from spreadsheets or your current software, with validation before go-live." },
   ],
   finalCta: {
     title: "Build a Rental Management System Around Your Portfolio",
     paragraphs: [
-      "Whether you rent out a few homes, run a multifamily community or mix long-term and short-term units, the right system starts with your units, your leasing process and your tenants.",
+      "Whether you rent out a few homes, run a multifamily community or mix long-term and short-term units, the right software to manage rental property starts with your units, your leasing process and your tenants.",
       "Tell Clickmasters Software Development Company how you lease and collect rent today and where it breaks down. We'll recommend the modules and integrations you need and scope the first release of your custom rental software.",
     ],
   },

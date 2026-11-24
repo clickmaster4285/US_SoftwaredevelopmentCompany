@@ -68,6 +68,7 @@ const page: ProductPageData = {
           paragraphs: [
             "Every property adds leases with their own terms, tenants with their own requests, vendors with their own invoices and owners who expect a clear monthly statement. At a handful of units, spreadsheets, email and a shared drive can keep up. At a few hundred units across residential, commercial and association properties, they cannot.",
             "The symptoms are familiar: maintenance requests lost in an inbox, lease renewals noticed after the tenant has already left, vendor invoices paid twice or not at all, owners waiting on statements, and nobody able to say which properties are actually profitable. A property management system replaces that patchwork with one connected record for every property, unit, lease, tenant, owner and vendor.",
+            "Once you manage dozens of properties, management software has to do more than store tenant contacts. It has to connect leasing, maintenance, accounting and owner reporting so that a change in one place shows up everywhere it matters.",
           ],
         },
       ],
@@ -95,6 +96,12 @@ const page: ProductPageData = {
             ["Owners", "Statements, distributions, reserves and budgets"],
             ["Communication", "Portals, notices, messages and document sharing"],
             ["Insight", "Occupancy, delinquency, NOI and budget vs. actual reporting"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Buyers describe the category in different ways: real estate property management software, property manager software or property management system software. The core job is the same. Professional property management software used by companies that manage on behalf of owners adds trust accounting, owner statements and multi-owner books, while software for property managers who run a single owner's portfolio can stay lighter.",
           ],
         },
         {
@@ -136,6 +143,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Payments, screening, e-signature and banking features depend on the providers you choose.",
+            "Teams evaluating AI property management software usually want help with specific, reviewable tasks: drafting replies to tenant messages, categorizing and prioritizing maintenance requests, or summarizing key lease terms. These can be added where they save time, with staff approving the output before it reaches tenants, owners or the ledger.",
           ],
         },
         {
@@ -209,6 +217,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Different property types run on different rules. Residential tools are built around many short leases, fast turnover and tenant service. Commercial systems are built around long leases, complex recoveries and tenant improvements. Mixed-use and association portfolios need both, plus owner and board reporting.",
+            "Residential property management software centers on rent collection, renewals, turnover and service requests. Commercial property management software has to model escalations, recoveries and CAM reconciliations accurately. Affordable housing property management software adds program-specific steps such as income certifications, recertification reminders and subsidy or tenant-portion rent splits, configured to the programs you operate under. Hotel property management software is a different category built around nightly reservations, room inventory and front-desk check-in, so it is usually kept separate from long-term lease management.",
           ],
         },
         {
@@ -265,6 +274,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Maintenance is where tenants judge a property manager. A good property management system makes every request trackable: the tenant submits it with photos, the manager approves and assigns it, the technician or vendor updates the status from a phone, and the invoice is matched to the work order before it is paid.",
+            "Some teams also look for project management software for property management to coordinate unit turns, make-ready checklists and small capital jobs. Those tasks can live alongside work orders, with due dates, assignees and budgets tied to the same property and unit.",
           ],
         },
         {
@@ -323,6 +333,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Property accounting software has to reflect who owns the money. Rent collected for an owner, security deposits held for tenants and the management company's own fees often belong in different accounts. A custom system can model separate operating, trust and deposit accounts per owner or property, then produce owner statements directly from the ledger.",
+            "A common early decision is whether to run property management and accounting software as one platform or to connect separate accounting software for property management to the operations side. Integrated property management accounting software keeps rent, work orders and vendor bills in one ledger; a connected setup can export journal entries to QuickBooks or another general ledger your accountant already uses.",
           ],
         },
         {
@@ -443,6 +454,13 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Individual owners often start with landlord property management software rather than a full company platform. Property management software for landlords focuses on rent collection, leases, repairs and a basic expense ledger for a few properties.",
+            "Searches for the best property management software for landlords, or the best free property management software for small landlords, usually lead to off-the-shelf tools with free or low-cost tiers. Those tiers typically trade off unit limits, per-payment fees, fewer reports or limited support. Simple property management software can be enough at that stage; a custom system makes more sense once you manage for other owners or need commercial, HOA or trust accounting features.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "If your main job is filling vacancies and collecting rent on your own units, a [rental management system](/products/real-estate-property-management/rental-management-system) may be the simpler starting point.",
         },
@@ -457,6 +475,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A property management system sits in the middle of banks, payment processors, screening services, listing sites and accounting tools. Clickmasters' [API development and integration](/software-development/api-development-integration) team connects custom software to the services you already use.",
+            "Most teams now expect cloud based property management software, so staff, technicians and owners can sign in from any browser or phone. Running property management online, software updates, backups and security patches are handled centrally instead of on office PCs, and online property management software makes it easier to connect banks and payment processors through their APIs.",
           ],
         },
         {
@@ -521,6 +540,13 @@ const page: ProductPageData = {
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Published lists of the best property management software, top property management software or the best property management software 2026 roundups compare ready-made products on general features. They are a useful starting point, but most of these property management softwares are ranked for typical residential portfolios. A list of the best commercial property management software may still miss your CAM rules, fee structures or owner agreements.",
+            "There is no single best software for property management. The more useful question is which property management software best fits your property types, accounting rules and growth plans. Whether you buy or build software, property management teams get the most value when the system matches the work they already do.",
+          ],
+        },
       ],
     },
     {
@@ -577,6 +603,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose a Property Management System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Start with your workflows rather than a vendor list. For portfolio and lease management, property software should reflect how your team already handles leases, approvals and owner reporting. Use the checklist below to compare options.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -658,7 +690,7 @@ const page: ProductPageData = {
             "Data migration from current systems",
             "Hosting, security and support requirements",
           ],
-          panel: "There's no fixed price. Clickmasters agrees scope, timeline and quote before development starts, and can phase delivery starting with your most important workflows.",
+          panel: "Off-the-shelf property management software pricing is usually a monthly subscription per unit or tier, with payment and add-on fees on top; a custom build is priced differently. There's no fixed price. Clickmasters agrees scope, timeline and quote before development starts, and can phase delivery starting with your most important workflows.",
         },
       ],
     },
