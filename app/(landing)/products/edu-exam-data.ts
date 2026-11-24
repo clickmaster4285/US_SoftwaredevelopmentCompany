@@ -236,6 +236,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
+            "Web-based online examination software runs in a standard browser, so candidates can sit an exam on a school lab computer, a test-center workstation or an approved personal device without installing anything, unless an exam requires a lockdown browser.",
             "For candidates, the exam screen should be calm and predictable: a visible timer, a question navigator, a flag-for-review option and clear autosave status. For administrators, delivery settings control when the exam opens, how long it lasts and what candidates can do while it is running.",
           ],
         },
@@ -268,6 +269,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Integrity measures should match the stakes of the exam. A weekly class quiz may need nothing more than randomization and a time limit; a licensing exam may need identity verification and a live proctor. A custom online exam system lets you choose per exam.",
+            "Online exam proctoring software is usually a specialist third-party service connected to the exam platform. The platform decides which exams use it and at what level, passes candidate and session details to the provider, and shows its flags to your reviewers alongside the candidate's attempt.",
           ],
         },
         {
@@ -334,7 +336,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "Exam platforms face a unique load pattern: almost nothing for weeks, then thousands of candidates logging in and submitting within minutes. Architecture, caching, autosave design and capacity planning have to be built for that peak, and tested before it happens.",
+            "Online testing systems face a unique load pattern: almost nothing for weeks, then thousands of candidates logging in and submitting within minutes. Architecture, caching, autosave design and capacity planning have to be built for that peak, and tested before it happens.",
             "Clickmasters' QA team has published a case study on [pre-launch QA for a SaaS booking platform](/case-studies/pre-launch-qa-for-a-saas-booking-platform), covering regression, load and payment-flow testing on a multi-tenant product. The same discipline applies to exam-day load tests.",
           ],
         },
@@ -357,6 +359,12 @@ const page: ProductPageData = {
       eyebrow: "Who it's for",
       title: "Online Exam Software for Every Kind of Assessment",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Among buyers of online assessment software, education institutions such as schools, colleges and universities usually need results to flow back into their SIS or LMS, while certification bodies and employers tend to focus on identity checks, secure item banks and certificates.",
+          ],
+        },
         {
           type: "table",
           caption: "Online exam needs by organization type",
@@ -382,6 +390,12 @@ const page: ProductPageData = {
       eyebrow: "Compare",
       title: "Online Examination Software vs. LMS Quizzes",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "LMS quizzes work well for checking understanding inside a course. Dedicated online exam test software is built for formal sittings, with institution-wide question banks, external candidates, stronger integrity options and moderated grading.",
+          ],
+        },
         {
           type: "table",
           caption: "Online examination software compared with quizzes inside a learning management system",
@@ -451,7 +465,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Online Examination Software Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["Clickmasters builds online examination system software around your exam formats, integrity rules and peak load. We can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -499,6 +513,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose an Online Exam System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "There is no single best online examination software for every organization. A school running weekly quizzes and a licensing body running proctored exams need very different things, so compare options against your own exams, stakes and candidate numbers using these points:",
+          ],
+        },
         {
           type: "checkGrid",
           items: [

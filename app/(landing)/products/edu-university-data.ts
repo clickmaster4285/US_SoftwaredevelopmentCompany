@@ -209,6 +209,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Recruitment at a university spans undergraduate, transfer, graduate, doctoral and international students, each with different timelines. An admissions CRM records every prospect and interaction, automates communication by stage and shows the funnel from inquiry to enrolled student by program, region and source.",
+            "Combined with online applications, faculty review and decision letters, the CRM becomes a university admission management system: one place where recruiters, readers and the admissions office see each applicant's documents, scores, status and next step, and where admitted students move straight into matriculation without re-keying their details.",
           ],
         },
         {
@@ -236,6 +237,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Student lifecycle management follows each student through registration, advising, progression, probation, leave, program changes, graduation and alumni status. Because every faculty and service works from the same record, a change made by the registrar is immediately visible to advisors, housing, finance and the student.",
+            "This shared record is what makes a university student management system different from a set of departmental spreadsheets. Each program level below has its own rules, but they all sit on the same student profile, holds, standing and history.",
           ],
         },
         {
@@ -261,6 +263,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A degree audit compares a student's record with their catalog-year requirements and shows exactly what remains. Students and advisors can run what-if audits before changing majors, and the registrar uses the same audit, plus clearance from other offices, to confirm graduation.",
+            "Degree audit is one part of the wider university academic management system, alongside curricula, course scheduling, registration, grading and transcripts. Keeping these in one platform means a curriculum change approved by a faculty is reflected in the audit for the right catalog year.",
           ],
         },
         { type: "figure", image: "degreeAudit", caption: "Requirements completed, in progress and remaining, with clearance status" },
@@ -350,6 +353,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Few universities replace everything at once. A practical university ERP project connects new modules to the systems you keep: your LMS, an existing SIS, finance and HR systems, library software and identity provider. APIs and event feeds keep data in sync, and a phased plan retires legacy modules one at a time.",
+            "The same feeds can serve your public site. Program pages, admission deadlines and event listings on the university management system website can draw from the live catalog and admissions calendar, so prospective students see the same dates and requirements that staff work with.",
           ],
         },
         { type: "figure", image: "integrations", caption: "Identity, LMS, SIS, finance, HR and data warehouse connected through APIs", variant: "diagram" },
@@ -364,6 +368,12 @@ const page: ProductPageData = {
       eyebrow: "Insight",
       title: "Institutional Research and University Analytics",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Reporting is where the platform acts as a university management information system. Operational modules write to a governed data warehouse with agreed definitions, and leadership, deans and institutional research read the same figures through dashboards and scheduled reports.",
+          ],
+        },
         {
           type: "table",
           caption: "University reports and what they show",
@@ -430,7 +440,7 @@ const page: ProductPageData = {
       blocks: [
         {
           type: "prose",
-          paragraphs: ["With tens of thousands of users and many offices, access must be precise. A custom platform can include:"],
+          paragraphs: ["An online university management system is reachable from anywhere, by tens of thousands of users across many offices, so access must be precise. A custom platform can include:"],
         },
         {
           type: "checklist",
@@ -475,7 +485,12 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom University Management Software Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        {
+          type: "prose",
+          paragraphs: [
+            "Most projects include a browser-based university management system portal for students, faculty and staff, and many add a university management system app for iOS and Android that shares the same accounts and data. Clickmasters can deliver:",
+          ],
+        },
         {
           type: "checklist",
           items: [
@@ -620,6 +635,8 @@ const page: ProductPageData = {
     { question: "How does degree audit work?", answer: "Degree audit compares a student's completed and in-progress courses with the requirements of their program and catalog year, shows what remains and lets students run what-if scenarios before changing programs." },
     { question: "Can the system manage graduate and doctoral programs?", answer: "Yes. It can track supervisors, committees, qualifying exams, candidacy, thesis milestones, defenses and assistantships alongside coursework." },
     { question: "Does it include research and grants administration?", answer: "It can. A research module tracks proposals, approvals, awards, budgets, spending, effort and reporting deadlines by sponsor and department." },
+    { question: "Can it build class timetables across faculties and campuses?", answer: "Yes. The scheduling module works as a university timetable management system: it places courses and sections into rooms and time slots, checks instructor, room and student-group conflicts, and publishes timetables to portals, the mobile app and the LMS." },
+    { question: "How is a student management system for university use different from one for schools?", answer: "A school system mainly tracks classes, attendance and grades. A student management system for university use also handles faculties and programs, credit-based registration, prerequisites, degree audit, graduate milestones, housing and student accounts across several campuses." },
     { question: "Can it integrate with our LMS and existing SIS?", answer: "Yes. A custom platform can exchange courses, enrollments, rosters and grades with your LMS and synchronize records with an existing SIS through APIs, so you can modernize without replacing everything at once." },
     { question: "Can we replace our legacy university system in phases?", answer: "Yes. A phased roadmap builds or integrates modules one at a time, keeps legacy systems running where needed and retires them as each phase goes live." },
     { question: "How does single sign-on work for students and staff?", answer: "Users sign in once through your identity provider using SAML or OpenID Connect, and roles determine what each person can see across portals, apps and modules." },

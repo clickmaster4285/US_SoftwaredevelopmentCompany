@@ -67,7 +67,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Many course businesses start with a hosted course tool, a separate checkout, an email platform, a community app and a spreadsheet for instructor payouts. It works until it doesn't: learners pay but don't get access, coupons apply to the wrong course, a cohort's next module unlocks a week early, and nobody can say which course earns the most after refunds.",
-            "Fees grow with every sale and every learner, branding is limited, and the data about your customers lives in someone else's system. A course management platform built for your business brings catalog, commerce, delivery and reporting together on a platform you own.",
+            "Fees grow with every sale and every learner, branding is limited, and the data about your customers lives in someone else's system. A course management platform built for your business brings catalog, commerce, delivery and reporting together on a platform you own, instead of a hosted course app bolted onto generic learning management system tools.",
           ],
         },
       ],
@@ -135,7 +135,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Payment, email and video features depend on the providers you choose.",
+            "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Alongside commerce, they cover the core learning management system features learners expect, such as lessons, quizzes, progress and certificates. Payment, email and video features depend on the providers you choose.",
           ],
         },
         {
@@ -261,7 +261,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "Not every course should open all at once. Drip content releases modules on a schedule so learners move at a steady pace, and cohort-based courses add a fixed start date, a group of peers, live sessions and shared deadlines. Both can run alongside evergreen, self-paced courses on the same platform.",
+            "Not every course should open all at once. Drip content releases modules on a schedule so learners move at a steady pace, and cohort-based courses add a fixed start date, a group of peers, live sessions and shared deadlines. Both can run alongside evergreen, self-paced courses on the same platform. The idea is similar to a learning management system for students that opens one unit at a time across a term, but here the schedule follows each buyer's purchase or cohort date.",
           ],
         },
         { type: "figure", image: "drip", caption: "Weekly module releases and live sessions for a cohort-based course" },
@@ -314,7 +314,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "Learners who finish a course buy the next one and recommend it. The platform tracks progress through every lesson, nudges learners who stall, and issues a branded certificate with a verification link when they finish.",
+            "Learners who finish a course buy the next one and recommend it. The platform tracks progress through every lesson, nudges learners who stall, and issues a branded certificate with a verification link when they finish. If your organization also runs a school learning management system, education records such as grades and transcripts can stay there while the course platform handles sales and certificates for paid courses.",
           ],
         },
         { type: "figure", image: "certificate", caption: "Completion tracking and an automatically issued certificate", variant: "diagram" },
@@ -396,6 +396,10 @@ const page: ProductPageData = {
           type: "linkPanel",
           text: "Running classroom batches with fees and attendance rather than online courses? [Coaching institute management software](/products/education-management-software/coaching-institute-management-software) is built for that model.",
         },
+        {
+          type: "note",
+          text: "K-12 classes usually need a learning management system for schools, with rosters, terms and gradebooks, rather than a storefront. A course platform fits schools and districts that also sell summer programs, test prep or continuing education to the public.",
+        },
       ],
     },
     {
@@ -418,7 +422,8 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "Many businesses need both: a storefront that sells to the public and an LMS that trains internal teams or corporate clients. A custom build can share one course library between them.",
+            "Many businesses need both: a storefront that sells to the public and an LMS that trains internal teams or corporate clients. Training companies that sell to employers often pair the storefront with a learning management system for corporates, and running both as one learning management system online lets a custom build share one course library between them.",
+            "Some buyers start by looking for a learning management system for small business training. If the goal is to teach your own staff, an LMS is the closer fit; if the goal is to sell courses to customers, a course platform is.",
           ],
         },
       ],
@@ -465,6 +470,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "When comparing hosted course tools and learning management system vendors, look past the monthly plan at transaction fees, per-learner charges, branding limits and how easily you can export customer and purchase data.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "Planning to offer your platform to other businesses as a product? Our [SaaS product development](/software-development/saas-product-development) team builds multi-tenant platforms with subscription billing.",
         },
@@ -475,7 +486,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Course Platform Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["Whether you need a course storefront alone or a full learning management system application behind it, Clickmasters can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -593,6 +604,12 @@ const page: ProductPageData = {
       title: "Course Management Platform Cost",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Buyers often compare course platform cost with learning management system cost, but the drivers differ: checkout, payouts and marketing tools add scope to a course platform, while gradebooks and compliance records matter less.",
+          ],
+        },
+        {
           type: "cost",
           intro: "The cost of a custom course platform depends on:",
           items: [
@@ -624,7 +641,7 @@ const page: ProductPageData = {
     { question: "Can the platform issue course certificates?", answer: "Yes. Branded certificates with unique verification IDs can be issued automatically when a learner completes a course or a set of courses." },
     { question: "Is a white-label course platform possible?", answer: "Yes. A custom platform uses your brand, domain, emails and certificates throughout, with no vendor branding visible to learners." },
     { question: "Can companies buy courses for their teams?", answer: "Yes. Team licenses let a company buy seats, assign courses to employees and see team progress, with invoicing and optional single sign-on." },
-    { question: "Can learners use a mobile app?", answer: "The learning experience can be fully responsive, and branded iOS and Android apps can add push notifications and offline access to downloaded lessons." },
+    { question: "Can learners use a mobile app?", answer: "The learning experience can be fully responsive, and branded iOS and Android apps can add push notifications and offline access to downloaded lessons, much as a learning management system app does for enrolled students or employees." },
     { question: "Can I migrate from my current course platform?", answer: "Usually, yes. Courses, videos, learners, enrollments and purchase history can be exported from most hosted platforms and imported, with access preserved for existing customers." },
     { question: "Why build a custom course platform instead of using a hosted one?", answer: "A custom platform makes sense when transaction fees, branding limits, missing pricing models, marketplace needs or data ownership start to hold the business back. Hosted tools are often the right choice when you are just starting." },
     { question: "How much does a custom course management platform cost?", answer: "It depends on courses, learners, pricing models, marketplace and payout features, apps, integrations and migration. Clickmasters agrees scope, timeline and a quote before development starts." },

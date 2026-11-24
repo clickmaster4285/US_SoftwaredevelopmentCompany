@@ -98,6 +98,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Compared with other college education software such as a standalone LMS or a library system, college management system software is the operational backbone: it holds the student, course and finance records that the other tools read from and write back to.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "College software sits within the broader family of [education management software](/products/education-management-software). Some colleges run a separate [student information system (SIS)](/products/education-management-software/student-information-system-sis) for the official record and connect it to operational modules; others want everything in one platform.",
         },
@@ -136,6 +142,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Payment, messaging and integration features depend on the providers you choose.",
+            "Most colleges start with a core set of college management system modules (admissions, student records, registration and fees) and add exams, hostel, placements and alumni in later phases. The college management system features below are grouped roughly in the order a student meets them, and each role sees them through its own college management system dashboard: registration progress and pending approvals for the registrar, section loads for department heads, and balances and aid for the bursar.",
           ],
         },
         {
@@ -209,6 +216,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Student admission management turns each intake into a measurable pipeline per program. Applicants apply from your website, upload transcripts and test scores and pay application fees. Admissions officers review files, schedule entrance tests or interviews, rank applicants and send offers. Accepted students confirm their seat, pay a deposit and become enrolled students with no re-typing.",
+            "Dedicated college admission management software can run on its own, but keeping admissions inside the same platform means an accepted applicant's documents, program and scholarship decisions carry straight into registration and billing.",
           ],
         },
         {
@@ -488,6 +496,12 @@ const page: ProductPageData = {
             ["Data ownership", "Stored in the vendor's platform", "Your database and your exports"],
           ],
         },
+        {
+          type: "prose",
+          paragraphs: [
+            "Whether you call it college management ERP software or a college management system ERP, the decision is the same: adapt your offices to a vendor's standard model, or build a platform around your own credit rules, approval chains and reporting needs. Colleges with unusual programs or several legacy tools to replace often find the custom route easier to fit.",
+          ],
+        },
       ],
     },
     {
@@ -510,6 +524,12 @@ const page: ProductPageData = {
             "Integrations with LMS, accounting, SSO and library systems",
             "Data migration from spreadsheets or legacy software",
             "Testing, deployment, staff training and ongoing support",
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "Staff manage users, roles, academic years, fee plans and system settings from a college management system admin panel, while students and faculty use a college management system app on iOS or Android for timetables, attendance, grades, fee balances and notifications.",
           ],
         },
         {
@@ -561,6 +581,13 @@ const page: ProductPageData = {
             "Migration from legacy systems",
             "Training and support",
             "Total cost of ownership",
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "There is no single best college management software for every institution. The best fit is the one that matches your programs, credit rules and offices, so start by writing down your college management system requirements using the checklist above and ranking which ones are essential for the first release.",
+            "When you evaluate options, ask for a college management system demo built around your own workflows rather than a generic tour. For a custom build, that usually means a walkthrough of a clickable prototype or scoped screens for registration, exams and fees before development starts.",
           ],
         },
       ],

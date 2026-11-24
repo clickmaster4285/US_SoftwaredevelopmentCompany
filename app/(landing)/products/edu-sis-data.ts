@@ -359,6 +359,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Because the SIS is the source of truth, other systems should read from it rather than keep their own copies. A custom SIS can roster classes to learning platforms using common rostering standards, provide single sign-on, and exchange data with assessment, finance, transport and communication tools.",
+            "Good student information system integration is planned field by field: which system owns each value, how often it syncs, and what happens when a record is rejected. Settling those rules early prevents the duplicate students and mismatched rosters that otherwise appear at the start of each term.",
             "Integrations are built through Clickmasters' [API development and integration](/software-development/api-development-integration) team, with sync logs and error handling so mismatches are visible.",
           ],
         },
@@ -404,6 +405,12 @@ const page: ProductPageData = {
             ["Community colleges", "Terms, credits, transfer evaluation, program completion"],
             ["Colleges and universities", "Registration, degree audit, transcripts, registrar workflows"],
             ["Career and technical schools", "Program hours, certifications, cohort tracking"],
+          ],
+        },
+        {
+          type: "prose",
+          paragraphs: [
+            "A student information system for a university works at a larger scale than a K-12 SIS: several colleges and campuses, undergraduate and graduate levels, transfer credit evaluation and degree audits. In that kind of student information system, university registrars also need term-by-term registration and official transcripts for alumni who request records years after graduation.",
           ],
         },
       ],
@@ -478,6 +485,10 @@ const page: ProductPageData = {
             "Security, audit logging and access control design",
             "Testing, deployment, training and ongoing support",
           ],
+        },
+        {
+          type: "note",
+          text: "Student information system support continues after launch: year-end rollover, changes to state reporting specifications, new grading rules and fixes during busy enrollment and grading periods. The support terms are agreed as part of scoping.",
         },
         {
           type: "linkPanel",

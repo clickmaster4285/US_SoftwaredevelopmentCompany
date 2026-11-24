@@ -379,7 +379,7 @@ export const productIndustries: ProductIndustry[] = [
     description:
       "Systems for schools, colleges, universities, and course businesses that manage students and learning.",
     lead:
-      "A school or institute has to admit a student, put them in a class, run the exam, and collect the fee. These products follow that path for schools, colleges, universities, and coaching centers.",
+      "A school or institute has to admit a student, put them in a class, run the exam, and collect the fee. These products follow that path for schools, colleges, universities, and coaching centers: a school management system, a learning management system, college management software, a university management system, a student information system, a course management platform, coaching management software and online examination software.",
     audiences: ["Schools", "Colleges and universities", "Coaching institutes", "Course teams"],
     icon: "GraduationCap",
     products: [

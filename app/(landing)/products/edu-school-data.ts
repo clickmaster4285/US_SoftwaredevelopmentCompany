@@ -99,6 +99,12 @@ const page: ProductPageData = {
           ],
         },
         {
+          type: "prose",
+          paragraphs: [
+            "Most schools now run it as a school management system web application: staff, teachers and families sign in from a browser on an office computer, classroom laptop, tablet or phone, with nothing to install on each device and one central database behind every screen.",
+          ],
+        },
+        {
           type: "linkPanel",
           text: "School administration software is one part of the wider family of [education management software](/products/education-management-software). It can include student information, learning and exam modules, or connect to dedicated systems for each.",
         },
@@ -210,6 +216,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "An online admission system turns the enrollment season into a trackable pipeline. Families apply from your website, upload documents and pay application fees; the admissions team reviews, schedules assessments or interviews, and sends offers. Accepted students become enrolled records automatically, with no re-typing.",
+            "School management system registration also covers the families who are already enrolled. Returning students can re-register for the new school year online, confirm guardian and medical details, and choose electives or transport, so the office starts each year with up-to-date records instead of a stack of paper forms.",
           ],
         },
         {
@@ -237,6 +244,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "Student attendance management is usually the first thing staff use every day, so it has to be fast. Teachers mark attendance from a roster in a few taps, the office sees the whole school in real time, and parents are notified automatically when a child is absent or late.",
+            "Because school management system attendance data sits on the same student record as grades and fees, the office can spot patterns that separate tools hide, such as a student whose absences are rising in the same weeks their grades are slipping.",
           ],
         },
         {
@@ -263,6 +271,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "The academic core of school management software links the timetable, the gradebook and the report card. Teachers enter grades once, and report cards, transcripts and progress reports are generated from the same data.",
+            "At the end of an exam period, school management system result publishing lets the office review marks, lock them and release term results to the parent and student portals on a set date, rather than sending printed sheets home.",
           ],
         },
         { type: "figure", image: "timetable", caption: "Weekly timetable by grade and section with subjects, teachers and rooms" },
@@ -324,6 +333,8 @@ const page: ProductPageData = {
           paragraphs: [
             "Parents are the school's most important users outside the building. A parent portal and mobile app give each family one login for every child: attendance, homework, grades, report cards, fee balances, notices and direct messages with teachers.",
             "Branded iOS and Android apps can be built from one codebase through Clickmasters' [cross-platform app development](/mobile-app-development/cross-platform-app-development) practice, with push notifications for absences, announcements and fee reminders.",
+            "Each role also gets its own home screen. The school management system admin dashboard shows enrollment, today's attendance, fee collection and pending admissions across the school. The school management system teacher dashboard lists today's classes, attendance still to be marked, grades to enter and unread parent messages. The school management system student dashboard shows the day's timetable, homework due and recently published grades.",
+            "A school management system for students works best when it is simple enough for younger children to use with a parent's help and detailed enough for high schoolers to track their own assignments, grades and graduation progress.",
           ],
         },
         {
@@ -614,6 +625,7 @@ const page: ProductPageData = {
     { question: "Can we move our existing student data into a new system?", answer: "Yes. Student, family, staff and historical records can be migrated from spreadsheets or your current software as part of the project, with validation before go-live." },
     { question: "Is there a mobile app for parents and students?", answer: "There can be. Branded iOS and Android apps for parents, students and teachers can be built from one codebase, with push notifications for absences, announcements and fees." },
     { question: "How much does a custom school management system cost?", answer: "It depends on student numbers, campuses, modules, report card complexity, apps, integrations, data migration and support. Clickmasters agrees scope, timeline and a quote before development starts." },
+    { question: "How should we compare school management system software price across options?", answer: "Compare what each option includes rather than the headline figure. Ready-made products are usually priced per student per year, while a custom build has a one-time development cost plus hosting and maintenance. Check which modules, apps, integrations, data migration, training and support are covered, and estimate the total cost over several school years." },
     { question: "How long does it take to build school management software?", answer: "A focused first release with student records, attendance, fees and a parent portal is shorter than a full multi-campus platform with apps and integrations. The timeline is set during scoping and can be phased around the school year." },
   ],
   finalCta: {

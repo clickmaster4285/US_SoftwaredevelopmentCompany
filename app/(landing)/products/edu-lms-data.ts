@@ -38,7 +38,7 @@ const page: ProductPageData = {
     subhead: "Create courses, deliver lessons and live classes, assess learners and track every completion from one learning platform.",
     paragraphs: [
       "A learning management system is the software that delivers and tracks learning. Instructors build courses from video, documents, SCORM packages and quizzes; learners work through lessons on any device; and administrators see who has started, who is stuck and who has finished, without chasing spreadsheets or email threads.",
-      "Clickmasters designs and builds custom LMS software for US schools, colleges, training providers and companies, shaped around your courses, your learners and the systems you already use.",
+      "Clickmasters designs and builds custom learning management software (LMS) for US schools, colleges, training providers and companies, shaped around your courses, your learners and the systems you already use.",
     ],
     image: "dashboard",
     caption: "Active learners, completion rates, deadlines and live classes at a glance",
@@ -80,7 +80,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "A **learning management system (LMS)** is a web-based platform for creating, delivering, managing and tracking learning. It is sometimes called LMS software, an eLearning platform or an online learning platform. It manages:",
+            "A **learning management system (LMS)** is a web-based platform for creating, delivering, managing and tracking learning. It is sometimes called LMS software, a learning management software system, an eLearning platform or an online learning platform. Because it runs in the browser, a learning management system online is available to learners wherever they have a connection. It manages:",
           ],
         },
         {
@@ -135,7 +135,7 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "These are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Video, messaging and integration features depend on the providers you choose.",
+            "The learning management system features below are **configurable modules and custom-development options** scoped during discovery, not preinstalled features of a ready-made Clickmasters product. Video, messaging and integration features depend on the providers you choose.",
           ],
         },
         {
@@ -345,8 +345,9 @@ const page: ProductPageData = {
         {
           type: "prose",
           paragraphs: [
-            "In education, the LMS is the online classroom: teachers post lessons and assignments, students submit work and take quizzes, and grades flow to the gradebook. A custom LMS for schools can sync class rosters from your student records, support term-based courses and give parents a read-only view of progress.",
+            "In education, the LMS is the online classroom: teachers post lessons and assignments, students submit work and take quizzes, and grades flow to the gradebook. Custom learning management software for schools can sync class rosters from your student records, support term-based courses and give parents a read-only view of progress.",
             "Colleges and universities often need program-level structures, rubric-heavy assessment and integration with a [student information system (SIS)](/products/education-management-software/student-information-system-sis) so enrollments and final grades stay in sync.",
+            "A learning management system for students should make every class, deadline and grade easy to find, work well on a phone and show each student how far they are through a course.",
           ],
         },
         {
@@ -373,6 +374,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A corporate LMS trains employees, partners and customers. It assigns onboarding and compliance courses by role, reminds learners and managers about due dates, and keeps records that show who completed which training and when.",
+            "A learning management system for small business teams can start smaller: a handful of onboarding and policy courses, simple quizzes and completion records, with room to add learning paths later. Training providers that deliver courses to several client organizations often ask for a learning management system white label setup, where each client sees its own logo, colors and domain.",
           ],
         },
         {
@@ -496,6 +498,12 @@ const page: ProductPageData = {
       title: "Ready-Made vs. Custom LMS Software",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Ready-made learning management system platforms suit organizations with standard training needs and a short timeline. Learning management system vendors usually charge per active user or per seat, and the product roadmap stays in their hands, so it helps to compare what each option costs and allows as your learner count and programs grow.",
+          ],
+        },
+        {
           type: "table",
           caption: "Ready-made compared with custom LMS software",
           headers: ["", "Ready-made LMS", "Custom LMS"],
@@ -515,7 +523,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom LMS Development Services",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["For learning management system development, Clickmasters can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -543,6 +551,7 @@ const page: ProductPageData = {
       eyebrow: "Outcomes",
       title: "Benefits of a Learning Management System",
       blocks: [
+        { type: "prose", paragraphs: ["Most learning management system benefits come from putting content, assessment and records in one place:"] },
         {
           type: "checklist",
           items: [
@@ -564,6 +573,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose the Right Learning Management System",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Deciding which learning management system best fits your organization starts with writing down your learning management system requirements: who will learn, how content is delivered and what records you need to keep. When comparing learning management system companies, ask each one to show how its approach handles the points below.",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -637,6 +652,12 @@ const page: ProductPageData = {
       title: "Learning Management System Cost",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Learning management system pricing for ready-made products is usually based on active users, while a custom build is priced on the scope you choose and then on hosting and maintenance.",
+          ],
+        },
+        {
           type: "cost",
           intro: "The cost of custom LMS software depends on:",
           items: [
@@ -665,9 +686,10 @@ const page: ProductPageData = {
     { question: "How does an LMS track learner progress?", answer: "It records lesson completions, time spent, quiz attempts and scores, assignment grades and certificates for each learner, and shows that progress on dashboards for learners, instructors and managers." },
     { question: "What is a corporate LMS?", answer: "A corporate LMS is used to train employees, partners or customers. It focuses on onboarding, compliance training, role-based learning paths, manager visibility, certificates and integration with HR systems." },
     { question: "Can schools use an LMS alongside a school management system?", answer: "Yes. The school management system handles admissions, attendance and fees, while the LMS delivers lessons and assignments. Rosters and grades can sync between them." },
-    { question: "Can learners use the LMS on mobile devices?", answer: "Yes. Lessons can play in a responsive web player, and branded iOS and Android apps can add push reminders and offline access to downloaded content." },
+    { question: "Can learners use the LMS on mobile devices?", answer: "Yes. Lessons can play in a responsive web player, and a branded learning management system app for iOS and Android can add push reminders and offline access to downloaded content." },
     { question: "Can an LMS issue certificates automatically?", answer: "Yes. Certificates can be issued when a course or learning path is completed, with your branding, a unique ID, an expiry date and recertification reminders." },
-    { question: "Can AI be used in a learning management system?", answer: "Optionally. AI can draft quiz questions from lesson content, summarize lessons or power a course tutor chatbot. Instructors should review AI output before learners see it." },
+    { question: "Can AI be used in a learning management system?", answer: "Optionally. A learning management system with AI features can draft quiz questions from lesson content, summarize lessons or power a course tutor chatbot. Instructors should review AI output before learners see it." },
+    { question: "Can we see a learning management system demo before development starts?", answer: "Because each LMS is built to order, there is no off-the-shelf product to trial. Instead, a learning management system demo during discovery is usually a walkthrough of the scoped screens or a clickable prototype of the learner, instructor and admin views, so your team can react before development begins." },
     { question: "How secure is learner data in a custom LMS?", answer: "Security can include role-based access, single sign-on, encryption, audit logs and retention controls. Schools must also follow FERPA and state privacy laws, and companies their own data protection rules." },
     { question: "Can we migrate from our current LMS?", answer: "Usually, yes. Courses, SCORM packages, users, enrollments and completion history can be exported from most platforms and imported into a custom LMS, with validation before go-live." },
     { question: "Should we buy an LMS or build a custom one?", answer: "Ready-made LMS software suits standard training with quick setup. A custom LMS suits organizations with specific learning workflows, multiple branded portals, deep integrations or per-user costs that no longer make sense." },

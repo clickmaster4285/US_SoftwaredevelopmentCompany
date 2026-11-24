@@ -68,7 +68,7 @@ const page: ProductPageData = {
           type: "prose",
           paragraphs: [
             "A coaching center lives and dies by a few numbers: how many enquiries turn into enrollments, how full each batch is, how much of the fee is collected on time, and whether students actually improve between the first diagnostic and the final mock test. Behind those numbers is a lot of daily admin. Counselors call back leads, tutors need their batch timings, the front desk chases installments, and parents want to know why their child missed Tuesday's class.",
-            "When that work is spread across spreadsheets, phone notes, payment apps and group chats, leads go cold, batches run half empty, installments slip and parents only hear about problems after a bad test score. Coaching class management systems connect enquiries, enrollments, schedules, fees, attendance and results, so every person on the team sees the same picture.",
+            "When that work is spread across spreadsheets, phone notes, payment apps and group chats, leads go cold, batches run half empty, installments slip and parents only hear about problems after a bad test score. Separate coaching management tools for leads, payments and tests rarely share a student record, so the same details are typed in again and again. Coaching class management systems connect enquiries, enrollments, schedules, fees, attendance and results, so every person on the team sees the same picture.",
           ],
         },
       ],
@@ -262,6 +262,12 @@ const page: ProductPageData = {
       title: "Coaching Fee Management with Installments",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Most coaching courses are paid in parts, so collections need daily attention. Coaching fees management software ties each installment to the student's course and batch, sends reminders on schedule and gives the accounts team one live list of what is due, paid and overdue.",
+          ],
+        },
+        {
           type: "checklist",
           icon: "Receipt",
           cols: 3,
@@ -361,6 +367,12 @@ const page: ProductPageData = {
       eyebrow: "Delivery",
       title: "Online, Hybrid and One-to-One Coaching",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "Many centers now teach some or all batches online. Online coaching institute management software keeps those students in the same system as in-center students, with the same enrollment, fees, attendance and test records, and handles time zones, join links and recordings.",
+          ],
+        },
         {
           type: "titledList",
           cols: 3,
@@ -496,6 +508,12 @@ const page: ProductPageData = {
       title: "Ready-Made vs. Custom Coaching Center Software",
       blocks: [
         {
+          type: "prose",
+          paragraphs: [
+            "Ready-made coaching management platforms can be quick to start with when your process matches the vendor's. A custom build makes more sense when your batches, fee offers, test formats or branch structure don't fit a standard product.",
+          ],
+        },
+        {
           type: "table",
           caption: "Ready-made compared with custom coaching center software",
           headers: ["", "Ready-made", "Custom"],
@@ -515,7 +533,7 @@ const page: ProductPageData = {
       eyebrow: "What we deliver",
       title: "Custom Coaching Institute Management Software Development",
       blocks: [
-        { type: "prose", paragraphs: ["Clickmasters can deliver:"] },
+        { type: "prose", paragraphs: ["Clickmasters builds coaching management systems around the way your center already works. We can deliver:"] },
         {
           type: "checklist",
           items: [
@@ -564,6 +582,12 @@ const page: ProductPageData = {
       eyebrow: "Evaluation checklist",
       title: "How to Choose Coaching Institute Management Software",
       blocks: [
+        {
+          type: "prose",
+          paragraphs: [
+            "When owners compare options, the best coaching class management software for their center is usually the one that fits how they sell courses, plan batches, collect fees and run tests, rather than the one with the longest feature list. Check each option against these points:",
+          ],
+        },
         {
           type: "checkGrid",
           items: [
@@ -660,6 +684,7 @@ const page: ProductPageData = {
     { question: "Does coaching software support fee installments?", answer: "Yes. Courses can be sold as full payment, installment or monthly plans with discounts and scholarships, automatic reminders before and after due dates, online payments and a live dues list." },
     { question: "Can it run mock tests and test series?", answer: "Yes. Diagnostic, sectional and full-length mock tests can be scheduled and scored, with section-wise scores, percentiles, rank lists and score trends for each student and batch." },
     { question: "Is there a mobile app for students and parents?", answer: "There can be. Branded iOS and Android apps can show schedules, study material, test scores, attendance and fee installments, with push notifications for class changes and results." },
+    { question: "How do we decide which is the best coaching management software for our center?", answer: "There is no single answer for every center. List your courses, batch sizes, fee plans, test formats and branches, then check how each option handles them, what it costs over several years, how your data is exported and how much staff training it needs. A short trial or pilot batch shows more than a demo." },
     { question: "Can tutoring centers use coaching software for one-to-one sessions?", answer: "Yes. Private and small-group sessions can be booked into each tutor's availability, with attendance, session notes, packages and tutor payouts tracked in the same system." },
     { question: "Does it support online and hybrid classes?", answer: "Yes, through integration with video platforms. The system manages schedules, join links, online attendance and recorded lectures for enrolled students." },
     { question: "Can coaching software manage multiple branches or franchises?", answer: "Yes. Head office can share courses, fee plans and test series while each branch manages its own enquiries, batches, tutors and collections, with consolidated reporting." },
