@@ -419,7 +419,7 @@ export default function ScmPage() {
         </section>
 
         {/* Overview */}
-        <Section id="overview" eyebrow="Overview" title="Supply Chain Management Software Overview">
+        <Section id="overview" eyebrow="Overview" title="Supply Chain Software Overview">
           <Prose>
             <p>
               Most supply chains already have software, just not connected software. Purchasing lives in
@@ -729,8 +729,8 @@ export default function ScmPage() {
             track clinical supplies so a stockout is visible before it reaches a ward. Pharmaceutical
             supply chain management software adds lot and expiry to that chain. Food supply chain
             management software and foodservice supply chain management software follow ingredients
-            from supplier to kitchen or store. Supply chain management software construction tracks
-            materials against a job site. A supply chain management system in e commerce has to
+            from supplier to kitchen or store. Supply chain management software construction teams
+            use tracks materials against a job site. A supply chain management system in e commerce has to
             reserve stock when the order is paid and show when inbound supply will cover a backorder.
           </p>
           <div className="mt-8">
@@ -752,7 +752,9 @@ export default function ScmPage() {
                 management software small business teams can actually run is that set. The best supply
                 chain management software for small business is the focused system, not an enterprise
                 planning suite. It is often built around spreadsheets and email that are already being
-                outgrown, and integrated with existing accounting or e-commerce tools.
+                outgrown, and integrated with existing accounting or e-commerce tools. Supply chain
+                management software startups choose usually follows the same pattern: start with
+                suppliers and purchase orders, then add planning as volume grows.
               </p>
             </article>
             <article id="enterprise" className="scroll-mt-28 rounded-3xl p-6 text-white md:p-8" style={{ backgroundColor: DARK }}>
@@ -853,14 +855,14 @@ export default function ScmPage() {
         <Section id="choose" eyebrow="Evaluation" title="How to Choose Supply Chain Management Software">
           <p className="mb-8 max-w-3xl text-base leading-7 text-muted-foreground">
             People ask what is the best supply chain management software. Lists of the top supply
-            chain management software companies, top 10 supply chain management software, or top 5
-            supply chain management software are comparison roundups. Supply chain management software
-            vendors and supply chain management software leaders publish those suites. A supply chain
-            management tools list is the same kind of directory. Supply chain management software
-            startups often cover one gap, such as visibility, rather than the whole chain. The best
-            software supply chain management platform for a given company is the one that matches its
-            suppliers and systems. Ask for a supply chain management software demo of a late shipment
-            and the orders it affects.
+            chain management software companies and top 10 supply chain management software roundups
+            compare the suites that supply chain management software vendors publish, and a supply chain
+            management tools list is the same kind of directory. A top 5 supply chain management software
+            shortlist usually names the same supply chain management software leaders, and smaller tools
+            often cover one gap, such as visibility, rather than the whole chain. The best software supply
+            chain management platform for a given company is the one that matches its suppliers and
+            systems. Ask for a supply chain management software demo of a
+            late shipment and the orders it affects.
           </p>
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {selectionQuestions.map(([title, text], index) => (
@@ -881,7 +883,7 @@ export default function ScmPage() {
         </Section>
 
         {/* Process */}
-        <Section id="process" eyebrow="Delivery" title="Custom Supply Chain Management Software Development Process">
+        <Section id="process" eyebrow="Delivery" title="Custom SCM Software Development Process">
           <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map(([title, text], index) => (
               <li key={title} className="rounded-2xl border border-border bg-white p-5">
@@ -918,7 +920,7 @@ export default function ScmPage() {
                 <Link href={scmLinks.customScm.href} className="font-medium text-white underline underline-offset-4">
                   {scmLinks.customScm.anchor}
                 </Link>{" "}
-                work runs through enterprise engagements that list supply chain management software among
+                work runs through enterprise engagements that list SCM software among
                 typical projects, alongside ERP modules for supply chain visibility, WMS and TMS builds, and
                 carrier integration hubs.
               </p>

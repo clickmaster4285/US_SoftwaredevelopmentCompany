@@ -402,8 +402,8 @@ export default function HrmsPage() {
           <Prose>
             <p>
               HRMS stands for <strong className="text-foreground">human resource management system</strong>.
-              If you searched human resource management HRM explained in 10 minutes, the useful
-              version is shorter: HRM is the practice of hiring, paying and developing people, and
+              Human resource management (HRM) explained simply: HRM is the practice of hiring,
+              paying and developing people, and
               HRMS software is the platform that runs those processes across the employee lifecycle,
               from recruiting and onboarding through day-to-day administration, time off,
               performance, development and offboarding.
@@ -419,7 +419,9 @@ export default function HrmsPage() {
           <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
             These terms overlap, and vendors use them loosely. A common question is what does HRIS
             stand for in HR: human resource information system, the employee record that an HRMS
-            builds its processes on. Here is how the terms are generally understood:
+            builds its processes on. Human resource management (HRM) explained in 10 minutes comes down
+            to this: HRM is the discipline, and the software below is how it gets done. Here is how the
+            terms are generally understood:
           </p>
           <CompareTable
             caption="HRM, HRIS, HRMS and HCM compared"

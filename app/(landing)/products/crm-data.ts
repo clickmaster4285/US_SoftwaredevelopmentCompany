@@ -349,7 +349,7 @@ export const howWeHelp = [
 ];
 
 export const crmFaqs = [
-  { question: "What is CRM software?", answer: "CRM (customer relationship management) software is a system that stores customer and prospect data, tracks every interaction, and manages the sales pipeline and service process in one shared platform." },
+  { question: "What is CRM software?", answer: "Customer relationship management software (CRM) is a system that stores customer and prospect data, tracks every interaction, and manages the sales pipeline and service process in one shared platform." },
   { question: "What does CRM software do for a business?", answer: "It centralizes contact and account data, captures and assigns leads, tracks deals through pipeline stages, reminds teams to follow up, records communication history and reports on sales and customer performance." },
   { question: "What are the main features of CRM software?", answer: "Core features are contact and account management, lead management, pipeline and deal tracking, task and activity management, email and calendar integration, workflow automation, reporting and dashboards, and role-based permissions. Many CRMs also include marketing and service capabilities." },
   { question: "What is the difference between CRM and ERP?", answer: "CRM manages customer-facing activity: leads, opportunities, communication and service. ERP manages back-office operations such as orders, inventory, purchasing and accounting. Integrating them gives sales visibility into orders and invoices, and gives operations clean customer data." },

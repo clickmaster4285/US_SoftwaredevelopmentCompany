@@ -427,7 +427,7 @@ export default function BillingPage() {
                   take minutes then turns into weeks of follow-up.
                 </p>
                 <p>
-                  Medical billing software organizes that work. It checks
+                  Good billing software organizes that work. It checks
                   coverage before the visit, turns documented care into clean
                   claims, sends them electronically, tracks them through
                   adjudication, posts payments, and shows exactly which dollars
@@ -503,7 +503,7 @@ export default function BillingPage() {
             They describe different jobs.
           </p>
           <CompareTable
-            caption="Medical billing software compared with related healthcare systems"
+            caption="Billing software compared with related healthcare systems"
             headers={[
               "System",
               "Main job",
@@ -523,9 +523,8 @@ export default function BillingPage() {
             desk and a dedicated claims platform behind it. Medical office
             billing software and medical billing scheduling software cover
             appointments, eligibility and the charges that follow, so staff are
-            not re-keying the same patient. What a medical billing software
-            practice needs, either way, is one shared patient, one insurance
-            record and one set of charges. Organizations with higher claim
+            not re-keying the same patient. Whichever setup a practice chooses, it needs one shared patient,
+            one insurance record and one set of charges. Organizations with higher claim
             volume, multiple specialties or outsourced billing operations often
             need a dedicated billing or RCM platform with deeper claim, denial
             and A/R tools.
@@ -595,7 +594,7 @@ export default function BillingPage() {
           </div>
           <CtaStrip
             title="Want these capabilities built around your payers, specialties and work queues?"
-            cta="Request a Medical Billing Software Consultation"
+            cta="Request a Billing Platform Consultation"
           />
         </Section>
 
@@ -874,14 +873,14 @@ export default function BillingPage() {
         <Section
           id="integrations"
           eyebrow="Connected billing"
-          title="Medical Billing Software Integrations"
+          title="Billing Integrations With EHR, Clearinghouse and Payment Systems"
         >
           <DiagramFigure
             image={billingImages.integrations}
             caption="The billing and RCM core connected to clinical, payer, payment and finance systems"
           />
           <CompareTable
-            caption="Medical billing software integrations, purpose and standards"
+            caption="Billing integrations, purpose and standards"
             headers={["Integration", "Purpose", "Typical standard / method"]}
             rows={integrationRows}
           />
@@ -961,14 +960,14 @@ export default function BillingPage() {
         <Section
           id="cloud-vs-on-premise"
           eyebrow="Deployment"
-          title="Cloud-Based vs. On-Premise Medical Billing Software"
+          title="Cloud-Based vs. On-Premise Billing Systems"
         >
           <CompareTable
-            caption="Cloud-based medical billing software compared with on-premise medical billing software"
+            caption="Cloud-based compared with on-premise billing software"
             headers={[
               "Factor",
-              "Cloud-Based Medical Billing Software",
-              "On-Premise Medical Billing Software",
+              "Cloud-based",
+              "On-premise",
             ]}
             rows={cloudRows}
           />
@@ -1020,8 +1019,8 @@ export default function BillingPage() {
           <p className="mt-8 max-w-3xl text-base font-medium leading-7 text-foreground">
             A custom build isn&apos;t the right answer for every organization.
             Buyers comparing the top 10 medical billing software products, or
-            the top medical billing software in USA, usually need the medical
-            billing software best matched to their payers and specialties. The
+            the top medical billing software in USA, usually need the system best matched to their payers and
+            specialties. The
             best medical billing software in USA for a given group is the one
             that follows that group&apos;s claim types. If an existing product
             fits, we&apos;ll say so, and we can still build the integrations,
@@ -1029,7 +1028,7 @@ export default function BillingPage() {
           </p>
           <CtaStrip
             title="Running a billing company, multi-specialty group or HealthTech product that off-the-shelf tools don't fit?"
-            cta="Build Your Custom Medical Billing Software"
+            cta="Start Your Custom Billing Platform"
           />
         </Section>
 
@@ -1037,7 +1036,7 @@ export default function BillingPage() {
         <Section
           id="implementation"
           eyebrow="Delivery"
-          title="Medical Billing Software Implementation Process"
+          title="Billing Platform Implementation Process"
         >
           <ol className="grid gap-4 md:grid-cols-3">
             {implementationSteps.map(([title, text], index) => (
@@ -1086,7 +1085,7 @@ export default function BillingPage() {
         <Section
           id="why-us"
           eyebrow="Your partner"
-          title="Why Choose Clickmasters for Custom Medical Billing Software Development?"
+          title="Why Choose Clickmasters for Custom Billing Software Development?"
         >
           <TitledCards
             items={whyClickmasters}
@@ -1119,7 +1118,7 @@ export default function BillingPage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <CtaLink light>Talk about {PRODUCT_NAME}</CtaLink>
                 <CtaLink light outline>
-                  Request a Medical Billing Software Consultation
+                  Request a Billing Software Consultation
                 </CtaLink>
               </div>
               <p className="mt-4 text-sm text-white/60">

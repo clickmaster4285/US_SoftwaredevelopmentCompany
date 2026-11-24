@@ -716,17 +716,17 @@ export const billingFaqs = [
     question:
       "What is the difference between medical billing software and practice management software?",
     answer:
-      "Practice management software runs front-office operations such as scheduling and registration, and often includes basic billing. Dedicated medical billing software goes deeper into claims, scrubbing rules, ERA posting, denial management and A/R. Many organizations use both, connected through shared patient, insurance and charge data.",
+      "Practice management software runs front-office operations such as scheduling and registration, and often includes basic billing. A dedicated billing system goes deeper into claims, scrubbing rules, ERA posting, denial management and A/R. Many organizations use both, connected through shared patient, insurance and charge data.",
   },
   {
     question:
       "What is the difference between medical billing and RCM software?",
     answer:
-      "Medical billing software focuses on claims and payments. Revenue cycle management software covers the entire financial cycle, from registration, eligibility and prior authorization through coding, billing, collections, contract management and analytics. Billing is one major part of RCM.",
+      "Billing software focuses on claims and payments. Revenue cycle management software covers the entire financial cycle, from registration, eligibility and prior authorization through coding, billing, collections, contract management and analytics. Billing is one major part of RCM.",
   },
   {
     question:
-      "Does medical billing software replace medical coders and billers?",
+      "Does billing software replace medical coders and billers?",
     answer:
       "No. It automates repetitive, rule-based tasks such as eligibility checks, claim formatting, scrubbing and ERA posting. Code selection, documentation review, complex denials, appeals and compliance decisions still need qualified coding and billing professionals.",
   },
@@ -751,7 +751,7 @@ export const billingFaqs = [
       'No software is "HIPAA certified"; HHS doesn\'t certify products. Cloud billing software can be designed to support HIPAA compliance through encryption, access controls, audit trails and HIPAA-eligible hosting under a BAA. Whether your organization is compliant also depends on your policies, training, contracts and how the system is used.',
   },
   {
-    question: "Can medical billing software integrate with our EHR or EMR?",
+    question: "Can the billing system integrate with our EHR or EMR?",
     answer:
       "Yes. Common integration methods include HL7 v2 messages (ADT for patients, DFT for charges), FHIR APIs and vendor-specific APIs. The right method depends on what your clinical system supports, which is assessed during discovery.",
   },
@@ -767,7 +767,7 @@ export const billingFaqs = [
   },
   {
     question:
-      "How long does it take to develop and implement medical billing software?",
+      "How long does it take to develop and implement a custom billing platform?",
     answer:
       "A focused platform covering core claims, ERA posting and A/R workflows typically takes a few months to build. Broader RCM platforms with many integrations take longer. Payer EDI and ERA/EFT enrollment can add several weeks, so we start them early.",
   },

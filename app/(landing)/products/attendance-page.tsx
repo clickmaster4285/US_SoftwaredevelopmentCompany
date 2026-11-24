@@ -466,7 +466,8 @@ export default function AttendancePage() {
           <NumberedCards items={howItWorks} className="md:grid-cols-2 lg:grid-cols-3" />
           <Note>
             Every edit to a time record is logged with who changed it, when and why. That employee
-            attendance log is the audit trail behind the timesheet.
+            attendance log is the audit trail behind the timesheet, and it gives each person one
+            employee attendance track from check-in to approved hours.
           </Note>
         </Section>
 

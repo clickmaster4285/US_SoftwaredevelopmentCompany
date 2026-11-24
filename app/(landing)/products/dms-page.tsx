@@ -458,15 +458,16 @@ export default function DmsPage() {
             <p>
               You&apos;ll also see the term <strong className="text-foreground">EDMS</strong> (electronic
               document management system). In practice the two terms mean the same thing, with EDMS
-              stressing that the documents are digital. Document management system DMS is the name
-              teams use in conversation. Document management system software is the program that does
-              the work. The document management system meaning is a governed home for files, not
-              another shared drive. Document management system basics are capture, storage, search,
-              versioning and retention. Document management system categories and document management
-              system types split by job: contracts, quality records, client files and drawings.
-              Document management system solutions and document management system tools are the
-              modules you turn on for those jobs. Document management system key features are the
-              ones in the sections below. A DMS differs from neighboring software categories:
+              stressing that the documents are digital. Teams usually shorten the name to document
+              management system DMS, and the document management system software is the program that
+              does the work. The document management system meaning is simple: a governed home for
+              files, not another shared drive. Document management system basics are capture, storage,
+              search, versioning and retention. Document management system types split by job, such as
+              contracts, quality records, client files and drawings, and document management system
+              categories group the files inside each one. Document management system solutions and
+              document management system tools are the modules you turn on for those jobs, and the
+              document management system key features are covered in the sections below. A DMS differs
+              from neighboring software categories:
             </p>
           </Prose>
           <div className="mt-8 grid gap-3 md:grid-cols-2">
@@ -523,14 +524,14 @@ export default function DmsPage() {
             ))}
           </div>
           <div className="mt-10">
-            <PrimaryCta label="Build a Custom Document Management System" />
+            <PrimaryCta label="Build a Custom DMS" />
           </div>
         </Section>
 
         {/* Modules */}
         <Section id="modules" eyebrow="Scope" title="Document Management System Modules">
           <CompareTable
-            caption="Document management system modules, what they cover and primary users"
+            caption="DMS modules, what they cover and primary users"
             headers={["Module", "What it covers", "Primary users"]}
             rows={moduleRows}
           />
@@ -550,9 +551,9 @@ export default function DmsPage() {
               Good organization depends less on folders and more on{" "}
               <strong className="text-foreground">document types and metadata</strong>. A contract, an
               invoice and an SOP each get a template with required fields, such as client, vendor,
-              effective date, department or review date. A document management system hierarchy is
-              that type-and-folder tree. Document management system naming conventions keep file
-              names predictable, so search does not depend on who saved the file. That allows:
+              effective date, department or review date. The document management system hierarchy is that
+              type-and-folder tree, and document management system naming conventions keep file names
+              predictable, so search does not depend on who saved the file. That allows:
             </p>
             <TitledList items={organizationPoints} className="mt-5" />
           </Split>
@@ -563,7 +564,7 @@ export default function DmsPage() {
           <Prose>
             <p>
               Version control keeps one <strong className="text-foreground">current</strong> version while
-              preserving every earlier one. Document management system versioning is that rule. A
+              preserving every earlier one. Document management system versioning is that rule, and the
               document management system vault is the controlled store those versions live in:
             </p>
           </Prose>
@@ -582,9 +583,9 @@ export default function DmsPage() {
           <Prose>
             <p>
               Document workflows route a document through review, approval or rejection with clear
-              ownership. A document management system workflow is that route. A document management
-              system with approval workflow will not publish a file until the named reviewers sign
-              it:
+              ownership. A document management system workflow is that route, and a document
+              management system with approval workflow will not publish a file until the named
+              reviewers sign it:
             </p>
           </Prose>
           <ol className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -655,8 +656,9 @@ export default function DmsPage() {
             <p>
               A DMS can enforce <strong className="text-foreground">retention schedules</strong> by
               document type. The document management system life cycle is that path from creation to
-              disposition. A document management system policy sets how long each type is kept and
-              who may delete it. For example, keep a record for a defined number of years after an
+              disposition, and a
+              document management system policy sets how long each type is kept and who may delete
+              it. For example, keep a record for a defined number of years after an
               event, then review it for disposition.
             </p>
           </Prose>
@@ -701,36 +703,37 @@ export default function DmsPage() {
             rows={industryRows}
           />
           <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            A document management system law firm teams use, and a document management system used
-            by law firms, keeps matter files. The document management system law practice still owns
-            the privilege rules. A document management system for construction industry, and document
-            management system construction work, tracks drawings and submittals by job. A document
-            management system for engineering projects, and document management system engineering
-            files, do the same for design revisions. Document management system healthcare records
-            need tighter access. A document management system for accounting firms keeps workpapers
-            and engagement letters.
+            A document management system law firm teams rely on keeps matter files together, and the
+            document management system used by law firms also has to respect privilege rules set by
+            the practice. A document management system for construction industry projects tracks
+            drawings, RFIs and submittals by job, so document management system construction crews on
+            site always open the current revision. A document management system for engineering
+            projects does the same for design revisions, so document management system engineering
+            reviews start from the approved drawing. Document management system healthcare records
+            need tighter access, and a document management system for accounting firms keeps
+            workpapers and engagement letters.
           </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground">
-            A document management system government office, and a document management system for
-            local government units, need retention schedules and public-record rules. A document
-            management system local team still follows that schedule. Document management system
-            banking industry files include a KYC document management system for identity packs.
-            Document management system pharma records, and a document management system GMP file,
-            need controlled copies. A quality document management system, a document management
-            system for QMS, a document management system QMS and a QA document management system
-            share one job: SOPs, with document management system quality assurance review before a
-            new version is issued.
+            A document management system government offices use, and a document management system for
+            local government units, both need retention schedules and public-record rules. In the
+            document management system banking industry setup, a KYC document management system holds
+            identity packs with checklists and restricted access. Document management system pharma
+            and document management system GMP records need controlled copies. A quality document
+            management system, often called a document management system QMS or a document management
+            system for QMS work, makes SOPs pass document management system quality assurance review
+            first: a QA document management system issues a new version only after that sign-off.
           </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground">
-            Document management system ISO 9001, and a document management system for ISO 9001, keep
-            the controlled procedures an auditor asks for. Document management system ISO 17025 does
-            that for a lab. A document management system 21 CFR Part 11 design supports electronic
-            records and signatures where those rules apply. An ISO 27001 document management system
-            keeps the security policies and evidence. Document management system ECM is the broader
-            content layer. A document management system CMS is the publishing cousin, not the
-            controlled-record store. A knowledge document management system is the library people
-            search after a file is approved. A document management system enterprise deployment adds
-            departments, entities and stricter permissions.
+            A document management system ISO 9001 setup keeps the controlled procedures an auditor
+            asks for, which is why teams pick a document management system for ISO 9001 audits. The
+            same structure can support a document management system ISO 17025 lab, an ISO 27001
+            document management system for security evidence, and a document management system 21 CFR
+            Part 11 configuration for electronic records and signatures where those rules apply. In a
+            document management system ECM comparison, enterprise content management (ECM) is the
+            broader content layer. In a document management system CMS comparison, the CMS is the
+            publishing cousin, not the controlled-record store. A knowledge document management system
+            is the library people search after a file is approved, and a document management system
+            enterprise deployment adds departments, entities and stricter permissions.
           </p>
           <div className="mt-8">
             <PrimaryCta label="Explore Custom DMS Solutions" />
@@ -777,30 +780,30 @@ export default function DmsPage() {
           <Note>
             Cloud security depends on configuration (identity, encryption, access policies, logging and
             backups), not on the deployment model alone. A document management system cloud based
-            deployment is the browser version. Document management system online access, a document
-            management system web application and a web document management system let people open
-            files without a desktop install. A document management system app covers the phone.
-            Document management system self hosted and document management system Windows are the
-            installed options. Document management software Mac is that installed build on Apple
-            desktops. A file management system Mac users already have is not the same as a governed
-            DMS.
+            deployment runs in the browser, so document management system online access and a web
+            document management system let people open files without a desktop install. A document
+            management system web application is the same idea built for your own team, and a
+            document management system app covers the phone. Document management system self hosted,
+            document management system local and document management system Windows builds are the
+            installed options, and document management software Mac builds cover Apple desktops. The
+            basic file management system Mac users already have is not the same as a governed DMS.
           </Note>
         </Section>
 
         {/* Custom vs ready-made */}
         <Section id="custom-vs-ready-made" eyebrow="Build or buy" title="Custom DMS vs. Ready-Made Document Management Software">
           <CompareTable
-            caption="Ready-made DMS compared with a custom document management system"
-            headers={["", "Ready-made DMS", "Custom document management system"]}
+            caption="Ready-made DMS compared with a custom DMS"
+            headers={["", "Ready-made DMS", "Custom DMS"]}
             rows={customVsReadyRows}
           />
           <Note>
             A common middle path keeps Microsoft 365 or SharePoint for collaboration and adds a{" "}
             <strong className="text-foreground">custom DMS layer</strong> for structured metadata,
             controlled workflows, retention and integration with business systems. A document
-            management system that integrates with SharePoint, and a document management system with
-            SharePoint, can keep day-to-day collaboration in Microsoft 365 while the DMS holds the
-            controlled record.
+            management system that integrates with SharePoint keeps day-to-day collaboration in
+            Microsoft 365 while it holds the controlled record, which is what most teams mean by a
+            document management system with SharePoint.
           </Note>
         </Section>
 
@@ -819,7 +822,7 @@ export default function DmsPage() {
           <TitledList items={aiPoints} icon={Brain} className="sm:grid-cols-2 lg:grid-cols-3" />
           <Caution>
             AI results depend on the quality and variety of your documents. A document management
-            system using AI can suggest a type or pull fields from a scan. Document management with
+            system using AI can suggest a type or pull fields from a scan, but document management with
             AI should still send low-confidence results to a person. Answers should always link back
             to the source documents.
           </Caution>
@@ -852,13 +855,15 @@ export default function DmsPage() {
         {/* Choose */}
         <Section id="choose" eyebrow="Evaluation" title="How to Choose the Right Document Management System">
           <p className="mb-8 max-w-3xl text-base leading-7 text-muted-foreground">
-            Document management system companies, document management system vendors and document
-            management system providers sell packaged suites. A document management system list and
-            document management system reviews describe those products. The document management
-            system best matched to you follows your document types and approval rules. A document
-            management system website can show a tour. It is not a substitute for trying your own
-            files. A document management system requirements checklist should cover types,
-            permissions, retention and the systems you already run.
+            Document management system companies sell packaged suites, and a document management
+            system vendors comparison or a document management system list will describe their
+            products. Document management system providers publish feature lists, and document
+            management system reviews show how others use them, but the document management system
+            best suited to you follows your document types and approval rules, not a ranking. A
+            document management system website can show a tour,
+            but it is no substitute for trying your own files. Build a document management system
+            requirements checklist that covers document types, permissions, retention and the
+            systems you already run.
           </p>
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {selectionQuestions.map(([title, text], index) => (
@@ -897,8 +902,9 @@ export default function DmsPage() {
         <Section id="cost" eyebrow="Budgeting" title="Factors That Affect DMS Development Cost">
           <TitledList items={costFactors} icon={BarChart3} className="sm:grid-cols-2 lg:grid-cols-4" />
           <Note>
-            Cost and timeline depend on scope and complexity. Document management system price
-            follows volume, workflows, capture and how many systems you connect. Clickmasters agrees
+            Cost and timeline depend on scope and complexity. Document management system price follows
+            volume, workflows,
+            capture and how many systems you connect. Clickmasters agrees
             on scope, timeline and quote before development starts.
           </Note>
         </Section>

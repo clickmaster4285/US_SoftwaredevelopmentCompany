@@ -472,7 +472,7 @@ export default function PatientPage() {
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <CtaLink>Build Your Custom Patient Management Software</CtaLink>
+                <CtaLink>Build Your Custom Patient Platform</CtaLink>
                 <CtaLink outline>Get in touch</CtaLink>
               </div>
             </div>
@@ -530,7 +530,7 @@ export default function PatientPage() {
             How Patient Management Software Compares to Related Systems
           </H3>
           <CompareTable
-            caption="Patient management software compared with related healthcare systems"
+            caption="How this software compares with related healthcare systems"
             headers={[
               "System",
               "Primary focus",
@@ -625,7 +625,7 @@ export default function PatientPage() {
           </div>
           <CtaStrip
             title="Want these capabilities shaped around your front desk, care teams and patients?"
-            cta="Request a Patient Management Software Consultation"
+            cta="Request a Consultation"
           />
         </Section>
 
@@ -867,7 +867,7 @@ export default function PatientPage() {
             caption="One patient layer connected to EMR, EHR, billing, telemedicine, labs, payments and messaging"
           />
           <CompareTable
-            caption="Patient management software integrations, data exchanged and methods"
+            caption="Integrations, data exchanged and methods"
             headers={["Integration", "What is exchanged", "Typical method"]}
             rows={integrationRows}
           />
@@ -932,7 +932,7 @@ export default function PatientPage() {
           title="Cloud-Based vs. On-Premise Patient Management Software"
         >
           <CompareTable
-            caption="Cloud-based compared with on-premise patient management software"
+            caption="Cloud-based compared with on-premise deployment"
             headers={[
               "Factor",
               "Cloud-Based Patient Management Software",
@@ -994,7 +994,7 @@ export default function PatientPage() {
           </p>
           <CtaStrip
             title="Running several tools, logins and patient lists that should be one experience?"
-            cta="Build Your Custom Patient Management Software"
+            cta="Build Your Custom Patient Platform"
           />
         </Section>
 
@@ -1077,7 +1077,7 @@ export default function PatientPage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <CtaLink light>Talk about {PRODUCT_NAME}</CtaLink>
                 <CtaLink light outline>
-                  Request a Patient Management Software Consultation
+                  Request a Consultation
                 </CtaLink>
               </div>
               <p className="mt-4 text-sm text-white/60">

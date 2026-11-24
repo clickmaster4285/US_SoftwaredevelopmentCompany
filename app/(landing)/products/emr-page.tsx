@@ -756,10 +756,9 @@ export default function EmrPage() {
             <p>
               There is no single EMR format that fits every organization. The
               right choice depends on care setting, scale, specialty,
-              interoperability and budget. A practical list of options includes:
-              an electronic medical record systems list may cover cloud and
-              on-premise platforms, practice and specialty software, hospital
-              systems, and custom EMR products.
+              interoperability and budget. A practical electronic medical record
+              systems list covers cloud and on-premise platforms, practice and
+              specialty software, hospital systems, and custom EMR products.
             </p>
           </Prose>
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
