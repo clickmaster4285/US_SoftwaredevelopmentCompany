@@ -9,7 +9,7 @@ export const practiceTitle =
   "Medical Practice Management Software | ClickMasters";
 
 export const practiceDescription =
-  "Custom medical practice management software for provider scheduling, billing, claims, RCM and multi-location reporting. Get a custom project estimate today.";
+  "Custom medical practice management software for provider scheduling, billing, claims, RCM and multi-location reporting. Get a project estimate.";
 
 export const heroSystem = [
   "Provider schedules, rooms and locations",

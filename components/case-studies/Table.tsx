@@ -148,7 +148,7 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
                 <th
                   key={i}
                   data-table-head
-                  className="text-left align-bottom pb-4 pr-5 md:pr-7 text-[11px] font-medium uppercase tracking-[0.18em] opacity-50 whitespace-nowrap"
+                  className="cx-textle-alignb-2a"
                 >
                   {cell || "—"}
                 </th>
@@ -170,14 +170,14 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
                 data-table-row
                 className="group relative transition-colors duration-300 hover:bg-[oklch(0.18_0.02_250)]/[0.03]"
               >
-                <td className="relative w-14 align-top py-4 md:py-5 pl-5 md:pl-7">
+                <td className="cx-relati-w14-2f">
                   <span
                     aria-hidden
-                    className="pointer-events-none absolute left-0 top-2.5 bottom-2.5 w-[2px] origin-top scale-y-0 transition-transform duration-300 group-hover:scale-y-100 bg-[oklch(0.65_0.18_250)]"
+                    className="cx-pointe-absolu-y"
                   />
                   <span
                     data-row-index
-                    className="font-mono text-xs tabular-nums opacity-40 transition-colors duration-300 group-hover:opacity-100 group-hover:text-[oklch(0.65_0.18_250)]"
+                    className="cx-fontmo-textxs-11"
                   >
                     {String(rowIdx + 1).padStart(2, "0")}
                   </span>
@@ -212,7 +212,7 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
         <span>
           {body.length} {body.length === 1 ? "row" : "rows"}
         </span>
-        <span className="flex items-center gap-2">
+        <span className="cx-flex-itemsc-2x">
           <span className="size-1 rounded-full bg-[oklch(0.65_0.18_250)]" />
           {colCount} {colCount === 1 ? "column" : "columns"}
         </span>
@@ -290,9 +290,9 @@ export function AnimatedCard({ title, body }: { title: string; body: string }) {
 
       {/* Content */}
       <div className="relative">
-        <h4 className="mb-3 text-lg font-semibold tracking-tight md:text-xl">
+        <h3 className="mb-3 text-lg font-semibold tracking-tight md:text-xl">
           {title}
-        </h4>
+        </h3>
 
         <p className="text-[15px] leading-7 text-black/60 md:text-base">
           {body}

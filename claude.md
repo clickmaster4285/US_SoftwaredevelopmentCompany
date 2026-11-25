@@ -10,6 +10,12 @@ For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMA
 - `CompareTable` renders one table; mobile card layout is CSS (`.cm-compare` in `globals.css`).
 - CSP now allows GTM/GA4 (analytics was blocked before). Next upgraded to 16.4.6 (security).
 - Product schema uses `Service`, not `SoftwareApplication`/`Product` (no prices/ratings exist).
+- `JsonLd` drops FAQPage nodes on purpose (site not eligible for FAQ rich results; saves page weight).
+- `cm-*` / `cx-*` classes in `globals.css` are `@apply` aliases for long repeated Tailwind strings (HTML-size fix). `.ico .ico-check|ico-chev|ico-sqcheck` = CSS-mask icons; use `ListIcon` for checklists. Custom non-Tailwind classes (e.g. `ind-chip`) can't go inside `@apply`.
+- Social defaults (og:type/site_name/default og:image `/og-default.png`) are added in `withEditedPageSeo`. Every route must keep calling it.
+- Product pages import icons from `@/components/ui/mask-icons` (CSS-mask spans, generated). After using a new icon there, run `node scripts/gen-mask-icons.cjs`.
+- Product-page weight budget is <300 KB HTML. Long static blocks on medical practice, EHR, clinic and the fitness hub render from `*-sections.tsx` client components that import their own data (keeps text out of the RSC payload; markup is unchanged). Shared building blocks live in `product-primitives.tsx`. Use `shortKey()` for React keys made from text.
+- **Always deploy from a clean build** (`rm -rf .next && npm run build`): an incremental build once shipped a stale stylesheet missing new classes.
 
 # Work Log: 2026-11-11 — ERP / headless CMS integration
 

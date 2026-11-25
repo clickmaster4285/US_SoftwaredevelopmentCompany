@@ -121,6 +121,15 @@ I have no Search Console access.
 After the fixes, Lighthouse still flags: 2 decorative avatar-initial circles on the homepage (`TrustedBy`), and 6 items inside the illustrative dashboard mock-ups on product pages (purple chart swatches, `text-muted-foreground` on a `#b5b4d2` bar). Orange **buttons** (white on `#e05b35`, 3.67:1) also fall short of 4.5:1 for normal-size text; they were not flagged because the button text is large/bold, but they are borderline.
 **Action:** design review. Darken the button orange or use `#c44a24` for buttons too, and give mock-up labels a solid background.
 
+### R-16. Server response time on production (Low, hosting)
+~~Three pages over 400 KB~~: resolved in F-24 (every page is now ≤290 KB).
+The audit measured 0.59 s median / 1.32 s max response time from its crawler to the production server; locally the same pages respond in 68 ms median. Time to first byte on production depends on the server and network path (nginx → `next start`, `revalidate = 60` regenerating pages in the background, and the build-time ERP lookups noted in R-12). Pages are already static.
+**Action (hosting):** enable nginx `proxy_cache` (or a CDN) in front of `next start` for HTML with a short TTL, and Brotli. Re-measure with field data (PageSpeed Insights / CrUX) before treating it as a Core Web Vitals issue, as the auditor also advises.
+**Keep page weight down:** four audited pages sit at 288–289 KB. If long content is added to a product page, use the client-section pattern in `practice-sections.tsx` for its longest blocks.
+
+### R-17. "Low text-to-HTML ratio" notices (Low)
+73 pages are below 10% (Semrush shows this as a notice, not an error). The cause is the App Router hydration payload described in R-16, which every Next.js App Router site has. It improved as HTML shrank, but it cannot reach 10% on design-heavy pages without removing the hydration payload, which would break navigation and interactivity.
+
 ### Not fixed by design
 - Long but natural H1s (14 between 71 and 88 characters) were left unchanged. Length is not a ranking rule.
 - Award-card images on the homepage keep `alt=""` (decorative collage behind the "Selected work" heading, with no captions to describe).

@@ -9,7 +9,7 @@ export const pharmacyTitle =
   "Pharmacy Management System | Custom Pharmacy Software";
 
 export const pharmacyDescription =
-  "Pharmacy management system for US retail, independent and multi-location pharmacies: dispensing, inventory, POS, insurance billing and technician workflows.";
+  "Pharmacy management system for retail, independent and multi-location US pharmacies: dispensing, inventory, POS, insurance billing and staff workflows.";
 
 export const PRODUCT_NAME = "Pharmacy Management System";
 

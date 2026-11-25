@@ -1,5 +1,6 @@
+import { shortKey } from "@/lib/short-key";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { IndustryIcon } from "@/components/products/IndustryIcon";
 import {
@@ -19,7 +20,7 @@ function Crumb({
     <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
       <ol className="flex flex-wrap items-center gap-2">
         {items.map((item, index) => (
-          <li key={item.label} className="flex items-center gap-2">
+          <li key={item.label} className="cx-flex-itemsc-2x">
             {index > 0 ? <span aria-hidden>/</span> : null}
             {item.href ? (
               <Link href={item.href} className="hover:text-foreground">
@@ -43,7 +44,7 @@ function TalkToUs() {
           <h2 className="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
             Want this built for your operation?
           </h2>
-          <p className="mt-3 text-base leading-7 text-muted-foreground">
+          <p className="cx-mt3-textba-3c">
             Tell us the industry and the workflow. We scope the product, the timeline, and the quote before development starts.
           </p>
         </div>
@@ -72,7 +73,7 @@ export function ProductsIndexPage() {
           <Crumb items={[{ label: "Home", href: "/" }, { label: "Products" }]} />
           <div className="mt-8 grid items-end gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              <p className="cm-eyebrow">
                 Products
               </p>
               <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl md:leading-[1.05]">
@@ -112,14 +113,14 @@ export function ProductsIndexPage() {
             id={industry.slug}
             className="scroll-mt-28 border-t border-border py-14 md:py-16"
           >
-            <div className="mx-auto max-w-6xl px-5 md:px-8">
+            <div className="cm-wrap">
               <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
                 <div className="flex gap-4">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-secondary text-primary">
                     <IndustryIcon name={industry.icon} className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                    <p className="cx-textxs-fontse-2n">
                       {industry.products.length} products
                     </p>
                     <h2 className="mt-1 text-2xl font-semibold tracking-tight md:text-3xl">
@@ -145,15 +146,15 @@ export function ProductsIndexPage() {
                     href={productPath(industry.slug, product.slug)}
                     className="group flex h-full flex-col rounded-2xl border border-border bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
                   >
-                    <h3 className="text-base font-semibold leading-snug group-hover:text-primary">
+                    <h3 className="cx-textba-fontse-1h">
                       {product.title}
                     </h3>
-                    <p className="mt-2 flex-1 text-sm leading-6 text-muted-foreground">
+                    <p className="cx-mt2-flex1-1t">
                       {product.description}
                     </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    <span className="cx-mt4-inline-1a">
                       View product
-                      <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                      <ArrowRight className="cx-h4-w4-19" />
                     </span>
                   </Link>
                 ))}
@@ -183,7 +184,7 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
           />
           <div className="mt-8 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              <p className="cm-eyebrow">
                 Industry
               </p>
               <div className="mt-4 flex items-start gap-4">
@@ -225,9 +226,9 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
                   <li key={product.slug}>
                     <a
                       href={`#${product.slug}`}
-                      className="flex items-start gap-3 rounded-xl px-2 py-2 text-sm font-medium leading-snug hover:bg-secondary"
+                      className="cx-flex-itemss-14"
                     >
-                      <span className="mt-0.5 w-5 shrink-0 text-xs text-muted-foreground">
+                      <span className="cx-mt05-w5-28">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                       <span>{product.title}</span>
@@ -247,7 +248,7 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {industry.audiences.map((audience) => (
                 <li
-                  key={audience}
+                  key={shortKey(audience)}
                   className="rounded-2xl border border-border bg-white px-4 py-4 text-sm font-semibold leading-snug"
                 >
                   {audience}
@@ -258,8 +259,8 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
         </section>
 
         <section id="products" className="scroll-mt-28 py-14 md:py-16">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+          <div className="cm-wrap">
+            <p className="cx-textxs-fontse-2n">
               {industry.products.length} products
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">
@@ -270,22 +271,22 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
                 <article
                   key={product.slug}
                   id={product.slug}
-                  className="scroll-mt-28 rounded-3xl border border-border bg-white p-6 md:p-8"
+                  className="cx-scroll-rounde-1g"
                 >
-                  <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px] lg:items-start">
+                  <div className="cx-grid-gap6-1r">
                     <div>
-                      <p className="text-xs font-semibold tracking-[0.16em] text-muted-foreground">
+                      <p className="cx-textxs-fontse-1i">
                         {String(index + 1).padStart(2, "0")}
                       </p>
-                      <h3 className="mt-2 text-xl font-semibold tracking-tight md:text-2xl">
+                      <h3 className="cx-mt2-textxl-1z">
                         {product.title}
                       </h3>
-                      <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
+                      <p className="cx-mt3-maxw2x-1m">
                         {product.description}
                       </p>
                       <Link
                         href={productPath(industry.slug, product.slug)}
-                        className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary"
+                        className="cx-mt5-inline-1b"
                       >
                         Open product page
                         <ArrowRight className="h-4 w-4" />
@@ -294,8 +295,8 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
                     <ul className="space-y-2">
                       {product.points.map((point) => (
                         <li
-                          key={point}
-                          className="rounded-xl bg-secondary px-4 py-3 text-sm font-medium leading-6"
+                          key={shortKey(point)}
+                          className="cm-tag"
                         >
                           {point}
                         </li>
@@ -309,8 +310,8 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
         </section>
 
         <section className="border-t border-border py-14 md:py-16">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">Other industries</h2>
+          <div className="cm-wrap">
+            <h2 className="cx-text2x-fontse-u">Other industries</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {others.map((item) => (
                 <Link
@@ -318,18 +319,18 @@ export function IndustryProductsPage({ industry }: { industry: ProductIndustry }
                   href={industryPath(item.slug)}
                   className="group flex items-center gap-3 rounded-2xl border border-border bg-white px-4 py-4 hover:border-primary/30"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
+                  <span className="cx-flex-h10-1e">
                     <IndustryIcon name={item.icon} className="h-4 w-4" />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-semibold leading-snug group-hover:text-primary">
+                    <span className="cx-block-textsm-1v">
                       {item.label}
                     </span>
-                    <span className="mt-0.5 block text-xs text-muted-foreground">
+                    <span className="cx-mt05-block-2k">
                       {item.products.length} products
                     </span>
                   </span>
-                  <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary" />
+                  <ArrowRight className="cx-h4-w4-10" />
                 </Link>
               ))}
             </div>
@@ -375,7 +376,7 @@ export function ProductDetailPage({
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {product.points.map((point) => (
               <div
-                key={point}
+                key={shortKey(point)}
                 className="rounded-2xl border border-border bg-white p-5 text-sm font-medium leading-6"
               >
                 {point}
@@ -394,7 +395,7 @@ export function ProductDetailPage({
 
         {related.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">
+            <h2 className="cx-text2x-fontse-u">
               More in {industry.label}
             </h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -402,7 +403,7 @@ export function ProductDetailPage({
                 <Link
                   key={item.slug}
                   href={productPath(industry.slug, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>

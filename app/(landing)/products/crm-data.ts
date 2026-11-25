@@ -6,7 +6,7 @@
 export const CRM_PATH =
   "/products/business-enterprise-management/customer-relationship-management-crm-software";
 
-export const crmTitle = "Customer Relationship Management (CRM) Software | Clickmasters";
+export const crmTitle = "Customer Relationship Management (CRM) Software";
 
 export const crmDescription =
   "Customer relationship management (CRM) software that unifies leads, contacts, pipelines and support. Plan a CRM built around how your team sells.";

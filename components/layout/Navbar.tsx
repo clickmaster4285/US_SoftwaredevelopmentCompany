@@ -323,7 +323,7 @@ export default function Navbar({
             </div>
 
             {/* ── CTA + Hamburger ── */}
-            <div className="flex items-center gap-3">
+            <div className="cx-flex-itemsc-h">
               {/* CTA Button desktop */}
               <a
                 href={ctaHref}

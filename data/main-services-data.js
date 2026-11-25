@@ -325,7 +325,7 @@ export const mainServiceData = {
         title: "MVP Development",
         slug: "mvp-development",
         description:
-          "A production-ready first version of the product, scoped to the workflows that prove demand, with a path to the full build once the release is in users' hands.",
+          "A production-ready first version of your product, scoped to the workflows that prove demand, with a clear path to the full build after launch.",
         icon: "Rocket",
         heroImage:
           "/images/photo-1555066931-4365d14bab8c.jpg",

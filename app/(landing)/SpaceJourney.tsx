@@ -419,7 +419,7 @@ export default function SpaceJourney() {
             {starsFar.map((s, i) => (
               <span
                 key={i}
-                className="absolute rounded-full bg-white"
+                className="cx-absolu-rounde-z"
                 style={{
                   left: `${s.x}%`,
                   top: `${s.y}%`,
@@ -437,7 +437,7 @@ export default function SpaceJourney() {
             {starsMid.map((s, i) => (
               <span
                 key={i}
-                className="absolute rounded-full bg-white"
+                className="cx-absolu-rounde-z"
                 style={{
                   left: `${s.x}%`,
                   top: `${s.y}%`,
@@ -455,7 +455,7 @@ export default function SpaceJourney() {
             {starsNear.map((s, i) => (
               <span
                 key={i}
-                className="absolute rounded-full bg-white"
+                className="cx-absolu-rounde-z"
                 style={{
                   left: `${s.x}%`,
                   top: `${s.y}%`,
@@ -508,10 +508,11 @@ export default function SpaceJourney() {
           <img
             ref={planet1Ref}
             src={planet1.src}
-            alt=""
-            aria-hidden
+            width={planet1.width}
+            height={planet1.height}
+            alt="Illustrated purple ringed planet"
             loading="lazy"
-            className="absolute w-[42vw] max-w-[640px] will-change-transform pointer-events-none"
+            className="absolute h-auto w-[42vw] max-w-[640px] will-change-transform pointer-events-none"
             style={{
               filter: "drop-shadow(0 0 60px oklch(0.40 0.03 250 / 0.55))",
             }}
@@ -519,10 +520,11 @@ export default function SpaceJourney() {
           <img
             ref={planet2Ref}
             src={planet2.src}
-            alt=""
-            aria-hidden
+            width={planet2.width}
+            height={planet2.height}
+            alt="Illustrated blue planet wrapped in clouds"
             loading="lazy"
-            className="absolute w-[48vw] max-w-[720px] will-change-transform pointer-events-none"
+            className="absolute h-auto w-[48vw] max-w-[720px] will-change-transform pointer-events-none"
             style={{
               filter: "drop-shadow(0 0 70px oklch(0.45 0.02 240 / 0.5))",
             }}
@@ -535,9 +537,11 @@ export default function SpaceJourney() {
             <img
               ref={astroRef}
               src={astronaut.src}
+              width={astronaut.width}
+              height={astronaut.height}
               alt="Robot astronaut floating through space"
               loading="lazy"
-              className="w-[28vw] max-w-[420px]"
+              className="h-auto w-[28vw] max-w-[420px]"
               style={{
                 filter:
                   "drop-shadow(0 30px 80px rgba(0,0,0,0.6)) drop-shadow(0 0 30px oklch(0.55 0.02 240 / 0.35))",
@@ -589,7 +593,10 @@ export default function SpaceJourney() {
                 <div className="absolute inset-3 rounded-[26px] overflow-hidden bg-black">
                   <img
                     src={astronaut.src}
+                    width={astronaut.width}
+                    height={astronaut.height}
                     alt="Robot astronaut in space"
+                    loading="lazy"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                   <div

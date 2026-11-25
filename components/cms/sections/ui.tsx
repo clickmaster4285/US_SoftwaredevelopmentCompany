@@ -65,7 +65,7 @@ export function SectionHeading({
         </Tag>
       ) : null}
       {description ? (
-        <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg">
+        <p className="cx-mt5-textba-s">
           {description}
         </p>
       ) : null}

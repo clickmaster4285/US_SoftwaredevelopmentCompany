@@ -51,15 +51,15 @@ export function SectionHeading({
   copy?: string;
 }) {
   return (
-    <div className="mx-auto max-w-3xl text-center">
-      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+    <div className="cx-mxauto-maxw3x-12">
+      <p className="cm-eyebrow">
         {eyebrow}
       </p>
-      <h2 className="mt-4 text-[clamp(2rem,5vw,4.6rem)] font-semibold leading-[0.98] tracking-tight text-foreground">
+      <h2 className="cx-mt4-textcl-d">
         {title}
       </h2>
       {copy ? (
-        <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg">
+        <p className="cx-mt5-textba-s">
           {copy}
         </p>
       ) : null}

@@ -2,12 +2,24 @@ const BRAND = " | Clickmasters";
 const TITLE_MAX = 60;
 const DESC_MIN = 70;
 // Not a ranking rule: Google truncates snippets by pixel width (~150–160
-// characters). Descriptions up to this length are kept whole.
-const DESC_SOFT_MAX = 160;
+// characters); 155 matches the audit tool's threshold. Descriptions up to
+// this length are kept whole.
+const DESC_SOFT_MAX = 155;
 
 function clean(value: string) {
   return value.replace(/\s+/g, " ").trim();
 }
+
+/** Hand-written titles for pages whose default title was too short or
+ * duplicated another page's title. Keyed by path. */
+export const TITLE_OVERRIDES: Record<string, string> = {
+  // Was "Crypto Wallets | Clickmasters" (29 chars).
+  "/blockchain-and-web3/crypto-wallet-development":
+    "Crypto Wallet Development Services",
+  // Was identical to /mobile-app-development/mobile-app-development-services.
+  "/software-development/mobile-app-development":
+    "Mobile App Development for Custom Software",
+};
 
 export function fitTitle(raw: string) {
   let name = clean(raw)
@@ -30,11 +42,31 @@ export function fitTitle(raw: string) {
   return `${name}${BRAND}`;
 }
 
+/** Descriptions under this length are flagged as "too short" by SEO tools
+ * (Ahrefs uses 110) and waste snippet space. */
+const DESC_TARGET_MIN = 110;
+
+// Factual closing sentences (written scope/quote and remote-first delivery are
+// stated across the site), longest first. The longest one that keeps the
+// description within DESC_SOFT_MAX is appended to short descriptions.
+const DESC_SUFFIXES = [
+  "Clickmasters provides a written scope, timeline and quote before development starts.",
+  "Written scope, timeline and quote from Clickmasters before work starts.",
+  "Scoped and quoted in writing by Clickmasters before work starts.",
+  "Written scope and quote from Clickmasters before work starts.",
+  "Scoped and quoted in writing by Clickmasters.",
+  "Remote-first delivery from Clickmasters.",
+  "Delivered by Clickmasters.",
+];
+
 export function fitDescription(raw: string | undefined, subject: string) {
-  let text = clean(raw || "");
-  if (text.length < DESC_MIN) {
-    const extra = `${subject} from Clickmasters includes scoped delivery, a written timeline, and a quote before build starts.`;
-    text = clean(`${text} ${extra}`);
+  let text = clean(raw || "") || subject;
+  if (text.length < DESC_TARGET_MIN) {
+    const base = /[.!?]$/.test(text) ? text : `${text}.`;
+    const suffix = DESC_SUFFIXES.find(
+      (s) => base.length + 1 + s.length <= DESC_SOFT_MAX,
+    );
+    text = suffix ? `${base} ${suffix}` : base;
   }
   if (text.length <= DESC_SOFT_MAX) return text;
 

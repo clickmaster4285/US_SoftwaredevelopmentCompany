@@ -13,7 +13,7 @@ const page: ProductPageData = {
   path: "/products/logistics-transportation-software/delivery-management-software",
   title: "Delivery Management Software for Last-Mile Teams",
   description:
-    "Custom delivery management software: order import, delivery slots, dispatch, route sequencing, driver app with proof of delivery and live customer tracking.",
+    "Custom delivery management software: order import, delivery slots, dispatch, route sequencing, a driver app with proof of delivery and live tracking.",
   ogTitle: "Delivery Management Software | Dispatch, Driver App, Proof of Delivery & Live Tracking",
   ogDescription:
     "Plan, dispatch and track your own deliveries from order to doorstep: delivery windows, auto-dispatch, routes, a driver app with ePOD, customer ETA messages and on-time reporting.",

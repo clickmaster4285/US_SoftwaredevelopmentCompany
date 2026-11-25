@@ -13,7 +13,7 @@ const page: ProductPageData = {
   path: "/products/real-estate-property-management/real-estate-listing-platform",
   title: "Real Estate Listing Platform & Property Search Website",
   description:
-    "Custom real estate listing platform: MLS/IDX feeds, map-based property search, saved searches, listing management, lead capture and SEO-ready listing pages.",
+    "Custom real estate listing platform: MLS/IDX feeds, map-based property search, saved searches, listing management, lead capture and SEO-ready pages.",
   ogTitle: "Real Estate Listing Platform | Property Search, MLS/IDX, Listings & Leads",
   ogDescription:
     "Publish property listings and let buyers and renters search them by location, type and price, with map search, saved-search alerts, agent lead routing and listing analytics.",

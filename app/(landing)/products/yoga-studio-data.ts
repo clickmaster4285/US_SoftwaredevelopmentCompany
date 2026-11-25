@@ -8,7 +8,7 @@ export const YS_PATH = "/products/fitness-sports-management/yoga-studio-manageme
 export const ysTitle = "Yoga Studio Management Software for Classes & Passes";
 
 export const ysDescription =
-  "Yoga studio management software for class scheduling, online booking, waitlists, instructors, memberships, class packs and workshops, built for your studio.";
+  "Yoga studio management software for class scheduling, online booking, waitlists, instructors, memberships, class packs and workshops.";
 
 export const ysOgTitle = "Yoga Studio Management Software for Classes & Passes";
 export const ysOgDescription =

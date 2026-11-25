@@ -146,7 +146,7 @@ export default function HomePage() {
               </span>
 
               <span className="block text-[clamp(1.75rem,7.5vw,6.5rem)] font-semibold">
-                development services
+                services
               </span>
             </h1>
 

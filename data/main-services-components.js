@@ -1,4 +1,5 @@
 // main-service-components.js
+import Image from "next/image";
 import Link from "next/link";
 import { isRetiredSub } from "../lib/site-routes.mjs";
 import { heroImageAlt } from "../lib/media";
@@ -195,7 +196,7 @@ export function MainServiceHero({ service }) {
             Home
           </Link>
           <ChevronRight className="h-4 w-4 text-muted-foreground" />
-          <span className="font-semibold text-foreground">{service.title}</span>
+          <span className="cx-fontse-textfo-1">{service.title}</span>
         </nav>
 
         {/* Hero content */}
@@ -229,10 +230,13 @@ export function MainServiceHero({ service }) {
           </div>
           <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-card">
             {service.heroImage ? (
-              <img
+              <Image
                 src={service.heroImage}
                 alt={heroImageAlt(service.title || "", service.heroImage)}
-                className="absolute inset-0 h-full w-full object-cover opacity-80"
+                fill
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover opacity-80"
               />
             ) : null}
             <div className="absolute inset-0 bg-background/45" />
@@ -289,7 +293,7 @@ export function FeaturesSection({ service }) {
               <h3 className="text-xl font-semibold text-card-foreground">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p2">
                 {feature.description}
               </p>
             </div>
@@ -340,18 +344,18 @@ export function ExploreSection({ service }) {
               href={`/${service.slug}/${item.slug}`}
               className="group rounded-lg border border-border bg-card p-6 text-card-foreground transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <span className="mb-7 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
+              <span className="cx-mb7-flex-m">
                 <IconFor name={item.icon} />
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="cx-text2x-fontse-u">
                 {item.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p3">
                 {item.description}
               </p>
-              <span className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-primary">
+              <span className="cx-mt7-inline-x">
                 Read more
-                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                <ArrowRight className="cx-h4-w4-t" />
               </span>
             </Link>
           ))}
@@ -418,7 +422,7 @@ export function TrustSection({ service }) {
                 </p>
               ) : null}
               {uniquePoints.map((point, index) => (
-                <div key={index} className="flex items-start gap-3">
+                <div key={index} className="cx-flex-itemss-2l">
                   <CheckCircle2 className="mt-1.5 h-5 w-5 shrink-0 text-primary" />
                   <p className="text-base leading-7">{point}</p>
                 </div>
@@ -553,7 +557,7 @@ export function PainPointsSolutions({ service }) {
           <div className="mt-8 space-y-4">
             {painPoints.map((item) => (
               <div key={item} className="flex gap-3 text-card-foreground">
-                <BarChart3 className="mt-1 h-5 w-5 shrink-0 text-primary" />
+                <BarChart3 className="cx-mt1-h5-1d" />
                 <p className="text-lg font-medium leading-7">{item}</p>
               </div>
             ))}
@@ -573,7 +577,7 @@ export function PainPointsSolutions({ service }) {
                   <h3 className="text-xl font-semibold text-card-foreground">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                  <p className="cx-mt1-textsm-26">
                     {item.description}
                   </p>
                 </div>
@@ -609,11 +613,11 @@ export function BenefitsSection({ service }) {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="rounded-lg border border-border bg-card p-6 flex items-start gap-3"
+              className="cx-rounde-border-17"
             >
-              <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-primary" />
+              <CheckCircle2 className="cx-mt1-h5-1d" />
               {typeof benefit === "string" ? (
-                <p className="text-sm leading-6 text-card-foreground">
+                <p className="cx-textsm-leadin-2b">
                   {benefit}
                 </p>
               ) : (
@@ -621,7 +625,7 @@ export function BenefitsSection({ service }) {
                   <h3 className="text-base font-semibold text-card-foreground">
                     {benefit.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="cm-p2">
                     {benefit.description}
                   </p>
                 </div>
@@ -657,7 +661,7 @@ export function AppsSection() {
           {appIdeas.map((item) => (
             <div
               key={item}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <Layers3 className="mb-10 h-6 w-6 text-primary" />
               <p className="text-xl font-semibold text-card-foreground">
@@ -723,7 +727,7 @@ export function ProcessSection({ service }) {
               <h3 className="mt-4 text-lg font-semibold text-card-foreground">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p2">
                 {step.description}
               </p>
             </div>
@@ -781,7 +785,7 @@ export function TechStackSection({ service }) {
       <div className="mx-auto max-w-7xl">
         {/* Local heading: SectionHeading hardcodes text-foreground (near-black),
             which is unreadable on this dark bg-primary section */}
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="cx-mxauto-maxw3x-12">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary-foreground">
             Tech stack
           </p>
@@ -799,14 +803,14 @@ export function TechStackSection({ service }) {
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {groups.map((group) => (
               <div key={group.label}>
-                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
+                <h3 className="cx-textxs-fontse-1k">
                   {group.label}
                 </h3>
-                <div className="mt-4 flex flex-wrap gap-3">
+                <div className="cx-mt4-flex-3n">
                   {(group.items || []).map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+                      className="cx-rounde-border-a"
                     >
                       {item}
                     </span>
@@ -819,14 +823,14 @@ export function TechStackSection({ service }) {
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {techCategories.map(([category, items]) => (
               <div key={category}>
-                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
+                <h3 className="cx-textxs-fontse-1k">
                   {category.replace(/([A-Z])/g, " $1").trim()}
                 </h3>
-                <div className="mt-4 flex flex-wrap gap-3">
+                <div className="cx-mt4-flex-3n">
                   {(items || []).map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+                      className="cx-rounde-border-a"
                     >
                       {item}
                     </span>
@@ -868,7 +872,7 @@ export function FeaturedInsights() {
           {insights.map((item) => (
             <article
               key={item}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <Compass className="mb-12 h-6 w-6 text-primary" />
               <h3 className="text-xl font-semibold leading-tight text-card-foreground">
@@ -907,21 +911,21 @@ export function WhyChooseUsSection({ service }) {
         />
         <div className="mx-auto mt-12 max-w-3xl space-y-4">
           {whyData.paragraph ? (
-            <p className="text-base leading-7 text-muted-foreground">
+            <p className="cx-textba-leadin-1n">
               {whyData.paragraph}
             </p>
           ) : (
             whyData.reasons.map((reason) => (
-              <div key={reason.title} className="flex items-start gap-3">
+              <div key={reason.title} className="cx-flex-itemss-2l">
                 <span
-                  className="text-sm leading-7 text-primary"
+                  className="cx-textsm-leadin-2r"
                   aria-hidden="true"
                 >
                   ●
                 </span>
-                <p className="text-base leading-7 text-muted-foreground">
+                <p className="cx-textba-leadin-1n">
                   {reason.title ? (
-                    <span className="font-semibold text-foreground">
+                    <span className="cx-fontse-textfo-1">
                       {reason.title}{" "}
                     </span>
                   ) : null}
@@ -956,7 +960,7 @@ export function ClientSuccessStories() {
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
           <Link
             href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
-            className="font-semibold text-primary"
+            className="cx-fontse-textpr-29"
           >
             Pre-launch QA for a SaaS booking platform
           </Link>
@@ -989,13 +993,13 @@ export function IndustriesSection({ service }) {
           {industries.map((industry) => (
             <div
               key={industry.name}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
-              <Building className="mb-4 h-6 w-6 text-primary" />
-              <h3 className="text-lg font-semibold text-card-foreground">
+              <Building className="cx-mb4-h6-1l" />
+              <h3 className="cx-textlg-fontse-1q">
                 {industry.name}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p2">
                 {industry.description}
               </p>
             </div>
@@ -1046,9 +1050,9 @@ export function PricingSection({ plans, service }) {
                 {(plan.features || []).map((feature) => (
                   <div
                     key={feature}
-                    className="flex gap-3 text-sm text-muted-foreground"
+                    className="cx-flex-gap3-w"
                   >
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
+                    <CheckCircle2 className="cx-h4-w4-o" />
                     {feature}
                   </div>
                 ))}
@@ -1089,11 +1093,11 @@ export function FaqSection({ service }) {
         <div className="mt-14 divide-y divide-border rounded-lg border border-border bg-card">
           {faqs.map((item) => (
             <details key={item.question} className="group p-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold text-card-foreground">
+              <summary className="cx-flex-cursor-r">
                 {item.question}
-                <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                <ChevronRight className="cm-faq-ic" />
               </summary>
-              <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
+              <p className="cm-intro">
                 {item.answer}
               </p>
             </details>

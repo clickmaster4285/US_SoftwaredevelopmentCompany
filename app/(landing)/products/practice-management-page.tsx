@@ -1,3 +1,6 @@
+import { ICONS } from "./practice-icons";
+import { PracticeChallenges, PracticeFaqList, PracticeFeatureGrid, PracticeHowItWorks, PracticeSecurity, PracticeWhatItIs, PracticeWhoBenefits } from "./practice-sections";
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -10,7 +13,6 @@ import {
   CalendarClock,
   CalendarDays,
   Check,
-  ChevronRight,
   Cloud,
   DoorOpen,
   FileClock,
@@ -40,7 +42,7 @@ import {
   Brain,
   Eye,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { pageUrl, SITE_URL } from "@/lib/site";
 import { CompareTable, Prose, Section } from "./hospital-management-page";
@@ -82,39 +84,6 @@ import {
 
 export { PRACTICE_PATH, practiceDescription, practiceTitle };
 
-const ICONS: Record<string, LucideIcon> = {
-  Activity,
-  BarChart3,
-  BellRing,
-  Building2,
-  CalendarClock,
-  CalendarDays,
-  Cloud,
-  DoorOpen,
-  FolderOpen,
-  HeartHandshake,
-  Hospital,
-  IdCard,
-  KeyRound,
-  LayoutDashboard,
-  MessageSquare,
-  Microscope,
-  Network,
-  PieChart,
-  Plug,
-  ReceiptText,
-  RefreshCcw,
-  ShieldCheck,
-  Stethoscope,
-  TrendingUp,
-  UserRound,
-  UsersRound,
-  Wallet,
-  Workflow,
-  Smile,
-  Brain,
-  Eye,
-};
 
 export function practiceManagementSchema() {
   const url = pageUrl(PRACTICE_PATH);
@@ -234,12 +203,12 @@ function AppFigure({
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#111827] shadow-xl shadow-indigo-950/10 ring-1 ring-black/5">
       <div
-        className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5"
+        className="cm-mock-bar"
         aria-hidden
       >
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
         <span className="ml-3 hidden rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline">
           practice-hub / concept
         </span>
@@ -254,9 +223,9 @@ function AppFigure({
         decoding="async"
         className="block h-auto w-full bg-[#f5f6fb]"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">
+        <span className="cm-chip">
           Concept illustration
         </span>
       </figcaption>
@@ -307,66 +276,6 @@ function H3({
   );
 }
 
-function FeatureCard({
-  feature,
-  number,
-}: {
-  feature: PracticeFeature;
-  number: number;
-}) {
-  const Icon = ICONS[feature.icon] ?? LayoutDashboard;
-  const rows: [string, string][] = [
-    ["What it does", feature.does],
-    ["How it works", feature.how],
-  ];
-  return (
-    <article className="flex flex-col rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-start gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eef2ff]">
-          <Icon className="h-5 w-5 text-[#4f46e5]" aria-hidden />
-        </span>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-            Feature {number}
-          </p>
-          <h4 className="mt-1 text-lg font-semibold leading-snug">
-            {number}. {feature.title}
-          </h4>
-        </div>
-      </div>
-      <div className="mt-4 space-y-3 text-sm leading-6 text-muted-foreground">
-        {rows.map(([label, value]) => (
-          <p key={label}>
-            <span className="font-semibold text-foreground">{label}: </span>
-            {value}
-          </p>
-        ))}
-      </div>
-      <div className="mt-auto pt-4">
-        <dl className="grid gap-2 rounded-xl bg-secondary/70 p-4 text-sm leading-6">
-          <div>
-            <dt className="inline font-semibold text-foreground">
-              Problem solved:{" "}
-            </dt>
-            <dd className="inline text-muted-foreground">{feature.problem}</dd>
-          </div>
-          <div>
-            <dt className="inline font-semibold text-foreground">
-              Business value:{" "}
-            </dt>
-            <dd className="inline text-muted-foreground">{feature.value}</dd>
-          </div>
-          <div>
-            <dt className="inline font-semibold text-foreground">
-              Who benefits:{" "}
-            </dt>
-            <dd className="inline text-muted-foreground">{feature.who}</dd>
-          </div>
-        </dl>
-      </div>
-    </article>
-  );
-}
 
 const groupStarts = featureGroups.map((_, index) =>
   featureGroups
@@ -459,9 +368,8 @@ export default function PracticeManagementPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#4f46e5]">
                 Healthcare practice management software
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Medical Practice Management Software for the Business Side of
-                Healthcare
+              <h1 className="cm-h1">
+                Medical Practice Management Software for the Business of Healthcare
               </h1>
               <p className="mt-5 text-lg leading-8 text-foreground/80">
                 Run provider schedules, patient administration, billing,
@@ -521,7 +429,7 @@ export default function PracticeManagementPage() {
               <ul className="mt-4 space-y-3">
                 {heroSystem.map((item) => (
                   <li
-                    key={item}
+                    key={shortKey(item)}
                     className="flex gap-3 text-sm leading-6 text-white/85"
                   >
                     <Check
@@ -540,7 +448,7 @@ export default function PracticeManagementPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -549,169 +457,10 @@ export default function PracticeManagementPage() {
         </section>
 
         {/* 2. What is */}
-        <Section
-          id="what-it-is"
-          eyebrow="Definition"
-          title="What Is Medical Practice Management Software?"
-        >
-          <Prose>
-            <p>
-              Medical practice management software (often shortened to PMS) is
-              the system a medical practice uses to run its administrative and
-              financial operations. Its purpose is to make sure every patient
-              visit is scheduled correctly, documented for billing, charged
-              accurately, paid for and reported on, without staff having to
-              re-enter the same information in several places. It is the
-              practice management system healthcare administrators rely on
-              for the business side, while the clinical record lives in the
-              EHR or EMR.
-            </p>
-          </Prose>
-
-          <H3 className="mt-12">Core Functionality</H3>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {coreFunctionality.map(([title, text]) => (
-              <li
-                key={title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
-              >
-                <span className="block font-semibold text-foreground">
-                  {title}
-                </span>
-                {text}
-              </li>
-            ))}
-          </ul>
-
-          <H3 className="mt-12">
-            How a Medical Practice Management System Works
-          </H3>
-          <ol
-            aria-label="Chain of business records in a practice management system"
-            className="mt-6 flex flex-wrap items-center gap-2"
-          >
-            {recordChain.map((step, index) => (
-              <li key={step} className="flex items-center gap-2">
-                <span className="rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-3.5 py-1.5 text-sm font-semibold text-[#3730a3]">
-                  {step}
-                </span>
-                {index < recordChain.length - 1 ? (
-                  <ArrowRight
-                    className="h-4 w-4 text-muted-foreground"
-                    aria-hidden
-                  />
-                ) : null}
-              </li>
-            ))}
-          </ol>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            A practice management system links a chain of business records:
-            patient account → appointment → encounter → charges → claim or
-            invoice → payment → report. Each record is created from the previous
-            one. A booked appointment becomes an encounter at check-in. The
-            encounter becomes charges once the provider&apos;s services are
-            coded. Charges become a claim or a patient invoice, and payments
-            close the loop. Because the records are connected, a single error at
-            registration (such as a wrong member ID) can be caught early instead
-            of surfacing weeks later as a denied claim.
-          </p>
-
-          <H3 className="mt-12">Who Needs It, and Why Practices Use It</H3>
-          <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
-            Any practice that schedules multiple providers, bills insurers or
-            patients, and needs to know where its revenue stands benefits from
-            medical practice administration software. Practices typically adopt
-            it when:
-          </p>
-          <ul className="mt-5 grid gap-3 md:grid-cols-2">
-            {adoptionTriggers.map((item) => (
-              <li
-                key={item}
-                className="flex gap-3 rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
-              >
-                <span
-                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#4f46e5]"
-                  aria-hidden
-                />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            Practices that mainly need a tidy patient register (registration,
-            demographics, visit history and search) may find our{" "}
-            <ProductLink slug="patient-management-software">
-              Patient Management Software
-            </ProductLink>{" "}
-            is a closer fit. Practice management software includes patient
-            administration and extends it into scheduling, billing, claims and
-            practice-wide operations.
-          </p>
-
-          <H3 className="mt-12">
-            Its Role in Healthcare Business Administration
-          </H3>
-          <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
-            Think of medical office management software as the practice&apos;s
-            operating system for business. The clinical team relies on it for
-            accurate schedules. The front desk uses it for registration and
-            payments. Billers use it for charges and claims, and managers and
-            owners use it for performance and financial decisions.
-          </p>
-
-          <H3 className="mt-12">
-            Administrative Practice Management vs Clinical Record Management
-          </H3>
-          <CompareTable
-            caption="Administrative practice management compared with clinical record management (EMR/EHR)"
-            headers={[
-              "",
-              "Practice management (administrative)",
-              "Clinical record management (EMR/EHR)",
-            ]}
-            rows={adminVsClinicalRows}
-          />
-        </Section>
+        <PracticeWhatItIs />
 
         {/* 3. Challenges */}
-        <Section
-          id="challenges"
-          eyebrow="The problem"
-          title="Why Medical Practices Need Management Software"
-        >
-          <Prose>
-            <p>
-              Medical practice software solves problems that grow with every new
-              provider, payer and location. These are the ten challenges
-              practice owners and administrators raise most often.
-            </p>
-          </Prose>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {challenges.map((item, index) => (
-              <article
-                key={item.title}
-                className="overflow-hidden rounded-2xl border border-border bg-white"
-              >
-                <div className="flex items-center gap-3 px-6 pt-6">
-                  <span className="text-xs font-bold text-muted-foreground">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                </div>
-                <p className="px-6 pt-3 text-sm leading-6 text-muted-foreground">
-                  <span className="font-semibold text-[#be123c]">
-                    Challenge:{" "}
-                  </span>
-                  {item.challenge}
-                </p>
-                <p className="m-4 rounded-xl bg-[#eef2ff] px-4 py-3 text-sm leading-6 text-[#312e81]">
-                  <span className="font-semibold">How software helps: </span>
-                  {item.help}
-                </p>
-              </article>
-            ))}
-          </div>
-        </Section>
+        <PracticeChallenges />
 
         {/* 4. Features */}
         <Section
@@ -728,7 +477,7 @@ export default function PracticeManagementPage() {
           <div className="mt-6 flex flex-wrap gap-2">
             {featureGroups.map((group) => (
               <a
-                key={group.title}
+                key={shortKey(group.title)}
                 href={`#group-${group.title.toLowerCase().replace(/\s+/g, "-")}`}
                 className="rounded-full bg-[#eef2ff] px-3.5 py-1.5 text-sm font-semibold text-[#3730a3] hover:bg-[#e0e7ff]"
               >
@@ -742,7 +491,7 @@ export default function PracticeManagementPage() {
               const visuals = groupVisuals[group.title] ?? [];
               return (
                 <div
-                  key={group.title}
+                  key={shortKey(group.title)}
                   id={`group-${group.title.toLowerCase().replace(/\s+/g, "-")}`}
                   className="scroll-mt-28"
                 >
@@ -757,17 +506,9 @@ export default function PracticeManagementPage() {
                       Features {start + 1}–{start + group.features.length}
                     </span>
                   </div>
-                  <div className="mt-6 grid gap-6 md:grid-cols-2">
-                    {group.features.map((feature, index) => (
-                      <FeatureCard
-                        key={feature.title}
-                        feature={feature}
-                        number={start + index + 1}
-                      />
-                    ))}
-                  </div>
+                  <PracticeFeatureGrid groupIndex={groupIndex} start={start} />
                   {group.title === "Revenue" ? (
-                    <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+                    <p className="cx-mt6-maxw3x-1c">
                       For deeper claim scrubbing, denial analytics and
                       billing-team tooling, see our dedicated{" "}
                       <ProductLink slug="medical-billing-software">
@@ -802,66 +543,7 @@ export default function PracticeManagementPage() {
         </Section>
 
         {/* 5. How it works */}
-        <Section
-          id="how-it-works"
-          eyebrow="Workflow"
-          title="How Medical Practice Management Software Works"
-        >
-          <Prose>
-            <p>
-              Medical practice workflow software moves each patient, and each
-              dollar, through nine connected stages. The example below follows
-              one patient through a two-physician practice.
-            </p>
-          </Prose>
-          <figure className="mt-8 rounded-3xl border border-border bg-white p-5 md:p-6">
-            <ol
-              aria-label="Medical practice management software workflow from patient registration to scheduling, provider assignment, check-in, consultation, billing, payment, follow-up and reporting"
-              className="grid gap-2 sm:grid-cols-3 lg:grid-cols-9 lg:gap-1.5"
-            >
-              {workflowStages.map((stage, index) => (
-                <li
-                  key={stage}
-                  className={`flex items-center gap-3 rounded-xl px-4 py-3 lg:flex-col lg:justify-start lg:px-2 lg:py-4 lg:text-center ${index === 4 ? "bg-[#ecfeff]" : index >= 5 && index <= 6 ? "bg-[#eef2ff]" : "bg-secondary"}`}
-                >
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#4f46e5] text-sm font-semibold text-white">
-                    {index + 1}
-                  </span>
-                  <span className="text-sm font-semibold leading-snug lg:mt-2 lg:text-xs">
-                    {stage}
-                  </span>
-                </li>
-              ))}
-            </ol>
-            <figcaption className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground">
-              <span>
-                <span className="mr-1.5 inline-block h-2.5 w-2.5 rounded-sm bg-secondary align-middle ring-1 ring-border" />
-                Practice management
-              </span>
-              <span>
-                <span className="mr-1.5 inline-block h-2.5 w-2.5 rounded-sm bg-[#ecfeff] align-middle ring-1 ring-border" />
-                Clinical system (EMR)
-              </span>
-              <span>
-                <span className="mr-1.5 inline-block h-2.5 w-2.5 rounded-sm bg-[#eef2ff] align-middle ring-1 ring-border" />
-                Revenue cycle
-              </span>
-            </figcaption>
-          </figure>
-          <CompareTable
-            caption="The nine stages of a medical practice management workflow with practical examples"
-            headers={["Stage", "What happens", "Practical example"]}
-            rows={workflowRows}
-          />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            At stage 5, clinical documentation usually lives in an EMR. If your
-            practice needs a charting system to pair with the PMS, our{" "}
-            <ProductLink slug="electronic-medical-records-emr-software">
-              Electronic Medical Records (EMR) Software
-            </ProductLink>{" "}
-            covers encounter notes and problem, medication and allergy lists.
-          </p>
-        </Section>
+        <PracticeHowItWorks />
 
         {/* 6. Benefits */}
         <Section
@@ -872,15 +554,15 @@ export default function PracticeManagementPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((item) => (
               <article
-                key={item.title}
-                className="flex flex-col rounded-2xl border border-border bg-white p-5"
+                key={shortKey(item.title)}
+                className="cx-flex-flexco-3i"
               >
-                <h3 className="font-semibold leading-snug">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <h3 className="cx-fontse-leadin-b">{item.title}</h3>
+                <p className="cm-p2">
                   {item.text}
                 </p>
-                <p className="mt-auto pt-4 text-sm leading-6 text-foreground/80">
-                  <span className="mr-1 rounded bg-[#eef2ff] px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#3730a3]">
+                <p className="cx-mtauto-pt4-3w">
+                  <span className="cx-mr1-rounde-3g">
                     In practice
                   </span>{" "}
                   {item.example}
@@ -891,45 +573,7 @@ export default function PracticeManagementPage() {
         </Section>
 
         {/* 7. Who benefits */}
-        <Section
-          id="who-benefits"
-          eyebrow="Practice models"
-          title="Practice Management Software by Specialty and Practice Model"
-        >
-          <Prose>
-            <p>
-              Practice management software for healthcare has to adapt to very
-              different organizations, from solo physicians to dental, therapy
-              and optometry practices. The practice management solutions for doctors
-              described below are configured, or custom-built, to match each
-              model.
-            </p>
-          </Prose>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {practiceTypes.map((item) => {
-              const Icon = ICONS[item.icon] ?? Stethoscope;
-              return (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-white p-5"
-                >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#eef2ff]">
-                    <Icon className="h-5 w-5 text-[#4f46e5]" aria-hidden />
-                  </span>
-                  <h3 className="mt-4 font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    {item.text}
-                  </p>
-                </article>
-              );
-            })}
-          </div>
-          <CtaBand
-            title="Every practice model runs differently"
-            text="Tell us how your providers, payers and sites are organized, and we'll scope the system around it."
-            cta="Discuss Software for Your Practice Model"
-          />
-        </Section>
+        <PracticeWhoBenefits />
 
         {/* 8. PMS vs clinic */}
         <Section
@@ -961,8 +605,8 @@ export default function PracticeManagementPage() {
             ]}
             rows={pmsVsClinicRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">Bottom line: </span>
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">Bottom line: </span>
             choose by requirements, not labels. A small clinic with heavy
             insurance billing may need practice management capabilities, and a
             large group may want clinic-style simplicity at each site. We scope
@@ -986,13 +630,13 @@ export default function PracticeManagementPage() {
             <ul className="space-y-3">
               {systemDefinitions.map(([title, text], index) => (
                 <li
-                  key={title}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                  key={shortKey(title)}
+                  className="cm-cardnote"
                   style={{
                     borderLeft: `4px solid ${["#4f46e5", "#0d9488", "#0284c7"][index]}`,
                   }}
                 >
-                  <span className="font-semibold text-foreground">
+                  <span className="cx-fontse-textfo-1">
                     {title}:
                   </span>{" "}
                   {text}
@@ -1010,8 +654,8 @@ export default function PracticeManagementPage() {
             headers={["Factor", "Practice management software", "EMR", "EHR"]}
             rows={pmsEmrEhrRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">
               Why organizations use them together:{" "}
             </span>
             the PMS knows who is booked and what was billed, and the EMR or EHR
@@ -1045,8 +689,8 @@ export default function PracticeManagementPage() {
           <ul className="mt-5 grid gap-3 md:grid-cols-2">
             {whenCustom.map((item) => (
               <li
-                key={item}
-                className="flex gap-3 rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(item)}
+                className="cx-flex-gap3-2s"
               >
                 <Check
                   className="mt-1 h-4 w-4 shrink-0 text-[#4f46e5]"
@@ -1056,7 +700,7 @@ export default function PracticeManagementPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Lists of the top medical practice management software rarely
             account for your specialties, payers and locations, and packaged
             medical practice management software systems are built for the
@@ -1074,106 +718,7 @@ export default function PracticeManagementPage() {
         </Section>
 
         {/* 11. Security */}
-        <Section
-          id="security"
-          eyebrow="Privacy"
-          title="Data Security and Healthcare Privacy"
-        >
-          <Prose>
-            <p>
-              A practice management system holds identity, insurance and
-              financial data linked to healthcare. Security is designed into the
-              architecture from the start.
-            </p>
-          </Prose>
-          <div className="mt-8 grid items-start gap-8 lg:grid-cols-[360px_minmax(0,1fr)]">
-            <figure className="rounded-3xl border border-border bg-white p-5">
-              <div
-                role="img"
-                aria-label="Healthcare data security layers including multi-factor authentication, role-based access, encryption, audit logs and backups"
-                className="grid grid-cols-[minmax(0,1fr)_44px] gap-3"
-              >
-                <ol className="space-y-1.5">
-                  {securityLayers.map((layer, index) => (
-                    <li key={layer.label}>
-                      <div
-                        className="rounded-xl px-4 py-3"
-                        style={{
-                          backgroundColor: `rgba(49, 46, 129, ${0.06 + index * 0.15})`,
-                        }}
-                      >
-                        <p
-                          className={`text-sm font-semibold ${index > 2 ? "text-white" : "text-foreground"}`}
-                        >
-                          {layer.label}
-                        </p>
-                        <p
-                          className={`text-xs ${index > 2 ? "text-white/75" : "text-muted-foreground"}`}
-                        >
-                          {layer.detail}
-                        </p>
-                      </div>
-                      {index < securityLayers.length - 1 ? (
-                        <ArrowDown
-                          className="mx-auto my-0.5 h-3.5 w-3.5 text-muted-foreground"
-                          aria-hidden
-                        />
-                      ) : null}
-                    </li>
-                  ))}
-                </ol>
-                <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-[#818cf8] bg-[#eef2ff] py-4">
-                  <FileClock className="h-4 w-4 text-[#4f46e5]" aria-hidden />
-                  <span className="text-xs font-semibold tracking-wide text-[#312e81] [writing-mode:vertical-rl]">
-                    Audit logs and access monitoring
-                  </span>
-                </div>
-              </div>
-            </figure>
-            <div>
-              <H3>Security Measures We Build In</H3>
-              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-                {securityMeasures.map(([title, text]) => (
-                  <li
-                    key={title}
-                    className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
-                  >
-                    <span className="font-semibold text-foreground">
-                      {title}:
-                    </span>{" "}
-                    {text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <H3 className="mt-14">HIPAA, GDPR and Other Privacy Requirements</H3>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {privacyRegions.map((item) => (
-              <article
-                key={item.region}
-                className="rounded-2xl border border-border bg-white p-5"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#4f46e5]">
-                  {item.region}
-                </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  {item.text.charAt(0).toUpperCase() + item.text.slice(1)}
-                </p>
-              </article>
-            ))}
-          </div>
-          <div className="mt-6 max-w-4xl rounded-2xl border-l-4 border-[#4f46e5] bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">Important: </span>
-            there is no official government &quot;HIPAA certification&quot; or
-            &quot;GDPR certification&quot; for software, and ClickMasters
-            doesn&apos;t claim either. Compliance depends on architecture,
-            hosting, configuration, the practice&apos;s policies and training,
-            vendor contracts and the laws of each jurisdiction. We build the
-            technical safeguards these frameworks call for. The practice and its
-            advisers remain responsible for overall compliance.
-          </div>
-        </Section>
+        <PracticeSecurity />
 
         {/* 12. Integrations */}
         <Section
@@ -1183,7 +728,7 @@ export default function PracticeManagementPage() {
         >
           <Prose>
             <p>
-              <span className="font-semibold text-foreground">
+              <span className="cx-fontse-textfo-1">
                 What&apos;s available vs what&apos;s built per project:{" "}
               </span>
               API development and third-party integration are core ClickMasters
@@ -1219,7 +764,7 @@ export default function PracticeManagementPage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-4">
             {processPhases.map((phase, phaseIndex) => (
               <section
-                key={phase.title}
+                key={shortKey(phase.title)}
                 aria-label={`Phase ${phaseIndex + 1}: ${phase.title}`}
                 className="rounded-3xl border border-border bg-secondary/50 p-4"
               >
@@ -1234,21 +779,21 @@ export default function PracticeManagementPage() {
                         processStarts[phaseIndex] + stageIndex + 1;
                       return (
                         <li
-                          key={title}
-                          className="rounded-2xl border border-border bg-white p-4"
+                          key={shortKey(title)}
+                          className="cx-rounde-border-32"
                         >
-                          <div className="flex items-center gap-2">
-                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#4f46e5] text-[11px] font-bold text-white">
+                          <div className="cx-flex-itemsc-2x">
+                            <span className="cx-flex-h6-2w">
                               {stageNumber}
                             </span>
-                            <p className="font-semibold leading-snug">
+                            <p className="cx-fontse-leadin-b">
                               {title}
                             </p>
                           </div>
-                          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                          <p className="cm-p2">
                             {purpose}
                           </p>
-                          <p className="mt-2 rounded-lg bg-[#eef2ff] px-3 py-1.5 text-xs leading-5 text-[#312e81]">
+                          <p className="cx-mt2-rounde-40">
                             <span className="font-semibold">Deliverables:</span>{" "}
                             {deliverables}
                           </p>
@@ -1297,10 +842,10 @@ export default function PracticeManagementPage() {
           <ul className="mt-5 grid gap-3 md:grid-cols-2">
             {architecturePrinciples.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">{title}:</span>{" "}
+                <span className="cx-fontse-textfo-1">{title}:</span>{" "}
                 {text}
               </li>
             ))}
@@ -1322,10 +867,10 @@ export default function PracticeManagementPage() {
           <ul className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {costFactors.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">{title}:</span>{" "}
+                <span className="cx-fontse-textfo-1">{title}:</span>{" "}
                 {text}
               </li>
             ))}
@@ -1356,11 +901,11 @@ export default function PracticeManagementPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whyClickMasters.map(([title, text]) => (
               <article
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
-                <h3 className="font-semibold leading-snug">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <h3 className="cx-fontse-leadin-b">{title}</h3>
+                <p className="cm-p2">
                   {text}
                 </p>
               </article>
@@ -1372,7 +917,7 @@ export default function PracticeManagementPage() {
         <section className="border-t border-border bg-[#1e1b4b] text-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Modernize Your Medical Practice Operations with Custom Software
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -1412,7 +957,7 @@ export default function PracticeManagementPage() {
               </p>
               <ul className="mt-4 space-y-4">
                 {consultationChecklist.map(([title, text]) => (
-                  <li key={title} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(title)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#a5b4fc] text-[#1e1b4b]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -1429,27 +974,11 @@ export default function PracticeManagementPage() {
 
         {/* 18. FAQ */}
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Medical Practice Management Software FAQs
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
-              {practiceFaqs.map((faq, index) => (
-                <details
-                  key={faq.question}
-                  className="group p-5 md:p-6"
-                  open={index === 0}
-                >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
-                    <h3>{faq.question}</h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                  </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
-                    {faq.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <PracticeFaqList />
           </div>
         </section>
 
@@ -1457,10 +986,10 @@ export default function PracticeManagementPage() {
         <style>
           {"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}
         </style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Get a Consultation
             <ArrowRight className="h-4 w-4" />

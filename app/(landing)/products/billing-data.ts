@@ -9,7 +9,7 @@ export const billingTitle =
   "Medical Billing Software | Custom RCM & Claims Platform";
 
 export const billingDescription =
-  "Custom medical billing software for US practices, hospitals and billing companies: eligibility, claim scrubbing, 837/835 EDI, denials, A/R and RCM reporting.";
+  "Custom medical billing software for US practices, hospitals and billing firms: eligibility, claim scrubbing, 837/835 EDI, denials, A/R and RCM reporting.";
 
 export const PRODUCT_NAME = "Medical Billing Software";
 

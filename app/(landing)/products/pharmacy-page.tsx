@@ -1,3 +1,4 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -6,7 +7,6 @@ import {
   Boxes,
   CalendarClock,
   Check,
-  ChevronRight,
   ClipboardList,
   CreditCard,
   Database,
@@ -23,7 +23,7 @@ import {
   Truck,
   UserCheck,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -175,13 +175,13 @@ function AppFigure({
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#06281d] shadow-xl shadow-emerald-950/10 ring-1 ring-black/5">
       <div
-        className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5"
+        className="cm-mock-bar"
         aria-hidden
       >
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> pharmacy.example / concept
         </span>
       </div>
@@ -195,9 +195,9 @@ function AppFigure({
         decoding="async"
         className="block h-auto w-full bg-[#f3f7f5]"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">
+        <span className="cm-chip">
           Illustrative concept
         </span>
       </figcaption>
@@ -225,7 +225,7 @@ function DiagramFigure({
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">
         {caption}
@@ -282,14 +282,10 @@ function CheckList({
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item) => (
         <li
-          key={item}
-          className="flex gap-3 text-sm leading-6 text-muted-foreground"
+          key={shortKey(item)}
+          className="cm-li"
         >
-          <Check
-            className="mt-1 h-4 w-4 shrink-0"
-            style={{ color: ACCENT }}
-            aria-hidden
-          />
+          <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
           {item}
         </li>
       ))}
@@ -313,27 +309,27 @@ function TitledCards({
     >
       {items.map(([title, text], index) => (
         <li
-          key={title}
+          key={shortKey(title)}
           className={`rounded-2xl border border-border bg-white p-5 ${fiveUp ? (index < 3 ? "lg:col-span-2" : "lg:col-span-3") : ""}`}
         >
-          <p className="flex items-start gap-3 font-semibold leading-snug">
+          <p className="cm-ttl3">
             {numbered ? (
               <span
-                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+                className="cm-num7w"
                 style={{ backgroundColor: ACCENT }}
               >
                 {index + 1}
               </span>
             ) : (
               <ShieldCheck
-                className="mt-0.5 h-4 w-4 shrink-0"
+                className="cm-ic05"
                 style={{ color: ACCENT }}
                 aria-hidden
               />
             )}
             <span className={numbered ? "pt-0.5" : ""}>{title}</span>
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p2">{text}</p>
         </li>
       ))}
     </ul>
@@ -352,13 +348,13 @@ function FeatureCard({
     <article
       className={`rounded-2xl border border-border bg-white p-6 ${className}`}
     >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#d1fae5]">
+      <span className="cx-flex-h11-3v">
         <Icon className="h-5 w-5 text-[#059669]" aria-hidden />
       </span>
-      <h3 className="mt-4 text-lg font-semibold leading-snug">
+      <h3 className="cx-mt4-textlg-35">
         {feature.title}
       </h3>
-      <p className="mt-2 text-sm leading-6 text-muted-foreground">
+      <p className="cm-p2">
         {feature.text}
       </p>
     </article>
@@ -433,7 +429,7 @@ export default function PharmacyPage() {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p
                 className="text-xs font-semibold uppercase tracking-[0.22em]"
@@ -441,10 +437,10 @@ export default function PharmacyPage() {
               >
                 Custom pharmacy software
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
+              <h1 className="cm-h1">
                 {PRODUCT_NAME}
               </h1>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 <p>
                   A pharmacy management system runs the daily work of a
                   pharmacy: receiving prescriptions, checking them, filling and
@@ -488,7 +484,7 @@ export default function PharmacyPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -561,7 +557,7 @@ export default function PharmacyPage() {
                 <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-6">
                   {chunk.features.map((feature, index) => (
                     <FeatureCard
-                      key={feature.title}
+                      key={shortKey(feature.title)}
                       feature={feature}
                       className={index < 3 ? "lg:col-span-2" : "lg:col-span-3"}
                     />
@@ -602,7 +598,7 @@ export default function PharmacyPage() {
             headers={["Business type", "What matters most"]}
             rows={businessTypeRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Hospital pharmacies work differently from retail. Medication orders
             usually come from the hospital&apos;s clinical record, not from
             paper or retail e-prescriptions. A hospital pharmacy system
@@ -650,11 +646,11 @@ export default function PharmacyPage() {
               ],
             ].map(([title, text]) => (
               <article
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
                 <h3 className="font-semibold">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {text}
                 </p>
               </article>
@@ -744,7 +740,7 @@ export default function PharmacyPage() {
         >
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 A pharmacy POS is not an ordinary retail register. It has to:
               </p>
               <CheckList items={posNeeds} className="mt-5" />
@@ -794,7 +790,7 @@ export default function PharmacyPage() {
             are examples. We plan for these steps; they are not something any
             developer can skip.
           </div>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Pharmacies that serve outpatient clinics, such as in-house
             dispensaries or clinic-attached pharmacies, often need a direct link
             to the{" "}
@@ -857,7 +853,7 @@ export default function PharmacyPage() {
             ]}
             rows={cloudRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             For most US pharmacies, a cloud-based pharmacy management system
             with an offline fallback for counter operations offers the best
             balance of cost, uptime and growth.
@@ -872,7 +868,7 @@ export default function PharmacyPage() {
         >
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Off-the-shelf pharmacy software works for the typical pharmacy.
                 Custom development makes sense when your business isn&apos;t
                 typical:
@@ -880,7 +876,7 @@ export default function PharmacyPage() {
               <CheckList items={customReasons} className="mt-5" />
             </div>
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Through our{" "}
                 <Link
                   href="/software-development/custom-software-development"
@@ -893,10 +889,10 @@ export default function PharmacyPage() {
               <ul className="mt-5 space-y-3">
                 {architecture.map(([title, text]) => (
                   <li
-                    key={title}
-                    className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                    key={shortKey(title)}
+                    className="cm-cardnote"
                   >
-                    <span className="font-semibold text-foreground">
+                    <span className="cx-fontse-textfo-1">
                       {title}.
                     </span>{" "}
                     {text}
@@ -925,17 +921,17 @@ export default function PharmacyPage() {
           <ol className="grid gap-4 md:grid-cols-3">
             {implementationSteps.map(([title, text], index) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
                 <span
-                  className="text-xs font-bold uppercase tracking-[0.16em]"
+                  className="cm-label"
                   style={{ color: ACCENT }}
                 >
                   Stage {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">
                   {text}
                 </p>
               </li>
@@ -969,11 +965,11 @@ export default function PharmacyPage() {
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whyClickmasters.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
-                <p className="font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cx-fontse-leadin-b">{title}</p>
+                <p className="cm-p2">
                   {text}
                 </p>
               </li>
@@ -985,7 +981,7 @@ export default function PharmacyPage() {
         <section className="border-t border-border bg-[#022c22] text-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Discuss Your Pharmacy Software Project
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -1020,7 +1016,7 @@ export default function PharmacyPage() {
                   "The systems you use today",
                   "Your biggest bottlenecks",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(item)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6ee7b7] text-[#022c22]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -1034,24 +1030,24 @@ export default function PharmacyPage() {
 
         {/* FAQ */}
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Pharmacy Management Systems
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {pharmacyFaqs.map((faq, index) => (
                 <details
-                  key={faq.question}
+                  key={shortKey(faq.question)}
                   className="group p-5 md:p-6"
                   open={index === 0}
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                  <summary className="cm-faq-q">
                     <h3>
                       {index + 1}. {faq.question}
                     </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
+                  <p className="cm-intro">
                     {faq.answer}
                   </p>
                 </details>
@@ -1063,7 +1059,7 @@ export default function PharmacyPage() {
         {/* Related products (site template block) */}
         {relatedProducts.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">
+            <h2 className="cx-text2x-fontse-u">
               More in Healthcare &amp; Medical Software
             </h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1071,7 +1067,7 @@ export default function PharmacyPage() {
                 <Link
                   key={item.slug}
                   href={productPath(INDUSTRY_SLUG, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -1084,10 +1080,10 @@ export default function PharmacyPage() {
         <style>
           {"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}
         </style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Get in touch
             <ArrowRight className="h-4 w-4" />

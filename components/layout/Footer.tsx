@@ -185,7 +185,7 @@ export default function Footer({
             {TOP_SOCIALS_LIVE.length > 0 && (
             <ul className="mt-6 sm:mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm sm:text-base font-medium">
               {TOP_SOCIALS_LIVE.map((s, i) => (
-                <li key={s.label} className="flex items-center gap-3">
+                <li key={s.label} className="cx-flex-itemsc-h">
                   <a
                     href={s.href}
                     aria-label={s.label}
@@ -209,7 +209,7 @@ export default function Footer({
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 md:gap-x-8">
               {navColumns.map((col: FooterColumn) => (
                 <div key={col.title}>
-                  <p className="text-xs uppercase tracking-[0.25em] opacity-70 mb-4 md:mb-5 font-medium">
+                  <p className="cm-fhead">
                     {col.title}
                   </p>
                   <ul className="space-y-2.5 md:space-y-3">
@@ -220,7 +220,7 @@ export default function Footer({
                           {...(item.newTab
                             ? { target: "_blank", rel: "noopener noreferrer" }
                             : {})}
-                          className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
+                          className="cm-flink"
                         >
                           {item.label}
                         </a>

@@ -72,7 +72,7 @@ export default function LocationServicePage({ data }: Props) {
                 Locations
               </Link>
               <ChevronRight className="h-4 w-4 text-muted-foreground" />
-              <span className="font-semibold text-foreground">
+              <span className="cx-fontse-textfo-1">
                 {data.title}
               </span>
             </nav>
@@ -160,7 +160,7 @@ export default function LocationServicePage({ data }: Props) {
                   {(data.trustPoints?.length ?? 0) > 0 && (
                     <div className="mt-6 space-y-3">
                       {data.trustPoints!.map((point, index) => (
-                        <div key={index} className="flex items-start gap-3">
+                        <div key={index} className="cx-flex-itemss-2l">
                           <CheckCircle2 className="mt-1.5 h-5 w-5 shrink-0 text-primary" />
                           <p className="text-base leading-7">{point}</p>
                         </div>
@@ -191,7 +191,7 @@ export default function LocationServicePage({ data }: Props) {
 
                     {/* Bottom Experience Metrics Card */}
                     <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-border/80 bg-background/95 p-3.5 shadow-xl backdrop-blur-md">
-                      <div className="flex items-center gap-3">
+                      <div className="cx-flex-itemsc-h">
                         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
@@ -240,10 +240,10 @@ export default function LocationServicePage({ data }: Props) {
                     const links = linksForServiceLine(item.title);
                     const card = (
                       <>
-                        <h3 className="text-2xl font-semibold tracking-tight">
+                        <h3 className="cx-text2x-fontse-u">
                           {item.title}
                         </h3>
-                        <p className="mt-3 text-sm leading-6 text-muted-foreground whitespace-pre-line">
+                        <p className="cx-mt3-textsm-2m">
                           {item.description}
                         </p>
                         {links.length > 1 ? (
@@ -293,19 +293,19 @@ export default function LocationServicePage({ data }: Props) {
                 Post-launch maintenance is scoped separately under{" "}
                 <Link
                   href="/support-and-outsourcing/maintenance-support"
-                  className="font-semibold text-primary"
+                  className="cx-fontse-textpr-29"
                 >
                   Maintenance & Support
                 </Link>{", inside "}
                 <Link
                   href="/support-and-outsourcing"
-                  className="font-semibold text-primary"
+                  className="cx-fontse-textpr-29"
                 >
                   Support & Outsourcing
                 </Link>{". The broader catalog starts at "}
                 <Link
                   href="/software-development"
-                  className="font-semibold text-primary"
+                  className="cx-fontse-textpr-29"
                 >
                   Software Development
                 </Link>.
@@ -344,16 +344,16 @@ export default function LocationServicePage({ data }: Props) {
                   {data.benefits!.map((benefit, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-3 rounded-lg border border-border bg-card p-6"
+                      className="cx-flex-itemss-1y"
                     >
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <CheckCircle2 className="cx-mt05-h5-20" />
                       <p className="text-base leading-7">{benefit}</p>
                     </div>
                   ))}
                 </div>
               )}
               {data.benefitsClosing && (
-                <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+                <p className="cx-mt6-maxw3x-1c">
                   {data.benefitsClosing}
                 </p>
               )}
@@ -380,16 +380,16 @@ export default function LocationServicePage({ data }: Props) {
                   {data.whyChoosePoints!.map((point, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-3 rounded-lg border border-border bg-card p-6"
+                      className="cx-flex-itemss-1y"
                     >
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <CheckCircle2 className="cx-mt05-h5-20" />
                       <p className="text-base leading-7">{point}</p>
                     </div>
                   ))}
                 </div>
               )}
               {data.whyChooseClosing && (
-                <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+                <p className="cx-mt6-maxw3x-1c">
                   {data.whyChooseClosing}
                 </p>
               )}
@@ -425,7 +425,7 @@ export default function LocationServicePage({ data }: Props) {
                 </ul>
               )}
               {data.industriesClosing && (
-                <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+                <p className="cx-mt6-maxw3x-1c">
                   {data.industriesClosing}
                 </p>
               )}
@@ -454,13 +454,13 @@ export default function LocationServicePage({ data }: Props) {
                       key={index}
                       className="rounded-lg border border-border bg-card p-6 hover:shadow-lg transition-shadow"
                     >
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                      <p className="cx-textxs-fontse-2n">
                         {step.step}
                       </p>
                       <h3 className="mt-3 text-xl font-semibold text-foreground">
                         {step.title}
                       </h3>
-                      <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                      <p className="cm-p3">
                         {step.description}
                       </p>
                     </div>
@@ -489,7 +489,7 @@ export default function LocationServicePage({ data }: Props) {
             <p className="mt-6 text-lg">
               <Link
                 href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
-                className="font-semibold text-primary"
+                className="cx-fontse-textpr-29"
               >
                 Pre-launch QA for a SaaS booking platform
               </Link>
@@ -520,7 +520,7 @@ export default function LocationServicePage({ data }: Props) {
                     {data.locations.map((location, index) => (
                       <li
                         key={index}
-                        className="rounded-lg border border-border bg-card px-4 py-3 text-sm font-medium text-foreground hover:border-primary transition-colors"
+                        className="cx-rounde-border-1f"
                       >
                         {location}
                       </li>
@@ -529,7 +529,7 @@ export default function LocationServicePage({ data }: Props) {
                 </>
               )}
               {data.locationsClosing && (
-                <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+                <p className="cx-mt6-maxw3x-1c">
                   {data.locationsClosing}
                 </p>
               )}
@@ -588,7 +588,7 @@ export default function LocationServicePage({ data }: Props) {
           data.closingDescription ||
           data.closingCtaText) && (
           <section className="bg-background px-5 py-24 md:px-10">
-            <div className="mx-auto max-w-3xl text-center">
+            <div className="cx-mxauto-maxw3x-12">
               {data.closingTitle && (
                 <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-tight text-foreground">
                   {data.closingTitle}

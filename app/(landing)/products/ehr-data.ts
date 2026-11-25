@@ -9,7 +9,7 @@ export const ehrTitle =
   "Electronic Health Records Software | Custom EHR Development";
 
 export const ehrDescription =
-  "Custom Electronic Health Records Software for hospitals, clinics and medical groups. Interoperable, secure EHR built around your workflows. Get a consultation.";
+  "Custom electronic health records (EHR) software for hospitals, clinics and medical groups: interoperable, secure and built around your workflows.";
 
 export const atAGlance = [
   [

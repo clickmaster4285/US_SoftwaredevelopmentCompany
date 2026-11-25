@@ -137,7 +137,7 @@ export default function ContactPage() {
           <nav className="mb-8 flex items-center gap-2 text-sm font-medium">
             <span className="text-muted-foreground">Home</span>
             <span className="text-muted-foreground">/</span>
-            <span className="font-semibold text-foreground">Contact</span>
+            <span className="cx-fontse-textfo-1">Contact</span>
           </nav>
 
           <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

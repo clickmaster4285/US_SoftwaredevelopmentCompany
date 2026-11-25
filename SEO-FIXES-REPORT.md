@@ -185,6 +185,53 @@ Status key: **Verified** = change made and the result measured on the local buil
 | Validation | Lighthouse contrast failures, live → final: home 16 → 2, product 93 → 6, service 35 → 0, contact 14 → 0. Accessibility score: service and contact 95 → **100**, product 96 → 97. Remaining failures are illustrative dashboard mock-ups and decorative avatar initials (REMAINING-ISSUES R-15). |
 | Status | Verified. Design note: accent text is now a slightly deeper orange than the orange buttons. |
 
+### F-22. Follow-up audit items (second audit, same day)
+| Item | Change | Files | Result on re-crawl |
+|---|---|---|---|
+| 8 homepage images with empty `alt` | Award badges now carry the text they show (the owner confirmed these awards are genuine). The two planet illustrations are described. | `app/(landing)/data.tsx`, `AwardsSection.tsx`, `SpaceJourney.tsx` | 19 homepage images, 0 with missing/empty alt |
+| Nav "Products" was a `<button>` | Now `<a href="/products">` on every page. Hover/focus still opens the mega-menu. | `components/layout/ProductsMenu.tsx` | 185/185 pages |
+| Descriptions > 155 chars (11) | Rewritten by hand to ≤155. `fitDescription` limit lowered 160 → 155. Case-study description shortened. | `lib/seo.ts`, 10 product data files, `data/main-services-data.js`, case-study content | 0 over 155; 0 ending mid-sentence |
+| H1 > 70 chars (14) | Shortened with the product name kept first. Homepage H1 now reads "Software development company offering web, mobile & AI services" (63). | about, home, crm, bpm, dms, attendance, erp, hrms, inventory, scm, gym, ehr, practice, fitness pillar | 0 over 70 (max 70) |
+| Title > 60 (CRM, 62) | "Customer Relationship Management (CRM) Software" (47) | `crm-data.ts` | 0 over 60 |
+| Case-study data had a stale canonical slug (unused) | Corrected to the live URL | case-study content file | n/a |
+
+Re-verified with the full crawl: all 185 URLs return 200, 0 schema issues, 185/185 in the sitemap, 55/55 product pages linked from a service page.
+
+### F-23. Third audit pass: broad SEO-tool sweep (Ahrefs / Semrush-style checks)
+| Issue found | Pages | Fix | Files | Re-crawl |
+|---|---|---|---|---|
+| Missing `og:site_name` / `og:type` (page `openGraph` replaced the layout's) | 178 | Defaults merged in the shared `withEditedPageSeo` helper; page values still win | `lib/cms/erp-edits.ts` | 0 missing |
+| Missing `og:image`; `summary_large_image` card without image | 124 | New 1200×630 default share image used when a page has none | `public/og-default.png`, `lib/cms/erp-edits.ts` | 0 missing |
+| Meta description < 110 chars ("too short") | 50 | `fitDescription` appends the longest factual closing sentence that keeps it ≤155 | `lib/seo.ts` | 0 under 110, 0 over 155 |
+| Pages with only 1 incoming internal link | 50 | Sub-service "related" links now rotate (next two siblings) instead of always the first two | `SubServicePage.tsx` | 0 pages under 2 |
+| Title < 30 chars; duplicate title pair | 2 | `TITLE_OVERRIDES` for crypto-wallet and `/software-development/mobile-app-development` | `lib/seo.ts`, sub-service `page.tsx` | 0 |
+| Heading level skipped / no H2 | 5 | Card headings H3→H2 (`/case-studies`, `/locations`), H4→H3 (about, case study, case-study table) | 5 files | 0 |
+| Images without width/height | 17 | Intrinsic sizes on homepage illustrations, hospital hero, case-study figures (the data had wrong 1200×675 values, now real sizes); legacy hub hero → `next/image` | `SpaceJourney.tsx`, `hospital-management-page.tsx`, case-study page + content, `data/main-services-components.js` | 0 |
+| HTML size | 55 pages > 300 KB | (1) 205 heavily repeated Tailwind class strings moved to `cm-*`/`cx-*` component classes (`@apply` of the same utilities). (2) FAQPage JSON-LD no longer emitted: not eligible for Google FAQ rich results (gov/health sites only since 2023); FAQs stay visible. (3) The most repeated icons (check, chevron, check-square) drawn with CSS masks instead of inline SVG (`.ico-*`, `components/ui/list-icon.tsx`). | `app/globals.css`, ~60 TSX files, `components/seo/JsonLd.tsx` | Site HTML −28.9% vs live; product median 342 KB (live ~530), max 447 KB (live 665) |
+
+**Rendering verified unchanged:** full-page screenshots of 19 templates at 412px and 1280px before and after, pixel-diffed. 36/38 shots are identical. The case study differs only because its figures now reserve their space (the layout-shift fix). The icon change differs by ≤36 pixels per page at ≤3/765 colour difference (anti-aliasing).
+
+**Deployment note:** build from a clean `.next` (`rm -rf .next && npm run build`). An incremental local build kept a stale stylesheet without the new classes; a clean build is correct.
+
+### F-24. Fourth audit pass: page weight under 300 KB, hero image ≤100 KB
+Audit finding: 26 of 27 product pages were 410–654 KB of HTML, about 60% of it the Next.js server-component payload (`self.__next_f.push`). `hospital-management-hero.jpg` was 204 KB.
+
+| Change | Why | Files |
+|---|---|---|
+| All lucide icons on product pages render as a `<span>` drawn by a CSS mask instead of an inline `<svg>` (252 icons, generated from lucide's own SVG) | Each inline SVG (~0.8 KB) was shipped twice (HTML + payload) and repeated dozens of times per page | `scripts/gen-mask-icons.cjs` (generator), `components/ui/mask-icons.tsx`, `app/(landing)/products/product-icons.css`, `app/(landing)/products/layout.tsx` (loads the CSS on /products only), 30 product files switched their import |
+| React list keys hashed (`shortKey`) instead of the full text | `key={item}` / `key={faq.question}` put every list item's text into the payload a third time | `lib/short-key.ts`, 30 product files (306 keys) |
+| Longest static sections rendered from client components that import their own data (medical practice: 22 feature cards, FAQ, 5 sections; EHR: feature cards, FAQ, 3 sections; clinic: FAQ; fitness hub: solution cards, FAQ) | The HTML still contains the full server-rendered text (crawlers see everything); the payload carries only a component reference instead of a second copy of the text | `practice-sections.tsx`, `ehr-sections.tsx`, `clinic-sections.tsx`, `fitness-sports-sections.tsx`, `practice-icons.ts`, `ehr-icons.ts`; shared building blocks moved to `product-primitives.tsx` (re-exported from the hospital/clinic pages, so existing imports are unchanged) |
+| Hero re-encoded: 204 KB → 68 KB, same 1152×864 | Auditor threshold ≤100 KB | `public/products/hospital-management-hero.jpg` |
+
+**Results (final clean build, full crawl of 185 URLs):**
+- All 27 audited pages are **under 300 KB**: max 289 KB, median 267 KB (they were 410–654 KB). No page on the site exceeds 300 KB (max 290 KB). Site-wide HTML is −38.1% vs live.
+- 0 images over 100 KB among the 234 image URLs on the audited pages.
+- **Nothing changed for users or crawlers:** the rendered `<main>` markup of the converted pages is byte-identical to before (React's invisible `<!-- -->` separators excepted). Full-page screenshots are pixel-identical apart from icon anti-aliasing (≤0.002% of pixels). There are no hydration errors. FAQ open/close works. Client-side navigation into the converted pages renders all cards, FAQs and in-text links.
+- Lighthouse mobile (medical practice): performance 84 → 85, TBT 632 → 597 ms, total bytes 608 → 528 KB, CLS 0. Best Practices showed 96 only because Google Tag Manager was unreachable from the test machine at that moment.
+- Response time: 68 ms median locally (110 ms max). The 0.59 s median / 1.32 s max in the audit is measured from the crawler to the production server; see REMAINING-ISSUES R-16.
+
+**Maintenance:** when a product page starts using a new lucide icon, import it from `@/components/ui/mask-icons` and run `node scripts/gen-mask-icons.cjs` (TypeScript fails the build if the icon hasn't been generated).
+
 ### F-19. Response headers
 | | |
 |---|---|

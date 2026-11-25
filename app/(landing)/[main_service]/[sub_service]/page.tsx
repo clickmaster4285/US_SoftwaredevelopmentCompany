@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import SubServicePage from "./SubServicePage";
 import { resolveService, services } from "./service-data";
 import { destinationFor, isRetiredSub } from "@/lib/site-routes.mjs";
-import { fitDescription, fitTitle } from "@/lib/seo";
+import { fitDescription, fitTitle, TITLE_OVERRIDES } from "@/lib/seo";
 import {
   breadcrumbSchema,
   JsonLd,
@@ -59,7 +59,9 @@ async function baseMetadata(
   }
 
   const canonical = `/${main_service}/${sub_service}`;
-  const title = fitTitle(subService.metaTitle || subService.title);
+  const title = fitTitle(
+    TITLE_OVERRIDES[canonical] || subService.metaTitle || subService.title,
+  );
   const description = fitDescription(
     subService.metaDescription || subService.description,
     subService.title,

@@ -751,7 +751,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   );
   const description = fitDescription(
     isHospital
-      ? "Hospital management system software by ClickMasters: patient records, appointments, billing, pharmacy, lab, IPD/OPD and reporting in one integrated platform."
+      ? "Hospital management system software: patient records, appointments, billing, pharmacy, lab, IPD/OPD and reporting in one integrated platform."
       : match.product.description,
     isHospital ? "Hospital Management System" : match.product.title,
   );

@@ -65,7 +65,7 @@ export function CmsCardGrid({
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
                   {item.linkLabel || "Learn more"}
                   <ArrowRight
-                    className="h-4 w-4 transition group-hover:translate-x-1"
+                    className="cx-h4-w4-t"
                     aria-hidden="true"
                   />
                 </span>
@@ -346,14 +346,14 @@ export function CmsTeam({
               </div>
             )}
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-card-foreground">
+              <h3 className="cx-textlg-fontse-1q">
                 {m.name}
               </h3>
               {m.role ? (
                 <p className="mt-1 text-sm text-primary">{m.role}</p>
               ) : null}
               {m.bio ? (
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p3">
                   {m.bio}
                 </p>
               ) : null}
@@ -477,7 +477,7 @@ export function CmsPricing({
                 {plan.features.map((f, j) => (
                   <li key={j} className="flex gap-3">
                     <Check
-                      className="mt-0.5 h-4 w-4 shrink-0"
+                      className="cm-ic05"
                       aria-hidden="true"
                     />
                     {f}

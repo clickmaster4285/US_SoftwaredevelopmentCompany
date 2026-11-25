@@ -1,10 +1,10 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
   BarChart3,
   Check,
-  ChevronRight,
   ClipboardList,
   Code2,
   FileCheck2,
@@ -13,7 +13,7 @@ import {
   UserRoundCheck,
   Wallet,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -163,13 +163,13 @@ function AppFigure({
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#1c1917] shadow-xl shadow-orange-950/10 ring-1 ring-black/5">
       <div
-        className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5"
+        className="cm-mock-bar"
         aria-hidden
       >
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> billing.example / concept
         </span>
       </div>
@@ -183,9 +183,9 @@ function AppFigure({
         decoding="async"
         className="block h-auto w-full bg-[#f7f6f4]"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">
+        <span className="cm-chip">
           Illustrative concept
         </span>
       </figcaption>
@@ -213,7 +213,7 @@ function DiagramFigure({
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">
         {caption}
@@ -286,22 +286,18 @@ function CheckList({
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item, index) => (
         <li
-          key={item}
-          className="flex gap-3 text-sm leading-6 text-muted-foreground"
+          key={shortKey(item)}
+          className="cm-li"
         >
           {numbered ? (
             <span
-              className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-white"
+              className="cx-flex-h6-2h"
               style={{ backgroundColor: ACCENT }}
             >
               {index + 1}
             </span>
           ) : (
-            <Check
-              className="mt-1 h-4 w-4 shrink-0"
-              style={{ color: ACCENT }}
-              aria-hidden
-            />
+            <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
           )}
           {item}
         </li>
@@ -323,27 +319,27 @@ function TitledCards({
     <ul className={`grid gap-4 ${className}`}>
       {items.map(([title, text], index) => (
         <li
-          key={title}
-          className="rounded-2xl border border-border bg-white p-5"
+          key={shortKey(title)}
+          className="cm-card5"
         >
-          <p className="flex items-start gap-3 font-semibold leading-snug">
+          <p className="cm-ttl3">
             {numbered ? (
               <span
-                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+                className="cm-num7w"
                 style={{ backgroundColor: ACCENT }}
               >
                 {index + 1}
               </span>
             ) : (
               <ShieldCheck
-                className="mt-0.5 h-4 w-4 shrink-0"
+                className="cm-ic05"
                 style={{ color: ACCENT }}
                 aria-hidden
               />
             )}
             <span className={numbered ? "pt-0.5" : ""}>{title}</span>
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+          <p className="cm-p2">
             {text.charAt(0).toUpperCase() + text.slice(1)}
           </p>
         </li>
@@ -355,7 +351,7 @@ function TitledCards({
 function Callout({ children }: { children: ReactNode }) {
   return (
     <div
-      className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
+      className="cm-note"
       style={{ borderColor: ACCENT }}
     >
       {children}
@@ -406,7 +402,7 @@ export default function BillingPage() {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p
                 className="text-xs font-semibold uppercase tracking-[0.22em]"
@@ -414,7 +410,7 @@ export default function BillingPage() {
               >
                 Custom billing & RCM software
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
+              <h1 className="cm-h1">
                 {PRODUCT_NAME}
               </h1>
               <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground">
@@ -459,7 +455,7 @@ export default function BillingPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -512,7 +508,7 @@ export default function BillingPage() {
             ]}
             rows={systemsRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             In many US practices, billing is a module inside{" "}
             <ProductLink slug="medical-practice-management-software">
               medical practice management software
@@ -558,7 +554,7 @@ export default function BillingPage() {
             {featureGroups.map((group) => {
               const Icon = ICONS[group.icon] ?? ClipboardList;
               return (
-                <div key={group.title}>
+                <div key={shortKey(group.title)}>
                   <div className="flex items-center gap-3 border-b border-border pb-4">
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#ffedd5]">
                       <Icon className="h-5 w-5 text-[#ea580c]" aria-hidden />
@@ -570,11 +566,11 @@ export default function BillingPage() {
                   >
                     {group.features.map(([title, text], index) => (
                       <li
-                        key={title}
+                        key={shortKey(title)}
                         className={`rounded-2xl border border-border bg-white p-5 ${group.features.length === 5 ? (index < 3 ? "lg:col-span-2" : "lg:col-span-3") : ""}`}
                       >
-                        <p className="font-semibold leading-snug">{title}</p>
-                        <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                        <p className="cx-fontse-leadin-b">{title}</p>
+                        <p className="cm-p2">
                           {text}
                         </p>
                       </li>
@@ -621,7 +617,7 @@ export default function BillingPage() {
             headers={["Organization", "What the billing system must do well"]}
             rows={organizationRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Hospital billing is the most different from the others. It runs on
             institutional claims, revenue codes and a chargemaster that has to
             match every department, from the ED to the lab and the pharmacy. In
@@ -715,7 +711,7 @@ export default function BillingPage() {
             from incomplete notes.
           </p>
           <Callout>
-            <span className="font-semibold text-foreground">Important: </span>
+            <span className="cx-fontse-textfo-1">Important: </span>
             Medical billing coding software supports qualified professionals. It
             does not replace them. Certified coders and experienced billers
             remain responsible for code selection, documentation review, payer
@@ -746,7 +742,7 @@ export default function BillingPage() {
               caption="RCM dashboard: days in A/R, clean claim rate, collections by payer, underpayments and KPI definitions (placeholder data)"
             />
           </div>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             These metrics are useful only when the definitions are consistent. A
             custom RCM platform lets you define and document exactly how each
             KPI is calculated.
@@ -793,7 +789,7 @@ export default function BillingPage() {
               />
             </div>
           </div>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Denial trends then feed back into scrubbing rules, so the same error
             is less likely to repeat.
           </p>
@@ -807,14 +803,14 @@ export default function BillingPage() {
         >
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Eligibility verification should happen before the patient
                 arrives. A good workflow:
               </p>
               <CheckList items={eligibilitySteps} numbered className="mt-5" />
             </div>
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Prior authorization is often the most manual part of the revenue
                 cycle. Software helps by:
               </p>
@@ -884,7 +880,7 @@ export default function BillingPage() {
             headers={["Integration", "Purpose", "Typical standard / method"]}
             rows={integrationRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             The most important integration is usually with the clinical system.
             Medical billing EHR software needs an accurate flow of encounters,
             diagnoses and procedures from the provider&apos;s{" "}
@@ -936,7 +932,7 @@ export default function BillingPage() {
               </p>
               <CheckList items={adminSafeguards} className="mt-4" />
               <p className="mt-6 text-sm leading-7 text-muted-foreground">
-                <span className="font-semibold text-foreground">
+                <span className="cx-fontse-textfo-1">
                   Business associate considerations.{" "}
                 </span>
                 Clearinghouses, hosting providers, billing companies and
@@ -971,7 +967,7 @@ export default function BillingPage() {
             ]}
             rows={cloudRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             For most US practices and billing companies, healthcare billing
             software systems run in the cloud. Medical billing software systems
             on HIPAA-eligible infrastructure offer the best balance of cost,
@@ -987,14 +983,14 @@ export default function BillingPage() {
         >
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Off-the-shelf billing products work well for standard workflows.
                 Custom development makes sense when:
               </p>
               <CheckList items={customReasons} className="mt-5" />
             </div>
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 Through our{" "}
                 <Link
                   href="/software-development/custom-software-development"
@@ -1007,8 +1003,8 @@ export default function BillingPage() {
               <ul className="mt-5 space-y-3">
                 {buildAround.map((item) => (
                   <li
-                    key={item}
-                    className="rounded-2xl border border-border bg-white px-5 py-3.5 text-sm leading-6 text-muted-foreground"
+                    key={shortKey(item)}
+                    className="cx-rounde-border-2c"
                   >
                     {item}
                   </li>
@@ -1041,17 +1037,17 @@ export default function BillingPage() {
           <ol className="grid gap-4 md:grid-cols-3">
             {implementationSteps.map(([title, text], index) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
                 <span
-                  className="text-xs font-bold uppercase tracking-[0.16em]"
+                  className="cm-label"
                   style={{ color: ACCENT }}
                 >
                   Stage {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">
                   {text}
                 </p>
               </li>
@@ -1097,7 +1093,7 @@ export default function BillingPage() {
         <section className="border-t border-border bg-[#1c1917] text-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Discuss Your Healthcare Software Project
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -1135,7 +1131,7 @@ export default function BillingPage() {
                   "The systems you use today",
                   "Your biggest billing problems",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(item)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fdba74] text-[#1c1917]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -1149,24 +1145,24 @@ export default function BillingPage() {
 
         {/* FAQ */}
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Medical Billing Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {billingFaqs.map((faq, index) => (
                 <details
-                  key={faq.question}
+                  key={shortKey(faq.question)}
                   className="group p-5 md:p-6"
                   open={index === 0}
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                  <summary className="cm-faq-q">
                     <h3>
                       {index + 1}. {faq.question}
                     </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
+                  <p className="cm-intro">
                     {faq.answer}
                   </p>
                 </details>
@@ -1178,7 +1174,7 @@ export default function BillingPage() {
         {/* Related products (site template block) */}
         {relatedProducts.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">
+            <h2 className="cx-text2x-fontse-u">
               More in Healthcare &amp; Medical Software
             </h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1186,7 +1182,7 @@ export default function BillingPage() {
                 <Link
                   key={item.slug}
                   href={productPath(INDUSTRY_SLUG, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -1199,10 +1195,10 @@ export default function BillingPage() {
         <style>
           {"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}
         </style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Get in touch
             <ArrowRight className="h-4 w-4" />

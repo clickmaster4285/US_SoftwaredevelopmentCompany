@@ -1,14 +1,18 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight } from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { pageUrl, SITE_URL } from "@/lib/site";
+import { CompareTable, Prose, Section } from "./product-primitives";
+
+export { CompareTable, Prose, Section } from "./product-primitives";
 
 export const HOSPITAL_PATH =
   "/products/healthcare-medical-software/hospital-management-system";
 
 const description =
-  "Hospital management system software by ClickMasters: patient records, appointments, billing, pharmacy, lab, IPD/OPD and reporting in one integrated platform.";
+  "Hospital management system software: patient records, appointments, billing, pharmacy, lab, IPD/OPD and reporting in one integrated platform.";
 
 export const hospitalFaqs = [
   {
@@ -328,49 +332,6 @@ const costFactors = [
   "Maintenance and support level after go-live.",
 ];
 
-export function Section({
-  id,
-  eyebrow,
-  title,
-  children,
-  aside,
-}: {
-  id: string;
-  eyebrow?: string;
-  title: string;
-  children: ReactNode;
-  aside?: ReactNode;
-}) {
-  return (
-    <section id={id} className="scroll-mt-28 border-t border-border py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
-        {eyebrow ? (
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-            {eyebrow}
-          </p>
-        ) : null}
-        {aside ? (
-          <div className="mt-3 grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
-            <div>
-              <h2 className="max-w-3xl text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-                {title}
-              </h2>
-              <div className="mt-6">{children}</div>
-            </div>
-            {aside}
-          </div>
-        ) : (
-          <>
-            <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-              {title}
-            </h2>
-            <div className="mt-6">{children}</div>
-          </>
-        )}
-      </div>
-    </section>
-  );
-}
 
 const handoffs = [
   "Registration",
@@ -384,15 +345,15 @@ const handoffs = [
 function RecordFlow() {
   return (
     <aside className="rounded-3xl border border-border bg-white p-5 shadow-sm">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+      <p className="cx-textxs-fontse-2n">
         One patient record
       </p>
-      <p className="mt-2 text-sm leading-6 text-muted-foreground">
+      <p className="cm-p2">
         Every department adds to the same chart instead of starting a new file.
       </p>
       <ol className="mt-5 space-y-3">
         {handoffs.map((step, index) => (
-          <li key={step} className="flex items-center gap-3">
+          <li key={shortKey(step)} className="cx-flex-itemsc-h">
             <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-xs font-semibold">
               {index + 1}
             </span>
@@ -415,7 +376,7 @@ const truthItems = [
 function SourceOfTruth() {
   return (
     <aside className="rounded-3xl border border-border bg-primary p-5 text-primary-foreground shadow-sm">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
+      <p className="cx-textxs-fontse-1k">
         One source of truth
       </p>
       <p className="mt-2 text-lg font-semibold leading-snug">
@@ -423,7 +384,7 @@ function SourceOfTruth() {
       </p>
       <ul className="mt-5 space-y-3">
         {truthItems.map(([label, detail]) => (
-          <li key={label} className="border-t border-primary-foreground/15 pt-3">
+          <li key={shortKey(label)} className="border-t border-primary-foreground/15 pt-3">
             <p className="text-sm font-semibold">{label}</p>
             <p className="mt-0.5 text-sm text-primary-foreground/75">{detail}</p>
           </li>
@@ -433,61 +394,7 @@ function SourceOfTruth() {
   );
 }
 
-export function Prose({ children }: { children: ReactNode }) {
-  return (
-    <div className="max-w-3xl space-y-5 text-base leading-7 text-muted-foreground">
-      {children}
-    </div>
-  );
-}
 
-export function CompareTable({
-  caption,
-  headers,
-  rows,
-}: {
-  caption: string;
-  headers: string[];
-  rows: string[][];
-}) {
-  // One table for every viewport. It used to render twice (a card list for
-  // mobile plus a hidden desktop table), so every table's text shipped twice
-  // in the HTML and twice again in the RSC payload. Below md, `.cm-compare`
-  // (globals.css) restyles rows as cards and labels cells from data-label.
-  return (
-    <div className="mt-8 md:overflow-x-auto md:rounded-2xl md:border md:border-border">
-      <table className="cm-compare w-full border-collapse text-left text-sm md:min-w-[720px]">
-        <caption className="sr-only">{caption}</caption>
-        <thead className="bg-secondary text-foreground">
-          <tr>
-            {headers.map((header) => (
-              <th key={header} scope="col">
-                {header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row) => (
-            <tr key={row[0]}>
-              {row.map((cell, index) =>
-                index === 0 ? (
-                  <th key={`${index}-${cell}`} scope="row">
-                    {cell}
-                  </th>
-                ) : (
-                  <td key={`${index}-${cell}`} data-label={headers[index]}>
-                    {cell}
-                  </td>
-                ),
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 export default function HospitalManagementPage() {
   return (
@@ -512,7 +419,7 @@ export default function HospitalManagementPage() {
 
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,460px)]">
             <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+          <p className="cm-eyebrow">
             Healthcare software
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl md:leading-[1.05]">
@@ -543,6 +450,8 @@ export default function HospitalManagementPage() {
             <figure className="overflow-hidden rounded-3xl border border-border bg-secondary shadow-lg shadow-black/5">
               <img
                 src="/products/hospital-management-hero.jpg"
+                width={1152}
+                height={864}
                 alt="Hospital administration desk with an operations board on the monitor"
                 className="aspect-[4/3] w-full object-cover"
               />
@@ -553,7 +462,7 @@ export default function HospitalManagementPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -575,7 +484,7 @@ export default function HospitalManagementPage() {
             </p>
             <p>
               We approach HMS as a configurable product, not a one-size-fits-all box. Our team maps your departments, approval chains and billing rules first, then configures the modules you need. When you need a custom hospital management system because your workflows go beyond standard configuration, our{" "}
-              <Link href="/software-development" className="font-medium text-foreground underline underline-offset-4">
+              <Link href="/software-development" className="cm-link-u">
                 custom software development services
               </Link>{" "}
               extend the platform with features built specifically for your facility.
@@ -583,11 +492,11 @@ export default function HospitalManagementPage() {
           </Prose>
         </Section>
 
-        <section id="what-it-is" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
+        <section id="what-it-is" className="cm-sec">
+          <div className="cm-wrap">
             <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+                <p className="cm-eyebrow">
                   Definition
                 </p>
                 <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
@@ -607,9 +516,9 @@ export default function HospitalManagementPage() {
             <h3 className="mt-12 text-lg font-semibold">What an HMS typically connects</h3>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {connections.map((item) => (
-                <div key={item.label} className="rounded-2xl border border-border bg-white p-5">
+                <div key={item.label} className="cm-card5">
                   <h4 className="font-semibold">{item.label}</h4>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.text}</p>
+                  <p className="cm-p2">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -628,9 +537,9 @@ export default function HospitalManagementPage() {
           </Prose>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {problems.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-border bg-white p-6">
+              <article key={shortKey(item.title)} className="cm-card6">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">{item.text}</p>
+                <p className="cm-p3">{item.text}</p>
               </article>
             ))}
           </div>
@@ -651,14 +560,14 @@ export default function HospitalManagementPage() {
           </Prose>
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
             {modules.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-border bg-white p-6">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h3 className="text-lg font-semibold leading-snug">{item.title}</h3>
-                  <span className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
+              <article key={shortKey(item.title)} className="cm-card6">
+                <div className="cx-flex-flexwr-3j">
+                  <h3 className="cm-h3">{item.title}</h3>
+                  <span className="cx-rounde-bgseco-22">
                     {item.level}
                   </span>
                 </div>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">{item.text}</p>
+                <p className="cm-p3">{item.text}</p>
               </article>
             ))}
           </div>
@@ -676,13 +585,13 @@ export default function HospitalManagementPage() {
           </Prose>
           <ol className="mt-8 grid gap-4 md:grid-cols-2">
             {journey.map((step, index) => (
-              <li key={step.title} className="flex gap-4 rounded-2xl border border-border bg-white p-5">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
+              <li key={shortKey(step.title)} className="cx-flex-gap4-3s">
+                <span className="cx-flex-h8-2d">
                   {index + 1}
                 </span>
                 <div>
                   <h3 className="font-semibold">{step.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{step.text}</p>
+                  <p className="cm-p2">{step.text}</p>
                 </div>
               </li>
             ))}
@@ -701,9 +610,9 @@ export default function HospitalManagementPage() {
           </Prose>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-border bg-white p-5">
-                <h3 className="font-semibold leading-snug">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.text}</p>
+              <article key={shortKey(item.title)} className="cm-card5">
+                <h3 className="cx-fontse-leadin-b">{item.title}</h3>
+                <p className="cm-p2">{item.text}</p>
               </article>
             ))}
           </div>
@@ -720,7 +629,7 @@ export default function HospitalManagementPage() {
           </Prose>
           <ul className="mt-8 grid gap-3 md:grid-cols-2">
             {audiences.map((item) => (
-              <li key={item} className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6">
+              <li key={shortKey(item)} className="cx-rounde-border-2v">
                 {item}
               </li>
             ))}
@@ -756,7 +665,7 @@ export default function HospitalManagementPage() {
             headers={["Consideration", "Cloud-based HMS", "On-premise HMS"]}
             rows={hostingRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Our team can help you assess these trade-offs and design the hosting setup, including hybrid models where some services run locally and others in the cloud.
           </p>
         </Section>
@@ -776,7 +685,7 @@ export default function HospitalManagementPage() {
           </Prose>
           <ul className="mt-8 grid gap-3 md:grid-cols-2">
             {safeguards.map((item) => (
-              <li key={item} className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6">
+              <li key={shortKey(item)} className="cx-rounde-border-2v">
                 {item}
               </li>
             ))}
@@ -795,18 +704,18 @@ export default function HospitalManagementPage() {
           </Prose>
           <ol className="mt-8 grid gap-4 md:grid-cols-2">
             {implementation.map((step, index) => (
-              <li key={step.title} className="rounded-2xl border border-border bg-white p-5">
+              <li key={shortKey(step.title)} className="cm-card5">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
                   Step {index + 1}
                 </p>
                 <h3 className="mt-2 font-semibold">{step.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{step.text}</p>
+                <p className="cm-p2">{step.text}</p>
               </li>
             ))}
           </ol>
           <p className="mt-8 max-w-3xl text-base leading-7 text-muted-foreground">
             After go-live, our ongoing{" "}
-            <Link href="/support-and-outsourcing" className="font-medium text-foreground underline underline-offset-4">
+            <Link href="/support-and-outsourcing" className="cm-link-u">
               software support and maintenance services
             </Link>{" "}
             cover bug fixes, updates, performance monitoring and new feature requests as your hospital evolves.
@@ -821,10 +730,10 @@ export default function HospitalManagementPage() {
           </Prose>
           <ul className="mt-6 max-w-3xl list-disc space-y-2 pl-5 text-sm leading-6 text-muted-foreground">
             {costFactors.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={shortKey(item)}>{item}</li>
             ))}
           </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             After an initial discussion, we provide a written outline covering scope, exclusions, timeline and price, so you can compare options with clear information before committing.
           </p>
         </Section>
@@ -836,7 +745,7 @@ export default function HospitalManagementPage() {
             </p>
             <p>
               You can read more{" "}
-              <Link href="/about" className="font-medium text-foreground underline underline-offset-4">
+              <Link href="/about" className="cm-link-u">
                 about ClickMasters and how our team works
               </Link>
               , including our remote-first delivery model with sessions that overlap U.S. business hours.
@@ -845,7 +754,7 @@ export default function HospitalManagementPage() {
               For larger hospitals and healthcare networks, our{" "}
               <Link
                 href="/software-development/enterprise-software-development"
-                className="font-medium text-foreground underline underline-offset-4"
+                className="cm-link-u"
               >
                 enterprise software solutions
               </Link>{" "}
@@ -861,7 +770,7 @@ export default function HospitalManagementPage() {
               "Remote-first delivery across the US, Europe, Canada and Australia.",
               "Ongoing support: maintenance, dedicated teams and technical support after launch.",
             ].map((item) => (
-              <li key={item} className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6">
+              <li key={shortKey(item)} className="cx-rounde-border-2v">
                 {item}
               </li>
             ))}
@@ -874,7 +783,7 @@ export default function HospitalManagementPage() {
               <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
                 Request a hospital management system demo
               </h2>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 See how registration, EMR, billing, pharmacy and wards connect in one platform. Tell us about your departments and we will tailor the walkthrough to your hospital.
               </p>
             </div>
@@ -889,18 +798,18 @@ export default function HospitalManagementPage() {
         </section>
 
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently asked questions
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {hospitalFaqs.map((faq) => (
-                <details key={faq.question} className="group p-5 md:p-6">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                <details key={shortKey(faq.question)} className="group p-5 md:p-6">
+                  <summary className="cm-faq-q">
                     {faq.question}
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
+                  <p className="cm-intro">
                     {faq.answer}
                   </p>
                 </details>
@@ -912,7 +821,7 @@ export default function HospitalManagementPage() {
         <section className="border-t border-border bg-primary text-primary-foreground">
           <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-5 py-16 md:flex-row md:items-end md:px-8">
             <div className="max-w-2xl">
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Discuss your hospital software requirements
               </h2>
               <p className="mt-4 text-base leading-7 text-primary-foreground/80">

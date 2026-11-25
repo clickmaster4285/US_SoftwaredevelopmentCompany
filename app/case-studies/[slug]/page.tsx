@@ -231,16 +231,16 @@ function BlockRenderer({ block }: { block: Block }) {
               {block.text}
             </h3>
           ) : (
-            <h4 className="text-lg md:text-xl font-semibold tracking-tight">
+            <h3 className="text-lg md:text-xl font-semibold tracking-tight">
               {block.text}
-            </h4>
+            </h3>
           )}
         </div>
       );
 
     case "para":
       return (
-        <p className="text-[15px] md:text-base leading-relaxed opacity-85 max-w-3xl">
+        <p className="cx-text15-textba-41">
           {block.text}
         </p>
       );
@@ -260,6 +260,8 @@ function BlockRenderer({ block }: { block: Block }) {
           <img
             src={block.src}
             alt={block.alt || ""}
+            width={block.width}
+            height={block.height}
             className="w-full h-auto object-cover"
             loading="lazy"
           />
@@ -379,7 +381,7 @@ function ListBlock({
             {/* hover glow */}
             <div
               aria-hidden
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+              className="cx-absolu-inset0-23"
               style={{
                 background:
                   "radial-gradient(circle at 0% 0%, oklch(0.65 0.18 250 / 0.10), transparent 55%)",
@@ -387,8 +389,8 @@ function ListBlock({
             />
 
             {/* top row: index + text */}
-            <div className="relative grid grid-cols-[56px_1fr] md:grid-cols-[88px_1fr] gap-5 md:gap-10 items-baseline">
-              <span className="select-none font-mono text-xs md:text-sm tracking-[0.2em] opacity-40 pt-1 tabular-nums">
+            <div className="cx-relati-grid-38">
+              <span className="cx-select-fontmo-3b">
                 {ordered
                   ? String(i + 1).padStart(2, "0")
                   : `— ${String(i + 1).padStart(2, "0")}`}

@@ -328,7 +328,7 @@ export default function AboutPage({
 
               {/* Title with consistent font styling */}
               <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-semibold tracking-tight leading-[1.05] text-[#171717]">
-                We're a Software Development & Design Studio Built for{" "}
+                We're a Software Development & Design Studio for{" "}
                 <span className="italic font-serif">Modern Businesses</span>
               </h1>
 
@@ -461,7 +461,7 @@ export default function AboutPage({
                 <p className="mt-6 text-lg leading-relaxed text-black/70">
                   Since then, we've shipped projects across automotive, retail tech, fintech, and e-commerce from
                   MVPs launched in{" "}
-                  <strong className="font-semibold text-[#c44a24]">
+                  <strong className="cx-fontse-textc4-4">
                     4–6 weeks
                   </strong>{" "}
                   to enterprise platforms built to scale past a million users.
@@ -553,7 +553,7 @@ export default function AboutPage({
                     <badge.icon className="h-6 w-6 text-[#c44a24]" />
                   </span>
                 </div>
-                <h4 className="text-sm font-semibold">{badge.label}</h4>
+                <h3 className="text-sm font-semibold">{badge.label}</h3>
                 <p className="max-w-[14rem] text-xs text-black/50">
                   {badge.description}
                 </p>

@@ -171,7 +171,52 @@ export async function getEditedPageLive(
  * server-side. Only fields the edited page sets are replaced; with no edits
  * the route's metadata is returned unchanged.
  */
+/** Site-wide social defaults. Next.js replaces the root layout's
+ * `openGraph` object whenever a page sets its own, so pages lost
+ * og:site_name, og:type and (on 124 pages) og:image, leaving a
+ * summary_large_image Twitter card with no image. Page values always win. */
+const DEFAULT_OG_IMAGE = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: "Clickmasters software development company",
+};
+
+function withSocialDefaults(metadata: Metadata): Metadata {
+  const og = (metadata.openGraph ?? {}) as Record<string, unknown>;
+  const rawTitle = metadata.title as
+    | string
+    | { absolute?: string; default?: string }
+    | null
+    | undefined;
+  const title =
+    typeof rawTitle === "string"
+      ? rawTitle
+      : (rawTitle?.absolute ?? rawTitle?.default);
+  const images = og.images;
+  const hasImages = Array.isArray(images) ? images.length > 0 : Boolean(images);
+  return {
+    ...metadata,
+    openGraph: {
+      type: "website",
+      siteName: "Clickmasters Software Development Company",
+      locale: "en_US",
+      ...(title ? { title } : {}),
+      ...(metadata.description ? { description: metadata.description } : {}),
+      ...og,
+      images: hasImages ? images : [DEFAULT_OG_IMAGE],
+    } as Metadata["openGraph"],
+  };
+}
+
 export async function withEditedPageSeo(
+  path: string,
+  metadata: Metadata,
+): Promise<Metadata> {
+  return withSocialDefaults(await applyEditedPageSeo(path, metadata));
+}
+
+async function applyEditedPageSeo(
   path: string,
   metadata: Metadata,
 ): Promise<Metadata> {

@@ -9,7 +9,7 @@ export const clinicTitle =
   "Clinic Management Software Development | ClickMasters";
 
 export const clinicDescription =
-  "Custom clinic management software for appointments, patient records, EMR, billing and follow-ups, built around your clinic's workflow. Request a consultation.";
+  "Custom clinic management software for appointments, patient records, EMR, billing and follow-ups, built around your clinic's workflow.";
 
 export const productLink = (slug: string) =>
   `/products/healthcare-medical-software/${slug}`;

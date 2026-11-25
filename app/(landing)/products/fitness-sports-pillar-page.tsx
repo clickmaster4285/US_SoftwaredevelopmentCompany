@@ -1,3 +1,5 @@
+import { shortKey } from "@/lib/short-key";
+import { ListIcon } from "@/components/ui/list-icon";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -8,17 +10,17 @@ import {
   CalendarDays,
   Check,
   CheckSquare,
-  ChevronRight,
   Lock,
   Trophy,
   Users,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { IndustryIcon } from "@/components/products/IndustryIcon";
 import { industryPath, productIndustries, productPath, type ProductIndustry } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
 import { CompareTable, Prose, Section } from "./hospital-management-page";
+import { FsFitnessSolutions, FsSportsSolutions, FsFaqList } from "./fitness-sports-sections";
 import { linkClass } from "./clinic-management-page";
 import {
   aiPoints,
@@ -137,12 +139,12 @@ function BodyLink({ link }: { link: LinkSpec }) {
 
 function AppFigure({ image, caption, priority = false }: { image: Img; caption: string; priority?: boolean }) {
   return (
-    <figure className="overflow-hidden rounded-2xl border border-border bg-[#0a1633] shadow-xl shadow-blue-950/10 ring-1 ring-black/5">
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+    <figure className="cx-overfl-rounde-3f">
+      <div className="cm-mock-bar" aria-hidden>
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> sports.example / concept
         </span>
       </div>
@@ -154,11 +156,11 @@ function AppFigure({ image, caption, priority = false }: { image: Img; caption: 
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
-        className="block h-auto w-full bg-[#f3f5fb]"
+        className="cm-img"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -174,11 +176,11 @@ function DiagramFigure({ image, caption, className = "" }: { image: Img; caption
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
-      <figcaption className="mt-2 flex flex-wrap items-center justify-center gap-2 text-center text-xs text-muted-foreground">
+      <figcaption className="cm-caption">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -220,8 +222,8 @@ function CheckList({ items, className = "", icon: Icon = Check }: { items: reado
   return (
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-          <Icon className="mt-1 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(item)} className="cm-li">
+          <ListIcon icon={Icon} className="cm-ic1" style={{ color: ACCENT }} />
           {item}
         </li>
       ))}
@@ -241,12 +243,12 @@ function TitledList({
   return (
     <ul className={`grid gap-4 ${className}`}>
       {items.map(([title, text]) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <p className="flex items-start gap-2 font-semibold leading-snug">
-            <Icon className="mt-0.5 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(title)} className="cm-card5">
+          <p className="cm-ttl">
+            <Icon className="cm-ic05" style={{ color: ACCENT }} aria-hidden />
             {title}
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p2">{text}</p>
         </li>
       ))}
     </ul>
@@ -256,7 +258,7 @@ function TitledList({
 function Note({ children }: { children: ReactNode }) {
   return (
     <div
-      className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
+      className="cm-note"
       style={{ borderColor: ACCENT }}
     >
       {children}
@@ -266,7 +268,7 @@ function Note({ children }: { children: ReactNode }) {
 
 function Caution({ children }: { children: ReactNode }) {
   return (
-    <div className="mt-8 flex max-w-4xl gap-4 rounded-2xl border border-[#fde68a] bg-[#fffbeb] p-5 text-sm leading-7 text-[#78350f]">
+    <div className="cm-warn">
       <AlertTriangle className="mt-1 h-5 w-5 shrink-0" aria-hidden />
       <div>{children}</div>
     </div>
@@ -306,16 +308,16 @@ function SolutionCard({ solution, featured = false }: { solution: Solution; feat
     <article
       className={`flex flex-col rounded-2xl border p-6 ${featured ? "border-[#93c5fd] bg-[#eff6ff]" : "border-border bg-white"}`}
     >
-      <h3 className="text-lg font-semibold leading-snug">{solution.title}</h3>
+      <h3 className="cm-h3">{solution.title}</h3>
       <dl className="mt-3 space-y-2 text-sm leading-6">
         {solution.rows.map(([label, text]) => (
-          <div key={label}>
-            <dt className="inline font-semibold text-foreground">{label}: </dt>
-            <dd className="inline text-muted-foreground">{text}</dd>
+          <div key={shortKey(label)}>
+            <dt className="cx-inline-fontse-q">{label}: </dt>
+            <dd className="cx-inline-textmu-v">{text}</dd>
           </div>
         ))}
       </dl>
-      {solution.link ? <p className="mt-4 text-sm leading-6 text-muted-foreground">{SOLUTION_LINK_TEXT[solution.link]}</p> : null}
+      {solution.link ? <p className="cm-p4">{SOLUTION_LINK_TEXT[solution.link]}</p> : null}
     </article>
   );
 }
@@ -341,20 +343,20 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em]" style={{ color: ACCENT }}>
                 <IndustryIcon name={industry.icon} className="h-4 w-4" />
                 Industry · {industry.products.length} products
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Fitness &amp; Sports Management Software for Gyms, Clubs, Academies and Sports Facilities
+              <h1 className="cm-h1">
+                Fitness &amp; Sports Management Software for Gyms, Clubs and Academies
               </h1>
               <p className="mt-4 text-lg font-semibold leading-snug text-foreground md:text-xl">
                 Custom software for running memberships, teams, classes, facilities, events and payments, from a
                 single studio to a multi-sport organization.
               </p>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 <p>
                   Fitness businesses and sports organizations run on schedules, people and payments. A gym sells
                   memberships and checks members in at the door. A sports club registers players, builds teams and
@@ -384,7 +386,7 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
                 <a
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                  className="cm-pill"
                 >
                   {item.label}
                 </a>
@@ -399,7 +401,7 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">Built for</h2>
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {industry.audiences.map((audience) => (
-                <li key={audience} className="rounded-2xl border border-border bg-white px-4 py-4 text-sm font-semibold leading-snug">
+                <li key={shortKey(audience)} className="rounded-2xl border border-border bg-white px-4 py-4 text-sm font-semibold leading-snug">
                   {audience}
                 </li>
               ))}
@@ -461,7 +463,7 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
               <p className="mt-2 text-sm text-white/70">Usually the same for every organization:</p>
               <ul className="mt-5 space-y-4">
                 {sharedCore.map(([title, text]) => (
-                  <li key={title} className="flex gap-3">
+                  <li key={shortKey(title)} className="flex gap-3">
                     <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#93c5fd] text-[#0a1633]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -497,25 +499,25 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
 
         {/* Products grid (template) */}
         <section id="products" className="scroll-mt-28 border-t border-border py-14 md:py-16">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{industry.products.length} products</p>
+          <div className="cm-wrap">
+            <p className="cx-textxs-fontse-2n">{industry.products.length} products</p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">Products in {industry.label}</h2>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {industry.products.map((product, index) => (
                 <article key={product.slug} id={product.slug} className="scroll-mt-28 flex flex-col rounded-3xl border border-border bg-white p-6">
-                  <p className="text-xs font-semibold tracking-[0.16em] text-muted-foreground">{String(index + 1).padStart(2, "0")}</p>
+                  <p className="cx-textxs-fontse-1i">{String(index + 1).padStart(2, "0")}</p>
                   <h3 className="mt-2 text-xl font-semibold tracking-tight">{product.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">{product.description}</p>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {product.points.map((point) => (
-                      <li key={point} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium">
+                      <li key={shortKey(point)} className="cx-rounde-bgseco-36">
                         {point}
                       </li>
                     ))}
                   </ul>
                   <Link
                     href={productPath(industry.slug, product.slug)}
-                    className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary"
+                    className="cx-mt5-inline-1b"
                   >
                     Open product page
                     <ArrowRight className="h-4 w-4" />
@@ -527,51 +529,10 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
         </section>
 
         {/* Fitness solutions */}
-        <Section id="fitness-solutions" eyebrow="Memberships, classes, training" title="Fitness Management Software Solutions">
-          <Prose>
-            <p>Fitness solutions serve businesses whose revenue comes mainly from memberships, classes and training.</p>
-          </Prose>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {fitnessSolutions.slice(0, 2).map((solution) => (
-              <SolutionCard key={solution.title} solution={solution} featured />
-            ))}
-          </div>
-          <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {fitnessSolutions.slice(2).map((solution) => (
-              <SolutionCard key={solution.title} solution={solution} />
-            ))}
-          </div>
-          <div className="mt-8">
-            <AppFigure image={fsImages.membership} caption="Membership plans, statuses and renewals" />
-          </div>
-          <div className="mt-8">
-            <PrimaryCta label="Talk About Fitness Business Software" />
-          </div>
-        </Section>
+        <FsFitnessSolutions />
 
         {/* Sports solutions */}
-        <Section id="sports-solutions" eyebrow="Athletes, teams, seasons, venues" title="Sports Management Software Solutions">
-          <Prose>
-            <p>
-              Sports solutions serve organizations built around athletes, teams, seasons, competitions and venues.
-              Requirements differ significantly between a community club, a competitive academy and a league operator.
-            </p>
-          </Prose>
-          <div className="mt-8">
-            <SolutionCard solution={sportsSolutions[0]} featured />
-          </div>
-          <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {sportsSolutions.slice(1).map((solution) => (
-              <SolutionCard key={solution.title} solution={solution} />
-            ))}
-          </div>
-          <div className="mt-8">
-            <AppFigure image={fsImages.academy} caption="Academy batches by age group and level, with coaches, attendance and fees" />
-          </div>
-          <div className="mt-8">
-            <PrimaryCta label="Talk About Sports Organization Software" />
-          </div>
-        </Section>
+        <FsSportsSolutions />
 
         {/* Club */}
         <Section id="sports-club" eyebrow="Clubs" title="Sports Club and Membership Management">
@@ -746,12 +707,12 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
         <Section id="process" eyebrow="Delivery" title="Custom Software Development Process">
           <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
+              <li key={shortKey(title)} className="cm-card5">
+                <span className="cm-label" style={{ color: ACCENT }}>
                   Step {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -778,24 +739,12 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
         </Section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+        <section id="faq" className="cm-sec">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Fitness &amp; Sports Management Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
-              {fsFaqs.map((faq, index) => (
-                <details key={faq.question} className="group p-5 md:p-6" open={index === 0}>
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
-                    <h3>
-                      {index + 1}. {faq.question}
-                    </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                  </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">{faq.answer}</p>
-                </details>
-              ))}
-            </div>
+            <FsFaqList />
           </div>
         </section>
 
@@ -823,8 +772,8 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
 
         {/* Other industries (template) */}
         <section className="border-t border-border py-14 md:py-16">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">Other industries</h2>
+          <div className="cm-wrap">
+            <h2 className="cx-text2x-fontse-u">Other industries</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {others.map((item) => (
                 <Link
@@ -832,14 +781,14 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
                   href={industryPath(item.slug)}
                   className="group flex items-center gap-3 rounded-2xl border border-border bg-white px-4 py-4 hover:border-primary/30"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
+                  <span className="cx-flex-h10-1e">
                     <IndustryIcon name={item.icon} className="h-4 w-4" />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-semibold leading-snug group-hover:text-primary">{item.label}</span>
-                    <span className="mt-0.5 block text-xs text-muted-foreground">{item.products.length} products</span>
+                    <span className="cx-block-textsm-1v">{item.label}</span>
+                    <span className="cx-mt05-block-2k">{item.products.length} products</span>
                   </span>
-                  <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary" />
+                  <ArrowRight className="cx-h4-w4-10" />
                 </Link>
               ))}
             </div>
@@ -848,10 +797,10 @@ export default function FitnessSportsPillarPage({ industry }: { industry: Produc
 
         {/* Sticky mobile CTA */}
         <style>{"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}</style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Discuss Your Software Requirements
             <ArrowRight className="h-4 w-4" />

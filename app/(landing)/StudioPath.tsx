@@ -165,7 +165,7 @@ function CapabilitiesSection() {
             >
               <div
                 aria-hidden
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+                className="cx-absolu-inset0-23"
                 style={{
                   background: `radial-gradient(circle at 30% 0%, ${c.accent.replace(")", " / 0.18)")}, transparent 60%)`,
                 }}
@@ -275,7 +275,7 @@ function StackRow({
         {repeated.map((label, i) => (
           <span
             key={i}
-            className="shrink-0 px-6 py-3 rounded-full border border-white/15 bg-white/5 text-sm md:text-base font-medium tracking-tight backdrop-blur-sm"
+            className="cx-shrink-px6-13"
           >
             {label}
           </span>

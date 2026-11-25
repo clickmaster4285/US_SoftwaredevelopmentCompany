@@ -1,3 +1,6 @@
+import { ICONS } from "./ehr-icons";
+import { EhrChallenges, EhrFaqList, EhrFeatureGrid, EhrInteroperability, EhrWhatIsEhr } from "./ehr-sections";
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -8,7 +11,6 @@ import {
   Building2,
   CalendarCheck,
   Check,
-  ChevronRight,
   ClipboardList,
   CloudCog,
   FileClock,
@@ -38,7 +40,7 @@ import {
   UserCheck,
   Workflow,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { pageUrl, SITE_URL } from "@/lib/site";
 import { CompareTable, Prose, Section } from "./hospital-management-page";
@@ -75,36 +77,6 @@ import {
 
 export { EHR_PATH, ehrDescription, ehrTitle };
 
-const ICONS: Record<string, LucideIcon> = {
-  ArrowLeftRight,
-  BarChart3,
-  Building2,
-  CalendarCheck,
-  ClipboardList,
-  CloudCog,
-  FileClock,
-  FileSignature,
-  FileUp,
-  FlaskConical,
-  FolderHeart,
-  HeartPulse,
-  History,
-  Hospital,
-  IdCard,
-  KeyRound,
-  Layers,
-  Microscope,
-  Network,
-  NotebookPen,
-  Pill,
-  ScanLine,
-  Search,
-  Stethoscope,
-  Syringe,
-  TrendingUp,
-  UserCheck,
-  Workflow,
-};
 
 const ACCENT = "#0284c7";
 
@@ -246,13 +218,13 @@ function AppFigure({
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#0b2537] shadow-xl shadow-sky-950/10 ring-1 ring-black/5">
       <div
-        className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5"
+        className="cm-mock-bar"
         aria-hidden
       >
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> ehr.example / concept
         </span>
       </div>
@@ -266,9 +238,9 @@ function AppFigure({
         decoding="async"
         className="block h-auto w-full bg-[#f3f7fa]"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">
+        <span className="cm-chip">
           Illustrative concept
         </span>
       </figcaption>
@@ -296,7 +268,7 @@ function DiagramFigure({
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">
         {caption}
@@ -339,60 +311,6 @@ function CtaButton({
   );
 }
 
-function FeatureCard({
-  feature,
-  number,
-}: {
-  feature: EhrFeature;
-  number: number;
-}) {
-  const Icon = ICONS[feature.icon] ?? ClipboardList;
-  return (
-    <article className="flex flex-col rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-start gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e0f2fe]">
-          <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
-        </span>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-            Feature {number}
-          </p>
-          <h3 className="mt-1 text-lg font-semibold leading-snug">
-            {number}. {feature.title}
-          </h3>
-        </div>
-      </div>
-      <div className="mt-4 space-y-3 text-sm leading-6 text-muted-foreground">
-        <p>
-          <span className="font-semibold text-foreground">What it does: </span>
-          {feature.does}
-        </p>
-        <p>
-          <span className="font-semibold text-foreground">How it works: </span>
-          <LinkedText text={feature.how} link={feature.link} />
-        </p>
-      </div>
-      <div className="mt-auto pt-4">
-        <dl className="grid gap-2 rounded-xl bg-[#f0f9ff] p-4 text-sm leading-6">
-          {(
-            [
-              ["Problem solved", feature.problem],
-              ["Practical value", feature.value],
-              ["Who benefits", feature.who],
-            ] as const
-          ).map(([label, value]) => (
-            <div key={label}>
-              <dt className="inline font-semibold text-foreground">
-                {label}:{" "}
-              </dt>
-              <dd className="inline text-muted-foreground">{value}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </article>
-  );
-}
 
 const groupStarts = featureGroups.map((_, index) =>
   featureGroups
@@ -491,9 +409,8 @@ export default function EhrPage() {
               >
                 Custom EHR software
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Electronic Health Records Software Built Around Your Clinical
-                Workflows
+              <h1 className="cm-h1">
+                Electronic Health Records Software Built Around Clinical Workflows
               </h1>
               <h2 className="mt-5 text-lg font-semibold text-foreground/80 md:text-xl">
                 One Secure Patient Record Across Every Visit, Provider and
@@ -538,7 +455,7 @@ export default function EhrPage() {
               <p className="text-sm font-semibold">At a glance</p>
               <dl className="mt-4 space-y-3">
                 {atAGlance.map(([title, text]) => (
-                  <div key={title} className="flex gap-3 text-sm leading-6">
+                  <div key={shortKey(title)} className="cx-flex-gap3-24">
                     <Check
                       className="mt-1 h-4 w-4 shrink-0 text-[#7dd3fc]"
                       aria-hidden
@@ -558,7 +475,7 @@ export default function EhrPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -567,214 +484,10 @@ export default function EhrPage() {
         </section>
 
         {/* What is */}
-        <Section
-          id="what-is-ehr"
-          eyebrow="Definition"
-          title="What Is Electronic Health Records Software?"
-        >
-          <Prose>
-            <p>
-              Electronic Health Records (EHR) software is a clinical information
-              system. It captures, organizes, stores and shares a patient&apos;s
-              health information digitally, so the record covers that
-              person&apos;s care over time instead of a single visit. A paper
-              chart sits in one filing cabinet. Electronic health record
-              system software makes the same information available, under access
-              controls, to every authorized clinician involved in the
-              patient&apos;s care.
-            </p>
-          </Prose>
-
-          <H3 className="mt-12">What an EHR System Does</H3>
-          <p className="mt-3 text-base text-muted-foreground">
-            An EHR system does four jobs:
-          </p>
-          <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {ehrJobs.map(([title, text], index) => (
-              <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
-              >
-                <span
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold text-white"
-                  style={{ backgroundColor: ACCENT }}
-                >
-                  {index + 1}
-                </span>
-                <p className="mt-4 font-semibold">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  {text.charAt(0).toUpperCase() + text.slice(1)}
-                </p>
-              </li>
-            ))}
-          </ol>
-
-          <H3 className="mt-12">
-            How Electronic Health Records Work in Practice
-          </H3>
-          <div className="mt-5 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
-            <p className="text-base leading-7 text-muted-foreground">
-              Take a patient with type 2 diabetes who sees a primary care
-              physician, an endocrinologist and an ophthalmologist. Without a
-              shared record, each provider keeps separate notes and the patient
-              has to remember test results and medication changes. With an EHR,
-              the primary care physician documents the HbA1c result. The
-              endocrinologist sees that result and the current medication list
-              before changing the dose. The ophthalmologist can review the
-              diabetes history before a retinal exam. Every provider works from
-              the same longitudinal record.
-            </p>
-            <div
-              className="rounded-2xl border border-[#bae6fd] bg-[#f0f9ff] p-5"
-              aria-hidden
-            >
-              <p
-                className="text-xs font-semibold uppercase tracking-[0.16em]"
-                style={{ color: ACCENT }}
-              >
-                One record, three providers
-              </p>
-              <div className="mt-4 space-y-2">
-                {[
-                  "Primary care: documents HbA1c",
-                  "Endocrinology: adjusts dose",
-                  "Ophthalmology: reviews history",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-2 rounded-xl bg-white px-3 py-2 text-sm font-medium shadow-sm"
-                  >
-                    <ArrowLeftRight
-                      className="h-4 w-4 shrink-0"
-                      style={{ color: ACCENT }}
-                    />
-                    {item}
-                  </div>
-                ))}
-              </div>
-              <div
-                className="mt-3 rounded-xl px-3 py-2 text-center text-sm font-semibold text-white"
-                style={{ backgroundColor: ACCENT }}
-              >
-                Shared longitudinal record
-              </div>
-            </div>
-          </div>
-
-          <H3 className="mt-12">What Patient Information an EHR Can Store</H3>
-          <ul className="mt-6 grid gap-x-8 gap-y-3 md:grid-cols-2">
-            {storedInformation.map((item) => (
-              <li
-                key={item}
-                className="flex gap-3 text-sm leading-6 text-muted-foreground"
-              >
-                <Check
-                  className="mt-1 h-4 w-4 shrink-0"
-                  style={{ color: ACCENT }}
-                  aria-hidden
-                />
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <div>
-              <H3>Who Uses EHR Systems</H3>
-              <p className="mt-4 text-base leading-7 text-muted-foreground">
-                Physicians, nurses, specialists, physician assistants, medical
-                assistants, clinical coordinators, health information management
-                (HIM) staff, lab and diagnostic personnel, and healthcare
-                administrators. Each role sees the information relevant to its
-                job, and role-based permissions control exactly what that is.
-              </p>
-            </div>
-            <div>
-              <H3>How Authorized Professionals Access Patient Information</H3>
-              <p className="mt-4 text-base leading-7 text-muted-foreground">
-                Users sign in with secure credentials, usually backed by
-                multi-factor authentication. The system checks their role,
-                department, and relationship to the patient before it shows a
-                record. Every view, edit and export is written to an audit log.
-                Clinicians work faster, and the organization can always show who
-                accessed what and when.
-              </p>
-              <ol
-                className="mt-5 grid gap-2 sm:grid-cols-3"
-                aria-label="How access to a patient record is checked"
-              >
-                {accessSteps.map((step) => (
-                  <li
-                    key={step.title}
-                    className="rounded-xl border border-border bg-white p-3"
-                  >
-                    <step.icon
-                      className="h-4 w-4"
-                      style={{ color: ACCENT }}
-                      aria-hidden
-                    />
-                    <p className="mt-2 text-sm font-semibold leading-snug">
-                      {step.title}
-                    </p>
-                    <p className="mt-1 text-xs leading-5 text-muted-foreground">
-                      {step.text}
-                    </p>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
-
-          <H3 className="mt-12">
-            Digital Records vs Paper-Based Documentation
-          </H3>
-          <CompareTable
-            caption="Paper records compared with electronic health records"
-            headers={["Paper records", "Electronic health records"]}
-            rows={paperVsDigitalRows}
-          />
-        </Section>
+        <EhrWhatIsEhr />
 
         {/* Challenges */}
-        <Section
-          id="challenges"
-          eyebrow="The problem"
-          title="Healthcare Information Management Challenges EHR Software Solves"
-        >
-          <Prose>
-            <p>
-              Most healthcare organizations don&apos;t struggle with how much
-              data they have. They struggle because the data is scattered,
-              inconsistent and hard to trust. Purpose-built electronic health
-              records systems software fixes the structure underneath.
-            </p>
-          </Prose>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {challenges.map((item, index) => (
-              <article
-                key={item.title}
-                className="overflow-hidden rounded-2xl border border-border bg-white"
-              >
-                <div className="flex items-center gap-3 px-6 pt-6">
-                  <span className="text-xs font-bold text-muted-foreground">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                </div>
-                <p className="px-6 pt-3 text-sm leading-6 text-muted-foreground">
-                  <span className="font-semibold text-[#be123c]">
-                    Problem:{" "}
-                  </span>
-                  {item.problem}
-                </p>
-                <p className="m-4 rounded-xl bg-[#f0f9ff] px-4 py-3 text-sm leading-6 text-[#0c4a6e]">
-                  <span className="font-semibold">How EHR helps: </span>
-                  {item.help}
-                </p>
-              </article>
-            ))}
-          </div>
-        </Section>
+        <EhrChallenges />
 
         {/* Features */}
         <Section
@@ -801,7 +514,7 @@ export default function EhrPage() {
               const start = groupStarts[groupIndex];
               const visuals = groupVisuals[group.title] ?? [];
               return (
-                <div key={group.title}>
+                <div key={shortKey(group.title)}>
                   <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border pb-4">
                     <div>
                       <p className="text-xl font-semibold tracking-tight">
@@ -815,15 +528,7 @@ export default function EhrPage() {
                       Features {start + 1}–{start + group.features.length}
                     </span>
                   </div>
-                  <div className="mt-6 grid gap-6 md:grid-cols-2">
-                    {group.features.map((feature, index) => (
-                      <FeatureCard
-                        key={feature.title}
-                        feature={feature}
-                        number={start + index + 1}
-                      />
-                    ))}
-                  </div>
+                  <EhrFeatureGrid groupIndex={groupIndex} start={start} />
                   {visuals.length ? (
                     <div
                       className={`mt-8 grid gap-6 ${visuals.length > 1 ? "lg:grid-cols-2" : ""}`}
@@ -856,11 +561,11 @@ export default function EhrPage() {
           <ol className="mt-8 grid gap-4 md:grid-cols-2">
             {lifecycle.map((step, index) => (
               <li
-                key={step.title}
-                className="flex gap-4 rounded-2xl border border-border bg-white p-5"
+                key={shortKey(step.title)}
+                className="cx-flex-gap4-3s"
               >
                 <span
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+                  className="cx-flex-h9-3z"
                   style={{
                     backgroundColor:
                       index === lifecycle.length - 1 ? "#16a34a" : ACCENT,
@@ -872,7 +577,7 @@ export default function EhrPage() {
                   <h3 className="font-semibold">
                     {index + 1}. {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="cm-p2">
                     {step.text}
                   </p>
                 </div>
@@ -897,18 +602,18 @@ export default function EhrPage() {
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
-                <p className="flex items-start gap-2 font-semibold leading-snug">
+                <p className="cm-ttl">
                   <ShieldCheck
-                    className="mt-0.5 h-4 w-4 shrink-0"
+                    className="cm-ic05"
                     style={{ color: ACCENT }}
                     aria-hidden
                   />
                   {title}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {text.charAt(0).toUpperCase() + text.slice(1)}
                 </p>
               </li>
@@ -934,14 +639,14 @@ export default function EhrPage() {
               const Icon = ICONS[item.icon] ?? Stethoscope;
               return (
                 <article
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-white p-5"
+                  key={shortKey(item.title)}
+                  className="cm-card5"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#e0f2fe]">
                     <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
                   </span>
                   <h3 className="mt-4 font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="cm-p2">
                     <LinkedText text={item.text} link={item.link} />
                   </p>
                 </article>
@@ -979,8 +684,8 @@ export default function EhrPage() {
             ]}
             rows={ehrVsEmrRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">Note: </span>
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">Note: </span>
             Many modern EMR products include exchange features, and some
             products sold as EHRs are used only inside one practice. Judge a
             system by its capabilities, not its label.
@@ -1014,8 +719,8 @@ export default function EhrPage() {
             ]}
             rows={ehrVsPmRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">
               Why organizations use both:{" "}
             </span>
             the clinical encounter documented in the EHR produces the codes and
@@ -1025,53 +730,7 @@ export default function EhrPage() {
         </Section>
 
         {/* Interoperability */}
-        <Section
-          id="interoperability"
-          eyebrow="Connected care"
-          title="EHR Interoperability and Healthcare Data Exchange"
-        >
-          <Prose>
-            <p>
-              Interoperability is what turns an EHR into a connected clinical
-              platform rather than a digital filing cabinet. Interoperable EHR
-              software exchanges data in formats other systems understand, with
-              security and consistent meaning. We also use the HL7 EHR System
-              Functional Model, which describes the functions an electronic
-              health record system (EHR-S) should provide, as a checklist
-              during discovery.
-            </p>
-          </Prose>
-          <DiagramFigure
-            image={ehrImages.interop}
-            caption="EHR core, exchange layer and connected systems. Each interface is scoped per project."
-            className="mt-8"
-          />
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {interopTopics.map((topic) => (
-              <article
-                key={topic.title}
-                className="rounded-2xl border border-border bg-white p-5"
-              >
-                <h3 className="font-semibold">{topic.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  <LinkedText text={topic.text} link={topic.link} />
-                </p>
-              </article>
-            ))}
-          </div>
-          <div
-            className="mt-6 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
-            style={{ borderColor: ACCENT }}
-          >
-            <span className="font-semibold text-foreground">Important: </span>
-            Which integrations are possible, and how they work, depends on the
-            chosen architecture, the standards and versions involved, what
-            partner systems support, contractual access to third-party APIs, and
-            the requirements of your project. Clickmasters scopes every
-            integration individually during discovery instead of promising
-            ready-made connectors.
-          </div>
-        </Section>
+        <EhrInteroperability />
 
         {/* Security */}
         <Section
@@ -1097,10 +756,10 @@ export default function EhrPage() {
           <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {securityControls.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">{title}:</span>{" "}
+                <span className="cx-fontse-textfo-1">{title}:</span>{" "}
                 {text}
               </li>
             ))}
@@ -1116,7 +775,7 @@ export default function EhrPage() {
             {privacyFrameworks.map(([region, text]) => (
               <li
                 key={region}
-                className="rounded-2xl border border-border bg-white p-5"
+                className="cm-card5"
               >
                 <p
                   className="text-xs font-semibold uppercase tracking-[0.16em]"
@@ -1124,7 +783,7 @@ export default function EhrPage() {
                 >
                   {region}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {text}
                 </p>
               </li>
@@ -1134,7 +793,7 @@ export default function EhrPage() {
             className="mt-6 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
             style={{ borderColor: ACCENT }}
           >
-            <span className="font-semibold text-foreground">
+            <span className="cx-fontse-textfo-1">
               Responsible compliance statement:{" "}
             </span>
             Clickmasters does not claim HIPAA certification, GDPR certification
@@ -1170,20 +829,16 @@ export default function EhrPage() {
           <ul className="mt-5 grid gap-3 md:grid-cols-2">
             {whenCustom.map((item) => (
               <li
-                key={item}
-                className="flex gap-3 rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(item)}
+                className="cx-flex-gap3-2s"
               >
-                <Check
-                  className="mt-1 h-4 w-4 shrink-0"
-                  style={{ color: ACCENT }}
-                  aria-hidden
-                />
+                <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
                 {item}
               </li>
             ))}
           </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">
               When a ready-made EHR may be a better fit:{" "}
             </span>
             if you need standard workflows quickly with minimal internal IT
@@ -1208,7 +863,7 @@ export default function EhrPage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-4">
             {processPhases.map((phase, phaseIndex) => (
               <section
-                key={phase.title}
+                key={shortKey(phase.title)}
                 aria-label={`Phase ${phaseIndex + 1}: ${phase.title}`}
                 className="rounded-3xl border border-border bg-secondary/50 p-4"
               >
@@ -1223,22 +878,22 @@ export default function EhrPage() {
                   {phase.stages.map(
                     ([title, purpose, deliverables], stageIndex) => (
                       <li
-                        key={title}
-                        className="rounded-2xl border border-border bg-white p-4"
+                        key={shortKey(title)}
+                        className="cx-rounde-border-32"
                       >
-                        <div className="flex items-center gap-2">
+                        <div className="cx-flex-itemsc-2x">
                           <span
-                            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-white"
+                            className="cx-flex-h6-2h"
                             style={{ backgroundColor: ACCENT }}
                           >
                             {processStarts[phaseIndex] + stageIndex + 1}
                           </span>
-                          <p className="font-semibold leading-snug">{title}</p>
+                          <p className="cx-fontse-leadin-b">{title}</p>
                         </div>
-                        <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                        <p className="cm-p2">
                           {purpose}
                         </p>
-                        <p className="mt-2 rounded-lg bg-[#f0f9ff] px-3 py-1.5 text-xs leading-5 text-[#0c4a6e]">
+                        <p className="cx-mt2-rounde-3p">
                           <span className="font-semibold">
                             Key deliverables:
                           </span>{" "}
@@ -1304,15 +959,15 @@ export default function EhrPage() {
           <ul className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {costFactors.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">{title}:</span>{" "}
+                <span className="cx-fontse-textfo-1">{title}:</span>{" "}
                 {text}
               </li>
             ))}
           </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             A phased approach, starting with a focused first release and
             expanding over time, often lowers early investment and risk.
           </p>
@@ -1321,7 +976,7 @@ export default function EhrPage() {
               <h3 className="text-xl font-semibold tracking-tight">
                 Get a Custom EHR Development Estimate
               </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p2">
                 Tell us about your organization, users, required modules and
                 integrations. We&apos;ll come back with a written scope, a
                 phased roadmap and a realistic estimate before any development
@@ -1351,13 +1006,13 @@ export default function EhrPage() {
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {whyClickmasters.map(([title, text]) => (
               <li
-                key={title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(title)}
+                className="cm-card5"
               >
-                <p className="font-semibold leading-snug">
+                <p className="cx-fontse-leadin-b">
                   {title.charAt(0).toUpperCase() + title.slice(1)}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {text.charAt(0).toUpperCase() + text.slice(1)}
                 </p>
               </li>
@@ -1369,7 +1024,7 @@ export default function EhrPage() {
         <section className="border-t border-border bg-[#082f49] text-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Build a Custom Electronic Health Records Software Solution
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -1406,7 +1061,7 @@ export default function EhrPage() {
               </p>
               <ul className="mt-4 space-y-4">
                 {consultationChecklist.map(([title, text]) => (
-                  <li key={title} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(title)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#7dd3fc] text-[#082f49]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -1423,29 +1078,11 @@ export default function EhrPage() {
 
         {/* FAQ */}
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About EHR Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
-              {ehrFaqs.map((faq, index) => (
-                <details
-                  key={faq.question}
-                  className="group p-5 md:p-6"
-                  open={index === 0}
-                >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
-                    <h3>
-                      {index + 1}. {faq.question}
-                    </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                  </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
-                    {faq.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <EhrFaqList />
           </div>
         </section>
 
@@ -1453,10 +1090,10 @@ export default function EhrPage() {
         <style>
           {"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}
         </style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Get a Consultation
             <ArrowRight className="h-4 w-4" />

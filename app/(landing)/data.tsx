@@ -14,6 +14,8 @@ import card6 from "@/public/assets/award-card-6.jpg";
 
 export type AwardCardCfg = {
   src: string | StaticImageData;
+  /** Text shown on the badge image (alt text). */
+  alt: string;
   x: number;
   y: number;
   rot: number;
@@ -26,6 +28,7 @@ export type AwardCardCfg = {
 export const AWARD_CARDS: AwardCardCfg[] = [
   {
     src: card2,
+    alt: "Site of the Day award badge, Slingshot Intergalactic",
     x: 18,
     y: 32,
     rot: -10,
@@ -36,6 +39,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
   {
     src: card1,
+    alt: "Developer Award badge, The Ocean Agency",
     x: 72,
     y: 28,
     rot: 8,
@@ -46,6 +50,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
   {
     src: card3,
+    alt: "Design Award badge, Slingshot Intergalactic",
     x: 42,
     y: 50,
     rot: -5,
@@ -56,6 +61,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
   {
     src: card4,
+    alt: "Awwwards Honors badge, Best Innovation 2024",
     x: 14,
     y: 62,
     rot: 10,
@@ -66,6 +72,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
   {
     src: card5,
+    alt: "CSS Design Awards badge, Special Kudos",
     x: 80,
     y: 60,
     rot: -8,
@@ -76,6 +83,7 @@ export const AWARD_CARDS: AwardCardCfg[] = [
   },
   {
     src: card6,
+    alt: "Webby Award badge, Best Studio 2023",
     x: 50,
     y: 68,
     rot: 6,
