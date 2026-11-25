@@ -59,6 +59,7 @@ export default function LocationsPage() {
       />
       <Navbar />
 
+      <main id="main-content">
       {/* Hero */}
       <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-px bg-border" />
@@ -163,6 +164,7 @@ export default function LocationsPage() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

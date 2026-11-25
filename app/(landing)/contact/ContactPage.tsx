@@ -5,6 +5,11 @@ import { useState } from "react";
 import { ArrowRight, Loader2, Mail, MapPin, Phone } from "lucide-react";
 
 import Image from "next/image";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+} from "@/lib/site";
 
 import {
   PageFrame,
@@ -22,12 +27,14 @@ const contactItems = [
   {
     icon: Mail,
     label: "Email Address",
-    value: "sales@Clickmasterssoftwaredevelopmentcompany.com",
+    value: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
   },
   {
     icon: Phone,
     label: "Phone Number",
-    value: "+1 325 2024074",
+    value: CONTACT_PHONE_DISPLAY,
+    href: CONTACT_PHONE_TEL,
   },
   {
     icon: MapPin,
@@ -122,7 +129,7 @@ export default function ContactPage() {
   };
 
   return (
-    <PageFrame>
+    <PageFrame main>
       <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-px bg-border" />
 
@@ -239,13 +246,22 @@ export default function ContactPage() {
                   key={item.label}
                   className="flex items-start gap-4 rounded-[8px] bg-white p-5 shadow-sm ring-1 ring-black/10"
                 >
-                  <item.icon className="mt-0.5 h-5 w-5 shrink-0 text-[#e05b35]" />
+                  <item.icon className="mt-0.5 h-5 w-5 shrink-0 text-[#c44a24]" />
 
                   <div>
                     <p className="font-semibold leading-6">{item.label}</p>
 
                     <p className="mt-1 text-sm leading-6 text-black/60">
-                      {item.value}
+                      {"href" in item && item.href ? (
+                        <a
+                          href={item.href}
+                          className="break-all underline-offset-2 hover:underline"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        item.value
+                      )}
                     </p>
                   </div>
                 </div>

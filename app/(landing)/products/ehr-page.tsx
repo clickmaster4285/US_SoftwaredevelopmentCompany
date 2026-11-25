@@ -65,7 +65,6 @@ import {
   paperVsDigitalRows,
   privacyFrameworks,
   processPhases,
-  schemaFeatureList,
   securityControls,
   storedInformation,
   techRows,
@@ -124,7 +123,6 @@ export function ehrSchema() {
         inLanguage: "en",
         isPartOf: { "@id": `${SITE_URL}/#website` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        about: { "@id": `${url}#software` },
         mainEntity: { "@id": `${url}#service` },
         primaryImageOfPage: pageUrl(ehrImages.dashboard.src),
       },
@@ -158,20 +156,9 @@ export function ehrSchema() {
           },
         ],
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${url}#software`,
-        name: "Custom Electronic Health Records (EHR) Software",
-        applicationCategory: "HealthApplication",
-        applicationSubCategory: "Electronic Health Records",
-        operatingSystem: "Web-based",
-        url,
-        description:
-          "Custom Electronic Health Records software for hospitals, medical practices and healthcare organizations, covering longitudinal patient records, clinical documentation, role-based access, audit logs and standards-based interoperability.",
-        image: pageUrl(ehrImages.dashboard.src),
-        featureList: schemaFeatureList,
-        provider: org,
-      },
+      // Custom-built software, not a packaged app with a public price or
+      // ratings: a SoftwareApplication node failed Google's required
+      // offers + aggregateRating/review checks, so only the Service remains.
       {
         "@type": "Service",
         "@id": `${url}#service`,

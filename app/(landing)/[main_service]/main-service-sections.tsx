@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -144,10 +145,13 @@ export function MainServiceHero({ service }: { service: MainService }) {
         </div>
         <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-card">
           {service.heroImage ? (
-            <img
+            <Image
               src={service.heroImage}
               alt={heroImageAlt(service.title, service.heroImage)}
-              className="absolute inset-0 h-full w-full object-cover opacity-80"
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover opacity-80"
             />
           ) : null}
           <div className="absolute inset-0 bg-background/45" />

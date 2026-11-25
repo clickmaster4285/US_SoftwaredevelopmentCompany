@@ -418,7 +418,7 @@ export const mainServiceData = {
         {
           title: "Track record",
           description:
-            "200+ delivered projects across SaaS, healthcare, finance, logistics, and retail",
+            "Delivered projects across SaaS, healthcare, finance, logistics, and retail",
         },
         {
           title: "In-house team",
@@ -995,9 +995,9 @@ export const mainServiceData = {
     trustSection: {
       title: "A Web Development Company You Can Trust",
       description:
-        "For over a decade, Clickmasters has worked as a dependable web development company for startups, growing SMBs, and enterprise teams across the United States. Our developers, designers, and QA engineers have shipped 500+ websites and web applications across retail, healthcare, finance, SaaS, real estate, and logistics.\nWe are not a template shop. Every engagement starts with real discovery — understanding your business goals, your users, and your growth plan — before a single line of code is written. That is what separates a true web development agency from a freelancer with a website builder.",
+        "Clickmasters works as a dependable web development company for startups, growing SMBs, and enterprise teams across the United States. Our developers, designers, and QA engineers ship websites and web applications across retail, healthcare, finance, SaaS, real estate, and logistics.\nWe are not a template shop. Every engagement starts with real discovery — understanding your business goals, your users, and your growth plan — before a single line of code is written. That is what separates a true web development agency from a freelancer with a website builder.",
       points: [
-        "500+ websites and web apps launched for U.S. and global clients",
+        "Websites and web apps launched for U.S. and global clients",
         "A written scope and a named contact on every completed project",
         "In-house team of developers, UI/UX designers, and QA specialists",
         "Offices supporting clients across San Francisco, New York, Austin, and Denver",
@@ -1040,7 +1040,7 @@ export const mainServiceData = {
         {
           title: "Proven expertise",
           description:
-            "500+ completed projects across web design and development",
+            "Completed projects across web design and development",
         },
         {
           title: "Full transparency",
@@ -1277,7 +1277,7 @@ export const mainServiceData = {
     tagline: "Mobile App Development Services",
     description:
       "Clickmasters is a mobile app development company helping U.S. founders, startups, and established brands take an idea from sketch to a live app on the App Store and Google Play. Our mobile app developers build native iOS and Android apps, plus cross-platform products with Flutter and React Native, so you launch on the right platform without overpaying for the wrong one.\nIf you're comparing a mobile app development agency for a new build, or looking to hire mobile app developers to rescue a stalled project, our team plans the architecture, designs the experience, and ships an app built to handle real users from day one.",
-    heroBadge: "100+ apps published across iOS and Android",
+    heroBadge: "Apps published across iOS and Android",
     heroImage:
       "/images/photo-1512941937669-90a1b58e7e9c.jpg",
 
@@ -1475,11 +1475,10 @@ export const mainServiceData = {
     trustSection: {
       title: "Trusted Mobile App Development Company for Your Business",
       description:
-        "Clickmasters has published 100+ mobile apps for clients across the United States, holding an average 4.8-star store rating across live products. Our engineers are seasoned mobile app developers, not generalists picking up mobile on the side — Swift and Kotlin specialists for native work, and cross-platform experts for teams that need one codebase across iOS and Android.\nAs a professional Mobile App Development Company, we treat every build as a product, not a one-off deliverable. Our Mobile Development process covers app store review, analytics, crash monitoring, and updates before the first sprint begins.",
+        "Clickmasters builds and publishes mobile apps for clients across the United States. Our engineers are seasoned mobile app developers, not generalists picking up mobile on the side — Swift and Kotlin specialists for native work, and cross-platform experts for teams that need one codebase across iOS and Android.\nAs a professional Mobile App Development Company, we treat every build as a product, not a one-off deliverable. Our Mobile Development process covers app store review, analytics, crash monitoring, and updates before the first sprint begins.",
       points: [
-        "100+ apps published across iOS and Android",
-        "4.8★ average App Store rating across live client apps",
-        "50+ dedicated mobile engineers, designers, and QA specialists",
+        "Apps published across iOS and Android",
+        "Dedicated mobile engineers, designers, and QA specialists",
         "Full App Store and Google Play submission handled in-house",
         "Post-launch support plans so your app keeps working after release",
       ],
@@ -1523,7 +1522,7 @@ export const mainServiceData = {
       reasons: [
         {
           title: "Track record",
-          description: "100+ published apps with a 4.8★ average store rating",
+          description: "Apps published to the App Store and Google Play",
         },
         {
           title: "Platform flexibility",
@@ -4393,7 +4392,7 @@ export const mainServiceData = {
     trustSection: {
       title: "A Trusted Data Solutions Company in the USA",
       description:
-        "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team has delivered 200+ data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
+        "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team delivers data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
       // points: [
       //   "AWS, Azure, and Google Cloud certified engineers",
       //   "200+ data projects delivered across the USA",
@@ -4452,7 +4451,7 @@ export const mainServiceData = {
         {
           title: "Proven track record",
           description:
-            "200+ projects delivered as a leading data solutions provider across finance, healthcare, and retail",
+            "Projects delivered as a data solutions provider across finance, healthcare, and retail",
         },
         {
           title: "Fair, clear pricing",

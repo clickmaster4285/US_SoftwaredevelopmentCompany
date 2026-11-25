@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 // Re-check ERP page edits (SEO) about once a minute.
 export const revalidate = 60;
 
-const title = fitTitle("Case studies");
+const title = fitTitle("Software Project Case Studies");
 const description = fitDescription(
   "Delivery write-ups from Clickmasters software projects, including scope, testing, and what shipped.",
   "Case studies",

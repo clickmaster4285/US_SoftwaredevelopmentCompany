@@ -49,6 +49,7 @@ export default function LocationServicePage({ data }: Props) {
       <div className="min-h-screen bg-background text-foreground">
         <Navbar />
 
+        <main id="main-content">
         {/* ===== SECTION 1: HERO ===== */}
         <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
           <div className="absolute inset-x-0 top-0 h-px bg-border" />
@@ -612,6 +613,7 @@ export default function LocationServicePage({ data }: Props) {
             </div>
           </section>
         )}
+        </main>
 
         <Footer />
 

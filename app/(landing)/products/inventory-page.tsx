@@ -377,7 +377,7 @@ export default function InventoryPage() {
                 {INDUSTRY_LABEL}
               </p>
               <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Inventory Management Software for Accurate Stock, Smarter Replenishment and Multi-Location Control
+                Inventory Management Software for Accurate Stock and Multi-Location Control
               </h1>
               <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
                 <p>

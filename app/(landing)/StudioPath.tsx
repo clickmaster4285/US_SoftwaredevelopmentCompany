@@ -1,3 +1,4 @@
+import LazyVideo from "@/components/ui/lazy-video";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -396,13 +397,9 @@ function ProcessPathSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           {/* Video column stretches to match the steps column's height */}
           <div className="relative lg:sticky lg:top-24 h-[320px] md:h-[420px] lg:h-auto rounded-2xl overflow-hidden">
-            <video
+            <LazyVideo
               className="absolute inset-0 w-full h-full object-cover"
               src="/assets/studio-path.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
 

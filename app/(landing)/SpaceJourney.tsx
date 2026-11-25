@@ -658,7 +658,7 @@ export default function SpaceJourney() {
             Let's work <span className="italic font-serif">together</span>
           </h2>
           <a
-            href="mailto:hello@example.com"
+            href="/contact"
             className="mt-8 inline-flex items-center gap-3 rounded-full bg-white text-black px-8 py-4 text-sm uppercase tracking-[0.3em] font-medium hover:scale-105 transition-transform"
           >
             Start a project

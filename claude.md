@@ -1,5 +1,16 @@
 For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMARY references an older, more elaborate folder structure (admin/auth/api/models). The current repo is significantly slimmer than what that doc describes see "Current State" below for what is actually on disk.
 
+# Work Log: 2026-11-25 — SEO audit & remediation (uncommitted on `updated-content`)
+
+- Reports in repo root: `SEO-AUDIT-REPORT.md`, `SEO-FIXES-REPORT.md`, `REMAINING-ISSUES.md`, `URL-BY-URL-SEO-STATUS.md`, `SEO-VALIDATION-SUMMARY.md`.
+- Sitemaps: new `app/products-sitemap.xml` (products were missing); services sitemap reads the same merged `services` map as the route; `lib/sitemap.ts` gives git-based `lastmod`.
+- Contact details: single source `CONTACT_EMAIL` / `CONTACT_PHONE_*` in `lib/site.ts`. Don't hard-code them.
+- No unverified numbers: company counts/ratings/years were removed from rendered copy (list in REMAINING-ISSUES R-03). Don't add new ones without a source.
+- Product links on service pages: `PRODUCTS_FOR_PATH` in `lib/contextual-links.ts`.
+- `CompareTable` renders one table; mobile card layout is CSS (`.cm-compare` in `globals.css`).
+- CSP now allows GTM/GA4 (analytics was blocked before). Next upgraded to 16.4.6 (security).
+- Product schema uses `Service`, not `SoftwareApplication`/`Product` (no prices/ratings exist).
+
 # Work Log: 2026-11-11 — ERP / headless CMS integration
 
 - Created pages use the site's own theme; ERP colours apply only with `CMS_USE_ERP_COLORS=true` (gated in `CmsPageFrame`).

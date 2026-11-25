@@ -20,7 +20,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.lead ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#e05b35]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c44a24]">
               Scope
             </p>
             <p className="mt-4 text-xl leading-9 text-black/75">{page.lead}</p>
@@ -104,7 +104,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
             <ol className="mt-8 space-y-8">
               {page.processPhases.map((phase) => (
                 <li key={`${phase.phase}-${phase.title}`}>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e05b35]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#c44a24]">
                     {[phase.phase, phase.timeline].filter(Boolean).join(" · ")}
                   </p>
                   <h3 className="mt-2 text-2xl font-semibold">{phase.title}</h3>
@@ -185,7 +185,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
             <p className="mt-4 max-w-3xl leading-7 text-black/65">
               These ranges are planning anchors. The quote names scope,
               timeline, and what is excluded.{" "}
-              <Link href="/contact" className="font-semibold text-[#e05b35]">
+              <Link href="/contact" className="font-semibold text-[#c44a24]">
                 Talk through a quote
               </Link>
               .
@@ -200,7 +200,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
                   <p className="mt-4 text-3xl font-semibold">
                     {tier.investment}
                   </p>
-                  <p className="mt-2 text-sm uppercase tracking-[0.14em] text-black/45">
+                  <p className="mt-2 text-sm uppercase tracking-[0.14em] text-black/60">
                     {tier.timeline}
                   </p>
                   {tier.bestFor ? (

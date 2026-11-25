@@ -18,7 +18,7 @@ export const dynamic = "force-static";
 // Re-check ERP page edits (SEO) about once a minute.
 export const revalidate = 60;
 
-const title = fitTitle("About");
+const title = fitTitle("About Our Software Development Studio");
 const description = fitDescription(
   "Learn about Clickmasters, a remote-first studio for software development, UI/UX design, automation, AI, cloud, and support.",
   "About Clickmasters",

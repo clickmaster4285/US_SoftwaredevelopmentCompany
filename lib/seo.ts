@@ -1,7 +1,9 @@
 const BRAND = " | Clickmasters";
 const TITLE_MAX = 60;
 const DESC_MIN = 70;
-const DESC_MAX = 145;
+// Not a ranking rule: Google truncates snippets by pixel width (~150–160
+// characters). Descriptions up to this length are kept whole.
+const DESC_SOFT_MAX = 160;
 
 function clean(value: string) {
   return value.replace(/\s+/g, " ").trim();
@@ -34,12 +36,24 @@ export function fitDescription(raw: string | undefined, subject: string) {
     const extra = `${subject} from Clickmasters includes scoped delivery, a written timeline, and a quote before build starts.`;
     text = clean(`${text} ${extra}`);
   }
-  if (text.length <= DESC_MAX) return text;
+  if (text.length <= DESC_SOFT_MAX) return text;
 
-  const sliced = text.slice(0, DESC_MAX);
+  // Prefer ending on a complete sentence. The old version sliced at a word
+  // boundary, which published fragments such as "...Get a free" and
+  // "...scope, timeline, and" as the search snippet.
+  const head = text.slice(0, DESC_SOFT_MAX + 1);
+  const sentenceEnds = [...head.matchAll(/[.!?](?=\s|$)/g)].map(
+    (m) => (m.index ?? 0) + 1,
+  );
+  const lastSentence = sentenceEnds.filter((end) => end >= DESC_MIN).pop();
+  if (lastSentence) return text.slice(0, lastSentence).trim();
+
+  // No sentence end in range: cut at a word boundary and mark the cut.
+  const sliced = text.slice(0, DESC_SOFT_MAX - 1);
   const breakAt = sliced.lastIndexOf(" ");
   const cut = (breakAt >= DESC_MIN ? sliced.slice(0, breakAt) : sliced)
-    .replace(/[,\s;:]+$/g, "")
+    .replace(/[,\s;:–—-]+$/g, "")
+    .replace(/\s+(and|or|with|for|to|a|an|the|of|in|&)$/i, "")
     .trim();
-  return cut.length <= DESC_MAX ? cut : cut.slice(0, DESC_MAX).trim();
+  return `${cut}…`;
 }

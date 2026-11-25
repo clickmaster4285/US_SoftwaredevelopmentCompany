@@ -34,6 +34,7 @@ const SOCIAL = [
   { label: "LinkedIn", href: "#" },
   { label: "Dribbble", href: "#" },
 ];
+const SOCIAL_LIVE = SOCIAL.filter((s) => s.href !== "#");
 
 /** Optional ERP/CMS navigation (pages created in the ERP). Without it the
  * default ClickMasters navigation below renders unchanged. */
@@ -420,7 +421,7 @@ export default function Navbar({
           {/* Header */}
           <div className="flex items-center justify-between px-5 pt-5 pb-3">
             <a
-              href="#"
+              href="/"
               className="flex items-center gap-2.5"
               onClick={closeMobile}
             >
@@ -534,13 +535,15 @@ export default function Navbar({
             </a>
           </div>
 
-          {/* Social */}
+          {/* Social: placeholder "#" profiles are not rendered (dead links);
+              add the real profile URL in SOCIAL to show it. */}
+          {SOCIAL_LIVE.length > 0 && (
           <div className="border-t border-black/[0.06] px-5 py-6">
             <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.35em] text-[oklch(0.20_0.02_250)]/40">
               Follow us
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2">
-              {SOCIAL.map((s) => (
+              {SOCIAL_LIVE.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
@@ -551,6 +554,7 @@ export default function Navbar({
               ))}
             </div>
           </div>
+          )}
         </div>
       </div>
     </>

@@ -48,7 +48,6 @@ import { CtaBand, ProductLink } from "./clinic-management-page";
 import {
   adminVsClinicalRows,
   adoptionTriggers,
-  allFeatureTitles,
   architecturePrinciples,
   benefits,
   challenges,
@@ -132,7 +131,6 @@ export function practiceManagementSchema() {
         inLanguage: "en",
         isPartOf: { "@id": `${SITE_URL}/#website` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        about: { "@id": `${url}#software` },
         mainEntity: { "@id": `${url}#service` },
       },
       {
@@ -165,21 +163,9 @@ export function practiceManagementSchema() {
           },
         ],
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${url}#software`,
-        name: "Medical Practice Management Software",
-        description:
-          "Custom-developed medical practice management software for provider management, appointment and physician scheduling, patient administration, billing, insurance claims workflows, revenue cycle support, receivables tracking, multi-location administration, workflow automation and practice reporting.",
-        applicationCategory: "BusinessApplication",
-        applicationSubCategory: "Medical Practice Management System",
-        operatingSystem: "Web-based",
-        url,
-        image: pageUrl(practiceImages.dashboard.src),
-        featureList: allFeatureTitles,
-        creator: org,
-        publisher: org,
-      },
+      // Custom-built software, not a packaged app with a public price or
+      // ratings: a SoftwareApplication node failed Google's required
+      // offers + aggregateRating/review checks, so only the Service remains.
       {
         "@type": "Service",
         "@id": `${url}#service`,
@@ -189,6 +175,7 @@ export function practiceManagementSchema() {
           "Requirement discovery, practice workflow analysis, feature and module planning, UI/UX design, software architecture, frontend, backend and database development, API integration, security testing, quality assurance, deployment, and maintenance and support for custom medical practice management systems.",
         provider: org,
         url,
+        image: pageUrl(practiceImages.dashboard.src),
         areaServed: [
           "United States",
           "United Kingdom",

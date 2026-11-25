@@ -59,7 +59,9 @@
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
+  /* Was L 0.554 (#62748e): 4.3:1 on the light-gray section backgrounds,
+     under WCAG AA. L 0.52 is ~5:1 there and ~5.4:1 on white. */
+  --muted-foreground: oklch(0.52 0.046 257.417);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
@@ -233,4 +235,77 @@ body:has([data-case-studies-layout])::-webkit-scrollbar {
   display: initial;
   width: auto;
   height: auto;
+}
+
+/* Comparison table (CompareTable). Rendered once for all viewports: a normal
+   table from md up, stacked cards below md. Replaces a duplicated
+   card-list + hidden-table markup that doubled every table in the HTML. */
+@layer components {
+  .cm-compare th,
+  .cm-compare td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+  }
+  .cm-compare thead th {
+    font-weight: 600;
+  }
+  .cm-compare tbody tr {
+    border-top: 1px solid var(--border);
+  }
+  .cm-compare tbody th {
+    font-weight: 500;
+    color: var(--foreground);
+  }
+  .cm-compare tbody td {
+    line-height: 1.5rem;
+    color: var(--muted-foreground);
+  }
+
+  @media (max-width: 767.98px) {
+    .cm-compare,
+    .cm-compare tbody,
+    .cm-compare tr,
+    .cm-compare th,
+    .cm-compare td {
+      display: block;
+      width: 100%;
+    }
+    /* Column headers stay available to assistive tech; each card repeats
+       them through data-label instead. */
+    .cm-compare thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .cm-compare tbody {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .cm-compare tbody tr {
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 8px);
+      background: #fff;
+      padding: 1rem;
+    }
+    .cm-compare tbody th {
+      padding: 0;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .cm-compare tbody td {
+      padding: 0;
+      margin-top: 0.5rem;
+    }
+    .cm-compare tbody th + td {
+      margin-top: 0.75rem;
+    }
+    .cm-compare td[data-label]::before {
+      content: attr(data-label) ". ";
+      font-weight: 500;
+      color: var(--foreground);
+    }
+  }
 }

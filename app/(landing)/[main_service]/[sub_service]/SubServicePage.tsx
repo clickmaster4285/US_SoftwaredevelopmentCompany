@@ -5,6 +5,7 @@ import { catalogWordCount, lookupCatalog } from "@/lib/catalog-page";
 import {
   extraLinksForPath,
   locationLinksForPath,
+  productLinksForPath,
 } from "@/lib/contextual-links";
 import { buildServiceArticle } from "@/lib/service-copy";
 import { InlineLinks } from "@/components/seo/InlineLinks";
@@ -54,12 +55,13 @@ export default function SubServicePage({
     siblings.map((item) => `/${service.slug}/${item.slug}`),
   );
   const areaLinks = locationLinksForPath(path);
+  const productLinks = productLinksForPath(path);
   const moreLinks = extraLinksForPath(path).filter(
     (link) => link.href !== `/${service.slug}` && !siblingHrefs.has(link.href),
   );
 
   return (
-    <PageFrame>
+    <PageFrame main>
       <div className="relative z-20 border-b border-border bg-background/80 backdrop-blur-md pt-20 md:pt-24">
         <div className="mx-auto max-w-7xl px-5 py-4 md:px-10">
           <nav
@@ -96,7 +98,7 @@ export default function SubServicePage({
       <section className="px-5 py-24 md:px-10">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#e05b35]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c44a24]">
               Delivery focus
             </p>
             <h2 className="mt-4 text-[clamp(2.2rem,5vw,5rem)] font-semibold leading-[0.95] tracking-tight">
@@ -106,7 +108,7 @@ export default function SubServicePage({
               {subService.description} The work sits inside{" "}
               <Link
                 href={`/${service.slug}`}
-                className="font-semibold text-[#e05b35]"
+                className="font-semibold text-[#c44a24]"
               >
                 {service.title}
               </Link>{" "}
@@ -120,7 +122,7 @@ export default function SubServicePage({
                 key={highlight}
                 className="rounded-[8px] border border-black/10 bg-white p-6 shadow-sm"
               >
-                <CheckCircle2 className="mb-6 h-5 w-5 text-[#e05b35]" />
+                <CheckCircle2 className="mb-6 h-5 w-5 text-[#c44a24]" />
                 <p className="text-xl font-semibold leading-tight">
                   {highlight}
                 </p>
@@ -145,19 +147,19 @@ export default function SubServicePage({
                   key={tier.type}
                   className="rounded-[8px] bg-white p-6 ring-1 ring-black/10"
                 >
-                  <Clock3 className="mb-8 h-5 w-5 text-[#e05b35]" />
+                  <Clock3 className="mb-8 h-5 w-5 text-[#c44a24]" />
                   <h3 className="text-2xl font-semibold">{tier.type}</h3>
                   <p className="mt-5 text-4xl font-semibold tracking-tight">
                     {tier.investment}
                   </p>
-                  <p className="mt-3 text-sm uppercase tracking-[0.16em] text-black/45">
+                  <p className="mt-3 text-sm uppercase tracking-[0.16em] text-black/60">
                     {tier.timeline}
                   </p>
                 </div>
               ))}
             </div>
             <p className="mx-auto mt-8 max-w-3xl text-center text-black/65">
-              <Link href="/contact" className="font-semibold text-[#e05b35]">
+              <Link href="/contact" className="font-semibold text-[#c44a24]">
                 Request a written quote
               </Link>{" "}
               after a discovery call. The quote names what is included.
@@ -177,7 +179,7 @@ export default function SubServicePage({
             {subService.title} is one line inside{" "}
             <Link
               href={`/${service.slug}`}
-              className="font-semibold text-[#e05b35]"
+              className="font-semibold text-[#c44a24]"
             >
               {service.title}
             </Link>.
@@ -186,7 +188,7 @@ export default function SubServicePage({
                 {" "}
                 Teams with an adjacent problem often compare it with{" "}
                 <InlineLinks
-                  className="font-semibold text-[#e05b35]"
+                  className="font-semibold text-[#c44a24]"
                   links={siblings.map((item) => ({
                     href: `/${service.slug}/${item.slug}`,
                     label: item.title,
@@ -197,11 +199,11 @@ export default function SubServicePage({
               " "
             )}
             For a written delivery narrative, read the{" "}
-            <Link href={CASE_STUDY} className="font-semibold text-[#e05b35]">
+            <Link href={CASE_STUDY} className="font-semibold text-[#c44a24]">
               SaaS booking platform QA case study
             </Link>{" "}
             and the rest of the{" "}
-            <Link href="/case-studies" className="font-semibold text-[#e05b35]">
+            <Link href="/case-studies" className="font-semibold text-[#c44a24]">
               case studies
             </Link>.
             {moreLinks.length > 0 ? (
@@ -209,9 +211,24 @@ export default function SubServicePage({
                 {" "}
                 See also{" "}
                 <InlineLinks
-                  className="font-semibold text-[#e05b35]"
+                  className="font-semibold text-[#c44a24]"
                   links={moreLinks}
                 />.{" "}
+              </>
+            ) : null}
+            {productLinks.length > 0 ? (
+              <>
+                {" "}
+                Examples of systems built with this kind of work include{" "}
+                <InlineLinks
+                  className="font-semibold text-[#c44a24]"
+                  links={productLinks}
+                />{" "}
+                (see the full{" "}
+                <Link href="/products" className="font-semibold text-[#c44a24]">
+                  software products
+                </Link>{" "}
+                catalogue).{" "}
               </>
             ) : null}
             {areaLinks.length > 0 ? (
@@ -219,7 +236,7 @@ export default function SubServicePage({
                 Clickmasters is remote-first and works by video and phone with
                 clients in{" "}
                 <InlineLinks
-                  className="font-semibold text-[#e05b35]"
+                  className="font-semibold text-[#c44a24]"
                   links={areaLinks}
                 />.
               </>

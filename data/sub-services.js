@@ -12562,7 +12562,7 @@ const mobileAppDesignOverride = {
         "iOS-first design for field workers who use iPhones. Offline-first considerations, large touch targets for gloved hands, barcode scanning integration.",
     },
     {
-      nameame: "Consumer Mobile App",
+      name: "Consumer Mobile App",
       description:
         "Platform-native design for both iOS and Android. Social features, push notifications, deep links, and App Store optimisation.",
     },
@@ -12572,7 +12572,7 @@ const mobileAppDesignOverride = {
         "Android-first or cross-platform depending on device deployment. MDM integration considerations, authentication flows, data security.",
     },
     {
-      name: "Mobile Bang/Fintech",
+      name: "Mobile Banking/Fintech",
       description:
         "Highest security standards, biometric authentication integration, transaction flows, and accessibility compliance (WCAG 2.1 AA).",
     },
@@ -28450,7 +28450,7 @@ const technicalSupportOverride = {
     {
       name: "SaaS Customer Support",
       description:
-        "Zendesk-based L1 support for 10,000+ users. L2 investigation for bug reproduction. L3 escalation to engineering. 85% first-contact resolution rate. CSAT 4.7/5. Monthly support metrics review.",
+        "Zendesk-based L1 support for a growing user base. L2 investigation for bug reproduction. L3 escalation to engineering. First-contact resolution and CSAT tracked in a monthly support metrics review.",
     },
     {
       name: "Enterprise Support Triage",

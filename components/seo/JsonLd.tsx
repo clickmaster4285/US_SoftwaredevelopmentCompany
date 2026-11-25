@@ -1,4 +1,4 @@
-import { pageUrl, SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, pageUrl, SITE_URL } from "@/lib/site";
 
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
@@ -16,7 +16,8 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: "Clickmasters",
     url: SITE_URL,
-    email: "sales@Clickmasterssoftwaredevelopmentcompany.com",
+    logo: `${SITE_URL}/cm-logos/logo.webp`,
+    email: CONTACT_EMAIL,
     telephone: "+1-325-202-4074",
     description:
       "Remote-first software development company building custom web, mobile, and AI products for businesses in the United States and abroad.",

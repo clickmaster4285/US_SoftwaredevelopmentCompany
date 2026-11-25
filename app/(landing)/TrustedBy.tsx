@@ -99,7 +99,7 @@ export default function TrustedBy() {
                     className="mt-1.5 text-sm"
                     style={{
                       color: reason.fg,
-                      opacity: 0.5,
+                      opacity: 0.75,
                     }}
                   >
                     {reason.description}

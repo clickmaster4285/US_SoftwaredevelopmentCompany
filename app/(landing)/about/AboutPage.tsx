@@ -152,7 +152,7 @@ export default function AboutPage({
   const [statsRef, statsInView] = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
-    <PageFrame>
+    <PageFrame main>
       <style>{`
         @property --ab-angle {
           syntax: '<angle>';
@@ -387,7 +387,7 @@ export default function AboutPage({
                   animationDelay: statsInView ? `${i * 0.12}s` : undefined,
                 }}
               >
-                <div className="text-xl font-bold text-[#e05b35] md:text-2xl">
+                <div className="text-xl font-bold text-[#c44a24] md:text-2xl">
                   {stat.label}
                 </div>
                 <div
@@ -413,7 +413,7 @@ export default function AboutPage({
             {trustBadges.map((badge, i) => (
               <div key={`${badge.label}-1`} className="ab-slider-item">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e05b35]/10">
-                  <badge.icon className="h-5 w-5 text-[#e05b35]" />
+                  <badge.icon className="h-5 w-5 text-[#c44a24]" />
                 </span>
                 <div className="badge-text">
                   <div className="label">{badge.label}</div>
@@ -425,7 +425,7 @@ export default function AboutPage({
             {trustBadges.map((badge, i) => (
               <div key={`${badge.label}-2`} className="ab-slider-item">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e05b35]/10">
-                  <badge.icon className="h-5 w-5 text-[#e05b35]" />
+                  <badge.icon className="h-5 w-5 text-[#c44a24]" />
                 </span>
                 <div className="badge-text">
                   <div className="label">{badge.label}</div>
@@ -441,7 +441,7 @@ export default function AboutPage({
       <section className="relative overflow-hidden px-5 py-24 md:px-10">
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -top-6 left-0 select-none font-serif text-[220px] italic leading-none text-[#e05b35]/[0.05] md:text-[300px]"
+          className="pointer-events-none absolute -top-6 left-0 select-none font-serif text-[220px] italic leading-none text-[#c44a24]/[0.05] md:text-[300px]"
         >
           "
         </span>
@@ -459,13 +459,9 @@ export default function AboutPage({
               </Reveal>
               <Reveal delay={0.15}>
                 <p className="mt-6 text-lg leading-relaxed text-black/70">
-                  Since then, we've shipped{" "}
-                  <strong className="font-semibold text-[#e05b35]">
-                    200+ projects
-                  </strong>{" "}
-                  across automotive, retail tech, fintech, and e-commerce from
+                  Since then, we've shipped projects across automotive, retail tech, fintech, and e-commerce from
                   MVPs launched in{" "}
-                  <strong className="font-semibold text-[#e05b35]">
+                  <strong className="font-semibold text-[#c44a24]">
                     4–6 weeks
                   </strong>{" "}
                   to enterprise platforms built to scale past a million users.
@@ -497,7 +493,7 @@ export default function AboutPage({
               <div className="absolute -bottom-4 -right-4 bg-white rounded-full shadow-xl px-5 py-3 flex items-center gap-3 border border-black/5">
                 <span className="flex h-3 w-3 rounded-full bg-[#e05b35] animate-pulse" />
                 <span className="text-sm font-semibold text-[#171717]">
-                  8+ Years Experience
+                  Remote-first delivery
                 </span>
               </div>
             </Reveal>
@@ -554,7 +550,7 @@ export default function AboutPage({
                     }}
                   />
                   <span className="ab-pulse relative flex h-12 w-12 items-center justify-center rounded-full bg-[#e05b35]/10">
-                    <badge.icon className="h-6 w-6 text-[#e05b35]" />
+                    <badge.icon className="h-6 w-6 text-[#c44a24]" />
                   </span>
                 </div>
                 <h4 className="text-sm font-semibold">{badge.label}</h4>
@@ -584,7 +580,7 @@ export default function AboutPage({
                     href={`/${service.slug}`}
                     className="group flex flex-col gap-4 py-8 transition-colors duration-300 hover:bg-[#e05b35]/[0.03] sm:flex-row sm:items-center sm:gap-8 sm:px-2"
                   >
-                    <span className="font-mono text-sm text-black/30 transition-colors duration-300 group-hover:text-[#e05b35] sm:w-10">
+                    <span className="font-mono text-sm text-black/30 transition-colors duration-300 group-hover:text-[#c44a24] sm:w-10">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#171717] text-white transition-transform duration-300 group-hover:rotate-6 group-hover:scale-105">
@@ -598,7 +594,7 @@ export default function AboutPage({
                         {service.description}
                       </p>
                     </div>
-                    <span className="inline-flex items-center gap-2 text-sm font-bold text-[#e05b35] sm:pr-2">
+                    <span className="inline-flex items-center gap-2 text-sm font-bold text-[#c44a24] sm:pr-2">
                       View service
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
@@ -715,11 +711,11 @@ function ManifestoRow({
       }`}
       style={{ animationDelay: inView ? `${index * 0.08}s` : undefined }}
     >
-      <span className="font-mono text-sm text-black/30 transition-colors duration-300 group-hover:text-[#e05b35] sm:w-10">
+      <span className="font-mono text-sm text-black/30 transition-colors duration-300 group-hover:text-[#c44a24] sm:w-10">
         {num}
       </span>
       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e05b35]/10 transition-transform duration-300 group-hover:scale-110">
-        <value.icon className="h-5 w-5 text-[#e05b35]" />
+        <value.icon className="h-5 w-5 text-[#c44a24]" />
       </span>
       <p className="text-lg font-semibold leading-snug text-black/90 sm:text-xl">
         {value.text}

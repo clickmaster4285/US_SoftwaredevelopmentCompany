@@ -119,7 +119,7 @@ export function hospitalManagementSchema() {
         description,
         isPartOf: { "@id": `${SITE_URL}/#website` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        mainEntity: { "@id": `${url}#software` },
+        mainEntity: { "@id": `${url}#service` },
         inLanguage: "en-US",
       },
       {
@@ -142,17 +142,26 @@ export function hospitalManagementSchema() {
           },
         ],
       },
+      // Was ["SoftwareApplication", "Product"]. Both types require offers and
+      // aggregateRating/review for Google, which this custom-built system
+      // cannot truthfully provide, so the page is described as the
+      // development Service it is (matching the other product pages).
       {
-        "@type": ["SoftwareApplication", "Product"],
-        "@id": `${url}#software`,
-        name: "ClickMasters Hospital Management System",
-        applicationCategory: "BusinessApplication",
-        applicationSubCategory: "Hospital Management Software",
+        "@type": "Service",
+        "@id": `${url}#service`,
+        name: "Custom Hospital Management System Development",
+        serviceType: "Healthcare software development",
         description,
         url,
-        brand: { "@id": `${SITE_URL}/#organization` },
         provider: { "@id": `${SITE_URL}/#organization` },
-        featureList,
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Hospital management system modules",
+          itemListElement: featureList.map((name) => ({
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name },
+          })),
+        },
       },
       {
         "@type": "FAQPage",
@@ -441,28 +450,18 @@ export function CompareTable({
   headers: string[];
   rows: string[][];
 }) {
+  // One table for every viewport. It used to render twice (a card list for
+  // mobile plus a hidden desktop table), so every table's text shipped twice
+  // in the HTML and twice again in the RSC payload. Below md, `.cm-compare`
+  // (globals.css) restyles rows as cards and labels cells from data-label.
   return (
-    <div className="mt-8">
-      <div className="grid gap-3 md:hidden">
-        {rows.map((row) => (
-          <article key={row[0]} className="rounded-2xl border border-border bg-white p-4">
-            <p className="font-semibold">{row[0]}</p>
-            {headers.slice(1).map((header, index) => (
-              <p key={header} className="mt-2 text-sm leading-6 text-muted-foreground first-of-type:mt-3">
-                <span className="font-medium text-foreground">{header}. </span>
-                {row[index + 1]}
-              </p>
-            ))}
-          </article>
-        ))}
-      </div>
-      <div className="hidden overflow-x-auto rounded-2xl border border-border md:block">
-      <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+    <div className="mt-8 md:overflow-x-auto md:rounded-2xl md:border md:border-border">
+      <table className="cm-compare w-full border-collapse text-left text-sm md:min-w-[720px]">
         <caption className="sr-only">{caption}</caption>
         <thead className="bg-secondary text-foreground">
           <tr>
             {headers.map((header) => (
-              <th key={header} className="px-4 py-3 font-semibold">
+              <th key={header} scope="col">
                 {header}
               </th>
             ))}
@@ -470,24 +469,22 @@ export function CompareTable({
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={row[0]} className="border-t border-border align-top">
-              {row.map((cell, index) => (
-                <td
-                  key={`${index}-${cell}`}
-                  className={
-                    index === 0
-                      ? "px-4 py-3 font-medium text-foreground"
-                      : "px-4 py-3 leading-6 text-muted-foreground"
-                  }
-                >
-                  {cell}
-                </td>
-              ))}
+            <tr key={row[0]}>
+              {row.map((cell, index) =>
+                index === 0 ? (
+                  <th key={`${index}-${cell}`} scope="row">
+                    {cell}
+                  </th>
+                ) : (
+                  <td key={`${index}-${cell}`} data-label={headers[index]}>
+                    {cell}
+                  </td>
+                ),
+              )}
             </tr>
           ))}
         </tbody>
       </table>
-      </div>
     </div>
   );
 }

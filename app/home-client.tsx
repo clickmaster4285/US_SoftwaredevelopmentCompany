@@ -90,6 +90,7 @@ export default function HomePage() {
     <div className="bg-background text-foreground">
       <Navbar />
 
+      <main id="main-content">
       <section
         ref={sectionRef}
         className="relative pt-8 sm:pt-12 md:pt-16 lg:pt-20 h-[200vh] sm:h-[230vh] md:h-[260vh]"
@@ -122,29 +123,30 @@ export default function HomePage() {
               pointerEvents: expansion > 0.95 ? "none" : "auto",
             }}
           >
-            <h1 className="leading-[1.15] tracking-tight space-y-1 text-black">
+            <h1 className="uppercase leading-[1.15] tracking-tight space-y-1 text-black">
               <span className="block text-[clamp(1.75rem,7.5vw,6.5rem)] font-semibold">
-                SOFTWARE DEVELOPMENT
+                Software development
               </span>
 
               {/* Line 1: COMPANY [VIDEO] OFFERING */}
               <span className="block text-[clamp(1.75rem,7.5vw,6.5rem)] italic font-serif">
-                COMPANY{" "}
+                company{" "}
                 <span
                   ref={slotRef}
                   className="relative inline-block h-[0.75em] w-[0.75em] overflow-hidden align-middle rounded-2xl"
                   style={{ width: slotSize, height: slotSize }}
+                  aria-hidden="true"
                 />{" "}
-                OFFERING
+                offering
               </span>
 
               {/* Line 2: WEB, MOBILE & AI - MOVED TO SEPARATE LINE */}
               <span className="block text-[clamp(1.75rem,7.5vw,6.5rem)] italic font-serif">
-                WEB, MOBILE & AI
+                web, mobile & AI
               </span>
 
               <span className="block text-[clamp(1.75rem,7.5vw,6.5rem)] font-semibold">
-                DEVELOPMENT SERVICE
+                development services
               </span>
             </h1>
 
@@ -195,6 +197,7 @@ export default function HomePage() {
               muted
               loop
               playsInline
+              aria-hidden="true"
               className="h-full w-full object-cover"
             />
           </div>
@@ -213,6 +216,7 @@ export default function HomePage() {
       <Testimonials3DRoom />
       <SpaceJourney />
       <FaqSection />
+      </main>
       <Footer />
     </div>
   );

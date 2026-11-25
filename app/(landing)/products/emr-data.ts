@@ -9,7 +9,7 @@ export const emrTitle =
   "Electronic Medical Records (EMR) Software | Clickmasters";
 
 export const emrDescription =
-  "Electronic medical health records software and custom Electronic Medical Records (EMR) software for US practices, hospitals and clinics: charting, e-prescribing, lab integration, FHIR APIs and HIPAA-aware security.";
+  "Custom EMR software for US practices, hospitals and clinics: charting, e-prescribing, lab integration, FHIR APIs and HIPAA-aware security.";
 
 export const PRODUCT_NAME = "Electronic Medical Records (EMR) Software";
 

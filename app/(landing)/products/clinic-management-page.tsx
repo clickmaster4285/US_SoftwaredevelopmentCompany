@@ -116,7 +116,6 @@ export function clinicManagementSchema() {
         inLanguage: "en",
         isPartOf: { "@id": `${SITE_URL}/#website` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        about: { "@id": `${url}#software` },
         mainEntity: { "@id": `${url}#service` },
       },
       {
@@ -149,21 +148,10 @@ export function clinicManagementSchema() {
           },
         ],
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${url}#software`,
-        name: "Clinic Management Software",
-        description:
-          "Custom-developed clinic management software for appointment scheduling, patient registration, electronic medical records, prescriptions, billing, payment tracking, reminders, follow-ups, role-based access, reporting and multi-branch clinic operations.",
-        applicationCategory: "HealthApplication",
-        applicationSubCategory: "Clinic Management System",
-        operatingSystem: "Web-based",
-        url,
-        image: pageUrl(clinicImages.dashboard.src),
-        featureList: features.map((f) => f.title),
-        creator: org,
-        publisher: org,
-      },
+      // Custom-built software, not a packaged app with a public price or
+      // ratings: a SoftwareApplication node failed Google's required
+      // offers + aggregateRating/review checks, so the page is described
+      // as the development Service it actually is (same as other products).
       {
         "@type": "Service",
         "@id": `${url}#service`,
@@ -173,6 +161,7 @@ export function clinicManagementSchema() {
           "Requirement analysis, clinic workflow discovery, UI/UX design, software architecture, frontend and backend development, third-party integrations, security and quality testing, deployment, and ongoing maintenance for custom clinic management systems.",
         provider: org,
         url,
+        image: pageUrl(clinicImages.dashboard.src),
         areaServed: [
           "United States",
           "United Kingdom",

@@ -1,20 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Sparkles } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { iconMap } from "@/data/main-services";
 
+// Non-numeric on purpose: company-level counts ("200+ projects", "10+ years")
+// were unverified and contradicted each other across pages. Same facts as
+// data/main-services-components.js.
 const defaultStats = [
-  { value: "10+", label: "Years shipping digital products" },
-  { value: "200+", label: "Projects launched" },
-  { value: "24/7", label: "Support coverage" },
+  { value: "Written", label: "Scope before build" },
+  { value: "Owned", label: "Code stays with you" },
+  { value: "Remote", label: "Video and phone delivery" },
 ];
 
-export function PageFrame({ children }: { children: React.ReactNode }) {
+/** Shared page chrome. Pass `main` when the page body does not render its own
+ * <main> landmark (several templates did not, so 108 pages had none). */
+export function PageFrame({
+  children,
+  main = false,
+}: {
+  children: React.ReactNode;
+  main?: boolean;
+}) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      {children}
+      {main ? <main id="main-content">{children}</main> : children}
       <Footer />
     </div>
   );
@@ -76,10 +88,16 @@ export function Hero({
   return (
     <section className="relative min-h-[92vh] overflow-hidden px-5 pb-16 pt-32 md:px-10 md:pt-40">
       {image ? (
-        <img
+        // next/image: serves WebP at the viewport's width with a srcset
+        // instead of the 150–600 KB source JPEG. Hero photo = LCP, so it is
+        // preloaded (priority) rather than lazy-loaded.
+        <Image
           src={image}
           alt={imageAlt}
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
       ) : (
         <div className="absolute inset-0 bg-secondary" />
