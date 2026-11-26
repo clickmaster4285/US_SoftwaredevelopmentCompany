@@ -1,5 +1,27 @@
 For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMARY references an older, more elaborate folder structure (admin/auth/api/models). The current repo is significantly slimmer than what that doc describes see "Current State" below for what is actually on disk.
 
+# Work Log: 2026-11-25 — SEO audit & remediation (uncommitted on `updated-content`)
+
+- Reports in repo root: `SEO-AUDIT-REPORT.md`, `SEO-FIXES-REPORT.md`, `REMAINING-ISSUES.md`, `URL-BY-URL-SEO-STATUS.md`, `SEO-VALIDATION-SUMMARY.md`.
+- Sitemaps: new `app/products-sitemap.xml` (products were missing); services sitemap reads the same merged `services` map as the route; `lib/sitemap.ts` gives git-based `lastmod`.
+- Contact details: single source `CONTACT_EMAIL` / `CONTACT_PHONE_*` in `lib/site.ts`. Don't hard-code them.
+- No unverified numbers: company counts/ratings/years were removed from rendered copy (list in REMAINING-ISSUES R-03). Don't add new ones without a source.
+- Product links on service pages: `PRODUCTS_FOR_PATH` in `lib/contextual-links.ts`.
+- `CompareTable` renders one table; mobile card layout is CSS (`.cm-compare` in `globals.css`).
+- CSP now allows GTM/GA4 (analytics was blocked before). Next upgraded to 16.4.6 (security).
+- Product schema uses `Service`, not `SoftwareApplication`/`Product` (no prices/ratings exist).
+- `JsonLd` drops FAQPage nodes on purpose (site not eligible for FAQ rich results; saves page weight).
+- `cm-*` / `cx-*` classes in `globals.css` are `@apply` aliases for long repeated Tailwind strings (HTML-size fix). `.ico .ico-check|ico-chev|ico-sqcheck` = CSS-mask icons; use `ListIcon` for checklists. Custom non-Tailwind classes (e.g. `ind-chip`) can't go inside `@apply`.
+- Social defaults (og:type/site_name/default og:image `/og-default.png`) are added in `withEditedPageSeo`. Every route must keep calling it.
+- Product pages import icons from `@/components/ui/mask-icons` (CSS-mask spans, generated). After using a new icon there, run `node scripts/gen-mask-icons.cjs`.
+- Product-page weight budget is <300 KB HTML. Long static blocks on medical practice, EHR, clinic and the fitness hub render from `*-sections.tsx` client components that import their own data (keeps text out of the RSC payload; markup is unchanged). Shared building blocks live in `product-primitives.tsx`. Use `shortKey()` for React keys made from text.
+- Accessibility (axe clean on 184/185 pages): product `ACCENT`/`theme.accent` colours must be ≥4.5:1 on white (use Tailwind 700 shades, not 600). `SectionHeading` on a dark section needs `tone="dark"`. Empty `CompareTable` headers are fine (sr-only text is added). Favicon/icons are `app/favicon.ico`, `app/icon.png`, `app/apple-icon.png` (square).
+- OG images (`public/products/**/*-og.png`) are palette-compressed to <100 KB; re-compress new ones the same way.
+- Lint: `eslint.config.js` ignores `.next`; Prettier uses `endOfLine: "auto"` (CRLF repo). Unused deps (TanStack Start, nodemailer, xlsx, zod, redux) were removed: production `npm audit` is 0. Don't claim certifications (AWS/Azure/GCP, SOC 2, HIPAA) without evidence.
+- Homepage `Testimonials3DRoom` keeps a 0.72 card-opacity floor for contrast; don't lower it.
+- Brand is spelled "Clickmasters" (not "ClickMasters"). `/privacy` describes the real data flows (contact form → CRM, GTM/GA4, server logs): update it when forms or trackers change.
+- **Always deploy from a clean build** (`rm -rf .next && npm run build`): an incremental build once shipped a stale stylesheet missing new classes.
+
 # Work Log: 2026-11-11 — ERP / headless CMS integration
 
 - Created pages use the site's own theme; ERP colours apply only with `CMS_USE_ERP_COLORS=true` (gated in `CmsPageFrame`).

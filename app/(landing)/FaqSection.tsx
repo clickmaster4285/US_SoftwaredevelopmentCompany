@@ -178,7 +178,7 @@ function FaqVisual() {
             <p>
               <span className="text-primary">$</span> clickmasters init project
             </p>
-            <p className="flex items-center gap-2">
+            <p className="cx-flex-itemsc-2x">
               <CircleDot className="w-3 h-3 text-primary faq-anim-spin-slow" />
               scoping requirements…
             </p>

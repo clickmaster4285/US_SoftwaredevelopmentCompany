@@ -1,3 +1,5 @@
+import { shortKey } from "@/lib/short-key";
+import { ListIcon } from "@/components/ui/list-icon";
 import { Fragment, type ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -21,7 +23,6 @@ import {
   Camera,
   Check,
   CheckSquare,
-  ChevronRight,
   ClipboardCheck,
   ClipboardList,
   Clock,
@@ -196,7 +197,7 @@ import {
   Share2,
   CalendarCheck2,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -329,12 +330,12 @@ export function productSeoMetadata(data: ProductPageData) {
 
 function AppFigure({ image, caption, theme, label, priority = false }: { image: PageImage; caption: string; theme: Theme; label: string; priority?: boolean }) {
   return (
-    <figure className="overflow-hidden rounded-2xl border border-border shadow-xl shadow-slate-900/10 ring-1 ring-black/5" style={{ backgroundColor: theme.dark }}>
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+    <figure className="cm-shot" style={{ backgroundColor: theme.dark }}>
+      <div className="cm-mock-bar" aria-hidden>
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> {label} / concept
         </span>
       </div>
@@ -349,9 +350,9 @@ function AppFigure({ image, caption, theme, label, priority = false }: { image: 
         className="block h-auto w-full"
         style={{ backgroundColor: theme.tint }}
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -360,10 +361,10 @@ function AppFigure({ image, caption, theme, label, priority = false }: { image: 
 function DiagramFigure({ image, caption }: { image: PageImage; caption: string }) {
   return (
     <figure className="overflow-hidden rounded-3xl border border-border bg-white p-3 md:p-5">
-      <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" className="mx-auto block h-auto w-full max-w-5xl" />
-      <figcaption className="mt-2 flex flex-wrap items-center justify-center gap-2 text-center text-xs text-muted-foreground">
+      <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" className="cm-fig" />
+      <figcaption className="cm-caption">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -403,22 +404,22 @@ function FeatureCard({ feature, number, theme }: { feature: Feature; number: str
   const Icon = icon(feature.icon, ClipboardList);
   const extras: [string, string | undefined][] = [["Value", feature.value], ["Solves", feature.solves]];
   return (
-    <article className="flex flex-col rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-center gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: theme.soft }}>
+    <article className="cm-card6c">
+      <div className="cx-flex-itemsc-5">
+        <span className="cm-icbox" style={{ backgroundColor: theme.soft }}>
           <Icon className="h-5 w-5" style={{ color: theme.accent }} aria-hidden />
         </span>
-        <h3 className="text-lg font-semibold leading-snug">
-          <span className="mr-1.5 text-sm font-bold" style={{ color: theme.accent }}>{number}.</span>
+        <h3 className="cm-h3">
+          <span className="cx-mr15-textsm-8" style={{ color: theme.accent }}>{number}.</span>
           {feature.title}
         </h3>
       </div>
-      <p className="mt-4 text-sm leading-6 text-muted-foreground">{feature.text}</p>
+      <p className="cm-p4">{feature.text}</p>
       {extras
         .filter((row): row is [string, string] => Boolean(row[1]))
         .map(([label, text]) => (
-          <p key={label} className="mt-2 text-sm leading-6">
-            <span className="font-semibold text-foreground">{label}: </span>
+          <p key={shortKey(label)} className="cx-mt2-textsm-9">
+            <span className="cx-fontse-textfo-1">{label}: </span>
             <span className="text-muted-foreground">{text}</span>
           </p>
         ))}
@@ -435,7 +436,7 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
         <div className={first ? "" : "mt-6"}>
           <Prose>
             {block.paragraphs.map((p) => (
-              <p key={p}><Rich text={p} /></p>
+              <p key={shortKey(p)}><Rich text={p} /></p>
             ))}
           </Prose>
         </div>
@@ -445,12 +446,12 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
       return (
         <ul className={`grid gap-4 ${first ? "" : "mt-6"} ${TITLED_COLS[block.cols ?? 3]}`}>
           {block.items.map(([title, text]) => (
-            <li key={title} className="rounded-2xl border border-border bg-white p-5">
-              <p className="flex items-start gap-2 font-semibold leading-snug">
-                <Icon className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} aria-hidden />
+            <li key={shortKey(title)} className="cm-card5">
+              <p className="cm-ttl">
+                <Icon className="cm-ic05" style={{ color: theme.accent }} aria-hidden />
                 {title}
               </p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+              <p className="cm-p2">{text}</p>
             </li>
           ))}
         </ul>
@@ -461,8 +462,8 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
       return (
         <ul className={`grid max-w-5xl gap-3 ${first ? "" : "mt-6"} ${COLS[block.cols ?? 2]}`}>
           {block.items.map((item) => (
-            <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-              <Icon className="mt-1 h-4 w-4 shrink-0" style={{ color: theme.accent }} aria-hidden />
+            <li key={shortKey(item)} className="cm-li">
+              <ListIcon icon={Icon} className="cm-ic1" style={{ color: theme.accent }} />
               {item}
             </li>
           ))}
@@ -483,14 +484,14 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
       return (
         <ol className={`grid gap-4 ${first ? "" : "mt-6"} ${COLS[block.cols ?? 4]}`}>
           {block.items.map(([title, text], i) => (
-            <li key={title} className="rounded-2xl border border-border bg-white p-5">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white" style={{ backgroundColor: theme.accent }}>
+            <li key={shortKey(title)} className="cm-card5">
+              <div className="cx-flex-itemsc-h">
+                <span className="cm-num" style={{ backgroundColor: theme.accent }}>
                   {i + 1}
                 </span>
-                <p className="font-semibold leading-snug">{title}</p>
+                <p className="cx-fontse-leadin-b">{title}</p>
               </div>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p>
+              <p className="cm-p3">{text}</p>
             </li>
           ))}
         </ol>
@@ -499,10 +500,10 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
       return (
         <ol className={`grid gap-4 md:grid-cols-2 lg:grid-cols-5 ${first ? "" : "mt-6"}`}>
           {block.items.map(([title, text], i) => (
-            <li key={title} className="rounded-2xl border border-border bg-white p-5">
-              <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: theme.accent }}>Step {i + 1}</span>
-              <p className="mt-2 font-semibold leading-snug">{title}</p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+            <li key={shortKey(title)} className="cm-card5">
+              <span className="cm-label" style={{ color: theme.accent }}>Step {i + 1}</span>
+              <p className="cm-t2">{title}</p>
+              <p className="cm-p2">{text}</p>
             </li>
           ))}
         </ol>
@@ -521,19 +522,19 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
     }
     case "linkPanel":
       return (
-        <div className="mt-8 max-w-4xl rounded-2xl border p-5 text-base leading-7 text-muted-foreground" style={{ borderColor: theme.border, backgroundColor: theme.tint }}>
+        <div className="cm-box" style={{ borderColor: theme.border, backgroundColor: theme.tint }}>
           <Rich text={block.text} />
         </div>
       );
     case "note":
       return (
-        <div className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground" style={{ borderColor: theme.accent }}>
+        <div className="cm-note" style={{ borderColor: theme.accent }}>
           <Rich text={block.text} />
         </div>
       );
     case "caution":
       return (
-        <div className="mt-8 flex max-w-4xl gap-4 rounded-2xl border border-[#fde68a] bg-[#fffbeb] p-5 text-sm leading-7 text-[#78350f]">
+        <div className="cm-warn">
           <AlertTriangle className="mt-1 h-5 w-5 shrink-0" aria-hidden />
           <div><Rich text={block.text} /></div>
         </div>
@@ -548,8 +549,8 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
       return (
         <ul className={`grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-4 ${first ? "" : "mt-6"}`}>
           {block.items.map((item) => (
-            <li key={item} className="flex gap-3 rounded-2xl border border-border bg-white p-4 text-sm leading-6">
-              <CheckSquare className="mt-0.5 h-5 w-5 shrink-0" style={{ color: theme.accent }} aria-hidden />
+            <li key={shortKey(item)} className="cm-card4li">
+              <span aria-hidden="true" className="ico ico-sqcheck cm-ic05l" style={{ color: theme.accent }} />
               {item}
             </li>
           ))}
@@ -562,8 +563,8 @@ function BlockView({ block, data, first }: { block: Block; data: ProductPageData
             <Prose><p><Rich text={block.intro} /></p></Prose>
             <ul className="mt-4 grid gap-3 md:grid-cols-2">
               {block.items.map((item) => (
-                <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-                  <Check className="mt-1 h-4 w-4 shrink-0" style={{ color: theme.accent }} aria-hidden />
+                <li key={shortKey(item)} className="cm-li">
+                  <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: theme.accent }} />
                   {item}
                 </li>
               ))}
@@ -604,14 +605,14 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em]" style={{ color: theme.accent }}>{data.industryLabel}</p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">{data.hero.h1}</h1>
+              <h1 className="cm-h1">{data.hero.h1}</h1>
               <p className="mt-4 text-xl font-semibold leading-snug text-foreground md:text-2xl">{data.hero.subhead}</p>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 {data.hero.paragraphs.map((p) => (
-                  <p key={p}><Rich text={p} /></p>
+                  <p key={shortKey(p)}><Rich text={p} /></p>
                 ))}
               </div>
               <div className="mt-8">
@@ -623,7 +624,7 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
 
           <nav aria-label="On this page" className="mt-12 flex flex-wrap gap-2">
             {data.contents.map((item) => (
-              <a key={item.href} href={item.href} className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary">
+              <a key={item.href} href={item.href} className="cm-pill">
                 {item.label}
               </a>
             ))}
@@ -641,17 +642,17 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
         ))}
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">{data.faqTitle}</h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+        <section id="faq" className="cm-sec">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">{data.faqTitle}</h2>
+            <div className="cm-list">
               {data.faqs.map((faq, index) => (
-                <details key={faq.question} className="group p-5 md:p-6" open={index === 0}>
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                <details key={shortKey(faq.question)} className="group p-5 md:p-6" open={index === 0}>
+                  <summary className="cm-faq-q">
                     <h3>{index + 1}. {faq.question}</h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">{faq.answer}</p>
+                  <p className="cm-intro">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -663,7 +664,7 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
           <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
             <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">{data.finalCta.title}</h2>
             {data.finalCta.paragraphs.map((p) => (
-              <p key={p} className="mt-4 max-w-3xl text-base leading-7 text-white/80">{p}</p>
+              <p key={shortKey(p)} className="mt-4 max-w-3xl text-base leading-7 text-white/80">{p}</p>
             ))}
             <div className="mt-8">
               <CtaPair light label={data.primaryCta} theme={theme} secondary={{ label: "Talk to Our Software Development Team", href: "/contact" }} />
@@ -675,13 +676,13 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
         {/* Related products */}
         {related.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">More in {data.industryLabel}</h2>
+            <h2 className="cx-text2x-fontse-u">More in {data.industryLabel}</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {related.map((item) => (
                 <Link
                   key={item.slug}
                   href={productPath(data.industrySlug, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -692,8 +693,8 @@ export default function ProductSeoPage({ data }: { data: ProductPageData }) {
 
         {/* Sticky mobile CTA */}
         <style>{"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}</style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
-          <Link href="/contact" className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">
+        <div className="cm-mbar">
+          <Link href="/contact" className="cm-cta-m">
             {data.mobileCta}
             <ArrowRight className="h-4 w-4" />
           </Link>

@@ -1,20 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Sparkles } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { iconMap } from "@/data/main-services";
 
+// Non-numeric on purpose: company-level counts ("200+ projects", "10+ years")
+// were unverified and contradicted each other across pages. Same facts as
+// data/main-services-components.js.
 const defaultStats = [
-  { value: "10+", label: "Years shipping digital products" },
-  { value: "200+", label: "Projects launched" },
-  { value: "24/7", label: "Support coverage" },
+  { value: "Written", label: "Scope before build" },
+  { value: "Owned", label: "Code stays with you" },
+  { value: "Remote", label: "Video and phone delivery" },
 ];
 
-export function PageFrame({ children }: { children: React.ReactNode }) {
+/** Shared page chrome. Pass `main` when the page body does not render its own
+ * <main> landmark (several templates did not, so 108 pages had none). */
+export function PageFrame({
+  children,
+  main = false,
+}: {
+  children: React.ReactNode;
+  main?: boolean;
+}) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      {children}
+      {main ? <main id="main-content">{children}</main> : children}
       <Footer />
     </div>
   );
@@ -33,21 +45,25 @@ export function SectionHeading({
   eyebrow,
   title,
   copy,
+  tone = "light",
 }: {
   eyebrow: string;
   title: string;
   copy?: string;
+  /** "dark" for headings placed on a dark section background. */
+  tone?: "light" | "dark";
 }) {
+  const dark = tone === "dark";
   return (
-    <div className="mx-auto max-w-3xl text-center">
-      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+    <div className="cx-mxauto-maxw3x-12">
+      <p className={dark ? "cm-eyebrow !text-white/75" : "cm-eyebrow"}>
         {eyebrow}
       </p>
-      <h2 className="mt-4 text-[clamp(2rem,5vw,4.6rem)] font-semibold leading-[0.98] tracking-tight text-foreground">
+      <h2 className={dark ? "cx-mt4-textcl-d !text-white" : "cx-mt4-textcl-d"}>
         {title}
       </h2>
       {copy ? (
-        <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg">
+        <p className={dark ? "cx-mt5-textba-s !text-white/80" : "cx-mt5-textba-s"}>
           {copy}
         </p>
       ) : null}
@@ -76,10 +92,16 @@ export function Hero({
   return (
     <section className="relative min-h-[92vh] overflow-hidden px-5 pb-16 pt-32 md:px-10 md:pt-40">
       {image ? (
-        <img
+        // next/image: serves WebP at the viewport's width with a srcset
+        // instead of the 150–600 KB source JPEG. Hero photo = LCP, so it is
+        // preloaded (priority) rather than lazy-loaded.
+        <Image
           src={image}
           alt={imageAlt}
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
       ) : (
         <div className="absolute inset-0 bg-secondary" />

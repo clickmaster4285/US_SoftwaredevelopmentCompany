@@ -1,21 +1,31 @@
-import { NextResponse } from "next/server";
+import { readdirSync } from "fs";
+import path from "path";
 import { caseStudies } from "@/content/case-studies";
+import { lastModified, urlsetXml, xmlResponse } from "@/lib/sitemap";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
+export function GET() {
+  let contentFiles: string[] = [];
+  try {
+    contentFiles = readdirSync(path.join(process.cwd(), "content/case-studies"))
+      .filter((name) => /\.(ts|tsx|md|mdx)$/.test(name))
+      .map((name) => `content/case-studies/${name}`);
+  } catch {
+    // Directory missing at runtime: lastmod falls back to the template only.
+  }
+  const template = [
+    "app/case-studies/[slug]/page.tsx",
+    "app/case-studies/[slug]/layout.tsx",
+  ];
 
-export async function GET() {
-  const lastMod = new Date().toISOString().split("T")[0];
-  const urls = Object.keys(caseStudies).map(
-    (slug) =>
-      `  <url>\n    <loc>${siteUrl}/case-studies/${slug}</loc>\n    <lastmod>${lastMod}</lastmod>\n  </url>`,
-  );
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
+  const entries = Object.keys(caseStudies).map((slug) => ({
+    path: `/case-studies/${slug}`,
+    lastmod: lastModified([
+      ...template,
+      ...contentFiles.filter((file) => file.includes(slug)),
+    ]),
+  }));
 
-  return new NextResponse(xml, {
-    headers: {
-      "Content-Type": "application/xml; charset=utf-8",
-    },
-  });
+  return xmlResponse(urlsetXml(entries));
 }

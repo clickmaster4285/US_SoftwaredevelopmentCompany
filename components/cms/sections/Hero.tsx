@@ -1,5 +1,5 @@
 // components/cms/sections/Hero.tsx
-// CMS "hero" in the ClickMasters service-page style.
+// CMS "hero" in the Clickmasters service-page style.
 //   layout "background" (default with an image): full-bleed image + overlay
 //   layout "split": text left, image right
 //   layout "centered" / no image: centred text on the section background

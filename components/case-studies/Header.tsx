@@ -329,7 +329,7 @@ export function ContactForm() {
             </span>
           </button>
 
-          <p className="text-[11px] opacity-40 leading-relaxed">
+          <p className="text-[11px] opacity-70 leading-relaxed">
             We reply within one working day. No marketing emails.
           </p>
         </form>
@@ -475,7 +475,7 @@ export function AtAGlanceSection({
             >
               <div
                 aria-hidden
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+                className="cx-absolu-inset0-23"
                 style={{
                   background:
                     "radial-gradient(circle at 30% 0%, oklch(0.65 0.18 250 / 0.14), transparent 60%)",

@@ -1,6 +1,6 @@
 // components/cms/CmsPageFrame.tsx
 // Wraps a page created in the ERP in the site's own chrome:
-// - Navbar / Footer are the ClickMasters components. ERP navigation (A1 site
+// - Navbar / Footer are the Clickmasters components. ERP navigation (A1 site
 //   navigation, the page's context.navigation, or the page's header/footer
 //   section) replaces their links only when the ERP provides some.
 // - Colours are the site's own theme (globals.css) by default, so created

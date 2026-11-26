@@ -1,5 +1,5 @@
 // components/cms/CmsSectionRenderer.tsx
-// Maps ERP/CMS section JSON (A4) onto ClickMasters components. The CMS owns the
+// Maps ERP/CMS section JSON (A4) onto Clickmasters components. The CMS owns the
 // content; the look always comes from this site's design system.
 // - Sections are already sorted by `order` (lib/cms/cms.ts).
 // - Unknown types are skipped silently.

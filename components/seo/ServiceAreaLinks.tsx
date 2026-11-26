@@ -1,14 +1,18 @@
 import {
   extraLinksForPath,
   locationLinksForPath,
+  productLinksForPath,
 } from "@/lib/contextual-links";
 import { InlineLinks } from "./InlineLinks";
 
 export default function ServiceAreaLinks({ path }: { path: string }) {
   const locations = locationLinksForPath(path);
   const extras = extraLinksForPath(path);
+  const products = productLinksForPath(path);
 
-  if (locations.length === 0 && extras.length === 0) return null;
+  if (locations.length === 0 && extras.length === 0 && products.length === 0) {
+    return null;
+  }
 
   return (
     <section className="border-t border-border bg-background px-5 py-12 md:px-10">
@@ -19,6 +23,18 @@ export default function ServiceAreaLinks({ path }: { path: string }) {
         {extras.length > 0 ? (
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             See also <InlineLinks links={extras} />.
+          </p>
+        ) : null}
+        {products.length > 0 ? (
+          <p className="mt-4 text-lg leading-8 text-muted-foreground">
+            Systems we build in this area include{" "}
+            <InlineLinks links={products} />. Browse every industry in the{" "}
+            <InlineLinks
+              links={[
+                { href: "/products", label: "software products catalogue" },
+              ]}
+            />
+            .
           </p>
         ) : null}
         {locations.length > 0 ? (

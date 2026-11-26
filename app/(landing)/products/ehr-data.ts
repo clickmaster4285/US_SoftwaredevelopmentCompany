@@ -9,7 +9,7 @@ export const ehrTitle =
   "Electronic Health Records Software | Custom EHR Development";
 
 export const ehrDescription =
-  "Custom Electronic Health Records Software for hospitals, clinics and medical groups. Interoperable, secure EHR built around your workflows. Get a consultation.";
+  "Custom electronic health records (EHR) software for hospitals, clinics and medical groups: interoperable, secure and built around your workflows.";
 
 export const atAGlance = [
   [
@@ -1204,7 +1204,7 @@ export const ehrFaqs = [
   },
   {
     question:
-      "Can ClickMasters develop custom Electronic Health Records software?",
+      "Can Clickmasters develop custom Electronic Health Records software?",
     answer:
       "Yes. Clickmasters develops custom healthcare software, including EHR platforms, covering requirement discovery, clinical workflow analysis, UI/UX design, web and mobile development, healthcare integrations, security implementation, quality assurance, deployment and ongoing support. Every project starts with a written scope agreed before development begins.",
   },

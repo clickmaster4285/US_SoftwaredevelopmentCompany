@@ -1,3 +1,4 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -10,7 +11,6 @@ import {
   CalendarCheck,
   CalendarRange,
   Check,
-  ChevronRight,
   ClipboardList,
   Clock,
   Coffee,
@@ -23,7 +23,7 @@ import {
   Smartphone,
   Zap,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -88,7 +88,7 @@ const ICONS: Record<string, LucideIcon> = {
   Smartphone,
 };
 
-const ACCENT = "#0284c7";
+const ACCENT = "#0369a1";
 const DARK = "#071c2b";
 
 export function attendanceSchema() {
@@ -177,11 +177,11 @@ function BodyLink({ link }: { link: LinkSpec }) {
 function AppFigure({ image, caption, priority = false }: { image: Img; caption: string; priority?: boolean }) {
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#071c2b] shadow-xl shadow-sky-950/10 ring-1 ring-black/5">
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+      <div className="cm-mock-bar" aria-hidden>
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> attendance.example / concept
         </span>
       </div>
@@ -193,11 +193,11 @@ function AppFigure({ image, caption, priority = false }: { image: Img; caption: 
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
-        className="block h-auto w-full bg-[#f3f5fb]"
+        className="cm-img"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -213,7 +213,7 @@ function DiagramFigure({ image, caption, className = "" }: { image: Img; caption
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">{caption}</figcaption>
     </figure>
@@ -252,8 +252,8 @@ function CheckList({ items, className = "" }: { items: readonly string[]; classN
   return (
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-          <Check className="mt-1 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(item)} className="cm-li">
+          <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
           {item}
         </li>
       ))}
@@ -273,12 +273,12 @@ function TitledList({
   return (
     <ul className={`grid gap-4 ${className}`}>
       {items.map(([title, text]) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <p className="flex items-start gap-2 font-semibold leading-snug">
-            <Icon className="mt-0.5 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(title)} className="cm-card5">
+          <p className="cm-ttl">
+            <Icon className="cm-ic05" style={{ color: ACCENT }} aria-hidden />
             {title}
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p2">{text}</p>
         </li>
       ))}
     </ul>
@@ -295,17 +295,17 @@ function NumberedCards({
   return (
     <ol className={`grid gap-4 ${className}`}>
       {items.map(([title, text], index) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <div className="flex items-center gap-3">
+        <li key={shortKey(title)} className="cm-card5">
+          <div className="cx-flex-itemsc-h">
             <span
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+              className="cm-num"
               style={{ backgroundColor: ACCENT }}
             >
               {index + 1}
             </span>
             <p className="font-semibold">{title}</p>
           </div>
-          <p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p3">{text}</p>
         </li>
       ))}
     </ol>
@@ -315,7 +315,7 @@ function NumberedCards({
 function Note({ children }: { children: ReactNode }) {
   return (
     <div
-      className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
+      className="cm-note"
       style={{ borderColor: ACCENT }}
     >
       {children}
@@ -334,21 +334,21 @@ function Caution({ children }: { children: ReactNode }) {
 function FeatureCard({ feature }: { feature: AttendanceFeature }) {
   const Icon = ICONS[feature.icon] ?? ClipboardList;
   return (
-    <article className="flex flex-col rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-center gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e0f2fe]">
-          <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
+    <article className="cm-card6c">
+      <div className="cx-flex-itemsc-5">
+        <span className="cx-flex-h11-1x">
+          <Icon className="h-5 w-5 text-[#0369a1]" aria-hidden />
         </span>
-        <h3 className="text-lg font-semibold leading-snug">{feature.title}</h3>
+        <h3 className="cm-h3">{feature.title}</h3>
       </div>
       {feature.note ? (
         <p className="mt-3 inline-flex w-fit rounded-full bg-[#fef3c7] px-2.5 py-0.5 text-xs font-medium text-[#92400e]">
           {feature.note}
         </p>
       ) : null}
-      <p className="mt-4 text-sm leading-6 text-muted-foreground">{feature.does}</p>
+      <p className="cm-p4">{feature.does}</p>
       <div className="mt-4 rounded-xl bg-[#f0f9ff] px-3 py-2 text-sm leading-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.12em]" style={{ color: ACCENT }}>
+        <p className="cx-textxs-fontse-1p" style={{ color: ACCENT }}>
           How it helps
         </p>
         <p className="text-muted-foreground">{feature.helps}</p>
@@ -388,15 +388,15 @@ export default function AttendancePage() {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em]" style={{ color: ACCENT }}>
                 {INDUSTRY_LABEL}
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Employee Attendance Management System for Accurate, Payroll-Ready Time Records
+              <h1 className="cm-h1">
+                Employee Attendance Management System for Payroll-Ready Time Records
               </h1>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 <p>
                   Paper sign-in sheets, shared spreadsheets and texts that say &quot;running late&quot;
                   don&apos;t add up to reliable time records. Supervisors chase missing punches, HR
@@ -427,7 +427,7 @@ export default function AttendancePage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -497,7 +497,7 @@ export default function AttendancePage() {
           </Prose>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
-              <FeatureCard key={feature.title} feature={feature} />
+              <FeatureCard key={shortKey(feature.title)} feature={feature} />
             ))}
           </div>
           <H3 className="mt-16">Attendance Management Modules</H3>
@@ -542,7 +542,7 @@ export default function AttendancePage() {
         <Section id="mobile-attendance" eyebrow="Field and remote" title="Employee Check-In, Mobile and Field Attendance">
           <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
             <div>
-              <p className="text-base leading-7 text-muted-foreground">
+              <p className="cx-textba-leadin-1n">
                 An employee attendance tracker app, built as an employee attendance management system
                 app, is the attendance system for people who don&apos;t start the day at a fixed desk
                 or time clock. A well-designed mobile attendance app:
@@ -636,9 +636,9 @@ export default function AttendancePage() {
           </Prose>
           <ol className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {workflowSteps.map((step, index) => (
-              <li key={step} className="flex gap-4 rounded-2xl border border-border bg-white p-4 text-sm leading-6 text-muted-foreground">
+              <li key={shortKey(step)} className="cx-flex-gap4-2g">
                 <span
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                  className="cm-num8"
                   style={{ backgroundColor: "#e0f2fe", color: ACCENT }}
                 >
                   {index + 1}
@@ -707,10 +707,10 @@ export default function AttendancePage() {
           />
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {integrations.map(([title, text]) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
+              <li key={shortKey(title)} className="cm-card5">
                 <Plug className="h-4 w-4" style={{ color: ACCENT }} aria-hidden />
-                <p className="mt-3 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cx-mt3-fontse-2u">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ul>
@@ -727,7 +727,7 @@ export default function AttendancePage() {
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
               <H3>Attendance Software vs. HRMS</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 An HRMS manages the whole employee lifecycle: records, hiring, onboarding, leave
                 policy, performance and self-service. Attendance software focuses on when people
                 actually work. Many organizations run attendance as a module of, or an integration
@@ -742,7 +742,7 @@ export default function AttendancePage() {
             </div>
             <div>
               <H3>Attendance Software vs. Payroll</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Payroll calculates pay, deductions and withholding. Attendance software provides the
                 approved hours that hourly and shift-based pay depends on. The cleaner the handoff, the
                 fewer corrections payroll has to make. If you need pay runs, deductions and payslips as
@@ -791,12 +791,12 @@ export default function AttendancePage() {
         <Section id="implementation" eyebrow="Delivery" title="Attendance Software Implementation">
           <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {implementationSteps.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
+              <li key={shortKey(title)} className="cm-card5">
+                <span className="cm-label" style={{ color: ACCENT }}>
                   Step {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -815,7 +815,7 @@ export default function AttendancePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
               How pricing works
             </p>
-            <p className="mt-3 text-base leading-7 text-muted-foreground">
+            <p className="cx-mt3-textba-3c">
               Ready-made attendance software is usually priced per employee per month, with hardware
               priced separately. Custom attendance systems are scoped and quoted individually.
               Clickmasters agrees on scope, timeline and quote before development starts.
@@ -827,17 +827,17 @@ export default function AttendancePage() {
         <Section id="choose" eyebrow="Evaluation" title="How to Choose an Attendance Management System">
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {selectionQuestions.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <p className="flex items-center gap-3 font-semibold">
+              <li key={shortKey(title)} className="cm-card5">
+                <p className="cx-flex-itemsc-1s">
                   <span
-                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                    className="cm-num7"
                     style={{ backgroundColor: "#e0f2fe", color: ACCENT }}
                   >
                     {index + 1}
                   </span>
                   {title}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -892,21 +892,21 @@ export default function AttendancePage() {
         </Section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+        <section id="faq" className="cm-sec">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Employee Attendance Management Systems
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {attendanceFaqs.map((faq, index) => (
-                <details key={faq.question} className="group p-5 md:p-6" open={index === 0}>
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                <details key={shortKey(faq.question)} className="group p-5 md:p-6" open={index === 0}>
+                  <summary className="cm-faq-q">
                     <h3>
                       {index + 1}. {faq.question}
                     </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">{faq.answer}</p>
+                  <p className="cm-intro">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -917,7 +917,7 @@ export default function AttendancePage() {
         <section className="border-t border-border text-white" style={{ backgroundColor: DARK }}>
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Build an Attendance System Your Teams and Payroll Can Trust
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -941,7 +941,7 @@ export default function AttendancePage() {
               <p className="text-sm font-semibold">Our recommendation covers:</p>
               <ul className="mt-4 space-y-3">
                 {["Configure, integrate or build", "Clock-in methods for each group", "HR, payroll and ERP integrations", "A scoped next step"].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(item)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#7dd3fc] text-[#071c2b]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -956,13 +956,13 @@ export default function AttendancePage() {
         {/* Related products (site template block) */}
         {relatedProducts.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">More in {INDUSTRY_LABEL}</h2>
+            <h2 className="cx-text2x-fontse-u">More in {INDUSTRY_LABEL}</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {relatedProducts.map((item) => (
                 <Link
                   key={item.slug}
                   href={productPath(INDUSTRY_SLUG, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -973,10 +973,10 @@ export default function AttendancePage() {
 
         {/* Sticky mobile CTA */}
         <style>{"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}</style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Discuss Your Attendance Requirements
             <ArrowRight className="h-4 w-4" />

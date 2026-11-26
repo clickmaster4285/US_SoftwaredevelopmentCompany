@@ -666,7 +666,7 @@ const baseServices = serviceMenuSections.flatMap((section) =>
       serviceName: item.title,
       heroImage:
         "/images/photo-1517245386807-bb43f82c33c4.jpg",
-      metaDescription: `${item.title} services by ClickMasters. Expert ${item.title.toLowerCase()} for scalable, secure, and business-focused digital products.`,
+      metaDescription: `${item.title} services by Clickmasters. Expert ${item.title.toLowerCase()} for scalable, secure, and business-focused digital products.`,
       lead: `Our ${item.title.toLowerCase()} services help you plan, build, and scale with clear timelines, quality engineering, and long-term support.`,
       highlights: [
         `Business-aligned delivery for ${item.title.toLowerCase()}`,
@@ -697,10 +697,10 @@ const customSoftwareDevelopmentOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Custom Software Development Company | USA, Europe, Canada | ClickMasters",
+    "Custom Software Development Company | USA, Europe, Canada | Clickmasters",
   metaDescription:
-    "ClickMasters builds custom software solutions - web apps, SaaS platforms, enterprise systems, and APIs - for B2B companies in the USA, Europe, Canada & Australia. Get a free strategy call.",
-  lead: "ClickMasters delivers end-to-end custom software development for B2B companies in the USA, Europe, Canada, and Australia. From SaaS platforms to enterprise systems, we build software that solves real business problems and compounds in value over time.",
+    "Clickmasters builds custom software solutions - web apps, SaaS platforms, enterprise systems, and APIs - for B2B companies in the USA, Europe, Canada & Australia. Get a free strategy call.",
+  lead: "Clickmasters delivers end-to-end custom software development for B2B companies in the USA, Europe, Canada, and Australia. From SaaS platforms to enterprise systems, we build software that solves real business problems and compounds in value over time.",
   highlights: [
     "MVP to Enterprise",
     "Fixed + Agile Engagements",
@@ -983,12 +983,12 @@ const customSoftwareDevelopmentOverride = {
     {
       question: "How much does it cost to develop custom software?",
       answer:
-        "Custom software development costs range from $8,000 for a simple MVP to $250,000+ for a full enterprise system. The primary cost drivers are scope complexity, number of integrations, team size, compliance requirements, and timeline compression. ClickMasters provides fixed-price proposals based on a scoped discovery session, so you know your total investment before development begins.",
+        "Custom software development costs range from $8,000 for a simple MVP to $250,000+ for a full enterprise system. The primary cost drivers are scope complexity, number of integrations, team size, compliance requirements, and timeline compression. Clickmasters provides fixed-price proposals based on a scoped discovery session, so you know your total investment before development begins.",
     },
     {
       question: "How long does custom software development take?",
       answer:
-        "A production-ready MVP takes 6-12 weeks. A full web or mobile application takes 3-6 months. Enterprise software systems take 6-18 months depending on scope. ClickMasters uses 2-week agile sprints, so you see working software every two weeks not just at the end of the project.",
+        "A production-ready MVP takes 6-12 weeks. A full web or mobile application takes 3-6 months. Enterprise software systems take 6-18 months depending on scope. Clickmasters uses 2-week agile sprints, so you see working software every two weeks not just at the end of the project.",
     },
     {
       question: "What is the difference between custom software and SaaS?",
@@ -999,17 +999,17 @@ const customSoftwareDevelopmentOverride = {
       question:
         "Do you work with companies in the USA, UK, Europe, Canada, and Australia?",
       answer:
-        "Yes. ClickMasters delivers custom software development services to B2B clients across North America, Europe, and Australia. We support timezone overlap, async-first communication, and have delivered projects for clients in the USA, UK, Germany, Canada, and Australia. All contracts are in USD or GBP and include NDA and IP assignment as standard.",
+        "Yes. Clickmasters delivers custom software development services to B2B clients across North America, Europe, and Australia. We support timezone overlap, async-first communication, and have delivered projects for clients in the USA, UK, Germany, Canada, and Australia. All contracts are in USD or GBP and include NDA and IP assignment as standard.",
     },
     {
       question: "What happens after the software is launched?",
       answer:
-        "ClickMasters provides post-launch maintenance and support as a standard part of all engagements. This includes a 30-day warranty period, SLA-backed bug resolution, security updates, performance monitoring, and a dedicated channel for feature requests and bug reports. We also offer ongoing development retainers for companies who need continuous feature development and infrastructure management.",
+        "Clickmasters provides post-launch maintenance and support as a standard part of all engagements. This includes a 30-day warranty period, SLA-backed bug resolution, security updates, performance monitoring, and a dedicated channel for feature requests and bug reports. We also offer ongoing development retainers for companies who need continuous feature development and infrastructure management.",
     },
     {
       question: "Who owns the code and intellectual property?",
       answer:
-        "You do 100%. ClickMasters executes a full IP assignment agreement as part of every project contract. All code, documentation, assets, and infrastructure configurations produced during the engagement are transferred to the client upon project completion or the final payment milestone.",
+        "You do 100%. Clickmasters executes a full IP assignment agreement as part of every project contract. All code, documentation, assets, and infrastructure configurations produced during the engagement are transferred to the client upon project completion or the final payment milestone.",
     },
     {
       question: "How do you handle security and compliance?",
@@ -1034,10 +1034,10 @@ const enterpriseSoftwareDevelopmentOverride = {
   heroImage:
     "/images/photo-1460925895917-afdab827c52f.jpg",
   metaTitle:
-    "Enterprise Software Development Company | Custom ERP & B2B Systems | ClickMasters",
+    "Enterprise Software Development Company | Custom ERP & B2B Systems | Clickmasters",
   metaDescription:
-    "ClickMasters builds enterprise software for complex B2B operations - custom ERP, workflow automation, SaaS platforms, and system integrations. Serving USA, Europe, Canada & Australia.",
-  lead: "ClickMasters engineers enterprise software solutions for B2B organizations whose operational complexity has outgrown off the shelf tools. Custom ERP systems, enterprise workflow automation, multi system integrations, and scalable SaaS platforms built to your exact business logic, compliance requirements, and scale targets.",
+    "Clickmasters builds enterprise software for complex B2B operations - custom ERP, workflow automation, SaaS platforms, and system integrations. Serving USA, Europe, Canada & Australia.",
+  lead: "Clickmasters engineers enterprise software solutions for B2B organizations whose operational complexity has outgrown off the shelf tools. Custom ERP systems, enterprise workflow automation, multi system integrations, and scalable SaaS platforms built to your exact business logic, compliance requirements, and scale targets.",
   highlights: [
     "ERP & CRM Systems",
     "Legacy Modernization",
@@ -1372,12 +1372,12 @@ const enterpriseSoftwareDevelopmentOverride = {
     {
       question: "How much does enterprise software development cost?",
       answer:
-        "Enterprise software development costs range from $40,000 for targeted platforms to $200,000+ for full ERP systems. Key cost drivers include scope and number of modules, integration complexity, compliance requirements, team size, and timeline. ClickMasters provides fixed price proposals for clearly scoped phases following a free discovery session, so organizations have full investment visibility before development begins.",
+        "Enterprise software development costs range from $40,000 for targeted platforms to $200,000+ for full ERP systems. Key cost drivers include scope and number of modules, integration complexity, compliance requirements, team size, and timeline. Clickmasters provides fixed price proposals for clearly scoped phases following a free discovery session, so organizations have full investment visibility before development begins.",
     },
     {
       question: "How long does enterprise software development take?",
       answer:
-        "Enterprise software development typically takes 6 to 18 months depending on scope. A focused enterprise platform or integration hub takes 4 to 8 months. A full custom ERP system takes 10 to 18 months. ClickMasters uses phased agile delivery, so organizations see working software every 2 weeks and can launch early modules before the full system is complete.",
+        "Enterprise software development typically takes 6 to 18 months depending on scope. A focused enterprise platform or integration hub takes 4 to 8 months. A full custom ERP system takes 10 to 18 months. Clickmasters uses phased agile delivery, so organizations see working software every 2 weeks and can launch early modules before the full system is complete.",
     },
     {
       question:
@@ -1395,13 +1395,13 @@ const enterpriseSoftwareDevelopmentOverride = {
       question:
         "How do you handle security in enterprise software development?",
       answer:
-        "ClickMasters applies OWASP Application Security Verification Standard (ASVS) Level 2 as a baseline for all enterprise projects, with Level 3 available for high assurance systems. Every enterprise engagement includes security threat modeling during architecture design, static application security testing (SAST) in the CI/CD pipeline, dynamic application security testing (DAST) before launch, and a full penetration test against the production environment before go live. For regulated industries, we align to HIPAA, PCI DSS, ISO 27001, or SOC 2 as applicable.",
+        "Clickmasters applies OWASP Application Security Verification Standard (ASVS) Level 2 as a baseline for all enterprise projects, with Level 3 available for high assurance systems. Every enterprise engagement includes security threat modeling during architecture design, static application security testing (SAST) in the CI/CD pipeline, dynamic application security testing (DAST) before launch, and a full penetration test against the production environment before go live. For regulated industries, we align to HIPAA, PCI DSS, ISO 27001, or SOC 2 as applicable.",
     },
     {
       question:
         "Can you modernize or replace our existing legacy enterprise software?",
       answer:
-        "Yes. ClickMasters has a structured legacy modernization methodology covering three paths: re platforming (moving to cloud without code changes), re architecting (decomposing a monolith into scalable microservices), and rebuilding (greenfield replacement with data migration). We begin with a legacy assessment that produces an Architecture Risk Report and a recommended migration path, phased to minimize operational disruption.",
+        "Yes. Clickmasters has a structured legacy modernization methodology covering three paths: re platforming (moving to cloud without code changes), re architecting (decomposing a monolith into scalable microservices), and rebuilding (greenfield replacement with data migration). We begin with a legacy assessment that produces an Architecture Risk Report and a recommended migration path, phased to minimize operational disruption.",
     },
     {
       question: "Do you offer dedicated enterprise development teams?",
@@ -1420,10 +1420,10 @@ const aiAgentsDevelopmentOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "AI Agents Development Company | Custom Autonomous AI Agents for B2B | ClickMasters",
+    "AI Agents Development Company | Custom Autonomous AI Agents for B2B | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade autonomous AI agents research agents, data agents, workflow agents, and multi-agent systems for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters engineers production-grade AI agent systems for B2B companies across the USA, Europe, Canada, and Australia. Research agents that investigate and synthesize. Data agents that extract, transform, and load. Workflow agents that orchestrate complex business processes end-to-end. Multi-agent systems where specialized agents collaborate on tasks no single model could handle alone.",
+    "Clickmasters builds production-grade autonomous AI agents research agents, data agents, workflow agents, and multi-agent systems for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters engineers production-grade AI agent systems for B2B companies across the USA, Europe, Canada, and Australia. Research agents that investigate and synthesize. Data agents that extract, transform, and load. Workflow agents that orchestrate complex business processes end-to-end. Multi-agent systems where specialized agents collaborate on tasks no single model could handle alone.",
   highlights: [
     "LangGraph & ReAct Agents",
     "Multi-Agent Orchestration",
@@ -1737,7 +1737,7 @@ const aiAgentsDevelopmentOverride = {
     {
       heading:
         "The Agent Reliability Framework Making Non-Deterministic Systems Production-Safe",
-      body: "AI agents are inherently non-deterministic the same input can produce different intermediate steps and outputs across runs. At ClickMasters, we address this with a structured reliability framework applied to every production agent deployment.",
+      body: "AI agents are inherently non-deterministic the same input can produce different intermediate steps and outputs across runs. At Clickmasters, we address this with a structured reliability framework applied to every production agent deployment.",
       items: [
         "Scoped Tool Sets: Agents are given exactly the tools required for their use case not unrestricted access",
         "Deterministic Output Schemas: Structured output APIs constrain final delivery to a validated schema",
@@ -1762,17 +1762,17 @@ const aiAgentsDevelopmentOverride = {
     {
       question: "How much does AI agent development cost?",
       answer:
-        "AI agent development costs range from $12,000 for a single-purpose proof-of-concept to $180,000+ for a multi-agent platform covering several workflows. The primary cost drivers are: architecture complexity (single-agent vs. multi-agent), number of tools and integrations required, reliability engineering scope (audit logging, HITL checkpoints, evaluation harness), and ongoing maintenance requirements. Ongoing costs include LLM API usage (typically $0.01-$0.50 per agent run depending on model and task length), cloud infrastructure, and third-party tool APIs. ClickMasters provides fixed-price proposals after a free feasibility assessment.",
+        "AI agent development costs range from $12,000 for a single-purpose proof-of-concept to $180,000+ for a multi-agent platform covering several workflows. The primary cost drivers are: architecture complexity (single-agent vs. multi-agent), number of tools and integrations required, reliability engineering scope (audit logging, HITL checkpoints, evaluation harness), and ongoing maintenance requirements. Ongoing costs include LLM API usage (typically $0.01-$0.50 per agent run depending on model and task length), cloud infrastructure, and third-party tool APIs. Clickmasters provides fixed-price proposals after a free feasibility assessment.",
     },
     {
       question: "What is LangGraph and why do you use it for AI agents?",
       answer:
-        "LangGraph is an orchestration framework for building stateful, multi-actor AI applications particularly AI agents with complex control flows. It models agent logic as a directed graph where nodes are processing steps and edges define transitions based on state. ClickMasters uses LangGraph as the primary agent orchestration framework because it provides: native support for human-in-the-loop checkpoints (the agent can pause and wait for human input at any graph node), built-in state persistence for long-running agents, structured support for multi-agent coordination, execution checkpointing for recovery from failures mid-run, and deterministic control flow that makes agent behavior auditable and testable. Compared to simpler agent frameworks (LangChain AgentExecutor, AutoGPT), LangGraph gives significantly more control over agent behavior which is required for production deployment.",
+        "LangGraph is an orchestration framework for building stateful, multi-actor AI applications particularly AI agents with complex control flows. It models agent logic as a directed graph where nodes are processing steps and edges define transitions based on state. Clickmasters uses LangGraph as the primary agent orchestration framework because it provides: native support for human-in-the-loop checkpoints (the agent can pause and wait for human input at any graph node), built-in state persistence for long-running agents, structured support for multi-agent coordination, execution checkpointing for recovery from failures mid-run, and deterministic control flow that makes agent behavior auditable and testable. Compared to simpler agent frameworks (LangChain AgentExecutor, AutoGPT), LangGraph gives significantly more control over agent behavior which is required for production deployment.",
     },
     {
       question: "How reliable are AI agents in production?",
       answer:
-        "AI agent reliability in production depends almost entirely on the engineering discipline applied during development not the underlying model capability. Without systematic reliability engineering, agents fail frequently: tools are unreliable, LLM reasoning drifts on edge cases, and errors cascade across multi-step workflows. With proper engineering, production agents achieve 85-97% task completion rates for well-scoped use cases. ClickMasters' reliability framework includes: scoped tool sets, deterministic output schemas, human-in-the-loop checkpoints for high-risk actions, full execution audit trails, automatic retry and failure handling, and continuous evaluation against a regression test suite. These are the minimum requirements for any production agent deployment not premium features.",
+        "AI agent reliability in production depends almost entirely on the engineering discipline applied during development not the underlying model capability. Without systematic reliability engineering, agents fail frequently: tools are unreliable, LLM reasoning drifts on edge cases, and errors cascade across multi-step workflows. With proper engineering, production agents achieve 85-97% task completion rates for well-scoped use cases. Clickmasters' reliability framework includes: scoped tool sets, deterministic output schemas, human-in-the-loop checkpoints for high-risk actions, full execution audit trails, automatic retry and failure handling, and continuous evaluation against a regression test suite. These are the minimum requirements for any production agent deployment not premium features.",
     },
     {
       question: "What tasks are AI agents best suited for?",
@@ -1783,17 +1783,17 @@ const aiAgentsDevelopmentOverride = {
       question:
         "How do you prevent AI agents from taking harmful or unintended actions?",
       answer:
-        "Preventing harmful agent actions requires architectural constraints, not just prompt instructions. ClickMasters implements: (1) scoped tool sets agents are given only the tools required for their specific use case; (2) human-in-the-loop checkpoints irreversible or high-risk actions require explicit human approval; (3) read-before-write separation agents first perform read-only verification steps before writing; (4) action audit logging every tool call and its parameters are logged with the reasoning that triggered it; (5) prompt injection detection tool responses are screened for instruction injection attempts; and (6) sandboxed code execution any code generated runs in an isolated environment that cannot affect production systems without explicit deployment approval.",
+        "Preventing harmful agent actions requires architectural constraints, not just prompt instructions. Clickmasters implements: (1) scoped tool sets agents are given only the tools required for their specific use case; (2) human-in-the-loop checkpoints irreversible or high-risk actions require explicit human approval; (3) read-before-write separation agents first perform read-only verification steps before writing; (4) action audit logging every tool call and its parameters are logged with the reasoning that triggered it; (5) prompt injection detection tool responses are screened for instruction injection attempts; and (6) sandboxed code execution any code generated runs in an isolated environment that cannot affect production systems without explicit deployment approval.",
     },
     {
       question: "Can AI agents integrate with our existing enterprise systems?",
       answer:
-        "Yes. System integration is a core component of every ClickMasters agent engagement. We build custom tools that connect agents to your internal and external systems: ERP systems (SAP, Oracle, NetSuite via API), CRM platforms (Salesforce, HubSpot, Dynamics), databases (PostgreSQL, MySQL, MongoDB via SQL/API), document repositories (SharePoint, Confluence, Google Drive, S3), communication platforms (Slack, Teams, email), and any system with a documented REST API. For systems without public APIs, we build middleware connectors. Each integration tool is built with retry logic, error handling, rate limit management, and authentication appropriate for the system ensuring the agent can rely on its tools in production.",
+        "Yes. System integration is a core component of every Clickmasters agent engagement. We build custom tools that connect agents to your internal and external systems: ERP systems (SAP, Oracle, NetSuite via API), CRM platforms (Salesforce, HubSpot, Dynamics), databases (PostgreSQL, MySQL, MongoDB via SQL/API), document repositories (SharePoint, Confluence, Google Drive, S3), communication platforms (Slack, Teams, email), and any system with a documented REST API. For systems without public APIs, we build middleware connectors. Each integration tool is built with retry logic, error handling, rate limit management, and authentication appropriate for the system ensuring the agent can rely on its tools in production.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built a multi-agent system for our research department that now handles the first 70% of our market analysis. The speed and depth of the autonomous execution is a massive competitive advantage.",
+      "Clickmasters built a multi-agent system for our research department that now handles the first 70% of our market analysis. The speed and depth of the autonomous execution is a massive competitive advantage.",
     author: "VP Strategy",
     role: "Global Investment Firm",
   },
@@ -1881,10 +1881,10 @@ const aiAutomationSystemsOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "AI Automation Systems | Intelligent Workflow Automation | ClickMasters",
+    "AI Automation Systems | Intelligent Workflow Automation | Clickmasters",
   metaDescription:
-    "ClickMasters builds AI-powered automation systems intelligent document processing, workflow automation, and decision automation for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds AI-powered automation systems for B2B companies across the USA, Europe, Canada, and Australia. Intelligent document processing that extracts structured data from invoices, contracts, and forms with 95%+ accuracy. LLM-powered workflow automation that routes, categorises, summarises, and responds to inbound content. AI decision systems that apply your business rules to high-volume decisions without a human in the loop for every case. Built with LangChain, LlamaIndex, and your existing systems.",
+    "Clickmasters builds AI-powered automation systems intelligent document processing, workflow automation, and decision automation for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds AI-powered automation systems for B2B companies across the USA, Europe, Canada, and Australia. Intelligent document processing that extracts structured data from invoices, contracts, and forms with 95%+ accuracy. LLM-powered workflow automation that routes, categorises, summarises, and responds to inbound content. AI decision systems that apply your business rules to high-volume decisions without a human in the loop for every case. Built with LangChain, LlamaIndex, and your existing systems.",
   highlights: [
     "LLM Workflow Automation",
     "Intelligent Document Processing",
@@ -2114,7 +2114,7 @@ const aiAutomationSystemsOverride = {
         "Do NOT automate with AI when: the process is already well-handled by rules-based RPA adding LLMs to a purely deterministic process adds cost and latency without value",
         "The decision requires empathy, relationship context, or accountability that an AI cannot provide",
         "The error cost is so high (medical decisions, legal filings with strict liability) that 95% accuracy is insufficient the remaining 5% errors are catastrophic",
-        "ClickMasters will tell you honestly when a simpler rule-based or RPA solution is the correct choice",
+        "Clickmasters will tell you honestly when a simpler rule-based or RPA solution is the correct choice",
       ],
     },
     {
@@ -2177,22 +2177,22 @@ const aiAutomationSystemsOverride = {
     {
       question: "How accurate is AI document processing?",
       answer:
-        "AI document processing accuracy depends on document type and structure. Standardised forms (government forms, insurance forms, tax documents with fixed layouts) achieve 97-99% field extraction accuracy. Semi-structured documents (invoices from recurring vendors consistent but variable layout) achieve 93-97% accuracy after a learning period. Unstructured documents (contracts, emails, legal briefs) achieve 85-92% accuracy for key field extraction. ClickMasters designs all IDP systems with human-in-the-loop review: a confidence threshold is set per field type, and extractions below the threshold are queued for human review rather than processed automatically. This means the overall system accuracy for downstream processes is near-perfect AI handles the high-confidence majority, humans handle the uncertain minority.",
+        "AI document processing accuracy depends on document type and structure. Standardised forms (government forms, insurance forms, tax documents with fixed layouts) achieve 97-99% field extraction accuracy. Semi-structured documents (invoices from recurring vendors consistent but variable layout) achieve 93-97% accuracy after a learning period. Unstructured documents (contracts, emails, legal briefs) achieve 85-92% accuracy for key field extraction. Clickmasters designs all IDP systems with human-in-the-loop review: a confidence threshold is set per field type, and extractions below the threshold are queued for human review rather than processed automatically. This means the overall system accuracy for downstream processes is near-perfect AI handles the high-confidence majority, humans handle the uncertain minority.",
     },
     {
       question: "How do you ensure AI automation decisions are auditable?",
       answer:
-        "Every AI-automated decision in a ClickMasters system is logged with: the input data (document content, email text, or structured data the AI processed), the LLM prompt used (the exact instructions given to the model), the model's response (full output before parsing), the parsed structured output (the extracted fields or decision), the confidence score, and whether the decision was auto-applied or routed for human review. This audit trail is stored in PostgreSQL and retained per the client's data retention policy. For regulated industries (financial services, healthcare, insurance), the audit log includes the human reviewer's identity and review timestamp for every case that required human oversight. ClickMasters can provide the audit log in formats compatible with specific compliance frameworks on request.",
+        "Every AI-automated decision in a Clickmasters system is logged with: the input data (document content, email text, or structured data the AI processed), the LLM prompt used (the exact instructions given to the model), the model's response (full output before parsing), the parsed structured output (the extracted fields or decision), the confidence score, and whether the decision was auto-applied or routed for human review. This audit trail is stored in PostgreSQL and retained per the client's data retention policy. For regulated industries (financial services, healthcare, insurance), the audit log includes the human reviewer's identity and review timestamp for every case that required human oversight. Clickmasters can provide the audit log in formats compatible with specific compliance frameworks on request.",
     },
     {
-      question: "Which AI models does ClickMasters use for automation?",
+      question: "Which AI models does Clickmasters use for automation?",
       answer:
-        "ClickMasters selects AI models based on the specific requirements of each automation task. GPT-4o (OpenAI) is the primary model for document extraction its structured output (JSON mode with function calling) and instruction-following accuracy make it the most reliable for extracting specific fields from documents. Claude 3.5 Sonnet (Anthropic) is used for long-document tasks (contracts, reports) where the larger context window and strong reasoning are advantageous. For latency-sensitive applications (real-time API responses under 500ms), GPT-4o mini or Claude 3.5 Haiku provide significantly lower latency at lower cost, with accuracy sufficient for classification and routing tasks. Model selection is documented in every engagement clients can see which model is used for which task and why.",
+        "Clickmasters selects AI models based on the specific requirements of each automation task. GPT-4o (OpenAI) is the primary model for document extraction its structured output (JSON mode with function calling) and instruction-following accuracy make it the most reliable for extracting specific fields from documents. Claude 3.5 Sonnet (Anthropic) is used for long-document tasks (contracts, reports) where the larger context window and strong reasoning are advantageous. For latency-sensitive applications (real-time API responses under 500ms), GPT-4o mini or Claude 3.5 Haiku provide significantly lower latency at lower cost, with accuracy sufficient for classification and routing tasks. Model selection is documented in every engagement clients can see which model is used for which task and why.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters' AI automation system transformed our back-office operations. We now process five times the document volume with the same team size, and our error rate has vanished.",
+      "Clickmasters' AI automation system transformed our back-office operations. We now process five times the document volume with the same team size, and our error rate has vanished.",
     author: "COO",
     role: "National Logistics Provider",
   },
@@ -2267,10 +2267,10 @@ const aiChatbotDevelopmentOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "AI Chatbot Development Company | Custom LLM Chatbots for B2B | ClickMasters",
+    "AI Chatbot Development Company | Custom LLM Chatbots for B2B | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade AI chatbots customer support AI, internal knowledge assistants, and sales bots for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production-grade AI chatbots for B2B companies in the USA, Europe, Canada, and Australia. Customer support AI that deflects 50-70% of tickets. Internal knowledge assistants that answer employee questions instantly. Sales qualification bots that book meetings 24/7. All built on GPT-4o, Claude, or your chosen LLM integrated into your product, your workflow, and your data.",
+    "Clickmasters builds production-grade AI chatbots customer support AI, internal knowledge assistants, and sales bots for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production-grade AI chatbots for B2B companies in the USA, Europe, Canada, and Australia. Customer support AI that deflects 50-70% of tickets. Internal knowledge assistants that answer employee questions instantly. Sales qualification bots that book meetings 24/7. All built on GPT-4o, Claude, or your chosen LLM integrated into your product, your workflow, and your data.",
   highlights: [
     "RAG-Powered Accuracy",
     "Multi-Channel Integration",
@@ -2545,7 +2545,7 @@ const aiChatbotDevelopmentOverride = {
     },
     {
       heading: "What a Production AI Chatbot Actually Requires",
-      body: "A production AI chatbot is not a prompt wrapped in a chat UI. It requires: a RAG pipeline grounded in your live knowledge base, a conversation state manager that maintains context across turns, tool-use / function calling to take actions in your systems, an escalation engine that routes to humans with full context, a feedback loop that surfaces incorrect answers for correction, and an analytics layer that tracks deflection rate, CSAT, and accuracy drift. ClickMasters builds all of this not as optional add-ons, but as the standard architecture for every chatbot engagement.",
+      body: "A production AI chatbot is not a prompt wrapped in a chat UI. It requires: a RAG pipeline grounded in your live knowledge base, a conversation state manager that maintains context across turns, tool-use / function calling to take actions in your systems, an escalation engine that routes to humans with full context, a feedback loop that surfaces incorrect answers for correction, and an analytics layer that tracks deflection rate, CSAT, and accuracy drift. Clickmasters builds all of this not as optional add-ons, but as the standard architecture for every chatbot engagement.",
       items: [],
     },
     {
@@ -2590,7 +2590,7 @@ const aiChatbotDevelopmentOverride = {
     },
     {
       heading: "The Escalation Anti-Pattern That Kills CSAT",
-      body: "The most common escalation failure: the AI chatbot has no live human agents available (outside business hours, or queue full), forces the user into a dead end with no alternative resolution path, and the user closes the chat in frustration having accomplished nothing. ClickMasters builds async escalation fallbacks into every deployment: ticket creation with AI-generated summary, email callback scheduling, and knowledge base self-service for out-of-hours scenarios. Users who cannot reach a human immediately still get a resolution path.",
+      body: "The most common escalation failure: the AI chatbot has no live human agents available (outside business hours, or queue full), forces the user into a dead end with no alternative resolution path, and the user closes the chat in frustration having accomplished nothing. Clickmasters builds async escalation fallbacks into every deployment: ticket creation with AI-generated summary, email callback scheduling, and knowledge base self-service for out-of-hours scenarios. Users who cannot reach a human immediately still get a resolution path.",
       items: [],
     },
   ],
@@ -2614,7 +2614,7 @@ const aiChatbotDevelopmentOverride = {
       question:
         "Should I build a custom AI chatbot or use Intercom Fin / Zendesk AI?",
       answer:
-        "No-code AI chatbot platforms (Intercom Fin, Zendesk AI, Tidio) are appropriate when your use case is standard, your timeline is short, your message volume is under 20,000/month, and you don't need custom system integrations beyond the platform's native connections. Custom AI chatbot development is more appropriate when you need: custom integrations with proprietary or non-standard systems, full control over retrieval architecture for higher accuracy, complex escalation logic, compliance controls (HIPAA, SOC 2), data ownership requirements, or when platform per-conversation pricing at your scale exceeds the cost of a custom build. ClickMasters will recommend the correct approach including a platform if that's genuinely right for your situation.",
+        "No-code AI chatbot platforms (Intercom Fin, Zendesk AI, Tidio) are appropriate when your use case is standard, your timeline is short, your message volume is under 20,000/month, and you don't need custom system integrations beyond the platform's native connections. Custom AI chatbot development is more appropriate when you need: custom integrations with proprietary or non-standard systems, full control over retrieval architecture for higher accuracy, complex escalation logic, compliance controls (HIPAA, SOC 2), data ownership requirements, or when platform per-conversation pricing at your scale exceeds the cost of a custom build. Clickmasters will recommend the correct approach including a platform if that's genuinely right for your situation.",
     },
     {
       question: "How do you ensure the AI chatbot gives accurate answers?",
@@ -2625,22 +2625,22 @@ const aiChatbotDevelopmentOverride = {
       question:
         "Can the AI chatbot integrate with Salesforce, Zendesk, or our custom systems?",
       answer:
-        "Yes. System integration is a core component of every ClickMasters chatbot engagement. We integrate with Zendesk (tickets, articles, CSAT), Freshdesk, Intercom, Salesforce (CRM and Service Cloud), HubSpot, Microsoft Dynamics, Calendly, Google Calendar, Shopify, Stripe, and any system with a REST API. For proprietary or legacy systems without documented APIs, we design a middleware integration layer. Transactional chatbots use OpenAI function calling or Anthropic tool use to invoke these integrations mid-conversation, enabling the chatbot to look up live data, create records, and trigger actions in your systems.",
+        "Yes. System integration is a core component of every Clickmasters chatbot engagement. We integrate with Zendesk (tickets, articles, CSAT), Freshdesk, Intercom, Salesforce (CRM and Service Cloud), HubSpot, Microsoft Dynamics, Calendly, Google Calendar, Shopify, Stripe, and any system with a REST API. For proprietary or legacy systems without documented APIs, we design a middleware integration layer. Transactional chatbots use OpenAI function calling or Anthropic tool use to invoke these integrations mid-conversation, enabling the chatbot to look up live data, create records, and trigger actions in your systems.",
     },
     {
       question: "How long does it take to build and deploy an AI chatbot?",
       answer:
-        "A focused single-use-case AI chatbot takes 6-10 weeks from discovery to live deployment. A full customer support AI with helpdesk integration, escalation engine, and analytics dashboard takes 8-14 weeks. A multi-channel enterprise chatbot platform takes 4-8 months. The timeline is primarily determined by knowledge base preparation complexity (the most time-consuming phase), the number of system integrations, and the number of channels being deployed. ClickMasters deploys to a staging environment and runs against real user query test sets from week 4 so you evaluate accuracy before launch, not after.",
+        "A focused single-use-case AI chatbot takes 6-10 weeks from discovery to live deployment. A full customer support AI with helpdesk integration, escalation engine, and analytics dashboard takes 8-14 weeks. A multi-channel enterprise chatbot platform takes 4-8 months. The timeline is primarily determined by knowledge base preparation complexity (the most time-consuming phase), the number of system integrations, and the number of channels being deployed. Clickmasters deploys to a staging environment and runs against real user query test sets from week 4 so you evaluate accuracy before launch, not after.",
     },
     {
       question: "What happens after the AI chatbot is launched?",
       answer:
-        "Post-launch, the chatbot requires ongoing attention to maintain and improve performance. ClickMasters provides a 30-day post-launch warranty covering issues attributable to our implementation. Beyond the warranty period, we offer maintenance retainers covering: weekly knowledge base updates based on unanswered question tracking, monthly accuracy evaluation runs with improvement recommendations, model upgrade migrations when new foundation models improve on current performance, new intent and integration additions, and channel expansion. A chatbot that is not actively maintained will see accuracy degrade as your knowledge base and product evolve.",
+        "Post-launch, the chatbot requires ongoing attention to maintain and improve performance. Clickmasters provides a 30-day post-launch warranty covering issues attributable to our implementation. Beyond the warranty period, we offer maintenance retainers covering: weekly knowledge base updates based on unanswered question tracking, monthly accuracy evaluation runs with improvement recommendations, model upgrade migrations when new foundation models improve on current performance, new intent and integration additions, and channel expansion. A chatbot that is not actively maintained will see accuracy degrade as your knowledge base and product evolve.",
     },
   ],
   testimonial: {
     quote:
-      "Our ClickMasters chatbot deflects 58% of Tier 1 support tickets. Response time dropped from 4 hours to under 2 minutes. Our support team now focuses on complex issues, not password resets.",
+      "Our Clickmasters chatbot deflects 58% of Tier 1 support tickets. Response time dropped from 4 hours to under 2 minutes. Our support team now focuses on complex issues, not password resets.",
     author: "VP of Customer Experience",
     role: "B2B SaaS Company",
   },
@@ -2722,10 +2722,10 @@ const aiModelDevelopmentOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "AI Model Development | Fine-Tuning, Custom Models & MLOps | ClickMasters",
+    "AI Model Development | Fine-Tuning, Custom Models & MLOps | Clickmasters",
   metaDescription:
-    "ClickMasters builds and fine-tunes AI models custom LLM fine-tuning, classification models, and MLOps pipelines for B2B companies needing proprietary AI beyond off-the-shelf APIs.",
-  lead: "ClickMasters builds and fine-tunes AI models for B2B companies across the USA, Europe, Canada, and Australia. LLM fine-tuning (GPT-4o, Llama 3, Mistral) for domain-specific accuracy on your proprietary terminology and output formats. Custom classification and extraction models (BERT, RoBERTa, DistilBERT) for production efficiency. MLOps pipelines for training, evaluation, versioning, and deployment. Self-hosted models on your infrastructure when data cannot leave your environment.",
+    "Clickmasters builds and fine-tunes AI models custom LLM fine-tuning, classification models, and MLOps pipelines for B2B companies needing proprietary AI beyond off-the-shelf APIs.",
+  lead: "Clickmasters builds and fine-tunes AI models for B2B companies across the USA, Europe, Canada, and Australia. LLM fine-tuning (GPT-4o, Llama 3, Mistral) for domain-specific accuracy on your proprietary terminology and output formats. Custom classification and extraction models (BERT, RoBERTa, DistilBERT) for production efficiency. MLOps pipelines for training, evaluation, versioning, and deployment. Self-hosted models on your infrastructure when data cannot leave your environment.",
   highlights: [
     "LLM Fine-Tuning (GPT-4o / Llama 3)",
     "Custom Classification Models",
@@ -2961,7 +2961,7 @@ const aiModelDevelopmentOverride = {
       items: [
         "Fine-tune when: you need the model to respond in a specific format that prompt engineering cannot reliably produce, you need domain-specific vocabulary and reasoning not in the base model's training, or you need to reduce tokens per response",
         "Use RAG when: you need the model to know current or proprietary facts, you need source attribution, or the information changes frequently",
-        "Most organisations that ask for fine-tuning actually need RAG ClickMasters will identify the correct solution in the scoping engagement",
+        "Most organisations that ask for fine-tuning actually need RAG Clickmasters will identify the correct solution in the scoping engagement",
       ],
     },
   ],
@@ -2969,17 +2969,17 @@ const aiModelDevelopmentOverride = {
     {
       question: "When should I fine-tune an LLM vs. use RAG?",
       answer:
-        "Fine-tuning and RAG solve different problems and are often used together. Use RAG when: the model needs access to specific, current, or proprietary facts, the information changes frequently, or you need source citations. Use fine-tuning when: the model needs to behave differently adopt specific response format, use domain vocabulary consistently, follow particular reasoning patterns, or match brand tone in ways prompt engineering cannot reliably achieve. Fine-tuning teaches style and behaviour; RAG provides knowledge. Most organisations asking for fine-tuning actually need RAG ClickMasters identifies the correct solution before any training begins.",
+        "Fine-tuning and RAG solve different problems and are often used together. Use RAG when: the model needs access to specific, current, or proprietary facts, the information changes frequently, or you need source citations. Use fine-tuning when: the model needs to behave differently adopt specific response format, use domain vocabulary consistently, follow particular reasoning patterns, or match brand tone in ways prompt engineering cannot reliably achieve. Fine-tuning teaches style and behaviour; RAG provides knowledge. Most organisations asking for fine-tuning actually need RAG Clickmasters identifies the correct solution before any training begins.",
     },
     {
       question: "What is LoRA and why is it used for LLM fine-tuning?",
       answer:
-        "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that trains small adapter matrices alongside frozen base model weights. A 7B parameter Llama model has 7 billion weights requiring massive GPU memory. LoRA trains adapters representing 0.1-1% of original parameters reducing VRAM requirements by 75-90% and training cost proportionally. QLoRA combines 4-bit quantisation with LoRA enabling 70B model fine-tuning on a single consumer GPU that would otherwise require 8 high-end server GPUs. ClickMasters uses LoRA/QLoRA for open-source model fine-tuning as default.",
+        "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that trains small adapter matrices alongside frozen base model weights. A 7B parameter Llama model has 7 billion weights requiring massive GPU memory. LoRA trains adapters representing 0.1-1% of original parameters reducing VRAM requirements by 75-90% and training cost proportionally. QLoRA combines 4-bit quantisation with LoRA enabling 70B model fine-tuning on a single consumer GPU that would otherwise require 8 high-end server GPUs. Clickmasters uses LoRA/QLoRA for open-source model fine-tuning as default.",
     },
     {
       question: "How much training data do I need for fine-tuning?",
       answer:
-        "For format and style fine-tuning: 50-200 high-quality examples. For domain adaptation: 500-2,000 examples covering production input range. For complex reasoning tasks: 1,000-5,000+ examples. Quality matters far more than quantity 100 carefully curated examples consistently outperform 10,000 examples with label noise or format inconsistency. ClickMasters includes dataset quality review as part of every fine-tuning engagement.",
+        "For format and style fine-tuning: 50-200 high-quality examples. For domain adaptation: 500-2,000 examples covering production input range. For complex reasoning tasks: 1,000-5,000+ examples. Quality matters far more than quantity 100 carefully curated examples consistently outperform 10,000 examples with label noise or format inconsistency. Clickmasters includes dataset quality review as part of every fine-tuning engagement.",
     },
     {
       question: "What is MLOps and when do I need it?",
@@ -2989,7 +2989,7 @@ const aiModelDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "The custom demand forecasting model ClickMasters built for us outperformed our previous vendor by 18%. Their attention to data quality and feature engineering was the key differentiator.",
+      "The custom demand forecasting model Clickmasters built for us outperformed our previous vendor by 18%. Their attention to data quality and feature engineering was the key differentiator.",
     author: "Chief Data Officer",
     role: "Global Supply Chain Provider",
   },
@@ -3070,10 +3070,10 @@ const dataEngineeringOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Data Engineering Services | ETL, Data Lakes & Warehousing | ClickMasters",
+    "Data Engineering Services | ETL, Data Lakes & Warehousing | Clickmasters",
   metaDescription:
-    "ClickMasters builds robust data pipelines and infrastructure. ETL, data lakes, and real-time streaming to power your AI and analytics.",
-  lead: "ClickMasters builds the data foundations that power modern B2B enterprises. From scalable ETL pipelines and high-performance data warehouses to real-time event streaming we ensure your data is clean, reliable, and accessible for AI, ML, and business intelligence.",
+    "Clickmasters builds robust data pipelines and infrastructure. ETL, data lakes, and real-time streaming to power your AI and analytics.",
+  lead: "Clickmasters builds the data foundations that power modern B2B enterprises. From scalable ETL pipelines and high-performance data warehouses to real-time event streaming we ensure your data is clean, reliable, and accessible for AI, ML, and business intelligence.",
   highlights: [
     "Scalable ETL Pipelines",
     "Data Warehouse Design",
@@ -3286,7 +3286,7 @@ const dataEngineeringOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built a data infrastructure that unified our siloed SaaS data in just 10 weeks. Our executive team finally has a single source of truth for all our key business metrics.",
+      "Clickmasters built a data infrastructure that unified our siloed SaaS data in just 10 weeks. Our executive team finally has a single source of truth for all our key business metrics.",
     author: "Director of Analytics",
     role: "Mid-Market B2B Tech Company",
   },
@@ -3308,10 +3308,10 @@ const generativeAiSolutionsOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Generative AI Solutions Company | Custom AI Development for B2B | ClickMasters",
+    "Generative AI Solutions Company | Custom AI Development for B2B | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-ready generative AI solutions LLM applications, AI chatbots, RAG systems, and AI agents for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production-grade generative AI solutions for B2B companies in the USA, Europe, Canada, and Australia. Custom LLM applications, RAG-powered knowledge systems, AI chatbots, autonomous agents, and AI automation pipelines engineered to solve real business problems, not to demo in a boardroom.",
+    "Clickmasters builds production-ready generative AI solutions LLM applications, AI chatbots, RAG systems, and AI agents for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production-grade generative AI solutions for B2B companies in the USA, Europe, Canada, and Australia. Custom LLM applications, RAG-powered knowledge systems, AI chatbots, autonomous agents, and AI automation pipelines engineered to solve real business problems, not to demo in a boardroom.",
   highlights: [
     "RAG & LLM Applications",
     "AI Chatbots & Agents",
@@ -3623,7 +3623,7 @@ const generativeAiSolutionsOverride = {
       ],
     },
     {
-      heading: "The ClickMasters AI Production Standard",
+      heading: "The Clickmasters AI Production Standard",
       body: "We do not build AI demos. Every generative AI engagement we deliver includes:",
       items: [
         "A retrieval architecture for domain accuracy (RAG or fine-tuning)",
@@ -3641,7 +3641,7 @@ const generativeAiSolutionsOverride = {
       items: [],
     },
     {
-      heading: "ClickMasters Default AI Architecture Recommendation",
+      heading: "Clickmasters Default AI Architecture Recommendation",
       body: "For the majority of B2B knowledge applications support AI, internal assistants, document Q&A, product search RAG is the correct architecture. It delivers domain accuracy on your live data, is updatable without retraining, is explainable (with citations), and is implementable in 2-6 weeks.",
       items: [],
     },
@@ -3666,17 +3666,17 @@ const generativeAiSolutionsOverride = {
     {
       question: "How much does it cost to build a generative AI solution?",
       answer:
-        "Custom generative AI development costs range from $8,000 for a validated proof of concept to $180,000+ for a full enterprise AI platform. The primary cost drivers are: the complexity of the RAG pipeline or agent architecture, the volume and diversity of data sources to be ingested, integration requirements with existing systems, evaluation rigor required, and whether self-hosted model deployment is needed for data privacy. Ongoing LLM API costs (charged directly by OpenAI, Anthropic, or Google) are separate from development costs and depend on usage volume. ClickMasters provides fixed-price proposals after a free feasibility assessment.",
+        "Custom generative AI development costs range from $8,000 for a validated proof of concept to $180,000+ for a full enterprise AI platform. The primary cost drivers are: the complexity of the RAG pipeline or agent architecture, the volume and diversity of data sources to be ingested, integration requirements with existing systems, evaluation rigor required, and whether self-hosted model deployment is needed for data privacy. Ongoing LLM API costs (charged directly by OpenAI, Anthropic, or Google) are separate from development costs and depend on usage volume. Clickmasters provides fixed-price proposals after a free feasibility assessment.",
     },
     {
       question: "How do you prevent AI hallucinations in production systems?",
       answer:
-        "Preventing AI hallucinations in production requires architecture choices, not just prompting. The primary mitigation strategies are: (1) RAG architecture the LLM answers from retrieved, grounded context rather than relying on parametric memory; (2) structured output schemas constraining the LLM to produce structured, verifiable outputs; (3) confidence scoring routing low-confidence responses to human review; (4) citation requirements prompting the model to cite its source for every factual claim; and (5) automated evaluation continuously measuring hallucination rate on a test set and alerting when it exceeds defined thresholds. ClickMasters implements all five as standard on every production AI engagement.",
+        "Preventing AI hallucinations in production requires architecture choices, not just prompting. The primary mitigation strategies are: (1) RAG architecture the LLM answers from retrieved, grounded context rather than relying on parametric memory; (2) structured output schemas constraining the LLM to produce structured, verifiable outputs; (3) confidence scoring routing low-confidence responses to human review; (4) citation requirements prompting the model to cite its source for every factual claim; and (5) automated evaluation continuously measuring hallucination rate on a test set and alerting when it exceeds defined thresholds. Clickmasters implements all five as standard on every production AI engagement.",
     },
     {
       question: "Is our data safe when building with OpenAI or Anthropic APIs?",
       answer:
-        "Data safety when using LLM APIs depends on your chosen provider's data handling agreements and your implementation choices. OpenAI's API does not use inputs to train models by default under their standard API Terms of Service, and enterprise agreements provide additional data processing addendums. Anthropic offers similar protections. For regulated industries (healthcare, financial services) or organizations with strict data residency requirements, ClickMasters recommends: (a) self-hosted open-source models (Llama 3, Mistral) deployed on your own infrastructure, (b) Azure OpenAI Service for Microsoft Azure-committed clients (your data stays in your Azure tenant), or (c) PII detection and redaction before data is sent to any external API. We configure the appropriate data governance architecture based on your compliance requirements.",
+        "Data safety when using LLM APIs depends on your chosen provider's data handling agreements and your implementation choices. OpenAI's API does not use inputs to train models by default under their standard API Terms of Service, and enterprise agreements provide additional data processing addendums. Anthropic offers similar protections. For regulated industries (healthcare, financial services) or organizations with strict data residency requirements, Clickmasters recommends: (a) self-hosted open-source models (Llama 3, Mistral) deployed on your own infrastructure, (b) Azure OpenAI Service for Microsoft Azure-committed clients (your data stays in your Azure tenant), or (c) PII detection and redaction before data is sent to any external API. We configure the appropriate data governance architecture based on your compliance requirements.",
     },
     {
       question: "What is the difference between an AI chatbot and an AI agent?",
@@ -3687,7 +3687,7 @@ const generativeAiSolutionsOverride = {
       question:
         "How long does it take to build and deploy a generative AI solution?",
       answer:
-        "A validated AI proof of concept takes 3-5 weeks. A production RAG knowledge base system takes 6-12 weeks. A full AI chatbot with escalation, analytics, and channel integrations takes 8-14 weeks. An enterprise AI platform covering multiple use cases takes 4-9 months. Timeline is primarily driven by data preparation complexity, integration requirements, and the number of evaluation iterations required to reach the accuracy threshold. ClickMasters delivers working AI systems to staging every 2 weeks you test against real queries throughout development.",
+        "A validated AI proof of concept takes 3-5 weeks. A production RAG knowledge base system takes 6-12 weeks. A full AI chatbot with escalation, analytics, and channel integrations takes 8-14 weeks. An enterprise AI platform covering multiple use cases takes 4-9 months. Timeline is primarily driven by data preparation complexity, integration requirements, and the number of evaluation iterations required to reach the accuracy threshold. Clickmasters delivers working AI systems to staging every 2 weeks you test against real queries throughout development.",
     },
     {
       question:
@@ -3698,7 +3698,7 @@ const generativeAiSolutionsOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters didn't just build us an AI prototype they built a production system that integrated with our existing workflows and actually got used by our team. The RAG knowledge base alone saved us 15+ engineering hours per week.",
+      "Clickmasters didn't just build us an AI prototype they built a production system that integrated with our existing workflows and actually got used by our team. The RAG knowledge base alone saved us 15+ engineering hours per week.",
     author: "VP of Engineering",
     role: "Enterprise SaaS Company",
   },
@@ -3792,10 +3792,10 @@ const mobileAppDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "Mobile App Development Company | iOS, Android & Cross-Platform | ClickMasters",
+    "Mobile App Development Company | iOS, Android & Cross-Platform | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-ready iOS, Android, and cross-platform mobile apps for B2B companies in the USA, Europe, Canada & Australia. React Native, Flutter, Swift, and Kotlin.",
-  lead: "ClickMasters designs and builds production-ready mobile applications for B2B companies across the USA, Europe, Canada, and Australia. Whether you need a native iOS app, an Android application, or a single cross-platform codebase that runs on both our mobile development team delivers apps your users will actually use, rated highly, and built to scale.",
+    "Clickmasters builds production-ready iOS, Android, and cross-platform mobile apps for B2B companies in the USA, Europe, Canada & Australia. React Native, Flutter, Swift, and Kotlin.",
+  lead: "Clickmasters designs and builds production-ready mobile applications for B2B companies across the USA, Europe, Canada, and Australia. Whether you need a native iOS app, an Android application, or a single cross-platform codebase that runs on both our mobile development team delivers apps your users will actually use, rated highly, and built to scale.",
   highlights: [
     "React Native & Flutter",
     "Swift & Kotlin Native",
@@ -4026,7 +4026,7 @@ const mobileAppDevelopmentOverride = {
   sections: [
     {
       heading: "Mobile App Development Company iOS, Android & Cross-Platform",
-      body: "ClickMasters designs and builds production-ready mobile applications for B2B companies across the USA, Europe, Canada, and Australia. Whether you need a native iOS app, an Android application, or a single cross-platform codebase that runs on both our mobile development team delivers apps your users will actually use, rated highly, and built to scale.",
+      body: "Clickmasters designs and builds production-ready mobile applications for B2B companies across the USA, Europe, Canada, and Australia. Whether you need a native iOS app, an Android application, or a single cross-platform codebase that runs on both our mobile development team delivers apps your users will actually use, rated highly, and built to scale.",
       items: [
         "7.1B smartphone users worldwide by 2025",
         "$935B mobile app market revenue by 2027",
@@ -4048,7 +4048,7 @@ const mobileAppDevelopmentOverride = {
       ],
     },
     {
-      heading: "The ClickMasters Mobile-First Architecture Principle",
+      heading: "The Clickmasters Mobile-First Architecture Principle",
       body: "Every mobile app we build is architected around three non-negotiable requirements from day one: offline-first data sync, API endpoints purpose-built for mobile (lightweight, paginated, optimized for cellular latency), and platform-native UX patterns for both iOS (HIG) and Android (Material Design). These decisions cannot be retrofitted. They are designed in week one or paid for in production.",
       items: [],
     },
@@ -4077,7 +4077,7 @@ const mobileAppDevelopmentOverride = {
       ],
     },
     {
-      heading: "ClickMasters' Default Recommendation for B2B Mobile Apps",
+      heading: "Clickmasters' Default Recommendation for B2B Mobile Apps",
       body: "For the majority of B2B mobile app projects field service tools, portals, logistics apps, sales tools React Native or Flutter is the correct choice. It delivers ~60% of the cost of building two native apps, 70-90% code reuse, near-native performance, and access to 95%+ of device APIs required by typical B2B applications. We recommend native Swift or Kotlin only when the project genuinely requires it: augmented reality, high-frame-rate graphics, deep Bluetooth/NFC hardware integration, or real-time audio/video processing.",
       items: [],
     },
@@ -4099,12 +4099,12 @@ const mobileAppDevelopmentOverride = {
     {
       question: "How much does it cost to develop a mobile app?",
       answer:
-        "Mobile app development costs range from $15,000 for a simple single-platform utility app to $180,000+ for a full enterprise mobile application with offline support, MDM integration, and compliance requirements. The primary cost drivers are: platform choice (iOS only, Android only, or both), feature complexity, offline architecture requirements, backend API development scope, and design complexity. ClickMasters provides fixed-price proposals after a free discovery session. Most B2B mobile apps fall in the $40,000-$100,000 range for a dual-platform cross-platform build.",
+        "Mobile app development costs range from $15,000 for a simple single-platform utility app to $180,000+ for a full enterprise mobile application with offline support, MDM integration, and compliance requirements. The primary cost drivers are: platform choice (iOS only, Android only, or both), feature complexity, offline architecture requirements, backend API development scope, and design complexity. Clickmasters provides fixed-price proposals after a free discovery session. Most B2B mobile apps fall in the $40,000-$100,000 range for a dual-platform cross-platform build.",
     },
     {
       question: "How long does mobile app development take?",
       answer:
-        "A focused B2B utility app takes 8-14 weeks. A full cross-platform mobile app with offline support, integrations, and admin tooling takes 4-7 months. An enterprise mobile app with MDM integration and compliance alignment takes 6-12 months. ClickMasters delivers a TestFlight (iOS) or internal testing track (Android) build every 2 weeks so you test the actual app on a real device throughout development, not just at the end.",
+        "A focused B2B utility app takes 8-14 weeks. A full cross-platform mobile app with offline support, integrations, and admin tooling takes 4-7 months. An enterprise mobile app with MDM integration and compliance alignment takes 6-12 months. Clickmasters delivers a TestFlight (iOS) or internal testing track (Android) build every 2 weeks so you test the actual app on a real device throughout development, not just at the end.",
     },
     {
       question:
@@ -4120,12 +4120,12 @@ const mobileAppDevelopmentOverride = {
     {
       question: "How do you handle offline functionality in mobile apps?",
       answer:
-        "Offline-first architecture is a standard requirement for all B2B field applications at ClickMasters. We implement offline support using: a local SQLite or WatermelonDB database that stores all user-relevant data on-device, a delta sync mechanism that synchronizes only changed records when connectivity is restored, a conflict resolution strategy for data edited offline by multiple users, and a network status indicator so users always know whether they are in online or offline mode. Offline architecture is designed in week one it cannot be retrofitted as an afterthought without significant re-engineering.",
+        "Offline-first architecture is a standard requirement for all B2B field applications at Clickmasters. We implement offline support using: a local SQLite or WatermelonDB database that stores all user-relevant data on-device, a delta sync mechanism that synchronizes only changed records when connectivity is restored, a conflict resolution strategy for data edited offline by multiple users, and a network status indicator so users always know whether they are in online or offline mode. Offline architecture is designed in week one it cannot be retrofitted as an afterthought without significant re-engineering.",
     },
     {
       question: "Do you manage App Store and Google Play Store submission?",
       answer:
-        "Yes. App Store submission management is included in every ClickMasters mobile app engagement. We handle: Apple App Store Connect setup, screenshot production and metadata copywriting, TestFlight beta distribution, App Store Review Guidelines compliance review before submission, and responding to Apple rejection feedback with corrective actions and resubmission. For Android, we manage Google Play Console setup, the internal/closed/open testing track progression, and production release. We do not consider the project complete until the app is live and downloadable in both stores.",
+        "Yes. App Store submission management is included in every Clickmasters mobile app engagement. We handle: Apple App Store Connect setup, screenshot production and metadata copywriting, TestFlight beta distribution, App Store Review Guidelines compliance review before submission, and responding to Apple rejection feedback with corrective actions and resubmission. For Android, we manage Google Play Console setup, the internal/closed/open testing track progression, and production release. We do not consider the project complete until the app is live and downloadable in both stores.",
     },
     {
       question:
@@ -4137,12 +4137,12 @@ const mobileAppDevelopmentOverride = {
       question:
         "What security standards do you apply to mobile app development?",
       answer:
-        "ClickMasters applies the OWASP Mobile Application Security Verification Standard (MASVS) Level 1 as a baseline for all mobile projects, with Level 2 for enterprise or regulated-industry applications. This covers: secure data storage (no sensitive data in plain text, use of iOS Keychain and Android Keystore), secure communication (certificate pinning for high-sensitivity apps, TLS 1.3), authentication (biometric binding, short-lived tokens, secure refresh token rotation), and code protection (obfuscation for sensitive logic, jailbreak/root detection where required). A security assessment is run before every app store submission.",
+        "Clickmasters applies the OWASP Mobile Application Security Verification Standard (MASVS) Level 1 as a baseline for all mobile projects, with Level 2 for enterprise or regulated-industry applications. This covers: secure data storage (no sensitive data in plain text, use of iOS Keychain and Android Keystore), secure communication (certificate pinning for high-sensitivity apps, TLS 1.3), authentication (biometric binding, short-lived tokens, secure refresh token rotation), and code protection (obfuscation for sensitive logic, jailbreak/root detection where required). A security assessment is run before every app store submission.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our field service app that works offline in remote locations. Our technicians can now complete inspections without hunting for signal sync happens automatically when they're back online. The team actually uses it.",
+      "Clickmasters built our field service app that works offline in remote locations. Our technicians can now complete inspections without hunting for signal sync happens automatically when they're back online. The team actually uses it.",
     author: "Operations Director",
     role: "Field Service Organization",
   },
@@ -4165,10 +4165,10 @@ const saasProductDevelopmentOverride = {
   heroImage:
     "/images/photo-1519389950473-47ba0277781c.jpg",
   metaTitle:
-    "SaaS Product Development Company | Build & Launch Your SaaS Platform | ClickMasters",
+    "SaaS Product Development Company | Build & Launch Your SaaS Platform | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-ready SaaS platforms - multi-tenant architecture, billing, auth, and API layer - for startups and B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters designs, engineers, and launches SaaS platforms for founders, operators, and B2B product teams. Multi tenant architecture, subscription billing, SSO authentication, usage based pricing, developer APIs built production ready from day one. We serve clients across the USA, Europe, Canada, and Australia.",
+    "Clickmasters builds production-ready SaaS platforms - multi-tenant architecture, billing, auth, and API layer - for startups and B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters designs, engineers, and launches SaaS platforms for founders, operators, and B2B product teams. Multi tenant architecture, subscription billing, SSO authentication, usage based pricing, developer APIs built production ready from day one. We serve clients across the USA, Europe, Canada, and Australia.",
   highlights: [
     "Multi Tenant Architecture",
     "Stripe / Billing Integration",
@@ -4396,7 +4396,7 @@ const saasProductDevelopmentOverride = {
     {
       name: "HR Tech & Workforce Management",
       description:
-        "GDPR/SOC 2 compliant employee onboarding, shift scheduling, and payroll integrations with ADP/BambooHR.",
+        "GDPR-aware employee onboarding, shift scheduling, and payroll integrations with ADP/BambooHR.",
     },
     {
       name: "Fintech & Payments SaaS",
@@ -4593,10 +4593,10 @@ const websiteDevelopmentOverride = {
   heroImage:
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle:
-    "Website Development Company | B2B Websites & Lead Gen | ClickMasters",
+    "Website Development Company | B2B Websites & Lead Gen | Clickmasters",
   metaDescription:
-    "ClickMasters builds high-performance B2B websites, SaaS marketing sites, and content hubs. Core Web Vitals compliant, SEO-optimized, and CRM-integrated.",
-  lead: "ClickMasters builds corporate websites, SaaS marketing sites, landing pages, and CMS-powered content hubs for B2B companies across the USA, Europe, Canada, and Australia. Every site is built to Google Core Web Vitals 'Good' thresholds, optimized for organic search, integrated with your CRM and marketing automation, and built on a CMS your marketing team can operate without calling a developer.",
+    "Clickmasters builds high-performance B2B websites, SaaS marketing sites, and content hubs. Core Web Vitals compliant, SEO-optimized, and CRM-integrated.",
+  lead: "Clickmasters builds corporate websites, SaaS marketing sites, landing pages, and CMS-powered content hubs for B2B companies across the USA, Europe, Canada, and Australia. Every site is built to Google Core Web Vitals 'Good' thresholds, optimized for organic search, integrated with your CRM and marketing automation, and built on a CMS your marketing team can operate without calling a developer.",
   highlights: [
     "Next.js & Webflow",
     "Core Web Vitals Compliant",
@@ -4792,7 +4792,7 @@ const websiteDevelopmentOverride = {
   tables: [
     {
       title: "B2B Conversion Architecture",
-      headers: ["Conversion Element", "ClickMasters Implementation"],
+      headers: ["Conversion Element", "Clickmasters Implementation"],
       rows: [
         [
           "Primary CTA above fold",
@@ -4881,7 +4881,7 @@ const websiteDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters rebuilt our site on Next.js and our demo requests jumped from 6 to 31 per month. Our marketing team can now update pricing and case studies without ever talking to a developer.",
+      "Clickmasters rebuilt our site on Next.js and our demo requests jumped from 6 to 31 per month. Our marketing team can now update pricing and case studies without ever talking to a developer.",
     author: "Marketing Director",
     role: "B2B Analytics Platform",
   },
@@ -4904,10 +4904,10 @@ const webApplicationDevelopmentOverride = {
   heroImage:
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle:
-    "Web Application Development Company | Custom Web Apps | ClickMasters",
+    "Web Application Development Company | Custom Web Apps | Clickmasters",
   metaDescription:
-    "ClickMasters builds high-performance custom web applications - dashboards, portals, SaaS platforms, and internal tools - for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters engineers high-performance custom web applications for B2B companies across the USA, Europe, Canada, and Australia. From customer portals and operations dashboards to complex SaaS platforms and data-driven internal tools we build web applications that work exactly as your business demands, load in under 2 seconds, and scale without architectural debt.",
+    "Clickmasters builds high-performance custom web applications - dashboards, portals, SaaS platforms, and internal tools - for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters engineers high-performance custom web applications for B2B companies across the USA, Europe, Canada, and Australia. From customer portals and operations dashboards to complex SaaS platforms and data-driven internal tools we build web applications that work exactly as your business demands, load in under 2 seconds, and scale without architectural debt.",
   highlights: [
     "React & Next.js",
     "Node.js & Python Backends",
@@ -5146,7 +5146,7 @@ const webApplicationDevelopmentOverride = {
     },
     {
       heading: "Performance-First Development: Core Web Vitals",
-      body: "Performance is a requirement, not a feature. Every web application ClickMasters delivers is optimized against Google's Core Web Vitals before it goes to production.",
+      body: "Performance is a requirement, not a feature. Every web application Clickmasters delivers is optimized against Google's Core Web Vitals before it goes to production.",
     },
   ],
   tables: [
@@ -5272,7 +5272,7 @@ const webApplicationDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our custom dispatch dashboard in 14 weeks. It reduced our error rate by 73% and our reporting time from 3 hours to 12 minutes. The performance is incredible LCP of 1.4s.",
+      "Clickmasters built our custom dispatch dashboard in 14 weeks. It reduced our error rate by 73% and our reporting time from 3 hours to 12 minutes. The performance is incredible LCP of 1.4s.",
     author: "Director of Operations",
     role: "Mid-Market B2B Logistics Company",
   },
@@ -5295,10 +5295,10 @@ const mvpDevelopmentOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "MVP Development Company | Build Production-Ready MVPs | ClickMasters",
+    "MVP Development Company | Build Production-Ready MVPs | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-ready MVPs for startups in USA, Europe & Canada. 8-12 week delivery, scalable architecture, working auth & payments. Fixed price.",
-  lead: "ClickMasters builds production ready MVPs for startup founders and B2B operators across the USA, Europe, Canada, and Australia. Not a prototype. Not a demo. A live, deployed product with real users, real data, working authentication, payment processing, and the architectural foundation to scale to 100,000 users without a rebuild.",
+    "Clickmasters builds production-ready MVPs for startups in USA, Europe & Canada. 8-12 week delivery, scalable architecture, working auth & payments. Fixed price.",
+  lead: "Clickmasters builds production ready MVPs for startup founders and B2B operators across the USA, Europe, Canada, and Australia. Not a prototype. Not a demo. A live, deployed product with real users, real data, working authentication, payment processing, and the architectural foundation to scale to 100,000 users without a rebuild.",
   highlights: [
     "Live in 8 to 12 Weeks",
     "Architecture That Scales",
@@ -5525,7 +5525,7 @@ const mvpDevelopmentOverride = {
     },
     {
       heading: "What Belongs in Your MVP and What Definitely Does Not",
-      body: "MVP scope decisions are the highest leverage work ClickMasters does with every founding team. Every feature added to the MVP adds 3 to 8 weeks to the timeline and proportional cost. The goal is to learn as fast as possible whether the core value proposition is real.",
+      body: "MVP scope decisions are the highest leverage work Clickmasters does with every founding team. Every feature added to the MVP adds 3 to 8 weeks to the timeline and proportional cost. The goal is to learn as fast as possible whether the core value proposition is real.",
     },
   ],
   tables: [
@@ -5574,7 +5574,7 @@ const mvpDevelopmentOverride = {
     },
     {
       title: "Architecture Decision Comparison",
-      headers: ["Decision", "Prototype Approach", "ClickMasters MVP"],
+      headers: ["Decision", "Prototype Approach", "Clickmasters MVP"],
       rows: [
         [
           "Database design",
@@ -5644,7 +5644,7 @@ const mvpDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "We launched in 10 weeks, raised a seed round 3 months later, and the codebase passed our lead investor's technical due diligence without a single comment. ClickMasters scoped us ruthlessly in week one and we are grateful they did.",
+      "We launched in 10 weeks, raised a seed round 3 months later, and the codebase passed our lead investor's technical due diligence without a single comment. Clickmasters scoped us ruthlessly in week one and we are grateful they did.",
     author: "Founder & CEO",
     role: "B2B SaaS, USA, Seed Funded",
   },
@@ -5667,10 +5667,10 @@ const desktopApplicationDevelopmentOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Desktop Application Development Company | Electron, Tauri & Native | ClickMasters",
+    "Desktop Application Development Company | Electron, Tauri & Native | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade desktop applications using Electron, Tauri, WPF, and Swift for B2B enterprises in the USA, Europe & Canada. OS-level integration.",
-  lead: "ClickMasters builds production grade desktop applications for B2B enterprises across the USA, Europe, Canada, and Australia. Electron and Tauri for cross platform (Windows + macOS + Linux) from web technologies. WPF and WinUI 3 for Windows enterprise. Native macOS in Swift. Professional tools that access the file system, integrate with hardware, appear in the system tray, and work offline capabilities the browser cannot deliver.",
+    "Clickmasters builds production-grade desktop applications using Electron, Tauri, WPF, and Swift for B2B enterprises in the USA, Europe & Canada. OS-level integration.",
+  lead: "Clickmasters builds production grade desktop applications for B2B enterprises across the USA, Europe, Canada, and Australia. Electron and Tauri for cross platform (Windows + macOS + Linux) from web technologies. WPF and WinUI 3 for Windows enterprise. Native macOS in Swift. Professional tools that access the file system, integrate with hardware, appear in the system tray, and work offline capabilities the browser cannot deliver.",
   highlights: [
     "Electron & Tauri",
     "WPF & WinUI 3",
@@ -5866,7 +5866,7 @@ const desktopApplicationDevelopmentOverride = {
     },
     {
       heading: "When a Web App Is the Better Choice",
-      body: "Build a web app (not a desktop app) when users need to access the application from multiple devices or browsers without installation, the application content is primarily informational with no offline or hardware requirements, you need SEO discoverability, or the user base is geographically distributed and cannot be asked to install software. ClickMasters will recommend the correct architecture for your specific requirements.",
+      body: "Build a web app (not a desktop app) when users need to access the application from multiple devices or browsers without installation, the application content is primarily informational with no offline or hardware requirements, you need SEO discoverability, or the user base is geographically distributed and cannot be asked to install software. Clickmasters will recommend the correct architecture for your specific requirements.",
     },
   ],
   tables: [
@@ -6012,7 +6012,7 @@ const desktopApplicationDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our cross-platform Electron application in 11 weeks. The code signing and SCCM deployment package worked first time across our managed enterprise estate. Silent updates have been running perfectly for 8 months.",
+      "Clickmasters built our cross-platform Electron application in 11 weeks. The code signing and SCCM deployment package worked first time across our managed enterprise estate. Silent updates have been running perfectly for 8 months.",
     author: "IT Director",
     role: "Industrial Manufacturing Company, USA",
   },
@@ -6036,8 +6036,8 @@ const apiDevelopmentIntegrationOverride = {
   metaTitle:
     "API Development & Integration Services | REST, GraphQL & Webhooks",
   metaDescription:
-    "ClickMasters builds production-grade APIs and enterprise integrations. REST, GraphQL, Webhooks, and deep system connectivity for B2B companies.",
-  lead: "ClickMasters designs and builds production-grade APIs and enterprise integrations for B2B companies across the USA, Europe, Canada, and Australia. REST APIs that developers love using. GraphQL APIs that eliminate over-fetching. Enterprise integrations that connect Salesforce, SAP, HubSpot, Stripe, and your custom systems into a unified data layer.",
+    "Clickmasters builds production-grade APIs and enterprise integrations. REST, GraphQL, Webhooks, and deep system connectivity for B2B companies.",
+  lead: "Clickmasters designs and builds production-grade APIs and enterprise integrations for B2B companies across the USA, Europe, Canada, and Australia. REST APIs that developers love using. GraphQL APIs that eliminate over-fetching. Enterprise integrations that connect Salesforce, SAP, HubSpot, Stripe, and your custom systems into a unified data layer.",
   highlights: [
     "REST & GraphQL APIs",
     "Webhook Architecture",
@@ -6327,8 +6327,8 @@ const backendDevelopmentOverride = {
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle: "Backend Development Company | Node.js, Python & Go APIs",
   metaDescription:
-    "ClickMasters builds production-grade backend systems. REST & GraphQL APIs, real-time systems, and background job processing for B2B companies.",
-  lead: "ClickMasters designs and builds production-grade backend systems for B2B companies across the USA, Europe, Canada, and Australia. REST and GraphQL APIs. Real-time systems. Background job processing. Auth systems. Data pipelines. Written in Node.js (Fastify), Python (FastAPI), or Go matched to your specific performance and ecosystem requirements.",
+    "Clickmasters builds production-grade backend systems. REST & GraphQL APIs, real-time systems, and background job processing for B2B companies.",
+  lead: "Clickmasters designs and builds production-grade backend systems for B2B companies across the USA, Europe, Canada, and Australia. REST and GraphQL APIs. Real-time systems. Background job processing. Auth systems. Data pipelines. Written in Node.js (Fastify), Python (FastAPI), or Go matched to your specific performance and ecosystem requirements.",
   highlights: [
     "REST & GraphQL APIs",
     "Node.js / Python / Go",
@@ -6589,8 +6589,8 @@ const frontendDevelopmentOverride = {
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle: "Frontend Development Company | React & Next.js Experts",
   metaDescription:
-    "ClickMasters builds production-grade React and Next.js applications for B2B companies. Lighthouse 90+, WCAG 2.1 AA, and TypeScript strict mode as standard.",
-  lead: "ClickMasters builds production-grade frontend applications for B2B companies across the USA, Europe, Canada, and Australia. React SPAs with TypeScript, Zustand, and TanStack Query. Next.js web applications with App Router, Server Components, and sub-second Core Web Vitals. Design systems in Storybook that give your product and design teams a shared language.",
+    "Clickmasters builds production-grade React and Next.js applications for B2B companies. Lighthouse 90+, WCAG 2.1 AA, and TypeScript strict mode as standard.",
+  lead: "Clickmasters builds production-grade frontend applications for B2B companies across the USA, Europe, Canada, and Australia. React SPAs with TypeScript, Zustand, and TanStack Query. Next.js web applications with App Router, Server Components, and sub-second Core Web Vitals. Design systems in Storybook that give your product and design teams a shared language.",
   highlights: [
     "React + TypeScript",
     "Next.js App Router",
@@ -6784,7 +6784,7 @@ const frontendDevelopmentOverride = {
   tables: [
     {
       title: "React Architecture Framework",
-      headers: ["Decision", "ClickMasters Default", "Why Not the Alternative"],
+      headers: ["Decision", "Clickmasters Default", "Why Not the Alternative"],
       rows: [
         [
           "Framework",
@@ -6836,7 +6836,7 @@ const frontendDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "Our dashboard Lighthouse score went from 42 to 94 after ClickMasters took over. The development time per feature has dropped by 30% thanks to the design system they built in Storybook.",
+      "Our dashboard Lighthouse score went from 42 to 94 after Clickmasters took over. The development time per feature has dropped by 30% thanks to the design system they built in Storybook.",
     author: "Product Lead",
     role: "B2B SaaS, USA",
   },
@@ -6861,8 +6861,8 @@ const fullStackDevelopmentOverride = {
   metaTitle:
     "Full Stack Development Company | Next.js, Node.js & Python Experts",
   metaDescription:
-    "ClickMasters builds complete full stack web applications. Next.js, Node.js, Python, PostgreSQL, and AWS deployment for B2B companies.",
-  lead: "ClickMasters builds complete full stack web applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js frontend with TypeScript and Tailwind. Node.js or Python backend with REST or GraphQL APIs. PostgreSQL database with Prisma ORM. Redis caching and BullMQ queues. AWS deployment with CI/CD. One team. One engagement. One product.",
+    "Clickmasters builds complete full stack web applications. Next.js, Node.js, Python, PostgreSQL, and AWS deployment for B2B companies.",
+  lead: "Clickmasters builds complete full stack web applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js frontend with TypeScript and Tailwind. Node.js or Python backend with REST or GraphQL APIs. PostgreSQL database with Prisma ORM. Redis caching and BullMQ queues. AWS deployment with CI/CD. One team. One engagement. One product.",
   highlights: [
     "Next.js + TypeScript Frontend",
     "Node.js / Python Backend",
@@ -7113,8 +7113,8 @@ const microservicesArchitectureOverride = {
   metaTitle:
     "Microservices Architecture Design | Monolith to Microservices Migration",
   metaDescription:
-    "ClickMasters designs and builds scalable microservices architectures. DDD service decomposition, Kubernetes, Kafka, and Strangler Fig migrations for B2B companies.",
-  lead: "ClickMasters designs and builds microservices architectures for B2B companies across the USA, Europe, Canada, and Australia. Service decomposition using domain-driven design. API gateway design and implementation. Event-driven architectures with Kafka and RabbitMQ. Kubernetes orchestration for independent service deployment.",
+    "Clickmasters designs and builds scalable microservices architectures. DDD service decomposition, Kubernetes, Kafka, and Strangler Fig migrations for B2B companies.",
+  lead: "Clickmasters designs and builds microservices architectures for B2B companies across the USA, Europe, Canada, and Australia. Service decomposition using domain-driven design. API gateway design and implementation. Event-driven architectures with Kafka and RabbitMQ. Kubernetes orchestration for independent service deployment.",
   highlights: [
     "DDD Service Decomposition",
     "API Gateway Design",
@@ -7307,7 +7307,7 @@ const microservicesArchitectureOverride = {
       heading: "What is Microservices Architecture?",
       body: `Microservices architecture is an approach where a large application is decomposed into small, independently deployable services each responsible for a single business capability. Each service owns its database and communicates via APIs or events.
 
-While this enables independent scaling and team autonomy, it introduces distributed systems complexity. ClickMasters follows Martin Fowler's "MonolithFirst" pattern, extraction services only when the cost of monolith limitations exceeds the cost of distributed complexity.`,
+While this enables independent scaling and team autonomy, it introduces distributed systems complexity. Clickmasters follows Martin Fowler's "MonolithFirst" pattern, extraction services only when the cost of monolith limitations exceeds the cost of distributed complexity.`,
     },
     {
       heading: "Microservices vs. Monolith Decision Framework",
@@ -7391,10 +7391,10 @@ const progressiveWebDevelopmentOverride = {
   serviceName: "PWA Development",
   heroImage:
     "/images/photo-1547658719-da2b51169166.jpg",
-  metaTitle: "Progressive Web App (PWA) Development Company | ClickMasters",
+  metaTitle: "Progressive Web App (PWA) Development Company | Clickmasters",
   metaDescription:
-    "ClickMasters builds offline-capable, installable Progressive Web Apps (PWA) for B2B companies. 30-50% cost of native apps. Lighthouse 100 PWA score.",
-  lead: "ClickMasters builds Progressive Web Apps for B2B companies across the USA, Europe, Canada, and Australia. Offline-capable field applications for teams working in low-connectivity environments. Installable web apps that appear on the home screen without an App Store submission. Push notification systems that re-engage users without a native app. Built on React or Next.js single codebase, all platforms, Core Web Vitals compliant.",
+    "Clickmasters builds offline-capable, installable Progressive Web Apps (PWA) for B2B companies. 30-50% cost of native apps. Lighthouse 100 PWA score.",
+  lead: "Clickmasters builds Progressive Web Apps for B2B companies across the USA, Europe, Canada, and Australia. Offline-capable field applications for teams working in low-connectivity environments. Installable web apps that appear on the home screen without an App Store submission. Push notification systems that re-engage users without a native app. Built on React or Next.js single codebase, all platforms, Core Web Vitals compliant.",
   highlights: [
     "Offline-First Architecture",
     "Installable (Add to Home Screen)",
@@ -7684,7 +7684,7 @@ const progressiveWebDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "We avoided a $120,000 native app build by choosing a ClickMasters PWA instead. The offline functionality is flawless for our field technicians, and we love shipping updates instantly without waiting for app store reviews.",
+      "We avoided a $120,000 native app build by choosing a Clickmasters PWA instead. The offline functionality is flawless for our field technicians, and we love shipping updates instantly without waiting for app store reviews.",
     author: "Product Manager",
     role: "SaaS & Logistics Company",
   },
@@ -7708,8 +7708,8 @@ const headlessCmsDevelopmentOverride = {
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle: "Headless CMS Development Company | Contentful, Sanity & Strapi",
   metaDescription:
-    "ClickMasters builds omnichannel content systems using Contentful, Sanity, Strapi & Prismic. decoupled architectures with Next.js frontends.",
-  lead: "ClickMasters implements headless CMS architectures for B2B companies across the USA, Europe, Canada, and Australia. Contentful for enterprise content teams. Sanity for custom content workflows. Strapi for self-hosted flexibility. Prismic and Storyblok for marketing-team-managed content. All connected to Next.js frontends that deliver sub-second page loads.",
+    "Clickmasters builds omnichannel content systems using Contentful, Sanity, Strapi & Prismic. decoupled architectures with Next.js frontends.",
+  lead: "Clickmasters implements headless CMS architectures for B2B companies across the USA, Europe, Canada, and Australia. Contentful for enterprise content teams. Sanity for custom content workflows. Strapi for self-hosted flexibility. Prismic and Storyblok for marketing-team-managed content. All connected to Next.js frontends that deliver sub-second page loads.",
   highlights: [
     "Contentful / Sanity / Strapi",
     "Next.js Frontend Development",
@@ -7966,7 +7966,7 @@ const headlessCmsDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "Migrating from WordPress to Contentful with ClickMasters was the best decision we made. Our page load speed improved by 40% and our editorial team can now publish to three channels simultaneously.",
+      "Migrating from WordPress to Contentful with Clickmasters was the best decision we made. Our page load speed improved by 40% and our editorial team can now publish to three channels simultaneously.",
     author: "Content Director",
     role: "B2B Professional Services Firm",
   },
@@ -7990,8 +7990,8 @@ const headlessEcommerceOverride = {
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle: "Headless E-commerce Development | Next.js, Medusa & Shopify API",
   metaDescription:
-    "ClickMasters builds high-performance headless e-commerce storefronts. Decoupled frontends for maximum speed, scale, and design freedom.",
-  lead: "ClickMasters builds composable headless e-commerce storefronts that decouple the buyer experience from the commerce engine. Next.js frontends connected to Shopify Storefront API, Medusa.js, or BigCommerce. Deliver sub-second page loads, unique brand experiences, and omnichannel consistency across web and mobile.",
+    "Clickmasters builds high-performance headless e-commerce storefronts. Decoupled frontends for maximum speed, scale, and design freedom.",
+  lead: "Clickmasters builds composable headless e-commerce storefronts that decouple the buyer experience from the commerce engine. Next.js frontends connected to Shopify Storefront API, Medusa.js, or BigCommerce. Deliver sub-second page loads, unique brand experiences, and omnichannel consistency across web and mobile.",
   highlights: [
     "Next.js & React Frontends",
     "Medusa.js & Shopify API",
@@ -8230,7 +8230,7 @@ const headlessEcommerceOverride = {
       ],
     },
     {
-      heading: "Why Choose ClickMasters",
+      heading: "Why Choose Clickmasters",
       body: "Honest headless recommendation we tell you if a theme-based build is right for your current stage. Rendering strategy expertise applied from first commit. Merchant admin preserved when using Shopify. A/B validation before full cutover. Platform costs not marked up. Fixed-price delivery after free architecture assessment.",
       items: [],
     },
@@ -8318,10 +8318,10 @@ const shopifyDevelopmentOverride = {
   serviceName: "Shopify Development",
   heroImage:
     "/images/photo-1547658719-da2b51169166.jpg",
-  metaTitle: "Shopify & Shopify Plus Development Company | ClickMasters",
+  metaTitle: "Shopify & Shopify Plus Development Company | Clickmasters",
   metaDescription:
-    "ClickMasters builds custom Shopify and Shopify Plus stores. Theme development, app integration, and B2B solutions for scaling brands.",
-  lead: "ClickMasters builds custom Shopify and Shopify Plus stores for B2C and B2B brands. Performance-optimized Liquid themes, custom Shopify App development, and deep ERP integrations. Launch fast, scale reliably, and own your customer experience.",
+    "Clickmasters builds custom Shopify and Shopify Plus stores. Theme development, app integration, and B2B solutions for scaling brands.",
+  lead: "Clickmasters builds custom Shopify and Shopify Plus stores for B2C and B2B brands. Performance-optimized Liquid themes, custom Shopify App development, and deep ERP integrations. Launch fast, scale reliably, and own your customer experience.",
   highlights: [
     "Shopify Plus Specialists",
     "Custom Liquid Themes",
@@ -8554,7 +8554,7 @@ const shopifyDevelopmentOverride = {
     },
     {
       heading: "When Shopify Is NOT the Right Platform",
-      body: "ClickMasters will tell you honestly if another platform is the correct answer before any commercial discussion. Build on WooCommerce or a custom platform when: B2B pricing and catalog requirements exceed Shopify's B2B features even at Plus tier; your product configurator cannot be replicated within Shopify's variant system; integration with legacy ERP systems requires deeper database-level access than Shopify's API exposes; or you need complete data ownership with no platform dependency.",
+      body: "Clickmasters will tell you honestly if another platform is the correct answer before any commercial discussion. Build on WooCommerce or a custom platform when: B2B pricing and catalog requirements exceed Shopify's B2B features even at Plus tier; your product configurator cannot be replicated within Shopify's variant system; integration with legacy ERP systems requires deeper database-level access than Shopify's API exposes; or you need complete data ownership with no platform dependency.",
       items: [],
     },
   ],
@@ -8577,7 +8577,7 @@ const shopifyDevelopmentOverride = {
     {
       question: "How long does it take to build a Shopify store?",
       answer:
-        "A custom Shopify theme takes 5-9 weeks. Theme customization takes 2-4 weeks. Shopify Plus implementation takes 6-10 weeks. Migration from WooCommerce takes 4-8 weeks. Headless Shopify takes 7-12 weeks. Factors affecting timeline: design provided or required, number of custom sections, ERP integration complexity, and data migration inclusion. ClickMasters delivers staging demos every 2 weeks.",
+        "A custom Shopify theme takes 5-9 weeks. Theme customization takes 2-4 weeks. Shopify Plus implementation takes 6-10 weeks. Migration from WooCommerce takes 4-8 weeks. Headless Shopify takes 7-12 weeks. Factors affecting timeline: design provided or required, number of custom sections, ERP integration complexity, and data migration inclusion. Clickmasters delivers staging demos every 2 weeks.",
     },
     {
       question: "Can you migrate our WooCommerce store to Shopify?",
@@ -8588,7 +8588,7 @@ const shopifyDevelopmentOverride = {
       question:
         "How do you improve Shopify store performance and Core Web Vitals?",
       answer:
-        'Common fixes: unoptimized hero images (WebP, preload, srcset), app JavaScript bloat (audit and remove low-ROI apps, defer non-critical scripts), render-blocking fonts (font-display: swap, preconnect), theme code size (remove unused CSS/JS sections), layout shift from apps (explicit placeholder dimensions, load embeds below fold). ClickMasters audits per page type, prioritizes fixes by revenue impact, and delivers Core Web Vitals "Good" thresholds.',
+        'Common fixes: unoptimized hero images (WebP, preload, srcset), app JavaScript bloat (audit and remove low-ROI apps, defer non-critical scripts), render-blocking fonts (font-display: swap, preconnect), theme code size (remove unused CSS/JS sections), layout shift from apps (explicit placeholder dimensions, load embeds below fold). Clickmasters audits per page type, prioritizes fixes by revenue impact, and delivers Core Web Vitals "Good" thresholds.',
     },
     {
       question: "What is Shopify B2B and what can it do?",
@@ -8598,7 +8598,7 @@ const shopifyDevelopmentOverride = {
     {
       question: "Do you build custom Shopify apps?",
       answer:
-        "Yes. ClickMasters builds three types: embedded apps (custom interfaces embedded in Shopify admin via App Bridge), theme app extensions (custom blocks that survive theme updates without code editing), and checkout extensions (custom UI and validation via Checkout Extensibility). Custom apps are appropriate when no App Store app meets requirements, when a unique business process needs admin embedding, or when tight ERP/CRM integration requires bespoke data flow.",
+        "Yes. Clickmasters builds three types: embedded apps (custom interfaces embedded in Shopify admin via App Bridge), theme app extensions (custom blocks that survive theme updates without code editing), and checkout extensions (custom UI and validation via Checkout Extensibility). Custom apps are appropriate when no App Store app meets requirements, when a unique business process needs admin embedding, or when tight ERP/CRM integration requires bespoke data flow.",
     },
     {
       question: "Why choose Shopify over WooCommerce?",
@@ -8613,7 +8613,7 @@ const shopifyDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters delivered our Shopify Plus store in 11 weeks. Our mobile conversion rate jumped by 45% thanks to their focus on checkout performance and custom theme work.",
+      "Clickmasters delivered our Shopify Plus store in 11 weeks. Our mobile conversion rate jumped by 45% thanks to their focus on checkout performance and custom theme work.",
     author: "Brand Manager",
     role: "International Beauty Retailer",
   },
@@ -8635,10 +8635,10 @@ const androidAppDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "Android App Development Company | Native Kotlin & Jetpack Compose | ClickMasters",
+    "Android App Development Company | Native Kotlin & Jetpack Compose | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade native Android apps in Kotlin with Jetpack Compose for B2B companies across the USA, Europe, Canada & Australia. From enterprise tools to consumer apps.",
-  lead: "ClickMasters builds production-grade native Android applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools that work offline. Customer-facing apps with Material Design 3 polish. Internal operations tools integrated with your backend systems. Written in Kotlin with Jetpack Compose the modern Android stack not legacy Java or XML layouts from 2015.",
+    "Clickmasters builds production-grade native Android apps in Kotlin with Jetpack Compose for B2B companies across the USA, Europe, Canada & Australia. From enterprise tools to consumer apps.",
+  lead: "Clickmasters builds production-grade native Android applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools that work offline. Customer-facing apps with Material Design 3 polish. Internal operations tools integrated with your backend systems. Written in Kotlin with Jetpack Compose the modern Android stack not legacy Java or XML layouts from 2015.",
   highlights: [
     "Kotlin + Jetpack Compose",
     "MVVM + Clean Architecture",
@@ -8872,11 +8872,11 @@ const androidAppDevelopmentOverride = {
     {
       heading:
         "Native Android Apps in Kotlin and Jetpack Compose Built for Performance, Not Just Functionality",
-      body: "ClickMasters builds production-grade native Android applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools that work offline. Customer-facing apps with Material Design 3 polish. Internal operations tools integrated with your backend systems. Written in Kotlin with Jetpack Compose the modern Android stack not legacy Java or XML layouts from 2015.",
+      body: "Clickmasters builds production-grade native Android applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools that work offline. Customer-facing apps with Material Design 3 polish. Internal operations tools integrated with your backend systems. Written in Kotlin with Jetpack Compose the modern Android stack not legacy Java or XML layouts from 2015.",
       items: [
         "72% global smartphone market share held by Android (StatCounter 2024)",
         "3.3B active Android devices worldwide",
-        "$180K typical enterprise Android app development cost at large agencies ClickMasters delivers at 40-60% of that cost",
+        "$180K typical enterprise Android app development cost at large agencies Clickmasters delivers at 40-60% of that cost",
         "2.9M apps available on Google Play discoverability requires ASO from day one",
       ],
     },
@@ -8893,7 +8893,7 @@ const androidAppDevelopmentOverride = {
     {
       heading:
         "Android Architecture What Separates Production Apps from Prototypes",
-      body: "The architecture of an Android app determines whether it can be maintained by a team as requirements evolve, whether it handles configuration changes (rotation, language change, process death) correctly, and whether it performs smoothly under real-world usage patterns. ClickMasters applies Modern Android Architecture on every engagement.",
+      body: "The architecture of an Android app determines whether it can be maintained by a team as requirements evolve, whether it handles configuration changes (rotation, language change, process death) correctly, and whether it performs smoothly under real-world usage patterns. Clickmasters applies Modern Android Architecture on every engagement.",
       items: [
         "UI Layer: Jetpack Compose declarative UI, less code than XML, Material Design 3 native. State hoisted to ViewModel.",
         "ViewModel: Android ViewModel survives configuration changes. UI state as sealed class or data class. StateFlow for UI state emission.",
@@ -8912,7 +8912,7 @@ const androidAppDevelopmentOverride = {
     },
     {
       heading: "Android App Development Services",
-      body: "ClickMasters delivers the complete Android development lifecycle architecture design, UI development in Jetpack Compose, backend integration, offline functionality, hardware integration, Google Play submission, and post-launch monitoring.",
+      body: "Clickmasters delivers the complete Android development lifecycle architecture design, UI development in Jetpack Compose, backend integration, offline functionality, hardware integration, Google Play submission, and post-launch monitoring.",
       items: [
         "1. Enterprise Android App Development: MDM compatibility (Intune, Workspace ONE, SOTI), corporate SSO (Azure AD, Okta), offline-first architecture, Zebra/Honeywell hardware integration.",
         "2. Consumer Android App Development: Material Design 3 dynamic colour, updated components, motion design, large screen adaptation for tablets and foldables.",
@@ -8928,49 +8928,49 @@ const androidAppDevelopmentOverride = {
     {
       question: "How much does Android app development cost?",
       answer:
-        "Android app development costs range from $2,000 for a scoping engagement to $60,000 for a full enterprise Android application with offline functionality, MDM compatibility, and hardware integration. An Android MVP costs $15,000-35,000 and takes 8-14 weeks. A consumer Android app with Firebase integration and Play Store submission costs $18,000-50,000. An enterprise Android app with offline-first architecture, SSO authentication, and WorkManager background sync costs $20,000-60,000. Building both native Android and native iOS simultaneously costs $50,000-130,000 (two separate codebases). These ranges are fixed-price after a free scoping session ClickMasters does not charge time-and-materials.",
+        "Android app development costs range from $2,000 for a scoping engagement to $60,000 for a full enterprise Android application with offline functionality, MDM compatibility, and hardware integration. An Android MVP costs $15,000-35,000 and takes 8-14 weeks. A consumer Android app with Firebase integration and Play Store submission costs $18,000-50,000. An enterprise Android app with offline-first architecture, SSO authentication, and WorkManager background sync costs $20,000-60,000. Building both native Android and native iOS simultaneously costs $50,000-130,000 (two separate codebases). These ranges are fixed-price after a free scoping session Clickmasters does not charge time-and-materials.",
     },
     {
       question:
         "Should I build a native Android app or use React Native/Flutter?",
       answer:
-        "Build a native Android app (Kotlin) when: the app requires immediate access to new Android OS features on day of release, your use case involves intensive hardware integration (Bluetooth LE, NFC, industrial scanner integration via Zebra DataWedge), perfect Material Design 3 compliance is important for your brand, or you are building only for Android (no iOS requirement). Choose React Native when: you need both iOS and Android from a shared JavaScript codebase, your development team has React expertise, and the hardware requirements are standard. Choose Flutter when: you need cross-platform from one codebase and performance matters more than JavaScript familiarity. ClickMasters builds all three and recommends based on requirements not preference.",
+        "Build a native Android app (Kotlin) when: the app requires immediate access to new Android OS features on day of release, your use case involves intensive hardware integration (Bluetooth LE, NFC, industrial scanner integration via Zebra DataWedge), perfect Material Design 3 compliance is important for your brand, or you are building only for Android (no iOS requirement). Choose React Native when: you need both iOS and Android from a shared JavaScript codebase, your development team has React expertise, and the hardware requirements are standard. Choose Flutter when: you need cross-platform from one codebase and performance matters more than JavaScript familiarity. Clickmasters builds all three and recommends based on requirements not preference.",
     },
     {
       question: "What Android version should my app support?",
       answer:
-        "The minimum Android version to target depends on your user base. For consumer apps: Android 8.0 (API 26) captures 97%+ of active Android devices and is Google's recommended minimum for new apps in 2025. For enterprise apps on managed device fleets: targeting Android 10 (API 29) or higher is reasonable enterprise MDM deployments typically standardise on current or recent Android versions. Supporting older versions (below API 26) adds significant development overhead for backward compatibility and is rarely justified by the user base reached. Google Play requires a target SDK of at least Android 14 (API 34) for new apps submitted in 2025. ClickMasters sets minimum SDK based on analytics data from the client's existing user base where available, or conservative industry benchmarks for new products.",
+        "The minimum Android version to target depends on your user base. For consumer apps: Android 8.0 (API 26) captures 97%+ of active Android devices and is Google's recommended minimum for new apps in 2025. For enterprise apps on managed device fleets: targeting Android 10 (API 29) or higher is reasonable enterprise MDM deployments typically standardise on current or recent Android versions. Supporting older versions (below API 26) adds significant development overhead for backward compatibility and is rarely justified by the user base reached. Google Play requires a target SDK of at least Android 14 (API 34) for new apps submitted in 2025. Clickmasters sets minimum SDK based on analytics data from the client's existing user base where available, or conservative industry benchmarks for new products.",
     },
     {
       question: "What is Jetpack Compose and why does it matter?",
       answer:
-        "Jetpack Compose is Google's modern declarative UI toolkit for Android, replacing the legacy XML-based View system. In Jetpack Compose, UI is described as Kotlin functions (composables) that react to state changes when the underlying data changes, the UI recomposes automatically. Benefits over XML Views: significantly less boilerplate code (UI in Kotlin, not XML + Kotlin), easier state management (unidirectional data flow with StateFlow), better support for Material Design 3 components, simpler implementation of animations and transitions, and improved tooling (Compose Preview renders UI directly in Android Studio). All new Android applications at ClickMasters are built with Jetpack Compose. Legacy XML View applications are migrated to Compose on a screen-by-screen basis during refactoring engagements.",
+        "Jetpack Compose is Google's modern declarative UI toolkit for Android, replacing the legacy XML-based View system. In Jetpack Compose, UI is described as Kotlin functions (composables) that react to state changes when the underlying data changes, the UI recomposes automatically. Benefits over XML Views: significantly less boilerplate code (UI in Kotlin, not XML + Kotlin), easier state management (unidirectional data flow with StateFlow), better support for Material Design 3 components, simpler implementation of animations and transitions, and improved tooling (Compose Preview renders UI directly in Android Studio). All new Android applications at Clickmasters are built with Jetpack Compose. Legacy XML View applications are migrated to Compose on a screen-by-screen basis during refactoring engagements.",
     },
     {
       question: "How do you build an offline-first Android app?",
       answer:
-        "Offline-first Android architecture is built on three pillars. First, local data persistence: Room database (Android's SQLite abstraction layer) stores all data the app needs for offline operation locally API responses are cached in Room immediately on receipt, and the UI reads exclusively from Room (not directly from the network). Second, background synchronisation: WorkManager queues outgoing data changes when the user performs offline operations and retries delivery with exponential backoff when connectivity is restored. WorkManager respects Android's battery optimisation constraints, so background sync does not drain the device battery unnecessarily. Third, conflict resolution: when data is changed both locally (offline) and on the server (by another user or process) during the same period, a conflict resolution strategy (server-wins, client-wins, or merge) is applied based on the data type and business rules. ClickMasters designs the offline data model and conflict resolution strategy before writing any code these decisions are architectural and expensive to change later.",
+        "Offline-first Android architecture is built on three pillars. First, local data persistence: Room database (Android's SQLite abstraction layer) stores all data the app needs for offline operation locally API responses are cached in Room immediately on receipt, and the UI reads exclusively from Room (not directly from the network). Second, background synchronisation: WorkManager queues outgoing data changes when the user performs offline operations and retries delivery with exponential backoff when connectivity is restored. WorkManager respects Android's battery optimisation constraints, so background sync does not drain the device battery unnecessarily. Third, conflict resolution: when data is changed both locally (offline) and on the server (by another user or process) during the same period, a conflict resolution strategy (server-wins, client-wins, or merge) is applied based on the data type and business rules. Clickmasters designs the offline data model and conflict resolution strategy before writing any code these decisions are architectural and expensive to change later.",
     },
     {
       question: "How long does Android app development take?",
       answer:
-        "An Android MVP takes 8-14 weeks. A full-featured enterprise Android app takes 10-16 weeks. A consumer app with in-app purchases and Play Store submission takes 8-14 weeks. The primary factors affecting timeline are: the number of screens and user flows, offline functionality complexity (adding offline-first architecture adds 2-4 weeks), hardware integration complexity (Bluetooth, NFC, industrial scanner integration), enterprise authentication (SSO via Azure AD or Okta adds 1-2 weeks), and whether parallel iOS development is included in scope. ClickMasters delivers to an internal testing track on Google Play (or via direct APK distribution) after every 2-week sprint, so clients see real progress throughout the build.",
+        "An Android MVP takes 8-14 weeks. A full-featured enterprise Android app takes 10-16 weeks. A consumer app with in-app purchases and Play Store submission takes 8-14 weeks. The primary factors affecting timeline are: the number of screens and user flows, offline functionality complexity (adding offline-first architecture adds 2-4 weeks), hardware integration complexity (Bluetooth, NFC, industrial scanner integration), enterprise authentication (SSO via Azure AD or Okta adds 1-2 weeks), and whether parallel iOS development is included in scope. Clickmasters delivers to an internal testing track on Google Play (or via direct APK distribution) after every 2-week sprint, so clients see real progress throughout the build.",
     },
     {
       question: "How do you submit an app to the Google Play Store?",
       answer:
-        "Google Play Store submission involves several steps. First, a Google Play Developer account ($25 one-time fee). Second, app preparation: Android App Bundle (AAB) format compilation, signed with a release keystore managed in Google Play App Signing. Third, Play Console configuration: store listing (screenshots, description, feature graphic), content rating questionnaire, data safety declaration (accurately listing all data types collected and their purposes Google enforces this), and target audience declaration. Fourth, testing tracks: internal track (specific Google accounts, immediate publishing), closed testing (invite-only beta group), and open testing (public beta). Fifth, production rollout: staged rollout to 10% of devices initially, monitoring for ANR and crash rates, expanding to 100% after 24-48 hours of stability validation. ClickMasters handles the entire submission process as standard on all Android app engagements.",
+        "Google Play Store submission involves several steps. First, a Google Play Developer account ($25 one-time fee). Second, app preparation: Android App Bundle (AAB) format compilation, signed with a release keystore managed in Google Play App Signing. Third, Play Console configuration: store listing (screenshots, description, feature graphic), content rating questionnaire, data safety declaration (accurately listing all data types collected and their purposes Google enforces this), and target audience declaration. Fourth, testing tracks: internal track (specific Google accounts, immediate publishing), closed testing (invite-only beta group), and open testing (public beta). Fifth, production rollout: staged rollout to 10% of devices initially, monitoring for ANR and crash rates, expanding to 100% after 24-48 hours of stability validation. Clickmasters handles the entire submission process as standard on all Android app engagements.",
     },
     {
       question:
         "Can you build an Android app that integrates with enterprise MDM systems?",
       answer:
-        "Yes. Enterprise MDM compatibility is a standard requirement for ClickMasters' enterprise Android engagements. Managed configuration via the Android Enterprise Managed Configurations API allows MDM administrators to push configuration values (server URLs, feature toggles, policy settings) to the app without user input replacing hard-coded configuration or manual setup. The app reads these values via the RestrictionsManager API at startup. ClickMasters implements managed configurations for Microsoft Intune, VMware Workspace ONE, SOTI MobiControl, and Jamf. Additionally, enterprise apps requiring Play Store deployment via MDM are submitted as private apps to the Google Play Managed Google Play Store distributable to managed device fleets without appearing on the public Play Store.",
+        "Yes. Enterprise MDM compatibility is a standard requirement for Clickmasters' enterprise Android engagements. Managed configuration via the Android Enterprise Managed Configurations API allows MDM administrators to push configuration values (server URLs, feature toggles, policy settings) to the app without user input replacing hard-coded configuration or manual setup. The app reads these values via the RestrictionsManager API at startup. Clickmasters implements managed configurations for Microsoft Intune, VMware Workspace ONE, SOTI MobiControl, and Jamf. Additionally, enterprise apps requiring Play Store deployment via MDM are submitted as private apps to the Google Play Managed Google Play Store distributable to managed device fleets without appearing on the public Play Store.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters rebuilt our legacy Java Android app in Kotlin with Jetpack Compose. The app is now maintainable, our field technicians actually use it offline, and Play Store crashes dropped to near zero.",
+      "Clickmasters rebuilt our legacy Java Android app in Kotlin with Jetpack Compose. The app is now maintainable, our field technicians actually use it offline, and Play Store crashes dropped to near zero.",
     author: "CTO",
     role: "Industrial Equipment Distributor",
   },
@@ -8992,10 +8992,10 @@ const crossPlatformAppDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "Cross-Platform App Development | React Native & Flutter | ClickMasters",
+    "Cross-Platform App Development | React Native & Flutter | Clickmasters",
   metaDescription:
-    "ClickMasters builds cross-platform mobile apps in React Native and Flutter one codebase, iOS and Android for B2B companies needing both platforms without the cost of two native builds. USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds cross-platform mobile applications in React Native and Flutter for B2B companies across the USA, Europe, Canada, and Australia. One engineering team. One codebase. Both App Store and Google Play. 30-50% lower development cost than two separate native builds. Performance that real users cannot distinguish from native for the vast majority of B2B and consumer app use cases.",
+    "Clickmasters builds cross-platform mobile apps in React Native and Flutter one codebase, iOS and Android for B2B companies needing both platforms without the cost of two native builds. USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds cross-platform mobile applications in React Native and Flutter for B2B companies across the USA, Europe, Canada, and Australia. One engineering team. One codebase. Both App Store and Google Play. 30-50% lower development cost than two separate native builds. Performance that real users cannot distinguish from native for the vast majority of B2B and consumer app use cases.",
   highlights: [
     "React Native (TypeScript)",
     "Flutter (Dart)",
@@ -9225,7 +9225,7 @@ const crossPlatformAppDevelopmentOverride = {
     {
       heading:
         "iOS and Android From One Codebase Without Sacrificing the Performance Your Users Expect",
-      body: "ClickMasters builds cross-platform mobile applications in React Native and Flutter for B2B companies across the USA, Europe, Canada, and Australia. One engineering team. One codebase. Both App Store and Google Play. 30-50% lower development cost than two separate native builds. Performance that real users cannot distinguish from native for the vast majority of B2B and consumer app use cases.",
+      body: "Clickmasters builds cross-platform mobile applications in React Native and Flutter for B2B companies across the USA, Europe, Canada, and Australia. One engineering team. One codebase. Both App Store and Google Play. 30-50% lower development cost than two separate native builds. Performance that real users cannot distinguish from native for the vast majority of B2B and consumer app use cases.",
       items: [
         "40% average cost saving vs. building separate native iOS and Android apps",
         "~80% typical code sharing percentage in a well-built React Native or Flutter app",
@@ -9241,7 +9241,7 @@ const crossPlatformAppDevelopmentOverride = {
     },
     {
       heading: "React Native vs. Flutter The Definitive Comparison",
-      body: "Once you've decided on cross-platform, the framework decision is the most consequential remaining choice. Here is ClickMasters' honest, use-case-based comparison.",
+      body: "Once you've decided on cross-platform, the framework decision is the most consequential remaining choice. Here is Clickmasters' honest, use-case-based comparison.",
       items: [
         "React Native: JavaScript/TypeScript (largest dev community), native components (iOS UIKit + Android Material), near-native performance (JS bridge overhead however New Architecture removes this), large npm ecosystem, lower learning curve (web devs transition), Fast Refresh hot reload. Default for teams with React/JS expertise, apps where native platform look-and-feel matters.",
         "Flutter: Dart language (smaller community, but type-safe and fast), custom rendering engine (Skia/Impeller pixel-perfect consistent UI), excellent performance (compiled to ARM, 60/120fps reliably), growing pub.dev ecosystem (smaller than npm, but high-quality first-party packages), moderate learning curve (Dart is new, widget tree is intuitive), Hot Reload (stateful). Default for animation-heavy apps, pixel-perfect design consistency, teams starting fresh without JS expertise.",
@@ -9249,7 +9249,7 @@ const crossPlatformAppDevelopmentOverride = {
     },
     {
       heading:
-        "\xF0\u0178\u2019\xA1 ClickMasters Default Framework Recommendation",
+        "\xF0\u0178\u2019\xA1 Clickmasters Default Framework Recommendation",
       body: "React Native is the default for teams with existing JavaScript/TypeScript and React expertise the codebase skills transfer, the ecosystem is larger, and the native component rendering satisfies platform design expectations without extra configuration. Flutter is the default when: the team is starting fresh without JS expertise, the app requires sophisticated animations or custom UI that native components cannot achieve, or pixel-perfect cross-platform consistency is more important than native platform look-and-feel. Both frameworks deliver production-quality apps. The decision is primarily about team expertise and UI fidelity preference.",
       items: [],
     },
@@ -9274,7 +9274,7 @@ const crossPlatformAppDevelopmentOverride = {
     },
     {
       heading: "Deployment Both Stores From One Engagement",
-      body: "ClickMasters handles both App Store and Google Play submission as a standard part of every cross-platform engagement not as an add-on.",
+      body: "Clickmasters handles both App Store and Google Play submission as a standard part of every cross-platform engagement not as an add-on.",
       items: [
         "App Store (iOS): fastlane match for certificate management, gym for Xcode build, pilot for TestFlight. Privacy Nutrition Labels completed. App Review submission. Staged rollout (10% initial).",
         "Google Play (Android): AAB compilation. Google Play App Signing. Play Console: store listing, content rating, Data Safety section. Internal \xE2\u2020\u2019 closed \xE2\u2020\u2019 production staged rollout (10%\xE2\u2020\u2019100%).",
@@ -9306,12 +9306,12 @@ const crossPlatformAppDevelopmentOverride = {
       question:
         "Can a cross-platform app access all the native device features?",
       answer:
-        "Yes, via platform bridges though with some caveats. React Native accesses platform-specific APIs via Native Modules (community-maintained packages for most common APIs, or custom Kotlin/Swift bridge code for bespoke APIs). Flutter accesses them via Platform Channels (MethodChannel for method calls, EventChannel for streams). Most common device features camera (CameraX/AVFoundation via community packages), GPS, Bluetooth, NFC, biometrics, push notifications have mature community packages for both React Native and Flutter. The caveats: very new iOS/Android APIs may not have community packages yet (weeks-to-months lag behind native), and some highly specialised hardware SDKs (industrial scanner APIs, proprietary device firmware) require custom native module development. ClickMasters writes custom native modules when required functionality is not available in the community ecosystem.",
+        "Yes, via platform bridges though with some caveats. React Native accesses platform-specific APIs via Native Modules (community-maintained packages for most common APIs, or custom Kotlin/Swift bridge code for bespoke APIs). Flutter accesses them via Platform Channels (MethodChannel for method calls, EventChannel for streams). Most common device features camera (CameraX/AVFoundation via community packages), GPS, Bluetooth, NFC, biometrics, push notifications have mature community packages for both React Native and Flutter. The caveats: very new iOS/Android APIs may not have community packages yet (weeks-to-months lag behind native), and some highly specialised hardware SDKs (industrial scanner APIs, proprietary device firmware) require custom native module development. Clickmasters writes custom native modules when required functionality is not available in the community ecosystem.",
     },
     {
       question: "How long does cross-platform app development take?",
       answer:
-        "A cross-platform MVP takes 8-12 weeks. A full-featured consumer cross-platform app takes 10-16 weeks. An enterprise cross-platform app with offline-first and SSO takes 10-16 weeks. Cross-platform is typically 4-6 weeks faster than building the equivalent app natively for both iOS and Android (because one codebase replaces two). The primary timeline factors are: number of screens and user flows, native module requirements (custom native bridges add 3-6 weeks), offline-first data complexity, and whether in-app purchases are required (StoreKit + Google Play Billing configuration adds 1-2 weeks). ClickMasters distributes to both TestFlight and Play Store internal testing after each 2-week sprint.",
+        "A cross-platform MVP takes 8-12 weeks. A full-featured consumer cross-platform app takes 10-16 weeks. An enterprise cross-platform app with offline-first and SSO takes 10-16 weeks. Cross-platform is typically 4-6 weeks faster than building the equivalent app natively for both iOS and Android (because one codebase replaces two). The primary timeline factors are: number of screens and user flows, native module requirements (custom native bridges add 3-6 weeks), offline-first data complexity, and whether in-app purchases are required (StoreKit + Google Play Billing configuration adds 1-2 weeks). Clickmasters distributes to both TestFlight and Play Store internal testing after each 2-week sprint.",
     },
     {
       question: "Should I build a cross-platform app or a PWA?",
@@ -9350,10 +9350,10 @@ const iosAppDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "iOS App Development Company | Native Swift & SwiftUI | ClickMasters",
+    "iOS App Development Company | Native Swift & SwiftUI | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade native iOS apps in Swift and SwiftUI for iPhone and iPad. B2B enterprise tools, consumer apps, and App Store submissions USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production-grade native iOS applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools with Face ID authentication and Secure Enclave data protection. Consumer apps built to Apple Human Interface Guidelines with the polish that App Store reviewers and users expect. iPad productivity apps with Apple Pencil support and multi-window. Written in Swift with SwiftUI the modern iOS stack not Objective-C or UIKit from 2010.",
+    "Clickmasters builds production-grade native iOS apps in Swift and SwiftUI for iPhone and iPad. B2B enterprise tools, consumer apps, and App Store submissions USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production-grade native iOS applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools with Face ID authentication and Secure Enclave data protection. Consumer apps built to Apple Human Interface Guidelines with the polish that App Store reviewers and users expect. iPad productivity apps with Apple Pencil support and multi-window. Written in Swift with SwiftUI the modern iOS stack not Objective-C or UIKit from 2010.",
   highlights: [
     "Swift + SwiftUI",
     "MVVM + Combine / async-await",
@@ -9590,7 +9590,7 @@ const iosAppDevelopmentOverride = {
     {
       heading:
         "Native iOS Apps in Swift and SwiftUI Built for the Platform Your High-Value Users Carry",
-      body: "ClickMasters builds production-grade native iOS applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools with Face ID authentication and Secure Enclave data protection. Consumer apps built to Apple Human Interface Guidelines with the polish that App Store reviewers and users expect. iPad productivity apps with Apple Pencil support and multi-window. Written in Swift with SwiftUI the modern iOS stack not Objective-C or UIKit from 2010.",
+      body: "Clickmasters builds production-grade native iOS applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools with Face ID authentication and Secure Enclave data protection. Consumer apps built to Apple Human Interface Guidelines with the polish that App Store reviewers and users expect. iPad productivity apps with Apple Pencil support and multi-window. Written in Swift with SwiftUI the modern iOS stack not Objective-C or UIKit from 2010.",
       items: [
         "28% global smartphone market share but 55%+ of US mobile spending happens on iOS",
         "$1.1T App Store developer payouts since inception iOS users spend significantly more per app",
@@ -9610,7 +9610,7 @@ const iosAppDevelopmentOverride = {
     },
     {
       heading: "iOS Architecture Modern Swift Development Standards",
-      body: "iOS app architecture has evolved significantly with Swift concurrency (async/await), SwiftData, and the Observation framework. ClickMasters applies current-generation iOS architecture on every engagement.",
+      body: "iOS app architecture has evolved significantly with Swift concurrency (async/await), SwiftData, and the Observation framework. Clickmasters applies current-generation iOS architecture on every engagement.",
       items: [
         "UI Framework: SwiftUI (primary declarative UI, Preview, animations). UIKit for legacy or components not yet in SwiftUI.",
         "State Management: Swift Observation framework (@Observable, @State, @Binding for iOS 17+). Combine for iOS 16 and below.",
@@ -9629,7 +9629,7 @@ const iosAppDevelopmentOverride = {
     },
     {
       heading: "iOS App Development Services",
-      body: "ClickMasters delivers the complete iOS development lifecycle architecture design, SwiftUI development, backend integration, Apple platform integrations, enterprise deployment via Apple Business Manager, App Store submission, and post-launch monitoring.",
+      body: "Clickmasters delivers the complete iOS development lifecycle architecture design, SwiftUI development, backend integration, Apple platform integrations, enterprise deployment via Apple Business Manager, App Store submission, and post-launch monitoring.",
       items: [
         "1. Enterprise iOS App Development: MDM deployment via Apple Business Manager, corporate SSO (Azure AD, Okta), Face ID/Touch ID (LocalAuthentication), data protection (NSFileProtection, Keychain).",
         "2. Consumer iOS App Development: HIG compliance, SF Symbols, Dynamic Type, Dark Mode, adaptive layouts, haptic feedback.",
@@ -9645,23 +9645,23 @@ const iosAppDevelopmentOverride = {
     {
       question: "How much does iOS app development cost?",
       answer:
-        "iOS app development costs range from $2,000 for a scoping engagement to $65,000 for an enterprise iOS application with MDM deployment, Face ID, offline capability, and Apple Business Manager distribution. An iOS MVP costs $15,000-35,000 and takes 8-14 weeks. A consumer iOS app with StoreKit in-app purchases and App Store submission costs $18,000-55,000. An enterprise iOS app with SSO, offline data, and managed device deployment costs $20,000-65,000. Building both native iOS and native Android simultaneously costs $50,000-135,000. These are fixed-price ranges quoted after a free scoping session ClickMasters does not charge time-and-materials for iOS projects.",
+        "iOS app development costs range from $2,000 for a scoping engagement to $65,000 for an enterprise iOS application with MDM deployment, Face ID, offline capability, and Apple Business Manager distribution. An iOS MVP costs $15,000-35,000 and takes 8-14 weeks. A consumer iOS app with StoreKit in-app purchases and App Store submission costs $18,000-55,000. An enterprise iOS app with SSO, offline data, and managed device deployment costs $20,000-65,000. Building both native iOS and native Android simultaneously costs $50,000-135,000. These are fixed-price ranges quoted after a free scoping session Clickmasters does not charge time-and-materials for iOS projects.",
     },
     {
       question:
         "Should I build a native iOS app or use React Native / Flutter?",
       answer:
-        "Build a native iOS app (Swift) when: the app requires immediate access to new iOS APIs on day of Apple's release, your use case involves complex Apple framework integrations (HealthKit, ARKit, CoreML, CarPlay, Wallet), App Store polish and Human Interface Guidelines compliance are critical to your brand, or you are deploying to a managed enterprise iOS fleet via Apple Business Manager. React Native is the right choice when you need iOS and Android from a shared JavaScript codebase and your development team has React expertise. Flutter is appropriate when performance matters more than JavaScript familiarity and your team is willing to learn Dart. ClickMasters builds all three platforms and recommends based on requirements not platform preference.",
+        "Build a native iOS app (Swift) when: the app requires immediate access to new iOS APIs on day of Apple's release, your use case involves complex Apple framework integrations (HealthKit, ARKit, CoreML, CarPlay, Wallet), App Store polish and Human Interface Guidelines compliance are critical to your brand, or you are deploying to a managed enterprise iOS fleet via Apple Business Manager. React Native is the right choice when you need iOS and Android from a shared JavaScript codebase and your development team has React expertise. Flutter is appropriate when performance matters more than JavaScript familiarity and your team is willing to learn Dart. Clickmasters builds all three platforms and recommends based on requirements not platform preference.",
     },
     {
       question: "What is SwiftUI and why does it matter?",
       answer:
-        "SwiftUI is Apple's modern declarative UI framework for building iOS, iPadOS, macOS, watchOS, and tvOS applications. Introduced in 2019, SwiftUI replaces the UIKit imperative framework as the recommended way to build Apple platform interfaces. In SwiftUI, UI is described as Swift functions that react to state changes when the underlying data changes, the view automatically updates. Benefits over UIKit: significantly less code (a SwiftUI list view is 10 lines vs. 50+ in UIKit), live Preview in Xcode (instant visual feedback without launching the simulator), native support for Dark Mode, Dynamic Type, accessibility, and all Apple design tokens, and first-class support for Swift Concurrency (async/await). All new iOS applications at ClickMasters are built with SwiftUI. Legacy UIKit applications are maintained and incrementally migrated to SwiftUI.",
+        "SwiftUI is Apple's modern declarative UI framework for building iOS, iPadOS, macOS, watchOS, and tvOS applications. Introduced in 2019, SwiftUI replaces the UIKit imperative framework as the recommended way to build Apple platform interfaces. In SwiftUI, UI is described as Swift functions that react to state changes when the underlying data changes, the view automatically updates. Benefits over UIKit: significantly less code (a SwiftUI list view is 10 lines vs. 50+ in UIKit), live Preview in Xcode (instant visual feedback without launching the simulator), native support for Dark Mode, Dynamic Type, accessibility, and all Apple design tokens, and first-class support for Swift Concurrency (async/await). All new iOS applications at Clickmasters are built with SwiftUI. Legacy UIKit applications are maintained and incrementally migrated to SwiftUI.",
     },
     {
       question: "How does the App Store review process work?",
       answer:
-        "The App Store review process is Apple's quality and safety gate for all iOS applications. After a binary is submitted via App Store Connect or fastlane, Apple's review team (automated and human review) evaluates the app against App Store Review Guidelines. The most common review categories evaluated are: completeness and functionality (no placeholder content, the app must be fully functional as described), design (follows Human Interface Guidelines, no non-native UI that feels broken on iOS), privacy (all data collection must be disclosed in the Privacy Nutrition Label and in a Privacy Policy accessible from the App Store listing), legal (no copyright infringement, content rating accuracy), and in-app purchases (all purchasable content or features must use StoreKit no directing users to purchase outside the app for digital goods). Initial review typically takes 24-48 hours. Rejections include specific guideline citations and can be appealed or resubmitted. ClickMasters prepares review submissions with pre-emptive documentation of reviewer-likely-question items to minimise rejection cycles.",
+        "The App Store review process is Apple's quality and safety gate for all iOS applications. After a binary is submitted via App Store Connect or fastlane, Apple's review team (automated and human review) evaluates the app against App Store Review Guidelines. The most common review categories evaluated are: completeness and functionality (no placeholder content, the app must be fully functional as described), design (follows Human Interface Guidelines, no non-native UI that feels broken on iOS), privacy (all data collection must be disclosed in the Privacy Nutrition Label and in a Privacy Policy accessible from the App Store listing), legal (no copyright infringement, content rating accuracy), and in-app purchases (all purchasable content or features must use StoreKit no directing users to purchase outside the app for digital goods). Initial review typically takes 24-48 hours. Rejections include specific guideline citations and can be appealed or resubmitted. Clickmasters prepares review submissions with pre-emptive documentation of reviewer-likely-question items to minimise rejection cycles.",
     },
     {
       question: "Can you build an iOS app that works offline?",
@@ -9672,22 +9672,22 @@ const iosAppDevelopmentOverride = {
       question:
         "How do you distribute an iOS app to enterprise employees without the public App Store?",
       answer:
-        "Enterprise iOS app distribution without the public App Store uses Apple Business Manager (ABM) Apple's enterprise deployment portal. There are two approaches. Managed distribution via Apple Business Manager: the app is submitted to the App Store as an unlisted app (not searchable publicly) and distributed to managed devices via an MDM (Mobile Device Management) platform Microsoft Intune, Jamf, VMware Workspace ONE, or Mosyle. This method requires App Store review but the app is not publicly visible. Custom App distribution: available to Apple Developer Enterprise Program members ($299/year) the app is signed with an enterprise certificate and distributed directly to employee devices via MDM without App Store review. ClickMasters implements both distribution methods and configures the required MDM managed configuration profiles for enterprise apps.",
+        "Enterprise iOS app distribution without the public App Store uses Apple Business Manager (ABM) Apple's enterprise deployment portal. There are two approaches. Managed distribution via Apple Business Manager: the app is submitted to the App Store as an unlisted app (not searchable publicly) and distributed to managed devices via an MDM (Mobile Device Management) platform Microsoft Intune, Jamf, VMware Workspace ONE, or Mosyle. This method requires App Store review but the app is not publicly visible. Custom App distribution: available to Apple Developer Enterprise Program members ($299/year) the app is signed with an enterprise certificate and distributed directly to employee devices via MDM without App Store review. Clickmasters implements both distribution methods and configures the required MDM managed configuration profiles for enterprise apps.",
     },
     {
       question: "How long does iOS app development take?",
       answer:
-        "An iOS MVP takes 8-14 weeks. A full-featured enterprise iOS app takes 10-16 weeks. A consumer app with StoreKit in-app purchases takes 8-14 weeks. A universal iPhone + iPad app takes 10-16 weeks. The primary factors are: number of screens and user flows, Apple framework integrations (HealthKit, ARKit, StoreKit each add 2-3 weeks), enterprise authentication complexity, offline data requirements (adds 2-4 weeks), and whether parallel Android development is included. ClickMasters distributes to TestFlight internal testing after every 2-week sprint clients test real builds on real devices throughout the development process, not just at the end.",
+        "An iOS MVP takes 8-14 weeks. A full-featured enterprise iOS app takes 10-16 weeks. A consumer app with StoreKit in-app purchases takes 8-14 weeks. A universal iPhone + iPad app takes 10-16 weeks. The primary factors are: number of screens and user flows, Apple framework integrations (HealthKit, ARKit, StoreKit each add 2-3 weeks), enterprise authentication complexity, offline data requirements (adds 2-4 weeks), and whether parallel Android development is included. Clickmasters distributes to TestFlight internal testing after every 2-week sprint clients test real builds on real devices throughout the development process, not just at the end.",
     },
     {
       question: "What is Apple Business Manager and who needs it?",
       answer:
-        "Apple Business Manager (ABM) is Apple's enterprise portal for organisations deploying iOS, iPadOS, and macOS devices at scale. ABM enables: Automated Device Enrollment (ADE, formerly DEP) devices enrolled in MDM automatically at activation, zero-touch configuration for new iPhones and iPads shipped directly to employees; Managed Apple IDs for corporate accounts that IT controls (not the employee's personal Apple ID); Volume Purchase Program (VPP) for bulk app licensing and distribution without requiring individual Apple IDs; and Custom App distribution for internal apps not published publicly on the App Store. Any organisation deploying iOS apps to employee devices at scale (10+ devices) benefits from ABM + MDM. ClickMasters configures ABM integration and tests app deployment via MDM for all enterprise iOS engagements.",
+        "Apple Business Manager (ABM) is Apple's enterprise portal for organisations deploying iOS, iPadOS, and macOS devices at scale. ABM enables: Automated Device Enrollment (ADE, formerly DEP) devices enrolled in MDM automatically at activation, zero-touch configuration for new iPhones and iPads shipped directly to employees; Managed Apple IDs for corporate accounts that IT controls (not the employee's personal Apple ID); Volume Purchase Program (VPP) for bulk app licensing and distribution without requiring individual Apple IDs; and Custom App distribution for internal apps not published publicly on the App Store. Any organisation deploying iOS apps to employee devices at scale (10+ devices) benefits from ABM + MDM. Clickmasters configures ABM integration and tests app deployment via MDM for all enterprise iOS engagements.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters rebuilt our legacy iOS app in SwiftUI. The App Store review passed first time. Face ID login works flawlessly. Our field team actually uses the app now.",
+      "Clickmasters rebuilt our legacy iOS app in SwiftUI. The App Store review passed first time. Face ID login works flawlessly. Our field team actually uses the app now.",
     author: "CTO",
     role: "Enterprise Field Service Organization",
   },
@@ -9709,10 +9709,10 @@ const flutterAppDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "Flutter App Development Company | iOS & Android From One Codebase | ClickMasters",
+    "Flutter App Development Company | iOS & Android From One Codebase | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade Flutter apps in Dart iOS, Android, and web from a single codebase for B2B companies in the USA, Europe, Canada & Australia. Riverpod, GoRouter, 60fps guaranteed.",
-  lead: "ClickMasters builds production-grade Flutter applications for B2B companies across the USA, Europe, Canada, and Australia. One Dart codebase. iOS and Android from a single build. Optional web and desktop targets. Material 3 or custom design systems with the animation fluidity that Flutter's rendering engine delivers as standard. State management with Riverpod. Navigation with GoRouter. CI/CD with Codemagic.",
+    "Clickmasters builds production-grade Flutter apps in Dart iOS, Android, and web from a single codebase for B2B companies in the USA, Europe, Canada & Australia. Riverpod, GoRouter, 60fps guaranteed.",
+  lead: "Clickmasters builds production-grade Flutter applications for B2B companies across the USA, Europe, Canada, and Australia. One Dart codebase. iOS and Android from a single build. Optional web and desktop targets. Material 3 or custom design systems with the animation fluidity that Flutter's rendering engine delivers as standard. State management with Riverpod. Navigation with GoRouter. CI/CD with Codemagic.",
   highlights: [
     "Dart + Flutter SDK",
     "Riverpod State Management",
@@ -9951,7 +9951,7 @@ const flutterAppDevelopmentOverride = {
     {
       heading:
         "iOS, Android, and Web From One Dart Codebase With 60fps Performance on Every Platform",
-      body: "ClickMasters builds production-grade Flutter applications for B2B companies across the USA, Europe, Canada, and Australia. One Dart codebase. iOS and Android from a single build. Optional web and desktop targets. Material 3 or custom design systems with the animation fluidity that Flutter's rendering engine delivers as standard. State management with Riverpod. Navigation with GoRouter. CI/CD with Codemagic.",
+      body: "Clickmasters builds production-grade Flutter applications for B2B companies across the USA, Europe, Canada, and Australia. One Dart codebase. iOS and Android from a single build. Optional web and desktop targets. Material 3 or custom design systems with the animation fluidity that Flutter's rendering engine delivers as standard. State management with Riverpod. Navigation with GoRouter. CI/CD with Codemagic.",
       items: [
         "1M+ Flutter apps published on Google Play and App Store combined",
         "60fps consistent frame rate Flutter's Impeller rendering engine maintains 60fps even on complex animated UIs",
@@ -9975,7 +9975,7 @@ const flutterAppDevelopmentOverride = {
       heading: "Flutter State Management Riverpod vs BLoC vs Provider",
       body: "State management is the first and most consequential Flutter architecture decision. It determines how data flows through the app, how testable the business logic is, and how maintainable the codebase is as requirements evolve.",
       items: [
-        "Riverpod (Recommended): Provider tree replacement type-safe, compile-time validated, no context dependency. Excellent testability. Low-medium learning curve. Minimal boilerplate with @riverpod code generation. AsyncValue handles loading/data/error automatically. ClickMasters default for all new Flutter projects.",
+        "Riverpod (Recommended): Provider tree replacement type-safe, compile-time validated, no context dependency. Excellent testability. Low-medium learning curve. Minimal boilerplate with @riverpod code generation. AsyncValue handles loading/data/error automatically. Clickmasters default for all new Flutter projects.",
         "BLoC: Strict event-driven Events trigger States, clear separation of concerns. Excellent testability. High learning curve. High boilerplate (explicit event and state classes per feature). Good async handling. For existing codebases or teams with strong existing BLoC expertise.",
         "Provider (Legacy): BuildContext-based simpler but tightly coupled to widget tree. Runtime type safety (errors at runtime). Low learning curve. Minimal boilerplate. Manual async handling. Not recommended for new projects superseded by Riverpod.",
       ],
@@ -9987,7 +9987,7 @@ const flutterAppDevelopmentOverride = {
     },
     {
       heading: "Flutter App Development Services",
-      body: "ClickMasters delivers the complete Flutter development lifecycle architecture design, widget development, state management, platform integrations, offline-first data, CI/CD with Codemagic, and both store submissions.",
+      body: "Clickmasters delivers the complete Flutter development lifecycle architecture design, widget development, state management, platform integrations, offline-first data, CI/CD with Codemagic, and both store submissions.",
       items: [
         "1. Flutter Mobile App Development (iOS + Android): Riverpod (with @riverpod code generation), GoRouter (declarative, URL-based), Dio (interceptors, retry), Drift (type-safe SQLite ORM), Firebase integration.",
         "2. Flutter for Web: HTML rendering (better DOM compatibility) or CanvasKit (better visual fidelity). Deployed on Cloudflare Pages or Firebase Hosting with PWA configuration.",
@@ -10012,9 +10012,9 @@ const flutterAppDevelopmentOverride = {
     },
     {
       question:
-        "What is Riverpod and why does ClickMasters use it for Flutter?",
+        "What is Riverpod and why does Clickmasters use it for Flutter?",
       answer:
-        "Riverpod is Flutter's recommended state management solution a type-safe, compile-time validated dependency injection and state management framework that supersedes Provider (which it was designed to replace). Riverpod solves Provider's key limitations: providers are accessible anywhere in the app without BuildContext (no context required to read state), providers are fully type-safe (mismatches caught at compile time, not runtime), providers are easily testable in isolation without the Flutter widget framework, and async state (loading, data, error) is handled automatically via AsyncValue. ClickMasters uses Riverpod with the @riverpod code generation annotation (riverpod_generator) on all new Flutter projects it reduces boilerplate significantly and produces cleaner, more maintainable code than BLoC's explicit event/state classes or Provider's ChangeNotifier pattern.",
+        "Riverpod is Flutter's recommended state management solution a type-safe, compile-time validated dependency injection and state management framework that supersedes Provider (which it was designed to replace). Riverpod solves Provider's key limitations: providers are accessible anywhere in the app without BuildContext (no context required to read state), providers are fully type-safe (mismatches caught at compile time, not runtime), providers are easily testable in isolation without the Flutter widget framework, and async state (loading, data, error) is handled automatically via AsyncValue. Clickmasters uses Riverpod with the @riverpod code generation annotation (riverpod_generator) on all new Flutter projects it reduces boilerplate significantly and produces cleaner, more maintainable code than BLoC's explicit event/state classes or Provider's ChangeNotifier pattern.",
     },
     {
       question: "How much does Flutter app development cost?",
@@ -10024,12 +10024,12 @@ const flutterAppDevelopmentOverride = {
     {
       question: "Can Flutter apps access native iOS and Android features?",
       answer:
-        "Yes. Flutter accesses native platform APIs via Platform Channels a bidirectional communication mechanism between Dart code and native Kotlin/Swift code. MethodChannel handles synchronous method calls from Dart to native. EventChannel handles continuous streams of events from native to Dart (sensor data, BLE notifications). BasicMessageChannel handles raw serialised data. Most common native features camera (camera plugin), GPS (geolocator), Bluetooth (flutter_blue_plus), NFC, biometrics (local_auth), push notifications (firebase_messaging) have mature community packages on pub.dev. For hardware-specific SDKs without community packages, ClickMasters writes custom platform channel code using the pigeon package (which generates type-safe channel code, eliminating string-based method names and their associated runtime errors).",
+        "Yes. Flutter accesses native platform APIs via Platform Channels a bidirectional communication mechanism between Dart code and native Kotlin/Swift code. MethodChannel handles synchronous method calls from Dart to native. EventChannel handles continuous streams of events from native to Dart (sensor data, BLE notifications). BasicMessageChannel handles raw serialised data. Most common native features camera (camera plugin), GPS (geolocator), Bluetooth (flutter_blue_plus), NFC, biometrics (local_auth), push notifications (firebase_messaging) have mature community packages on pub.dev. For hardware-specific SDKs without community packages, Clickmasters writes custom platform channel code using the pigeon package (which generates type-safe channel code, eliminating string-based method names and their associated runtime errors).",
     },
     {
       question: "What is Codemagic and why is it used for Flutter CI/CD?",
       answer:
-        "Codemagic is a CI/CD platform built specifically for Flutter and mobile app development. Unlike generic CI platforms that require significant manual configuration for iOS code signing and App Store/Play Store distribution, Codemagic has first-class Flutter support: automatic Flutter SDK version management, built-in iOS code signing (manages certificates and provisioning profiles without Fastlane match), automatic App Store Connect and Google Play distribution, Flutter test runner integration, and Flutter-specific build caching (dramatically reducing build times for large Flutter projects). ClickMasters uses Codemagic for all Flutter projects because the Flutter-native tooling reduces CI/CD setup time from days to hours compared to configuring GitHub Actions manually for iOS build pipelines.",
+        "Codemagic is a CI/CD platform built specifically for Flutter and mobile app development. Unlike generic CI platforms that require significant manual configuration for iOS code signing and App Store/Play Store distribution, Codemagic has first-class Flutter support: automatic Flutter SDK version management, built-in iOS code signing (manages certificates and provisioning profiles without Fastlane match), automatic App Store Connect and Google Play distribution, Flutter test runner integration, and Flutter-specific build caching (dramatically reducing build times for large Flutter projects). Clickmasters uses Codemagic for all Flutter projects because the Flutter-native tooling reduces CI/CD setup time from days to hours compared to configuring GitHub Actions manually for iOS build pipelines.",
     },
     {
       question: "Is Flutter good for enterprise mobile apps?",
@@ -10066,10 +10066,10 @@ const reactNativeDevelopmentOverride = {
   heroImage:
     "/images/photo-1512941937669-90a1b58e7e9c.jpg",
   metaTitle:
-    "React Native Development Company | iOS & Android in TypeScript | ClickMasters",
+    "React Native Development Company | iOS & Android in TypeScript | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade React Native apps with the New Architecture (JSI + Fabric) iOS and Android from one TypeScript codebase for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production-grade React Native applications using the New Architecture JSI, Fabric renderer, and TurboModules for B2B companies across the USA, Europe, Canada, and Australia. TypeScript throughout. Zustand for state. WatermelonDB for offline data. Detox for E2E. EAS Build for CI/CD that produces iOS builds without a macOS runner. Both stores from one TypeScript codebase.",
+    "Clickmasters builds production-grade React Native apps with the New Architecture (JSI + Fabric) iOS and Android from one TypeScript codebase for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production-grade React Native applications using the New Architecture JSI, Fabric renderer, and TurboModules for B2B companies across the USA, Europe, Canada, and Australia. TypeScript throughout. Zustand for state. WatermelonDB for offline data. Detox for E2E. EAS Build for CI/CD that produces iOS builds without a macOS runner. Both stores from one TypeScript codebase.",
   highlights: [
     "React Native New Architecture",
     "TypeScript + React",
@@ -10306,7 +10306,7 @@ const reactNativeDevelopmentOverride = {
     {
       heading:
         "iOS and Android in TypeScript With the New Architecture That Eliminates the Bridge",
-      body: "ClickMasters builds production-grade React Native applications using the New Architecture JSI, Fabric renderer, and TurboModules for B2B companies across the USA, Europe, Canada, and Australia. TypeScript throughout. Zustand for state. WatermelonDB for offline data. Detox for E2E. EAS Build for CI/CD that produces iOS builds without a macOS runner. Both stores from one TypeScript codebase.",
+      body: "Clickmasters builds production-grade React Native applications using the New Architecture JSI, Fabric renderer, and TurboModules for B2B companies across the USA, Europe, Canada, and Australia. TypeScript throughout. Zustand for state. WatermelonDB for offline data. Detox for E2E. EAS Build for CI/CD that produces iOS builds without a macOS runner. Both stores from one TypeScript codebase.",
       items: [
         "React Native is built and maintained by Meta (Facebook) used in production by Facebook, Instagram, Discord, Shopify, and Microsoft",
         "React Native is the most widely adopted cross-platform framework by number of developers (Stack Overflow 2024)",
@@ -10322,7 +10322,7 @@ const reactNativeDevelopmentOverride = {
     {
       heading:
         "\xE2\u0153\u2026 Is Your React Native Agency Building on the New Architecture?",
-      body: "The New Architecture is default in React Native 0.76+. If an agency's React Native work uses the legacy bridge architecture (you can identify this from their stack descriptions AsyncStorage as the primary storage, no mention of JSI or TurboModules, no EAS Build), they are building on deprecated patterns. ClickMasters builds all new React Native projects on the New Architecture and can migrate legacy codebases to the New Architecture as part of a modernisation engagement.",
+      body: "The New Architecture is default in React Native 0.76+. If an agency's React Native work uses the legacy bridge architecture (you can identify this from their stack descriptions AsyncStorage as the primary storage, no mention of JSI or TurboModules, no EAS Build), they are building on deprecated patterns. Clickmasters builds all new React Native projects on the New Architecture and can migrate legacy codebases to the New Architecture as part of a modernisation engagement.",
       items: [],
     },
     {
@@ -10343,7 +10343,7 @@ const reactNativeDevelopmentOverride = {
         "React Native State Management Zustand vs Redux Toolkit vs Jotai",
       body: "State management is the most commonly debated React Native architecture decision. The answer has become clearer as the ecosystem has matured.",
       items: [
-        "Zustand (Default): Very small bundle size (~3KB). Minimal boilerplate store in one function. Very low learning curve. Excellent TypeScript. Zustand Devtools compatible with Redux Devtools. Best for most new React Native projects simplicity, performance, easy async. ClickMasters default for all new projects.",
+        "Zustand (Default): Very small bundle size (~3KB). Minimal boilerplate store in one function. Very low learning curve. Excellent TypeScript. Zustand Devtools compatible with Redux Devtools. Best for most new React Native projects simplicity, performance, easy async. Clickmasters default for all new projects.",
         "Redux Toolkit: Medium bundle size (~15KB). Medium boilerplate (slices, actions, selectors). Medium learning curve. Excellent TypeScript. Redux Devtools best in class. Best for legacy codebases with existing Redux, complex state machines, large teams.",
         "Jotai: Small bundle size (~8KB). Minimal boilerplate (atoms). Low learning curve. Excellent TypeScript. Jotai Devtools. Best for atomic state (fine-grained reactivity), similar to Recoil.",
         "MobX: Medium bundle size (~16KB). Low boilerplate (observables + actions). Medium learning curve. Good TypeScript. MobX Devtools. Best for reactive programming advocates, complex derived state. Not recommended for new projects.",
@@ -10386,7 +10386,7 @@ const reactNativeDevelopmentOverride = {
     {
       question: "What is EAS Build and do I need it?",
       answer:
-        "EAS (Expo Application Services) Build is Expo's cloud build service for React Native apps it compiles iOS and Android builds in the cloud without requiring a macOS machine for iOS builds. It is not strictly required for React Native development (you can build iOS locally with Xcode and a Mac, and Android locally with Android Studio), but it significantly reduces CI/CD complexity and cost: no macOS runners in CI, automatic certificate and provisioning profile management, and one-command distribution to TestFlight and Google Play. ClickMasters uses EAS Build for all React Native projects regardless of whether Expo Managed or Bare workflow is used it is the most cost-effective path to automated iOS builds in a CI/CD pipeline.",
+        "EAS (Expo Application Services) Build is Expo's cloud build service for React Native apps it compiles iOS and Android builds in the cloud without requiring a macOS machine for iOS builds. It is not strictly required for React Native development (you can build iOS locally with Xcode and a Mac, and Android locally with Android Studio), but it significantly reduces CI/CD complexity and cost: no macOS runners in CI, automatic certificate and provisioning profile management, and one-command distribution to TestFlight and Google Play. Clickmasters uses EAS Build for all React Native projects regardless of whether Expo Managed or Bare workflow is used it is the most cost-effective path to automated iOS builds in a CI/CD pipeline.",
     },
     {
       question: "What is WatermelonDB and why use it instead of AsyncStorage?",
@@ -10396,12 +10396,12 @@ const reactNativeDevelopmentOverride = {
     {
       question: "How do you test React Native apps?",
       answer:
-        "React Native testing uses a layered approach. Unit tests with Jest and React Native Testing Library (RNTL): test individual components in isolation, render components and assert on their output, mock native modules via jest.mock. API mocking with MSW (Mock Service Worker) intercept network requests in tests rather than mocking fetch/Axios directly. E2E tests with Detox: grey-box testing (Detox has knowledge of React Native's JavaScript state, enabling more deterministic tests than pure black-box UI automation), runs on real iOS Simulators and Android Emulators, tests the actual app binary. Maestro: YAML-based E2E flows that are faster to write than Detox tests, good for smoke testing critical paths. ClickMasters maintains a minimum of 70% code coverage on business logic and Detox tests for all critical user flows before production release.",
+        "React Native testing uses a layered approach. Unit tests with Jest and React Native Testing Library (RNTL): test individual components in isolation, render components and assert on their output, mock native modules via jest.mock. API mocking with MSW (Mock Service Worker) intercept network requests in tests rather than mocking fetch/Axios directly. E2E tests with Detox: grey-box testing (Detox has knowledge of React Native's JavaScript state, enabling more deterministic tests than pure black-box UI automation), runs on real iOS Simulators and Android Emulators, tests the actual app binary. Maestro: YAML-based E2E flows that are faster to write than Detox tests, good for smoke testing critical paths. Clickmasters maintains a minimum of 70% code coverage on business logic and Detox tests for all critical user flows before production release.",
     },
     {
       question: "Can React Native apps access hardware like Bluetooth and NFC?",
       answer:
-        "Yes. React Native accesses platform hardware via Native Modules (Legacy Architecture) or TurboModules (New Architecture). For common hardware APIs, mature community libraries exist: Bluetooth LE via react-native-ble-plx (most feature-complete BLE library for React Native), NFC via react-native-nfc-manager, camera via react-native-vision-camera (New Architecture compatible, supports frame processors for real-time image processing), GPS via @react-native-community/geolocation or Expo Location, and biometrics via react-native-biometrics. For hardware-specific SDKs without community packages (industrial scanner SDKs, payment terminals, proprietary peripherals), ClickMasters writes custom TurboModules using the New Architecture Codegen specification type-safe, JSI-based native modules that call platform SDKs directly from the JavaScript thread without bridge serialisation overhead.",
+        "Yes. React Native accesses platform hardware via Native Modules (Legacy Architecture) or TurboModules (New Architecture). For common hardware APIs, mature community libraries exist: Bluetooth LE via react-native-ble-plx (most feature-complete BLE library for React Native), NFC via react-native-nfc-manager, camera via react-native-vision-camera (New Architecture compatible, supports frame processors for real-time image processing), GPS via @react-native-community/geolocation or Expo Location, and biometrics via react-native-biometrics. For hardware-specific SDKs without community packages (industrial scanner SDKs, payment terminals, proprietary peripherals), Clickmasters writes custom TurboModules using the New Architecture Codegen specification type-safe, JSI-based native modules that call platform SDKs directly from the JavaScript thread without bridge serialisation overhead.",
     },
   ],
   testimonial: {
@@ -10430,7 +10430,7 @@ const woocommerceDevelopmentOverride = {
   metaTitle: "WooCommerce Development Company | Custom WordPress Commerce",
   metaDescription:
     "Custom WooCommerce development for WordPress-native teams. Scalable, secure, and integrated commerce platforms built to convert.",
-  lead: "ClickMasters builds high-performance WooCommerce stores for organizations that want the power of WordPress with scalable e-commerce. Custom themes, deep plugin development, and specialized B2B commerce rules tailored to your unique workflow.",
+  lead: "Clickmasters builds high-performance WooCommerce stores for organizations that want the power of WordPress with scalable e-commerce. Custom themes, deep plugin development, and specialized B2B commerce rules tailored to your unique workflow.",
   highlights: [
     "WordPress Native Commerce",
     "Custom Plugin Development",
@@ -10673,7 +10673,7 @@ const woocommerceDevelopmentOverride = {
     {
       question: "Should I use WooCommerce or Shopify?",
       answer:
-        "WooCommerce is better when: your business is already on WordPress and content is central to your brand strategy; you need B2B wholesale pricing without paying $2,300/month for Shopify Plus; you require complete data ownership; or you need deep customisation that Shopify constrains. Shopify is better when: you want fastest launch without server management; your team is non-technical; your catalog and checkout are standard D2C; or you need global payment methods. ClickMasters builds on both and recommends based on your requirements.",
+        "WooCommerce is better when: your business is already on WordPress and content is central to your brand strategy; you need B2B wholesale pricing without paying $2,300/month for Shopify Plus; you require complete data ownership; or you need deep customisation that Shopify constrains. Shopify is better when: you want fastest launch without server management; your team is non-technical; your catalog and checkout are standard D2C; or you need global payment methods. Clickmasters builds on both and recommends based on your requirements.",
     },
     {
       question: "How much does WooCommerce development cost?",
@@ -10683,7 +10683,7 @@ const woocommerceDevelopmentOverride = {
     {
       question: "Why is my WooCommerce store slow and how do I fix it?",
       answer:
-        "Five common causes: inadequate hosting (migrate to Kinsta/WP Engine with Redis), too many plugins (audit per-plugin impact), unoptimized images (WebP, lazy loading, srcsets), no page caching (WP Rocket), bloated theme (replace page builders with custom Gutenberg blocks). ClickMasters performs a comprehensive performance audit identifying specific issues and delivers a prioritised fix list with expected Lighthouse score improvement per fix.",
+        "Five common causes: inadequate hosting (migrate to Kinsta/WP Engine with Redis), too many plugins (audit per-plugin impact), unoptimized images (WebP, lazy loading, srcsets), no page caching (WP Rocket), bloated theme (replace page builders with custom Gutenberg blocks). Clickmasters performs a comprehensive performance audit identifying specific issues and delivers a prioritised fix list with expected Lighthouse score improvement per fix.",
     },
     {
       question: "Can WooCommerce handle B2B wholesale pricing?",
@@ -10703,7 +10703,7 @@ const woocommerceDevelopmentOverride = {
     {
       question: "Do you provide ongoing WooCommerce maintenance?",
       answer:
-        "Yes. ClickMasters provides a WooCommerce maintenance retainer covering: monthly WordPress core, WooCommerce, and plugin updates (tested on staging), security monitoring, uptime monitoring with incident response, automated daily backups with monthly restore testing, performance monitoring (weekly Lighthouse score tracking), and monthly reporting. Maintenance retainers start at $2,000/month for stores under 500 orders/month.",
+        "Yes. Clickmasters provides a WooCommerce maintenance retainer covering: monthly WordPress core, WooCommerce, and plugin updates (tested on staging), security monitoring, uptime monitoring with incident response, automated daily backups with monthly restore testing, performance monitoring (weekly Lighthouse score tracking), and monthly reporting. Maintenance retainers start at $2,000/month for stores under 500 orders/month.",
     },
     {
       question: "Is WooCommerce scalable?",
@@ -10718,7 +10718,7 @@ const woocommerceDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters took our slow WooCommerce site and re-architected it. Our page speed improved by 200% and we finally have a B2B portal our trade customers actually use.",
+      "Clickmasters took our slow WooCommerce site and re-architected it. Our page speed improved by 200% and we finally have a B2B portal our trade customers actually use.",
     author: "Marketing Manager",
     role: "B2B Hardware Distributor",
   },
@@ -10743,8 +10743,8 @@ const ecommerceDevelopmentOverride = {
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle: "E-commerce Development Company | Shopify, WooCommerce & Headless",
   metaDescription:
-    "ClickMasters builds high-converting e-commerce stores. Shopify, WooCommerce, Headless, and Custom B2B platforms for startups and enterprise.",
-  lead: "ClickMasters builds high-converting e-commerce stores and custom commerce platforms for B2B and B2C companies across the USA, Europe, Canada, and Australia. Shopify Plus development. WooCommerce customization. Headless commerce on Next.js + Shopify Storefront API. Custom B2B wholesale portals. Multi-vendor marketplaces. And migrations from platforms that have stopped serving your growth.",
+    "Clickmasters builds high-converting e-commerce stores. Shopify, WooCommerce, Headless, and Custom B2B platforms for startups and enterprise.",
+  lead: "Clickmasters builds high-converting e-commerce stores and custom commerce platforms for B2B and B2C companies across the USA, Europe, Canada, and Australia. Shopify Plus development. WooCommerce customization. Headless commerce on Next.js + Shopify Storefront API. Custom B2B wholesale portals. Multi-vendor marketplaces. And migrations from platforms that have stopped serving your growth.",
   highlights: [
     "Shopify & Shopify Plus",
     "WooCommerce & Headless",
@@ -11044,7 +11044,7 @@ const ecommerceDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our custom B2B portal in 14 weeks. Online ordering adoption went from 0% to 71% in three months, and our sales reps now spend 60% less time on manual order entry.",
+      "Clickmasters built our custom B2B portal in 14 weeks. Online ordering adoption went from 0% to 71% in three months, and our sales reps now spend 60% less time on manual order entry.",
     author: "Operations Director",
     role: "Building Materials Distributor",
   },
@@ -11066,10 +11066,10 @@ const uiUxDesignOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "UI/UX Design Services | B2B Product & Web App Design | ClickMasters",
+    "UI/UX Design Services | B2B Product & Web App Design | Clickmasters",
   metaDescription:
-    "ClickMasters delivers UI/UX design for B2B web apps, SaaS platforms, mobile apps, and portals research-backed, Figma-first, WCAG-compliant. Serving USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers UI/UX design for B2B web applications, SaaS platforms, enterprise portals, and mobile apps across the USA, Europe, Canada, and Australia. Research-driven. Figma-first. WCAG 2.1 AA accessible. Designed to be handed off to developers and built exactly as designed no interpretation required.",
+    "Clickmasters delivers UI/UX design for B2B web apps, SaaS platforms, mobile apps, and portals research-backed, Figma-first, WCAG-compliant. Serving USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers UI/UX design for B2B web applications, SaaS platforms, enterprise portals, and mobile apps across the USA, Europe, Canada, and Australia. Research-driven. Figma-first. WCAG 2.1 AA accessible. Designed to be handed off to developers and built exactly as designed no interpretation required.",
   highlights: [
     "UX Research & Discovery",
     "Figma High-Fidelity Design",
@@ -11365,7 +11365,7 @@ const uiUxDesignOverride = {
     },
     {
       heading: "Design Deliverables What You Receive",
-      body: "Every ClickMasters design engagement delivers a complete, production-ready design package that developers can implement without ambiguity.",
+      body: "Every Clickmasters design engagement delivers a complete, production-ready design package that developers can implement without ambiguity.",
       items: [
         "Figma Source Files: Full design file with organized pages: research, flows, wireframes, components, screens (all states), design tokens, and annotations",
         "Interactive Prototype: Clickable Figma prototype for all primary user flows",
@@ -11398,7 +11398,7 @@ const uiUxDesignOverride = {
     {
       question: "What design tools do you use?",
       answer:
-        "ClickMasters designs in Figma for all UI/UX work it is the industry-standard design tool for product and software design. We also use: FigJam for collaborative workshops, Maze or UserTesting for remote usability testing, Optimal Workshop for information architecture testing, and Hotjar or FullStory for analytics review on existing products.",
+        "Clickmasters designs in Figma for all UI/UX work it is the industry-standard design tool for product and software design. We also use: FigJam for collaborative workshops, Maze or UserTesting for remote usability testing, Optimal Workshop for information architecture testing, and Hotjar or FullStory for analytics review on existing products.",
     },
     {
       question: "How do you ensure the design is accessible (WCAG compliant)?",
@@ -11408,23 +11408,23 @@ const uiUxDesignOverride = {
     {
       question: "How does your design process work with our development team?",
       answer:
-        "ClickMasters operates as a design partner integrated into your development workflow, not a separate agency delivering static files. Our design-development integration includes: API contract design during architecture phase, component-level design matching your frontend framework's component structure, developer handoff sessions walking through every design decision, design QA review during development sprints, and a design token handoff system that connects Figma variables to your CSS/SCSS design tokens. The goal is zero interpretation gap between design and implementation.",
+        "Clickmasters operates as a design partner integrated into your development workflow, not a separate agency delivering static files. Our design-development integration includes: API contract design during architecture phase, component-level design matching your frontend framework's component structure, developer handoff sessions walking through every design decision, design QA review during development sprints, and a design token handoff system that connects Figma variables to your CSS/SCSS design tokens. The goal is zero interpretation gap between design and implementation.",
     },
     {
       question: "Do you design both web applications and mobile apps?",
       answer:
-        "Yes. ClickMasters designs for web applications, mobile apps (iOS and Android), and responsive web experiences. For mobile app design, we apply platform-native design patterns: Apple's Human Interface Guidelines (HIG) for iOS and Google's Material Design 3 for Android. For cross-platform apps (React Native, Flutter), we design platform-adaptive interfaces that feel native on each platform. We also design for platform edge cases: offline state UI, loading state skeletons, permission request flows, and app store screenshot optimization.",
+        "Yes. Clickmasters designs for web applications, mobile apps (iOS and Android), and responsive web experiences. For mobile app design, we apply platform-native design patterns: Apple's Human Interface Guidelines (HIG) for iOS and Google's Material Design 3 for Android. For cross-platform apps (React Native, Flutter), we design platform-adaptive interfaces that feel native on each platform. We also design for platform edge cases: offline state UI, loading state skeletons, permission request flows, and app store screenshot optimization.",
     },
     {
       question:
         "Can you redesign our existing product without disrupting users?",
       answer:
-        "Yes. Product redesign requires particular care for existing B2B software because users have invested time learning your current interface a radical redesign can feel like their expertise has been invalidated. ClickMasters approaches product redesigns with a structured change management methodology: behavioral analysis to identify which existing patterns users have internalized (these are preserved or evolved gracefully), staged rollout design (feature flags for A/B testing), in-app guidance design for navigation changes, and a communication design kit (tooltips, banners, emails) explaining what changed and why. We balance UX improvement with user continuity the goal is a product that feels improved, not unfamiliar.",
+        "Yes. Product redesign requires particular care for existing B2B software because users have invested time learning your current interface a radical redesign can feel like their expertise has been invalidated. Clickmasters approaches product redesigns with a structured change management methodology: behavioral analysis to identify which existing patterns users have internalized (these are preserved or evolved gracefully), staged rollout design (feature flags for A/B testing), in-app guidance design for navigation changes, and a communication design kit (tooltips, banners, emails) explaining what changed and why. We balance UX improvement with user continuity the goal is a product that feels improved, not unfamiliar.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters transformed our cluttered dashboard into a streamlined, professional product. Our customer NPS scores jumped significantly within 30 days of the redesign launch.",
+      "Clickmasters transformed our cluttered dashboard into a streamlined, professional product. Our customer NPS scores jumped significantly within 30 days of the redesign launch.",
     author: "Product Manager",
     role: "Enterprise HR SaaS",
   },
@@ -11448,8 +11448,8 @@ const jamstackDevelopmentOverride = {
     "/images/photo-1547658719-da2b51169166.jpg",
   metaTitle: "JAMstack Development Company | Next.js, Gatsby & Astro Experts",
   metaDescription:
-    "ClickMasters builds high-performance JAMstack sites using Next.js, Gatsby & Astro. Sub-second loads, global edge distribution, and zero server maintenance.",
-  lead: "ClickMasters builds JAMstack applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js for dynamic marketing sites and web applications with edge rendering. Gatsby for content-heavy documentation and blogs. Astro for maximum performance content sites with zero JavaScript overhead. Deployed on Vercel or Cloudflare Pages distributed globally, horizontally scalable by default, no server to maintain.",
+    "Clickmasters builds high-performance JAMstack sites using Next.js, Gatsby & Astro. Sub-second loads, global edge distribution, and zero server maintenance.",
+  lead: "Clickmasters builds JAMstack applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js for dynamic marketing sites and web applications with edge rendering. Gatsby for content-heavy documentation and blogs. Astro for maximum performance content sites with zero JavaScript overhead. Deployed on Vercel or Cloudflare Pages distributed globally, horizontally scalable by default, no server to maintain.",
   highlights: [
     "Next.js / Gatsby / Astro",
     "Edge CDN Distribution",
@@ -11716,7 +11716,7 @@ const jamstackDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "Moving to a JAMstack architecture with ClickMasters eliminated our $8,000/month WordPress overhead and dropped our mobile load time to 1.1s. Our demo request conversion rate nearly doubled within 90 days.",
+      "Moving to a JAMstack architecture with Clickmasters eliminated our $8,000/month WordPress overhead and dropped our mobile load time to 1.1s. Our demo request conversion rate nearly doubled within 90 days.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -11738,10 +11738,10 @@ const productDesignOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "Product Design Services | UX-Led B2B Software Design | ClickMasters",
+    "Product Design Services | UX-Led B2B Software Design | Clickmasters",
   metaDescription:
-    "ClickMasters delivers product design for B2B software discovery, UX strategy, user flows, prototyping, and high-fidelity Figma for companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers product design for B2B software companies across the USA, Europe, Canada, and Australia. User research to ground design decisions in real behaviour. Jobs-to-be-done mapping to clarify what users actually need. Information architecture to structure complex B2B workflows. High-fidelity Figma prototypes that communicate design intent precisely enough for engineering to build without ambiguity. Design that reduces development rework the most expensive design mistake.",
+    "Clickmasters delivers product design for B2B software discovery, UX strategy, user flows, prototyping, and high-fidelity Figma for companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers product design for B2B software companies across the USA, Europe, Canada, and Australia. User research to ground design decisions in real behaviour. Jobs-to-be-done mapping to clarify what users actually need. Information architecture to structure complex B2B workflows. High-fidelity Figma prototypes that communicate design intent precisely enough for engineering to build without ambiguity. Design that reduces development rework the most expensive design mistake.",
   highlights: [
     "UX Strategy & Discovery",
     "User Research & Testing",
@@ -11946,8 +11946,8 @@ const productDesignOverride = {
   ],
   sections: [
     {
-      heading: "The ClickMasters Product Design Process",
-      body: "Product design at ClickMasters begins with understanding not wireframes. The most expensive design mistake is building the wrong thing with beautiful fidelity. Our process is structured to surface misunderstandings between what users need and what the product team believes they need before engineering begins.",
+      heading: "The Clickmasters Product Design Process",
+      body: "Product design at Clickmasters begins with understanding not wireframes. The most expensive design mistake is building the wrong thing with beautiful fidelity. Our process is structured to surface misunderstandings between what users need and what the product team believes they need before engineering begins.",
       items: [],
     },
     {
@@ -11972,12 +11972,12 @@ const productDesignOverride = {
     {
       question: "How much does product design cost?",
       answer:
-        "Product design costs range from $3,000 for a design audit to $35,000 for a full high-fidelity Figma design of a complete B2B product. A UX discovery sprint costs $8,000-18,000 and takes 2-3 weeks. User research (5-8 interviews with full analysis) costs $8,000-15,000. Wireframing a complete product costs $6,000-18,000. High-fidelity Figma design of a full product costs $10,000-35,000 and takes 4-8 weeks. Combined design and development engagements (ClickMasters designs and builds the product) cost $25,000-120,000. All pricing is fixed after a scoping session.",
+        "Product design costs range from $3,000 for a design audit to $35,000 for a full high-fidelity Figma design of a complete B2B product. A UX discovery sprint costs $8,000-18,000 and takes 2-3 weeks. User research (5-8 interviews with full analysis) costs $8,000-15,000. Wireframing a complete product costs $6,000-18,000. High-fidelity Figma design of a full product costs $10,000-35,000 and takes 4-8 weeks. Combined design and development engagements (Clickmasters designs and builds the product) cost $25,000-120,000. All pricing is fixed after a scoping session.",
     },
     {
       question: "What does a design-to-dev handoff include?",
       answer:
-        "A design-to-dev handoff from ClickMasters includes: a Figma file in developer mode with accurate dimensions, spacing, and colour tokens (engineers can inspect any element and see exact values), named components matching the component library (the Figma component name matches the React/code component name reducing translation ambiguity), interaction specifications for non-obvious behaviour (animation timings, conditional logic, micro-interaction triggers documented in annotations), all assets exported in correct formats and resolutions, responsive behaviour documented (how each component behaves at each breakpoint), and accessibility annotations (ARIA roles, keyboard navigation flow, focus order). ClickMasters also offers design-to-code service where our frontend engineers build the Figma designs directly eliminating the handoff problem entirely.",
+        "A design-to-dev handoff from Clickmasters includes: a Figma file in developer mode with accurate dimensions, spacing, and colour tokens (engineers can inspect any element and see exact values), named components matching the component library (the Figma component name matches the React/code component name reducing translation ambiguity), interaction specifications for non-obvious behaviour (animation timings, conditional logic, micro-interaction triggers documented in annotations), all assets exported in correct formats and resolutions, responsive behaviour documented (how each component behaves at each breakpoint), and accessibility annotations (ARIA roles, keyboard navigation flow, focus order). Clickmasters also offers design-to-code service where our frontend engineers build the Figma designs directly eliminating the handoff problem entirely.",
     },
     {
       question: "Why is user research worth the investment?",
@@ -11987,7 +11987,7 @@ const productDesignOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters didn't just design our product they helped us discover what our users actually needed. The research phase prevented us from building three features that would have been complete waste.",
+      "Clickmasters didn't just design our product they helped us discover what our users actually needed. The research phase prevented us from building three features that would have been complete waste.",
     author: "CPO",
     role: "Enterprise SaaS Company",
   },
@@ -12062,10 +12062,10 @@ const webDesignOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "Web Design Services | Conversion-Focused B2B Web Design | ClickMasters",
+    "Web Design Services | Conversion-Focused B2B Web Design | Clickmasters",
   metaDescription:
-    "ClickMasters designs high-converting B2B websites responsive, accessible, Core Web Vitals optimised for companies in the USA, Europe, Canada & Australia. Figma to production.",
-  lead: "ClickMasters designs B2B websites for companies across the USA, Europe, Canada, and Australia. Conversion architecture that moves ICP visitors from awareness to qualified lead. Messaging hierarchy that communicates value in 5 seconds. Responsive layouts that perform on the devices your audience actually uses. Figma designs that hand off to development without ambiguity. Core Web Vitals 90+ standard.",
+    "Clickmasters designs high-converting B2B websites responsive, accessible, Core Web Vitals optimised for companies in the USA, Europe, Canada & Australia. Figma to production.",
+  lead: "Clickmasters designs B2B websites for companies across the USA, Europe, Canada, and Australia. Conversion architecture that moves ICP visitors from awareness to qualified lead. Messaging hierarchy that communicates value in 5 seconds. Responsive layouts that perform on the devices your audience actually uses. Figma designs that hand off to development without ambiguity. Core Web Vitals 90+ standard.",
   highlights: [
     "Conversion Architecture",
     "Figma High-Fidelity",
@@ -12282,27 +12282,27 @@ const webDesignOverride = {
       question:
         "What is the difference between web design and web development?",
       answer:
-        "Web design is the discipline of defining how a website looks, feels, and guides user behaviour the visual hierarchy, layout, typography, colour, interaction patterns, and conversion architecture. It is primarily done in Figma (or other design tools) and results in a visual specification that developers implement. Web development is the engineering discipline of building the working website writing HTML, CSS, JavaScript, and connecting to backend systems. A professional B2B website project requires both: design first (to ensure the conversion architecture and visual system are correct before any code is written) and development second (to implement the designs accurately, with the performance, accessibility, and SEO standards required for a production website). ClickMasters offers design-only engagements, development-only engagements, and combined design + development engagements.",
+        "Web design is the discipline of defining how a website looks, feels, and guides user behaviour the visual hierarchy, layout, typography, colour, interaction patterns, and conversion architecture. It is primarily done in Figma (or other design tools) and results in a visual specification that developers implement. Web development is the engineering discipline of building the working website writing HTML, CSS, JavaScript, and connecting to backend systems. A professional B2B website project requires both: design first (to ensure the conversion architecture and visual system are correct before any code is written) and development second (to implement the designs accurately, with the performance, accessibility, and SEO standards required for a production website). Clickmasters offers design-only engagements, development-only engagements, and combined design + development engagements.",
     },
     {
       question: "How much does B2B website design cost?",
       answer:
-        "B2B website design costs range from $3,000 for a website design audit to $40,000 for a complete website redesign with messaging workshop, analytics audit, and A/B rollout strategy. A 5-10 page B2B website design in Figma costs $8,000-22,000 and takes 3-6 weeks. A 10-20 page website with design system costs $14,000-35,000. A SaaS marketing website design costs $12,000-30,000. Landing page design costs $3,000-8,000. Combined design and development (ClickMasters designs and builds) costs $20,000-70,000.",
+        "B2B website design costs range from $3,000 for a website design audit to $40,000 for a complete website redesign with messaging workshop, analytics audit, and A/B rollout strategy. A 5-10 page B2B website design in Figma costs $8,000-22,000 and takes 3-6 weeks. A 10-20 page website with design system costs $14,000-35,000. A SaaS marketing website design costs $12,000-30,000. Landing page design costs $3,000-8,000. Combined design and development (Clickmasters designs and builds) costs $20,000-70,000.",
     },
     {
       question: "What deliverables do I receive from a web design engagement?",
       answer:
-        "A ClickMasters web design engagement delivers: a Figma design file with all pages at all breakpoints (mobile 375px, tablet 768px, desktop 1280px), a component library (all reusable UI elements with all interactive states documented), design tokens (colour palette, typography scale, spacing system ready for CSS variable or Tailwind configuration), interaction specifications (annotations on any non-obvious behaviour hover states, transitions, conditional logic), asset exports (SVGs, icons, images in correct formats and resolutions), and a WCAG 2.1 AA accessibility audit report confirming contrast ratios and interactive element accessibility. For design + development engagements, the Figma file is configured for developer mode engineers can inspect any element and extract exact values.",
+        "A Clickmasters web design engagement delivers: a Figma design file with all pages at all breakpoints (mobile 375px, tablet 768px, desktop 1280px), a component library (all reusable UI elements with all interactive states documented), design tokens (colour palette, typography scale, spacing system ready for CSS variable or Tailwind configuration), interaction specifications (annotations on any non-obvious behaviour hover states, transitions, conditional logic), asset exports (SVGs, icons, images in correct formats and resolutions), and a WCAG 2.1 AA accessibility audit report confirming contrast ratios and interactive element accessibility. For design + development engagements, the Figma file is configured for developer mode engineers can inspect any element and extract exact values.",
     },
     {
       question: "How long does web design take?",
       answer:
-        "A landing page design takes 1-3 weeks. A 5-10 page B2B website design takes 3-6 weeks. A 10-20 page website with design system takes 5-9 weeks. A full website redesign (analytics audit, messaging workshop, redesign, SEO preservation strategy) takes 5-10 weeks. Timeline depends on: number of unique page templates (a 20-page website with 5 unique templates takes less time than a 20-page website with 15 unique templates), whether a messaging workshop is included (adds 1 week), stakeholder review cycles (ClickMasters designs to a tight brief and presents at each milestone unlimited revision cycles are not included), and asset availability (providing brand guidelines, approved photography, and copy reduces design time significantly).",
+        "A landing page design takes 1-3 weeks. A 5-10 page B2B website design takes 3-6 weeks. A 10-20 page website with design system takes 5-9 weeks. A full website redesign (analytics audit, messaging workshop, redesign, SEO preservation strategy) takes 5-10 weeks. Timeline depends on: number of unique page templates (a 20-page website with 5 unique templates takes less time than a 20-page website with 15 unique templates), whether a messaging workshop is included (adds 1 week), stakeholder review cycles (Clickmasters designs to a tight brief and presents at each milestone unlimited revision cycles are not included), and asset availability (providing brand guidelines, approved photography, and copy reduces design time significantly).",
     },
   ],
   testimonial: {
     quote:
-      "Our redesign with ClickMasters increased inbound demo requests by 180% in 3 months. The conversion architecture they built especially the pricing page and hero messaging completely changed how prospects perceive our product.",
+      "Our redesign with Clickmasters increased inbound demo requests by 180% in 3 months. The conversion architecture they built especially the pricing page and hero messaging completely changed how prospects perceive our product.",
     author: "CMO",
     role: "SaaS Company",
   },
@@ -12369,10 +12369,10 @@ const mobileAppDesignOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "Mobile App Design Services | iOS & Android UX Design | ClickMasters",
+    "Mobile App Design Services | iOS & Android UX Design | Clickmasters",
   metaDescription:
-    "ClickMasters designs iOS and Android mobile apps HIG-compliant iOS UI, Material Design 3 Android, and cross-platform for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters designs iOS and Android mobile applications for B2B companies across the USA, Europe, Canada, and Australia. HIG-compliant iOS designs that Apple reviewers approve and iPhone users expect. Material Design 3 Android designs with dynamic colour and updated component set. Cross-platform designs that feel right on both platforms. Every design in Figma, ready for Swift/Kotlin development.",
+    "Clickmasters designs iOS and Android mobile apps HIG-compliant iOS UI, Material Design 3 Android, and cross-platform for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters designs iOS and Android mobile applications for B2B companies across the USA, Europe, Canada, and Australia. HIG-compliant iOS designs that Apple reviewers approve and iPhone users expect. Material Design 3 Android designs with dynamic colour and updated component set. Cross-platform designs that feel right on both platforms. Every design in Figma, ready for Swift/Kotlin development.",
   highlights: [
     "HIG-Compliant iOS Design",
     "Material Design 3 Android",
@@ -12562,7 +12562,7 @@ const mobileAppDesignOverride = {
         "iOS-first design for field workers who use iPhones. Offline-first considerations, large touch targets for gloved hands, barcode scanning integration.",
     },
     {
-      nameame: "Consumer Mobile App",
+      name: "Consumer Mobile App",
       description:
         "Platform-native design for both iOS and Android. Social features, push notifications, deep links, and App Store optimisation.",
     },
@@ -12572,15 +12572,15 @@ const mobileAppDesignOverride = {
         "Android-first or cross-platform depending on device deployment. MDM integration considerations, authentication flows, data security.",
     },
     {
-      name: "Mobile Bang/Fintech",
+      name: "Mobile Banking/Fintech",
       description:
         "Highest security standards, biometric authentication integration, transaction flows, and accessibility compliance (WCAG 2.1 AA).",
     },
   ],
   sections: [
     {
-      heading: "iOS vs Android Design Standards What ClickMasters Delivers",
-      body: "iOS and Android have different design languages, interaction patterns, and platform conventions. Users of each platform have expectations built from years of exposure to native apps an Android bottom sheet used on iOS, or an iOS navigation controller on Android, both produce friction. ClickMasters designs to the correct standard for each platform.",
+      heading: "iOS vs Android Design Standards What Clickmasters Delivers",
+      body: "iOS and Android have different design languages, interaction patterns, and platform conventions. Users of each platform have expectations built from years of exposure to native apps an Android bottom sheet used on iOS, or an iOS navigation controller on Android, both produce friction. Clickmasters designs to the correct standard for each platform.",
       items: [],
     },
     {
@@ -12606,22 +12606,22 @@ const mobileAppDesignOverride = {
     {
       question: "How much does mobile app design cost?",
       answer:
-        "Mobile app design costs range from $3,000 for a UX audit to $40,000 for a complete iOS + Android cross-platform design. An iOS app design costs $8,000-28,000 depending on feature complexity and screen count. An Android app design costs $8,000-28,000. Both platforms designed simultaneously costs $12,000-40,000. App Store screenshots for both stores cost $2,500-5,000. Combined design and development engagements (ClickMasters designs and builds the app) cost $28,000-85,000.",
+        "Mobile app design costs range from $3,000 for a UX audit to $40,000 for a complete iOS + Android cross-platform design. An iOS app design costs $8,000-28,000 depending on feature complexity and screen count. An Android app design costs $8,000-28,000. Both platforms designed simultaneously costs $12,000-40,000. App Store screenshots for both stores cost $2,500-5,000. Combined design and development engagements (Clickmasters designs and builds the app) cost $28,000-85,000.",
     },
     {
       question: "What does a mobile app Figma handoff include?",
       answer:
-        "A mobile app Figma handoff from ClickMasters includes: all screens at all sizes (iPhone 14 Pro and iPhone SE for iOS the two most divergent screen sizes; standard phone and tablet for Android), all interactive states documented (default, pressed, disabled, loading, error, empty, success), all platform-specific component variants (iOS sheet vs Android bottom sheet, iOS navigation bar vs Android top app bar), dark mode and light mode variants, exact specifications for developer implementation (spacing, typography scale, colour tokens with platform-correct names), motion specifications for transitions and micro-interactions, and accessibility annotations (minimum touch target compliance, ARIA equivalents for screen reader implementation). For design + development engagements, the Figma file is directly consumed by our engineers no translation loss.",
+        "A mobile app Figma handoff from Clickmasters includes: all screens at all sizes (iPhone 14 Pro and iPhone SE for iOS the two most divergent screen sizes; standard phone and tablet for Android), all interactive states documented (default, pressed, disabled, loading, error, empty, success), all platform-specific component variants (iOS sheet vs Android bottom sheet, iOS navigation bar vs Android top app bar), dark mode and light mode variants, exact specifications for developer implementation (spacing, typography scale, colour tokens with platform-correct names), motion specifications for transitions and micro-interactions, and accessibility annotations (minimum touch target compliance, ARIA equivalents for screen reader implementation). For design + development engagements, the Figma file is directly consumed by our engineers no translation loss.",
     },
     {
       question: "Can you redesign an existing mobile app?",
       answer:
-        "Yes. Mobile app redesign is one of ClickMasters' most common design engagements. The process: UX audit of the current app (heuristic evaluation against HIG or Material 3 standards, identification of usability issues, conversion funnel analysis for key flows), analytics review (screen abandonment rates, flow completion rates, crash-related UX issues from Crashlytics), stakeholder interviews (what is the redesign achieving new feature parity, brand update, UX improvement, platform compliance), high-fidelity redesign in Figma (same feature set, improved UX and visual design), and usability testing comparison (new design vs. old design with real users validate before building). App Store screenshots are redesigned as part of every app redesign engagement.",
+        "Yes. Mobile app redesign is one of Clickmasters' most common design engagements. The process: UX audit of the current app (heuristic evaluation against HIG or Material 3 standards, identification of usability issues, conversion funnel analysis for key flows), analytics review (screen abandonment rates, flow completion rates, crash-related UX issues from Crashlytics), stakeholder interviews (what is the redesign achieving new feature parity, brand update, UX improvement, platform compliance), high-fidelity redesign in Figma (same feature set, improved UX and visual design), and usability testing comparison (new design vs. old design with real users validate before building). App Store screenshots are redesigned as part of every app redesign engagement.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters designed our iOS and Android apps from scratch. The platform-specific attention to detail HIG for iOS, Material 3 for Android meant both apps passed store review on the first submission.",
+      "Clickmasters designed our iOS and Android apps from scratch. The platform-specific attention to detail HIG for iOS, Material 3 for Android meant both apps passed store review on the first submission.",
     author: "Head of Product",
     role: "Mobile-First B2B Startup",
   },
@@ -12692,10 +12692,10 @@ const uxResearchOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "UX Research Services | User Research & Usability Testing | ClickMasters",
+    "UX Research Services | User Research & Usability Testing | Clickmasters",
   metaDescription:
-    "ClickMasters conducts user research moderated interviews, usability testing, and journey mapping to ground product decisions in real user behaviour for B2B companies worldwide.",
-  lead: "ClickMasters conducts user research for B2B software companies across the USA, Europe, Canada, and Australia. Moderated interviews with your target users not internal opinions dressed as user insight. Usability testing on prototypes before engineering begins. Journey mapping that reveals the gap between the experience your product delivers and the experience your users need. Research that earns a seat at the product roadmap table.",
+    "Clickmasters conducts user research moderated interviews, usability testing, and journey mapping to ground product decisions in real user behaviour for B2B companies worldwide.",
+  lead: "Clickmasters conducts user research for B2B software companies across the USA, Europe, Canada, and Australia. Moderated interviews with your target users not internal opinions dressed as user insight. Usability testing on prototypes before engineering begins. Journey mapping that reveals the gap between the experience your product delivers and the experience your users need. Research that earns a seat at the product roadmap table.",
   highlights: [
     "Moderated User Interviews",
     "Usability Testing",
@@ -12913,23 +12913,23 @@ const uxResearchOverride = {
       question:
         "What is the difference between user research and usability testing?",
       answer:
-        "User research is the broader category any method that builds understanding of users' goals, behaviours, and contexts. Usability testing is one specific method within user research: participants are given tasks to complete on a product (or prototype) while the researcher observes where they struggle. User research methods that are not usability testing include: moderated interviews (exploring goals, mental models, and current behaviour without a product to evaluate), surveys (quantitative validation of hypotheses), contextual inquiry (observing users in their real work environment), card sorting (understanding mental models for IA design), and diary studies (tracking behaviour over time). For B2B products, ClickMasters typically recommends a combination: moderated interviews to understand the problem space before design begins, and usability testing to validate designs before engineering begins.",
+        "User research is the broader category any method that builds understanding of users' goals, behaviours, and contexts. Usability testing is one specific method within user research: participants are given tasks to complete on a product (or prototype) while the researcher observes where they struggle. User research methods that are not usability testing include: moderated interviews (exploring goals, mental models, and current behaviour without a product to evaluate), surveys (quantitative validation of hypotheses), contextual inquiry (observing users in their real work environment), card sorting (understanding mental models for IA design), and diary studies (tracking behaviour over time). For B2B products, Clickmasters typically recommends a combination: moderated interviews to understand the problem space before design begins, and usability testing to validate designs before engineering begins.",
     },
     {
       question: "How do you recruit users for research sessions?",
       answer:
-        "ClickMasters recruits participants through two channels. Client customer base: for testing an existing product or a redesign, recruiting from the client's existing users is most valuable these participants have real usage context and their feedback applies directly to the product's actual use cases. ClickMasters manages the recruitment outreach, screening, and scheduling. Research panels: for new products, pre-product testing, or reaching users who are not yet customers, ClickMasters uses professional research panels (UserTesting, Respondent, or User Interviews panel size millions of participants screened by demographics, job title, technology usage, and specific behaviours). Screener design is critical poorly screened participants produce misleading findings. ClickMasters designs screeners to reach the exact user profile specified by the client.",
+        "Clickmasters recruits participants through two channels. Client customer base: for testing an existing product or a redesign, recruiting from the client's existing users is most valuable these participants have real usage context and their feedback applies directly to the product's actual use cases. Clickmasters manages the recruitment outreach, screening, and scheduling. Research panels: for new products, pre-product testing, or reaching users who are not yet customers, Clickmasters uses professional research panels (UserTesting, Respondent, or User Interviews panel size millions of participants screened by demographics, job title, technology usage, and specific behaviours). Screener design is critical poorly screened participants produce misleading findings. Clickmasters designs screeners to reach the exact user profile specified by the client.",
     },
     {
       question:
         "What deliverables do I receive from a user research engagement?",
       answer:
-        "A ClickMasters user research engagement delivers: session recordings (video + audio, with participant consent available for 30 days post-engagement), verbatim transcripts (every participant session fully transcribed for analysis), affinity map (digital Figma or FigJam showing all observations clustered into themes, accessible to the product team), research report (executive summary, methodology, key findings per theme, design implications per finding, severity ratings for usability issues), and a readout presentation (60-minute stakeholder presentation where ClickMasters presents findings with video clips from sessions seeing a real user struggle with your product is more persuasive than any written report). For journey mapping engagements, the deliverable includes the journey map diagram in Figma and the workshop recording.",
+        "A Clickmasters user research engagement delivers: session recordings (video + audio, with participant consent available for 30 days post-engagement), verbatim transcripts (every participant session fully transcribed for analysis), affinity map (digital Figma or FigJam showing all observations clustered into themes, accessible to the product team), research report (executive summary, methodology, key findings per theme, design implications per finding, severity ratings for usability issues), and a readout presentation (60-minute stakeholder presentation where Clickmasters presents findings with video clips from sessions seeing a real user struggle with your product is more persuasive than any written report). For journey mapping engagements, the deliverable includes the journey map diagram in Figma and the workshop recording.",
     },
   ],
   testimonial: {
     quote:
-      "The user research ClickMasters conducted fundamentally changed our product roadmap. We were about to build three features based on internal assumptions the research showed none of them addressed what users actually needed.",
+      "The user research Clickmasters conducted fundamentally changed our product roadmap. We were about to build three features based on internal assumptions the research showed none of them addressed what users actually needed.",
     author: "CPO",
     role: "Enterprise SaaS Company",
   },
@@ -12995,10 +12995,10 @@ const wireframingPrototypingOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "Wireframing & Prototyping Services | Figma Prototypes | ClickMasters",
+    "Wireframing & Prototyping Services | Figma Prototypes | Clickmasters",
   metaDescription:
-    "ClickMasters delivers wireframes and interactive prototypes for web and mobile from low-fidelity flows to high-fidelity Figma prototypes ready for user testing and developer handoff.",
-  lead: "ClickMasters delivers wireframes and interactive prototypes for web and mobile applications from low-fidelity flow sketches to high-fidelity clickable Figma prototypes ready for usability testing or investor demos. Validate user flows with stakeholders and users before committing to visual design. Communicate complex interactions to engineering without ambiguity. Move faster er by separating the layout question from the aesthetic question.",
+    "Clickmasters delivers wireframes and interactive prototypes for web and mobile from low-fidelity flows to high-fidelity Figma prototypes ready for user testing and developer handoff.",
+  lead: "Clickmasters delivers wireframes and interactive prototypes for web and mobile applications from low-fidelity flow sketches to high-fidelity clickable Figma prototypes ready for usability testing or investor demos. Validate user flows with stakeholders and users before committing to visual design. Communicate complex interactions to engineering without ambiguity. Move faster er by separating the layout question from the aesthetic question.",
   highlights: [
     "Low & High Fidelity Wireframes",
     "Interactive Figma Prototypes",
@@ -13195,7 +13195,7 @@ const wireframingPrototypingOverride = {
     },
     {
       heading: "Wireframes Before Visual Design Why It Matters",
-      body: `Wireframes before visual design is ClickMasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`,
+      body: `Wireframes before visual design is Clickmasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`,
       items: [],
     },
   ],
@@ -13207,17 +13207,17 @@ const wireframingPrototypingOverride = {
     },
     {
       question: "Do I need wireframes before visual design?",
-      answer: `Wireframes before visual design is ClickMasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or ir information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`,
+      answer: `Wireframes before visual design is Clickmasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or ir information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`,
     },
     {
       question: "How long does wireframing take?",
       answer:
-        "Wireframing a complete B2B web application takes 2-4 weeks depending on the number of screens and their complexity. A 10-screen SaaS dashboard can be wireframed in 2 weeks. A 40-screen enterprise application with complex workflows takes 4-6 weeks. Mobile app wireframing takes 2-4 weeks for a standard consumer app. The timeline depends primarily on the number of unique screen templates (a 50-screen app with 8 unique layouts is faster than a 20-screen app with 18 unique layouts), the number of edge cases to document (enterprise B2B apps with complex permission models have many more states to design), and the number of review cycles (ClickMasters typically completes wireframing in 2 stakeholder review rounds).",
+        "Wireframing a complete B2B web application takes 2-4 weeks depending on the number of screens and their complexity. A 10-screen SaaS dashboard can be wireframed in 2 weeks. A 40-screen enterprise application with complex workflows takes 4-6 weeks. Mobile app wireframing takes 2-4 weeks for a standard consumer app. The timeline depends primarily on the number of unique screen templates (a 50-screen app with 8 unique layouts is faster than a 20-screen app with 18 unique layouts), the number of edge cases to document (enterprise B2B apps with complex permission models have many more states to design), and the number of review cycles (Clickmasters typically completes wireframing in 2 stakeholder review rounds).",
     },
     {
       question: "Can I use Figma prototypes for usability testing?",
       answer:
-        "Yes Figma prototypes are the standard tool for moderated usability testing at ClickMasters. The prototype is shared via a Figma presentation link participants open it in their browser without needing a Figma account and the researcher observes them completing tasks via screen share. Figma prototypes work on mobile devices as well (participants can test mobile app flows on their own phone). Limitations: Figma prototypes cannot simulate dynamic content (they show static data, not real user data), cannot test performance, and some complex interactions require workarounds in prototype mode. For user flows that require dynamic data (a search that returns different results based on input), ClickMasters uses Framer or a coded prototype for the specific screens that require dynamic behaviour.",
+        "Yes Figma prototypes are the standard tool for moderated usability testing at Clickmasters. The prototype is shared via a Figma presentation link participants open it in their browser without needing a Figma account and the researcher observes them completing tasks via screen share. Figma prototypes work on mobile devices as well (participants can test mobile app flows on their own phone). Limitations: Figma prototypes cannot simulate dynamic content (they show static data, not real user data), cannot test performance, and some complex interactions require workarounds in prototype mode. For user flows that require dynamic data (a search that returns different results based on input), Clickmasters uses Framer or a coded prototype for the specific screens that require dynamic behaviour.",
     },
   ],
   testimonial: {
@@ -13285,10 +13285,10 @@ const designSystemsOverride = {
   heroImage:
     "/images/photo-1561070791-2526d30994b5.jpg",
   metaTitle:
-    "Design Systems Services | Figma + Storybook Component Libraries | ClickMasters",
+    "Design Systems Services | Figma + Storybook Component Libraries | Clickmasters",
   metaDescription:
-    "ClickMasters builds design systems Figma component libraries, design tokens, and Storybook code implementation for B2B software companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds design systems for B2B software companies across the USA, Europe, Canada, and Australia. Figma component libraries that designers use as the source of truth. Storybook implementations that developers consume as production-ready code. Design tokens that flow from Figma to Tailwind CSS automatically via Style Dictionary. And visual regression testing with Chromatic that catches unintended changes before they reach production.",
+    "Clickmasters builds design systems Figma component libraries, design tokens, and Storybook code implementation for B2B software companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds design systems for B2B software companies across the USA, Europe, Canada, and Australia. Figma component libraries that designers use as the source of truth. Storybook implementations that developers consume as production-ready code. Design tokens that flow from Figma to Tailwind CSS automatically via Style Dictionary. And visual regression testing with Chromatic that catches unintended changes before they reach production.",
   highlights: [
     "Figma Component Library",
     "Design Tokens (Style Dictionary)",
@@ -13488,7 +13488,7 @@ const designSystemsOverride = {
   sections: [
     {
       heading: "Design System Architecture",
-      body: "A design system is not a component library it is the combination of design tokens, components, documentation, and governance processes that enable multiple teams to build consistent, accessible products without coordination overhead. ClickMasters structures design systems with four layers.",
+      body: "A design system is not a component library it is the combination of design tokens, components, documentation, and governance processes that enable multiple teams to build consistent, accessible products without coordination overhead. Clickmasters structures design systems with four layers.",
       items: [
         "Design Tokens: The atomic design decisions expressed as named variables: colour (primary, secondary, semantic with light/dark values), typography (font family, sizes on modular scale, line heights), spacing (4px or 8px grid), border radius, shadow, z-index. Tokens defined in Figma variables and exported via Style Dictionary.",
         "Primitive Components: The lowest-level interactive building blocks: Button (all variants, sizes, states), Input (all types, states, icons), Select, Checkbox, Radio, Toggle, Badge, Tag, Avatar, Spinner. Each primitive is built to single responsibility, fully accessible, with all states documented in Storybook.",
@@ -13522,7 +13522,7 @@ const designSystemsOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our design system from scratch Figma library, Storybook components, and the token pipeline. Our design team now moves 3x faster, and frontend development time on new features is down 45%.",
+      "Clickmasters built our design system from scratch Figma library, Storybook components, and the token pipeline. Our design team now moves 3x faster, and frontend development time on new features is down 45%.",
     author: "Head of Design",
     role: "Enterprise SaaS Company",
   },
@@ -13598,10 +13598,10 @@ const aiIntegrationServicesOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "AI Integration Services | Add AI to Your Existing Software | ClickMasters",
+    "AI Integration Services | Add AI to Your Existing Software | Clickmasters",
   metaDescription:
-    "ClickMasters integrates AI capabilities LLMs, vision, speech, and embedding models into existing B2B software products and internal tools for companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters integrates AI capabilities into existing B2B software for companies across the USA, Europe, Canada, and Australia. OpenAI GPT-4o and Anthropic Claude for text generation and analysis. Embeddings and vector search for semantic search and RAG. Vision models for image analysis. Speech-to-text and text-to-speech. We handle model selection, prompt engineering, RAG architecture, streaming, rate limiting, cost management, and production reliability so your team ships the AI feature, not the AI infrastructure.",
+    "Clickmasters integrates AI capabilities LLMs, vision, speech, and embedding models into existing B2B software products and internal tools for companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters integrates AI capabilities into existing B2B software for companies across the USA, Europe, Canada, and Australia. OpenAI GPT-4o and Anthropic Claude for text generation and analysis. Embeddings and vector search for semantic search and RAG. Vision models for image analysis. Speech-to-text and text-to-speech. We handle model selection, prompt engineering, RAG architecture, streaming, rate limiting, cost management, and production reliability so your team ships the AI feature, not the AI infrastructure.",
   highlights: [
     "OpenAI & Anthropic APIs",
     "RAG & Vector Search",
@@ -13835,7 +13835,7 @@ const aiIntegrationServicesOverride = {
     },
     {
       heading: "Cost Management in Production AI Features",
-      body: 'Cost management requires four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on task complexity), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). ClickMasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard.',
+      body: 'Cost management requires four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on task complexity), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard.',
       items: [],
     },
     {
@@ -13857,7 +13857,7 @@ const aiIntegrationServicesOverride = {
     {
       question: "How do I add AI features to my existing SaaS product?",
       answer:
-        'Adding AI features to an existing SaaS product involves four steps: use case selection (which specific user problem does this AI feature solve not "add AI" but "help users draft email replies faster"), model selection (which AI API is right for this use case text generation, embeddings, vision, or speech), API integration (implementing the model API call in your backend with proper error handling, retry logic, rate limiting, and streaming), and production reliability (monitoring token costs, latency, and model error rates AI APIs fail differently from regular APIs and need specific observability). ClickMasters handles all four steps as part of an AI integration engagement you define the user problem, we design and build the AI feature.',
+        'Adding AI features to an existing SaaS product involves four steps: use case selection (which specific user problem does this AI feature solve not "add AI" but "help users draft email replies faster"), model selection (which AI API is right for this use case text generation, embeddings, vision, or speech), API integration (implementing the model API call in your backend with proper error handling, retry logic, rate limiting, and streaming), and production reliability (monitoring token costs, latency, and model error rates AI APIs fail differently from regular APIs and need specific observability). Clickmasters handles all four steps as part of an AI integration engagement you define the user problem, we design and build the AI feature.',
     },
     {
       question: "What is RAG and when do I need it?",
@@ -13867,7 +13867,7 @@ const aiIntegrationServicesOverride = {
     {
       question: "How do you manage AI API costs in production?",
       answer:
-        'AI API costs in production are managed with four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on the complexity of the task), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). ClickMasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard on every AI integration engagement.',
+        'AI API costs in production are managed with four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on the complexity of the task), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard on every AI integration engagement.',
     },
     {
       question: "How do you handle AI response quality and hallucinations?",
@@ -13877,7 +13877,7 @@ const aiIntegrationServicesOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters integrated semantic search into our product in 4 weeks. Now our users can search using natural language not just keywords and find what they need 3x faster. The team handled everything from embedding pipeline to API design.",
+      "Clickmasters integrated semantic search into our product in 4 weeks. Now our users can search using natural language not just keywords and find what they need 3x faster. The team handled everything from embedding pipeline to API design.",
     author: "CTO",
     role: "SaaS Platform",
   },
@@ -13954,10 +13954,10 @@ const llmApplicationsDevelopmentOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "LLM Application Development | Production LLM Products | ClickMasters",
+    "LLM Application Development | Production LLM Products | Clickmasters",
   metaDescription:
-    "ClickMasters builds production LLM applications RAG systems, AI writing tools, document analysis platforms, and LLM-powered SaaS features for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production LLM applications for B2B companies across the USA, Europe, Canada, and Australia. Document Q&A systems that answer questions from your proprietary knowledge base with cited sources. AI writing assistants that generate on-brand content at scale. Contract analysis platforms that extract and compare terms across thousands of documents. Code review tools. Report generation systems. Every LLM application built with streaming, cost management, evaluation frameworks, and production observability not just a wrapper around an API call.",
+    "Clickmasters builds production LLM applications RAG systems, AI writing tools, document analysis platforms, and LLM-powered SaaS features for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production LLM applications for B2B companies across the USA, Europe, Canada, and Australia. Document Q&A systems that answer questions from your proprietary knowledge base with cited sources. AI writing assistants that generate on-brand content at scale. Contract analysis platforms that extract and compare terms across thousands of documents. Code review tools. Report generation systems. Every LLM application built with streaming, cost management, evaluation frameworks, and production observability not just a wrapper around an API call.",
   highlights: [
     "RAG Document Q&A",
     "AI Writing Tools",
@@ -14188,7 +14188,7 @@ const llmApplicationsDevelopmentOverride = {
   sections: [
     {
       heading: "The LLM Application Architecture Stack",
-      body: "Production LLM applications require more than API calls. The gap between a demo that works in a Jupyter notebook and a product that reliably serves 10,000 users is the production architecture streaming, error handling, evaluation, cost management, and observability. ClickMasters builds every LLM application on this foundation from day one.",
+      body: "Production LLM applications require more than API calls. The gap between a demo that works in a Jupyter notebook and a product that reliably serves 10,000 users is the production architecture streaming, error handling, evaluation, cost management, and observability. Clickmasters builds every LLM application on this foundation from day one.",
       items: [
         "LLM Layer: Primary GPT-4o for complex reasoning; GPT-4o mini for cost-sensitive tasks. Alternative Claude 3.5 Sonnet for long documents. Model router automatically selects based on input complexity and cost budget",
         "Orchestration: LangChain for chains, agents, memory; LlamaIndex for RAG-specific document indexing; LangGraph for stateful multi-step workflows",
@@ -14201,12 +14201,12 @@ const llmApplicationsDevelopmentOverride = {
     },
     {
       heading: "LangChain vs LlamaIndex When to Use Which",
-      body: "LangChain and LlamaIndex are both LLM orchestration frameworks, but they have different design philosophies and strengths. LangChain is a general-purpose LLM application framework it provides abstractions for chains (sequences of LLM calls), agents (LLMs that decide which tools to call), memory (conversation history management), and tool integration. LangChain is the better choice for complex multi-step LLM workflows, agent-based systems, and applications requiring broad tool integration. LlamaIndex is specialised for data-intensive LLM applications specifically RAG systems. It excels at document ingestion, chunking strategies, index construction, query pipeline configuration, and RAG evaluation (RAGAS integration). LlamaIndex is the better choice when the primary use case is Q&A or analysis over a document corpus. ClickMasters uses LangChain for orchestration-heavy applications and LlamaIndex for RAG-heavy applications often combining both in the same system.",
+      body: "LangChain and LlamaIndex are both LLM orchestration frameworks, but they have different design philosophies and strengths. LangChain is a general-purpose LLM application framework it provides abstractions for chains (sequences of LLM calls), agents (LLMs that decide which tools to call), memory (conversation history management), and tool integration. LangChain is the better choice for complex multi-step LLM workflows, agent-based systems, and applications requiring broad tool integration. LlamaIndex is specialised for data-intensive LLM applications specifically RAG systems. It excels at document ingestion, chunking strategies, index construction, query pipeline configuration, and RAG evaluation (RAGAS integration). LlamaIndex is the better choice when the primary use case is Q&A or analysis over a document corpus. Clickmasters uses LangChain for orchestration-heavy applications and LlamaIndex for RAG-heavy applications often combining both in the same system.",
       items: [],
     },
     {
       heading: "How to Evaluate LLM Application Quality",
-      body: "LLM application evaluation uses automated and human evaluation methods. For RAG systems, RAGAS provides four automated metrics: Faithfulness (does the answer contain only information from the retrieved context no hallucinations?), Context Relevance (does the retrieved context contain information relevant to the question?), Answer Relevance (does the answer actually address the question asked?), and Context Recall (did the retrieval find all the relevant context?). For generation quality, DeepEval provides pytest-style unit tests for LLM outputs assert that a response contains specific information, does not contain specific words, is within a character length range, or matches a semantic pattern. LangSmith captures production traces real user queries and LLM responses can be reviewed, annotated, and used to build an evaluation dataset from production traffic. ClickMasters implements RAGAS or DeepEval evaluation as standard on all RAG and generation applications providing a quantitative quality baseline and a regression detection mechanism for future model or prompt changes.",
+      body: "LLM application evaluation uses automated and human evaluation methods. For RAG systems, RAGAS provides four automated metrics: Faithfulness (does the answer contain only information from the retrieved context no hallucinations?), Context Relevance (does the retrieved context contain information relevant to the question?), Answer Relevance (does the answer actually address the question asked?), and Context Recall (did the retrieval find all the relevant context?). For generation quality, DeepEval provides pytest-style unit tests for LLM outputs assert that a response contains specific information, does not contain specific words, is within a character length range, or matches a semantic pattern. LangSmith captures production traces real user queries and LLM responses can be reviewed, annotated, and used to build an evaluation dataset from production traffic. Clickmasters implements RAGAS or DeepEval evaluation as standard on all RAG and generation applications providing a quantitative quality baseline and a regression detection mechanism for future model or prompt changes.",
       items: [],
     },
   ],
@@ -14219,12 +14219,12 @@ const llmApplicationsDevelopmentOverride = {
     {
       question: "What is the difference between LangChain and LlamaIndex?",
       answer:
-        "LangChain and LlamaIndex are both LLM orchestration frameworks, but they have different design philosophies and strengths. LangChain is a general-purpose LLM application framework it provides abstractions for chains (sequences of LLM calls and other operations), agents (LLMs that decide which tools to call), memory (conversation history management), and tool integration. LangChain is the better choice for complex multi-step LLM workflows, agent-based systems, and applications requiring broad tool integration. LlamaIndex is specialised for data-intensive LLM applications specifically RAG systems. It excels at document ingestion, chunking strategies, index construction, query pipeline configuration, and RAG evaluation (RAGAS integration). LlamaIndex is the better choice when the primary use case is Q&A or analysis over a document corpus. ClickMasters uses LangChain for orchestration-heavy applications and LlamaIndex for RAG-heavy applications often combining both in the same system.",
+        "LangChain and LlamaIndex are both LLM orchestration frameworks, but they have different design philosophies and strengths. LangChain is a general-purpose LLM application framework it provides abstractions for chains (sequences of LLM calls and other operations), agents (LLMs that decide which tools to call), memory (conversation history management), and tool integration. LangChain is the better choice for complex multi-step LLM workflows, agent-based systems, and applications requiring broad tool integration. LlamaIndex is specialised for data-intensive LLM applications specifically RAG systems. It excels at document ingestion, chunking strategies, index construction, query pipeline configuration, and RAG evaluation (RAGAS integration). LlamaIndex is the better choice when the primary use case is Q&A or analysis over a document corpus. Clickmasters uses LangChain for orchestration-heavy applications and LlamaIndex for RAG-heavy applications often combining both in the same system.",
     },
     {
       question: "How do you evaluate LLM application quality?",
       answer:
-        "LLM application evaluation uses automated and human evaluation methods. For RAG systems, RAGAS provides four automated metrics: Faithfulness (does the answer contain only information from the retrieved context no hallucinations?), Context Relevance (does the retrieved context actually contain information relevant to the question?), Answer Relevance (does the answer actually address the question asked?), and Context Recall (did the retrieval find all the relevant context?). For generation quality, DeepEval provides pytest-style unit tests for LLM outputs assert that a response contains specific information, does not contain specific words, is within a character length range, or matches a semantic pattern. LangSmith captures production traces real user queries and LLM responses can be reviewed, annotated, and used to build an evaluation dataset from production traffic. ClickMasters implements RAGAS or DeepEval evaluation as standard on all RAG and generation applications providing a quantitative quality baseline and a regression detection mechanism for future model or prompt changes.",
+        "LLM application evaluation uses automated and human evaluation methods. For RAG systems, RAGAS provides four automated metrics: Faithfulness (does the answer contain only information from the retrieved context no hallucinations?), Context Relevance (does the retrieved context actually contain information relevant to the question?), Answer Relevance (does the answer actually address the question asked?), and Context Recall (did the retrieval find all the relevant context?). For generation quality, DeepEval provides pytest-style unit tests for LLM outputs assert that a response contains specific information, does not contain specific words, is within a character length range, or matches a semantic pattern. LangSmith captures production traces real user queries and LLM responses can be reviewed, annotated, and used to build an evaluation dataset from production traffic. Clickmasters implements RAGAS or DeepEval evaluation as standard on all RAG and generation applications providing a quantitative quality baseline and a regression detection mechanism for future model or prompt changes.",
     },
     {
       question: "How do you handle LLM latency in production?",
@@ -14234,7 +14234,7 @@ const llmApplicationsDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our document Q&A platform. Our sales team now answers technical questions in seconds instead of hours, with citations directly from our product docs. The RAG pipeline accuracy is above 95% on our corpus.",
+      "Clickmasters built our document Q&A platform. Our sales team now answers technical questions in seconds instead of hours, with citations directly from our product docs. The RAG pipeline accuracy is above 95% on our corpus.",
     author: "Head of Product",
     role: "B2B SaaS Company",
   },
@@ -14316,10 +14316,10 @@ const machineLearningSolutionsOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Machine Learning Solutions Company | Custom ML Models for B2B | ClickMasters",
+    "Machine Learning Solutions Company | Custom ML Models for B2B | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade machine learning solutions predictive models, recommendation systems, classification, NLP, and computer vision for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds, deploys, and operates machine learning solutions for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction models that identify at-risk customers before they cancel. Demand forecasting models that optimize inventory and capacity. Fraud detection models that flag risk before transactions complete. Recommendation engines that drive product discovery and revenue. Deployed in production with monitoring, retraining pipelines, and measurable business outcomes.",
+    "Clickmasters builds production-grade machine learning solutions predictive models, recommendation systems, classification, NLP, and computer vision for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds, deploys, and operates machine learning solutions for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction models that identify at-risk customers before they cancel. Demand forecasting models that optimize inventory and capacity. Fraud detection models that flag risk before transactions complete. Recommendation engines that drive product discovery and revenue. Deployed in production with monitoring, retraining pipelines, and measurable business outcomes.",
   highlights: [
     "Predictive & Classification Models",
     "Recommendation Systems",
@@ -14590,12 +14590,12 @@ const machineLearningSolutionsOverride = {
       items: [
         "The machine learning production gap is the distance between a model that works in a data scientist's environment and a model that delivers business value in production.",
         "Closing that gap requires software engineering, not data science. It requires MLOps the discipline of treating ML models as software systems that need deployment pipelines, versioning, monitoring, and maintenance.",
-        "ClickMasters approaches machine learning as a software engineering problem: we own the full lifecycle from data requirements and model development through production deployment, monitoring, and retraining.",
+        "Clickmasters approaches machine learning as a software engineering problem: we own the full lifecycle from data requirements and model development through production deployment, monitoring, and retraining.",
       ],
     },
     {
       heading: "When Machine Learning Is NOT the Right Answer",
-      body: "ML is not appropriate for every decision problem. You do not need ML if: the problem can be solved with a small set of explicit rules (use a rules engine instead); you have fewer than 1,000 labeled examples for a classification problem (use statistical analysis or heuristics instead); your decision process requires a human-readable explanation for every output (use a linear model or decision tree instead of deep learning); or the cost of a wrong prediction exceeds the benefit of automation (add human review, not more model complexity). ClickMasters will tell you when a simpler analytical approach delivers better business value than a machine learning model.",
+      body: "ML is not appropriate for every decision problem. You do not need ML if: the problem can be solved with a small set of explicit rules (use a rules engine instead); you have fewer than 1,000 labeled examples for a classification problem (use statistical analysis or heuristics instead); your decision process requires a human-readable explanation for every output (use a linear model or decision tree instead of deep learning); or the cost of a wrong prediction exceeds the benefit of automation (add human review, not more model complexity). Clickmasters will tell you when a simpler analytical approach delivers better business value than a machine learning model.",
       items: [],
     },
     {
@@ -14610,13 +14610,13 @@ const machineLearningSolutionsOverride = {
       ],
     },
     {
-      heading: "ClickMasters Default ML Recommendation for B2B Tabular Data",
-      body: "For the vast majority of B2B ML use cases churn prediction, fraud detection, demand forecasting, lead scoring, risk classification gradient boosg (XGBoost or LightGBM) outperforms deep learning on structured tabular data at a fraction of the compute cost and training time, with interpretable feature importance. Deep learning is reserved for unstructured data (images, audio, text) at scale. ClickMasters selects the simplest model that meets the accuracy requirement not the most impressive-sounding one.",
+      heading: "Clickmasters Default ML Recommendation for B2B Tabular Data",
+      body: "For the vast majority of B2B ML use cases churn prediction, fraud detection, demand forecasting, lead scoring, risk classification gradient boosg (XGBoost or LightGBM) outperforms deep learning on structured tabular data at a fraction of the compute cost and training time, with interpretable feature importance. Deep learning is reserved for unstructured data (images, audio, text) at scale. Clickmasters selects the simplest model that meets the accuracy requirement not the most impressive-sounding one.",
       items: [],
     },
     {
       heading: "ML Model Evaluation How We Measure Success",
-      body: "Model evaluation is where many ML projects go wrong: optimizing for the wrong metric, evaluating on test data that leaks future information, or reporting overall accuracy on an imbalanced dataset where 99% of examples belong to one class. ClickMasters uses the correct evaluation metrics for each problem type and always aligns technical metrics to business outcomes.",
+      body: "Model evaluation is where many ML projects go wrong: optimizing for the wrong metric, evaluating on test data that leaks future information, or reporting overall accuracy on an imbalanced dataset where 99% of examples belong to one class. Clickmasters uses the correct evaluation metrics for each problem type and always aligns technical metrics to business outcomes.",
       items: [
         "Binary Classification (Churn, Fraud): Primary metric AUC-ROC (discrimination ability). Secondary: Precision, Recall, F1, KS Statistic. Business translation: At threshold 0.7, catch X% of churners, contact Y% of non-churners net retention revenue saved.",
         "Multi-Class Classification: Primary metric Macro F1 / Weighted F1. Secondary: Per-class precision/recall, Confusion Matrix. Business translation: Correct routing rate, cost of misrouting ops efficiency impact.",
@@ -14646,7 +14646,7 @@ const machineLearningSolutionsOverride = {
     {
       question: "How much data do I need for a machine learning model?",
       answer:
-        "Data requirements depend on the model type and problem complexity. For binary classification (churn prediction, fraud detection) using gradient boosting: a minimum of 1,000-5,000 labeled examples per class, with 10,000+ producing meaningfully better models. For regression (demand forecasting): 2+ years of historical data at the granularity you want to forecast (daily, weekly, monthly). For NLP classification using fine-tuned transformers: 500-2,000 labeled examples per class (transfer learning dramatically reduces data requirements vs. training from scratch). For computer vision: 1,000-10,000 labeled images per class (transfer learning from ImageNet-pretrained models reduces this significantly). ClickMasters always starts with a data audit if the available data is insufficient for a ML model that exceeds a simple analytical baseline, we will tell you before you invest in model development.",
+        "Data requirements depend on the model type and problem complexity. For binary classification (churn prediction, fraud detection) using gradient boosting: a minimum of 1,000-5,000 labeled examples per class, with 10,000+ producing meaningfully better models. For regression (demand forecasting): 2+ years of historical data at the granularity you want to forecast (daily, weekly, monthly). For NLP classification using fine-tuned transformers: 500-2,000 labeled examples per class (transfer learning dramatically reduces data requirements vs. training from scratch). For computer vision: 1,000-10,000 labeled images per class (transfer learning from ImageNet-pretrained models reduces this significantly). Clickmasters always starts with a data audit if the available data is insufficient for a ML model that exceeds a simple analytical baseline, we will tell you before you invest in model development.",
     },
     {
       question: "What is MLOps and why does it matter?",
@@ -14656,27 +14656,27 @@ const machineLearningSolutionsOverride = {
     {
       question: "What is data drift and model drift in machine learning?",
       answer:
-        "Data drift occurs when the statistical distribution of input features in production differs from the distribution in the training data for example, a fraud model trained on 2022 transaction patterns deployed in 2025 when transaction patterns have changed significantly. Data drift is an early warning signal that model accuracy cy may be degrading, even before accuracy measurements can confirm it. Model drift (concept drift) occurs when the relationship between input features and the prediction target changes the model's learned patterns are no longer correct, even if the feature distribution is stable. Both types of drift require monitoring and can trigger model retraining. ClickMasters implements drift monitoring using Evidently AI or custom Prometheus metrics as standard in all production ML engagements.",
+        "Data drift occurs when the statistical distribution of input features in production differs from the distribution in the training data for example, a fraud model trained on 2022 transaction patterns deployed in 2025 when transaction patterns have changed significantly. Data drift is an early warning signal that model accuracy cy may be degrading, even before accuracy measurements can confirm it. Model drift (concept drift) occurs when the relationship between input features and the prediction target changes the model's learned patterns are no longer correct, even if the feature distribution is stable. Both types of drift require monitoring and can trigger model retraining. Clickmasters implements drift monitoring using Evidently AI or custom Prometheus metrics as standard in all production ML engagements.",
     },
     {
       question: "How do you deploy a machine learning model to production?",
       answer:
-        "Production ML model deployment involves: serializing the trained model to a portable format (pickle for scikit-learn, TorchScript for PyTorch, ONNX for cross-framework compatibility, or MLflow model format), building a serving API (FastAPI or BentoML inference endpoint with input validation, output schema, and error handling), containerizing the model server with Docker for environment reproducibility, deploying the container to a serving infrastructure (AWS ECS Fargate, SageMaker Endpoint, or Kubernetes), setting up a CI/CD pipeline that runs inference tests before each model promotion, and implementing monitoring for prediction latency, error rate, and accuracy metrics. ClickMasters deploys all production ML models with this full infrastructure stack not as a Python script running on a shared server.",
+        "Production ML model deployment involves: serializing the trained model to a portable format (pickle for scikit-learn, TorchScript for PyTorch, ONNX for cross-framework compatibility, or MLflow model format), building a serving API (FastAPI or BentoML inference endpoint with input validation, output schema, and error handling), containerizing the model server with Docker for environment reproducibility, deploying the container to a serving infrastructure (AWS ECS Fargate, SageMaker Endpoint, or Kubernetes), setting up a CI/CD pipeline that runs inference tests before each model promotion, and implementing monitoring for prediction latency, error rate, and accuracy metrics. Clickmasters deploys all production ML models with this full infrastructure stack not as a Python script running on a shared server.",
     },
     {
       question: "What is feature engineering in machine learning?",
       answer:
-        "Feature engineering is the process of transforming raw data into the input variables (features) that a machine learning model uses to make predictions. It is the most labor-intensive and impactful step in the ML development pipeline better features consistently produce better models regardless of algorithm choice. Feature engineering includes: numerical transformations (log-transforming skewed variables, normalizing scales), temporal features (converting timestamps into lag features, rolling aggregates, day-of-week, seasonality indicators), categorical encoding (one-hot encoding, target encoding, embedding for high-cardinality categories), interaction features (multiply or divide two features to capture non-linear relationships), behavioral features (aggregate customer actions over 30/60/90-day windows), and domain-specific features that encode expert knowledge about what drives the target variable. ClickMasters invests 30-40% of total model development time in feature engineering because a logistic regression with excellent features frequently outperforms a deep learning model with poor features.",
+        "Feature engineering is the process of transforming raw data into the input variables (features) that a machine learning model uses to make predictions. It is the most labor-intensive and impactful step in the ML development pipeline better features consistently produce better models regardless of algorithm choice. Feature engineering includes: numerical transformations (log-transforming skewed variables, normalizing scales), temporal features (converting timestamps into lag features, rolling aggregates, day-of-week, seasonality indicators), categorical encoding (one-hot encoding, target encoding, embedding for high-cardinality categories), interaction features (multiply or divide two features to capture non-linear relationships), behavioral features (aggregate customer actions over 30/60/90-day windows), and domain-specific features that encode expert knowledge about what drives the target variable. Clickmasters invests 30-40% of total model development time in feature engineering because a logistic regression with excellent features frequently outperforms a deep learning model with poor features.",
     },
     {
       question: "Can you improve or audit an existing machine learning model?",
       answer:
-        "Yes. ML model audit and improvement is a common ClickMasters engagement type. We evaluate existing models against: current performance on fresh test data (models often degrade significantly from the accuracy reported at training time), data drift from the training distribution (has the world changed enough that the training data is no longer representative?), feature quality (are there data leakage issues? Are features still available in the same format?), threshold calibration (is the decision threshold still optimal for the current business cost matrix?), and fairness assessment (are predictions biased against any subgroup?). Based on the audit, we recommend the minimum intervention required: threshold recalibration (cheapest), feature engineering improvement, retraining on fresh data with the same architecture, or full model rebuild with new algorithm selection if the existing approach is fundamentally flawed.",
+        "Yes. ML model audit and improvement is a common Clickmasters engagement type. We evaluate existing models against: current performance on fresh test data (models often degrade significantly from the accuracy reported at training time), data drift from the training distribution (has the world changed enough that the training data is no longer representative?), feature quality (are there data leakage issues? Are features still available in the same format?), threshold calibration (is the decision threshold still optimal for the current business cost matrix?), and fairness assessment (are predictions biased against any subgroup?). Based on the audit, we recommend the minimum intervention required: threshold recalibration (cheapest), feature engineering improvement, retraining on fresh data with the same architecture, or full model rebuild with new algorithm selection if the existing approach is fundamentally flawed.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our churn prediction model and MLOps infrastructure. We now identify at-risk customers 45 days before cancellation with 82% precision. The retention team has reduced churn by 28% in the first year.",
+      "Clickmasters built our churn prediction model and MLOps infrastructure. We now identify at-risk customers 45 days before cancellation with 82% precision. The retention team has reduced churn by 28% in the first year.",
     author: "VP of Data",
     role: "B2B SaaS Company",
   },
@@ -14769,10 +14769,10 @@ const predictiveAnalyticsOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Predictive Analytics Services | ML Forecasting & Prediction | ClickMasters",
+    "Predictive Analytics Services | ML Forecasting & Prediction | Clickmasters",
   metaDescription:
-    "ClickMasters builds predictive analytics systems churn prediction, demand forecasting, lead scoring, and anomaly detection using scikit-learn, XGBoost, and LightGBM for B2B companies worldwide.",
-  lead: "ClickMasters builds predictive analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction that identifies at-risk customers 30-90 days before they cancel. Demand forecasting that reduces inventory waste and stockouts. Lead scoring that ranks your pipeline by close probability. Anomaly detection that surfaces fraud and operational issues in real time. Built on scikit-learn, XGBoost, and LightGBM deployed as production APIs your applications can call.",
+    "Clickmasters builds predictive analytics systems churn prediction, demand forecasting, lead scoring, and anomaly detection using scikit-learn, XGBoost, and LightGBM for B2B companies worldwide.",
+  lead: "Clickmasters builds predictive analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction that identifies at-risk customers 30-90 days before they cancel. Demand forecasting that reduces inventory waste and stockouts. Lead scoring that ranks your pipeline by close probability. Anomaly detection that surfaces fraud and operational issues in real time. Built on scikit-learn, XGBoost, and LightGBM deployed as production APIs your applications can call.",
   highlights: [
     "Churn & Retention Prediction",
     "Demand Forecasting",
@@ -15010,7 +15010,7 @@ const predictiveAnalyticsOverride = {
     {
       question: "How much data do I need to build a predictive model?",
       answer:
-        "The minimum viable dataset depends on the prediction task, but a practical rule of thumb for binary classification (churn/no-churn, convert/no-convert): at least 500-1,000 positive examples (churned customers, converted leads) in your training dataset. Below this threshold, models typically overfit and do not generalise reliably. For time series forecasting (demand, revenue), a minimum of 2 full seasonal cycles (24 months for monthly data, 730 days for daily data) is recommended to capture seasonal patterns. Data quality matters more than quantity a clean, complete dataset of 2,000 examples consistently outperforms a noisy, inconsistent dataset of 20,000. ClickMasters performs a data feasibility audit as the first step of every predictive analytics engagement.",
+        "The minimum viable dataset depends on the prediction task, but a practical rule of thumb for binary classification (churn/no-churn, convert/no-convert): at least 500-1,000 positive examples (churned customers, converted leads) in your training dataset. Below this threshold, models typically overfit and do not generalise reliably. For time series forecasting (demand, revenue), a minimum of 2 full seasonal cycles (24 months for monthly data, 730 days for daily data) is recommended to capture seasonal patterns. Data quality matters more than quantity a clean, complete dataset of 2,000 examples consistently outperforms a noisy, inconsistent dataset of 20,000. Clickmasters performs a data feasibility audit as the first step of every predictive analytics engagement.",
     },
     {
       question:
@@ -15020,12 +15020,12 @@ const predictiveAnalyticsOverride = {
     {
       question:
         "How do you ensure a predictive model performs well in production?",
-      answer: `Production ML model performance is maintained through three practices. Evaluation methodology: time-based train/test split (simulate real production conditions by training on past data and evaluating on future data never use random splits for time-sensitive predictions, which produce optimistic metrics that don't reflect real performance). Calibration: verify that the model's stated probability matches the actual frequency (a model that says "70% churn probability" should be right 70% of the time use isotonic regression or Platt scaling to calibrate if needed). Monitoring: track the score distribution of new predictions vs. the training distribution when they diverge significantly (data drift or concept drift), retrain on more recent data. ClickMasters implements monitoring dashboards with automated alerts on every production model.`,
+      answer: `Production ML model performance is maintained through three practices. Evaluation methodology: time-based train/test split (simulate real production conditions by training on past data and evaluating on future data never use random splits for time-sensitive predictions, which produce optimistic metrics that don't reflect real performance). Calibration: verify that the model's stated probability matches the actual frequency (a model that says "70% churn probability" should be right 70% of the time use isotonic regression or Platt scaling to calibrate if needed). Monitoring: track the score distribution of new predictions vs. the training distribution when they diverge significantly (data drift or concept drift), retrain on more recent data. Clickmasters implements monitoring dashboards with automated alerts on every production model.`,
     },
   ],
   testimonial: {
     quote:
-      "The churn prediction model ClickMasters built gives us 45-day advance warning with 82% precision. Our retention team now reaches at-risk customers before they cancel, not after. We have reduced churn by 28% year-over-year.",
+      "The churn prediction model Clickmasters built gives us 45-day advance warning with 82% precision. Our retention team now reaches at-risk customers before they cancel, not after. We have reduced churn by 28% year-over-year.",
     author: "VP of Customer Success",
     role: "B2B SaaS Company",
   },
@@ -15093,10 +15093,10 @@ const recommendationSystemsOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Recommendation System Development | Collaborative & Content-Based | ClickMasters",
+    "Recommendation System Development | Collaborative & Content-Based | Clickmasters",
   metaDescription:
-    "ClickMasters builds recommendation systems collaborative filtering, content-based, and hybrid for B2B e-commerce, SaaS, and content platforms in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds recommendation systems for B2B e-commerce, SaaS, and content platforms across the USA, Europe, Canada, and Australia. Collaborative filtering that learns from collective user behaviour. Content-based recommendations from item features and user preferences. Hybrid models that combine both signals. Two-tower neural architectures for large-scale retrieval. Real-time recommendation APIs that respond in under 50ms.",
+    "Clickmasters builds recommendation systems collaborative filtering, content-based, and hybrid for B2B e-commerce, SaaS, and content platforms in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds recommendation systems for B2B e-commerce, SaaS, and content platforms across the USA, Europe, Canada, and Australia. Collaborative filtering that learns from collective user behaviour. Content-based recommendations from item features and user preferences. Hybrid models that combine both signals. Two-tower neural architectures for large-scale retrieval. Real-time recommendation APIs that respond in under 50ms.",
   highlights: [
     "Collaborative Filtering",
     "Content-Based Recommendations",
@@ -15356,12 +15356,12 @@ const recommendationSystemsOverride = {
       question:
         "How many users and interactions do I need for a recommendation system?",
       answer:
-        "Collaborative filtering requires sufficient user-item interaction density to learn meaningful patterns. Practical minimums: at least 1,000 active users (users with at least 5-10 interactions each) and at least 10,000-50,000 total interactions for a matrix factorisation model to produce reliable recommendations. Below these thresholds, content-based or LLM-embedding-based recommendations (which require no interaction data) are more reliable. For a content-based system based on item metadata, there is no minimum interaction requirement the system can recommend from day one using item features. ClickMasters assesses interaction data density as part of the scoping engagement and recommends the approach that fits the current data state, with a migration path to hybrid or collaborative as interaction data grows.",
+        "Collaborative filtering requires sufficient user-item interaction density to learn meaningful patterns. Practical minimums: at least 1,000 active users (users with at least 5-10 interactions each) and at least 10,000-50,000 total interactions for a matrix factorisation model to produce reliable recommendations. Below these thresholds, content-based or LLM-embedding-based recommendations (which require no interaction data) are more reliable. For a content-based system based on item metadata, there is no minimum interaction requirement the system can recommend from day one using item features. Clickmasters assesses interaction data density as part of the scoping engagement and recommends the approach that fits the current data state, with a migration path to hybrid or collaborative as interaction data grows.",
     },
   ],
   testimonial: {
     quote:
-      "The recommendation engine ClickMasters built increased our average order value by 28% and conversion rate by 15%. The real-time API serves personalised recommendations in under 30ms.",
+      "The recommendation engine Clickmasters built increased our average order value by 28% and conversion rate by 15%. The real-time API serves personalised recommendations in under 30ms.",
     author: "CTO",
     role: "B2B E-commerce Platform",
   },
@@ -15439,10 +15439,10 @@ const modelTrainingOptimisationOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Model Training & Optimisation Services | Hyperparameter Tuning | ClickMasters",
+    "Model Training & Optimisation Services | Hyperparameter Tuning | Clickmasters",
   metaDescription:
-    "ClickMasters trains and optimises ML models hyperparameter tuning, cross-validation, model selection, and MLOps deployment for B2B companies needing production-quality predictive models.",
-  lead: "ClickMasters trains and optimises ML models for B2B companies across the USA, Europe, Canada, and Australia. Hyperparameter tuning with Optuna that systematically finds the model configuration your team's manual grid search missed. Feature selection that reduces overfitting and improves generalisation. Cross-validation that gives you honest performance estimates. And the MLOps infrastructure to retrain, evaluate, and deploy model updates without manual intervention.",
+    "Clickmasters trains and optimises ML models hyperparameter tuning, cross-validation, model selection, and MLOps deployment for B2B companies needing production-quality predictive models.",
+  lead: "Clickmasters trains and optimises ML models for B2B companies across the USA, Europe, Canada, and Australia. Hyperparameter tuning with Optuna that systematically finds the model configuration your team's manual grid search missed. Feature selection that reduces overfitting and improves generalisation. Cross-validation that gives you honest performance estimates. And the MLOps infrastructure to retrain, evaluate, and deploy model updates without manual intervention.",
   highlights: [
     "Hyperparameter Tuning (Optuna)",
     "Cross-Validation & Evaluation",
@@ -15657,7 +15657,7 @@ const modelTrainingOptimisationOverride = {
   sections: [
     {
       heading: "The Most Common ML Model Problem: Overfitting",
-      body: "Overfitting is the most frequent reason a model that performs well in training underperforms in production. An overfit model has memorised the training data including its noise and idiosyncrasies rather than learning the underlying patterns that generalise to new data. Signs: training accuracy 95%, validation accuracy 72%. Causes: too many features relative to training examples, insufficient regularisation, data leakage (future information in training features), or a model that is too complex for the available data. Fixes: regularisation (L1/L2, dropout for neural networks), feature selection (remove low-information features), cross-validation (proper evaluation methodology), early stopping (stop training when validation metric stops improving), and ensemble methods (average multiple models reduces variance). ClickMasters diagnoses the specific cause before prescribing a fix.",
+      body: "Overfitting is the most frequent reason a model that performs well in training underperforms in production. An overfit model has memorised the training data including its noise and idiosyncrasies rather than learning the underlying patterns that generalise to new data. Signs: training accuracy 95%, validation accuracy 72%. Causes: too many features relative to training examples, insufficient regularisation, data leakage (future information in training features), or a model that is too complex for the available data. Fixes: regularisation (L1/L2, dropout for neural networks), feature selection (remove low-information features), cross-validation (proper evaluation methodology), early stopping (stop training when validation metric stops improving), and ensemble methods (average multiple models reduces variance). Clickmasters diagnoses the specific cause before prescribing a fix.",
       items: [],
     },
   ],
@@ -15665,7 +15665,7 @@ const modelTrainingOptimisationOverride = {
     {
       question: "What is hyperparameter tuning and why does it matter?",
       answer:
-        "Every ML model has hyperparameters settings that control how the model learns, set before training begins as opposed to parameters, which the model learns from data during training. Examples: the learning rate, the maximum depth of a tree in XGBoost, the number of estimators, the regularisation coefficient. The default hyperparameter values provided by libraries are reasonable starting points, not optimal values for your specific dataset and task. Systematic hyperparameter tuning searching for the combination that produces the best validation performance consistently improves model performance by 5-20% over defaults. Optuna's Bayesian optimisation approach (which learns from previous trials) consistently finds better configurations in fewer trials than grid search (which tests all combinations) or random search (which tests random combinations). ClickMasters uses Optuna with a defined compute budget for all production model training.",
+        "Every ML model has hyperparameters settings that control how the model learns, set before training begins as opposed to parameters, which the model learns from data during training. Examples: the learning rate, the maximum depth of a tree in XGBoost, the number of estimators, the regularisation coefficient. The default hyperparameter values provided by libraries are reasonable starting points, not optimal values for your specific dataset and task. Systematic hyperparameter tuning searching for the combination that produces the best validation performance consistently improves model performance by 5-20% over defaults. Optuna's Bayesian optimisation approach (which learns from previous trials) consistently finds better configurations in fewer trials than grid search (which tests all combinations) or random search (which tests random combinations). Clickmasters uses Optuna with a defined compute budget for all production model training.",
     },
     {
       question: "What is the difference between underfitting and overfitting?",
@@ -15674,17 +15674,17 @@ const modelTrainingOptimisationOverride = {
     },
     {
       question: "What is model distillation and when is it useful?",
-      answer: `Model distillation (knowledge distillation) is a technique for compressing a large, accurate model (the "teacher") into a smaller, faster model (the "student") that approximates the teacher's behaviour. Instead of training the student on original hard labels (0 or 1), the student is trained to match the teacher's soft probability outputs which carry more information about the model's uncertainty and inter-class relationships than hard labels. The result: a student model that is 5-10x smaller and faster than the teacher, with accuracy only marginally lower. Distillation is appropriate when: inference latency is a constraint (real-time applications where 100ms is too slow), infrastructure cost is a concern (deploying a large model on every inference request is expensive), or edge deployment is required (running a model on a device with limited compute). ClickMasters uses distillation for production scenarios where accuracy/latency tradeoffs are explicit requirements.`,
+      answer: `Model distillation (knowledge distillation) is a technique for compressing a large, accurate model (the "teacher") into a smaller, faster model (the "student") that approximates the teacher's behaviour. Instead of training the student on original hard labels (0 or 1), the student is trained to match the teacher's soft probability outputs which carry more information about the model's uncertainty and inter-class relationships than hard labels. The result: a student model that is 5-10x smaller and faster than the teacher, with accuracy only marginally lower. Distillation is appropriate when: inference latency is a constraint (real-time applications where 100ms is too slow), infrastructure cost is a concern (deploying a large model on every inference request is expensive), or edge deployment is required (running a model on a device with limited compute). Clickmasters uses distillation for production scenarios where accuracy/latency tradeoffs are explicit requirements.`,
     },
     {
       question: "What is data leakage in ML models and how do you prevent it?",
       answer:
-        'Data leakage occurs when information from the test set or future time periods "leaks" into the training data, causing the model to appear more accurate than it actually is on new data. Common leakage sources: using the full dataset to compute normalisation statistics (mean, standard deviation) before splitting into train/test the test set statistics influence the training data; including features that are derived from or correlated with the target variable in a way that would not be available at prediction time (e.g., using the account cancellation date as a feature to predict churn); and improper temporal splits (using future data in training for a time series prediction task the model effectively "cheats" by looking forward). Prevention: all preprocessing (normalisation, encoding, imputation) must be fitted on training data only and applied to test data; feature engineering must respect the prediction timestamp (no features derived from information available after the prediction time); and time series evaluation must always use temporal splits. ClickMasters reviews every feature for potential leakage as part of the feature engineering phase.',
+        'Data leakage occurs when information from the test set or future time periods "leaks" into the training data, causing the model to appear more accurate than it actually is on new data. Common leakage sources: using the full dataset to compute normalisation statistics (mean, standard deviation) before splitting into train/test the test set statistics influence the training data; including features that are derived from or correlated with the target variable in a way that would not be available at prediction time (e.g., using the account cancellation date as a feature to predict churn); and improper temporal splits (using future data in training for a time series prediction task the model effectively "cheats" by looking forward). Prevention: all preprocessing (normalisation, encoding, imputation) must be fitted on training data only and applied to test data; feature engineering must respect the prediction timestamp (no features derived from information available after the prediction time); and time series evaluation must always use temporal splits. Clickmasters reviews every feature for potential leakage as part of the feature engineering phase.',
     },
   ],
   testimonial: {
     quote:
-      "Our internal model was stuck at 68% validation accuracy. ClickMasters used Optuna to tune hyperparameters and we reached 82% with the same feature set and their cross-validation fix eliminated our data leakage issue.",
+      "Our internal model was stuck at 68% validation accuracy. Clickmasters used Optuna to tune hyperparameters and we reached 82% with the same feature set and their cross-validation fix eliminated our data leakage issue.",
     author: "Lead Data Scientist",
     role: "Fintech Company",
   },
@@ -15757,10 +15757,10 @@ const deepLearningSolutionsOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Deep Learning Solutions | Neural Networks & PyTorch | ClickMasters",
+    "Deep Learning Solutions | Neural Networks & PyTorch | Clickmasters",
   metaDescription:
-    "ClickMasters builds deep learning solutions computer vision CNNs, NLP transformers, time series LSTMs, and tabular neural networks using PyTorch and TensorFlow for B2B companies worldwide.",
-  lead: "ClickMasters builds deep learning solutions for B2B companies across the USA, Europe, Canada, and Australia. CNN-based image classification and object detection. Transformer-based NLP models for text classification and named entity recognition. LSTM and Transformer models for time series forecasting. Tabular deep learning for high-dimensional structured data. Transfer learning from pre-trained models when labelled data is limited. Deployed with ONNX Runtime or TorchServe for production inference.",
+    "Clickmasters builds deep learning solutions computer vision CNNs, NLP transformers, time series LSTMs, and tabular neural networks using PyTorch and TensorFlow for B2B companies worldwide.",
+  lead: "Clickmasters builds deep learning solutions for B2B companies across the USA, Europe, Canada, and Australia. CNN-based image classification and object detection. Transformer-based NLP models for text classification and named entity recognition. LSTM and Transformer models for time series forecasting. Tabular deep learning for high-dimensional structured data. Transfer learning from pre-trained models when labelled data is limited. Deployed with ONNX Runtime or TorchServe for production inference.",
   highlights: [
     "PyTorch + Hugging Face",
     "CNN Image Classification",
@@ -15988,7 +15988,7 @@ const deepLearningSolutionsOverride = {
     },
     {
       heading: "PyTorch vs TensorFlow",
-      body: "PyTorch and TensorFlow are both production-grade deep learning frameworks, but they have evolved differently. PyTorch uses a dynamic computation graph (define-by-run) operations execute immediately when called, making debugging intuitive and code that looks like standard Python. PyTorch is the dominant framework in ML research (85%+ of papers) and increasingly in production. TensorFlow uses a static computation graph that is defined and then executed offering production deployment advantages (TensorFlow Serving, TFLite for mobile, TFX for pipelines) but historically more complex debugging. With the adoption of PyTorch 2.0's torch.compile and TorchServe for production serving, and ONNX for cross-framework deployment, the production deployment gap has largely closed. ClickMasters uses PyTorch as the primary framework for all new deep learning work, with TensorFlow for legacy model maintenance and TFLite targets.",
+      body: "PyTorch and TensorFlow are both production-grade deep learning frameworks, but they have evolved differently. PyTorch uses a dynamic computation graph (define-by-run) operations execute immediately when called, making debugging intuitive and code that looks like standard Python. PyTorch is the dominant framework in ML research (85%+ of papers) and increasingly in production. TensorFlow uses a static computation graph that is defined and then executed offering production deployment advantages (TensorFlow Serving, TFLite for mobile, TFX for pipelines) but historically more complex debugging. With the adoption of PyTorch 2.0's torch.compile and TorchServe for production serving, and ONNX for cross-framework deployment, the production deployment gap has largely closed. Clickmasters uses PyTorch as the primary framework for all new deep learning work, with TensorFlow for legacy model maintenance and TFLite targets.",
       items: [],
     },
   ],
@@ -16007,7 +16007,7 @@ const deepLearningSolutionsOverride = {
     {
       question: "What is the difference between PyTorch and TensorFlow?",
       answer:
-        "PyTorch and TensorFlow are both production-grade deep learning frameworks, but they have evolved differently. PyTorch uses a dynamic computation graph (define-by-run) operations execute immediately when called, making debugging intuitive and code that looks like standard Python. PyTorch is the dominant framework in ML research (85%+ of papers) and increasingly in production. TensorFlow uses a static computation graph that is defined and then executed offering production deployment advantages (TensorFlow Serving, TFLite for mobile, TFX for pipelines) but historically more complex debugging. With the adoption of PyTorch 2.0's torch.compile and TorchServe for production serving, and ONNX for cross-framework deployment, the production deployment gap has largely closed. ClickMasters uses PyTorch as the primary framework for all new deep learning work, with TensorFlow for legacy model maintenance and TFLite targets.",
+        "PyTorch and TensorFlow are both production-grade deep learning frameworks, but they have evolved differently. PyTorch uses a dynamic computation graph (define-by-run) operations execute immediately when called, making debugging intuitive and code that looks like standard Python. PyTorch is the dominant framework in ML research (85%+ of papers) and increasingly in production. TensorFlow uses a static computation graph that is defined and then executed offering production deployment advantages (TensorFlow Serving, TFLite for mobile, TFX for pipelines) but historically more complex debugging. With the adoption of PyTorch 2.0's torch.compile and TorchServe for production serving, and ONNX for cross-framework deployment, the production deployment gap has largely closed. Clickmasters uses PyTorch as the primary framework for all new deep learning work, with TensorFlow for legacy model maintenance and TFLite targets.",
     },
     {
       question:
@@ -16018,7 +16018,7 @@ const deepLearningSolutionsOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built a vision model for our manufacturing quality control. The YOLO-based defect detection system runs in real-time on the production line, catching defects our human inspectors were missing. Defect escape rate dropped by 85%.",
+      "Clickmasters built a vision model for our manufacturing quality control. The YOLO-based defect detection system runs in real-time on the production line, catching defects our human inspectors were missing. Defect escape rate dropped by 85%.",
     author: "Head of Manufacturing",
     role: "Industrial Equipment Company",
   },
@@ -16091,10 +16091,10 @@ const naturalLanguageProcessingOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Natural Language Processing Services | NLP Development | ClickMasters",
+    "Natural Language Processing Services | NLP Development | Clickmasters",
   metaDescription:
-    "ClickMasters builds NLP systems text classification, NER, sentiment analysis, semantic search, and summarisation using Hugging Face Transformers for B2B companies worldwide.",
-  lead: "ClickMasters builds NLP systems for B2B companies across the USA, Europe, Canada, and Australia. Text classification that categorises thousands of documents per second. Named entity recognition that extracts specific information from unstructured text. Sentiment analysis that monitors customer voice at scale. Semantic search that understands what users mean, not just what they type. Summarisation that condenses long documents to decision-ready briefs. All built on Hugging Face Transformers.",
+    "Clickmasters builds NLP systems text classification, NER, sentiment analysis, semantic search, and summarisation using Hugging Face Transformers for B2B companies worldwide.",
+  lead: "Clickmasters builds NLP systems for B2B companies across the USA, Europe, Canada, and Australia. Text classification that categorises thousands of documents per second. Named entity recognition that extracts specific information from unstructured text. Sentiment analysis that monitors customer voice at scale. Semantic search that understands what users mean, not just what they type. Summarisation that condenses long documents to decision-ready briefs. All built on Hugging Face Transformers.",
   highlights: [
     "Text Classification & NER",
     "Sentiment Analysis",
@@ -16296,7 +16296,7 @@ const naturalLanguageProcessingOverride = {
     },
     {
       heading: "BIOES Tagging for NER",
-      body: 'Token-level classification for NER uses BIOES (Begin, Inside, Outside, End, Single) tagging scheme each token is labelled with its entity type and position. For a three-word product name "Apple AirPods Pro": B-PRODUCT (Apple), I-PRODUCT (AirPods), E-PRODUCT (Pro). Single-token entities get S-ENTITY tag. This precise boundary detection enables extraction of multi-token entities and correct handling of adjacent entities of different types. ClickMasters uses BIOES tagging for all production NER models.',
+      body: 'Token-level classification for NER uses BIOES (Begin, Inside, Outside, End, Single) tagging scheme each token is labelled with its entity type and position. For a three-word product name "Apple AirPods Pro": B-PRODUCT (Apple), I-PRODUCT (AirPods), E-PRODUCT (Pro). Single-token entities get S-ENTITY tag. This precise boundary detection enables extraction of multi-token entities and correct handling of adjacent entities of different types. Clickmasters uses BIOES tagging for all production NER models.',
       items: [],
     },
   ],
@@ -16309,7 +16309,7 @@ const naturalLanguageProcessingOverride = {
     {
       question: "How many labelled examples do I need for text classification?",
       answer:
-        "For binary text classification using BERT fine-tuning: 200-500 labelled examples per class (400-1,000 total) can produce usable accuracy (75-85% F1) on clear-cut classification tasks. For 90%+ F1 on a domain-specific task: 1,000-5,000 labelled examples per class. The exact requirement depends on how distinct the classes are (if the decision is clear-cut, fewer examples suffice), the vocabulary complexity (highly technical domain language needs more examples), and class balance (imbalanced datasets require more examples of the minority class). ClickMasters provides a data labelling strategy as part of every NLP engagement including when to use active learning (label the examples the model is most uncertain about first) to reduce total labelling cost by 50-70%.",
+        "For binary text classification using BERT fine-tuning: 200-500 labelled examples per class (400-1,000 total) can produce usable accuracy (75-85% F1) on clear-cut classification tasks. For 90%+ F1 on a domain-specific task: 1,000-5,000 labelled examples per class. The exact requirement depends on how distinct the classes are (if the decision is clear-cut, fewer examples suffice), the vocabulary complexity (highly technical domain language needs more examples), and class balance (imbalanced datasets require more examples of the minority class). Clickmasters provides a data labelling strategy as part of every NLP engagement including when to use active learning (label the examples the model is most uncertain about first) to reduce total labelling cost by 50-70%.",
     },
     {
       question:
@@ -16320,12 +16320,12 @@ const naturalLanguageProcessingOverride = {
     {
       question: "Can NLP models be deployed on-premises for data privacy?",
       answer:
-        "Yes. All Hugging Face Transformer models used by ClickMasters can be deployed on-premises (on your own servers or private cloud) without sending text data to external APIs. The model weights are downloaded once from Hugging Face Hub and served from your infrastructure using HuggingFace's transformers inference pipeline, TorchServe, or ONNX Runtime. This makes on-premises NLP deployment appropriate for healthcare (PHI), legal (attorney-client privilege), and financial services (customer data) environments where text data cannot leave the organisation's infrastructure. ClickMasters deploys self-hosted NLP models on AWS EC2 (within the client's VPC), on-premises GPU servers, or air-gapped environments depending on security requirements.",
+        "Yes. All Hugging Face Transformer models used by Clickmasters can be deployed on-premises (on your own servers or private cloud) without sending text data to external APIs. The model weights are downloaded once from Hugging Face Hub and served from your infrastructure using HuggingFace's transformers inference pipeline, TorchServe, or ONNX Runtime. This makes on-premises NLP deployment appropriate for healthcare (PHI), legal (attorney-client privilege), and financial services (customer data) environments where text data cannot leave the organisation's infrastructure. Clickmasters deploys self-hosted NLP models on AWS EC2 (within the client's VPC), on-premises GPU servers, or air-gapped environments depending on security requirements.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our support ticket classification system. We now process 10,000+ tickets per week with 94% routing accuracy saving our support team 20+ hours per week. The BERT model handles industry-specific terminology perfectly.",
+      "Clickmasters built our support ticket classification system. We now process 10,000+ tickets per week with 94% routing accuracy saving our support team 20+ hours per week. The BERT model handles industry-specific terminology perfectly.",
     author: "Head of Customer Support",
     role: "B2B SaaS Company",
   },
@@ -16394,10 +16394,10 @@ const speechRecognitionOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Speech Recognition Services | Transcription & Voice AI | ClickMasters",
+    "Speech Recognition Services | Transcription & Voice AI | Clickmasters",
   metaDescription:
-    "ClickMasters builds speech recognition systems meeting transcription, voice command interfaces, call analytics, and multilingual ASR using Whisper and Deepgram for B2B companies worldwide.",
-  lead: "ClickMasters builds speech recognition systems for B2B companies across the USA, Europe, Canada, and Australia. Meeting transcription with speaker diarisation who said what, when. Call centre analytics transcribe, analyse sentiment, and extract action items from thousands of calls daily. Voice command interfaces for mobile and web applications. Real-time and batch transcription in 100+ languages. Built on OpenAI Whisper and Deepgram.",
+    "Clickmasters builds speech recognition systems meeting transcription, voice command interfaces, call analytics, and multilingual ASR using Whisper and Deepgram for B2B companies worldwide.",
+  lead: "Clickmasters builds speech recognition systems for B2B companies across the USA, Europe, Canada, and Australia. Meeting transcription with speaker diarisation who said what, when. Call centre analytics transcribe, analyse sentiment, and extract action items from thousands of calls daily. Voice command interfaces for mobile and web applications. Real-time and batch transcription in 100+ languages. Built on OpenAI Whisper and Deepgram.",
   highlights: [
     "Whisper Transcription",
     "Speaker Diarisation",
@@ -16599,7 +16599,7 @@ const speechRecognitionOverride = {
   sections: [
     {
       heading: "Whisper vs Deepgram for Transcription",
-      body: "OpenAI Whisper and Deepgram are both production-grade ASR systems but optimised for different use cases. Whisper is an open-source model that can be self-hosted (data stays on your infrastructure) or called via the OpenAI API. It has near-human accuracy on English (4.4% WER on standard benchmarks), supports 100+ languages, and is the best choice for batch transcription where latency is not a constraint. Deepgram is a managed API service optimised for real-time streaming transcription delivering partial transcripts with <300ms latency, making it the correct choice for live captioning, real-time agent assist, and voice interfaces where users see transcription as they speak. For batch transcription of meeting recordings or call logs: Whisper. For real-time streaming: Deepgram. ClickMasters uses both depending on the latency requirement.",
+      body: "OpenAI Whisper and Deepgram are both production-grade ASR systems but optimised for different use cases. Whisper is an open-source model that can be self-hosted (data stays on your infrastructure) or called via the OpenAI API. It has near-human accuracy on English (4.4% WER on standard benchmarks), supports 100+ languages, and is the best choice for batch transcription where latency is not a constraint. Deepgram is a managed API service optimised for real-time streaming transcription delivering partial transcripts with <300ms latency, making it the correct choice for live captioning, real-time agent assist, and voice interfaces where users see transcription as they speak. For batch transcription of meeting recordings or call logs: Whisper. For real-time streaming: Deepgram. Clickmasters uses both depending on the latency requirement.",
       items: [],
     },
     {
@@ -16609,7 +16609,7 @@ const speechRecognitionOverride = {
     },
     {
       heading: "On-Premises Speech Recognition for Sensitive Data",
-      body: "OpenAI Whisper is fully open-source and can be deployed on your own infrastructure either on-premises GPU servers or within your private AWS/GCP/Azure VPC. Audio never leaves your environment. Deployment options: Whisper served via a FastAPI endpoint on an AWS EC2 G5 instance (GPU-accelerated processes a 60-minute meeting in ~2 minutes), or faster-whisper (a CTranslate2-optimised Whisper implementation 4x faster than the original with the same accuracy) for high-throughput batch transcription. For real-time streaming in a private environment, NVIDIA Riva (enterprise-grade on-premises ASR) or a self-hosted Whisper with streaming chunking can replace Deepgram. ClickMasters deploys self-hosted ASR for healthcare, legal, and financial services clients where audio content cannot be sent to external APIs.",
+      body: "OpenAI Whisper is fully open-source and can be deployed on your own infrastructure either on-premises GPU servers or within your private AWS/GCP/Azure VPC. Audio never leaves your environment. Deployment options: Whisper served via a FastAPI endpoint on an AWS EC2 G5 instance (GPU-accelerated processes a 60-minute meeting in ~2 minutes), or faster-whisper (a CTranslate2-optimised Whisper implementation 4x faster than the original with the same accuracy) for high-throughput batch transcription. For real-time streaming in a private environment, NVIDIA Riva (enterprise-grade on-premises ASR) or a self-hosted Whisper with streaming chunking can replace Deepgram. Clickmasters deploys self-hosted ASR for healthcare, legal, and financial services clients where audio content cannot be sent to external APIs.",
       items: [],
     },
   ],
@@ -16618,7 +16618,7 @@ const speechRecognitionOverride = {
       question:
         "What is the difference between Whisper and Deepgram for transcription?",
       answer:
-        "OpenAI Whisper and Deepgram are both production-grade ASR systems but optimised for different use cases. Whisper is an open-source model that can be self-hosted (data stays on your infrastructure) or called via the OpenAI API. It has near-human accuracy on English (4.4% WER on standard benchmarks), supports 100+ languages, and is the best choice for batch transcription where latency is not a constraint. Deepgram is a managed API service optimised for real-time streaming transcription delivering partial transcripts with <300ms latency, making it the correct choice for live captioning, real-time agent assist, and voice interfaces where users see transcription as they speak. For batch transcription of meeting recordings or call logs: Whisper. For real-time streaming: Deepgram. ClickMasters uses both depending on the latency requirement.",
+        "OpenAI Whisper and Deepgram are both production-grade ASR systems but optimised for different use cases. Whisper is an open-source model that can be self-hosted (data stays on your infrastructure) or called via the OpenAI API. It has near-human accuracy on English (4.4% WER on standard benchmarks), supports 100+ languages, and is the best choice for batch transcription where latency is not a constraint. Deepgram is a managed API service optimised for real-time streaming transcription delivering partial transcripts with <300ms latency, making it the correct choice for live captioning, real-time agent assist, and voice interfaces where users see transcription as they speak. For batch transcription of meeting recordings or call logs: Whisper. For real-time streaming: Deepgram. Clickmasters uses both depending on the latency requirement.",
     },
     {
       question: "What is speaker diarisation and why does it matter?",
@@ -16629,18 +16629,18 @@ const speechRecognitionOverride = {
       question:
         "Can speech recognition work for heavily accented or technical speech?",
       answer:
-        "Yes, with proper configuration and fine-tuning. Whisper's multilingual model has broad accent coverage because it was trained on diverse web audio it handles most global English accents (Indian, Australian, British, South African, etc.) better than many commercial ASR systems. For highly specialised vocabulary (medical terminology, legal Latin phrases, proprietary product names, financial instrument tickers), custom vocabulary can be injected into the Whisper prompt (the model is primed with expected terms significantly reducing hallucination of unfamiliar words). For persistent specialised vocabulary use cases, Whisper can be fine-tuned on a domain-specific dataset typically 10-100 hours of labelled audio from the target domain reducing WER by 30-50% on in-domain audio. ClickMasters recommends starting with custom vocabulary injection (fast and cheap) before committing to fine-tuning.",
+        "Yes, with proper configuration and fine-tuning. Whisper's multilingual model has broad accent coverage because it was trained on diverse web audio it handles most global English accents (Indian, Australian, British, South African, etc.) better than many commercial ASR systems. For highly specialised vocabulary (medical terminology, legal Latin phrases, proprietary product names, financial instrument tickers), custom vocabulary can be injected into the Whisper prompt (the model is primed with expected terms significantly reducing hallucination of unfamiliar words). For persistent specialised vocabulary use cases, Whisper can be fine-tuned on a domain-specific dataset typically 10-100 hours of labelled audio from the target domain reducing WER by 30-50% on in-domain audio. Clickmasters recommends starting with custom vocabulary injection (fast and cheap) before committing to fine-tuning.",
     },
     {
       question:
         "Is it possible to deploy speech recognition on-premises for sensitive data?",
       answer:
-        "Yes. OpenAI Whisper is fully open-source and can be deployed on your own infrastructure either on-premises GPU servers or within your private AWS/GCP/Azure VPC. Audio never leaves your environment. Deployment options: Whisper served via a FastAPI endpoint on an AWS EC2 G5 instance (GPU-accelerated processes a 60-minute meeting in ~2 minutes), or faster-whisper (a CTranslate2-optimised Whisper implementation 4x faster than the original with the same accuracy) for high-throughput batch transcription. For real-time streaming in a private environment, NVIDIA Riva (enterprise-grade on-premises ASR) or a self-hosted Whisper with streaming chunking can replace Deepgram. ClickMasters deploys self-hosted ASR for healthcare, legal, and financial services clients where audio content cannot be sent to external APIs.",
+        "Yes. OpenAI Whisper is fully open-source and can be deployed on your own infrastructure either on-premises GPU servers or within your private AWS/GCP/Azure VPC. Audio never leaves your environment. Deployment options: Whisper served via a FastAPI endpoint on an AWS EC2 G5 instance (GPU-accelerated processes a 60-minute meeting in ~2 minutes), or faster-whisper (a CTranslate2-optimised Whisper implementation 4x faster than the original with the same accuracy) for high-throughput batch transcription. For real-time streaming in a private environment, NVIDIA Riva (enterprise-grade on-premises ASR) or a self-hosted Whisper with streaming chunking can replace Deepgram. Clickmasters deploys self-hosted ASR for healthcare, legal, and financial services clients where audio content cannot be sent to external APIs.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our meeting transcription pipeline. We process 500+ hours of customer calls weekly with Whisper + speaker diarisation. The 4.4% WER accuracy is remarkable, even on technical vocabulary.",
+      "Clickmasters built our meeting transcription pipeline. We process 500+ hours of customer calls weekly with Whisper + speaker diarisation. The 4.4% WER accuracy is remarkable, even on technical vocabulary.",
     author: "VP of Engineering",
     role: "Conversational AI Platform",
   },
@@ -16704,10 +16704,10 @@ const textAnalyticsOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Text Analytics Services | Customer Feedback & Contract Analysis | ClickMasters",
+    "Text Analytics Services | Customer Feedback & Contract Analysis | Clickmasters",
   metaDescription:
-    "ClickMasters builds text analytics systems topic modelling, sentiment monitoring, contract analysis, and customer feedback intelligence for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds text analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Topic modelling that surfaces the 12 recurring themes in 50,000 customer support tickets automatically. Sentiment monitoring dashboards that track brand health across review platforms. Contract analytics that flags non-standard clauses before legal review. Voice-of-customer systems that translate customer language into product roadmap evidence.",
+    "Clickmasters builds text analytics systems topic modelling, sentiment monitoring, contract analysis, and customer feedback intelligence for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds text analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Topic modelling that surfaces the 12 recurring themes in 50,000 customer support tickets automatically. Sentiment monitoring dashboards that track brand health across review platforms. Contract analytics that flags non-standard clauses before legal review. Voice-of-customer systems that translate customer language into product roadmap evidence.",
   highlights: [
     "Topic Modelling (BERTopic)",
     "Sentiment Monitoring Dashboard",
@@ -16911,12 +16911,12 @@ const textAnalyticsOverride = {
   sections: [
     {
       heading: "BERTopic vs LDA for Topic Modelling",
-      body: "BERTopic is a topic modelling technique that uses transformer embeddings (sentence-transformers) to represent document meaning, then applies UMAP (dimensionality reduction) and HDBSCAN (density-based clustering) to group semantically similar documents into topics. This produces topics defined by actual semantic meaning not just co-occurring words. LDA (Latent Dirichlet Allocation), the classical topic modelling approach, represents documents as bags of words it misses semantic relationships (synonyms counted as different, polysemous words counted the same regardless of meaning). On short texts typical in B2B text analytics (support tickets, reviews, survey responses), BERTopic dramatically outperforms LDA because transformer embeddings capture meaning even from 5-20 word documents that LDA cannot model reliably. ClickMasters uses BERTopic as the default topic modelling approach for all text analytics engagements.",
+      body: "BERTopic is a topic modelling technique that uses transformer embeddings (sentence-transformers) to represent document meaning, then applies UMAP (dimensionality reduction) and HDBSCAN (density-based clustering) to group semantically similar documents into topics. This produces topics defined by actual semantic meaning not just co-occurring words. LDA (Latent Dirichlet Allocation), the classical topic modelling approach, represents documents as bags of words it misses semantic relationships (synonyms counted as different, polysemous words counted the same regardless of meaning). On short texts typical in B2B text analytics (support tickets, reviews, survey responses), BERTopic dramatically outperforms LDA because transformer embeddings capture meaning even from 5-20 word documents that LDA cannot model reliably. Clickmasters uses BERTopic as the default topic modelling approach for all text analytics engagements.",
       items: [],
     },
     {
       heading: "Text Analytics ROI Real Examples",
-      body: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. ClickMasters estimates ROI for each specific use case as part of the discovery engagement.",
+      body: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement.",
       items: [],
     },
   ],
@@ -16930,23 +16930,23 @@ const textAnalyticsOverride = {
       question:
         "What is BERTopic and why is it better than LDA for topic modelling?",
       answer:
-        "BERTopic is a topic modelling technique that uses transformer embeddings (sentence-transformers) to represent document meaning, then applies UMAP (dimensionality reduction) and HDBSCAN (density-based clustering) to group semantically similar documents into topics. This produces topics defined by actual semantic meaning not just co-occurring words. LDA (Latent Dirichlet Allocation), the classical topic modelling approach, represents documents as bags of words it misses semantic relationships (synonyms counted as different, polysemous words counted the same regardless of meaning). On short texts typical in B2B text analytics (support tickets, reviews, survey responses), BERTopic dramatically outperforms LDA because transformer embeddings capture meaning even from 5-20 word documents that LDA cannot model reliably. ClickMasters uses BERTopic as the default topic modelling approach for all text analytics engagements.",
+        "BERTopic is a topic modelling technique that uses transformer embeddings (sentence-transformers) to represent document meaning, then applies UMAP (dimensionality reduction) and HDBSCAN (density-based clustering) to group semantically similar documents into topics. This produces topics defined by actual semantic meaning not just co-occurring words. LDA (Latent Dirichlet Allocation), the classical topic modelling approach, represents documents as bags of words it misses semantic relationships (synonyms counted as different, polysemous words counted the same regardless of meaning). On short texts typical in B2B text analytics (support tickets, reviews, survey responses), BERTopic dramatically outperforms LDA because transformer embeddings capture meaning even from 5-20 word documents that LDA cannot model reliably. Clickmasters uses BERTopic as the default topic modelling approach for all text analytics engagements.",
     },
     {
       question:
         "Can text analytics integrate with our existing data tools (Salesforce, Zendesk, Snowflake)?",
       answer:
-        "Yes. Text analytics data pipelines connect to the sources where your text data lives. Common integrations: Zendesk (support tickets via Zendesk API classify, analyse sentiment, tag topics automatically), Salesforce (CRM notes and deal descriptions via Salesforce API), HubSpot (conversation history, survey responses), Intercom (chat transcripts), Snowflake or BigQuery (bulk text data warehoused for analytics), and S3 (raw text files, email exports, document corpora). Processed outputs are written back to the same data warehouse (Snowflake, BigQuery, PostgreSQL) or directly to BI tools (Metabase, Looker, Tableau) for dashboard visualisation. ClickMasters designs the integration architecture in the discovery phase mapping each text source to the appropriate NLP task and output destination.",
+        "Yes. Text analytics data pipelines connect to the sources where your text data lives. Common integrations: Zendesk (support tickets via Zendesk API classify, analyse sentiment, tag topics automatically), Salesforce (CRM notes and deal descriptions via Salesforce API), HubSpot (conversation history, survey responses), Intercom (chat transcripts), Snowflake or BigQuery (bulk text data warehoused for analytics), and S3 (raw text files, email exports, document corpora). Processed outputs are written back to the same data warehouse (Snowflake, BigQuery, PostgreSQL) or directly to BI tools (Metabase, Looker, Tableau) for dashboard visualisation. Clickmasters designs the integration architecture in the discovery phase mapping each text source to the appropriate NLP task and output destination.",
     },
     {
       question: "What ROI can I expect from a text analytics system?",
       answer:
-        "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. ClickMasters estimates ROI for each specific use case as part of the discovery engagement.",
+        "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our contract analytics pipeline. We processed 3,000 contracts in 2 days something our legal team would have taken months to do manually. The clause extraction accuracy is above 92% on 15 clause types.",
+      "Clickmasters built our contract analytics pipeline. We processed 3,000 contracts in 2 days something our legal team would have taken months to do manually. The clause extraction accuracy is above 92% on 15 clause types.",
     author: "General Counsel",
     role: "Enterprise B2B Company",
   },
@@ -17016,10 +17016,10 @@ const computerVisionOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Computer Vision Services | Image Recognition & Object Detection | ClickMasters",
+    "Computer Vision Services | Image Recognition & Object Detection | Clickmasters",
   metaDescription:
-    "ClickMasters builds computer vision systems image classification, object detection, defect detection, and visual inspection using YOLO, DETR, and EfficientNet for B2B companies worldwide.",
-  lead: "ClickMasters builds computer vision systems for B2B companies across the USA, Europe, Canada, and Australia. Image classification that categorises millions of product images per day. Object detection that locates and identifies items in real-time video streams. Defect detection that replaces manual visual inspection on manufacturing lines. Document layout analysis that understands the structure of complex PDF documents. Medical image analysis. Satellite and aerial image processing.",
+    "Clickmasters builds computer vision systems image classification, object detection, defect detection, and visual inspection using YOLO, DETR, and EfficientNet for B2B companies worldwide.",
+  lead: "Clickmasters builds computer vision systems for B2B companies across the USA, Europe, Canada, and Australia. Image classification that categorises millions of product images per day. Object detection that locates and identifies items in real-time video streams. Defect detection that replaces manual visual inspection on manufacturing lines. Document layout analysis that understands the structure of complex PDF documents. Medical image analysis. Satellite and aerial image processing.",
   highlights: [
     "Image Classification (EfficientNet/ViT)",
     "Object Detection (YOLO v8)",
@@ -17225,7 +17225,7 @@ const computerVisionOverride = {
   sections: [
     {
       heading: "YOLO v8 Real-Time Object Detection",
-      body: "YOLO v8 (Ultralytics) is the state-of-the-art real-time object detection framework. It processes 50+ frames per second on a standard GPU while maintaining high accuracy (mAP comparable to larger, slower models). Architecture: single neural network that predicts bounding boxes and class probabilities directly from full images in one evaluation unlike Faster R-CNN which has separate region proposal and classification stages. YOLO v8 uses an anchor-free detection head (simpler, faster, more flexible) and mosaic data augmentation (improves performance on small objects). Deployment: TensorRT optimisation (3-5x faster than PyTorch inference), export to ONNX, Edge TPU, or NVIDIA Jetson. ClickMasters uses YOLO v8 as the default detection architecture for real-time B2B computer vision applications.",
+      body: "YOLO v8 (Ultralytics) is the state-of-the-art real-time object detection framework. It processes 50+ frames per second on a standard GPU while maintaining high accuracy (mAP comparable to larger, slower models). Architecture: single neural network that predicts bounding boxes and class probabilities directly from full images in one evaluation unlike Faster R-CNN which has separate region proposal and classification stages. YOLO v8 uses an anchor-free detection head (simpler, faster, more flexible) and mosaic data augmentation (improves performance on small objects). Deployment: TensorRT optimisation (3-5x faster than PyTorch inference), export to ONNX, Edge TPU, or NVIDIA Jetson. Clickmasters uses YOLO v8 as the default detection architecture for real-time B2B computer vision applications.",
       items: [],
     },
     {
@@ -17243,7 +17243,7 @@ const computerVisionOverride = {
     {
       question: "How much labelled data do I need for a computer vision model?",
       answer:
-        "With transfer learning from ImageNet pre-trained models: 500-2,000 labelled images per class for image classification, and 200-1,000 annotated images per class for object detection (annotation is more expensive than classification labelling each object in each image must be bounded and labelled). Without transfer learning (training from scratch): 10,000-100,000+ images per class. Data augmentation (random crop, flip, rotation, colour jitter, MixUp) multiplies effective dataset size by 5-20x reducing the absolute labelling requirement. For defect detection where defect examples are rare, anomaly detection approaches (PatchCore, FastFlow) that learn only from normal examples eliminate the need to label defect images. ClickMasters performs a data audit as the first step assessing what is available, what needs labelling, and which approach minimises labelling cost for your accuracy requirement.",
+        "With transfer learning from ImageNet pre-trained models: 500-2,000 labelled images per class for image classification, and 200-1,000 annotated images per class for object detection (annotation is more expensive than classification labelling each object in each image must be bounded and labelled). Without transfer learning (training from scratch): 10,000-100,000+ images per class. Data augmentation (random crop, flip, rotation, colour jitter, MixUp) multiplies effective dataset size by 5-20x reducing the absolute labelling requirement. For defect detection where defect examples are rare, anomaly detection approaches (PatchCore, FastFlow) that learn only from normal examples eliminate the need to label defect images. Clickmasters performs a data audit as the first step assessing what is available, what needs labelling, and which approach minimises labelling cost for your accuracy requirement.",
     },
     {
       question:
@@ -17254,12 +17254,12 @@ const computerVisionOverride = {
     {
       question: "Can computer vision work in real time on a production line?",
       answer:
-        "Yes this is one of the most commercially deployed computer vision applications. Production line visual inspection with sub-100ms latency is achievable with YOLO v8 on a GPU-equipped inference server. Architecture: industrial camera (GigE Vision or USB3 Vision) triggered by a PLC signal when a product arrives at the inspection station, image captured and sent to the inference server (YOLO v8 or EfficientNet classification), result returned in 50-100ms (pass/fail with defect location), and a reject signal sent to the PLC to divert the defective product. GPU hardware: NVIDIA Jetson Orin (edge deployment on the production line, no network round-trip) or a server-side GPU (AWS EC2 G5 or on-premises NVIDIA A10) for higher throughput. ClickMasters designs the complete vision pipeline including camera integration, inference server, and PLC communication protocol.",
+        "Yes this is one of the most commercially deployed computer vision applications. Production line visual inspection with sub-100ms latency is achievable with YOLO v8 on a GPU-equipped inference server. Architecture: industrial camera (GigE Vision or USB3 Vision) triggered by a PLC signal when a product arrives at the inspection station, image captured and sent to the inference server (YOLO v8 or EfficientNet classification), result returned in 50-100ms (pass/fail with defect location), and a reject signal sent to the PLC to divert the defective product. GPU hardware: NVIDIA Jetson Orin (edge deployment on the production line, no network round-trip) or a server-side GPU (AWS EC2 G5 or on-premises NVIDIA A10) for higher throughput. Clickmasters designs the complete vision pipeline including camera integration, inference server, and PLC communication protocol.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our manufacturing defect detection system with YOLO v8. We now inspect 100% of products in real time catching defects our human inspectors were missing. Defect escape rate dropped by 85%.",
+      "Clickmasters built our manufacturing defect detection system with YOLO v8. We now inspect 100% of products in real time catching defects our human inspectors were missing. Defect escape rate dropped by 85%.",
     author: "Plant Manager",
     role: "Automotive Parts Manufacturer",
   },
@@ -17329,10 +17329,10 @@ const imageProcessingOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Image Processing Services | Automated Image Enhancement & Analysis | ClickMasters",
+    "Image Processing Services | Automated Image Enhancement & Analysis | Clickmasters",
   metaDescription:
-    "ClickMasters builds image processing pipelines automated enhancement, OCR, background removal, image denoising, and batch processing at scale for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds image processing pipelines for B2B companies across the USA, Europe, Canada, and Australia. Batch image enhancement (brightness, contrast, noise reduction, sharpening) at millions of images per day. Background removal and product image standardisation for e-commerce. OCR pipelines that extract text from scanned documents with 99% accuracy. Image quality assessment that filters unusable images before they reach production. Medical image processing and DICOM pipelines.",
+    "Clickmasters builds image processing pipelines automated enhancement, OCR, background removal, image denoising, and batch processing at scale for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds image processing pipelines for B2B companies across the USA, Europe, Canada, and Australia. Batch image enhancement (brightness, contrast, noise reduction, sharpening) at millions of images per day. Background removal and product image standardisation for e-commerce. OCR pipelines that extract text from scanned documents with 99% accuracy. Image quality assessment that filters unusable images before they reach production. Medical image processing and DICOM pipelines.",
   highlights: [
     "Batch Image Enhancement",
     "Background Removal",
@@ -17571,12 +17571,12 @@ const imageProcessingOverride = {
     {
       question: "Can image processing pipelines handle medical images (DICOM)?",
       answer:
-        "Yes, with appropriate tooling and data handling. DICOM (Digital Imaging and Communications in Medicine) is the standard format for medical imaging CT scans, MRI, X-ray, ultrasound and requires specialist handling. pydicom is the Python library for reading and writing DICOM files, extracting pixel data, and accessing DICOM metadata (patient information, acquisition parameters). MONAI (Medical Open Network for AI) is the PyTorch-based framework for medical image preprocessing and ML training analogous to torchvision but with medical imaging primitives (intensity normalisation, spatial transforms, DICOM loading). For research and development pipelines, ClickMasters builds DICOM processing systems including anonymisation (DICOM metadata de-identification to remove PHI for research compliance), format conversion, windowing (correct pixel value mapping per modality), and preprocessing for ML training. All medical data handling is scoped with the client's HIPAA or equivalent regulatory requirements.",
+        "Yes, with appropriate tooling and data handling. DICOM (Digital Imaging and Communications in Medicine) is the standard format for medical imaging CT scans, MRI, X-ray, ultrasound and requires specialist handling. pydicom is the Python library for reading and writing DICOM files, extracting pixel data, and accessing DICOM metadata (patient information, acquisition parameters). MONAI (Medical Open Network for AI) is the PyTorch-based framework for medical image preprocessing and ML training analogous to torchvision but with medical imaging primitives (intensity normalisation, spatial transforms, DICOM loading). For research and development pipelines, Clickmasters builds DICOM processing systems including anonymisation (DICOM metadata de-identification to remove PHI for research compliance), format conversion, windowing (correct pixel value mapping per modality), and preprocessing for ML training. All medical data handling is scoped with the client's HIPAA or equivalent regulatory requirements.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our product image processing pipeline. We process 500,000 product images per week background removal, enhancement, WebP conversion reducing our page load time by 40% and increasing conversion by 12%.",
+      "Clickmasters built our product image processing pipeline. We process 500,000 product images per week background removal, enhancement, WebP conversion reducing our page load time by 40% and increasing conversion by 12%.",
     author: "CTO",
     role: "E-commerce Platform",
   },
@@ -17645,10 +17645,10 @@ const videoAnalyticsOverride = {
   heroImage:
     "/images/photo-1677442136019-21780ecad995.jpg",
   metaTitle:
-    "Video Analytics Services | AI Video Analysis & Object Tracking | ClickMasters",
+    "Video Analytics Services | AI Video Analysis & Object Tracking | Clickmasters",
   metaDescription:
-    "ClickMasters builds video analytics systems object tracking, action recognition, crowd analysis, and real-time surveillance analytics using YOLO, DeepSORT, and SlowFast for B2B companies worldwide.",
-  lead: "ClickMasters builds video analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Object detection and tracking in live video streams detect, identify, and follow every object of interest. Retail analytics customer flow, dwell time, queue length, conversion zone heatmaps. Crowd analysis and density estimation. Action recognition detect specific events and behaviours. License plate recognition. All analytics delivered as real-time event streams your operations team can act on.",
+    "Clickmasters builds video analytics systems object tracking, action recognition, crowd analysis, and real-time surveillance analytics using YOLO, DeepSORT, and SlowFast for B2B companies worldwide.",
+  lead: "Clickmasters builds video analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Object detection and tracking in live video streams detect, identify, and follow every object of interest. Retail analytics customer flow, dwell time, queue length, conversion zone heatmaps. Crowd analysis and density estimation. Action recognition detect specific events and behaviours. License plate recognition. All analytics delivered as real-time event streams your operations team can act on.",
   highlights: [
     "Object Detection & Tracking (YOLO+DeepSORT)",
     "Action Recognition",
@@ -17860,12 +17860,12 @@ const videoAnalyticsOverride = {
   sections: [
     {
       heading: "Object Tracking with DeepSORT",
-      body: "DeepSORT (Deep Simple Online and Realtime Tracking) is the production standard for object tracking in video analytics. It extends SORT by adding a deep appearance descriptor (a CNN embedding of the object's appearance) that enables re-identification when objects are occluded or cross. Tracking workflow: detection (YOLO v8 produces bounding boxes each frame), Kalman filter (predicts object location in next frame), Hungarian algorithm (matches detections to existing tracks), appearance feature extraction (CNN embedding of the detected object, used for matching after occlusion), and track management (initialise new tracks, terminate tracks that exit the frame). Output: each tracked object receives a persistent ID across frames, enabling trajectory analysis (path, dwell time, entry/exit zones). ClickMasters uses DeepSORT as the default tracker for all video analytics applications.",
+      body: "DeepSORT (Deep Simple Online and Realtime Tracking) is the production standard for object tracking in video analytics. It extends SORT by adding a deep appearance descriptor (a CNN embedding of the object's appearance) that enables re-identification when objects are occluded or cross. Tracking workflow: detection (YOLO v8 produces bounding boxes each frame), Kalman filter (predicts object location in next frame), Hungarian algorithm (matches detections to existing tracks), appearance feature extraction (CNN embedding of the detected object, used for matching after occlusion), and track management (initialise new tracks, terminate tracks that exit the frame). Output: each tracked object receives a persistent ID across frames, enabling trajectory analysis (path, dwell time, entry/exit zones). Clickmasters uses DeepSORT as the default tracker for all video analytics applications.",
       items: [],
     },
     {
       heading: "Privacy-Preserving Video Analytics",
-      body: "Privacy-preserving video analytics is a design principle, not an afterthought. For retail and workplace analytics, ClickMasters systems output aggregate metrics and anonymised trajectories not facial recognition or persistent individual identification. Technically: object tracking assigns temporary IDs per session (ID does not persist across camera views or days), bounding box blurring (faces and identifying features blurred in any stored video clips), no biometric data collection, aggregate dashboard outputs (counts, heatmaps, density maps no individual-level data), and data retention policies (raw video not stored beyond the minimum required buffer; derived analytics data retained per policy). GDPR compliance: processing is based on legitimate interest for operational safety and efficiency, with appropriate signage notifying visitors. ClickMasters documents the data processing activities for GDPR Article 30 records.",
+      body: "Privacy-preserving video analytics is a design principle, not an afterthought. For retail and workplace analytics, Clickmasters systems output aggregate metrics and anonymised trajectories not facial recognition or persistent individual identification. Technically: object tracking assigns temporary IDs per session (ID does not persist across camera views or days), bounding box blurring (faces and identifying features blurred in any stored video clips), no biometric data collection, aggregate dashboard outputs (counts, heatmaps, density maps no individual-level data), and data retention policies (raw video not stored beyond the minimum required buffer; derived analytics data retained per policy). GDPR compliance: processing is based on legitimate interest for operational safety and efficiency, with appropriate signage notifying visitors. Clickmasters documents the data processing activities for GDPR Article 30 records.",
       items: [],
     },
   ],
@@ -17879,22 +17879,22 @@ const videoAnalyticsOverride = {
     {
       question: "Can video analytics work with our existing CCTV cameras?",
       answer:
-        "Yes most modern IP cameras stream video via RTSP (Real-Time Streaming Protocol) or ONVIF (Open Network Video Interface Forum), which our video analytics infrastructure connects to directly without requiring hardware replacement. Camera requirements for good analytics accuracy: minimum 720p resolution (1080p preferred for ANPR), adequate lighting (low-light cameras with IR illumination for 24/7 monitoring), appropriate field of view for the use case (entrance counting requires a top-down or angled view of the doorway; product zone monitoring requires a view of the shelf area). ClickMasters reviews camera specifications and placement as part of the scoping engagement recommending any camera upgrades needed for the target accuracy, and designing analytics systems around existing hardware where possible.",
+        "Yes most modern IP cameras stream video via RTSP (Real-Time Streaming Protocol) or ONVIF (Open Network Video Interface Forum), which our video analytics infrastructure connects to directly without requiring hardware replacement. Camera requirements for good analytics accuracy: minimum 720p resolution (1080p preferred for ANPR), adequate lighting (low-light cameras with IR illumination for 24/7 monitoring), appropriate field of view for the use case (entrance counting requires a top-down or angled view of the doorway; product zone monitoring requires a view of the shelf area). Clickmasters reviews camera specifications and placement as part of the scoping engagement recommending any camera upgrades needed for the target accuracy, and designing analytics systems around existing hardware where possible.",
     },
     {
       question: "How do you handle privacy compliance in video analytics?",
       answer:
-        "Privacy-preserving video analytics is a design principle, not an afterthought. For retail and workplace analytics, ClickMasters systems output aggregate metrics and anonymised trajectories not facial recognition or persistent individual identification. Technically: object tracking assigns temporary IDs per session (ID does not persist across camera views or days), bounding box blurring (faces and identifying features blurred in any stored video clips), no biometric data collection, aggregate dashboard outputs (counts, heatmaps, density maps no individual-level data), and data retention policies (raw video not stored beyond the minimum required buffer; derived analytics data retained per policy). GDPR compliance: processing is based on legitimate interest for operational safety and efficiency, with appropriate signage notifying visitors. ClickMasters documents the data processing activities for GDPR Article 30 records.",
+        "Privacy-preserving video analytics is a design principle, not an afterthought. For retail and workplace analytics, Clickmasters systems output aggregate metrics and anonymised trajectories not facial recognition or persistent individual identification. Technically: object tracking assigns temporary IDs per session (ID does not persist across camera views or days), bounding box blurring (faces and identifying features blurred in any stored video clips), no biometric data collection, aggregate dashboard outputs (counts, heatmaps, density maps no individual-level data), and data retention policies (raw video not stored beyond the minimum required buffer; derived analytics data retained per policy). GDPR compliance: processing is based on legitimate interest for operational safety and efficiency, with appropriate signage notifying visitors. Clickmasters documents the data processing activities for GDPR Article 30 records.",
     },
     {
       question: "What hardware is needed for real-time video analytics?",
       answer:
-        "Hardware requirements depend on the number of camera streams and the complexity of the analytics. Rule of thumb: an NVIDIA RTX 4090 GPU or equivalent can process 10-20 camera streams simultaneously with YOLO v8 detection at 25 FPS. For enterprise deployments: NVIDIA A10 or A30 in an on-premises server handles 30-50 streams. For edge deployment (analytics running at the camera without cloud round-trip): NVIDIA Jetson Orin (AGX model 200+ TOPS) handles 5-10 streams on-device with sub-100ms latency appropriate for low-connectivity environments or high-security sites where video cannot leave the premises. Cloud deployment (AWS EC2 G5 instances) is appropriate when the analytics result (event flags, counts) is less sensitive than the raw video, and network bandwidth to the cloud is available. ClickMasters recommends the hardware configuration that meets the latency and privacy requirements at minimum cost.",
+        "Hardware requirements depend on the number of camera streams and the complexity of the analytics. Rule of thumb: an NVIDIA RTX 4090 GPU or equivalent can process 10-20 camera streams simultaneously with YOLO v8 detection at 25 FPS. For enterprise deployments: NVIDIA A10 or A30 in an on-premises server handles 30-50 streams. For edge deployment (analytics running at the camera without cloud round-trip): NVIDIA Jetson Orin (AGX model 200+ TOPS) handles 5-10 streams on-device with sub-100ms latency appropriate for low-connectivity environments or high-security sites where video cannot leave the premises. Cloud deployment (AWS EC2 G5 instances) is appropriate when the analytics result (event flags, counts) is less sensitive than the raw video, and network bandwidth to the cloud is available. Clickmasters recommends the hardware configuration that meets the latency and privacy requirements at minimum cost.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our retail analytics platform using existing CCTV cameras. We now measure footfall, dwell time per zone, and queue length in real time without adding any new hardware. Staffing optimisation alone paid back the project in 4 months.",
+      "Clickmasters built our retail analytics platform using existing CCTV cameras. We now measure footfall, dwell time per zone, and queue length in real time without adding any new hardware. Staffing optimisation alone paid back the project in 4 months.",
     author: "Operations Director",
     role: "National Retail Chain",
   },
@@ -17963,10 +17963,10 @@ const dataScienceAnalyticsOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Data Science & Analytics Services | BI, Data Engineering & Insights | ClickMasters",
+    "Data Science & Analytics Services | BI, Data Engineering & Insights | Clickmasters",
   metaDescription:
-    "ClickMasters delivers data science, business intelligence, data engineering, and analytics platforms for B2B companies in the USA, Europe, Canada & Australia. Turn data into decisions.",
-  lead: "ClickMasters builds data platforms, BI dashboards, analytics pipelines, and predictive models for B2B companies across the USA, Europe, Canada, and Australia. We turn scattered data across your CRM, ERP, billing system, and product database into a unified intelligence layer that tells you what is happening, why it is happening, and what will happen next.",
+    "Clickmasters delivers data science, business intelligence, data engineering, and analytics platforms for B2B companies in the USA, Europe, Canada & Australia. Turn data into decisions.",
+  lead: "Clickmasters builds data platforms, BI dashboards, analytics pipelines, and predictive models for B2B companies across the USA, Europe, Canada, and Australia. We turn scattered data across your CRM, ERP, billing system, and product database into a unified intelligence layer that tells you what is happening, why it is happening, and what will happen next.",
   highlights: [
     "Data Engineering & Pipelines",
     "BI Dashboards & Reporting",
@@ -18244,7 +18244,7 @@ const dataScienceAnalyticsOverride = {
     {
       heading:
         "Analytics vs. BI vs. Data Science vs. Data Engineering What Do You Actually Need?",
-      body: "These terms are used interchangeably by vendors and inconsistently understood by buyers. Here is a clear taxonomy and how ClickMasters delivers each as distinct but integrated practices.",
+      body: "These terms are used interchangeably by vendors and inconsistently understood by buyers. Here is a clear taxonomy and how Clickmasters delivers each as distinct but integrated practices.",
       items: [
         'Data Engineering: "How is data collected, transformed, and stored reliably?" The infrastructure layer. Deliverables: ETL/ELT pipelines, data warehouse, data lake, data quality monitoring. When you need it: data is siloed, manual reporting is slow, or you need to consolidate multiple sources.',
         'Business Intelligence (BI): "What happened and why?" Descriptive and diagnostic analytics for business users. Deliverables: Dashboards, KPI reports, self-service analytics portals, automated reporting, alerting. When you need it: faster, more reliable reporting that business users can explore without analyst help.',
@@ -18298,7 +18298,7 @@ const dataScienceAnalyticsOverride = {
     {
       question: "How much does it cost to build a data analytics platform?",
       answer:
-        "Building a data analytics platform costs between $15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to $80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: numbef data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically $300-3,000/month depending on data volume. ClickMasters provides fixed-price proposals after a free data audit session.",
+        "Building a data analytics platform costs between $15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to $80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: numbef data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically $300-3,000/month depending on data volume. Clickmasters provides fixed-price proposals after a free data audit session.",
     },
     {
       question: "What is a data warehouse and do I need one?",
@@ -18309,24 +18309,24 @@ const dataScienceAnalyticsOverride = {
       question:
         "What is predictive analytics and when does it make sense for B2B companies?",
       answer:
-        "Predictive analytics uses statistical models and machine learning to forecast future outcomes based on historical data patterns. For B2B companies, the most impactful predictive models are: customer churn prediction (identifying accounts likely to cancel 30-60 days before cancellation, enabling proactive retention), lead scoring (ranking sales pipeline by conversion probability to prioritize sales effort), revenue forecasting (MRR/ARR projections with confidence intervals for financial planning), and demand forecasting (inventory and capacity planning). Predictive analytics makes business sense when: you have at least 12-18 months of reliable historical data, the predicted outcome has a significant business impact (churn, conversion, revenue), and you have a clear action you can take based on the prediction. Without a reliable data foundation, predictive models produce unreliable outputs which is why ClickMasters always ensures data infrastructure is solid before investing in ML.",
+        "Predictive analytics uses statistical models and machine learning to forecast future outcomes based on historical data patterns. For B2B companies, the most impactful predictive models are: customer churn prediction (identifying accounts likely to cancel 30-60 days before cancellation, enabling proactive retention), lead scoring (ranking sales pipeline by conversion probability to prioritize sales effort), revenue forecasting (MRR/ARR projections with confidence intervals for financial planning), and demand forecasting (inventory and capacity planning). Predictive analytics makes business sense when: you have at least 12-18 months of reliable historical data, the predicted outcome has a significant business impact (churn, conversion, revenue), and you have a clear action you can take based on the prediction. Without a reliable data foundation, predictive models produce unreliable outputs which is why Clickmasters always ensures data infrastructure is solid before investing in ML.",
     },
     {
       question:
         "Can you connect and analyze data from Salesforce, Stripe, and our product database together?",
       answer:
-        "Yes. Cross-system data integration is one of the most common and highest-value data engineering engagements. ClickMasters connects Salesforce (customer and deal data), Stripe (subscription and revenue data), your product database (usage and behavioral data), and any other source systems into a unified Snowflake or BigQuery data warehouse using Airbyte or Fivetran connectors. dbt models then join these sources on common identifiers (customer ID, email, account ID) to produce unified analytical views: customer 360 profiles combining CRM, billing, and product data; revenue analytics reconciling Stripe transactions with Salesforce ARR; and retention analysis connecting product engagement to subscription status. This unified view typically produces insights that are invisible when each system is analyzed in isolation.",
+        "Yes. Cross-system data integration is one of the most common and highest-value data engineering engagements. Clickmasters connects Salesforce (customer and deal data), Stripe (subscription and revenue data), your product database (usage and behavioral data), and any other source systems into a unified Snowflake or BigQuery data warehouse using Airbyte or Fivetran connectors. dbt models then join these sources on common identifiers (customer ID, email, account ID) to produce unified analytical views: customer 360 profiles combining CRM, billing, and product data; revenue analytics reconciling Stripe transactions with Salesforce ARR; and retention analysis connecting product engagement to subscription status. This unified view typically produces insights that are invisible when each system is analyzed in isolation.",
     },
     {
       question:
         "Do you provide ongoing data engineering and analytics support after delivery?",
       answer:
-        "Yes. ClickMasters offers ongoing data engineering and analytics retainers from $5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clielients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements.",
+        "Yes. Clickmasters offers ongoing data engineering and analytics retainers from $5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clielients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our revenue intelligence platform from the ground up. We went from 3-day manual financial closes to same-day automated reporting. The CFO now has real-time visibility into MRR trends, cohort retention, and churn indicators all in one dashboard.",
+      "Clickmasters built our revenue intelligence platform from the ground up. We went from 3-day manual financial closes to same-day automated reporting. The CFO now has real-time visibility into MRR trends, cohort retention, and churn indicators all in one dashboard.",
     author: "VP of Finance",
     role: "B2B SaaS Company",
   },
@@ -18408,10 +18408,10 @@ const businessIntelligenceOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Business Intelligence Services | BI Dashboards & Analytics | ClickMasters",
+    "Business Intelligence Services | BI Dashboards & Analytics | Clickmasters",
   metaDescription:
-    "ClickMasters builds business intelligence systems data warehouses, BI dashboards, self-service analytics, and KPI reporting using Metabase, Looker, and dbt for B2B companies worldwide.",
-  lead: "ClickMasters builds business intelligence systems for B2B companies across the USA, Europe, Canada, and Australia. Data warehouses that consolidate your fragmented data sources into a single, queryable source of truth. dbt data models that define your business metrics in code version-controlled, tested, and consistent. Metabase or Looker dashboards that let your business teams answer their own questions. Embedded analytics in your product. KPI monitoring that alerts before problems become crises.",
+    "Clickmasters builds business intelligence systems data warehouses, BI dashboards, self-service analytics, and KPI reporting using Metabase, Looker, and dbt for B2B companies worldwide.",
+  lead: "Clickmasters builds business intelligence systems for B2B companies across the USA, Europe, Canada, and Australia. Data warehouses that consolidate your fragmented data sources into a single, queryable source of truth. dbt data models that define your business metrics in code version-controlled, tested, and consistent. Metabase or Looker dashboards that let your business teams answer their own questions. Embedded analytics in your product. KPI monitoring that alerts before problems become crises.",
   highlights: [
     "dbt Data Modelling",
     "Metabase / Looker Dashboards",
@@ -18617,19 +18617,19 @@ const businessIntelligenceOverride = {
   sections: [
     {
       heading: "Metabase vs Looker Which BI Tool uld I Choose?",
-      body: `Metabase is the better choice for most B2B companies that primarily need internal dashboards and self-service analytics for their own team: it is open-source (self-hosted at no licensing cost), has a simple, approachable UI that non-technical business users can use without training, and deploys in hours. Looker is the better choice when: you need to embed BI in your product (Looker's Embedded Analytics SDK and LookML semantic layer are significantly more powerful for product embedding), you have a large team with multiple stakeholders who need governed, consistent metric definitions (LookML enforces the "one source of truth" for each metric), or you are on the Google Cloud Platform (BigQuery integration is native). ClickMasters defaults to Metabase for internal analytics and Looker (or custom chart libraries) for customer-facing embedded analytics.`,
+      body: `Metabase is the better choice for most B2B companies that primarily need internal dashboards and self-service analytics for their own team: it is open-source (self-hosted at no licensing cost), has a simple, approachable UI that non-technical business users can use without training, and deploys in hours. Looker is the better choice when: you need to embed BI in your product (Looker's Embedded Analytics SDK and LookML semantic layer are significantly more powerful for product embedding), you have a large team with multiple stakeholders who need governed, consistent metric definitions (LookML enforces the "one source of truth" for each metric), or you are on the Google Cloud Platform (BigQuery integration is native). Clickmasters defaults to Metabase for internal analytics and Looker (or custom chart libraries) for customer-facing embedded analytics.`,
       items: [],
     },
     {
       heading: "What is a Semantic Layer in BI and Why Does It Matter?",
-      body: `A semantic layer is a consistent business-logic definition of metrics revenue, churn rate, conversion rate, LTV that sits between the raw data and the dashboards. Without a semantic layer, different dashboard builders write slightly different SQL to calculate the "same" metric one includes free trial users in monthly active users, another doesn't; one calculates MRR per subscription start date, another per calendar month. The result: two dashboards show different revenue numbers for the same period, and stakeholders lose trust in both. The semantic layer defines each metric once, in one place, with the correct business logic and every dashboard that uses that metric gets the same answer. dbt Semantic Layer (with MetricFlow), Looker's LookML, and Cube.js are the leading semantic layer implementations. ClickMasters builds the semantic layer as part of every BI engagement.`,
+      body: `A semantic layer is a consistent business-logic definition of metrics revenue, churn rate, conversion rate, LTV that sits between the raw data and the dashboards. Without a semantic layer, different dashboard builders write slightly different SQL to calculate the "same" metric one includes free trial users in monthly active users, another doesn't; one calculates MRR per subscription start date, another per calendar month. The result: two dashboards show different revenue numbers for the same period, and stakeholders lose trust in both. The semantic layer defines each metric once, in one place, with the correct business logic and every dashboard that uses that metric gets the same answer. dbt Semantic Layer (with MetricFlow), Looker's LookML, and Cube.js are the leading semantic layer implementations. Clickmasters builds the semantic layer as part of every BI engagement.`,
       items: [],
     },
   ],
   faqs: [
     {
       question: "What is the difference between BI and data science?",
-      answer: `Business intelligence (BI) answers the question "what happened?" it aggregates, organises, and visualises historical data to describe business performance. A BI dashboard shows last quarter's revenue by segment, daily active users, or monthly churn rate. Data science and machine learning answer "what will happen?" and "why?" they build predictive models from historical data to forecast future outcomes. In practice, BI is the prerequisite for data science: you need reliable, clean, consolidated data (which a BI data warehouse provides) before you can build models on top of it. ClickMasters often combines both building the data warehouse and BI layer first, then adding predictive analytics models that feed back into the same BI dashboards.`,
+      answer: `Business intelligence (BI) answers the question "what happened?" it aggregates, organises, and visualises historical data to describe business performance. A BI dashboard shows last quarter's revenue by segment, daily active users, or monthly churn rate. Data science and machine learning answer "what will happen?" and "why?" they build predictive models from historical data to forecast future outcomes. In practice, BI is the prerequisite for data science: you need reliable, clean, consolidated data (which a BI data warehouse provides) before you can build models on top of it. Clickmasters often combines both building the data warehouse and BI layer first, then adding predictive analytics models that feed back into the same BI dashboards.`,
     },
     {
       question: "What is dbt and why does it matter?",
@@ -18638,16 +18638,16 @@ const businessIntelligenceOverride = {
     },
     {
       question: "Metabase vs Looker which BI tool should I choose?",
-      answer: `Metabase is the better choice for most B2B companies that primarily need internal dashboards and self-service analytics for their own team: it is open-source (self-hosted at no licensing cost), has a simple, approachable UI that non-technical business users can use without training, and deploys in hours. Looker is the better choice when: you need to embed BI in your product (Looker's Embedded Analytics SDK and LookML semantic layer are significantly more powerful for product embedding), you have a large team with multiple stakeholders who need governed, consistent metric definitions (LookML enforces the "one source of truth" for each metric), or you are on the Google Cloud Platform (BigQuery integration is native). ClickMasters defaults to Metabase for internal analytics and Looker (or custom chart libraries) for customer-facing embedded analytics.`,
+      answer: `Metabase is the better choice for most B2B companies that primarily need internal dashboards and self-service analytics for their own team: it is open-source (self-hosted at no licensing cost), has a simple, approachable UI that non-technical business users can use without training, and deploys in hours. Looker is the better choice when: you need to embed BI in your product (Looker's Embedded Analytics SDK and LookML semantic layer are significantly more powerful for product embedding), you have a large team with multiple stakeholders who need governed, consistent metric definitions (LookML enforces the "one source of truth" for each metric), or you are on the Google Cloud Platform (BigQuery integration is native). Clickmasters defaults to Metabase for internal analytics and Looker (or custom chart libraries) for customer-facing embedded analytics.`,
     },
     {
       question: "What is a semantic layer in BI and why does it matter?",
-      answer: `A semantic layer is a consistent business-logic definition of metrics revenue, churn rate, conversion rate, LTV that sits between the raw data and the dashboards. Without a semantic layer, different dashboard builders write slightly different SQL to calculate the "same" metric one includes free trial users in monthly active users, another doesn't; one calculates MRR per subscription start date, another per calendar month. The result: two dashboards show different revenue numbers for the same period, and stakeholders lose trust in both. The semantic layer defines each metric once, in one place, with the correct business logic and every dashboard that uses that metric gets the same answer. dbt Semantic Layer (with MetricFlow), Looker's LookML, and Cube.js are the leading semantic layer implementations. ClickMasters builds the semantic layer as part of every BI engagement.`,
+      answer: `A semantic layer is a consistent business-logic definition of metrics revenue, churn rate, conversion rate, LTV that sits between the raw data and the dashboards. Without a semantic layer, different dashboard builders write slightly different SQL to calculate the "same" metric one includes free trial users in monthly active users, another doesn't; one calculates MRR per subscription start date, another per calendar month. The result: two dashboards show different revenue numbers for the same period, and stakeholders lose trust in both. The semantic layer defines each metric once, in one place, with the correct business logic and every dashboard that uses that metric gets the same answer. dbt Semantic Layer (with MetricFlow), Looker's LookML, and Cube.js are the leading semantic layer implementations. Clickmasters builds the semantic layer as part of every BI engagement.`,
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our entire BI platform from scratch Snowflake warehouse, dbt models, Metabase dashboards. Our finance team went from 3-day manual reporting to same-day automated analytics. The CFO now has real-time MRR, churn, and cohort retention at her fingertips.",
+      "Clickmasters built our entire BI platform from scratch Snowflake warehouse, dbt models, Metabase dashboards. Our finance team went from 3-day manual reporting to same-day automated analytics. The CFO now has real-time MRR, churn, and cohort retention at her fingertips.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -18720,10 +18720,10 @@ const dataWarehousingOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Data Warehousing Services | Snowflake, BigQuery & Redshift | ClickMasters",
+    "Data Warehousing Services | Snowflake, BigQuery & Redshift | Clickmasters",
   metaDescription:
-    "ClickMasters builds cloud data warehouses on Snowflake, BigQuery, and Redshift schema design, optimisation, migration, and cost management for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds cloud data warehouses for B2B companies across the USA, Europe, Canada, and Australia. Snowflake for organisations that want near-zero infrastructure management and pay-as-you-use compute. BigQuery for GCP-native teams and event-heavy workloads. Redshift for AWS-native architectures. Schema designs that your data team will still understand in 3 years. Query optimisation that keeps costs predictable. And migrations from legacy on-premises warehouses to the cloud.",
+    "Clickmasters builds cloud data warehouses on Snowflake, BigQuery, and Redshift schema design, optimisation, migration, and cost management for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds cloud data warehouses for B2B companies across the USA, Europe, Canada, and Australia. Snowflake for organisations that want near-zero infrastructure management and pay-as-you-use compute. BigQuery for GCP-native teams and event-heavy workloads. Redshift for AWS-native architectures. Schema designs that your data team will still understand in 3 years. Query optimisation that keeps costs predictable. And migrations from legacy on-premises warehouses to the cloud.",
   highlights: [
     "Snowflake Architecture",
     "BigQuery Implementation",
@@ -18942,7 +18942,7 @@ const dataWarehousingOverride = {
     {
       question: "How much does it cost to run Snowflake?",
       answer:
-        "Snowflake costs have two components: comcompute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately $23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately $150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs $500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost $5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). ClickMasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured.",
+        "Snowflake costs have two components: comcompute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately $23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately $150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs $500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost $5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). Clickmasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured.",
     },
     {
       question:
@@ -18959,7 +18959,7 @@ const dataWarehousingOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters migrated our on-premise Teradata warehouse to Snowflake. The migration was seamless we ran parallel for 2 weeks, validated every table, then cut over. Query performance improved 10x. Cloud costs are 40% of what we paid for on-prem hardware maintenance.",
+      "Clickmasters migrated our on-premise Teradata warehouse to Snowflake. The migration was seamless we ran parallel for 2 weeks, validated every table, then cut over. Query performance improved 10x. Cloud costs are 40% of what we paid for on-prem hardware maintenance.",
     author: "Head of Data Platforms",
     role: "Enterprise B2B Company",
   },
@@ -19033,10 +19033,10 @@ const dataVisualizationOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Data Visualization Services | Dashboards & Interactive Charts | ClickMasters",
+    "Data Visualization Services | Dashboards & Interactive Charts | Clickmasters",
   metaDescription:
-    "ClickMasters builds data visualisation systems interactive dashboards, D3.js custom charts, React data visualisation, and embedded analytics for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds data visualisation systems for B2B companies across the USA, Europe, Canada, and Aralia. Custom D3.js and Recharts dashboards for data-dense B2B products. Interactive React dashboards that let users explore their data without contacting support. Embedded analytics that make your SaaS product feel data-native. And data storytelling that converts raw numbers into decisions.",
+    "Clickmasters builds data visualisation systems interactive dashboards, D3.js custom charts, React data visualisation, and embedded analytics for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds data visualisation systems for B2B companies across the USA, Europe, Canada, and Aralia. Custom D3.js and Recharts dashboards for data-dense B2B products. Interactive React dashboards that let users explore their data without contacting support. Embedded analytics that make your SaaS product feel data-native. And data storytelling that converts raw numbers into decisions.",
   highlights: [
     "D3.js Custom Charts",
     "Recharts + Nivo Dashboards",
@@ -19059,7 +19059,7 @@ const dataVisualizationOverride = {
     {
       title: "D3.js Custom Visualisation",
       description:
-        "When no charting library has the right chart type: D3.js provides SVG element binding, scales (linear, log, ordinal, time), axes, transitions (smooth data updates), layouts (force simulation for network graphs, treemap, chord diagram, Sankey). ClickMasters uses D3.js for: network/graph visualisations, geospatial visualisations (custom map projections, choropleth), financial charts (candlestick, waterfall, tornado), any chart type not in standard libraries.",
+        "When no charting library has the right chart type: D3.js provides SVG element binding, scales (linear, log, ordinal, time), axes, transitions (smooth data updates), layouts (force simulation for network graphs, treemap, chord diagram, Sankey). Clickmasters uses D3.js for: network/graph visualisations, geospatial visualisations (custom map projections, choropleth), financial charts (candlestick, waterfall, tornado), any chart type not in standard libraries.",
     },
     {
       title: "Real-Time Dashboards",
@@ -19241,12 +19241,12 @@ const dataVisualizationOverride = {
   sections: [
     {
       heading: "Recharts vs D3.js vs BI Tool for Data Visualisation",
-      body: "Recharts (and similar libraries Nivo, Victory, Chart.js) are React component libraries they provide pre-built chart types (bar, line, area, scatter) as composable React components that consume data via props. They are the right choice for standard business charts in React applications fast to implement, well-documented, and maintained. D3.js is a low-level data visualisation library it binds data to SVG elements and provides the building blocks (scales, axes, layouts) to construct any possible visualisation. Use D3 when no pre-built chart library has the chart type you need (network graphs, Sankey diagrams, custom geospatial charts, animated data stories). BI tools (Metabase, Looker, Tableau) are drag-and-drop tools for non-developers they are fast for standard charts but cannot produce custom interactive chart experiences or integrate deeply with a React product's design system. ClickMasters uses Recharts/Nivo for product-embedded standard charts, D3.js for custom chart types, and BI tools for internal analytics.",
+      body: "Recharts (and similar libraries Nivo, Victory, Chart.js) are React component libraries they provide pre-built chart types (bar, line, area, scatter) as composable React components that consume data via props. They are the right choice for standard business charts in React applications fast to implement, well-documented, and maintained. D3.js is a low-level data visualisation library it binds data to SVG elements and provides the building blocks (scales, axes, layouts) to construct any possible visualisation. Use D3 when no pre-built chart library has the chart type you need (network graphs, Sankey diagrams, custom geospatial charts, animated data stories). BI tools (Metabase, Looker, Tableau) are drag-and-drop tools for non-developers they are fast for standard charts but cannot produce custom interactive chart experiences or integrate deeply with a React product's design system. Clickmasters uses Recharts/Nivo for product-embedded standard charts, D3.js for custom chart types, and BI tools for internal analytics.",
       items: [],
     },
     {
       heading: "SVG vs Canvas Rendering for Charts",
-      body: "SVG (Scalable Vector Graphics) is the default for most charts: each element is a DOM node (hoverable, interactive, accessible, easy to style with CSS), renders sharply at any resolution, and is the output format of D3.js and most React chart libraries. Use canvas rendering when: the chart has more than 10,000-50,000 data points (SVG performance degrades significantly each data point is a DOM node, and 100,000 DOM nodes make the browser sluggish), real-time updates at 60fps are required (canvas redraws are faster than DOM mutations), or WebGL rendering is needed for 3D or GPU-accelerated visualisation (Deck.gl uses WebGL for millions-of-points geospatial visualisations). ECharts (Apache) and Vega-Lite support automatic switching between SVG and canvas based on data size. ClickMasters uses SVG for standard business charts and canvas/WebGL for high-volume or high-performance visualisation requirements.",
+      body: "SVG (Scalable Vector Graphics) is the default for most charts: each element is a DOM node (hoverable, interactive, accessible, easy to style with CSS), renders sharply at any resolution, and is the output format of D3.js and most React chart libraries. Use canvas rendering when: the chart has more than 10,000-50,000 data points (SVG performance degrades significantly each data point is a DOM node, and 100,000 DOM nodes make the browser sluggish), real-time updates at 60fps are required (canvas redraws are faster than DOM mutations), or WebGL rendering is needed for 3D or GPU-accelerated visualisation (Deck.gl uses WebGL for millions-of-points geospatial visualisations). ECharts (Apache) and Vega-Lite support automatic switching between SVG and canvas based on data size. Clickmasters uses SVG for standard business charts and canvas/WebGL for high-volume or high-performance visualisation requirements.",
       items: [],
     },
   ],
@@ -19255,17 +19255,17 @@ const dataVisualizationOverride = {
       question:
         "What is the difference between Recharts, D3.js, and a BI tool for data visualisation?",
       answer:
-        "Recharts (and similar libraries Nivo, Victory, Chart.js) are React component libraries they provide pre-built chart types (bar, line, area, scatter) as composable React components that consume data via props. They are the right choice for standard business charts in React applications fast to implement, well-documented, and maintained. D3.js is a low-level data visualisation library it binds data to SVG elements and provides the building blocks (scales, axes, layouts) to construct any possible visualisation. Use D3 when no pre-built chart library has the chart type you need (network graphs, Sankey diagrams, custom geospatial charts, animated data stories). BI tools (Metabase, Looker, Tableau) are drag-and-drop tools for non-developers they are fast for standard charts but cannot produce custom interactive chart experiences or integrate deeply with a React product's design system. ClickMasters uses Recharts/Nivo for product-embedded standard charts, D3.js for custom chart types, and BI tools for internal analytics.",
+        "Recharts (and similar libraries Nivo, Victory, Chart.js) are React component libraries they provide pre-built chart types (bar, line, area, scatter) as composable React components that consume data via props. They are the right choice for standard business charts in React applications fast to implement, well-documented, and maintained. D3.js is a low-level data visualisation library it binds data to SVG elements and provides the building blocks (scales, axes, layouts) to construct any possible visualisation. Use D3 when no pre-built chart library has the chart type you need (network graphs, Sankey diagrams, custom geospatial charts, animated data stories). BI tools (Metabase, Looker, Tableau) are drag-and-drop tools for non-developers they are fast for standard charts but cannot produce custom interactive chart experiences or integrate deeply with a React product's design system. Clickmasters uses Recharts/Nivo for product-embedded standard charts, D3.js for custom chart types, and BI tools for internal analytics.",
     },
     {
       question: "When should I use canvas rendering vs SVG for charts?",
       answer:
-        "SVG (Scalable Vector Graphics) is the default for most charts: each element is a DOM node (hoverable, interactive, accessible, easy to style with CSS), renders sharply at any resolution, and is the output format of D3.js and most React chart libraries. Use canvas rendering when: the chart has more than 10,000-50,000 data points (SVG performance degrades significantly each data point is a DOM node, and 100,000 DOM nodes make the browser sluggish), real-time updates at 60fps are required (canvas redraws are faster than DOM mutations), or WebGL rendering is needed for 3D or GPU-accelerated visualisation (Deck.gl uses WebGL for millions-of-points geospatial visualisations). ECharts (Apache) and Vega-Lite support automatic switching between SVG and canvas based on data size. ClickMasters uses SVG for standard business charts and canvas/WebGL for high-volume or high-performance visualisation requirements.",
+        "SVG (Scalable Vector Graphics) is the default for most charts: each element is a DOM node (hoverable, interactive, accessible, easy to style with CSS), renders sharply at any resolution, and is the output format of D3.js and most React chart libraries. Use canvas rendering when: the chart has more than 10,000-50,000 data points (SVG performance degrades significantly each data point is a DOM node, and 100,000 DOM nodes make the browser sluggish), real-time updates at 60fps are required (canvas redraws are faster than DOM mutations), or WebGL rendering is needed for 3D or GPU-accelerated visualisation (Deck.gl uses WebGL for millions-of-points geospatial visualisations). ECharts (Apache) and Vega-Lite support automatic switching between SVG and canvas based on data size. Clickmasters uses SVG for standard business charts and canvas/WebGL for high-volume or high-performance visualisation requirements.",
     },
     {
       question: "Can I export charts from my React dashboard to PDF or image?",
       answer:
-        "Yes. Chart export from React dashboards uses html2canvas (captures a React component including its styled contents as an HTML5 canvas element, then exports to PNG or JPEG) for screenshot-style exports, and SVG export (many chart libraries Recharts, Nivo can export the chart's SVG element directly scalable, high-quality). For multi-chart PDF reports, jsPDF combines multiple chart exports into a single PDF document. For production-quality publication-ready charts, visx (Airbnb's React + D3 primitives library) produces SVG output that is directly exportable and styleable. ClickMasters implements chart export with correct rendering (chart must be fully visible in the DOM off-screen charts require workarounds) and appropriate resolution scaling for print quality.",
+        "Yes. Chart export from React dashboards uses html2canvas (captures a React component including its styled contents as an HTML5 canvas element, then exports to PNG or JPEG) for screenshot-style exports, and SVG export (many chart libraries Recharts, Nivo can export the chart's SVG element directly scalable, high-quality). For multi-chart PDF reports, jsPDF combines multiple chart exports into a single PDF document. For production-quality publication-ready charts, visx (Airbnb's React + D3 primitives library) produces SVG output that is directly exportable and styleable. Clickmasters implements chart export with correct rendering (chart must be fully visible in the DOM off-screen charts require workarounds) and appropriate resolution scaling for print quality.",
     },
     {
       question: "What chart type should I use for my data?",
@@ -19275,7 +19275,7 @@ const dataVisualizationOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our customer-facing analytics dashboard with Recharts. It's fast, responsive, and matches our design system perfectly. Our users love being able to explore their own data without contacting support.",
+      "Clickmasters built our customer-facing analytics dashboard with Recharts. It's fast, responsive, and matches our design system perfectly. Our users love being able to explore their own data without contacting support.",
     author: "Head of Product",
     role: "B2B SaaS Company",
   },
@@ -19344,10 +19344,10 @@ const bigDataSolutionsOverride = {
   heroImage:
     "/images/photo-1551288049-bebda4e38f71.jpg",
   metaTitle:
-    "Big Data Solutions | Spark, Kafka & Data Lakehouse | ClickMasters",
+    "Big Data Solutions | Spark, Kafka & Data Lakehouse | Clickmasters",
   metaDescription:
-    "ClickMasters builds big data infrastructure Apache Spark processing, Kafka streaming, data lakehouses on Delta Lake, and petabyte-scale analytics for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds big data infrastructure for B2B companies across the USA, Europe, Canada, and Australia. Apache Spark on Databricks or AWS EMR for distributed processing of terabyte to petabyte datasets. Apache Kafka for event streams at millions of events per second. Delta Lake and Apache Iceberg for data lakehouse architectures that combine the scale of object storage with ACID transaction guarantees. When your data has genuinely outgrown your SQL warehouse, we build the infrastructure that scales.",
+    "Clickmasters builds big data infrastructure Apache Spark processing, Kafka streaming, data lakehouses on Delta Lake, and petabyte-scale analytics for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds big data infrastructure for B2B companies across the USA, Europe, Canada, and Australia. Apache Spark on Databricks or AWS EMR for distributed processing of terabyte to petabyte datasets. Apache Kafka for event streams at millions of events per second. Delta Lake and Apache Iceberg for data lakehouse architectures that combine the scale of object storage with ACID transaction guarantees. When your data has genuinely outgrown your SQL warehouse, we build the infrastructure that scales.",
   highlights: [
     "Apache Spark (Databricks / EMR)",
     "Apache Kafka Event Streaming",
@@ -19577,7 +19577,7 @@ const bigDataSolutionsOverride = {
   sections: [
     {
       heading: "When Big Data Technology Is NOT the Right Solution",
-      body: "Big data infrastructure (Spark, Kafka, data lakehouse) is significantly more complex and expensive to build and maintain than standard SQL analytics. Do NOT adopt big data technology when: your data fits in a single Snowflake or BigQuery table under 1TB both can query this efficiently without Spark; your analytics team is small (fewer than 3-5 data engineers) the operational overhead of Kafka and Spark requires specialist expertise; or your bottleneck is data quality or business logic complexity rather than raw data volume. ClickMasters will tell you honestly when Snowflake or BigQuery can solve your problem and when you genuinely need Spark. The most common big data implementation mistake is using Spark to process 10GB of data that a single Postgres query would handle in 30 seconds.",
+      body: "Big data infrastructure (Spark, Kafka, data lakehouse) is significantly more complex and expensive to build and maintain than standard SQL analytics. Do NOT adopt big data technology when: your data fits in a single Snowflake or BigQuery table under 1TB both can query this efficiently without Spark; your analytics team is small (fewer than 3-5 data engineers) the operational overhead of Kafka and Spark requires specialist expertise; or your bottleneck is data quality or business logic complexity rather than raw data volume. Clickmasters will tell you honestly when Snowflake or BigQuery can solve your problem and when you genuinely need Spark. The most common big data implementation mistake is using Spark to process 10GB of data that a single Postgres query would handle in 30 seconds.",
       items: [],
     },
     {
@@ -19587,7 +19587,7 @@ const bigDataSolutionsOverride = {
     },
     {
       heading: "Databricks vs AWS EMR",
-      body: "Both Databricks and AWS EMR run Apache Spark, but they have different operational models. Databricks is a managed Spark platform (multi-cloud: AWS, GCP, Azure) with significant value-adds: Delta Lake as the native table format, Unity Catalog for data governance, collaborative notebooks with real-time co-editing, MLflow for experiment tracking, and the Photon native vectorised execution engine (2-5x faster than open-source Spark). Databricks charges a premium over raw cloud infrastructure costs, but reduces operational overhead significantly. AWS EMR is managed Hadoop/Spark on EC2 you get the infrastructure management handled (cluster provisioning, scaling), but without Databricks' platform layer. EMR is cheaper for steady, high-volume batch workloads where the team has strong Spark expertise. Databricks is better for teams that want to move faster, use Delta Lake natively, and reduce infrastructure management overhead. ClickMasters uses Databricks as the default for new Spark engagements.",
+      body: "Both Databricks and AWS EMR run Apache Spark, but they have different operational models. Databricks is a managed Spark platform (multi-cloud: AWS, GCP, Azure) with significant value-adds: Delta Lake as the native table format, Unity Catalog for data governance, collaborative notebooks with real-time co-editing, MLflow for experiment tracking, and the Photon native vectorised execution engine (2-5x faster than open-source Spark). Databricks charges a premium over raw cloud infrastructure costs, but reduces operational overhead significantly. AWS EMR is managed Hadoop/Spark on EC2 you get the infrastructure management handled (cluster provisioning, scaling), but without Databricks' platform layer. EMR is cheaper for steady, high-volume batch workloads where the team has strong Spark expertise. Databricks is better for teams that want to move faster, use Delta Lake natively, and reduce infrastructure management overhead. Clickmasters uses Databricks as the default for new Spark engagements.",
       items: [],
     },
     {
@@ -19617,17 +19617,17 @@ const bigDataSolutionsOverride = {
     {
       question: "What is the difference between Databricks and AWS EMR?",
       answer:
-        "Both Databricks and AWS EMR run Apache Spark, but they have different operational models. Databricks is a managed Spark platform (multi-cloud: AWS, GCP, Azure) with significant value-adds: Delta Lake as the native table format, Unity Catalog for data governance, collaborative notebooks with real-time co-editing, MLflow for experiment tracking, and the Photon native vectorised execution engine (2-5x faster than open-source Spark). Databricks charges a premium over raw cloud infrastructure costs, but reduces operational overhead significantly. AWS EMR is managed Hadoop/Spark on EC2 you get the infrastructure management handled (cluster provisioning, scaling), but without Databricks' platform layer. EMR is cheaper for steady, high-volume batch workloads where the team has strong Spark expertise. Databricks is better for teams that want to move faster, use Delta Lake natively, and reduce infrastructure management overhead. ClickMasters uses Databricks as the default for new Spark engagements.",
+        "Both Databricks and AWS EMR run Apache Spark, but they have different operational models. Databricks is a managed Spark platform (multi-cloud: AWS, GCP, Azure) with significant value-adds: Delta Lake as the native table format, Unity Catalog for data governance, collaborative notebooks with real-time co-editing, MLflow for experiment tracking, and the Photon native vectorised execution engine (2-5x faster than open-source Spark). Databricks charges a premium over raw cloud infrastructure costs, but reduces operational overhead significantly. AWS EMR is managed Hadoop/Spark on EC2 you get the infrastructure management handled (cluster provisioning, scaling), but without Databricks' platform layer. EMR is cheaper for steady, high-volume batch workloads where the team has strong Spark expertise. Databricks is better for teams that want to move faster, use Delta Lake natively, and reduce infrastructure management overhead. Clickmasters uses Databricks as the default for new Spark engagements.",
     },
     {
       question: "How do you manage costs for big data infrastructure?",
       answer:
-        "Big data infrastructure cost management focuses on five levers. Cluster auto-termination (Spark clusters that run continuously when idle are the most common big datdata cost waste configure auto-terminate after 30-60 minutes of inactivity, spin up on schedule or trigger). Spot/preemptible instances (AWS Spot or GCP Preemptible instances for worker nodes 60-80% cheaper than on-demand, with automatic replacement on spot interruption appropriate for fault-tolerant batch workloads). Data partition pruning (design partition schemes on S3/Delta Lake so queries only scan relevant partitions the single most impactful query cost optimisation). Caching (Spark RDD/DataFrame caching for iteratively queried datasets reduces recomputation). Storage tiering (S3 Intelligent-Tiering automatically moves infrequently accessed data to cheaper storage classes reduces long-term data lake storage costs by 30-40%). ClickMasters implements monitoring dashboards for all big data engagements daily cost per pipeline and cluster with budget alerts.",
+        "Big data infrastructure cost management focuses on five levers. Cluster auto-termination (Spark clusters that run continuously when idle are the most common big datdata cost waste configure auto-terminate after 30-60 minutes of inactivity, spin up on schedule or trigger). Spot/preemptible instances (AWS Spot or GCP Preemptible instances for worker nodes 60-80% cheaper than on-demand, with automatic replacement on spot interruption appropriate for fault-tolerant batch workloads). Data partition pruning (design partition schemes on S3/Delta Lake so queries only scan relevant partitions the single most impactful query cost optimisation). Caching (Spark RDD/DataFrame caching for iteratively queried datasets reduces recomputation). Storage tiering (S3 Intelligent-Tiering automatically moves infrequently accessed data to cheaper storage classes reduces long-term data lake storage costs by 30-40%). Clickmasters implements monitoring dashboards for all big data engagements daily cost per pipeline and cluster with budget alerts.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our data lakehouse on Delta Lake. We migrated 500TB from on-prem Hadoop to S3 + Databricks. Query performance improved 5x, costs dropped 60%, and Unity Catalog gave us column-level governance we never had before.",
+      "Clickmasters built our data lakehouse on Delta Lake. We migrated 500TB from on-prem Hadoop to S3 + Databricks. Query performance improved 5x, costs dropped 60%, and Unity Catalog gave us column-level governance we never had before.",
     author: "Head of Data Platforms",
     role: "Enterprise B2B Company",
   },
@@ -19711,10 +19711,10 @@ const webScrapingDataExtractionOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Web Scraping & Data Extraction Services | Python Crawlers | ClickMasters",
+    "Web Scraping & Data Extraction Services | Python Crawlers | Clickmasters",
   metaDescription:
-    "ClickMasters builds web scraping and data extraction systems Python crawlers, Playwright automation, anti-bot bypass, and structured data pipelines for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds web scraping and data extraction systems for B2B companies across the USA, Europe, Canada, and Australia. Competitor price monitoring that updates your pricing dashboard daily. Lead data extraction that builds targeted prospect lists from business directories. Product catalogue extraction from supplier websites to your ERP. Market intelligence scraping from news sites, job boards, and public filings. Python-based crawlers using Playwright and Scrapy, with proxy rotation and anti-detection measures where legally appropriate.",
+    "Clickmasters builds web scraping and data extraction systems Python crawlers, Playwright automation, anti-bot bypass, and structured data pipelines for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds web scraping and data extraction systems for B2B companies across the USA, Europe, Canada, and Australia. Competitor price monitoring that updates your pricing dashboard daily. Lead data extraction that builds targeted prospect lists from business directories. Product catalogue extraction from supplier websites to your ERP. Market intelligence scraping from news sites, job boards, and public filings. Python-based crawlers using Playwright and Scrapy, with proxy rotation and anti-detection measures where legally appropriate.",
   highlights: [
     "Playwright / Scrapy Crawlers",
     "Proxy Rotation & Anti-Detection",
@@ -19930,12 +19930,12 @@ const webScrapingDataExtractionOverride = {
   sections: [
     {
       heading: "Legal and Ethical Boundaries of Web Scraping",
-      body: "Web scraping is legal when: scraping publicly available data (no login required), the data does not include personal information protected by GDPR/CCPA without appropriate basis, and the scraping does not violate the target site's Terms of Service in a way that creates legal risk for your organisation. ClickMasters only builds scrapers for publicly accessible, non-login-required data, and advises clients on ToS compliance before building. ClickMasters will not build scrapers that: bypass authentication or paywalls, scrape personal data without a lawful basis, or intentionally circumvent security measures in violation of the Computer Fraud and Abuse Act (CFAA) or equivalent laws. If the data you need requires a login, the correct approach is negotiating a data partnership or API access with the target.",
+      body: "Web scraping is legal when: scraping publicly available data (no login required), the data does not include personal information protected by GDPR/CCPA without appropriate basis, and the scraping does not violate the target site's Terms of Service in a way that creates legal risk for your organisation. Clickmasters only builds scrapers for publicly accessible, non-login-required data, and advises clients on ToS compliance before building. Clickmasters will not build scrapers that: bypass authentication or paywalls, scrape personal data without a lawful basis, or intentionally circumvent security measures in violation of the Computer Fraud and Abuse Act (CFAA) or equivalent laws. If the data you need requires a login, the correct approach is negotiating a data partnership or API access with the target.",
       items: [],
     },
     {
       heading: "Playwright vs Scrapy for Web Scraping",
-      body: "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loaded data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. ClickMasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features.",
+      body: "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loaded data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. Clickmasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features.",
       items: [],
     },
   ],
@@ -19943,13 +19943,13 @@ const webScrapingDataExtractionOverride = {
     {
       question: "Is web scraping legal?",
       answer:
-        "Web scraping of publicly accessible data (no login required, no authentication bypassed) is generally legal in the USA, EU, and most jurisdictions the hiQ v. LinkedIn ruling (9th Circuit, 2022) affirmed that scraping publicly available data does not violate the Computer Fraud and Abuse Act. The legal considerations are: Terms of Service (most websites' ToS prohibit scraping violating ToS is a contract breach but typically not a criminal offence for public data; ClickMasters advises on the legal risk profile of specific targets), GDPR/CCPA (scraping personal data of EU or California residents requires a lawful basis business contact information in professional directories has a legitimate interest basis in many cases but requires careful analysis), and copyright (scraped content may be copyright-protected extracting structured data facts is generally acceptable, reproducing full copyrighted text is not). ClickMasters reviews ToS and legal considerations for each scraping target before building.",
+        "Web scraping of publicly accessible data (no login required, no authentication bypassed) is generally legal in the USA, EU, and most jurisdictions the hiQ v. LinkedIn ruling (9th Circuit, 2022) affirmed that scraping publicly available data does not violate the Computer Fraud and Abuse Act. The legal considerations are: Terms of Service (most websites' ToS prohibit scraping violating ToS is a contract breach but typically not a criminal offence for public data; Clickmasters advises on the legal risk profile of specific targets), GDPR/CCPA (scraping personal data of EU or California residents requires a lawful basis business contact information in professional directories has a legitimate interest basis in many cases but requires careful analysis), and copyright (scraped content may be copyright-protected extracting structured data facts is generally acceptable, reproducing full copyrighted text is not). Clickmasters reviews ToS and legal considerations for each scraping target before building.",
     },
     {
       question:
         "What is the difference between Playwright and Scrapy for web scraping?",
       answer:
-        "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loa data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. ClickMasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features.",
+        "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loa data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. Clickmasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features.",
     },
     {
       question: "How do you handle sites that block scraping?",
@@ -19959,12 +19959,12 @@ const webScrapingDataExtractionOverride = {
     {
       question: "How do you structure and deliver scraped data?",
       answer:
-        "Scraped data is structured and delivered via: schema design (define the exact fields to extract product name, price, availability, URL, last updated with data types and validation rules before writing the crawler), data validation (validate extracted fields against the schema required fields must be present, numeric prices within expected ranges, URLs valid reject or flag invalid records before storage), storage (PostgreSQL for structured queryable data, S3 for raw HTML backups and change history), and delivery (REST API for real-time access to the extracted data, scheduled CSV/Excel export to S3 for downstream consumption, direct database connection for BI tools, webhook notification on significant data changes). ClickMasters designs the delivery mechanism to match the consuming system data warehouse, BI tool, CRM, or ERP rather than requiring the client to build their own ETL from raw scraped files.",
+        "Scraped data is structured and delivered via: schema design (define the exact fields to extract product name, price, availability, URL, last updated with data types and validation rules before writing the crawler), data validation (validate extracted fields against the schema required fields must be present, numeric prices within expected ranges, URLs valid reject or flag invalid records before storage), storage (PostgreSQL for structured queryable data, S3 for raw HTML backups and change history), and delivery (REST API for real-time access to the extracted data, scheduled CSV/Excel export to S3 for downstream consumption, direct database connection for BI tools, webhook notification on significant data changes). Clickmasters designs the delivery mechanism to match the consuming system data warehouse, BI tool, CRM, or ERP rather than requiring the client to build their own ETL from raw scraped files.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our competitor price monitoring system. We now scrape 15 competitor sites daily, tracking 5,000+ SKUs. The change detection alerts us within hours of a competitor price change our repricing speed improved from weekly to daily.",
+      "Clickmasters built our competitor price monitoring system. We now scrape 15 competitor sites daily, tracking 5,000+ SKUs. The change detection alerts us within hours of a competitor price change our repricing speed improved from weekly to daily.",
     author: "Head of E-commerce",
     role: "Retail Company",
   },
@@ -20034,10 +20034,10 @@ const businessProcessAutomationOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Business Process Automation Services | Custom BPA for B2B | ClickMasters",
+    "Business Process Automation Services | Custom BPA for B2B | Clickmasters",
   metaDescription:
-    "ClickMasters automates manual B2B workflows approval chains, document processing, system integrations, and reporting for companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters engineers custom business process automation for B2B companies across the USA, Europe, Canada, and Australia. Approval workflows that route themselves. Documents that process without human intervention. Reports that generate and deliver on schedule. Integrations that keep your systems in sync without manual data entry. Built to handle exceptions not just happy paths.",
+    "Clickmasters automates manual B2B workflows approval chains, document processing, system integrations, and reporting for companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters engineers custom business process automation for B2B companies across the USA, Europe, Canada, and Australia. Approval workflows that route themselves. Documents that process without human intervention. Reports that generate and deliver on schedule. Integrations that keep your systems in sync without manual data entry. Built to handle exceptions not just happy paths.",
   highlights: [
     "Approval Workflow Automation",
     "Document Processing",
@@ -20290,7 +20290,7 @@ const businessProcessAutomationOverride = {
       items: [
         "Zapier/Make/n8n: Setup hours to days, low complexity, limited business logic, poor exception handling, surface-level API integration only. Best for simple 2-3 step integrations, quick wins.",
         "RPA (UiPath/AA): Setup weeks to months, medium complexity, moderate logic depth, moderate exception handling, UI automation (screen scraping). Best for legacy system UI automation where no API exists.",
-        "Custom BPA (ClickMasters): Setup weeks with architecture first, high complexity, unlimited business logic, robust exception handling (designed from day one), deep API/database/event-driven integration. Best for complex workflows, compliance, scale, where no-code tools cannot handle.",
+        "Custom BPA (Clickmasters): Setup weeks with architecture first, high complexity, unlimited business logic, robust exception handling (designed from day one), deep API/database/event-driven integration. Best for complex workflows, compliance, scale, where no-code tools cannot handle.",
       ],
     },
     {
@@ -20313,12 +20313,12 @@ const businessProcessAutomationOverride = {
       question:
         "What is the difference between BPA, RPA, and workflow automation?",
       answer:
-        "Business Process Automation (BPA) is the broad category. Robotic Process Automation (RPA) is a specific BPA technology that automates processes by simulating human interactions with software interfaces clicking buttons, reading screens, entering data typically for legacy systems with no API. Workflow Automation refers specifically to automating the routing, approval, and progression of tasks between people and systems a subset of BPA. Custom BPA (as delivered by ClickMasters) operates at the API and data layer: connecting systems through their APIs and webhooks rather than simulating user interfaces, making automations faster, more reliable, and less brittle to UI changes than RPA.",
+        "Business Process Automation (BPA) is the broad category. Robotic Process Automation (RPA) is a specific BPA technology that automates processes by simulating human interactions with software interfaces clicking buttons, reading screens, entering data typically for legacy systems with no API. Workflow Automation refers specifically to automating the routing, approval, and progression of tasks between people and systems a subset of BPA. Custom BPA (as delivered by Clickmasters) operates at the API and data layer: connecting systems through their APIs and webhooks rather than simulating user interfaces, making automations faster, more reliable, and less brittle to UI changes than RPA.",
     },
     {
       question: "How much does business process automation cost?",
       answer:
-        "Business process automation costs range from $8,000 for a simple workflow automation to $90,000 for a full end-to-end process reimagining with multiple integrated systems. Primary cost drivers: number of systems to integrate, complexity of conditional logic and exception handling, document intelligence requirements (AI extraction costs more than rule-based), volume requirements, and compliance requirements (audit trail and documentation). ClickMasters provides a free process assessment with ROI calculation before scoping so clients know the payback period before committing.",
+        "Business process automation costs range from $8,000 for a simple workflow automation to $90,000 for a full end-to-end process reimagining with multiple integrated systems. Primary cost drivers: number of systems to integrate, complexity of conditional logic and exception handling, document intelligence requirements (AI extraction costs more than rule-based), volume requirements, and compliance requirements (audit trail and documentation). Clickmasters provides a free process assessment with ROI calculation before scoping so clients know the payback period before committing.",
     },
     {
       question: "When should I use Zapier/Make instead of custom automation?",
@@ -20339,17 +20339,17 @@ const businessProcessAutomationOverride = {
       question:
         "Can you automate processes with legacy systems that have no modern API?",
       answer:
-        "Yes. For legacy systems without REST APIs: (1) database-layer integration using read replicas or stored procedure calls if the database can be accessed directly; (2) file-based integration workflows processing exports (CSV, XML, EDI) and pushing results as imports; (3) RPA (Robotic Process Automation using UiPath) simulating UI interactions though less stable and more expensive to maintain; (4) in some cases, replacing the legacy component with a modern API-capable alternative. ClickMasters evaluates all options and recommends the most maintainable approach.",
+        "Yes. For legacy systems without REST APIs: (1) database-layer integration using read replicas or stored procedure calls if the database can be accessed directly; (2) file-based integration workflows processing exports (CSV, XML, EDI) and pushing results as imports; (3) RPA (Robotic Process Automation using UiPath) simulating UI interactions though less stable and more expensive to maintain; (4) in some cases, replacing the legacy component with a modern API-capable alternative. Clickmasters evaluates all options and recommends the most maintainable approach.",
     },
     {
       question: "How long does it take to build and deploy?",
       answer:
-        "Simple workflow automation (2-3 systems, linear flow): 3-5 weeks. Multi-system approval workflow: 4-7 weeks. Complex end-to-end process automation with document intelligence, multiple exception paths, and parallel run validation: 8-16 weeks. Timeline drivers: number of systems to integrate, conditional logic complexity, exception handling depth, and whether a parallel run period is required. ClickMasters delivers automation in incremental phases core workflow typically live in staging within 4 weeks.",
+        "Simple workflow automation (2-3 systems, linear flow): 3-5 weeks. Multi-system approval workflow: 4-7 weeks. Complex end-to-end process automation with document intelligence, multiple exception paths, and parallel run validation: 8-16 weeks. Timeline drivers: number of systems to integrate, conditional logic complexity, exception handling depth, and whether a parallel run period is required. Clickmasters delivers automation in incremental phases core workflow typically live in staging within 4 weeks.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters automated our contract-to-cash process. Contract signature to first invoice went from 5 days to 4 hours. Our finance team stopped manually setting up billing schedules and started focusing on cash flow optimization.",
+      "Clickmasters automated our contract-to-cash process. Contract signature to first invoice went from 5 days to 4 hours. Our finance team stopped manually setting up billing schedules and started focusing on cash flow optimization.",
     author: "COO",
     role: "Professional Services Firm",
   },
@@ -20430,10 +20430,10 @@ const workflowAutomationOverride = {
   serviceName: "Workflow Automation",
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
-  metaTitle: "Workflow Automation Services | n8n, Make & Zapier | ClickMasters",
+  metaTitle: "Workflow Automation Services | n8n, Make & Zapier | Clickmasters",
   metaDescription:
-    "ClickMasters builds workflow automation systems n8n, Make.com, Zapier, and custom automation pipelines that connect your tools and eliminate manual handoffs for B2B companies worldwide.",
-  lead: "ClickMasters builds workflow automation for B2B companies across the USA, Europe, Canada, and Australia. n8n self-hosted for complete control and no per-execution pricing. Make.com for rapid deployment of complex multi-step workflows. Custom Python/Node.js automation for workflows that no-code tools cannot handle. Connect your CRM, billing, communication, and operations tools into seamless automated processes that run while your team focuses on the work that actually requires human judgment.",
+    "Clickmasters builds workflow automation systems n8n, Make.com, Zapier, and custom automation pipelines that connect your tools and eliminate manual handoffs for B2B companies worldwide.",
+  lead: "Clickmasters builds workflow automation for B2B companies across the USA, Europe, Canada, and Australia. n8n self-hosted for complete control and no per-execution pricing. Make.com for rapid deployment of complex multi-step workflows. Custom Python/Node.js automation for workflows that no-code tools cannot handle. Connect your CRM, billing, communication, and operations tools into seamless automated processes that run while your team focuses on the work that actually requires human judgment.",
   highlights: [
     "n8n Self-Hosted Automation",
     "Make.com Workflows",
@@ -20661,19 +20661,19 @@ const workflowAutomationOverride = {
   faqs: [
     {
       question:
-        "What is workflow automation and which tools does ClickMasters use?",
+        "What is workflow automation and which tools does Clickmasters use?",
       answer:
-        "Workflow automation connects software tools and automates the manual steps between them the copy-paste, data entry, Slack messages, and email notifications that happen after each business event. When a deal closes in Salesforce, workflow automation can automatically create an onboarding project in Asana, provision a customer account, send a welcome email, and notify the customer success team in Slack without any human touching the keyboard. ClickMasters primarily uses n8n (open-source, self-hosted ideal for data-sensitive workflows and high-volume automation where per-execution pricing would be prohibitive) and Make.com (managed cloud ideal for rapid deployment of complex multi-path workflows). For workflows requiring custom logic beyond no-code tools, ClickMasters writes Python or Node.js automation scripts.",
+        "Workflow automation connects software tools and automates the manual steps between them the copy-paste, data entry, Slack messages, and email notifications that happen after each business event. When a deal closes in Salesforce, workflow automation can automatically create an onboarding project in Asana, provision a customer account, send a welcome email, and notify the customer success team in Slack without any human touching the keyboard. Clickmasters primarily uses n8n (open-source, self-hosted ideal for data-sensitive workflows and high-volume automation where per-execution pricing would be prohibitive) and Make.com (managed cloud ideal for rapid deployment of complex multi-path workflows). For workflows requiring custom logic beyond no-code tools, Clickmasters writes Python or Node.js automation scripts.",
     },
     {
       question: "What is the difference between n8n and Zapier?",
       answer:
-        'n8n and Zapier both automate workflows, but differ significantly in capabilities and pricing model. Zapier is designed for simplicity a non-technical user can build a simple "if trigger then action" in minutes. But it has limitations: shallow API field access (not all API fields exposed), limited complex logic (basic conditional branches), and usage-based pricing that becomes expensive at volume. n8n is more powerful: it exposes the full API of every connected application (every field, every endpoint), has full if/else logic, loops, sub-workflows, code nodes (write JavaScript/Python directly), and runs self-hosted on your own infrastructure (no per-execution cost at any volume). ClickMasters uses n8n for enterprise workflows and recommends Zapier only for very simple, low-volume automations in non-technical teams.',
+        'n8n and Zapier both automate workflows, but differ significantly in capabilities and pricing model. Zapier is designed for simplicity a non-technical user can build a simple "if trigger then action" in minutes. But it has limitations: shallow API field access (not all API fields exposed), limited complex logic (basic conditional branches), and usage-based pricing that becomes expensive at volume. n8n is more powerful: it exposes the full API of every connected application (every field, every endpoint), has full if/else logic, loops, sub-workflows, code nodes (write JavaScript/Python directly), and runs self-hosted on your own infrastructure (no per-execution cost at any volume). Clickmasters uses n8n for enterprise workflows and recommends Zapier only for very simple, low-volume automations in non-technical teams.',
     },
     {
       question: "How do you handle workflow automation errors and failures?",
       answer:
-        "Robust workflow automation requires error handling as a first-class concern. ClickMasters implements: retry logic (on transient failures network timeouts, API rate limits retry with exponential backoff before marking as failed), error branches (n8n Error Trigger node when workflow fails, a separate error workflow fires typically Slack notification with failed item, error message, and execution log link), dead letter queues (failed items stored for manual review or re-processing nothing is silently dropped), idempotency (design workflows to be safely re-runnable retries do not create duplicate records or send duplicate emails), and monitoring dashboards (n8n's built-in execution history, alerting on failure rate increase). A workflow that fails silently is worse than no automation ClickMasters designs error handling into every workflow before production.",
+        "Robust workflow automation requires error handling as a first-class concern. Clickmasters implements: retry logic (on transient failures network timeouts, API rate limits retry with exponential backoff before marking as failed), error branches (n8n Error Trigger node when workflow fails, a separate error workflow fires typically Slack notification with failed item, error message, and execution log link), dead letter queues (failed items stored for manual review or re-processing nothing is silently dropped), idempotency (design workflows to be safely re-runnable retries do not create duplicate records or send duplicate emails), and monitoring dashboards (n8n's built-in execution history, alerting on failure rate increase). A workflow that fails silently is worse than no automation Clickmasters designs error handling into every workflow before production.",
     },
     {
       question: "Can workflow automation handle high volumes of transactions?",
@@ -20683,7 +20683,7 @@ const workflowAutomationOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our lead-to-customer automation with n8n. New leads are enriched, scored, routed to sales in Slack, and when a deal closes, Stripe billing and onboarding tasks trigger automatically. Zero manual handoffs between our 6 different tools.",
+      "Clickmasters built our lead-to-customer automation with n8n. New leads are enriched, scored, routed to sales in Slack, and when a deal closes, Stripe billing and onboarding tasks trigger automatically. Zero manual handoffs between our 6 different tools.",
     author: "RevOps Director",
     role: "B2B SaaS Company",
   },
@@ -20753,10 +20753,10 @@ const systemIntegrationOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "System Integration Services | ERP, CRM & SaaS Integration | ClickMasters",
+    "System Integration Services | ERP, CRM & SaaS Integration | Clickmasters",
   metaDescription:
-    "ClickMasters builds system integrations ERP, CRM, SaaS, and custom API integrations that connect your enterprise software stack for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds system integrations for B2B companies across the USA, Europe, Canada, and Australia. ERP integrations (NetSuite, SAP, Microsoft Dynamics) connected to your e-commerce, WMS, and CRM. Salesforce and HubSpot integrated with billing, finance, and customer success tools. Custom middleware that translates between legacy system data formats and modern API standards. Event-driven integrations using webhooks and message queues for real-time data consistency.",
+    "Clickmasters builds system integrations ERP, CRM, SaaS, and custom API integrations that connect your enterprise software stack for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds system integrations for B2B companies across the USA, Europe, Canada, and Australia. ERP integrations (NetSuite, SAP, Microsoft Dynamics) connected to your e-commerce, WMS, and CRM. Salesforce and HubSpot integrated with billing, finance, and customer success tools. Custom middleware that translates between legacy system data formats and modern API standards. Event-driven integrations using webhooks and message queues for real-time data consistency.",
   highlights: [
     "ERP + CRM Integration",
     "Salesforce & HubSpot Integration",
@@ -20973,7 +20973,7 @@ const systemIntegrationOverride = {
     },
     {
       heading: "iPaaS vs Custom Integration When to Use Which",
-      body: "iPaaS (Integration Platform as a Service) is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps (SAP, Salesforce, Workday) with complex data models. iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic that iPaaS visual editor cannot express. ClickMasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
+      body: "iPaaS (Integration Platform as a Service) is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps (SAP, Salesforce, Workday) with complex data models. iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic that iPaaS visual editor cannot express. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
       items: [],
     },
   ],
@@ -20986,7 +20986,7 @@ const systemIntegrationOverride = {
     {
       question: "What is iPaaS and when should I use it?",
       answer:
-        "iPaaS (Integration Platform as a Service) is a managed middleware platform with pre-built connectors to hundreds of enterprise applications MuleSoft, Dell Boomi, Workato, Tray.io. iPaaS is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps with complex data models that iPaaS vendors have modelled correctly (SAP, Salesforce, ServiceNow, Workday). iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic. ClickMasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
+        "iPaaS (Integration Platform as a Service) is a managed middleware platform with pre-built connectors to hundreds of enterprise applications MuleSoft, Dell Boomi, Workato, Tray.io. iPaaS is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps with complex data models that iPaaS vendors have modelled correctly (SAP, Salesforce, ServiceNow, Workday). iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
     },
     {
       question: "How do you ensure data integrity across integrated systems?",
@@ -20996,12 +20996,12 @@ const systemIntegrationOverride = {
     {
       question: "How long does a system integration take to build?",
       answer:
-        "Simple two-system REST API integration (e.g., Stripe webhook \xE2\u2020\u2019 HubSpot deal update): 2-4 weeks including error handling and monitoring. Complex ERP integration (NetSuite + Shopify + ShipBob + accounting full order lifecycle): 4-8 weeks. Legacy system integration (EDI or SOAP): 4-8 weeks due to legacy protocol complexity. Primary timeline factors: number of data objects synced (10 objects takes longer than 2), data transformation complexity (field mapping vs complex business logic), and error handling requirements (enterprise clients require comprehensive error handling, retry logic, and audit logging). ClickMasters delivers working integration endpoints to staging at the end of every week clients validate data flow before next stage begins.",
+        "Simple two-system REST API integration (e.g., Stripe webhook \xE2\u2020\u2019 HubSpot deal update): 2-4 weeks including error handling and monitoring. Complex ERP integration (NetSuite + Shopify + ShipBob + accounting full order lifecycle): 4-8 weeks. Legacy system integration (EDI or SOAP): 4-8 weeks due to legacy protocol complexity. Primary timeline factors: number of data objects synced (10 objects takes longer than 2), data transformation complexity (field mapping vs complex business logic), and error handling requirements (enterprise clients require comprehensive error handling, retry logic, and audit logging). Clickmasters delivers working integration endpoints to staging at the end of every week clients validate data flow before next stage begins.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters integrated our NetSuite ERP with Shopify and ShipBob. Inventory levels now sync in real time we've completely eliminated oversells. Order fulfillment time dropped from 24 hours to 2 hours.",
+      "Clickmasters integrated our NetSuite ERP with Shopify and ShipBob. Inventory levels now sync in real time we've completely eliminated oversells. Order fulfillment time dropped from 24 hours to 2 hours.",
     author: "COO",
     role: "DTC E-commerce Brand",
   },
@@ -21069,10 +21069,10 @@ const apiIntegrationOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "API Integration Services | Third-Party API Development | ClickMasters",
+    "API Integration Services | Third-Party API Development | Clickmasters",
   metaDescription:
-    "ClickMasters builds API integrations Stripe, Salesforce, Twilio, SendGrid, Google, and custom REST/GraphQL APIs for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters integrates third-party APIs into B2B products across the USA, Europe, Canada, and Australia. Stripe for payments, subscriptions, and marketplace payouts. Twilio for SMS, voice, and WhatsApp. SendGrid for transactional and marketing email. Salesforce, HubSpot, and Pipedrive CRM integration. Google Maps, Calendar, and Workspace. OAuth 2.0 social login. Webhook consumer infrastructure. Any REST or GraphQL API your product depends on.",
+    "Clickmasters builds API integrations Stripe, Salesforce, Twilio, SendGrid, Google, and custom REST/GraphQL APIs for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters integrates third-party APIs into B2B products across the USA, Europe, Canada, and Australia. Stripe for payments, subscriptions, and marketplace payouts. Twilio for SMS, voice, and WhatsApp. SendGrid for transactional and marketing email. Salesforce, HubSpot, and Pipedrive CRM integration. Google Maps, Calendar, and Workspace. OAuth 2.0 social login. Webhook consumer infrastructure. Any REST or GraphQL API your product depends on.",
   highlights: [
     "Stripe Payments & Billing",
     "Twilio SMS + Voice + WhatsApp",
@@ -21298,7 +21298,7 @@ const apiIntegrationOverride = {
     },
     {
       heading: "OAuth 2.0 Security Best Practices",
-      body: "OAuth 2.0 Authorization Code with PKCE is the correct implementation for web and mobile applications. Security requirements: PKCE (Proof Key for Code Exchange prevents authorisation code interception attacks), state parameter (CSRF protection), HttpOnly cookie for token storage (not localStorage prevents XSS theft), and refresh token rotation (each refresh generates new refresh token, invalidating the old one). ClickMasters implements all four security mechanisms as standard on every OAuth 2.0 integration.",
+      body: "OAuth 2.0 Authorization Code with PKCE is the correct implementation for web and mobile applications. Security requirements: PKCE (Proof Key for Code Exchange prevents authorisation code interception attacks), state parameter (CSRF protection), HttpOnly cookie for token storage (not localStorage prevents XSS theft), and refresh token rotation (each refresh generates new refresh token, invalidating the old one). Clickmasters implements all four security mechanisms as standard on every OAuth 2.0 integration.",
       items: [],
     },
   ],
@@ -21306,7 +21306,7 @@ const apiIntegrationOverride = {
     {
       question: "What is API integration and how long does it take?",
       answer:
-        "API integration connects a software product to a third-party service's Application Programming Interface (API) enabling the product to read and write data from that service programmatically. Examples: integrating Stripe's API to process payments, connecting Twilio's API to send SMS, or linking HubSpot's API to synchronise customer data. Timeline: simple single-API integration (one service, standard authentication, 3-5 API endpoints) takes 2-3 weeks including authentication setup, endpoint implementation, error handling, webhook consumer, and testing. Complex integrations (multiple endpoints, complex data transformation, bidirectional sync) take 3-6 weeks. ClickMasters prices all API integrations as fixed-price after a scoping call.",
+        "API integration connects a software product to a third-party service's Application Programming Interface (API) enabling the product to read and write data from that service programmatically. Examples: integrating Stripe's API to process payments, connecting Twilio's API to send SMS, or linking HubSpot's API to synchronise customer data. Timeline: simple single-API integration (one service, standard authentication, 3-5 API endpoints) takes 2-3 weeks including authentication setup, endpoint implementation, error handling, webhook consumer, and testing. Complex integrations (multiple endpoints, complex data transformation, bidirectional sync) take 3-6 weeks. Clickmasters prices all API integrations as fixed-price after a scoping call.",
     },
     {
       question: "What is a webhook and how is it different from polling?",
@@ -21321,12 +21321,12 @@ const apiIntegrationOverride = {
     {
       question: "How do you handle API rate limits in production?",
       answer:
-        "Third-party API rate limits are a common production integration failure mode. ClickMasters implements: rate limit header inspection (most APIs return X-RateLimit-Remaining and X-RateLimit-Reset read these to know when limit resets), exponential backoff with jitter (on 429 Too Many Requests, wait with random jitter before retrying prevents thundering herd), request queuing (put API calls into job queue with rate limiter BullMQ limits queue to N requests/second across all workers), and request batching (Salesforce Bulk API, HubSpot Batch API send 100-200 records in one request instead of separate requests). ClickMasters documents the rate limit of every API integrated and designs the integration architecture to stay within limits at peak load.",
+        "Third-party API rate limits are a common production integration failure mode. Clickmasters implements: rate limit header inspection (most APIs return X-RateLimit-Remaining and X-RateLimit-Reset read these to know when limit resets), exponential backoff with jitter (on 429 Too Many Requests, wait with random jitter before retrying prevents thundering herd), request queuing (put API calls into job queue with rate limiter BullMQ limits queue to N requests/second across all workers), and request batching (Salesforce Bulk API, HubSpot Batch API send 100-200 records in one request instead of separate requests). Clickmasters documents the rate limit of every API integrated and designs the integration architecture to stay within limits at peak load.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters integrated Stripe subscriptions and Twilio SMS into our SaaS product. The implementation handles webhooks, idempotency, and rate limits perfectly. We've processed $2M in subscription revenue with zero payment integration issues.",
+      "Clickmasters integrated Stripe subscriptions and Twilio SMS into our SaaS product. The implementation handles webhooks, idempotency, and rate limits perfectly. We've processed $2M in subscription revenue with zero payment integration issues.",
     author: "CTO",
     role: "SaaS Startup",
   },
@@ -21396,10 +21396,10 @@ const cloudSolutionsOverride = {
   heroImage:
     "/images/photo-1451187580459-43490279c0fa.jpg",
   metaTitle:
-    "Cloud Solutions & Migration Services | AWS, GCP, Azure | ClickMasters",
+    "Cloud Solutions & Migration Services | AWS, GCP, Azure | Clickmasters",
   metaDescription:
-    "ClickMasters delivers cloud solutions cloud migration, architecture design, cost optimisation, and managed AWS/GCP/Azure infrastructure for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers cloud solutions for B2B companies across the USA, Europe, Canada, and Australia. Cloud migration from on-premises or legacy hosting to AWS, GCP, or Azure lift-and-shift or cloud-native re-architecture. Cloud infrastructure design that is secure, scalable, and cost-predictable from day one. FinOps cost optimisation that reduces your cloud bill without sacrificing performance. And ongoing managed cloud operations for teams that want the infrastructure handled.",
+    "Clickmasters delivers cloud solutions cloud migration, architecture design, cost optimisation, and managed AWS/GCP/Azure infrastructure for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers cloud solutions for B2B companies across the USA, Europe, Canada, and Australia. Cloud migration from on-premises or legacy hosting to AWS, GCP, or Azure lift-and-shift or cloud-native re-architecture. Cloud infrastructure design that is secure, scalable, and cost-predictable from day one. FinOps cost optimisation that reduces your cloud bill without sacrificing performance. And ongoing managed cloud operations for teams that want the infrastructure handled.",
   highlights: [
     "AWS / GCP / Azure Architecture",
     "Cloud Migration (Lift & Shift + Re-arch)",
@@ -21409,7 +21409,7 @@ const cloudSolutionsOverride = {
     "Managed Cloud Operations",
   ],
   // marketStats: [
-  //   { label: 'Amazon Web Services 33% global cloud market share. ClickMasters\' primary cloud platform.', value: 'AWS' },
+  //   { label: 'Amazon Web Services 33% global cloud market share. Clickmasters\' primary cloud platform.', value: 'AWS' },
   //   { label: 'Average cloud cost reduction achievable through FinOps optimisation on an unoptimised AWS account', value: '40%' },
   //   { label: 'Uptime achievable with multi-AZ AWS architecture + health-check routing + automated failover', value: '99.99%' },
   //   { label: 'Cloud infrastructure markup AWS, GCP, and Azure costs billed directly at provider rates', value: '$0' },
@@ -21625,12 +21625,12 @@ const cloudSolutionsOverride = {
     },
     {
       heading: "AWS vs GCP vs Azure Which Cloud Provider Should You Choose?",
-      body: "AWS is the default choice for most B2B companies: largest service catalogue, most mature ecosystem, most available engineers and tooling, most partner integrations (Fivetran, Datadog, Snowflake, Terraform all treat AWS as primary). GCP is better when: your team is heavily invested in Google Workspace, you are building on BigQuery (native, best performance), you need Kubernetes at scale (GKE is most mature managed Kubernetes Google invented Kubernetes), or you require Vertex AI (Google's ML platform with first-party Gemini and AutoML). Azure is better when: your organisation is Microsoft-first (Active Directory, Office 365, Windows-heavy Azure AD integration native), you have existing Enterprise Agreement pricing, or your compliance framework requires Azure Government or sovereign cloud regions. ClickMasters defaults to AWS, builds on GCP for data-heavy GCP-native teams, and builds on Azure for Microsoft-centric enterprise clients.",
+      body: "AWS is the default choice for most B2B companies: largest service catalogue, most mature ecosystem, most available engineers and tooling, most partner integrations (Fivetran, Datadog, Snowflake, Terraform all treat AWS as primary). GCP is better when: your team is heavily invested in Google Workspace, you are building on BigQuery (native, best performance), you need Kubernetes at scale (GKE is most mature managed Kubernetes Google invented Kubernetes), or you require Vertex AI (Google's ML platform with first-party Gemini and AutoML). Azure is better when: your organisation is Microsoft-first (Active Directory, Office 365, Windows-heavy Azure AD integration native), you have existing Enterprise Agreement pricing, or your compliance framework requires Azure Government or sovereign cloud regions. Clickmasters defaults to AWS, builds on GCP for data-heavy GCP-native teams, and builds on Azure for Microsoft-centric enterprise clients.",
       items: [],
     },
     {
       heading: "FinOps Cloud Cost Optimisation",
-      body: "FinOps (Financial Operations for cloud) brings financial accountability to cloud spending making cloud cost visible, optimisable, and predictable. Cloud costs are variable and controllable in real time, unlike fixed infrastructure costs. FinOps practices that consistently reduce cloud spend: right-sizing (match instance size to actual utilisation AWS Compute Optimiser identifies 20-40% waste), commitment discounts (Reserved Instances and Savings Plans offer 30-60% off on-demand for predictable workloads), schedule-based scaling (shut down non-production environments on nights and weekends 70% cost reduction), Spot Instances for batch processing (60-80% cheaper), and cost allocation tags (attribute every dollar to team, service, or environment accountability drives optimisation). ClickMasters implements these in a FinOps engagement, typically reducing AWS bills by 30-50% within 60 days.",
+      body: "FinOps (Financial Operations for cloud) brings financial accountability to cloud spending making cloud cost visible, optimisable, and predictable. Cloud costs are variable and controllable in real time, unlike fixed infrastructure costs. FinOps practices that consistently reduce cloud spend: right-sizing (match instance size to actual utilisation AWS Compute Optimiser identifies 20-40% waste), commitment discounts (Reserved Instances and Savings Plans offer 30-60% off on-demand for predictable workloads), schedule-based scaling (shut down non-production environments on nights and weekends 70% cost reduction), Spot Instances for batch processing (60-80% cheaper), and cost allocation tags (attribute every dollar to team, service, or environment accountability drives optimisation). Clickmasters implements these in a FinOps engagement, typically reducing AWS bills by 30-50% within 60 days.",
       items: [],
     },
   ],
@@ -21639,7 +21639,7 @@ const cloudSolutionsOverride = {
       question:
         "What is the difference between lift-and-shift and cloud-native migration?",
       answer:
-        "Lift-and-shift (Rehost) moves an existing application to the cloud without changing its architecture a server running MySQL on-premises becomes an EC2 instance running MySQL. It is the fastest migration approach but does not take advantage of managed cloud services. The migrated workload has similar operational overhead you still manage OS patching, database maintenance, and scaling. Cloud-native re-architecture redesigns the application to use managed services EC2 MySQL replaced by RDS (managed database no OS patching, automatic backups, Multi-AZ failover), application servers replaced by ECS Fargate containers (no EC2 fleet management), and manual scaling replaced by auto-scaling. Cloud-native re-architecture costs more upfront but produces significantly lower operational overhead and better cost efficiency. ClickMasters recommends lift-and-shift as first step for legacy workloads, followed by incremental re-platforming to managed services.",
+        "Lift-and-shift (Rehost) moves an existing application to the cloud without changing its architecture a server running MySQL on-premises becomes an EC2 instance running MySQL. It is the fastest migration approach but does not take advantage of managed cloud services. The migrated workload has similar operational overhead you still manage OS patching, database maintenance, and scaling. Cloud-native re-architecture redesigns the application to use managed services EC2 MySQL replaced by RDS (managed database no OS patching, automatic backups, Multi-AZ failover), application servers replaced by ECS Fargate containers (no EC2 fleet management), and manual scaling replaced by auto-scaling. Cloud-native re-architecture costs more upfront but produces significantly lower operational overhead and better cost efficiency. Clickmasters recommends lift-and-shift as first step for legacy workloads, followed by incremental re-platforming to managed services.",
     },
     {
       question: "How much does AWS cost for a typical B2B SaaS product?",
@@ -21649,17 +21649,17 @@ const cloudSolutionsOverride = {
     {
       question: "AWS vs GCP vs Azure which cloud provider should I choose?",
       answer:
-        "AWS is the default choice for most B2B companies: largest service catalogue, most mature ecosystem, most available engineers and tooling, most partner integrations (Fivetran, Datadog, Snowflake, Terraform all treat AWS as the primary platform). GCP is better when: your team is heavily invested in Google Workspace, you are building on BigQuery (native, best performance), you need Kubernetes at scale (GKE is the most mature managed Kubernetes Google invented Kubernetes), or you require Vertex AI (Google's ML platform with first-party Gemini and AutoML integration). Azure is better when: your organisation is Microsoft-first (Active Directory, Office 365, Windows-heavy Azure AD integration is native), you have existing Enterprise Agreement pricing, or your primary compliance framework requires Azure Government or Azure sovereign cloud regions. ClickMasters defaults to AWS, builds on GCP for data-heavy GCP-native teams, and builds on Azure for Microsoft-centric enterprise clients.",
+        "AWS is the default choice for most B2B companies: largest service catalogue, most mature ecosystem, most available engineers and tooling, most partner integrations (Fivetran, Datadog, Snowflake, Terraform all treat AWS as the primary platform). GCP is better when: your team is heavily invested in Google Workspace, you are building on BigQuery (native, best performance), you need Kubernetes at scale (GKE is the most mature managed Kubernetes Google invented Kubernetes), or you require Vertex AI (Google's ML platform with first-party Gemini and AutoML integration). Azure is better when: your organisation is Microsoft-first (Active Directory, Office 365, Windows-heavy Azure AD integration is native), you have existing Enterprise Agreement pricing, or your primary compliance framework requires Azure Government or Azure sovereign cloud regions. Clickmasters defaults to AWS, builds on GCP for data-heavy GCP-native teams, and builds on Azure for Microsoft-centric enterprise clients.",
     },
     {
       question: "What is FinOps and how does it reduce cloud costs?",
       answer:
-        "FinOps (Financial Operations for cloud) is the practice of bringing financial accountability to cloud spending making cloud cost visible, optimisable, and predictable. The core insight: cloud costs are variable and controllable in real time, unlike fixed infrastructure costs. FinOps practices that consistently reduce cloud spend: right-sizing (match instance size to actual CPU/memory utilisation AWS Compute Optimiser identifies 20-40% waste in typical accounts), commitment discounts (Reserved Instances and Savings Plans offer 30-60% off on-demand pricing for predictable workloads ROI is immediate and certain for stable workloads), schedule-based scaling (shut down non-production environments on nights and weekends typically 70% cost reduction for dev/staging), Spot Instances for batch processing (60-80% cheaper than on-demand), and cost allocation tags (attribute every dollar of cloud spend to a team, service, or environment accountability drives optimisation). ClickMasters implements these in a FinOps engagement, typically reducing AWS bills by 30-50% within 60 days.",
+        "FinOps (Financial Operations for cloud) is the practice of bringing financial accountability to cloud spending making cloud cost visible, optimisable, and predictable. The core insight: cloud costs are variable and controllable in real time, unlike fixed infrastructure costs. FinOps practices that consistently reduce cloud spend: right-sizing (match instance size to actual CPU/memory utilisation AWS Compute Optimiser identifies 20-40% waste in typical accounts), commitment discounts (Reserved Instances and Savings Plans offer 30-60% off on-demand pricing for predictable workloads ROI is immediate and certain for stable workloads), schedule-based scaling (shut down non-production environments on nights and weekends typically 70% cost reduction for dev/staging), Spot Instances for batch processing (60-80% cheaper than on-demand), and cost allocation tags (attribute every dollar of cloud spend to a team, service, or environment accountability drives optimisation). Clickmasters implements these in a FinOps engagement, typically reducing AWS bills by 30-50% within 60 days.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters migrated our on-premises infrastructure to AWS. They handled the lift-and-shift of 50+ servers, then re-platformed our databases to RDS. Our cloud costs are 40% lower than our on-prem hardware maintenance costs, and we've had zero downtime in 12 months.",
+      "Clickmasters migrated our on-premises infrastructure to AWS. They handled the lift-and-shift of 50+ servers, then re-platformed our databases to RDS. Our cloud costs are 40% lower than our on-prem hardware maintenance costs, and we've had zero downtime in 12 months.",
     author: "CTO",
     role: "Mid-Market SaaS Company",
   },
@@ -21728,10 +21728,10 @@ const cloudNativeDevelopmentOverride = {
   heroImage:
     "/images/photo-1451187580459-43490279c0fa.jpg",
   metaTitle:
-    "Cloud-Native Development Services | Microservices & Kubernetes | ClickMasters",
+    "Cloud-Native Development Services | Microservices & Kubernetes | Clickmasters",
   metaDescription:
-    "ClickMasters builds cloud-native applications microservices, containerised deployments, ECS Fargate, Kubernetes, and 12-factor apps for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds cloud-native applications for B2B companies across the USA, Europe, Canada, and Australia. 12-factor applications that run in containers, scale horizontally, and deploy without downtime. Microservices architectures on ECS Fargate that scale each service independently. Kubernetes deployments for organisations that need the full container orchestration platform. Event-driven architectures on SQS/SNS/EventBridge for loosely coupled, resilient services.",
+    "Clickmasters builds cloud-native applications microservices, containerised deployments, ECS Fargate, Kubernetes, and 12-factor apps for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds cloud-native applications for B2B companies across the USA, Europe, Canada, and Australia. 12-factor applications that run in containers, scale horizontally, and deploy without downtime. Microservices architectures on ECS Fargate that scale each service independently. Kubernetes deployments for organisations that need the full container orchestration platform. Event-driven architectures on SQS/SNS/EventBridge for loosely coupled, resilient services.",
   highlights: [
     "12-Factor App Design",
     "ECS Fargate Microservices",
@@ -21948,7 +21948,7 @@ const cloudNativeDevelopmentOverride = {
     },
     {
       heading: "ECS Fargate vs Kubernetes (EKS) Which Should You Choose?",
-      body: "ECS Fargate is simpler and sufficient for most B2B products. It runs containerised applications without requiring you to manage EC2 nodes (Fargate manages the underlying compute you define the task and Fargate runs it). ECS is deeply integrated with AWS services (ALB, ACM, Secrets Manager, IAM) and has less operational overhead. Choose ECS Fargate when: your team is not already Kubernetes-experienced, your application is a standard web service/API/background worker, and you want the lowest possible operational overhead. Choose EKS (Kubernetes) when: you need advanced traffic management (canary deployments, blue-green with fine-grained traffic splitting), your team has existing Kubernetes expertise, you need to run the same workload on multiple clouds, or you require Kubernetes-specific tooling (Helm charts, custom operators). ClickMasters uses ECS Fargate as default for new builds and EKS for organisations with specific Kubernetes requirements.",
+      body: "ECS Fargate is simpler and sufficient for most B2B products. It runs containerised applications without requiring you to manage EC2 nodes (Fargate manages the underlying compute you define the task and Fargate runs it). ECS is deeply integrated with AWS services (ALB, ACM, Secrets Manager, IAM) and has less operational overhead. Choose ECS Fargate when: your team is not already Kubernetes-experienced, your application is a standard web service/API/background worker, and you want the lowest possible operational overhead. Choose EKS (Kubernetes) when: you need advanced traffic management (canary deployments, blue-green with fine-grained traffic splitting), your team has existing Kubernetes expertise, you need to run the same workload on multiple clouds, or you require Kubernetes-specific tooling (Helm charts, custom operators). Clickmasters uses ECS Fargate as default for new builds and EKS for organisations with specific Kubernetes requirements.",
       items: [],
     },
   ],
@@ -21961,7 +21961,7 @@ const cloudNativeDevelopmentOverride = {
     {
       question: "ECS Fargate vs Kubernetes (EKS) which should I choose?",
       answer:
-        "ECS Fargate is simpler and sufficient for most B2B products. It runs containerised applications without needing to manage EC2 nodes you define the task and Fargate runs it. ECS is deeply integrated with AWS services (ALB, ACM, Secrets Manager, IAM) and has less operational overhead. Choose ECS Fargate when: your team is not already Kubernetes-experienced, your application is a standard web service/API/background worker, and you want the lowest possible operational overhead. Choose EKS when: you need advanced traffic management (canary deployments, blue-green with fine-grained traffic splitting), your team has existing Kubernetes expertise, you need to run the same workload on multiple clouds, or you require Kubernetes-specific tooling (Helm charts, custom operators). ClickMasters uses ECS Fargate as default for new builds and EKS for organisations with specific Kubernetes requirements.",
+        "ECS Fargate is simpler and sufficient for most B2B products. It runs containerised applications without needing to manage EC2 nodes you define the task and Fargate runs it. ECS is deeply integrated with AWS services (ALB, ACM, Secrets Manager, IAM) and has less operational overhead. Choose ECS Fargate when: your team is not already Kubernetes-experienced, your application is a standard web service/API/background worker, and you want the lowest possible operational overhead. Choose EKS when: you need advanced traffic management (canary deployments, blue-green with fine-grained traffic splitting), your team has existing Kubernetes expertise, you need to run the same workload on multiple clouds, or you require Kubernetes-specific tooling (Helm charts, custom operators). Clickmasters uses ECS Fargate as default for new builds and EKS for organisations with specific Kubernetes requirements.",
     },
     {
       question:
@@ -21971,14 +21971,14 @@ const cloudNativeDevelopmentOverride = {
     },
     {
       question:
-        "What observability tools does ClickMasters use for cloud-native applications?",
+        "What observability tools does Clickmasters use for cloud-native applications?",
       answer:
-        "ClickMasters implements three pillars of observability. Logs: structured JSON logging via Pino (Node.js) or structlog (Python) every log line is parseable JSON. Logs shipped to CloudWatch Logs with CloudWatch Log Insights for querying. Metrics: Prometheus metrics exposed by each service (counters, gauges, histograms for request rate, latency, error rate, queue depth), scraped by Prometheus server, visualised in Grafana dashboards with alerting rules. Traces: OpenTelemetry instrumentation in every service distributed traces propagated via W3C Trace Context headers across service boundaries. Traces exported to AWS X-Ray (native, no additional infrastructure) or Jaeger (self-hosted). This combination CloudWatch for logs, Prometheus/Grafana for metrics, X-Ray/Jaeger for traces gives complete visibility without requiring a managed observability SaaS platform.",
+        "Clickmasters implements three pillars of observability. Logs: structured JSON logging via Pino (Node.js) or structlog (Python) every log line is parseable JSON. Logs shipped to CloudWatch Logs with CloudWatch Log Insights for querying. Metrics: Prometheus metrics exposed by each service (counters, gauges, histograms for request rate, latency, error rate, queue depth), scraped by Prometheus server, visualised in Grafana dashboards with alerting rules. Traces: OpenTelemetry instrumentation in every service distributed traces propagated via W3C Trace Context headers across service boundaries. Traces exported to AWS X-Ray (native, no additional infrastructure) or Jaeger (self-hosted). This combination CloudWatch for logs, Prometheus/Grafana for metrics, X-Ray/Jaeger for traces gives complete visibility without requiring a managed observability SaaS platform.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters rebuilt our monolith as ECS Fargate microservices. Each service now scales independently. Deployment time went from 2 hours (manual) to 8 minutes (automated CI/CD). Zero downtime deployments our customers never notice.",
+      "Clickmasters rebuilt our monolith as ECS Fargate microservices. Each service now scales independently. Deployment time went from 2 hours (manual) to 8 minutes (automated CI/CD). Zero downtime deployments our customers never notice.",
     author: "Head of Engineering",
     role: "B2B SaaS Platform",
   },
@@ -22047,10 +22047,10 @@ const devopsServicesOverride = {
   heroImage:
     "/images/photo-1451187580459-43490279c0fa.jpg",
   metaTitle:
-    "DevOps Services | CI/CD, Infrastructure Automation & Monitoring | ClickMasters",
+    "DevOps Services | CI/CD, Infrastructure Automation & Monitoring | Clickmasters",
   metaDescription:
-    "ClickMasters delivers DevOps services CI/CD pipelines, infrastructure automation, monitoring, and SRE practices for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers DevOps services for B2B companies across the USA, Europe, Canada, and Australia. CI/CD pipelines that go from commit to production in minutes not hours of manual release steps. Infrastructure-as-code that makes every environment reproducible. Monitoring and alerting that catches problems before users do. SLOs and error budgets that give your team data-driven freedom to move fast without breaking things.",
+    "Clickmasters delivers DevOps services CI/CD pipelines, infrastructure automation, monitoring, and SRE practices for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers DevOps services for B2B companies across the USA, Europe, Canada, and Australia. CI/CD pipelines that go from commit to production in minutes not hours of manual release steps. Infrastructure-as-code that makes every environment reproducible. Monitoring and alerting that catches problems before users do. SLOs and error budgets that give your team data-driven freedom to move fast without breaking things.",
   highlights: [
     "GitHub Actions CI/CD",
     "Terraform Infrastructure as Code",
@@ -22252,12 +22252,12 @@ const devopsServicesOverride = {
   sections: [
     {
       heading: "DORA Metrics Measuring DevOps Maturity",
-      body: "DORA (DevOps Research and Assessment) identified four key metrics that correlate with high-performing software delivery teams: Deployment Frequency (how often code is deployed to production elite performers deploy multiple times per day), Lead Time for Changes (time from commit to production elite: less than one hour), Change Failure Rate (percentage of deployments causing production incident elite: 0-15%), and Time to Restore Service (how long to recover from production incident elite: less than one hour). ClickMasters measures baseline DORA metrics at start of every DevOps engagement and targets specific improvements typically moving clients from 'Low' to 'Medium' or 'Medium' to 'Elite' performer on all four metrics within 3-6 months.",
+      body: "DORA (DevOps Research and Assessment) identified four key metrics that correlate with high-performing software delivery teams: Deployment Frequency (how often code is deployed to production elite performers deploy multiple times per day), Lead Time for Changes (time from commit to production elite: less than one hour), Change Failure Rate (percentage of deployments causing production incident elite: 0-15%), and Time to Restore Service (how long to recover from production incident elite: less than one hour). Clickmasters measures baseline DORA metrics at start of every DevOps engagement and targets specific improvements typically moving clients from 'Low' to 'Medium' or 'Medium' to 'Elite' performer on all four metrics within 3-6 months.",
       items: [],
     },
     {
       heading: "SLOs and Error Budgets",
-      body: "SLOs (Service Level Objectives) define the reliability target for each service in terms of user-visible metrics 99.9% availability, P95 latency <200ms. Error budgets are the permissible unreliability per time period 99.9% availability = 44 minutes of downtime/month. When the error budget is healthy, teams can release freely. When depleted, reliability takes priority over features. This gives teams data-driven permission to move fast when the system is healthy, and a clear signal to slow down when reliability is at risk. ClickMasters implements SLOs and error budgets for engineering organisations that have reached the maturity level where these practices add value.",
+      body: "SLOs (Service Level Objectives) define the reliability target for each service in terms of user-visible metrics 99.9% availability, P95 latency <200ms. Error budgets are the permissible unreliability per time period 99.9% availability = 44 minutes of downtime/month. When the error budget is healthy, teams can release freely. When depleted, reliability takes priority over features. This gives teams data-driven permission to move fast when the system is healthy, and a clear signal to slow down when reliability is at risk. Clickmasters implements SLOs and error budgets for engineering organisations that have reached the maturity level where these practices add value.",
       items: [],
     },
   ],
@@ -22270,22 +22270,22 @@ const devopsServicesOverride = {
     {
       question: "What is DORA and why does it matter for DevOps?",
       answer:
-        "DORA (DevOps Research and Assessment) is a research programme that identified four key metrics that correlate with high-performing software delivery teams: Deployment Frequency (how often code is deployed to production elite performers deploy multiple times per day), Lead Time for Changes (time from commit to production elite performers achieve less than one hour), Change Failure Rate (percentage of deployments that cause a production incident elite performers: 0-15%), and Time to Restore Service (how long to recover from a production incident elite performers: less than one hour). These four metrics provide an objective measure of a DevOps programme's maturity. ClickMasters measures baseline DORA metrics at the start of every DevOps engagement and targets specific improvements typically moving clients from 'Low' to 'Medium' or 'Medium' to 'Elite' performer on all four metrics within 3-6 months.",
+        "DORA (DevOps Research and Assessment) is a research programme that identified four key metrics that correlate with high-performing software delivery teams: Deployment Frequency (how often code is deployed to production elite performers deploy multiple times per day), Lead Time for Changes (time from commit to production elite performers achieve less than one hour), Change Failure Rate (percentage of deployments that cause a production incident elite performers: 0-15%), and Time to Restore Service (how long to recover from a production incident elite performers: less than one hour). These four metrics provide an objective measure of a DevOps programme's maturity. Clickmasters measures baseline DORA metrics at the start of every DevOps engagement and targets specific improvements typically moving clients from 'Low' to 'Medium' or 'Medium' to 'Elite' performer on all four metrics within 3-6 months.",
     },
     {
       question: "What is the difference between DevOps and SRE?",
       answer:
-        "DevOps is a culture and practice the integration of development and operations with shared responsibility for the full software lifecycle. SRE (Site Reliability Engineering) is a specific implementation of DevOps practices developed at Google applying software engineering approaches to operations problems. The key SRE-specific contributions: SLOs (Service Level Objectives define the reliability target for each service in terms of user-visible metrics), error budgets (the permissible unreliability per time period when the error budget is healthy, teams can release freely; when depleted, reliability takes priority over features), and toil reduction (systematic identification and automation of repetitive operational work). ClickMasters implements DevOps practices as standard and layers SRE-specific practices (SLOs, error budgets, post-mortems) for engineering organisations that have reached the maturity level where these practices add value.",
+        "DevOps is a culture and practice the integration of development and operations with shared responsibility for the full software lifecycle. SRE (Site Reliability Engineering) is a specific implementation of DevOps practices developed at Google applying software engineering approaches to operations problems. The key SRE-specific contributions: SLOs (Service Level Objectives define the reliability target for each service in terms of user-visible metrics), error budgets (the permissible unreliability per time period when the error budget is healthy, teams can release freely; when depleted, reliability takes priority over features), and toil reduction (systematic identification and automation of repetitive operational work). Clickmasters implements DevOps practices as standard and layers SRE-specific practices (SLOs, error budgets, post-mortems) for engineering organisations that have reached the maturity level where these practices add value.",
     },
     {
       question: "How long does it take to set up a CI/CD pipeline?",
       answer:
-        "A complete CI/CD pipeline for a single application (lint + type check + unit tests + integration tests + build Docker image + deploy to staging + smoke test + deploy to production with rollback) takes 2-4 weeks. The timeline depends on: the existing test coverage (if there are no tests, writing a minimal test suite is part of the pipeline setup), the deployment target (ECS Fargate deployment is simpler to automate than Kubernetes fewer configuration steps), the number of environments (dev + staging + production requires more pipeline stages than staging + production), and secrets management setup (configuring GitHub Actions secrets and AWS IAM permissions for the pipeline to deploy is typically 1-2 days of work). ClickMasters delivers a working pipeline with documentation at the end of the engagement your team can extend it without ClickMasters involvement.",
+        "A complete CI/CD pipeline for a single application (lint + type check + unit tests + integration tests + build Docker image + deploy to staging + smoke test + deploy to production with rollback) takes 2-4 weeks. The timeline depends on: the existing test coverage (if there are no tests, writing a minimal test suite is part of the pipeline setup), the deployment target (ECS Fargate deployment is simpler to automate than Kubernetes fewer configuration steps), the number of environments (dev + staging + production requires more pipeline stages than staging + production), and secrets management setup (configuring GitHub Actions secrets and AWS IAM permissions for the pipeline to deploy is typically 1-2 days of work). Clickmasters delivers a working pipeline with documentation at the end of the engagement your team can extend it without Clickmasters involvement.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters implemented our CI/CD pipeline and monitoring stack. Deployment frequency went from twice a month to daily. Lead time from commit to production dropped from 6 hours to 45 minutes. Change failure rate halved. The DORA metrics transformation speaks for itself.",
+      "Clickmasters implemented our CI/CD pipeline and monitoring stack. Deployment frequency went from twice a month to daily. Lead time from commit to production dropped from 6 hours to 45 minutes. Change failure rate halved. The DORA metrics transformation speaks for itself.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -22354,10 +22354,10 @@ const devsecopsOverride = {
   heroImage:
     "/images/photo-1451187580459-43490279c0fa.jpg",
   metaTitle:
-    "DevSecOps Services | Security in CI/CD & Cloud Infrastructure | ClickMasters",
+    "DevSecOps Services | Security in CI/CD & Cloud Infrastructure | Clickmasters",
   metaDescription:
-    "ClickMasters embeds security into DevOps pipelines SAST, DAST, container scanning, secrets management, and policy-as-code for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters embeds security into CI/CD pipelines and cloud infrastructure for B2B companies across the USA, Europe, Canada, and Australia. SAST (Static Application Security Testing) in every pull request. Container image scanning before every deployment. Secrets detection to prevent credentials from entering the codebase. Policy-as-code that enforces security standards on infrastructure changes. And the security documentation your enterprise customers require.",
+    "Clickmasters embeds security into DevOps pipelines SAST, DAST, container scanning, secrets management, and policy-as-code for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters embeds security into CI/CD pipelines and cloud infrastructure for B2B companies across the USA, Europe, Canada, and Australia. SAST (Static Application Security Testing) in every pull request. Container image scanning before every deployment. Secrets detection to prevent credentials from entering the codebase. Policy-as-code that enforces security standards on infrastructure changes. And the security documentation your enterprise customers require.",
   highlights: [
     "SAST (Semgrep, CodeQL)",
     "Container Scanning (Trivy)",
@@ -22602,7 +22602,7 @@ const devsecopsOverride = {
     },
     {
       heading: "What is a Software Bill of Materials (SBOM)?",
-      body: "An SBOM (Software Bill of Materials) is a complete inventory of every software component in an application every library, package, and dependency, with version numbers and licence information. It is analogous to an ingredients list for software. Enterprise and government buyers require SBOMs because: US Executive Order 14028 (May 2021) mandates that software sold to the US federal government must include an SBOM; enterprise procurement security teams use SBOMs to assess supply chain risk identifying whether your application contains a vulnerable version of a widely exploited library (e.g., Log4j); and SBOM enables continuous vulnerability monitoring as new CVEs are disclosed, the buyer can check whether their vendor's software is affected. ClickMasters generates SBOMs using Syft (producing SPDX or CycloneDX format) as part of the container build pipeline, signs them with cosign, and stores them in ECR alongside the container image.",
+      body: "An SBOM (Software Bill of Materials) is a complete inventory of every software component in an application every library, package, and dependency, with version numbers and licence information. It is analogous to an ingredients list for software. Enterprise and government buyers require SBOMs because: US Executive Order 14028 (May 2021) mandates that software sold to the US federal government must include an SBOM; enterprise procurement security teams use SBOMs to assess supply chain risk identifying whether your application contains a vulnerable version of a widely exploited library (e.g., Log4j); and SBOM enables continuous vulnerability monitoring as new CVEs are disclosed, the buyer can check whether their vendor's software is affected. Clickmasters generates SBOMs using Syft (producing SPDX or CycloneDX format) as part of the container build pipeline, signs them with cosign, and stores them in ECR alongside the container image.",
       items: [],
     },
   ],
@@ -22621,7 +22621,7 @@ const devsecopsOverride = {
       question:
         "What is a Software Bill of Materials (SBOM) and why does enterprise sales require one?",
       answer:
-        "An SBOM (Software Bill of Materials) is a complete inventory of every software component in an application every library, package, and dependency, with version numbers and licence information. It is analogous to an ingredients list for software. Enterprise and government buyers require SBOMs because: a) US Executive Order 14028 (May 2021) mandates that software sold to the US federal government must include an SBOM, b) enterprise procurement security teams use SBOMs to assess supply chain risk identifying whether your application contains a vulnerable version of a widely exploited library (e.g., Log4j), and c) SBOM enables continuous vulnerability monitoring as new CVEs are disclosed, the buyer can check whether their vendor's software is affected. ClickMasters generates SBOMs using Syft (producing SPDX or CycloneDX format) as part of the container build pipeline, signs them with cosign, and stores them in ECR alongside the container image.",
+        "An SBOM (Software Bill of Materials) is a complete inventory of every software component in an application every library, package, and dependency, with version numbers and licence information. It is analogous to an ingredients list for software. Enterprise and government buyers require SBOMs because: a) US Executive Order 14028 (May 2021) mandates that software sold to the US federal government must include an SBOM, b) enterprise procurement security teams use SBOMs to assess supply chain risk identifying whether your application contains a vulnerable version of a widely exploited library (e.g., Log4j), and c) SBOM enables continuous vulnerability monitoring as new CVEs are disclosed, the buyer can check whether their vendor's software is affected. Clickmasters generates SBOMs using Syft (producing SPDX or CycloneDX format) as part of the container build pipeline, signs them with cosign, and stores them in ECR alongside the container image.",
     },
     {
       question:
@@ -22632,7 +22632,7 @@ const devsecopsOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters implemented our DevSecOps pipeline. We now have SAST in every PR, container scanning before every deployment, and an SBOM for every release. Our enterprise security review went from 3 months of remediation to 2 weeks of validation.",
+      "Clickmasters implemented our DevSecOps pipeline. We now have SAST in every PR, container scanning before every deployment, and an SBOM for every release. Our enterprise security review went from 3 months of remediation to 2 weeks of validation.",
     author: "Head of Security",
     role: "B2B SaaS Company",
   },
@@ -22716,10 +22716,10 @@ const serverlessArchitectureOverride = {
   heroImage:
     "/images/photo-1451187580459-43490279c0fa.jpg",
   metaTitle:
-    "Serverless Architecture Services | AWS Lambda & Serverless Framework | ClickMasters",
+    "Serverless Architecture Services | AWS Lambda & Serverless Framework | Clickmasters",
   metaDescription:
-    "ClickMasters builds serverless architectures AWS Lambda, API Gateway, EventBridge, and Step Functions that scale from zero to millions without managing servers for B2B companies worldwide.",
-  lead: "ClickMasters builds serverless architectures for B2B companies across the USA, Europe, Canada, and Australia. AWS Lambda functions that scale automatically zero to thousands of concurrent invocations without any capacity planning. API Gateway REST or HTTP APIs fronting Lambda for serverless HTTP backends. EventBridge and SQS for event-driven Lambda triggers. Step Functions for complex multi-step serverless workflows. Infrastructure defined in AWS CDK or Serverless Framework reproducible, version-controlled, deployable in minutes.",
+    "Clickmasters builds serverless architectures AWS Lambda, API Gateway, EventBridge, and Step Functions that scale from zero to millions without managing servers for B2B companies worldwide.",
+  lead: "Clickmasters builds serverless architectures for B2B companies across the USA, Europe, Canada, and Australia. AWS Lambda functions that scale automatically zero to thousands of concurrent invocations without any capacity planning. API Gateway REST or HTTP APIs fronting Lambda for serverless HTTP backends. EventBridge and SQS for event-driven Lambda triggers. Step Functions for complex multi-step serverless workflows. Infrastructure defined in AWS CDK or Serverless Framework reproducible, version-controlled, deployable in minutes.",
   highlights: [
     "AWS Lambda Functions",
     "API Gateway (REST + HTTP)",
@@ -22763,7 +22763,7 @@ const serverlessArchitectureOverride = {
     {
       title: "Serverless IaC (CDK / SAM / Serverless Framework)",
       description:
-        "Infrastructure as Code for serverless: AWS CDK (primary TypeScript/Python constructs for Lambda, API Gateway, EventBridge, Step Functions higher-level abstractions than CloudFormation, Lambda construct packages code automatically), AWS SAM (Serverless Application Model CloudFormation extension with Lambda/API Gateway shorthand, `sam local invoke` for local testing), Serverless Framework (framework-agnostic plugins for AWS, GCP, Azure popular for teams migrating from other clouds). ClickMasters defaults to AWS CDK for new serverless builds.",
+        "Infrastructure as Code for serverless: AWS CDK (primary TypeScript/Python constructs for Lambda, API Gateway, EventBridge, Step Functions higher-level abstractions than CloudFormation, Lambda construct packages code automatically), AWS SAM (Serverless Application Model CloudFormation extension with Lambda/API Gateway shorthand, `sam local invoke` for local testing), Serverless Framework (framework-agnostic plugins for AWS, GCP, Azure popular for teams migrating from other clouds). Clickmasters defaults to AWS CDK for new serverless builds.",
     },
   ],
   differentiators: [
@@ -22949,7 +22949,7 @@ const serverlessArchitectureOverride = {
   sections: [
     {
       heading: "When Serverless Is the Right Choice and When It Is Not",
-      body: "Serverless (AWS Lambda) is well-suited to: event-driven workloads (process each SQS message, S3 event, or API call independently), variable or bursty traffic (scales from zero instantly, cost is zero when idle), and scheduled tasks (run a Lambda on cron instead of keeping an EC2 instance alive). Serverless is NOT well-suited to: long-running processes (Lambda has a 15-minute max execution timeout use ECS Fargate for anything longer), latency-sensitive applications where cold start is unacceptable (Lambda cold start adds 100ms-2s on first invocation Provisioned Concurrency mitigates this but adds cost), or stateful applications that maintain connections (database connection pooling is problematic with Lambda RDS Proxy mitigates this at additional cost). ClickMasters recommends the correct compute choice Lambda, ECS Fargate, or EC2 based on the specific workload characteristics, not as a blanket preference.",
+      body: "Serverless (AWS Lambda) is well-suited to: event-driven workloads (process each SQS message, S3 event, or API call independently), variable or bursty traffic (scales from zero instantly, cost is zero when idle), and scheduled tasks (run a Lambda on cron instead of keeping an EC2 instance alive). Serverless is NOT well-suited to: long-running processes (Lambda has a 15-minute max execution timeout use ECS Fargate for anything longer), latency-sensitive applications where cold start is unacceptable (Lambda cold start adds 100ms-2s on first invocation Provisioned Concurrency mitigates this but adds cost), or stateful applications that maintain connections (database connection pooling is problematic with Lambda RDS Proxy mitigates this at additional cost). Clickmasters recommends the correct compute choice Lambda, ECS Fargate, or EC2 based on the specific workload characteristics, not as a blanket preference.",
       items: [],
     },
     {
@@ -22959,7 +22959,7 @@ const serverlessArchitectureOverride = {
     },
     {
       heading: "Step Functions Standard vs Express Workflows",
-      body: "Standard Workflows are designed for long-duration, exactly-once execution with durable state. Use when: workflow duration >5 minutes (up to 1 year), exactly-once execution is required (audit/compliance), you need retry with exponential backoff and fallback states, or you need full execution history for compliance. Express Workflows are designed for high-volume, short-duration workflows with at-least-once execution. Use when: workflow duration <5 minutes, high-volume (thousands per second), cost sensitivity (Express is cheaper per state transition), or idempotent workloads where duplicate execution is acceptable. ClickMasters uses Standard Workflows for business-critical processes and Express Workflows for high-throughput event processing.",
+      body: "Standard Workflows are designed for long-duration, exactly-once execution with durable state. Use when: workflow duration >5 minutes (up to 1 year), exactly-once execution is required (audit/compliance), you need retry with exponential backoff and fallback states, or you need full execution history for compliance. Express Workflows are designed for high-volume, short-duration workflows with at-least-once execution. Use when: workflow duration <5 minutes, high-volume (thousands per second), cost sensitivity (Express is cheaper per state transition), or idempotent workloads where duplicate execution is acceptable. Clickmasters uses Standard Workflows for business-critical processes and Express Workflows for high-throughput event processing.",
       items: [],
     },
   ],
@@ -22987,7 +22987,7 @@ const serverlessArchitectureOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our serverless backend on Lambda + API Gateway + Step Functions. We handle burst traffic of 5,000 requests/second without any capacity planning. Our monthly AWS bill for compute is $400 far less than maintaining EC2 instances.",
+      "Clickmasters built our serverless backend on Lambda + API Gateway + Step Functions. We handle burst traffic of 5,000 requests/second without any capacity planning. Our monthly AWS bill for compute is $400 far less than maintaining EC2 instances.",
     author: "CTO",
     role: "B2B SaaS Platform",
   },
@@ -23066,10 +23066,10 @@ const databaseDesignOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Database Design Services | PostgreSQL & Schema Architecture | ClickMasters",
+    "Database Design Services | PostgreSQL & Schema Architecture | Clickmasters",
   metaDescription:
-    "ClickMasters designs production databases PostgreSQL schema design, normalisation, indexing strategy, and multi-tenant data models for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters designs production databases for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL schema design grounded in normalisation principles. Indexing strategies designed for your query patterns not generic textbook indexes. Multi-tenant data models with row-level security for SaaS products. Enum types, constraints, and triggers that enforce business rules at the database level rather than relying on application code. And the migration strategy to get from your current schema to the correct one without downtime.",
+    "Clickmasters designs production databases PostgreSQL schema design, normalisation, indexing strategy, and multi-tenant data models for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters designs production databases for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL schema design grounded in normalisation principles. Indexing strategies designed for your query patterns not generic textbook indexes. Multi-tenant data models with row-level security for SaaS products. Enum types, constraints, and triggers that enforce business rules at the database level rather than relying on application code. And the migration strategy to get from your current schema to the correct one without downtime.",
   highlights: [
     "PostgreSQL Schema Design",
     "Normalisation (1NF-3NF+BCNF)",
@@ -23301,7 +23301,7 @@ const databaseDesignOverride = {
     {
       question: "Should I use UUID or integer primary keys?",
       answer:
-        "Both are appropriate depending on the use case. Integer primary keys (SERIAL or BIGSERIAL auto-incrementing integers) are: smaller (4 or 8 bytes vs 16 bytes for UUID), generate sequential values (good index locality new rows inserted at end of B-tree index, no random fragmentation), and are human-readable (easier to debug and reference in support tickets). UUID (gen_random_uuid() v4) primary keys are: globally unique across distributed systems (safe to generate in application without database coordination important for distributed inserts), non-enumerable (prevent URL guessing /api/orders/1234 leaks that there are 1234 orders; /api/orders/a3b7c8... does not), and migration-safe (no integer range exhaustion, no sequence conflicts when merging databases). ClickMasters defaults to UUIDs for new B2B SaaS products (non-enumerable resource IDs are a security benefit in customer-facing APIs) and bigserial for internal/analytics tables where human readability and sequential access patterns matter.",
+        "Both are appropriate depending on the use case. Integer primary keys (SERIAL or BIGSERIAL auto-incrementing integers) are: smaller (4 or 8 bytes vs 16 bytes for UUID), generate sequential values (good index locality new rows inserted at end of B-tree index, no random fragmentation), and are human-readable (easier to debug and reference in support tickets). UUID (gen_random_uuid() v4) primary keys are: globally unique across distributed systems (safe to generate in application without database coordination important for distributed inserts), non-enumerable (prevent URL guessing /api/orders/1234 leaks that there are 1234 orders; /api/orders/a3b7c8... does not), and migration-safe (no integer range exhaustion, no sequence conflicts when merging databases). Clickmasters defaults to UUIDs for new B2B SaaS products (non-enumerable resource IDs are a security benefit in customer-facing APIs) and bigserial for internal/analytics tables where human readability and sequential access patterns matter.",
     },
     {
       question:
@@ -23313,12 +23313,12 @@ const databaseDesignOverride = {
       question:
         "How do you add indexes to an existing production database without downtime?",
       answer:
-        "PostgreSQL supports concurrent index creation: `CREATE INDEX CONCURRENTLY index_name ON table (column)`. Concurrent index creation does not hold a lock on the table the table remains fully available for reads and writes during the index build. The trade-offs: concurrent creation takes longer than normal index creation (2-3x), it cannot be run inside a transaction, and if it fails partway through, the partially built invalid index must be dropped and recreated (`DROP INDEX CONCURRENTLY invalid_index`). For adding constraints (NOT NULL, UNIQUE, FOREIGN KEY) to tables with existing data: each constraint type has a specific zero-downtime multi-step approach to avoid the `ACCESS EXCLUSIVE` lock that `ALTER TABLE` would otherwise take. ClickMasters documents the specific approach for each migration type in the migration plan and validates in a staging environment with production-scale data before executing on production.",
+        "PostgreSQL supports concurrent index creation: `CREATE INDEX CONCURRENTLY index_name ON table (column)`. Concurrent index creation does not hold a lock on the table the table remains fully available for reads and writes during the index build. The trade-offs: concurrent creation takes longer than normal index creation (2-3x), it cannot be run inside a transaction, and if it fails partway through, the partially built invalid index must be dropped and recreated (`DROP INDEX CONCURRENTLY invalid_index`). For adding constraints (NOT NULL, UNIQUE, FOREIGN KEY) to tables with existing data: each constraint type has a specific zero-downtime multi-step approach to avoid the `ACCESS EXCLUSIVE` lock that `ALTER TABLE` would otherwise take. Clickmasters documents the specific approach for each migration type in the migration plan and validates in a staging environment with production-scale data before executing on production.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters designed our PostgreSQL schema from scratch. They normalised to BCNF, set up RLS for multi-tenancy, and designed indexes for our query patterns. Two years in production, no schema changes and queries are still sub-100ms.",
+      "Clickmasters designed our PostgreSQL schema from scratch. They normalised to BCNF, set up RLS for multi-tenancy, and designed indexes for our query patterns. Two years in production, no schema changes and queries are still sub-100ms.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -23397,10 +23397,10 @@ const databaseManagementOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Database Management Services | Managed PostgreSQL & DBA | ClickMasters",
+    "Database Management Services | Managed PostgreSQL & DBA | Clickmasters",
   metaDescription:
-    "ClickMasters manages production databases backup validation, monitoring, replication, connection pooling, and DBA support for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters manages production databases for B2B companies across the USA, Europe, Canada, and Australia. Backup and recovery not just configured, but tested weekly with a restore-and-verify procedure. PgBouncer connection pooling that prevents connection exhaustion under load. Replication and high availability with automatic failover. Vacuuming and autovacuum tuning that prevents table bloat from degrading performance. And the monitoring that tells your team about database problems before users notice them.",
+    "Clickmasters manages production databases backup validation, monitoring, replication, connection pooling, and DBA support for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters manages production databases for B2B companies across the USA, Europe, Canada, and Australia. Backup and recovery not just configured, but tested weekly with a restore-and-verify procedure. PgBouncer connection pooling that prevents connection exhaustion under load. Replication and high availability with automatic failover. Vacuuming and autovacuum tuning that prevents table bloat from degrading performance. And the monitoring that tells your team about database problems before users notice them.",
   highlights: [
     "Backup Verification (Weekly Restore)",
     "PgBouncer Connection Pooling",
@@ -23639,7 +23639,7 @@ const databaseManagementOverride = {
       question:
         "How should PostgreSQL backups be structured for a production database?",
       answer:
-        "A production PostgreSQL backup strategy requires three layers. Continuous WAL archiving (Write-Ahead Log AWS RDS stores transaction logs continuously, enabling point-in-time recovery to any specific second within the retention window the most valuable recovery capability). Daily automated snapshots (RDS automated backups create a daily snapshot and retain it for the configured retention period 7 days minimum for production, 30-35 days for regulated workloads). Logical backups (pg_dump portable, schema+data export that can be restored to a different PostgreSQL version or a completely different database stored in S3, weekly or monthly schedule, retained for 90+ days). The critical missing step in most backup setups: restore verification. ClickMasters automates a weekly restore procedure restores the latest RDS snapshot to a test instance, validates the schema and row counts confirming that backups are actually restorable before the disaster that requires them.",
+        "A production PostgreSQL backup strategy requires three layers. Continuous WAL archiving (Write-Ahead Log AWS RDS stores transaction logs continuously, enabling point-in-time recovery to any specific second within the retention window the most valuable recovery capability). Daily automated snapshots (RDS automated backups create a daily snapshot and retain it for the configured retention period 7 days minimum for production, 30-35 days for regulated workloads). Logical backups (pg_dump portable, schema+data export that can be restored to a different PostgreSQL version or a completely different database stored in S3, weekly or monthly schedule, retained for 90+ days). The critical missing step in most backup setups: restore verification. Clickmasters automates a weekly restore procedure restores the latest RDS snapshot to a test instance, validates the schema and row counts confirming that backups are actually restorable before the disaster that requires them.",
     },
     {
       question: "What is MVCC and why does PostgreSQL need VACUUM?",
@@ -23654,7 +23654,7 @@ const databaseManagementOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters took over our RDS PostgreSQL management. They set up PgBouncer (finally no connection exhaustion), automated weekly backup restore verification, and tuned autovacuum. Database incidents dropped from monthly to zero.",
+      "Clickmasters took over our RDS PostgreSQL management. They set up PgBouncer (finally no connection exhaustion), automated weekly backup restore verification, and tuned autovacuum. Database incidents dropped from monthly to zero.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -23728,10 +23728,10 @@ const dataMigrationOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "Data Migration Services | Database Migration & ETL | ClickMasters",
+    "Data Migration Services | Database Migration & ETL | Clickmasters",
   metaDescription:
-    "ClickMasters executes data migrations database platform migrations, schema migrations, cloud migrations, and application data migrations with zero data loss for B2B companies worldwide.",
-  lead: "ClickMasters executes data migrations for B2B companies across the USA, Europe, Canada, and Australia. MySQL to PostgreSQL migrations that preserve every row, every relationship, and every business rule. On-premises to AWS RDS migrations with AWS Database Migration Service. Schema migrations that re-architect the data model without downtime. Application data migrations that transform and consolidate data from multiple systems. Every migration proceeds through a validated plan no surprises on cutover day.",
+    "Clickmasters executes data migrations database platform migrations, schema migrations, cloud migrations, and application data migrations with zero data loss for B2B companies worldwide.",
+  lead: "Clickmasters executes data migrations for B2B companies across the USA, Europe, Canada, and Australia. MySQL to PostgreSQL migrations that preserve every row, every relationship, and every business rule. On-premises to AWS RDS migrations with AWS Database Migration Service. Schema migrations that re-architect the data model without downtime. Application data migrations that transform and consolidate data from multiple systems. Every migration proceeds through a validated plan no surprises on cutover day.",
   highlights: [
     "MySQL \xE2\u2020\u2019 PostgreSQL Migration",
     "AWS DMS Cloud Migration",
@@ -23941,7 +23941,7 @@ const dataMigrationOverride = {
     },
     {
       heading: "Migration Rollback Planning",
-      body: "Every migration has a tested rollback path. Pre-migration snapshot: full RDS snapshot taken immediately before migration start restores the original state in 10-20 minutes if the migration fails catastrophically. Dual-write rollback: while in dual-write mode, reverting to the old database requires only changing the feature flag or application configuration no data reconstruction. Post-cutover rollback window: for 24-48 hours after cutover, the old database remains in read-only mode rollback requires switching the connection string back, then replaying any writes that occurred on the new database against the old one (requires CDC capture of post-cutover writes). ClickMasters documents rollback procedures, tests them in staging, and includes them in the cutover runbook. The rule: a migration without a tested rollback plan is not a migration it's a gamble.",
+      body: "Every migration has a tested rollback path. Pre-migration snapshot: full RDS snapshot taken immediately before migration start restores the original state in 10-20 minutes if the migration fails catastrophically. Dual-write rollback: while in dual-write mode, reverting to the old database requires only changing the feature flag or application configuration no data reconstruction. Post-cutover rollback window: for 24-48 hours after cutover, the old database remains in read-only mode rollback requires switching the connection string back, then replaying any writes that occurred on the new database against the old one (requires CDC capture of post-cutover writes). Clickmasters documents rollback procedures, tests them in staging, and includes them in the cutover runbook. The rule: a migration without a tested rollback plan is not a migration it's a gamble.",
       items: [],
     },
   ],
@@ -23949,7 +23949,7 @@ const dataMigrationOverride = {
     {
       question: "How long does a database migration take?",
       answer:
-        "Migration timeline depends on three factors: data volume (a 10GB database can be migrated in hours; a 10TB database may require days for the initial load plus a multi-day parallel running period), acceptable downtime (zero-downtime migrations using CDC-based replication take longer to set up and validate than a simple dump-restore with a maintenance window), and schema complexity (a migration involving stored procedures, custom data types, and complex foreign key relationships requires more planning and testing than a simple table migration). Typical timelines: a MySQL to PostgreSQL migration of a 50GB database with 2-hour acceptable downtime: 2-4 weeks (1-2 weeks for schema conversion and testing, 1-2 weeks for migration execution and validation). A zero-downtime migration of the same database: 3-6 weeks (additional time for CDC setup, dual-write implementation, and extended parallel running). ClickMasters delivers a timeline estimate in the migration assessment engagement before any migration work begins.",
+        "Migration timeline depends on three factors: data volume (a 10GB database can be migrated in hours; a 10TB database may require days for the initial load plus a multi-day parallel running period), acceptable downtime (zero-downtime migrations using CDC-based replication take longer to set up and validate than a simple dump-restore with a maintenance window), and schema complexity (a migration involving stored procedures, custom data types, and complex foreign key relationships requires more planning and testing than a simple table migration). Typical timelines: a MySQL to PostgreSQL migration of a 50GB database with 2-hour acceptable downtime: 2-4 weeks (1-2 weeks for schema conversion and testing, 1-2 weeks for migration execution and validation). A zero-downtime migration of the same database: 3-6 weeks (additional time for CDC setup, dual-write implementation, and extended parallel running). Clickmasters delivers a timeline estimate in the migration assessment engagement before any migration work begins.",
     },
     {
       question:
@@ -23961,18 +23961,18 @@ const dataMigrationOverride = {
       question:
         "What are the risks of a database migration and how do you mitigate them?",
       answer:
-        "The primary risks in a database migration: data loss (rows not migrated or silently corrupted during migration mitigated by row count reconciliation and checksum validation after every migration stage), downtime (migration takes longer than planned mitigated by rehearsing the migration procedure multiple times in staging with production-scale data before the production migration), application incompatibility (application code makes database-specific assumptions that break on the target mitigated by running the full application test suite against the target database before cutover), and performance regression (the target database performs worse for specific queries than the source mitigated by query benchmarking in staging before cutover). ClickMasters runs a full dress rehearsal of the production migration in staging using a restored production snapshot before committing to the production migration date. This dress rehearsal typically surfaces 80-90% of issues.",
+        "The primary risks in a database migration: data loss (rows not migrated or silently corrupted during migration mitigated by row count reconciliation and checksum validation after every migration stage), downtime (migration takes longer than planned mitigated by rehearsing the migration procedure multiple times in staging with production-scale data before the production migration), application incompatibility (application code makes database-specific assumptions that break on the target mitigated by running the full application test suite against the target database before cutover), and performance regression (the target database performs worse for specific queries than the source mitigated by query benchmarking in staging before cutover). Clickmasters runs a full dress rehearsal of the production migration in staging using a restored production snapshot before committing to the production migration date. This dress rehearsal typically surfaces 80-90% of issues.",
     },
     {
       question:
         "Do I need to update my application code during a database migration?",
       answer:
-        "It depends on the migration type. A platform migration (MySQL to PostgreSQL) typically requires application changes: PostgreSQL's boolean type uses TRUE/FALSE (MySQL uses 1/0), auto-increment is SERIAL or bigserial (not AUTO_INCREMENT), and some MySQL-specific SQL syntax (GROUP BY behaviour, string functions) is different in PostgreSQL. ClickMasters audits all database queries against the PostgreSQL compatibility list as part of the assessment. A schema migration (re-architecting the data model) always requires application changes the ORM models and query code must be updated to use the new schema. A cloud migration (MySQL on-premises to RDS MySQL) typically requires no application changes same database engine, same SQL, only the connection string changes. ClickMasters scopes the application change requirement in the migration assessment so the engineering team can plan the development work in parallel with the migration preparation.",
+        "It depends on the migration type. A platform migration (MySQL to PostgreSQL) typically requires application changes: PostgreSQL's boolean type uses TRUE/FALSE (MySQL uses 1/0), auto-increment is SERIAL or bigserial (not AUTO_INCREMENT), and some MySQL-specific SQL syntax (GROUP BY behaviour, string functions) is different in PostgreSQL. Clickmasters audits all database queries against the PostgreSQL compatibility list as part of the assessment. A schema migration (re-architecting the data model) always requires application changes the ORM models and query code must be updated to use the new schema. A cloud migration (MySQL on-premises to RDS MySQL) typically requires no application changes same database engine, same SQL, only the connection string changes. Clickmasters scopes the application change requirement in the migration assessment so the engineering team can plan the development work in parallel with the migration preparation.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters migrated our 2TB MySQL database to PostgreSQL with zero downtime. The dual-write pattern meant we could test the new database with real production traffic before cutover. No data loss, no performance regression, no midnight emergency.",
+      "Clickmasters migrated our 2TB MySQL database to PostgreSQL with zero downtime. The dual-write pattern meant we could test the new database with real production traffic before cutover. No data loss, no performance regression, no midnight emergency.",
     author: "CTO",
     role: "E-commerce Platform",
   },
@@ -24042,10 +24042,10 @@ const sqlNosqlSolutionsOverride = {
   heroImage:
     "/images/photo-1555066931-4365d14bab8c.jpg",
   metaTitle:
-    "SQL & NoSQL Database Solutions | PostgreSQL, MongoDB & Redis | ClickMasters",
+    "SQL & NoSQL Database Solutions | PostgreSQL, MongoDB & Redis | Clickmasters",
   metaDescription:
-    "ClickMasters selects, designs, and implements SQL and NoSQL databases PostgreSQL, MongoDB, Redis, DynamoDB, and Elasticsearch matched to your data model and query patterns.",
-  lead: "ClickMasters selects and implements the correct database for each use case for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL for relational data that requires ACID transactions and complex queries. Redis for caching, sessions, and queues. MongoDB for document data with variable schemas. DynamoDB for high-throughput key-value access at serverless scale. Elasticsearch for full-text search and log analytics. ClickHouse for analytical queries at scale. The right database for the right job not the one your team is most comfortable with.",
+    "Clickmasters selects, designs, and implements SQL and NoSQL databases PostgreSQL, MongoDB, Redis, DynamoDB, and Elasticsearch matched to your data model and query patterns.",
+  lead: "Clickmasters selects and implements the correct database for each use case for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL for relational data that requires ACID transactions and complex queries. Redis for caching, sessions, and queues. MongoDB for document data with variable schemas. DynamoDB for high-throughput key-value access at serverless scale. Elasticsearch for full-text search and log analytics. ClickHouse for analytical queries at scale. The right database for the right job not the one your team is most comfortable with.",
   highlights: [
     "PostgreSQL (RDBMS primary)",
     "Redis (Cache + Queue + Session)",
@@ -24089,7 +24089,7 @@ const sqlNosqlSolutionsOverride = {
     {
       title: "Polyglot Persistence Architecture",
       description:
-        "Many production systems use multiple databases each for the data it is best suited for: PostgreSQL as the system of record (authoritative source for transactional data user accounts, orders, billing), Redis as the operational data layer (cache of hot PostgreSQL queries, session store, job queue), Elasticsearch for search (synchronised from PostgreSQL via Debezium CDC search index is always a derived view of the PostgreSQL source of truth), ClickHouse for analytics (ETL pipeline from PostgreSQL to ClickHouse nightly or via CDC all analytical queries run against ClickHouse, preserving PostgreSQL for transactional workloads). ClickMasters designs the synchronisation architecture between databases defining which database owns each data type and how changes propagate.",
+        "Many production systems use multiple databases each for the data it is best suited for: PostgreSQL as the system of record (authoritative source for transactional data user accounts, orders, billing), Redis as the operational data layer (cache of hot PostgreSQL queries, session store, job queue), Elasticsearch for search (synchronised from PostgreSQL via Debezium CDC search index is always a derived view of the PostgreSQL source of truth), ClickHouse for analytics (ETL pipeline from PostgreSQL to ClickHouse nightly or via CDC all analytical queries run against ClickHouse, preserving PostgreSQL for transactional workloads). Clickmasters designs the synchronisation architecture between databases defining which database owns each data type and how changes propagate.",
     },
   ],
   differentiators: [
@@ -24267,7 +24267,7 @@ const sqlNosqlSolutionsOverride = {
   ],
   sections: [
     {
-      heading: "Database Selection Guide ClickMasters' Approach",
+      heading: "Database Selection Guide Clickmasters' Approach",
       body: "",
       items: [
         "PostgreSQL: Best For Primary relational data (users, orders, products, billing, organisations). Key Capabilities ACID transactions, row-level security, JSONB, full-text search, PostGIS, logical replication, 35+ years production stability. When NOT to Use Write throughput exceeds 100K TPS on single node, or data model is genuinely document-oriented with no joins required.",
@@ -24280,7 +24280,7 @@ const sqlNosqlSolutionsOverride = {
     },
     {
       heading: "DynamoDB Single-Table Design Why It's Controversial",
-      body: "DynamoDB's single-table design is an architectural pattern where all entity types (users, orders, products, sessions) are stored in a single DynamoDB table differentiated by their primary key prefix and sort key structure. The rationale: DynamoDB is optimised for single key-value lookups and range queries on the sort key; joins across tables require two separate reads at the application level. By placing all related entities in the same table with carefully designed sort key structures, you can retrieve a user and all their orders in a single table query. The controversy: single-table design requires knowing all access patterns at design time (it is very difficult to add new access patterns post-launch without a full reindex), it is counterintuitive to relational database thinking (requires a mental model shift), and it makes the data harder to inspect and debug. ClickMasters uses single-table design for DynamoDB when the access patterns are well-defined and stable, and recommends PostgreSQL when access patterns are exploratory or likely to evolve.",
+      body: "DynamoDB's single-table design is an architectural pattern where all entity types (users, orders, products, sessions) are stored in a single DynamoDB table differentiated by their primary key prefix and sort key structure. The rationale: DynamoDB is optimised for single key-value lookups and range queries on the sort key; joins across tables require two separate reads at the application level. By placing all related entities in the same table with carefully designed sort key structures, you can retrieve a user and all their orders in a single table query. The controversy: single-table design requires knowing all access patterns at design time (it is very difficult to add new access patterns post-launch without a full reindex), it is counterintuitive to relational database thinking (requires a mental model shift), and it makes the data harder to inspect and debug. Clickmasters uses single-table design for DynamoDB when the access patterns are well-defined and stable, and recommends PostgreSQL when access patterns are exploratory or likely to evolve.",
       items: [],
     },
     {
@@ -24305,7 +24305,7 @@ const sqlNosqlSolutionsOverride = {
       question:
         "What is DynamoDB's single-table design and why is it controversial?",
       answer:
-        "DynamoDB's single-table design is an architectural pattern where all entity types (users, orders, products, sessions) are stored in a single DynamoDB table differentiated by their primary key prefix and sort key structure. The rationale: DynamoDB is optimised for single key-value lookups and range queries on the sort key; joins across tables require two separate reads at the application level. By placing all related entities in the same table with carefully designed sort key structures, you can retrieve a user and all their orders in a single table query. The controversy: single-table design requires knowing all access patterns at design time (it is very difficult to add new access patterns post-launch without a full reindex), it is counterintuitive to relational database thinking (requires a mental model shift), and it makes the data harder to inspect and debug. ClickMasters uses single-table design for DynamoDB when the access patterns are well-defined and stable, and recommends PostgreSQL when access patterns are exploratory or likely to evolve.",
+        "DynamoDB's single-table design is an architectural pattern where all entity types (users, orders, products, sessions) are stored in a single DynamoDB table differentiated by their primary key prefix and sort key structure. The rationale: DynamoDB is optimised for single key-value lookups and range queries on the sort key; joins across tables require two separate reads at the application level. By placing all related entities in the same table with carefully designed sort key structures, you can retrieve a user and all their orders in a single table query. The controversy: single-table design requires knowing all access patterns at design time (it is very difficult to add new access patterns post-launch without a full reindex), it is counterintuitive to relational database thinking (requires a mental model shift), and it makes the data harder to inspect and debug. Clickmasters uses single-table design for DynamoDB when the access patterns are well-defined and stable, and recommends PostgreSQL when access patterns are exploratory or likely to evolve.",
     },
     {
       question: "What is polyglot persistence and when does it make sense?",
@@ -24315,7 +24315,7 @@ const sqlNosqlSolutionsOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters designed our polyglot database architecture. PostgreSQL for transactions, Redis for session cache, Elasticsearch for product search, ClickHouse for analytics. Each database does what it does best our search is 10x faster, analytics queries that took 30 seconds in PostgreSQL now run in 300ms in ClickHouse.",
+      "Clickmasters designed our polyglot database architecture. PostgreSQL for transactions, Redis for session cache, Elasticsearch for product search, ClickHouse for analytics. Each database does what it does best our search is 10x faster, analytics queries that took 30 seconds in PostgreSQL now run in 300ms in ClickHouse.",
     author: "CTO",
     role: "B2B E-commerce Platform",
   },
@@ -24389,10 +24389,10 @@ const cybersecurityServicesOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Cybersecurity Services Company | Pen Testing, Audits & Compliance | ClickMasters",
+    "Cybersecurity Services Company | Pen Testing, Audits & Compliance | Clickmasters",
   metaDescription:
-    "ClickMasters delivers application security, penetration testing, security audits, and SOC 2/ISO 27001 compliance for B2B software companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers application security, penetration testing, security audits, and compliance consulting for B2B software companies in the USA, Europe, Canada, and Australia. OWASP ASVS-aligned security reviews. Penetration test reports accepted by enterprise customers. SOC 2, ISO 27001, HIPAA, and GDPR compliance pathways mapped, implemented, and maintained.",
+    "Clickmasters delivers application security, penetration testing, security audits, and SOC 2/ISO 27001 compliance for B2B software companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers application security, penetration testing, security audits, and compliance consulting for B2B software companies in the USA, Europe, Canada, and Australia. OWASP ASVS-aligned security reviews. Penetration test reports accepted by enterprise customers. SOC 2, ISO 27001, HIPAA, and GDPR compliance pathways mapped, implemented, and maintained.",
   highlights: [
     "Penetration Testing",
     "Security Audits & OWASP",
@@ -24688,7 +24688,7 @@ const cybersecurityServicesOverride = {
     },
     {
       question: "What is SOC 2 compliance and how long does it take?",
-      answer: `SOC 2 (System and Organization Controls 2) is a security compliance framework managed by the AICPA that evaluates service organizations against five Trust Service Criteria: Security (mandatory), Availability, Processing Integrity, Confidentiality, and Privacy. SOC 2 Type I is a point-in-time assessment of whether security controls are designed correctly typically takes 2-4 months and costs $15,000-40,000. SOC 2 Type II is an audit of whether controls operate effectively over a 6-12 month observation period typically takes 6-12 months and costs $20,000-60,000 with an auditor. SOC 2 Type II is what most enterprise customers require when asking for "SOC 2 compliance." The observation period can begin while you are implementing controls with ClickMasters' support.`,
+      answer: `SOC 2 (System and Organization Controls 2) is a security compliance framework managed by the AICPA that evaluates service organizations against five Trust Service Criteria: Security (mandatory), Availability, Processing Integrity, Confidentiality, and Privacy. SOC 2 Type I is a point-in-time assessment of whether security controls are designed correctly typically takes 2-4 months and costs $15,000-40,000. SOC 2 Type II is an audit of whether controls operate effectively over a 6-12 month observation period typically takes 6-12 months and costs $20,000-60,000 with an auditor. SOC 2 Type II is what most enterprise customers require when asking for "SOC 2 compliance." The observation period can begin while you are implementing controls with Clickmasters' support.`,
     },
     {
       question: "What is the OWASP Top 10?",
@@ -24698,13 +24698,13 @@ const cybersecurityServicesOverride = {
     {
       question: "How much does a penetration test cost?",
       answer:
-        "Penetration test costs for B2B software applications range from $8,000 for a focused web application test to $25,000 for a comprehensive engagement covering web application, APIs, mobile application, and infrastructure. Cost drivers include: scope size (number of screens, API endpoints, and test cases), test type (black box is quicker, white box is more thorough), mobile platform inclusion (iOS and Android double the mobile test scope), and re-test verification requirements. ClickMasters provides fixed-price proposals after a scoping call. All engagements include a re-test of critical and high findings at no additional cost the engagement is not complete until the critical issues are confirmed resolved.",
+        "Penetration test costs for B2B software applications range from $8,000 for a focused web application test to $25,000 for a comprehensive engagement covering web application, APIs, mobile application, and infrastructure. Cost drivers include: scope size (number of screens, API endpoints, and test cases), test type (black box is quicker, white box is more thorough), mobile platform inclusion (iOS and Android double the mobile test scope), and re-test verification requirements. Clickmasters provides fixed-price proposals after a scoping call. All engagements include a re-test of critical and high findings at no additional cost the engagement is not complete until the critical issues are confirmed resolved.",
     },
     {
       question:
-        "Does ClickMasters help with enterprise vendor security questionnaires?",
+        "Does Clickmasters help with enterprise vendor security questionnaires?",
       answer:
-        "Yes. Vendor security questionnaires (VSQs) are one of the most common security triggers for B2B software companies. Enterprise procurement teams send security questionnaires as part of vendor evaluation many companies are unprepared for the depth and specificity of these reviews. ClickMasters provides: a gap assessment comparing your current security posture against the questionnaire requirements, a prioritized remediation plan for the gaps most likely to kill the deal, honest guidance on which gaps can be mitigated with compensating controls vs. which require remediation, and documentation support for populating the questionnaire accurately and professionally. We have helped companies pass security questionnaires from Fortune 500 customers, US government agencies, and major European enterprises.",
+        "Yes. Vendor security questionnaires (VSQs) are one of the most common security triggers for B2B software companies. Enterprise procurement teams send security questionnaires as part of vendor evaluation many companies are unprepared for the depth and specificity of these reviews. Clickmasters provides: a gap assessment comparing your current security posture against the questionnaire requirements, a prioritized remediation plan for the gaps most likely to kill the deal, honest guidance on which gaps can be mitigated with compensating controls vs. which require remediation, and documentation support for populating the questionnaire accurately and professionally. We have helped companies pass security questionnaires from Fortune 500 customers, US government agencies, and major European enterprises.",
     },
     {
       question:
@@ -24716,12 +24716,12 @@ const cybersecurityServicesOverride = {
       question:
         "How do you handle data confidentiality during security testing?",
       answer:
-        "Security testing inherently involves identifying and demonstrating access to sensitive data and systems. ClickMasters manages data confidentiality through: a signed Non-Disclosure Agreement (NDA) before any engagement begins, written Rules of Engagement (RoE) defining exactly what systems are in scope, how vulnerabilities will be documented, and how evidence will be stored and destroyed post-engagement, a designated test account environment (where possible) to avoid accessing real customer data during testing, evidence handling procedures that destroy screenshots and captured data upon report delivery, and a data processing agreement (DPA) for GDPR-regulated clients. All penetration test findings and client data are treated as strictly confidential and are not retained beyond the engagement period.",
+        "Security testing inherently involves identifying and demonstrating access to sensitive data and systems. Clickmasters manages data confidentiality through: a signed Non-Disclosure Agreement (NDA) before any engagement begins, written Rules of Engagement (RoE) defining exactly what systems are in scope, how vulnerabilities will be documented, and how evidence will be stored and destroyed post-engagement, a designated test account environment (where possible) to avoid accessing real customer data during testing, evidence handling procedures that destroy screenshots and captured data upon report delivery, and a data processing agreement (DPA) for GDPR-regulated clients. All penetration test findings and client data are treated as strictly confidential and are not retained beyond the engagement period.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters helped us get SOC 2 Type II certified in 8 months. Their gap assessment identified exactly what we needed to fix, and the remediation support got it done. We closed two enterprise deals worth $500K within 90 days of receiving the report.",
+      "Clickmasters helped us get SOC 2 Type II certified in 8 months. Their gap assessment identified exactly what we needed to fix, and the remediation support got it done. We closed two enterprise deals worth $500K within 90 days of receiving the report.",
     author: "CEO",
     role: "B2B SaaS Company",
   },
@@ -24810,10 +24810,10 @@ const securityAuditsOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Security Audit Services | Application & Cloud Security Review | ClickMasters",
+    "Security Audit Services | Application & Cloud Security Review | Clickmasters",
   metaDescription:
-    "ClickMasters conducts security audits application code review, cloud infrastructure security, and OWASP Top 10 assessment for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters conducts security audits for B2B companies across the USA, Europe, Canada, and Australia. Application security audits covering the OWASP Top 10 injection, broken authentication, sensitive data exposure, misconfigured security headers. Cloud infrastructure security reviews IAM, VPC configuration, S3 exposure, CloudTrail, GuardDuty. Code reviews that surface security vulnerabilities before they reach production. And the remediation guidance your engineering team needs to fix every finding.",
+    "Clickmasters conducts security audits application code review, cloud infrastructure security, and OWASP Top 10 assessment for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters conducts security audits for B2B companies across the USA, Europe, Canada, and Australia. Application security audits covering the OWASP Top 10 injection, broken authentication, sensitive data exposure, misconfigured security headers. Cloud infrastructure security reviews IAM, VPC configuration, S3 exposure, CloudTrail, GuardDuty. Code reviews that surface security vulnerabilities before they reach production. And the remediation guidance your engineering team needs to fix every finding.",
   highlights: [
     "OWASP Top 10 Assessment",
     "Cloud Infrastructure Security Review",
@@ -24826,7 +24826,7 @@ const securityAuditsOverride = {
   //   { label: 'Open Web Application Security Project authoritative reference for web application security risks, updated every 3-4 years', value: 'OWASP' },
   //   { label: 'Average cost of a data breach (IBM Security 2023) the business case for proactive security audits', value: '$4.45M' },
   //   { label: 'Of breaches involve a human element misconfigurations, credential theft, social engineering (Verizon DBIR 2023)', value: '82%' },
-  //   { label: 'ClickMasters does not perform offensive security testing audit and remediation only', value: '$0' },
+  //   { label: 'Clickmasters does not perform offensive security testing audit and remediation only', value: '$0' },
   // ],
   servicesCards: [
     {
@@ -25032,7 +25032,7 @@ const securityAuditsOverride = {
     },
     {
       heading: "Security Audit vs Penetration Test Key Differences",
-      body: "A security audit is a review-based assessment examining code, configuration, documentation, and architecture for security weaknesses without actively exploiting them. An auditor reviews the IAM policies, checks whether MFA is enforced, inspects the authentication implementation, and reads the SAST findings. A penetration test (pen test) is an authorised simulated attack a security professional attempts to exploit vulnerabilities using the same techniques a real attacker would use. The penetration tester probes the live application for SQL injection, tests for authentication bypass, and attempts to escalate privileges. Audits are less invasive and carry no risk of production disruption appropriate as a first step and for compliance documentation. Penetration tests provide higher confidence in real-world exploitability a finding that is difficult to exploit in a pen test is less urgent than one that can be exploited in seconds. ClickMasters performs security audits; penetration tests are performed by specialised offensive security firms. ClickMasters can recommend appropriate penetration testing partners.",
+      body: "A security audit is a review-based assessment examining code, configuration, documentation, and architecture for security weaknesses without actively exploiting them. An auditor reviews the IAM policies, checks whether MFA is enforced, inspects the authentication implementation, and reads the SAST findings. A penetration test (pen test) is an authorised simulated attack a security professional attempts to exploit vulnerabilities using the same techniques a real attacker would use. The penetration tester probes the live application for SQL injection, tests for authentication bypass, and attempts to escalate privileges. Audits are less invasive and carry no risk of production disruption appropriate as a first step and for compliance documentation. Penetration tests provide higher confidence in real-world exploitability a finding that is difficult to exploit in a pen test is less urgent than one that can be exploited in seconds. Clickmasters performs security audits; penetration tests are performed by specialised offensive security firms. Clickmasters can recommend appropriate penetration testing partners.",
       items: [],
     },
   ],
@@ -25040,7 +25040,7 @@ const securityAuditsOverride = {
     {
       question: "What is a security audit and what does it cover?",
       answer:
-        "A security audit is a systematic review of a software product's security posture examining application code, cloud infrastructure, authentication, authorisation, data handling, and operational practices for vulnerabilities and misconfigurations. A security audit differs from penetration testing: an audit is a review-based assessment (examining code, configuration, and architecture) rather than an active exploitation attempt. ClickMasters' security audit covers: application security (OWASP Top 10 the most widely referenced web application security risks), cloud infrastructure security (IAM, network, storage, encryption, monitoring), code security (SAST tool findings plus manual review of security-critical code paths), and compliance readiness (gap assessment against SOC 2, GDPR, or HIPAA as applicable). The deliverable is a findings report with severity ratings (Critical, High, Medium, Low) and specific remediation guidance for each finding.",
+        "A security audit is a systematic review of a software product's security posture examining application code, cloud infrastructure, authentication, authorisation, data handling, and operational practices for vulnerabilities and misconfigurations. A security audit differs from penetration testing: an audit is a review-based assessment (examining code, configuration, and architecture) rather than an active exploitation attempt. Clickmasters' security audit covers: application security (OWASP Top 10 the most widely referenced web application security risks), cloud infrastructure security (IAM, network, storage, encryption, monitoring), code security (SAST tool findings plus manual review of security-critical code paths), and compliance readiness (gap assessment against SOC 2, GDPR, or HIPAA as applicable). The deliverable is a findings report with severity ratings (Critical, High, Medium, Low) and specific remediation guidance for each finding.",
     },
     {
       question: "What is the OWASP Top 10 and why does it matter?",
@@ -25051,17 +25051,17 @@ const securityAuditsOverride = {
       question:
         "What is the difference between a security audit and a penetration test?",
       answer:
-        "A security audit is a review-based assessment examining code, configuration, documentation, and architecture for security weaknesses without actively exploiting them. An auditor reviews the IAM policies, checks whether MFA is enforced, inspects the authentication implementation, and reads the SAST findings. A penetration test (pen test) is an authorised simulated attack a security professional attempts to exploit vulnerabilities using the same techniques a real attacker would use. The penetration tester probes the live application for SQL injection, tests for authentication bypass, and attempts to escalate privileges. Audits are less invasive and carry no risk of production disruption appropriate as a first step and for compliance documentation. Penetration tests provide higher confidence in real-world exploitability a finding that is difficult to exploit in a pen test is less urgent than one that can be exploited in seconds. ClickMasters performs security audits; penetration tests are performed by specialised offensive security firms. ClickMasters can recommend appropriate penetration testing partners.",
+        "A security audit is a review-based assessment examining code, configuration, documentation, and architecture for security weaknesses without actively exploiting them. An auditor reviews the IAM policies, checks whether MFA is enforced, inspects the authentication implementation, and reads the SAST findings. A penetration test (pen test) is an authorised simulated attack a security professional attempts to exploit vulnerabilities using the same techniques a real attacker would use. The penetration tester probes the live application for SQL injection, tests for authentication bypass, and attempts to escalate privileges. Audits are less invasive and carry no risk of production disruption appropriate as a first step and for compliance documentation. Penetration tests provide higher confidence in real-world exploitability a finding that is difficult to exploit in a pen test is less urgent than one that can be exploited in seconds. Clickmasters performs security audits; penetration tests are performed by specialised offensive security firms. Clickmasters can recommend appropriate penetration testing partners.",
     },
     {
       question: "How do security audits support SOC 2 and enterprise sales?",
       answer:
-        "Enterprise B2B buyers increasingly require security documentation before purchasing: SOC 2 Type II report (the most widely requested demonstrates that a service provider has designed and operated effective security controls over a 6-12 month audit period), security questionnaires (Standard Information Gathering SIG questionnaire, Consensus Assessments Initiative Questionnaire CAIQ hundreds of questions about security practices), and penetration test reports (dated within the last 12 months). A security audit produces: a documented security posture (OWASP compliance, cloud security controls, encryption practices answers the majority of security questionnaire questions), a remediation roadmap (shows prospective customers that identified issues are being actively addressed), and evidence for SOC 2 auditors (controls documentation, policy evidence). ClickMasters delivers audit reports in a format designed to support both internal remediation and external security questionnaire responses.",
+        "Enterprise B2B buyers increasingly require security documentation before purchasing: SOC 2 Type II report (the most widely requested demonstrates that a service provider has designed and operated effective security controls over a 6-12 month audit period), security questionnaires (Standard Information Gathering SIG questionnaire, Consensus Assessments Initiative Questionnaire CAIQ hundreds of questions about security practices), and penetration test reports (dated within the last 12 months). A security audit produces: a documented security posture (OWASP compliance, cloud security controls, encryption practices answers the majority of security questionnaire questions), a remediation roadmap (shows prospective customers that identified issues are being actively addressed), and evidence for SOC 2 auditors (controls documentation, policy evidence). Clickmasters delivers audit reports in a format designed to support both internal remediation and external security questionnaire responses.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters conducted our OWASP Top 10 audit and cloud security review. They found 3 critical vulnerabilities in our authentication system that we didn't know existed. The remediation guidance was so clear that our team fixed everything within 2 weeks.",
+      "Clickmasters conducted our OWASP Top 10 audit and cloud security review. They found 3 critical vulnerabilities in our authentication system that we didn't know existed. The remediation guidance was so clear that our team fixed everything within 2 weeks.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -25134,10 +25134,10 @@ const penetrationTestingOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Penetration Testing Services | Web App & API Pen Testing | ClickMasters",
+    "Penetration Testing Services | Web App & API Pen Testing | Clickmasters",
   metaDescription:
-    "ClickMasters conducts penetration testing web application, API, cloud, and network pen tests with detailed findings reports for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters conducts penetration testing for B2B companies across the USA, Europe, Canada, and Australia. Web application pen tests covering authentication bypass, injection, broken authorisation, and session management. API pen testing against REST and GraphQL endpoints. Cloud infrastructure pen testing AWS IAM privilege escalation, exposed services, misconfigured resources. Authenticated and unauthenticated testing scenarios. Detailed findings report with CVSS severity scores, proof-of-concept reproduction steps, and remediation guidance.",
+    "Clickmasters conducts penetration testing web application, API, cloud, and network pen tests with detailed findings reports for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters conducts penetration testing for B2B companies across the USA, Europe, Canada, and Australia. Web application pen tests covering authentication bypass, injection, broken authorisation, and session management. API pen testing against REST and GraphQL endpoints. Cloud infrastructure pen testing AWS IAM privilege escalation, exposed services, misconfigured resources. Authenticated and unauthenticated testing scenarios. Detailed findings report with CVSS severity scores, proof-of-concept reproduction steps, and remediation guidance.",
   highlights: [
     "Web Application Pen Test",
     "REST & GraphQL API Pen Test",
@@ -25338,7 +25338,7 @@ const penetrationTestingOverride = {
     },
     {
       heading: "Black-Box vs Grey-Box vs White-Box Pen Testing",
-      body: "Black-box testing simulates an external attacker with no prior knowledge the tester starts with only the application URL, no credentials, no source code access. This tests what is visible from outside the perimeter but may miss vulnerabilities deep in authenticated functionality. Grey-box testing (most common for web application pen tests) provides the tester with user-level credentials for each role (regular user, admin, API key) but no source code access. This enables testing of authenticated functionality the majority of web application vulnerabilities require an authenticated user. White-box testing provides full access source code, architecture documentation, test credentials for all roles. The most thorough approach, but requires more time (the tester must review code as well as test the running application). ClickMasters conducts grey-box pen tests as the default sufficient to cover the OWASP Top 10 comprehensively at the most practical cost.",
+      body: "Black-box testing simulates an external attacker with no prior knowledge the tester starts with only the application URL, no credentials, no source code access. This tests what is visible from outside the perimeter but may miss vulnerabilities deep in authenticated functionality. Grey-box testing (most common for web application pen tests) provides the tester with user-level credentials for each role (regular user, admin, API key) but no source code access. This enables testing of authenticated functionality the majority of web application vulnerabilities require an authenticated user. White-box testing provides full access source code, architecture documentation, test credentials for all roles. The most thorough approach, but requires more time (the tester must review code as well as test the running application). Clickmasters conducts grey-box pen tests as the default sufficient to cover the OWASP Top 10 comprehensively at the most practical cost.",
       items: [],
     },
   ],
@@ -25357,17 +25357,17 @@ const penetrationTestingOverride = {
       question:
         "What is the difference between black-box, grey-box, and white-box pen testing?",
       answer:
-        "Black-box testing simulates an external attacker with no prior knowledge the tester starts with only the application URL, no credentials, no source code access. This tests what is visible from outside the perimeter but may miss vulnerabilities deep in authenticated functionality. Grey-box testing (most common for web application pen tests) provides the tester with user-level credentials for each role (regular user, admin, API key) but no source code access. This enables testing of authenticated functionality the majority of web application vulnerabilities require an authenticated user. White-box testing provides full access source code, architecture documentation, test credentials for all roles. The most thorough approach, but requires more time (the tester must review code as well as test the running application). ClickMasters conducts grey-box pen tests as the default sufficient to cover the OWASP Top 10 comprehensively at the most practical cost.",
+        "Black-box testing simulates an external attacker with no prior knowledge the tester starts with only the application URL, no credentials, no source code access. This tests what is visible from outside the perimeter but may miss vulnerabilities deep in authenticated functionality. Grey-box testing (most common for web application pen tests) provides the tester with user-level credentials for each role (regular user, admin, API key) but no source code access. This enables testing of authenticated functionality the majority of web application vulnerabilities require an authenticated user. White-box testing provides full access source code, architecture documentation, test credentials for all roles. The most thorough approach, but requires more time (the tester must review code as well as test the running application). Clickmasters conducts grey-box pen tests as the default sufficient to cover the OWASP Top 10 comprehensively at the most practical cost.",
     },
     {
       question: "What does a penetration test report include?",
       answer:
-        "A ClickMasters penetration test report includes: executive summary (one-page non-technical overview overall security risk rating, count of findings by severity, top three most critical findings in plain language suitable for board and investor review), scope and methodology (tested systems, testing dates, testing approach, tools used SQLMap, Burp Suite Pro, Metasploit for cloud, Pacu for AWS), findings (each finding: CVSS 3.1 base score, vulnerability name, affected system/endpoint, description of the vulnerability, proof-of-concept reproduction steps, evidence screenshots, impact assessment, remediation recommendation), risk summary matrix (all findings visualised by severity and ease of exploitation), and attestation letter (signed letter confirming the pen test was conducted and the overall risk rating suitable for enterprise security questionnaire attachment). Re-testing of remediated critical and high findings is included within 30 days.",
+        "A Clickmasters penetration test report includes: executive summary (one-page non-technical overview overall security risk rating, count of findings by severity, top three most critical findings in plain language suitable for board and investor review), scope and methodology (tested systems, testing dates, testing approach, tools used SQLMap, Burp Suite Pro, Metasploit for cloud, Pacu for AWS), findings (each finding: CVSS 3.1 base score, vulnerability name, affected system/endpoint, description of the vulnerability, proof-of-concept reproduction steps, evidence screenshots, impact assessment, remediation recommendation), risk summary matrix (all findings visualised by severity and ease of exploitation), and attestation letter (signed letter confirming the pen test was conducted and the overall risk rating suitable for enterprise security questionnaire attachment). Re-testing of remediated critical and high findings is included within 30 days.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters' pen test found a critical JWT alg:none vulnerability that our internal security review missed. The report was detailed enough for our engineering team to fix immediately and professional enough to send to our enterprise prospect. We closed the deal.",
+      "Clickmasters' pen test found a critical JWT alg:none vulnerability that our internal security review missed. The report was detailed enough for our engineering team to fix immediately and professional enough to send to our enterprise prospect. We closed the deal.",
     author: "CTO",
     role: "API-First SaaS",
   },
@@ -25440,10 +25440,10 @@ const vulnerabilityAssessmentOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Vulnerability Assessment Services | CVE Scanning & Risk Prioritisation | ClickMasters",
+    "Vulnerability Assessment Services | CVE Scanning & Risk Prioritisation | Clickmasters",
   metaDescription:
-    "ClickMasters conducts vulnerability assessments automated scanning, CVE triage, dependency audits, and container image scanning for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters conducts vulnerability assessments for B2B companies across the USA, Europe, Canada, and Australia. Automated infrastructure scanning with Nessus and Tenable.io. Container image CVE scanning with Trivy and Grype. Application dependency audits. Cloud misconfiguration scanning with Prowler and ScoutSuite. CVSS-scored findings with business-context risk prioritisation not a raw CVE dump. And the remediation plan that tells your engineering team what to fix first.",
+    "Clickmasters conducts vulnerability assessments automated scanning, CVE triage, dependency audits, and container image scanning for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters conducts vulnerability assessments for B2B companies across the USA, Europe, Canada, and Australia. Automated infrastructure scanning with Nessus and Tenable.io. Container image CVE scanning with Trivy and Grype. Application dependency audits. Cloud misconfiguration scanning with Prowler and ScoutSuite. CVSS-scored findings with business-context risk prioritisation not a raw CVE dump. And the remediation plan that tells your engineering team what to fix first.",
   highlights: [
     "Nessus / Tenable Infrastructure Scan",
     "Container Scanning (Trivy + Grype)",
@@ -25489,7 +25489,7 @@ const vulnerabilityAssessmentOverride = {
     {
       feature: "VA vs Pen Test 8-Row Table",
       description:
-        "Method, scope, exploitation, output, frequency, cost, best for, ClickMasters approach | Basic: One-size recommendation",
+        "Method, scope, exploitation, output, frequency, cost, best for, Clickmasters approach | Basic: One-size recommendation",
     },
     {
       feature: "CISA KEV Prioritisation",
@@ -25656,12 +25656,12 @@ const vulnerabilityAssessmentOverride = {
         "Frequency: Vulnerability Assessment Continuous or monthly catch new CVEs as they are disclosed. Penetration Testing Annual or major-change-triggered point-in-time authorised attack.",
         "Cost: Vulnerability Assessment Lower automated tools + analyst triage. Penetration Testing Higher manual skilled tester time.",
         "Best for: Vulnerability Assessment Ongoing vuln management programme, CVE tracking. Penetration Testing Compliance (SOC 2, PCI DSS), enterprise sales, new product launch.",
-        "ClickMasters approach: Vulnerability Assessment Automated scanning + risk-based prioritisation + remediation roadmap. Penetration Testing Scope-defined authorised testing + CVSS report + re-test.",
+        "Clickmasters approach: Vulnerability Assessment Automated scanning + risk-based prioritisation + remediation roadmap. Penetration Testing Scope-defined authorised testing + CVSS report + re-test.",
       ],
     },
     {
       heading: "Vulnerability Prioritisation P1-P2-P3-P4 Framework",
-      body: "Vulnerability prioritisation uses a risk-based framework rather than raw CVSS score. Prioritisation factors: Exploitability in the wild (is this CVE being actively exploited? CISA KEV Known Exploited Vulnerabilities catalogue lists CVEs with confirmed exploitation; these are highest priority regardless of CVSS score), Public exploit availability (is working exploit available in Metasploit or Exploit-DB? reduces attacker skill required), Asset criticality (Critical CVE on development server less urgent than High CVE on production auth service), Reachability (is vulnerable code path actually invoked by the application?), Remediation effort (trivial patch that takes 10 minutes done immediately; breaking major version upgrade requiring 2 weeks planned and scheduled). ClickMasters delivers prioritised remediation plan P1 (fix within 24 hours), P2 (fix within 7 days), P3 (fix within 30 days), P4 (fix within 90 days) based on this framework.",
+      body: "Vulnerability prioritisation uses a risk-based framework rather than raw CVSS score. Prioritisation factors: Exploitability in the wild (is this CVE being actively exploited? CISA KEV Known Exploited Vulnerabilities catalogue lists CVEs with confirmed exploitation; these are highest priority regardless of CVSS score), Public exploit availability (is working exploit available in Metasploit or Exploit-DB? reduces attacker skill required), Asset criticality (Critical CVE on development server less urgent than High CVE on production auth service), Reachability (is vulnerable code path actually invoked by the application?), Remediation effort (trivial patch that takes 10 minutes done immediately; breaking major version upgrade requiring 2 weeks planned and scheduled). Clickmasters delivers prioritised remediation plan P1 (fix within 24 hours), P2 (fix within 7 days), P3 (fix within 30 days), P4 (fix within 90 days) based on this framework.",
       items: [],
     },
   ],
@@ -25669,28 +25669,28 @@ const vulnerabilityAssessmentOverride = {
     {
       question: "What is a CVE and how are they scored?",
       answer:
-        "A CVE (Common Vulnerabilities and Exposures) is a publicly disclosed security vulnerability in a software component identified by a unique CVE ID (e.g., CVE-2021-44228 is the Log4Shell vulnerability). Each CVE is scored using CVSS (Common Vulnerability Scoring System) v3.1 a 0-10 scale: Critical (9.0-10.0), High (7.0-8.9), Medium (4.0-6.9), Low (0.1-3.9). The score is calculated from: Attack Vector (Network/Adjacent/Local/Physical), Attack Complexity (Low/High), Privileges Required (None/Low/High), User Interaction (None/Required), and impact on Confidentiality, Integrity, and Availability (None/Low/High). The CVSS base score measures severity in isolation a Critical-score CVE on a development system with no network access is less urgent than a Medium-score CVE on an internet-facing authentication endpoint. ClickMasters adds business context to CVSS scores asset criticality, exploitability, and reachability to produce a prioritised remediation list rather than a raw CVSS ranking.",
+        "A CVE (Common Vulnerabilities and Exposures) is a publicly disclosed security vulnerability in a software component identified by a unique CVE ID (e.g., CVE-2021-44228 is the Log4Shell vulnerability). Each CVE is scored using CVSS (Common Vulnerability Scoring System) v3.1 a 0-10 scale: Critical (9.0-10.0), High (7.0-8.9), Medium (4.0-6.9), Low (0.1-3.9). The score is calculated from: Attack Vector (Network/Adjacent/Local/Physical), Attack Complexity (Low/High), Privileges Required (None/Low/High), User Interaction (None/Required), and impact on Confidentiality, Integrity, and Availability (None/Low/High). The CVSS base score measures severity in isolation a Critical-score CVE on a development system with no network access is less urgent than a Medium-score CVE on an internet-facing authentication endpoint. Clickmasters adds business context to CVSS scores asset criticality, exploitability, and reachability to produce a prioritised remediation list rather than a raw CVSS ranking.",
     },
     {
       question: "How many vulnerabilities does a typical assessment find?",
       answer:
-        "The number of findings varies widely based on the organisation's security maturity. A first-time vulnerability assessment of a typical B2B SaaS product typically finds: 0-5 Critical findings (serious misconfigurations or unpatched critical CVEs the immediate-action list), 5-20 High findings (significant vulnerabilities requiring prompt remediation), 20-50 Medium findings (important but less urgent typically scheduled for the next release cycle), and 50-200+ Low findings (informational good practices not followed, minor configuration improvements). The goal is not zero findings every system has some vulnerabilities. The goal is: no Critical findings, High findings remediated within 30 days, and a systematic process for managing Medium and Low findings over time. ClickMasters' report prioritises findings by risk rather than raw count a client with 3 Critical findings needs to fix 3 things urgently; a client with 150 Low findings has a well-maintained security posture.",
+        "The number of findings varies widely based on the organisation's security maturity. A first-time vulnerability assessment of a typical B2B SaaS product typically finds: 0-5 Critical findings (serious misconfigurations or unpatched critical CVEs the immediate-action list), 5-20 High findings (significant vulnerabilities requiring prompt remediation), 20-50 Medium findings (important but less urgent typically scheduled for the next release cycle), and 50-200+ Low findings (informational good practices not followed, minor configuration improvements). The goal is not zero findings every system has some vulnerabilities. The goal is: no Critical findings, High findings remediated within 30 days, and a systematic process for managing Medium and Low findings over time. Clickmasters' report prioritises findings by risk rather than raw count a client with 3 Critical findings needs to fix 3 things urgently; a client with 150 Low findings has a well-maintained security posture.",
     },
     {
       question:
         "What is reachability analysis and why does it matter for dependency vulnerabilities?",
       answer:
-        "Reachability analysis determines whether the vulnerable code path in a third-party library is actually called by the application distinguishing between 'this library has a CVE' and 'this application uses the vulnerable function in this library'. Example: a CVE in a logging library's XML parsing functionality is Critical (CVSS 9.8). But if the application only uses the library for console output and never calls the XML parsing function, the CVE is not reachable the application is not vulnerable. Without reachability analysis, a standard dependency scan of a modern Node.js or Python application can produce hundreds of CVEs most of which are in code paths the application never uses. Snyk and GitHub's Dependabot implement reachability analysis for Node.js applications significantly reducing the number of findings that require immediate action. ClickMasters uses reachability analysis in all dependency audits to produce an actionable prioritised list.",
+        "Reachability analysis determines whether the vulnerable code path in a third-party library is actually called by the application distinguishing between 'this library has a CVE' and 'this application uses the vulnerable function in this library'. Example: a CVE in a logging library's XML parsing functionality is Critical (CVSS 9.8). But if the application only uses the library for console output and never calls the XML parsing function, the CVE is not reachable the application is not vulnerable. Without reachability analysis, a standard dependency scan of a modern Node.js or Python application can produce hundreds of CVEs most of which are in code paths the application never uses. Snyk and GitHub's Dependabot implement reachability analysis for Node.js applications significantly reducing the number of findings that require immediate action. Clickmasters uses reachability analysis in all dependency audits to produce an actionable prioritised list.",
     },
     {
       question: "How do you prioritise which vulnerabilities to fix first?",
       answer:
-        "Vulnerability prioritisation uses a risk-based framework rather than raw CVSS score. The prioritisation factors: Exploitability in the wild (is this CVE being actively exploited? CISA KEV Known Exploited Vulnerabilities catalogue lists CVEs with confirmed exploitation; these are the highest priority regardless of CVSS score), Public exploit availability (is a working exploit available in Metasploit or Exploit-DB? reduces the attacker skill required to exploit), Asset criticality (a Critical CVE on a development server is less urgent than a High CVE on the production authentication service), Reachability (is the vulnerable code path actually invoked by the application?), and Remediation effort (a trivial patch that takes 10 minutes is done immediately; a breaking major version upgrade requiring 2 weeks of work is planned and scheduled). ClickMasters delivers a prioritised remediation plan P1 (fix within 24 hours), P2 (fix within 7 days), P3 (fix within 30 days), P4 (fix within 90 days) based on this framework.",
+        "Vulnerability prioritisation uses a risk-based framework rather than raw CVSS score. The prioritisation factors: Exploitability in the wild (is this CVE being actively exploited? CISA KEV Known Exploited Vulnerabilities catalogue lists CVEs with confirmed exploitation; these are the highest priority regardless of CVSS score), Public exploit availability (is a working exploit available in Metasploit or Exploit-DB? reduces the attacker skill required to exploit), Asset criticality (a Critical CVE on a development server is less urgent than a High CVE on the production authentication service), Reachability (is the vulnerable code path actually invoked by the application?), and Remediation effort (a trivial patch that takes 10 minutes is done immediately; a breaking major version upgrade requiring 2 weeks of work is planned and scheduled). Clickmasters delivers a prioritised remediation plan P1 (fix within 24 hours), P2 (fix within 7 days), P3 (fix within 30 days), P4 (fix within 90 days) based on this framework.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters' vulnerability assessment found 4 critical CVEs in our containers that we didn't know about. The P1/P2/P3/P4 prioritisation framework made it easy for our team to know what to fix first. We went from 0 to full vulnerability management programme in 2 weeks.",
+      "Clickmasters' vulnerability assessment found 4 critical CVEs in our containers that we didn't know about. The P1/P2/P3/P4 prioritisation framework made it easy for our team to know what to fix first. We went from 0 to full vulnerability management programme in 2 weeks.",
     author: "Head of Engineering",
     role: "Container-Based SaaS",
   },
@@ -25763,10 +25763,10 @@ const complianceRiskManagementOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Compliance & Risk Management Services | SOC 2, GDPR & ISO 27001 | ClickMasters",
+    "Compliance & Risk Management Services | SOC 2, GDPR & ISO 27001 | Clickmasters",
   metaDescription:
-    "ClickMasters helps B2B companies achieve SOC 2 Type II, GDPR, ISO 27001, and HIPAA compliance gap assessment, policy documentation, and technical control implementation.",
-  lead: "ClickMasters helps B2B companies across the USA, Europe, Canada, and Australia achieve the security compliance that enterprise customers require before signing. SOC 2 Type II readiness gap assessment, policy documentation, technical controls, and audit preparation. GDPR compliance data mapping, privacy by design, DPIAs, and Article 32 security measures. ISO 27001 ISMS design and Annex A control implementation. HIPAA security rule compliance for healthcare technology. Compliance automation with Vanta or Drata to reduce ongoing compliance overhead.",
+    "Clickmasters helps B2B companies achieve SOC 2 Type II, GDPR, ISO 27001, and HIPAA compliance gap assessment, policy documentation, and technical control implementation.",
+  lead: "Clickmasters helps B2B companies across the USA, Europe, Canada, and Australia achieve the security compliance that enterprise customers require before signing. SOC 2 Type II readiness gap assessment, policy documentation, technical controls, and audit preparation. GDPR compliance data mapping, privacy by design, DPIAs, and Article 32 security measures. ISO 27001 ISMS design and Annex A control implementation. HIPAA security rule compliance for healthcare technology. Compliance automation with Vanta or Drata to reduce ongoing compliance overhead.",
   highlights: [
     "SOC 2 Type II Readiness",
     "GDPR Compliance",
@@ -25805,7 +25805,7 @@ const complianceRiskManagementOverride = {
     {
       title: "Compliance Automation (Vanta / Drata)",
       description:
-        "Reduce ongoing compliance overhead: Vanta (connects to AWS, GitHub, GSuite, Okta, Jira, Slack continuously monitors 100+ automated checks, sends alerts for failing controls, generates readiness dashboard, integrates with preferred auditors), Drata (similar integration coverage, continuous monitoring, evidence automation, SOC 2 Type II, ISO 27001, HIPAA, GDPR in one platform). ClickMasters configures platform, connects integrations, establishes failing control remediation workflow, trains internal team to maintain it.",
+        "Reduce ongoing compliance overhead: Vanta (connects to AWS, GitHub, GSuite, Okta, Jira, Slack continuously monitors 100+ automated checks, sends alerts for failing controls, generates readiness dashboard, integrates with preferred auditors), Drata (similar integration coverage, continuous monitoring, evidence automation, SOC 2 Type II, ISO 27001, HIPAA, GDPR in one platform). Clickmasters configures platform, connects integrations, establishes failing control remediation workflow, trains internal team to maintain it.",
     },
   ],
   differentiators: [
@@ -25996,7 +25996,7 @@ const complianceRiskManagementOverride = {
     {
       question: "How long does it take to get SOC 2 Type II certified?",
       answer:
-        "SOC 2 Type II certification has two stages: readiness (implementing the required controls) and audit (the CPA firm observes controls operating over the observation period). Readiness takes 3-6 months for most B2B SaaS companies starting from a typical security posture policies must be written, technical controls implemented (MFA, endpoint management, vulnerability scanning, backup testing), and evidence collection processes established. The audit observation period is 3-12 months (the longer the observation period, the more credible the report most companies choose 6 months). The full timeline from starting readiness to a clean Type II report: 9-18 months for most companies. A SOC 2 Type I (point-in-time no observation period) can be obtained in 3-6 months and serves as a stepping stone while the observation period accumulates for Type II. ClickMasters accelerates the readiness phase with compliance automation (Vanta/Drata) and pre-built policy templates.",
+        "SOC 2 Type II certification has two stages: readiness (implementing the required controls) and audit (the CPA firm observes controls operating over the observation period). Readiness takes 3-6 months for most B2B SaaS companies starting from a typical security posture policies must be written, technical controls implemented (MFA, endpoint management, vulnerability scanning, backup testing), and evidence collection processes established. The audit observation period is 3-12 months (the longer the observation period, the more credible the report most companies choose 6 months). The full timeline from starting readiness to a clean Type II report: 9-18 months for most companies. A SOC 2 Type I (point-in-time no observation period) can be obtained in 3-6 months and serves as a stepping stone while the observation period accumulates for Type II. Clickmasters accelerates the readiness phase with compliance automation (Vanta/Drata) and pre-built policy templates.",
     },
     {
       question: "What is the difference between SOC 2 Type I and Type II?",
@@ -26006,12 +26006,12 @@ const complianceRiskManagementOverride = {
     {
       question: "What is GDPR and what are the technical requirements?",
       answer:
-        "GDPR (General Data Protection Regulation) is the EU's comprehensive data protection law, applying to any organisation processing personal data of EU residents regardless of where the organisation is based. The technical requirements (Article 32 security of processing): pseudonymisation and encryption of personal data, ability to ensure ongoing confidentiality, integrity, availability, and resilience of processing systems, ability to restore availability of personal data in a timely manner after an incident (backups and recovery), and regular testing, assessing, and evaluation of the effectiveness of security measures. Practically: encryption at rest and in transit, access controls with principle of least privilege, activity logging and audit trails, vulnerability scanning, penetration testing, backup and recovery procedures. The most common GDPR fines are for: inadequate security measures (leading to data breaches), lack of lawful basis for processing, and failure to respond to data subject rights requests within 30 days. ClickMasters implements the technical security measures of GDPR Article 32 and supports the non-technical requirements (data mapping, privacy notices, DPAs) with documentation templates and process design.",
+        "GDPR (General Data Protection Regulation) is the EU's comprehensive data protection law, applying to any organisation processing personal data of EU residents regardless of where the organisation is based. The technical requirements (Article 32 security of processing): pseudonymisation and encryption of personal data, ability to ensure ongoing confidentiality, integrity, availability, and resilience of processing systems, ability to restore availability of personal data in a timely manner after an incident (backups and recovery), and regular testing, assessing, and evaluation of the effectiveness of security measures. Practically: encryption at rest and in transit, access controls with principle of least privilege, activity logging and audit trails, vulnerability scanning, penetration testing, backup and recovery procedures. The most common GDPR fines are for: inadequate security measures (leading to data breaches), lack of lawful basis for processing, and failure to respond to data subject rights requests within 30 days. Clickmasters implements the technical security measures of GDPR Article 32 and supports the non-technical requirements (data mapping, privacy notices, DPAs) with documentation templates and process design.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters guided us through SOC 2 Type II certification. They did the gap assessment, wrote all the policies, set up Vanta, and coordinated with our auditor. We got a clean report in 8 months 3 months faster than we thought possible.",
+      "Clickmasters guided us through SOC 2 Type II certification. They did the gap assessment, wrote all the policies, set up Vanta, and coordinated with our auditor. We got a clean report in 8 months 3 months faster than we thought possible.",
     author: "CEO",
     role: "B2B SaaS Company",
   },
@@ -26089,10 +26089,10 @@ const applicationSecurityOverride = {
   heroImage:
     "/images/photo-1550751827-4bd374c3f58b.jpg",
   metaTitle:
-    "Application Security Services | Secure Software Development | ClickMasters",
+    "Application Security Services | Secure Software Development | Clickmasters",
   metaDescription:
-    "ClickMasters embeds security into application development secure coding practices, threat modelling, SAST, authentication hardening, and OWASP mitigations for B2B companies worldwide.",
-  lead: "ClickMasters embeds application security into B2B software for companies across the USA, Europe, Canada, and Australia. Threat modelling that identifies security requirements before design decisions are made. Parameterised queries that prevent SQL injection at the ORM and raw SQL layer. Authentication hardening bcrypt/Argon2 password hashing, JWT best practices, OAuth 2.0 PKCE. Content Security Policy implementation. Rate limiting and input validation. The specific security fixes your audit or pen test identified.",
+    "Clickmasters embeds security into application development secure coding practices, threat modelling, SAST, authentication hardening, and OWASP mitigations for B2B companies worldwide.",
+  lead: "Clickmasters embeds application security into B2B software for companies across the USA, Europe, Canada, and Australia. Threat modelling that identifies security requirements before design decisions are made. Parameterised queries that prevent SQL injection at the ORM and raw SQL layer. Authentication hardening bcrypt/Argon2 password hashing, JWT best practices, OAuth 2.0 PKCE. Content Security Policy implementation. Rate limiting and input validation. The specific security fixes your audit or pen test identified.",
   highlights: [
     "Threat Modelling (STRIDE)",
     "SQL Injection Prevention",
@@ -26131,7 +26131,7 @@ const applicationSecurityOverride = {
     {
       title: "Security Remediation Engineering",
       description:
-        "Fix the specific vulnerabilities identified in a security audit or pen test: vulnerability triage (review audit findings with engineering team, clarify reproduction steps, assess fix complexity), fix implementation (ClickMasters engineers implement the fixes not advisory-only), verification (reproduce vulnerability before fixing, confirm not reproducible after fixing), regression prevention (add security test for each fixed vulnerability the test fails if vulnerability is reintroduced), re-test (for pen test findings coordinate re-testing by original provider or conduct application-level re-testing internally). Deliverable: pull requests for all fixes, verified remediation, closing report for each finding.",
+        "Fix the specific vulnerabilities identified in a security audit or pen test: vulnerability triage (review audit findings with engineering team, clarify reproduction steps, assess fix complexity), fix implementation (Clickmasters engineers implement the fixes not advisory-only), verification (reproduce vulnerability before fixing, confirm not reproducible after fixing), regression prevention (add security test for each fixed vulnerability the test fails if vulnerability is reintroduced), re-test (for pen test findings coordinate re-testing by original provider or conduct application-level re-testing internally). Deliverable: pull requests for all fixes, verified remediation, closing report for each finding.",
     },
   ],
   differentiators: [
@@ -26340,7 +26340,7 @@ const applicationSecurityOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters threat modelled our payment flow and found a privilege escalation path we hadn't considered implemented MFA and rate limiting. The fix took 3 days. Discovering that post-deployment would have been a breach notification.",
+      "Clickmasters threat modelled our payment flow and found a privilege escalation path we hadn't considered implemented MFA and rate limiting. The fix took 3 days. Discovering that post-deployment would have been a breach notification.",
     author: "CTO",
     role: "SaaS Payment Platform",
   },
@@ -26422,8 +26422,8 @@ const manualQaTestingOverride = {
   heroImage:
     "/images/photo-1516321318423-f06f85e504b3.jpg",
   metaDescription:
-    "ClickMasters delivers manual testing exploratory testing, UAT, regression testing, and usability testing for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers manual testing for B2B companies across the USA, Europe, Canada, and Australia. Exploratory testing that finds the bugs test cases never thought to look for. UAT that validates the product from the user's perspective before release. Regression testing that confirms existing functionality is unbroken after a change. Test case documentation that makes the next release faster. Cross-browser and cross-device testing. And the detailed bug reports with reproduction steps that engineering teams can act on immediately.",
+    "Clickmasters delivers manual testing exploratory testing, UAT, regression testing, and usability testing for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers manual testing for B2B companies across the USA, Europe, Canada, and Australia. Exploratory testing that finds the bugs test cases never thought to look for. UAT that validates the product from the user's perspective before release. Regression testing that confirms existing functionality is unbroken after a change. Test case documentation that makes the next release faster. Cross-browser and cross-device testing. And the detailed bug reports with reproduction steps that engineering teams can act on immediately.",
   highlights: [
     "Exploratory Testing",
     "User Acceptance Testing (UAT)",
@@ -26620,17 +26620,17 @@ const manualQaTestingOverride = {
   sections: [
     {
       heading: "Exploratory Testing SBET Methodology",
-      body: 'Exploratory testing is simultaneous test design and execution the tester explores the application without a fixed script, using skill, intuition, and structured heuristics to find defects. It is distinct from scripted testing (executing pre-written test cases) and from unstructured ad-hoc testing (clicking around without a methodology). Exploratory testing is valuable because it finds the bugs that test cases do not anticipate: unexpected interactions between features (what happens if a user starts a checkout and simultaneously changes their account email?), edge cases from real usage patterns (what happens when a user pastes a 10,000-character string into a field designed for 50 characters?), and usability issues that are not defects but are still user problems (the confirmation dialog does not explain what "Delete" is deleting technically correct but confusing). Automated tests can only find regressions in behaviour that was previously tested. Exploratory testing finds problems in behaviour that was never explicitly tested. ClickMasters uses Session-Based Exploratory Testing (SBET): define a test charter, set a time box (60-90 minutes), test with structured heuristics (SFDPOT: Structure, Function, Data, Platform, Operations, Time), and document findings.',
+      body: 'Exploratory testing is simultaneous test design and execution the tester explores the application without a fixed script, using skill, intuition, and structured heuristics to find defects. It is distinct from scripted testing (executing pre-written test cases) and from unstructured ad-hoc testing (clicking around without a methodology). Exploratory testing is valuable because it finds the bugs that test cases do not anticipate: unexpected interactions between features (what happens if a user starts a checkout and simultaneously changes their account email?), edge cases from real usage patterns (what happens when a user pastes a 10,000-character string into a field designed for 50 characters?), and usability issues that are not defects but are still user problems (the confirmation dialog does not explain what "Delete" is deleting technically correct but confusing). Automated tests can only find regressions in behaviour that was previously tested. Exploratory testing finds problems in behaviour that was never explicitly tested. Clickmasters uses Session-Based Exploratory Testing (SBET): define a test charter, set a time box (60-90 minutes), test with structured heuristics (SFDPOT: Structure, Function, Data, Platform, Operations, Time), and document findings.',
       items: [],
     },
     {
       heading: "Manual vs Automated Testing When to Use Each",
-      body: "Manual and automated testing serve different purposes and both are necessary in a mature QA programme. Automated testing excels at: regression detection (quickly verify that 500 previously working scenarios still work after a change a human cannot do this efficiently), deterministic verification (does the API return the correct status code and response body? does the database contain the correct data after this operation?), and frequent execution (automated tests run on every commit catching regressions at the moment they are introduced). Manual testing excels at: exploratory discovery (finding unexpected bugs that no test case anticipated), usability assessment (is this feature confusing to use? does the error message make sense?), visual and UX review (does this design look and feel right?), and one-off or complex scenarios that would be expensive to automate. ClickMasters recommends a combined approach: automated tests for regression and verification, manual testing for exploratory discovery and pre-release validation.",
+      body: "Manual and automated testing serve different purposes and both are necessary in a mature QA programme. Automated testing excels at: regression detection (quickly verify that 500 previously working scenarios still work after a change a human cannot do this efficiently), deterministic verification (does the API return the correct status code and response body? does the database contain the correct data after this operation?), and frequent execution (automated tests run on every commit catching regressions at the moment they are introduced). Manual testing excels at: exploratory discovery (finding unexpected bugs that no test case anticipated), usability assessment (is this feature confusing to use? does the error message make sense?), visual and UX review (does this design look and feel right?), and one-off or complex scenarios that would be expensive to automate. Clickmasters recommends a combined approach: automated tests for regression and verification, manual testing for exploratory discovery and pre-release validation.",
       items: [],
     },
     {
       heading: "Bug Report Standards What Every Report Should Include",
-      body: 'A high-quality bug report enables an engineer to reproduce the issue immediately and understand its impact. A complete bug report contains: title (concise, specific "Checkout button disabled after selecting a coupon code on Firefox 119" not "Checkout broken"), severity (Critical/High/Medium/Low how badly does this bug affect the user?), priority (P1/P2/P3 how urgently should it be fixed?), steps to reproduce (numbered steps from a clean state precise enough that anyone following them reproduces the bug every time), expected result (what should happen?), actual result (what actually happens?), environment (browser name and version, operating system, screen resolution, test account used), and evidence (screenshot or screen recording makes the bug immediately visible without requiring the engineer to reproduce it first). ClickMasters QA engineers write bug reports that engineering teams act on without follow-up questions.',
+      body: 'A high-quality bug report enables an engineer to reproduce the issue immediately and understand its impact. A complete bug report contains: title (concise, specific "Checkout button disabled after selecting a coupon code on Firefox 119" not "Checkout broken"), severity (Critical/High/Medium/Low how badly does this bug affect the user?), priority (P1/P2/P3 how urgently should it be fixed?), steps to reproduce (numbered steps from a clean state precise enough that anyone following them reproduces the bug every time), expected result (what should happen?), actual result (what actually happens?), environment (browser name and version, operating system, screen resolution, test account used), and evidence (screenshot or screen recording makes the bug immediately visible without requiring the engineer to reproduce it first). Clickmasters QA engineers write bug reports that engineering teams act on without follow-up questions.',
       items: [],
     },
   ],
@@ -26643,12 +26643,12 @@ const manualQaTestingOverride = {
     {
       question: "When should I use manual testing vs automated testing?",
       answer:
-        "Manual and automated testing serve different purposes and both are necessary in a mature QA programme. Automated testing excels at: regression detection (quickly verify that 500 previously working scenarios still work after a change a human cannot do this efficiently), deterministic verification (does the API return the correct status code and response body? does the database contain the correct data after this operation?), and frequent execution (automated tests run on every commit catching regressions at the moment they are introduced). Manual testing excels at: exploratory discovery (finding unexpected bugs that no test case anticipated), usability assessment (is this feature confusing to use? does the error message make sense?), visual and UX review (does this design look and feel right?), and one-off or complex scenarios that would be expensive to automate. ClickMasters recommends a combined approach: automated tests for regression and verification, manual testing for exploratory discovery and pre-release validation.",
+        "Manual and automated testing serve different purposes and both are necessary in a mature QA programme. Automated testing excels at: regression detection (quickly verify that 500 previously working scenarios still work after a change a human cannot do this efficiently), deterministic verification (does the API return the correct status code and response body? does the database contain the correct data after this operation?), and frequent execution (automated tests run on every commit catching regressions at the moment they are introduced). Manual testing excels at: exploratory discovery (finding unexpected bugs that no test case anticipated), usability assessment (is this feature confusing to use? does the error message make sense?), visual and UX review (does this design look and feel right?), and one-off or complex scenarios that would be expensive to automate. Clickmasters recommends a combined approach: automated tests for regression and verification, manual testing for exploratory discovery and pre-release validation.",
     },
     {
       question: "What information should a good bug report contain?",
       answer:
-        'A high-quality bug report enables an engineer to reproduce the issue immediately and understand its impact. A complete bug report contains: title (concise, specific "Checkout button disabled after selecting a coupon code on Firefox 119" not "Checkout broken"), severity (Critical/High/Medium/Low how badly does this bug affect the user?), priority (P1/P2/P3 how urgently should it be fixed?), steps to reproduce (numbered steps from a clean state precise enough that anyone following them reproduces the bug every time), expected result (what should happen?), actual result (what actually happens?), environment (browser name and version, operating system, screen resolution, test account used), and evidence (screenshot or screen recording makes the bug immediately visible without requiring the engineer to reproduce it first). ClickMasters QA engineers write bug reports that engineering teams act on without follow-up questions.',
+        'A high-quality bug report enables an engineer to reproduce the issue immediately and understand its impact. A complete bug report contains: title (concise, specific "Checkout button disabled after selecting a coupon code on Firefox 119" not "Checkout broken"), severity (Critical/High/Medium/Low how badly does this bug affect the user?), priority (P1/P2/P3 how urgently should it be fixed?), steps to reproduce (numbered steps from a clean state precise enough that anyone following them reproduces the bug every time), expected result (what should happen?), actual result (what actually happens?), environment (browser name and version, operating system, screen resolution, test account used), and evidence (screenshot or screen recording makes the bug immediately visible without requiring the engineer to reproduce it first). Clickmasters QA engineers write bug reports that engineering teams act on without follow-up questions.',
     },
     {
       question: "What is UAT and who should be involved?",
@@ -26658,7 +26658,7 @@ const manualQaTestingOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters' exploratory testing found 5 critical bugs in our checkout flow that our test suite missed. The SBET methodology was structured, auditable, and the bug reports were so clear our engineering team fixed everything in 3 days.",
+      "Clickmasters' exploratory testing found 5 critical bugs in our checkout flow that our test suite missed. The SBET methodology was structured, auditable, and the bug reports were so clear our engineering team fixed everything in 3 days.",
     author: "Product Manager",
     role: "E-commerce Platform",
   },
@@ -26731,10 +26731,10 @@ const performanceTestingOverride = {
   heroImage:
     "/images/photo-1516321318423-f06f85e504b3.jpg",
   metaTitle:
-    "Performance Testing Services | API & Web Performance Testing | ClickMasters",
+    "Performance Testing Services | API & Web Performance Testing | Clickmasters",
   metaDescription:
-    "ClickMasters conducts performance testing response time benchmarking, Core Web Vitals testing, database query profiling, and frontend rendering performance for B2B companies worldwide.",
-  lead: "ClickMasters conducts performance testing for B2B companies across the USA, Europe, Canada, and Australia. API response time benchmarking with k6 establish P50/P95/P99 baselines and validate SLOs. Core Web Vitals testing with Lighthouse CI LCP, CLS, and INP against Google performance thresholds. Database query profiling with EXPLAIN ANALYZE identify the queries adding 2 seconds to your API responses. Frontend rendering profiling in Chrome DevTools identify long tasks, layout thrash, and render-blocking scripts.",
+    "Clickmasters conducts performance testing response time benchmarking, Core Web Vitals testing, database query profiling, and frontend rendering performance for B2B companies worldwide.",
+  lead: "Clickmasters conducts performance testing for B2B companies across the USA, Europe, Canada, and Australia. API response time benchmarking with k6 establish P50/P95/P99 baselines and validate SLOs. Core Web Vitals testing with Lighthouse CI LCP, CLS, and INP against Google performance thresholds. Database query profiling with EXPLAIN ANALYZE identify the queries adding 2 seconds to your API responses. Frontend rendering profiling in Chrome DevTools identify long tasks, layout thrash, and render-blocking scripts.",
   highlights: [
     "k6 API Performance Benchmarks",
     "Lighthouse CI Core Web Vitals",
@@ -26935,12 +26935,12 @@ const performanceTestingOverride = {
   sections: [
     {
       heading: "Latency Percentiles P50, P95, P99",
-      body: 'Latency percentiles describe the distribution of response times across all requests more informative than average latency. P50 (median) is the response time that 50% of requests complete within a good measure of "typical" experience. P95 is the response time that 95% of requests complete within a measure of the experience for most users, including those with slightly slower connections or complex queries. P99 is the response time that 99% of requests complete within captures outliers that are typically caused by garbage collection pauses, lock contention, cache misses, or cold starts. Average latency is misleading: a few very slow requests can pull the average up significantly without appearing in the P50, while the P99 reveals that 1% of your users are experiencing 10x slower responses than the median. ClickMasters defines performance SLOs as percentile targets "P95 < 200ms, P99 < 500ms" which are more meaningful than "average response time < 100ms".',
+      body: 'Latency percentiles describe the distribution of response times across all requests more informative than average latency. P50 (median) is the response time that 50% of requests complete within a good measure of "typical" experience. P95 is the response time that 95% of requests complete within a measure of the experience for most users, including those with slightly slower connections or complex queries. P99 is the response time that 99% of requests complete within captures outliers that are typically caused by garbage collection pauses, lock contention, cache misses, or cold starts. Average latency is misleading: a few very slow requests can pull the average up significantly without appearing in the P50, while the P99 reveals that 1% of your users are experiencing 10x slower responses than the median. Clickmasters defines performance SLOs as percentile targets "P95 < 200ms, P99 < 500ms" which are more meaningful than "average response time < 100ms".',
       items: [],
     },
     {
       heading: "Lighthouse CI Automating Core Web Vitals",
-      body: "Lighthouse CI is the CI/CD-compatible version of Google's Lighthouse performance auditing tool. Where standard Lighthouse is a one-time manual audit in Chrome DevTools, Lighthouse CI: runs automatically in GitHub Actions on every pull request or deployment, compares the performance score against a configured baseline or the previous commit, posts a comment on the PR with the Lighthouse report (showing score changes and metric changes), and can block the PR merge or deployment if performance degrades below a threshold. Integration: the `@lhci/cli` package is installed, a `lighthouserc.js` configuration file defines URLs to test and assertions (minimum scores, maximum metric values), and a GitHub Actions step runs `lhci autorun` after the application is deployed to a preview environment. ClickMasters configures Lighthouse CI with realistic assertions typically performance score \xE2\u2030\xA5 90, LCP \xE2\u2030\xA4 2.5s, CLS \xE2\u2030\xA4 0.1 as a mandatory quality gate before production deployment.",
+      body: "Lighthouse CI is the CI/CD-compatible version of Google's Lighthouse performance auditing tool. Where standard Lighthouse is a one-time manual audit in Chrome DevTools, Lighthouse CI: runs automatically in GitHub Actions on every pull request or deployment, compares the performance score against a configured baseline or the previous commit, posts a comment on the PR with the Lighthouse report (showing score changes and metric changes), and can block the PR merge or deployment if performance degrades below a threshold. Integration: the `@lhci/cli` package is installed, a `lighthouserc.js` configuration file defines URLs to test and assertions (minimum scores, maximum metric values), and a GitHub Actions step runs `lhci autorun` after the application is deployed to a preview environment. Clickmasters configures Lighthouse CI with realistic assertions typically performance score \xE2\u2030\xA5 90, LCP \xE2\u2030\xA4 2.5s, CLS \xE2\u2030\xA4 0.1 as a mandatory quality gate before production deployment.",
       items: [],
     },
     {
@@ -26954,13 +26954,13 @@ const performanceTestingOverride = {
       question:
         "What are P50, P95, and P99 latency percentiles and why do they matter?",
       answer:
-        'Latency percentiles describe the distribution of response times across all requests more informative than average latency. P50 (median) is the response time that 50% of requests complete within a good measure of "typical" experience. P95 is the response time that 95% of requests complete within a measure of the experience for most users, including those with slightly slower connections or complex queries. P99 is the response time that 99% of requests complete within captures outliers that are typically caused by garbage collection pauses, lock contention, cache misses, or cold starts. Average latency is misleading: a few very slow requests can pull the average up significantly without appearing in the P50, while the P99 reveals that 1% of your users are experiencing 10x slower responses than the median. ClickMasters defines performance SLOs as percentile targets "P95 < 200ms, P99 < 500ms" which are more meaningful than "average response time < 100ms".',
+        'Latency percentiles describe the distribution of response times across all requests more informative than average latency. P50 (median) is the response time that 50% of requests complete within a good measure of "typical" experience. P95 is the response time that 95% of requests complete within a measure of the experience for most users, including those with slightly slower connections or complex queries. P99 is the response time that 99% of requests complete within captures outliers that are typically caused by garbage collection pauses, lock contention, cache misses, or cold starts. Average latency is misleading: a few very slow requests can pull the average up significantly without appearing in the P50, while the P99 reveals that 1% of your users are experiencing 10x slower responses than the median. Clickmasters defines performance SLOs as percentile targets "P95 < 200ms, P99 < 500ms" which are more meaningful than "average response time < 100ms".',
     },
     {
       question:
         "What is Lighthouse CI and how does it integrate with a CI/CD pipeline?",
       answer:
-        "Lighthouse CI is the CI/CD-compatible version of Google's Lighthouse performance auditing tool. Where standard Lighthouse is a one-time manual audit in Chrome DevTools, Lighthouse CI: runs automatically in GitHub Actions on every pull request or deployment, compares the performance score against a configured baseline or the previous commit, posts a comment on the PR with the Lighthouse report (showing score changes and metric changes), and can block the PR merge or deployment if performance degrades below a threshold. Integration: the `@lhci/cli` package is installed, a `lighthouserc.js` configuration file defines URLs to test and assertions (minimum scores, maximum metric values), and a GitHub Actions step runs `lhci autorun` after the application is deployed to a preview environment. ClickMasters configures Lighthouse CI with realistic assertions typically performance score \xE2\u2030\xA5 90, LCP \xE2\u2030\xA4 2.5s, CLS \xE2\u2030\xA4 0.1 as a mandatory quality gate before production deployment.",
+        "Lighthouse CI is the CI/CD-compatible version of Google's Lighthouse performance auditing tool. Where standard Lighthouse is a one-time manual audit in Chrome DevTools, Lighthouse CI: runs automatically in GitHub Actions on every pull request or deployment, compares the performance score against a configured baseline or the previous commit, posts a comment on the PR with the Lighthouse report (showing score changes and metric changes), and can block the PR merge or deployment if performance degrades below a threshold. Integration: the `@lhci/cli` package is installed, a `lighthouserc.js` configuration file defines URLs to test and assertions (minimum scores, maximum metric values), and a GitHub Actions step runs `lhci autorun` after the application is deployed to a preview environment. Clickmasters configures Lighthouse CI with realistic assertions typically performance score \xE2\u2030\xA5 90, LCP \xE2\u2030\xA4 2.5s, CLS \xE2\u2030\xA4 0.1 as a mandatory quality gate before production deployment.",
     },
     {
       question:
@@ -26971,12 +26971,12 @@ const performanceTestingOverride = {
     {
       question: "How do you identify the cause of a slow API response?",
       answer:
-        "Diagnosing a slow API response requires measuring where time is spent in the request lifecycle. ClickMasters uses a layered approach: total response time measured by k6 (the end-to-end time from request send to response received the user-visible latency), server-side timing breakdown (instrumented with OpenTelemetry spans measure time spent in each middleware, each database query, each external API call, each computation), database query timing (pg_stat_statements identify the slowest queries in the call path, run EXPLAIN ANALYZE on each), external API timing (if the endpoint calls a third-party API, measure the round-trip time identify if a slow downstream service is the bottleneck), and application CPU profiling (Node.js inspector or clinic.js if response time is high but database queries are fast, CPU-bound computation in the application code is the bottleneck). The root cause is almost always in one of three places: an unindexed database query (a sequential scan on a large table), an N+1 query pattern, or a slow external API call that should be asynchronous.",
+        "Diagnosing a slow API response requires measuring where time is spent in the request lifecycle. Clickmasters uses a layered approach: total response time measured by k6 (the end-to-end time from request send to response received the user-visible latency), server-side timing breakdown (instrumented with OpenTelemetry spans measure time spent in each middleware, each database query, each external API call, each computation), database query timing (pg_stat_statements identify the slowest queries in the call path, run EXPLAIN ANALYZE on each), external API timing (if the endpoint calls a third-party API, measure the round-trip time identify if a slow downstream service is the bottleneck), and application CPU profiling (Node.js inspector or clinic.js if response time is high but database queries are fast, CPU-bound computation in the application code is the bottleneck). The root cause is almost always in one of three places: an unindexed database query (a sequential scan on a large table), an N+1 query pattern, or a slow external API call that should be asynchronous.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters set up our performance testing programme with k6 and Lighthouse CI. We caught a 300ms latency regression before it reached production the root cause was an unindexed database query. Our P95 API latency has stayed under 200ms for 6 months.",
+      "Clickmasters set up our performance testing programme with k6 and Lighthouse CI. We caught a 300ms latency regression before it reached production the root cause was an unindexed database query. Our P95 API latency has stayed under 200ms for 6 months.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -27054,10 +27054,10 @@ const maintenanceSupportOverride = {
   heroImage:
     "/images/photo-1521737711867-e3b97375f902.jpg",
   metaTitle:
-    "Software Maintenance & Support Services | Ongoing Development | ClickMasters",
+    "Software Maintenance & Support Services | Ongoing Development | Clickmasters",
   metaDescription:
-    "ClickMasters delivers software maintenance and support bug fixes, dependency updates, monitoring, and ongoing feature development for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers ongoing software maintenance and support for B2B companies across the USA, Europe, Canada, and Australia. Bug fixes with defined SLA response times. Dependency updates that keep your stack secure and current. Performance monitoring with proactive alerting. Feature enhancements from a team that already knows your codebase. And the peace of mind that comes from having a dedicated engineering partner not starting from scratch with a new team every time something breaks.",
+    "Clickmasters delivers software maintenance and support bug fixes, dependency updates, monitoring, and ongoing feature development for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers ongoing software maintenance and support for B2B companies across the USA, Europe, Canada, and Australia. Bug fixes with defined SLA response times. Dependency updates that keep your stack secure and current. Performance monitoring with proactive alerting. Feature enhancements from a team that already knows your codebase. And the peace of mind that comes from having a dedicated engineering partner not starting from scratch with a new team every time something breaks.",
   highlights: [
     "Bug Fixes (SLA-backed)",
     "Dependency Updates",
@@ -27067,9 +27067,9 @@ const maintenanceSupportOverride = {
     "Monthly Reporting",
   ],
   // marketStats: [
-  //   { label: 'Service Level Agreement ClickMasters defines response time commitments per severity: Critical 2hr, High 8hr, Medium 24hr, Low 5 days', value: 'SLA' },
+  //   { label: 'Service Level Agreement Clickmasters defines response time commitments per severity: Critical 2hr, High 8hr, Medium 24hr, Low 5 days', value: 'SLA' },
   //   { label: 'Predictable monthly retainer budget for engineering support without the unpredictability of ad-hoc billing', value: 'Monthly' },
-  //   { label: 'Typical knowledge transfer time for ClickMasters to onboard onto an existing codebase and begin productive work', value: '1 week' },
+  //   { label: 'Typical knowledge transfer time for Clickmasters to onboard onto an existing codebase and begin productive work', value: '1 week' },
   //   { label: 'Recruitment cost compared to hiring a full-time engineer for the equivalent of part-time maintenance support', value: '$0' },
   // ],
   servicesCards: [
@@ -27113,7 +27113,7 @@ const maintenanceSupportOverride = {
     {
       feature: "Proactive vs Reactive",
       description:
-        "ClickMasters investigates anomalies proactively not waiting for client to report | Basic: Reactive only",
+        "Clickmasters investigates anomalies proactively not waiting for client to report | Basic: Reactive only",
     },
     {
       feature: "Codebase Onboarding",
@@ -27258,7 +27258,7 @@ const maintenanceSupportOverride = {
     },
     {
       heading: "SLA Tiers Response and Fix Commitments",
-      body: "ClickMasters offers tiered SLA response times for production incidents: Critical (production down, data loss risk, security breach) 2-hour initial response, same-day hotfix target; High (major functionality non-operational, significant user impact, no workaround) 8-hour initial response, 24-hour fix target; Medium (functionality impaired, workaround available, limited user impact) 24-hour initial response, 5-business-day fix target; Low (cosmetic issues, minor functionality gaps, no user impact) 5-business-day response, scheduled for next available sprint. Response time means the time from ticket creation to ClickMasters acknowledging the issue and providing an initial assessment. Fix time targets are for the hotfix deployment permanent root cause fixes may take longer for complex issues. SLAs are documented in the retainer agreement and tracked monthly.",
+      body: "Clickmasters offers tiered SLA response times for production incidents: Critical (production down, data loss risk, security breach) 2-hour initial response, same-day hotfix target; High (major functionality non-operational, significant user impact, no workaround) 8-hour initial response, 24-hour fix target; Medium (functionality impaired, workaround available, limited user impact) 24-hour initial response, 5-business-day fix target; Low (cosmetic issues, minor functionality gaps, no user impact) 5-business-day response, scheduled for next available sprint. Response time means the time from ticket creation to Clickmasters acknowledging the issue and providing an initial assessment. Fix time targets are for the hotfix deployment permanent root cause fixes may take longer for complex issues. SLAs are documented in the retainer agreement and tracked monthly.",
       items: [],
     },
   ],
@@ -27266,13 +27266,13 @@ const maintenanceSupportOverride = {
     {
       question: "What is included in a software maintenance retainer?",
       answer:
-        "A ClickMasters maintenance retainer is a monthly engagement that provides ongoing engineering support for a software product. Included: SLA-backed bug fix response (Critical issues responded to within 2 hours, same-day fix target), proactive production monitoring (Sentry error tracking, CloudWatch infrastructure monitoring, database performance monitoring ClickMasters investigates anomalies proactively, not waiting for the client to report them), scheduled dependency and security updates (monthly or quarterly update sprints keep the dependency stack current and free of known CVEs), feature enhancement hours (agreed number of engineering hours per month for small improvements and enhancements), and a monthly report (bugs resolved, system health metrics, dependency status, upcoming maintenance items). Excluded: major new features or re-architectures (these are scoped as separate project engagements rather than drawn from retainer hours).",
+        "A Clickmasters maintenance retainer is a monthly engagement that provides ongoing engineering support for a software product. Included: SLA-backed bug fix response (Critical issues responded to within 2 hours, same-day fix target), proactive production monitoring (Sentry error tracking, CloudWatch infrastructure monitoring, database performance monitoring Clickmasters investigates anomalies proactively, not waiting for the client to report them), scheduled dependency and security updates (monthly or quarterly update sprints keep the dependency stack current and free of known CVEs), feature enhancement hours (agreed number of engineering hours per month for small improvements and enhancements), and a monthly report (bugs resolved, system health metrics, dependency status, upcoming maintenance items). Excluded: major new features or re-architectures (these are scoped as separate project engagements rather than drawn from retainer hours).",
     },
     {
       question:
-        "How quickly can ClickMasters get up to speed on an existing codebase?",
+        "How quickly can Clickmasters get up to speed on an existing codebase?",
       answer:
-        "For a typical B2B web application (Node.js or Python backend, React frontend, PostgreSQL, deployed on AWS): a ClickMasters engineer can be making meaningful contributions within 1-2 weeks. The onboarding process: code review and architecture documentation (understand the data model, the application architecture, the deployment pipeline, and the monitoring setup 2-3 days), local development environment setup (get the application running locally with seed data 1 day), staging environment access (verify CI/CD pipeline access and deployment process), and first task (a low-risk but real task in the first week validates the engineer's understanding of the codebase and the team's development workflow). ClickMasters includes a codebase onboarding engagement ($3,000-8,000) as the starting point for every new maintenance retainer this creates the runbooks, documentation, and monitoring setup that makes ongoing support efficient.",
+        "For a typical B2B web application (Node.js or Python backend, React frontend, PostgreSQL, deployed on AWS): a Clickmasters engineer can be making meaningful contributions within 1-2 weeks. The onboarding process: code review and architecture documentation (understand the data model, the application architecture, the deployment pipeline, and the monitoring setup 2-3 days), local development environment setup (get the application running locally with seed data 1 day), staging environment access (verify CI/CD pipeline access and deployment process), and first task (a low-risk but real task in the first week validates the engineer's understanding of the codebase and the team's development workflow). Clickmasters includes a codebase onboarding engagement ($3,000-8,000) as the starting point for every new maintenance retainer this creates the runbooks, documentation, and monitoring setup that makes ongoing support efficient.",
     },
     {
       question:
@@ -27281,14 +27281,14 @@ const maintenanceSupportOverride = {
         "A maintenance retainer provides a defined monthly capacity for keeping an existing product healthy bug fixes, dependency updates, monitoring, and small enhancements. The focus is reactive (fix what breaks) and proactive health (prevent things from breaking). A dedicated development team provides a full engineering team focused on building new features and capabilities product roadmap execution, not maintenance. The practical distinction: a maintenance retainer is appropriate for a launched product that needs ongoing care but is not in active feature development. A dedicated development team is appropriate for a product in active development where the business needs ongoing feature velocity. Many clients use both: a dedicated team for new feature development and a maintenance retainer for operational support of deployed features.",
     },
     {
-      question: "What SLAs does ClickMasters offer for production incidents?",
+      question: "What SLAs does Clickmasters offer for production incidents?",
       answer:
-        "ClickMasters offers tiered SLA response times for production incidents: Critical (production down, data loss risk, security breach) 2-hour initial response, same-day hotfix target; High (major functionality non-operational, significant user impact, no workaround) 8-hour initial response, 24-hour fix target; Medium (functionality impaired, workaround available, limited user impact) 24-hour initial response, 5-business-day fix target; Low (cosmetic issues, minor functionality gaps, no user impact) 5-business-day response, scheduled for next available sprint. Response time means the time from ticket creation to ClickMasters acknowledging the issue and providing an initial assessment. Fix time targets are for the hotfix deployment permanent root cause fixes may take longer for complex issues. SLAs are documented in the retainer agreement and tracked monthly.",
+        "Clickmasters offers tiered SLA response times for production incidents: Critical (production down, data loss risk, security breach) 2-hour initial response, same-day hotfix target; High (major functionality non-operational, significant user impact, no workaround) 8-hour initial response, 24-hour fix target; Medium (functionality impaired, workaround available, limited user impact) 24-hour initial response, 5-business-day fix target; Low (cosmetic issues, minor functionality gaps, no user impact) 5-business-day response, scheduled for next available sprint. Response time means the time from ticket creation to Clickmasters acknowledging the issue and providing an initial assessment. Fix time targets are for the hotfix deployment permanent root cause fixes may take longer for complex issues. SLAs are documented in the retainer agreement and tracked monthly.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters' maintenance retainer has been a game-changer. We get SLA-backed bug fixes, monthly dependency updates, and proactive monitoring all for less than the cost of one full-time engineer. Our developers are finally focused on features, not firefighting.",
+      "Clickmasters' maintenance retainer has been a game-changer. We get SLA-backed bug fixes, monthly dependency updates, and proactive monitoring all for less than the cost of one full-time engineer. Our developers are finally focused on features, not firefighting.",
     author: "CTO",
     role: "B2B SaaS Company",
   },
@@ -27355,10 +27355,10 @@ const dedicatedDevelopmentTeamsOverride = {
   serviceName: "Dedicated Development Teams",
   heroImage:
     "/images/photo-1521737711867-e3b97375f902.jpg",
-  metaTitle: "Dedicated Development Team | Hire a Software Team | ClickMasters",
+  metaTitle: "Dedicated Development Team | Hire a Software Team | Clickmasters",
   metaDescription:
-    "ClickMasters provides dedicated development teams full-stack, backend, frontend, and AI engineers that work exclusively on your product for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters provides dedicated development teams for B2B companies across the USA, Europe, Canada, and Australia. A team of 2-8 engineers full-stack, backend, frontend, AI, QA, and DevOps assembled for your specific product and stack. Working exclusively on your roadmap. Integrated into your Jira, Slack, and GitHub workflows. Available within 2 weeks. No recruitment risk, no notice periods, no HR overhead.",
+    "Clickmasters provides dedicated development teams full-stack, backend, frontend, and AI engineers that work exclusively on your product for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters provides dedicated development teams for B2B companies across the USA, Europe, Canada, and Australia. A team of 2-8 engineers full-stack, backend, frontend, AI, QA, and DevOps assembled for your specific product and stack. Working exclusively on your roadmap. Integrated into your Jira, Slack, and GitHub workflows. Available within 2 weeks. No recruitment risk, no notice periods, no HR overhead.",
   highlights: [
     "2-week Start",
     "Stack-Matched Engineers",
@@ -27370,7 +27370,7 @@ const dedicatedDevelopmentTeamsOverride = {
   // marketStats: [
   //   { label: 'Time from engagement agreement to a dedicated team working on your product vs 3-6 months to hire engineers directly', value: '2 wks' },
   //   { label: 'Typical cost saving vs equivalent full-time employee hires in the USA or UK, including recruiter fees, benefits, and overhead', value: '40-60%' },
-  //   { label: 'Dedicated account manager and technical lead for every ClickMasters dedicated team your single point of contact', value: '1' },
+  //   { label: 'Dedicated account manager and technical lead for every Clickmasters dedicated team your single point of contact', value: '1' },
   //   { label: 'Notice period to scale the team up or down no long-term lock-in, flexible to your product\'s changing needs', value: '30 days' },
   // ],
   servicesCards: [
@@ -27573,7 +27573,7 @@ const dedicatedDevelopmentTeamsOverride = {
       body: "",
       items: [
         "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost $3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
-        "Dedicated Team: Who manages ClickMasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
+        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
         "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost $120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract.",
       ],
     },
@@ -27583,28 +27583,28 @@ const dedicatedDevelopmentTeamsOverride = {
       question:
         "What is a dedicated development team and how does it differ from a project-based agency?",
       answer:
-        "A dedicated development team is a group of engineers who work exclusively on your product over an ongoing period integrated into your workflows, tools, and team culture. They are not shared across multiple client projects simultaneously. A project-based agency engages for a defined scope, delivers, and moves on engineers rotate between client projects, context switches frequently, and the engagement ends when the project does. A dedicated team builds deep product context over time: the engineers who started with you in month 1 are still working on your product in month 6 they understand the history of the codebase, the business logic, and the reasoning behind past decisions. This accumulated context makes them significantly faster than a project team that has to re-learn the product for each engagement. ClickMasters dedicated teams operate on monthly retainers with 30-day notice for changes providing the continuity of employment without the commitment and overhead of hiring.",
+        "A dedicated development team is a group of engineers who work exclusively on your product over an ongoing period integrated into your workflows, tools, and team culture. They are not shared across multiple client projects simultaneously. A project-based agency engages for a defined scope, delivers, and moves on engineers rotate between client projects, context switches frequently, and the engagement ends when the project does. A dedicated team builds deep product context over time: the engineers who started with you in month 1 are still working on your product in month 6 they understand the history of the codebase, the business logic, and the reasoning behind past decisions. This accumulated context makes them significantly faster than a project team that has to re-learn the product for each engagement. Clickmasters dedicated teams operate on monthly retainers with 30-day notice for changes providing the continuity of employment without the commitment and overhead of hiring.",
     },
     {
       question: "How quickly can a dedicated team start delivering value?",
       answer:
-        "Week 1: environment setup, codebase review, architecture documentation, first-sprint planning. Week 2: first tickets completed (low-complexity, well-defined tasks selected for the first sprint to build familiarity with the codebase and development workflow). Month 1: operating at approximately 60-70% of full velocity still building context for the more complex parts of the codebase. Month 2-3: full velocity on all ticket types. The most important factor in fast ramp-up: quality of documentation and developer environment setup. ClickMasters asks the client to prepare a good README, a working local development setup, and test data seeding before the team starts. The codebase onboarding engagement ($3,000-8,000) creates this if it does not already exist.",
+        "Week 1: environment setup, codebase review, architecture documentation, first-sprint planning. Week 2: first tickets completed (low-complexity, well-defined tasks selected for the first sprint to build familiarity with the codebase and development workflow). Month 1: operating at approximately 60-70% of full velocity still building context for the more complex parts of the codebase. Month 2-3: full velocity on all ticket types. The most important factor in fast ramp-up: quality of documentation and developer environment setup. Clickmasters asks the client to prepare a good README, a working local development setup, and test data seeding before the team starts. The codebase onboarding engagement ($3,000-8,000) creates this if it does not already exist.",
     },
     {
       question:
         "What happens to the code and knowledge when the engagement ends?",
       answer:
-        "All code written by the ClickMasters team is committed to the client's repository throughout the engagement the client owns and has full access to everything at all times. At the end of the engagement, ClickMasters conducts a structured offboarding: a knowledge transfer document covering the areas of the codebase the team worked on, decisions made and why, known technical debt, and upcoming work in progress. Live handover sessions with the client's internal team (or incoming replacement team) covering the most complex areas. A 2-week transition period where the ClickMasters team is available to answer questions. All ClickMasters engineers lose access to the client's repositories and communication channels on the agreed offboarding date. The client is never dependent on ClickMasters for codebase access or operational knowledge.",
+        "All code written by the Clickmasters team is committed to the client's repository throughout the engagement the client owns and has full access to everything at all times. At the end of the engagement, Clickmasters conducts a structured offboarding: a knowledge transfer document covering the areas of the codebase the team worked on, decisions made and why, known technical debt, and upcoming work in progress. Live handover sessions with the client's internal team (or incoming replacement team) covering the most complex areas. A 2-week transition period where the Clickmasters team is available to answer questions. All Clickmasters engineers lose access to the client's repositories and communication channels on the agreed offboarding date. The client is never dependent on Clickmasters for codebase access or operational knowledge.",
     },
     {
       question: "How do time zone differences work with a dedicated team?",
       answer:
-        "ClickMasters engineers work in Pakistan Standard Time (PKT UTC+5). For clients in the USA (EST/PST), EU (CET), Canada, or Australia, ClickMasters structures the engagement around a defined daily overlap window: USA clients (EST): 8am-11am EST overlaps with 6pm-9pm PKT 3 hours of synchronous availability for daily standup, code review, and technical discussions. EU clients (CET): 9am-1pm CET overlaps with 1pm-5pm PKT 4 hours of synchronous availability. Australia clients (AEST): 8am-12pm AEST overlaps with 3am-7am PKT async-first model with morning video call. During non-overlap hours, the team works asynchronously PRs submitted, questions posted in Slack, and progress updated in the project management tool. ClickMasters' experience is that 3-4 hours of synchronous overlap per day is sufficient for smooth delivery for most product development workflows.",
+        "Clickmasters engineers work in Pakistan Standard Time (PKT UTC+5). For clients in the USA (EST/PST), EU (CET), Canada, or Australia, Clickmasters structures the engagement around a defined daily overlap window: USA clients (EST): 8am-11am EST overlaps with 6pm-9pm PKT 3 hours of synchronous availability for daily standup, code review, and technical discussions. EU clients (CET): 9am-1pm CET overlaps with 1pm-5pm PKT 4 hours of synchronous availability. Australia clients (AEST): 8am-12pm AEST overlaps with 3am-7am PKT async-first model with morning video call. During non-overlap hours, the team works asynchronously PRs submitted, questions posted in Slack, and progress updated in the project management tool. Clickmasters' experience is that 3-4 hours of synchronous overlap per day is sufficient for smooth delivery for most product development workflows.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our dedicated product team in 2 weeks. 6 engineers tech lead, full-stack, backend, frontend, QA, DevOps integrated into our Jira and Slack within days. They shipped our MVP in 4 months. Cost is 50% less than hiring in the US.",
+      "Clickmasters built our dedicated product team in 2 weeks. 6 engineers tech lead, full-stack, backend, frontend, QA, DevOps integrated into our Jira and Slack within days. They shipped our MVP in 4 months. Cost is 50% less than hiring in the US.",
     author: "CTO",
     role: "B2B SaaS Startup",
   },
@@ -27657,12 +27657,12 @@ const dedicatedDevelopmentTeamsOverride = {
     {
       name: "PKT",
       description:
-        "Pakistan Standard Time (UTC+5) ClickMasters engineers' time zone.",
+        "Pakistan Standard Time (UTC+5) Clickmasters engineers' time zone.",
     },
     {
       name: "Staff Augmentation",
       description:
-        "Adding individual engineers to client's existing team client manages directly, ClickMasters provides vetted talent.",
+        "Adding individual engineers to client's existing team client manages directly, Clickmasters provides vetted talent.",
     },
   ],
 };
@@ -27676,10 +27676,10 @@ const itOutsourcingOverride = {
   heroImage:
     "/images/photo-1521737711867-e3b97375f902.jpg",
   metaTitle:
-    "IT Outsourcing Services | Software Development Outsourcing | ClickMasters",
+    "IT Outsourcing Services | Software Development Outsourcing | Clickmasters",
   metaDescription:
-    "ClickMasters delivers IT outsourcing full software development, infrastructure management, and technical operations outsourced to an expert partner for B2B companies worldwide.",
-  lead: "ClickMasters delivers IT outsourcing for B2B companies across the USA, Europe, Canada, and Australia. Outsource your entire software development function product design, engineering, QA, and DevOps. Outsource infrastructure management cloud operations, monitoring, security, and cost management. Outsource technical operations system administration, vendor management, and IT governance. One partner for your technology function, with transparent reporting and full IP ownership.",
+    "Clickmasters delivers IT outsourcing full software development, infrastructure management, and technical operations outsourced to an expert partner for B2B companies worldwide.",
+  lead: "Clickmasters delivers IT outsourcing for B2B companies across the USA, Europe, Canada, and Australia. Outsource your entire software development function product design, engineering, QA, and DevOps. Outsource infrastructure management cloud operations, monitoring, security, and cost management. Outsource technical operations system administration, vendor management, and IT governance. One partner for your technology function, with transparent reporting and full IP ownership.",
   highlights: [
     "Full Development Outsourcing",
     "Infrastructure Management",
@@ -27698,7 +27698,7 @@ const itOutsourcingOverride = {
     {
       title: "Full Software Development Outsourcing",
       description:
-        "ClickMasters becomes the client's technology execution partner: product roadmap execution (engineering team works from client's product roadmap regular sprint planning, backlog grooming, feature delivery), architecture ownership (senior engineers make and document architecture decisions approved by client's business stakeholders), full SDLC management (requirements \xE2\u2020\u2019 design \xE2\u2020\u2019 development \xE2\u2020\u2019 testing \xE2\u2020\u2019 deployment \xE2\u2020\u2019 monitoring), quality ownership (test coverage standards, code review process, performance SLOs accountable for quality outcomes, not just hours billed), monthly steering meeting (business stakeholders review: features delivered vs planned, velocity, quality metrics, upcoming roadmap, budget vs actual).",
+        "Clickmasters becomes the client's technology execution partner: product roadmap execution (engineering team works from client's product roadmap regular sprint planning, backlog grooming, feature delivery), architecture ownership (senior engineers make and document architecture decisions approved by client's business stakeholders), full SDLC management (requirements \xE2\u2020\u2019 design \xE2\u2020\u2019 development \xE2\u2020\u2019 testing \xE2\u2020\u2019 deployment \xE2\u2020\u2019 monitoring), quality ownership (test coverage standards, code review process, performance SLOs accountable for quality outcomes, not just hours billed), monthly steering meeting (business stakeholders review: features delivered vs planned, velocity, quality metrics, upcoming roadmap, budget vs actual).",
     },
     {
       title: "Infrastructure & Cloud Outsourcing",
@@ -27713,7 +27713,7 @@ const itOutsourcingOverride = {
     {
       title: "Transparency & Reporting",
       description:
-        "ClickMasters IT outsourcing defined by visibility: weekly engineering update (tickets delivered, in progress, blockers, technical decisions posted in Slack/email every Friday), monthly metrics dashboard (velocity, quality metrics, infrastructure costs, security posture, key performance indicators agreed at engagement start), quarterly business review (QBR present previous quarter's outcomes against plan, next quarter's roadmap, strategic technology recommendations), open-book cost reporting (all cloud and third-party tool costs reported transparently billed at provider rates with no markup).",
+        "Clickmasters IT outsourcing defined by visibility: weekly engineering update (tickets delivered, in progress, blockers, technical decisions posted in Slack/email every Friday), monthly metrics dashboard (velocity, quality metrics, infrastructure costs, security posture, key performance indicators agreed at engagement start), quarterly business review (QBR present previous quarter's outcomes against plan, next quarter's roadmap, strategic technology recommendations), open-book cost reporting (all cloud and third-party tool costs reported transparently billed at provider rates with no markup).",
     },
   ],
   differentiators: [
@@ -27725,7 +27725,7 @@ const itOutsourcingOverride = {
     {
       feature: "Full IP Ownership",
       description:
-        "All work product assigned to client in engagement agreement ClickMasters retains no IP rights | Basic: Shared IP or licenced code",
+        "All work product assigned to client in engagement agreement Clickmasters retains no IP rights | Basic: Shared IP or licenced code",
     },
     {
       feature: "Open-Book Cost Reporting",
@@ -27788,7 +27788,7 @@ const itOutsourcingOverride = {
     {
       layer: "Project Management",
       technologies:
-        "Jira, Linear client-defined workflow, ClickMasters works within client's tooling",
+        "Jira, Linear client-defined workflow, Clickmasters works within client's tooling",
     },
     {
       layer: "Reporting",
@@ -27841,33 +27841,33 @@ const itOutsourcingOverride = {
     {
       name: "Full Development Outsourcing",
       description:
-        "Startup with product vision but no internal engineering. ClickMasters provides full product team (6 engineers) + infrastructure management. Monthly retainer. Product launched in 6 months.",
+        "Startup with product vision but no internal engineering. Clickmasters provides full product team (6 engineers) + infrastructure management. Monthly retainer. Product launched in 6 months.",
     },
     {
       name: "Infrastructure Outsourcing",
       description:
-        "Company with internal dev team but no cloud expertise. ClickMasters manages AWS infrastructure: Terraform IaC, 24/7 monitoring, FinOps (30% cost reduction), incident response. Monthly retainer.",
+        "Company with internal dev team but no cloud expertise. Clickmasters manages AWS infrastructure: Terraform IaC, 24/7 monitoring, FinOps (30% cost reduction), incident response. Monthly retainer.",
     },
     {
       name: "Technical Governance",
       description:
-        "Growth-stage company without CTO. ClickMasters provides quarterly technology reviews, vendor assessment, IT policy development, technology budget management. Fractional CTO service included.",
+        "Growth-stage company without CTO. Clickmasters provides quarterly technology reviews, vendor assessment, IT policy development, technology budget management. Fractional CTO service included.",
     },
     {
       name: "Post-Acquisition IT Consolidation",
       description:
-        "Company acquired 3 businesses with different tech stacks. ClickMasters consolidated infrastructure, standardised monitoring, unified vendor management. 12-month outsourcing engagement.",
+        "Company acquired 3 businesses with different tech stacks. Clickmasters consolidated infrastructure, standardised monitoring, unified vendor management. 12-month outsourcing engagement.",
     },
   ],
   sections: [
     {
       heading: "IT Outsourcing vs Staff Augmentation Key Difference",
-      body: "IT outsourcing delegates a complete function or outcome to a partner ClickMasters is responsible for the quality, delivery, and management of the software development function. The client specifies what they need (product roadmap, business requirements) and ClickMasters determines how to deliver it. Staff augmentation provides individual engineers who work under the client's direction the client manages the engineers directly, assigns tasks, and is responsible for the quality and architecture outcomes. The distinction: outsourcing transfers management responsibility; staff augmentation adds capacity under the client's management. Outsourcing is appropriate when the client lacks the technical management expertise to direct engineers directly. Staff augmentation is appropriate when the client has a strong internal engineering lead who needs additional execution capacity.",
+      body: "IT outsourcing delegates a complete function or outcome to a partner Clickmasters is responsible for the quality, delivery, and management of the software development function. The client specifies what they need (product roadmap, business requirements) and Clickmasters determines how to deliver it. Staff augmentation provides individual engineers who work under the client's direction the client manages the engineers directly, assigns tasks, and is responsible for the quality and architecture outcomes. The distinction: outsourcing transfers management responsibility; staff augmentation adds capacity under the client's management. Outsourcing is appropriate when the client lacks the technical management expertise to direct engineers directly. Staff augmentation is appropriate when the client has a strong internal engineering lead who needs additional execution capacity.",
       items: [],
     },
     {
       heading: "Data and IP Protection in Outsourcing",
-      body: "Data and IP protection in ClickMasters outsourcing engagements: NDA (Non-Disclosure Agreement) signed before any information sharing covers all confidential business, technical, and customer information, IP assignment (all work product created by ClickMasters engineers is assigned to the client in the engagement agreement ClickMasters retains no intellectual property rights in the deliverables), data security (ClickMasters engineers access only the systems and data required for their role least-privilege access, enforced by client-controlled IAM policies), code security (all code committed to the client's repository under the client's access controls ClickMasters engineers are revoked immediately on engagement end), and background checks (ClickMasters conducts background verification on all engineers who access client production systems verification of professional credentials and criminal background where legally permissible).",
+      body: "Data and IP protection in Clickmasters outsourcing engagements: NDA (Non-Disclosure Agreement) signed before any information sharing covers all confidential business, technical, and customer information, IP assignment (all work product created by Clickmasters engineers is assigned to the client in the engagement agreement Clickmasters retains no intellectual property rights in the deliverables), data security (Clickmasters engineers access only the systems and data required for their role least-privilege access, enforced by client-controlled IAM policies), code security (all code committed to the client's repository under the client's access controls Clickmasters engineers are revoked immediately on engagement end), and background checks (Clickmasters conducts background verification on all engineers who access client production systems verification of professional credentials and criminal background where legally permissible).",
       items: [],
     },
   ],
@@ -27875,36 +27875,36 @@ const itOutsourcingOverride = {
     {
       question: "What is IT outsourcing and what can be outsourced?",
       answer:
-        "IT outsourcing is the practice of engaging an external partner to perform technology functions rather than building and managing those functions internally. Functions commonly outsourced to ClickMasters: software development (product engineering, feature development, bug fixing, QA), infrastructure management (cloud operations, DevOps, monitoring, security patching, cost management), and technical operations (system administration, vendor management, IT governance, technology strategy). Functions that are typically not outsourced: business strategy (defining what to build and why), product ownership (deciding which features are highest priority), and customer-facing roles (sales, support, customer success though the technical tools supporting these roles can be outsourced). The decision to outsource a technology function should be driven by: whether the function is a core differentiator (if your competitive advantage is your technology, keep it internal), whether specialist expertise is available locally at a viable cost (if not, outsourcing is often faster and cheaper), and whether the function requires full-time capacity or fluctuating capacity (fluctuating capacity is a natural fit for outsourcing).",
+        "IT outsourcing is the practice of engaging an external partner to perform technology functions rather than building and managing those functions internally. Functions commonly outsourced to Clickmasters: software development (product engineering, feature development, bug fixing, QA), infrastructure management (cloud operations, DevOps, monitoring, security patching, cost management), and technical operations (system administration, vendor management, IT governance, technology strategy). Functions that are typically not outsourced: business strategy (defining what to build and why), product ownership (deciding which features are highest priority), and customer-facing roles (sales, support, customer success though the technical tools supporting these roles can be outsourced). The decision to outsource a technology function should be driven by: whether the function is a core differentiator (if your competitive advantage is your technology, keep it internal), whether specialist expertise is available locally at a viable cost (if not, outsourcing is often faster and cheaper), and whether the function requires full-time capacity or fluctuating capacity (fluctuating capacity is a natural fit for outsourcing).",
     },
     {
       question:
-        "How does ClickMasters protect client data and IP in an outsourcing engagement?",
+        "How does Clickmasters protect client data and IP in an outsourcing engagement?",
       answer:
-        "Data and IP protection in ClickMasters outsourcing engagements: NDA (Non-Disclosure Agreement) signed before any information sharing covers all confidential business, technical, and customer information, IP assignment (all work product created by ClickMasters engineers is assigned to the client in the engagement agreement ClickMasters retains no intellectual property rights in the deliverables), data security (ClickMasters engineers access only the systems and data required for their role least-privilege access, enforced by client-controlled IAM policies), code security (all code committed to the client's repository under the client's access controls ClickMasters engineers are revoked immediately on engagement end), and background checks (ClickMasters conducts background verification on all engineers who access client production systems verification of professional credentials and criminal background where legally permissible).",
+        "Data and IP protection in Clickmasters outsourcing engagements: NDA (Non-Disclosure Agreement) signed before any information sharing covers all confidential business, technical, and customer information, IP assignment (all work product created by Clickmasters engineers is assigned to the client in the engagement agreement Clickmasters retains no intellectual property rights in the deliverables), data security (Clickmasters engineers access only the systems and data required for their role least-privilege access, enforced by client-controlled IAM policies), code security (all code committed to the client's repository under the client's access controls Clickmasters engineers are revoked immediately on engagement end), and background checks (Clickmasters conducts background verification on all engineers who access client production systems verification of professional credentials and criminal background where legally permissible).",
     },
     {
       question:
         "What is the difference between IT outsourcing and staff augmentation?",
       answer:
-        "IT outsourcing delegates a complete function or outcome to a partner ClickMasters is responsible for the quality, delivery, and management of the software development function. The client specifies what they need (product roadmap, business requirements) and ClickMasters determines how to deliver it. Staff augmentation provides individual engineers who work under the client's direction the client manages the engineers directly, assigns tasks, and is responsible for the quality and architecture outcomes. The distinction: outsourcing transfers management responsibility; staff augmentation adds capacity under the client's management. Outsourcing is appropriate when the client lacks the technical management expertise to direct engineers directly. Staff augmentation is appropriate when the client has a strong internal engineering lead who needs additional execution capacity.",
+        "IT outsourcing delegates a complete function or outcome to a partner Clickmasters is responsible for the quality, delivery, and management of the software development function. The client specifies what they need (product roadmap, business requirements) and Clickmasters determines how to deliver it. Staff augmentation provides individual engineers who work under the client's direction the client manages the engineers directly, assigns tasks, and is responsible for the quality and architecture outcomes. The distinction: outsourcing transfers management responsibility; staff augmentation adds capacity under the client's management. Outsourcing is appropriate when the client lacks the technical management expertise to direct engineers directly. Staff augmentation is appropriate when the client has a strong internal engineering lead who needs additional execution capacity.",
     },
     {
       question: "What happens at the end of an IT outsourcing engagement?",
       answer:
-        "ClickMasters conducts a structured offboarding to ensure continuity: 60-day notice period (giving the client time to hire internally or select a new partner), knowledge transfer documentation (architecture documentation, system runbooks, infrastructure documentation, vendor contract inventory, decision logs), handover sessions (live sessions with the incoming team or internal hires reviewing the codebase, infrastructure, and operational procedures), transition period (ClickMasters remains available for questions during the 30 days after formal engagement end bridging any gaps in the incoming team's knowledge), and all access revoked (ClickMasters engineers lose all system access on the agreed end date the client controls the timeline). The goal is that the client's product and operations continue without interruption regardless of who is running them.",
+        "Clickmasters conducts a structured offboarding to ensure continuity: 60-day notice period (giving the client time to hire internally or select a new partner), knowledge transfer documentation (architecture documentation, system runbooks, infrastructure documentation, vendor contract inventory, decision logs), handover sessions (live sessions with the incoming team or internal hires reviewing the codebase, infrastructure, and operational procedures), transition period (Clickmasters remains available for questions during the 30 days after formal engagement end bridging any gaps in the incoming team's knowledge), and all access revoked (Clickmasters engineers lose all system access on the agreed end date the client controls the timeline). The goal is that the client's product and operations continue without interruption regardless of who is running them.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters is our outsourced engineering department. They manage our entire product development, cloud infrastructure, and technical operations. We focus on sales and customer success. The transparency and reporting have been exceptional.",
+      "Clickmasters is our outsourced engineering department. They manage our entire product development, cloud infrastructure, and technical operations. We focus on sales and customer success. The transparency and reporting have been exceptional.",
     author: "CEO",
     role: "B2B SaaS Company",
   },
   caseStudy: {
     title: "Full IT Outsourcing",
     description:
-      "Outsourced entire technology function to ClickMasters: 6-engineer development team + infrastructure management (AWS, Terraform, monitoring) + technical governance (quarterly reviews, vendor management). Monthly retainer. Product launched in 6 months. 50% cost saving vs internal team.",
+      "Outsourced entire technology function to Clickmasters: 6-engineer development team + infrastructure management (AWS, Terraform, monitoring) + technical governance (quarterly reviews, vendor management). Monthly retainer. Product launched in 6 months. 50% cost saving vs internal team.",
     slug: "full-it-outsourcing",
     badge: "IT Outsourcing",
   },
@@ -27965,10 +27965,10 @@ const staffAugmentationOverride = {
   heroImage:
     "/images/photo-1521737711867-e3b97375f902.jpg",
   metaTitle:
-    "Staff Augmentation Services | Hire Remote Engineers | ClickMasters",
+    "Staff Augmentation Services | Hire Remote Engineers | Clickmasters",
   metaDescription:
-    "ClickMasters provides staff augmentation vetted remote engineers integrated directly into your team for B2B companies in the USA, Europe, Canada & Australia needing to scale quickly.",
-  lead: "ClickMasters provides staff augmentation for B2B companies across the USA, Europe, Canada, and Australia. Vetted engineers pre-screened for the specific technical skills your team needs integrated directly into your workflows, your Slack, your GitHub, and your sprint board. Working under your engineering lead's direction. Available within 2 weeks. Scalable up or down with 30-day notice. No recruiter fees, no benefits overhead, no notice period risk.",
+    "Clickmasters provides staff augmentation vetted remote engineers integrated directly into your team for B2B companies in the USA, Europe, Canada & Australia needing to scale quickly.",
+  lead: "Clickmasters provides staff augmentation for B2B companies across the USA, Europe, Canada, and Australia. Vetted engineers pre-screened for the specific technical skills your team needs integrated directly into your workflows, your Slack, your GitHub, and your sprint board. Working under your engineering lead's direction. Available within 2 weeks. Scalable up or down with 30-day notice. No recruiter fees, no benefits overhead, no notice period risk.",
   highlights: [
     "Pre-Vetted Engineers",
     "2-Week Start",
@@ -27980,7 +27980,7 @@ const staffAugmentationOverride = {
   // marketStats: [
   //   { label: 'Time from engagement agreement to engineer integrated into client\'s team vs 3-6 months to hire directly', value: '2 wks' },
   //   { label: 'Typical cost saving vs equivalent full-time employee hires in the USA or UK, including recruiter fees, benefits, and overhead', value: '40-60%' },
-  //   { label: 'Dedicated account manager for every ClickMasters staff augmentation engagement', value: '1' },
+  //   { label: 'Dedicated account manager for every Clickmasters staff augmentation engagement', value: '1' },
   //   { label: 'Notice period to scale up or down flexible to client\'s changing needs', value: '30 days' },
   // ],
   servicesCards: [
@@ -28071,7 +28071,7 @@ const staffAugmentationOverride = {
       phase: "Phase 5",
       title: "Trial Period",
       timeline: "30 days",
-      text: "Engineer evaluated against client's performance criteria, ClickMasters replaces at no cost if standards not met. Deliverable: Permanent Placement (after trial).",
+      text: "Engineer evaluated against client's performance criteria, Clickmasters replaces at no cost if standards not met. Deliverable: Permanent Placement (after trial).",
     },
   ],
   techStackCategories: [
@@ -28167,13 +28167,13 @@ const staffAugmentationOverride = {
       body: "",
       items: [
         "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost $3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
-        "Dedicated Team: Who manages ClickMasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
+        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
         "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost $120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract.",
       ],
     },
     {
       heading: "Engineer Vetting Process",
-      body: "ClickMasters engineers go through a multi-stage vetting process before being placed with clients: CV review (experience, tech stack alignment, previous project types), technical screening (60-90 minute technical interview with a ClickMasters senior engineer live coding, system design, architecture questions matched to the role), practical assessment (a take-home task or pair programming session on a problem representative of the client's tech stack), reference check (previous client or employer reference), and trial period (engineers placed with clients are evaluated against specific performance criteria in the first 30 days ClickMasters replaces an engineer who does not meet the client's standards within this window at no additional cost). The client also conducts their own technical interview before accepting an engineer ClickMasters does not place engineers without client interview and approval.",
+      body: "Clickmasters engineers go through a multi-stage vetting process before being placed with clients: CV review (experience, tech stack alignment, previous project types), technical screening (60-90 minute technical interview with a Clickmasters senior engineer live coding, system design, architecture questions matched to the role), practical assessment (a take-home task or pair programming session on a problem representative of the client's tech stack), reference check (previous client or employer reference), and trial period (engineers placed with clients are evaluated against specific performance criteria in the first 30 days Clickmasters replaces an engineer who does not meet the client's standards within this window at no additional cost). The client also conducts their own technical interview before accepting an engineer Clickmasters does not place engineers without client interview and approval.",
       items: [],
     },
   ],
@@ -28182,27 +28182,27 @@ const staffAugmentationOverride = {
       question:
         "What is staff augmentation and how is it different from outsourcing?",
       answer:
-        "Staff augmentation adds individual engineers to your existing team they work under your management and direction, following your processes, tools, and standards. You assign tasks, review PRs, and manage the engineer's day-to-day work as you would with an internal employee. IT outsourcing, by contrast, delegates a complete function or outcome to ClickMasters ClickMasters manages the team, makes technical decisions, and is accountable for delivery quality. The choice between them depends on your management capacity: if you have a strong engineering lead who needs more execution bandwidth, staff augmentation works well. If you need a team that self-manages and delivers outcomes independently, a dedicated team or outsourcing model is more appropriate.",
+        "Staff augmentation adds individual engineers to your existing team they work under your management and direction, following your processes, tools, and standards. You assign tasks, review PRs, and manage the engineer's day-to-day work as you would with an internal employee. IT outsourcing, by contrast, delegates a complete function or outcome to Clickmasters Clickmasters manages the team, makes technical decisions, and is accountable for delivery quality. The choice between them depends on your management capacity: if you have a strong engineering lead who needs more execution bandwidth, staff augmentation works well. If you need a team that self-manages and delivers outcomes independently, a dedicated team or outsourcing model is more appropriate.",
     },
     {
-      question: "How are ClickMasters engineers vetted before placement?",
+      question: "How are Clickmasters engineers vetted before placement?",
       answer:
-        "ClickMasters engineers go through a multi-stage vetting process before being placed with clients: CV review (experience, tech stack alignment, previous project types), technical screening (60-90 minute technical interview with a ClickMasters senior engineer live coding, system design, architecture questions matched to the role), practical assessment (a take-home task or pair programming session on a problem representative of the client's tech stack), reference check (previous client or employer reference), and trial period (engineers placed with clients are evaluated against specific performance criteria in the first 30 days ClickMasters replaces an engineer who does not meet the client's standards within this window at no additional cost). The client also conducts their own technical interview before accepting an engineer ClickMasters does not place engineers without client interview and approval.",
+        "Clickmasters engineers go through a multi-stage vetting process before being placed with clients: CV review (experience, tech stack alignment, previous project types), technical screening (60-90 minute technical interview with a Clickmasters senior engineer live coding, system design, architecture questions matched to the role), practical assessment (a take-home task or pair programming session on a problem representative of the client's tech stack), reference check (previous client or employer reference), and trial period (engineers placed with clients are evaluated against specific performance criteria in the first 30 days Clickmasters replaces an engineer who does not meet the client's standards within this window at no additional cost). The client also conducts their own technical interview before accepting an engineer Clickmasters does not place engineers without client interview and approval.",
     },
     {
       question: "What happens if the augmented engineer is not performing?",
       answer:
-        "ClickMasters has a replacement guarantee: if an augmented engineer does not meet the client's performance standards within the first 30 days, ClickMasters replaces the engineer within 2 weeks at no additional cost. The client communicates the specific performance concerns to the ClickMasters account manager not directly managing the underperformance with the engineer. ClickMasters handles the engineer performance management internally. For performance concerns after the 30-day window, the client gives 30-day notice to end the augmentation for that engineer ClickMasters provides a replacement engineer in parallel if requested. ClickMasters does not charge notice period fees for performance-based replacements within the first 90 days.",
+        "Clickmasters has a replacement guarantee: if an augmented engineer does not meet the client's performance standards within the first 30 days, Clickmasters replaces the engineer within 2 weeks at no additional cost. The client communicates the specific performance concerns to the Clickmasters account manager not directly managing the underperformance with the engineer. Clickmasters handles the engineer performance management internally. For performance concerns after the 30-day window, the client gives 30-day notice to end the augmentation for that engineer Clickmasters provides a replacement engineer in parallel if requested. Clickmasters does not charge notice period fees for performance-based replacements within the first 90 days.",
     },
     {
       question: "How does billing work for staff augmentation?",
       answer:
-        "Staff augmentation is billed monthly at the agreed rate per engineer. The rate is fixed for the engagement duration it does not fluctuate based on hours worked or output volume. The monthly rate covers: the engineer's full-time working hours (approximately 160 hours per month), ClickMasters' account management overhead, and any HR or operational support required. There are no hidden fees for public holidays in the engineer's location (ClickMasters engineers work to the client's calendar, not Pakistani public holidays, unless otherwise agreed). The invoice is issued at the start of each month for that month. Engagements can be scaled up (add another engineer) or down (remove an engineer) with 30-day notice. There are no cancellation fees beyond the 30-day notice period.",
+        "Staff augmentation is billed monthly at the agreed rate per engineer. The rate is fixed for the engagement duration it does not fluctuate based on hours worked or output volume. The monthly rate covers: the engineer's full-time working hours (approximately 160 hours per month), Clickmasters' account management overhead, and any HR or operational support required. There are no hidden fees for public holidays in the engineer's location (Clickmasters engineers work to the client's calendar, not Pakistani public holidays, unless otherwise agreed). The invoice is issued at the start of each month for that month. Engagements can be scaled up (add another engineer) or down (remove an engineer) with 30-day notice. There are no cancellation fees beyond the 30-day notice period.",
     },
   ],
   testimonial: {
     quote:
-      "We needed a senior React engineer fast. ClickMasters had a candidate matched within 5 days, interviewed by our CTO, and started within 2 weeks. The engineer has been delivering independently no hand-holding required. Saved us 4 months of recruitment time.",
+      "We needed a senior React engineer fast. Clickmasters had a candidate matched within 5 days, interviewed by our CTO, and started within 2 weeks. The engineer has been delivering independently no hand-holding required. Saved us 4 months of recruitment time.",
     author: "VP Engineering",
     role: "SaaS Company",
   },
@@ -28232,7 +28232,7 @@ const staffAugmentationOverride = {
     },
     {
       name: "Trial Period",
-      text: "30-day evaluation, ClickMasters replaces at no cost if standards not met.",
+      text: "30-day evaluation, Clickmasters replaces at no cost if standards not met.",
     },
   ],
   itemList: [
@@ -28247,17 +28247,17 @@ const staffAugmentationOverride = {
     {
       name: "Staff Augmentation",
       description:
-        "Adding vetted engineers to client's existing team client manages directly, ClickMasters provides talent.",
+        "Adding vetted engineers to client's existing team client manages directly, Clickmasters provides talent.",
     },
     {
       name: "PKT",
       description:
-        "Pakistan Standard Time (UTC+5) ClickMasters engineers' time zone.",
+        "Pakistan Standard Time (UTC+5) Clickmasters engineers' time zone.",
     },
     {
       name: "30-Day Replacement Guarantee",
       description:
-        "If engineer doesn't meet standards in first 30 days, ClickMasters replaces at no cost.",
+        "If engineer doesn't meet standards in first 30 days, Clickmasters replaces at no cost.",
     },
     {
       name: "Trial Period",
@@ -28276,10 +28276,10 @@ const technicalSupportOverride = {
   heroImage:
     "/images/photo-1521737711867-e3b97375f902.jpg",
   metaTitle:
-    "Technical Support Services | L1, L2 & L3 Software Support | ClickMasters",
+    "Technical Support Services | L1, L2 & L3 Software Support | Clickmasters",
   metaDescription:
-    "ClickMasters delivers technical support L1 user support, L2 bug investigation, L3 engineering escalation, and helpdesk management for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers structured technical support for B2B companies across the USA, Europe, Canada, and Australia. L1 user support answering how-to questions and resolving known issues. L2 investigation diagnosing bugs, reproducing issues in staging, and providing documented findings. L3 engineering escalation routing confirmed bugs to the engineering team with full reproduction context. Support tickets handled by trained agents who know your product not developers whose focus should be on building.",
+    "Clickmasters delivers technical support L1 user support, L2 bug investigation, L3 engineering escalation, and helpdesk management for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers structured technical support for B2B companies across the USA, Europe, Canada, and Australia. L1 user support answering how-to questions and resolving known issues. L2 investigation diagnosing bugs, reproducing issues in staging, and providing documented findings. L3 engineering escalation routing confirmed bugs to the engineering team with full reproduction context. Support tickets handled by trained agents who know your product not developers whose focus should be on building.",
   highlights: [
     "L1 User Support",
     "L2 Bug Investigation",
@@ -28313,7 +28313,7 @@ const technicalSupportOverride = {
     {
       title: "Helpdesk Tool Management",
       description:
-        "ClickMasters manages support toolchain: Zendesk (ticket routing, macros for common responses, SLA timers, CSAT surveys, reporting dashboards ClickMasters configures and maintains Zendesk instance), Intercom (in-app messaging, product tours, targeted messages ClickMasters manages Intercom conversations and in-app help centre), Linear or Jira (bug escalation to engineering team ClickMasters creates L3 tickets with correct template and links to originating Zendesk ticket), support analytics (weekly and monthly reports ticket volume trends, most common issue categories, first-contact resolution rate, escalation rate, CSAT).",
+        "Clickmasters manages support toolchain: Zendesk (ticket routing, macros for common responses, SLA timers, CSAT surveys, reporting dashboards Clickmasters configures and maintains Zendesk instance), Intercom (in-app messaging, product tours, targeted messages Clickmasters manages Intercom conversations and in-app help centre), Linear or Jira (bug escalation to engineering team Clickmasters creates L3 tickets with correct template and links to originating Zendesk ticket), support analytics (weekly and monthly reports ticket volume trends, most common issue categories, first-contact resolution rate, escalation rate, CSAT).",
     },
   ],
   differentiators: [
@@ -28450,7 +28450,7 @@ const technicalSupportOverride = {
     {
       name: "SaaS Customer Support",
       description:
-        "Zendesk-based L1 support for 10,000+ users. L2 investigation for bug reproduction. L3 escalation to engineering. 85% first-contact resolution rate. CSAT 4.7/5. Monthly support metrics review.",
+        "Zendesk-based L1 support for a growing user base. L2 investigation for bug reproduction. L3 escalation to engineering. First-contact resolution and CSAT tracked in a monthly support metrics review.",
     },
     {
       name: "Enterprise Support Triage",
@@ -28460,7 +28460,7 @@ const technicalSupportOverride = {
     {
       name: "24/7 Technical Support",
       description:
-        "Follow-the-sun support: US team covers mornings, ClickMasters team covers afternoons/evenings, overnight support for urgent issues. 24/7 coverage without night shifts.",
+        "Follow-the-sun support: US team covers mornings, Clickmasters team covers afternoons/evenings, overnight support for urgent issues. 24/7 coverage without night shifts.",
     },
     {
       name: "Post-Launch Support",
@@ -28481,7 +28481,7 @@ const technicalSupportOverride = {
     },
     {
       heading: "Support Metrics What Gets Reported",
-      body: "ClickMasters provides weekly and monthly support metrics: ticket volume (total tickets received, by channel email, in-app, chat), ticket resolution (total resolved, first-contact resolution rate percentage resolved by L1 without escalation), response time compliance (percentage of tickets responded to within SLA window, mean time to first response), escalation rate (percentage escalated to L2, percentage escalated to L3 high escalation rates indicate knowledge base gaps or product issues), CSAT (customer satisfaction score post-resolution survey, average score and volume), and top issue categories (the 5 most common ticket categories this period used to identify knowledge base improvements and product usability issues). Monthly metrics are reviewed in a standing meeting with the client used to improve support quality and identify product improvements.",
+      body: "Clickmasters provides weekly and monthly support metrics: ticket volume (total tickets received, by channel email, in-app, chat), ticket resolution (total resolved, first-contact resolution rate percentage resolved by L1 without escalation), response time compliance (percentage of tickets responded to within SLA window, mean time to first response), escalation rate (percentage escalated to L2, percentage escalated to L3 high escalation rates indicate knowledge base gaps or product issues), CSAT (customer satisfaction score post-resolution survey, average score and volume), and top issue categories (the 5 most common ticket categories this period used to identify knowledge base improvements and product usability issues). Monthly metrics are reviewed in a standing meeting with the client used to improve support quality and identify product improvements.",
       items: [],
     },
   ],
@@ -28493,25 +28493,25 @@ const technicalSupportOverride = {
         "L1 (Level 1) is front-line user support answering how-to questions, resetting passwords, guiding users through product features, and resolving issues documented in the knowledge base. L1 agents need deep product knowledge but not engineering skills. L2 (Level 2) is technical investigation when an L1 agent cannot resolve an issue from the knowledge base, L2 takes over to diagnose the problem: reproduce it in staging, analyse logs, inspect the user's data, and determine whether it is a bug or user error. L2 agents need technical skills (SQL, log analysis, API testing) but not software engineering capability. L3 (Level 3) is engineering support confirmed bugs that require a code or configuration change. L3 is handled by engineers with full codebase access. The tier structure prevents expensive engineers from spending time on issues that trained support agents can handle L1 and L2 resolve 80-90% of tickets without engineering involvement.",
     },
     {
-      question: "How do ClickMasters support agents learn our product?",
+      question: "How do Clickmasters support agents learn our product?",
       answer:
-        "The knowledge transfer process: documentation review (ClickMasters agents read all existing product documentation, help centre articles, internal wikis, and API documentation), sandbox training (agents use the product in a sandbox environment completing all core user workflows until they can guide users through them without reference material), training sessions with the client's team (2-3 live sessions with the product team and existing support staff agents ask questions, walk through common support scenarios, and document any gaps in the knowledge base), shadowing period (agents handle tickets alongside the client's existing support team for 1 week, with their responses reviewed before sending), and go-live (agents handle tickets independently from week 2, with weekly quality review for the first month). ClickMasters does not go live with support agents until the client has reviewed and approved their product knowledge in the shadowing period.",
+        "The knowledge transfer process: documentation review (Clickmasters agents read all existing product documentation, help centre articles, internal wikis, and API documentation), sandbox training (agents use the product in a sandbox environment completing all core user workflows until they can guide users through them without reference material), training sessions with the client's team (2-3 live sessions with the product team and existing support staff agents ask questions, walk through common support scenarios, and document any gaps in the knowledge base), shadowing period (agents handle tickets alongside the client's existing support team for 1 week, with their responses reviewed before sending), and go-live (agents handle tickets independently from week 2, with weekly quality review for the first month). Clickmasters does not go live with support agents until the client has reviewed and approved their product knowledge in the shadowing period.",
     },
     {
       question:
-        "What SLA response times does ClickMasters offer for technical support?",
+        "What SLA response times does Clickmasters offer for technical support?",
       answer:
-        "Standard ClickMasters technical support SLAs: Critical (production down, data loss, security issue not typical L1 support, handled by maintenance retainer): 2-hour initial response. Urgent (multiple users affected, primary workflow blocked): 4-hour initial response, 24-hour resolution target. Normal (single user affected, workaround available): 8-hour initial response, 48-hour resolution target. Low (cosmetic issue, question, feature request): 24-hour initial response, 5-business-day resolution target. These are L1/L2 SLAs L3 engineering escalations follow the engineering team's SLA. Custom SLAs (faster response, extended hours, weekend coverage) are available in Premium Support plans. All SLAs are measured from ticket creation and reported monthly.",
+        "Standard Clickmasters technical support SLAs: Critical (production down, data loss, security issue not typical L1 support, handled by maintenance retainer): 2-hour initial response. Urgent (multiple users affected, primary workflow blocked): 4-hour initial response, 24-hour resolution target. Normal (single user affected, workaround available): 8-hour initial response, 48-hour resolution target. Low (cosmetic issue, question, feature request): 24-hour initial response, 5-business-day resolution target. These are L1/L2 SLAs L3 engineering escalations follow the engineering team's SLA. Custom SLAs (faster response, extended hours, weekend coverage) are available in Premium Support plans. All SLAs are measured from ticket creation and reported monthly.",
     },
     {
       question: "What metrics are reported for technical support?",
       answer:
-        "ClickMasters provides weekly and monthly support metrics: ticket volume (total tickets received, by channel email, in-app, chat), ticket resolution (total resolved, first-contact resolution rate percentage resolved by L1 without escalation), response time compliance (percentage of tickets responded to within the SLA window, mean time to first response), escalation rate (percentage of tickets escalated to L2, percentage escalated to L3 high escalation rates indicate knowledge base gaps or product issues), CSAT (customer satisfaction score post-resolution survey, average score and volume), and top issue categories (the 5 most common ticket categories this period used to identify knowledge base improvements and product usability issues). Monthly metrics are reviewed in a standing meeting with the client used to improve support quality and identify product improvements.",
+        "Clickmasters provides weekly and monthly support metrics: ticket volume (total tickets received, by channel email, in-app, chat), ticket resolution (total resolved, first-contact resolution rate percentage resolved by L1 without escalation), response time compliance (percentage of tickets responded to within the SLA window, mean time to first response), escalation rate (percentage of tickets escalated to L2, percentage escalated to L3 high escalation rates indicate knowledge base gaps or product issues), CSAT (customer satisfaction score post-resolution survey, average score and volume), and top issue categories (the 5 most common ticket categories this period used to identify knowledge base improvements and product usability issues). Monthly metrics are reviewed in a standing meeting with the client used to improve support quality and identify product improvements.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters handles our L1 and L2 support. Our developers used to spend 30% of their time on support now they spend zero. The L2 team reproduces bugs in staging and provides engineering with a ready-to-fix package. We close support tickets in hours, not days.",
+      "Clickmasters handles our L1 and L2 support. Our developers used to spend 30% of their time on support now they spend zero. The L2 team reproduces bugs in staging and provides engineering with a ready-to-fix package. We close support tickets in hours, not days.",
     author: "VP Engineering",
     role: "B2B SaaS Company",
   },
@@ -28589,10 +28589,10 @@ const augmentedRealityDevelopmentOverride = {
   heroImage:
     "/images/photo-1622979135225-d2ba269cf1ac.jpg",
   metaTitle:
-    "Augmented Reality Development | ARKit, ARCore & WebAR | ClickMasters",
+    "Augmented Reality Development | ARKit, ARCore & WebAR | Clickmasters",
   metaDescription:
-    "ClickMasters builds AR applications ARKit for iOS, ARCore for Android, 8th Wall WebAR, and industrial AR for field service for B2B companies worldwide.",
-  lead: "ClickMasters builds augmented reality applications for B2B companies across the USA, Europe, Canada, and Australia. ARKit for iOS plane detection, image tracking, LiDAR depth sensing on iPhone Pro. ARCore for Android environmental understanding, Depth API, instant placement. 8th Wall WebAR AR product visualisation in the browser, no app download required. Industrial AR for field service step-by-step maintenance instructions overlaid on real equipment. HoloLens 2 for hands-free industrial applications.",
+    "Clickmasters builds AR applications ARKit for iOS, ARCore for Android, 8th Wall WebAR, and industrial AR for field service for B2B companies worldwide.",
+  lead: "Clickmasters builds augmented reality applications for B2B companies across the USA, Europe, Canada, and Australia. ARKit for iOS plane detection, image tracking, LiDAR depth sensing on iPhone Pro. ARCore for Android environmental understanding, Depth API, instant placement. 8th Wall WebAR AR product visualisation in the browser, no app download required. Industrial AR for field service step-by-step maintenance instructions overlaid on real equipment. HoloLens 2 for hands-free industrial applications.",
   highlights: [
     "ARKit (iOS LiDAR + USDZ)",
     "ARCore (Android Depth API + GLB)",
@@ -28817,12 +28817,12 @@ const augmentedRealityDevelopmentOverride = {
     {
       question: "Does AR require special glasses or hardware?",
       answer:
-        "For most B2B AR applications today: no. Modern smartphones provide the camera, accelerometers, gyroscope, and (on iPhone Pro) LiDAR depth sensor required for production-quality mobile AR. No dedicated hardware procurement, no training users on new devices, no hardware inventory to manage. AR glasses (Microsoft HoloLens 2 at $3,500/device, Magic Leap 2, Meta Quest 3 with colour passthrough) provide a hands-free experience significantly more valuable for industrial field service where a technician holding a repair tool cannot also hold a phone. ClickMasters builds HoloLens 2 applications using Unity and MRTK for hands-free industrial AR. The hardware cost and limited installed base make glasses appropriate for specific industrial use cases, not consumer-facing applications.",
+        "For most B2B AR applications today: no. Modern smartphones provide the camera, accelerometers, gyroscope, and (on iPhone Pro) LiDAR depth sensor required for production-quality mobile AR. No dedicated hardware procurement, no training users on new devices, no hardware inventory to manage. AR glasses (Microsoft HoloLens 2 at $3,500/device, Magic Leap 2, Meta Quest 3 with colour passthrough) provide a hands-free experience significantly more valuable for industrial field service where a technician holding a repair tool cannot also hold a phone. Clickmasters builds HoloLens 2 applications using Unity and MRTK for hands-free industrial AR. The hardware cost and limited installed base make glasses appropriate for specific industrial use cases, not consumer-facing applications.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our WebAR product configurator. Users scan a QR code and see our equipment in their space before buying. Conversion rate increased 20%. No app required our sales team just shares a link.",
+      "Clickmasters built our WebAR product configurator. Users scan a QR code and see our equipment in their space before buying. Conversion rate increased 20%. No app required our sales team just shares a link.",
     author: "Director of E-commerce",
     role: "Industrial Equipment Manufacturer",
   },
@@ -28896,10 +28896,10 @@ const virtualRealityDevelopmentOverride = {
   heroImage:
     "/images/photo-1622979135225-d2ba269cf1ac.jpg",
   metaTitle:
-    "Virtual Reality Development Services | Meta Quest & SteamVR | ClickMasters",
+    "Virtual Reality Development Services | Meta Quest & SteamVR | Clickmasters",
   metaDescription:
-    "ClickMasters builds VR applications safety training simulations, architectural walkthroughs, and virtual showrooms for Meta Quest, SteamVR, and WebVR for B2B companies worldwide.",
-  lead: "ClickMasters builds VR applications for B2B companies across the USA, Europe, Canada, and Australia. Manufacturing and industrial safety training simulations practice hazardous procedures without real risk. Architectural walkthroughs and real estate virtual tours walk through a building before it is built. Medical simulation. Virtual product showrooms and configurators. Built on Unity XR Toolkit and Unreal Engine 5 for Meta Quest standalone, SteamVR PCVR, and WebVR.",
+    "Clickmasters builds VR applications safety training simulations, architectural walkthroughs, and virtual showrooms for Meta Quest, SteamVR, and WebVR for B2B companies worldwide.",
+  lead: "Clickmasters builds VR applications for B2B companies across the USA, Europe, Canada, and Australia. Manufacturing and industrial safety training simulations practice hazardous procedures without real risk. Architectural walkthroughs and real estate virtual tours walk through a building before it is built. Medical simulation. Virtual product showrooms and configurators. Built on Unity XR Toolkit and Unreal Engine 5 for Meta Quest standalone, SteamVR PCVR, and WebVR.",
   highlights: [
     "Unity XR Toolkit (OpenXR)",
     "Unreal Engine 5 (Nanite + Lumen)",
@@ -29106,12 +29106,12 @@ const virtualRealityDevelopmentOverride = {
   sections: [
     {
       heading: "Meta Quest vs PCVR Which Platform Should You Develop For?",
-      body: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. ClickMasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
+      body: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
       items: [],
     },
     {
       heading: "VR Sickness Prevention 90 FPS and Teleportation",
-      body: "VR sickness occurs when there is a mismatch between what the visual system sees (movement in VR) and what the vestibular system feels (no physical movement). Primary causes and mitigations: low frame rate a stable 90 FPS is mandatory on Quest, 120 FPS preferred. ClickMasters targets 90 FPS as a hard requirement and optimises draw calls, lighting, and geometry to achieve it. High motion-to-photon latency must be below 20ms from head movement to updated image. Artificial locomotion joystick-based movement through VR is the most common discomfort cause. ClickMasters implements teleportation locomotion (instant movement to a destination with no smooth glide) for most VR experiences and only uses smooth locomotion for users who have built tolerance. Comfort tunnelling (reduce peripheral field of view during movement) is offered as a comfort option. Starting new VR users with 10-minute sessions and increasing over days reduces motion sickness significantly.",
+      body: "VR sickness occurs when there is a mismatch between what the visual system sees (movement in VR) and what the vestibular system feels (no physical movement). Primary causes and mitigations: low frame rate a stable 90 FPS is mandatory on Quest, 120 FPS preferred. Clickmasters targets 90 FPS as a hard requirement and optimises draw calls, lighting, and geometry to achieve it. High motion-to-photon latency must be below 20ms from head movement to updated image. Artificial locomotion joystick-based movement through VR is the most common discomfort cause. Clickmasters implements teleportation locomotion (instant movement to a destination with no smooth glide) for most VR experiences and only uses smooth locomotion for users who have built tolerance. Comfort tunnelling (reduce peripheral field of view during movement) is offered as a comfort option. Starting new VR users with 10-minute sessions and increasing over days reduces motion sickness significantly.",
       items: [],
     },
   ],
@@ -29124,12 +29124,12 @@ const virtualRealityDevelopmentOverride = {
     {
       question: "Meta Quest vs PCVR which platform should I develop for?",
       answer:
-        "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. ClickMasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
+        "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
     },
     {
       question: "What causes VR sickness and how do you prevent it?",
       answer:
-        "VR sickness occurs when there is a mismatch between what the visual system sees (movement in VR) and what the vestibular system feels (no physical movement). Primary causes and mitigations: low frame rate a stable 90 FPS is mandatory on Quest, 120 FPS preferred. ClickMasters targets 90 FPS as a hard requirement and optimises draw calls, lighting, and geometry to achieve it. High motion-to-photon latency must be below 20ms from head movement to updated image. Artificial locomotion joystick-based movement through VR is the most common discomfort cause. ClickMasters implements teleportation locomotion (instant movement to a destination with no smooth glide) for most VR experiences and only uses smooth locomotion for users who have built tolerance. Comfort tunnelling (reduce peripheral field of view during movement) is offered as a comfort option. Starting new VR users with 10-minute sessions and increasing over days reduces motion sickness significantly.",
+        "VR sickness occurs when there is a mismatch between what the visual system sees (movement in VR) and what the vestibular system feels (no physical movement). Primary causes and mitigations: low frame rate a stable 90 FPS is mandatory on Quest, 120 FPS preferred. Clickmasters targets 90 FPS as a hard requirement and optimises draw calls, lighting, and geometry to achieve it. High motion-to-photon latency must be below 20ms from head movement to updated image. Artificial locomotion joystick-based movement through VR is the most common discomfort cause. Clickmasters implements teleportation locomotion (instant movement to a destination with no smooth glide) for most VR experiences and only uses smooth locomotion for users who have built tolerance. Comfort tunnelling (reduce peripheral field of view during movement) is offered as a comfort option. Starting new VR users with 10-minute sessions and increasing over days reduces motion sickness significantly.",
     },
     {
       question:
@@ -29140,7 +29140,7 @@ const virtualRealityDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our VR safety training for lockout/tagout procedure on Meta Quest. Trainees complete training in 20 minutes vs 90 minutes classroom, with 95% knowledge retention at 90 days. Our lost-time incidents dropped 60%.",
+      "Clickmasters built our VR safety training for lockout/tagout procedure on Meta Quest. Trainees complete training in 20 minutes vs 90 minutes classroom, with 95% knowledge retention at 90 days. Our lost-time incidents dropped 60%.",
     author: "Safety Director",
     role: "Manufacturing Company",
   },
@@ -29218,10 +29218,10 @@ const mixedRealitySolutionsOverride = {
   heroImage:
     "/images/photo-1622979135225-d2ba269cf1ac.jpg",
   metaTitle:
-    "Mixed Reality Development | HoloLens 2 & Apple Vision Pro | ClickMasters",
+    "Mixed Reality Development | HoloLens 2 & Apple Vision Pro | Clickmasters",
   metaDescription:
-    "ClickMasters builds mixed reality solutions HoloLens 2 with MRTK, Apple Vision Pro visionOS, and Microsoft Mesh for industrial, medical, and enterprise B2B use cases worldwide.",
-  lead: "ClickMasters builds mixed reality solutions for B2B companies across the USA, Europe, Canada, and Australia. Microsoft HoloLens 2 applications for hands-free industrial field service maintenance instructions, remote expert collaboration, and diagnostics. Apple Vision Pro spatial computing applications on visionOS. Shared holographic collaboration spaces with Microsoft Mesh. Medical simulation and surgical planning with DICOM 3D reconstruction. Every MR application built on Unity with MRTK 3 or native visionOS SwiftUI.",
+    "Clickmasters builds mixed reality solutions HoloLens 2 with MRTK, Apple Vision Pro visionOS, and Microsoft Mesh for industrial, medical, and enterprise B2B use cases worldwide.",
+  lead: "Clickmasters builds mixed reality solutions for B2B companies across the USA, Europe, Canada, and Australia. Microsoft HoloLens 2 applications for hands-free industrial field service maintenance instructions, remote expert collaboration, and diagnostics. Apple Vision Pro spatial computing applications on visionOS. Shared holographic collaboration spaces with Microsoft Mesh. Medical simulation and surgical planning with DICOM 3D reconstruction. Every MR application built on Unity with MRTK 3 or native visionOS SwiftUI.",
   highlights: [
     "HoloLens 2 + MRTK 3 + Azure Spatial Anchors",
     "Apple Vision Pro (visionOS SwiftUI + RealityKit)",
@@ -29259,7 +29259,7 @@ const mixedRealitySolutionsOverride = {
     {
       title: "Medical + Surgical MR",
       description:
-        "Mixed reality for healthcare: surgical planning (3D patient anatomy from CT/MRI DICOM data reconstructed to 3D mesh, registered to patient's body position via marker tracking surgeon reviews planned procedure overlaid on surgical field), medical training (anatomy exploration walk around life-size 3D anatomical model, select structures to see labels and explanations), procedure simulation (integrate with tactile feedback devices for hands-on practice with MR guidance), regulatory pathway (ClickMasters scopes all medical MR with client's regulatory pathway FDA 510(k) or De Novo clearance considerations for clinical diagnostic applications).",
+        "Mixed reality for healthcare: surgical planning (3D patient anatomy from CT/MRI DICOM data reconstructed to 3D mesh, registered to patient's body position via marker tracking surgeon reviews planned procedure overlaid on surgical field), medical training (anatomy exploration walk around life-size 3D anatomical model, select structures to see labels and explanations), procedure simulation (integrate with tactile feedback devices for hands-on practice with MR guidance), regulatory pathway (Clickmasters scopes all medical MR with client's regulatory pathway FDA 510(k) or De Novo clearance considerations for clinical diagnostic applications).",
     },
   ],
   differentiators: [
@@ -29452,12 +29452,12 @@ const mixedRealitySolutionsOverride = {
       question:
         "What is visionOS and how is Apple Vision Pro different from HoloLens?",
       answer:
-        "visionOS is Apple's operating system for Apple Vision Pro launched in 2024 at $3,499. Applications run in Shared Space (real environment with floating app windows and 3D volumes spatial desktop) or Full Space (immersive environment application controls the entire display). Vision Pro advantages over HoloLens 2: micro-OLED displays with significantly higher resolution and colour accuracy (digital content looks photorealistic), full-colour high-quality passthrough video (more immersive than HoloLens' lower-resolution passthrough), eye+finger pinch interaction (subtle, social no hand gestures visible to others), and Apple ecosystem (Swift/SwiftUI, TestFlight, App Store distribution). HoloLens 2 advantages: more mature enterprise ecosystem (Dynamics 365 Remote Assist, Azure Spatial Anchors, MRTK production-proven across thousands of enterprise deployments), better suitability for industrial environments with safety equipment, and a wider field of view for large holograms. ClickMasters builds for both HoloLens 2 for established enterprise and industrial deployments, Vision Pro for forward-looking spatial computing applications where display quality and interaction design are differentiators.",
+        "visionOS is Apple's operating system for Apple Vision Pro launched in 2024 at $3,499. Applications run in Shared Space (real environment with floating app windows and 3D volumes spatial desktop) or Full Space (immersive environment application controls the entire display). Vision Pro advantages over HoloLens 2: micro-OLED displays with significantly higher resolution and colour accuracy (digital content looks photorealistic), full-colour high-quality passthrough video (more immersive than HoloLens' lower-resolution passthrough), eye+finger pinch interaction (subtle, social no hand gestures visible to others), and Apple ecosystem (Swift/SwiftUI, TestFlight, App Store distribution). HoloLens 2 advantages: more mature enterprise ecosystem (Dynamics 365 Remote Assist, Azure Spatial Anchors, MRTK production-proven across thousands of enterprise deployments), better suitability for industrial environments with safety equipment, and a wider field of view for large holograms. Clickmasters builds for both HoloLens 2 for established enterprise and industrial deployments, Vision Pro for forward-looking spatial computing applications where display quality and interaction design are differentiators.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our HoloLens 2 remote expert solution. Our field technicians now call a central expert who sees exactly what they see and draws holographic annotations on the equipment. Expert travel costs dropped 80%. Mean time to repair reduced 35%.",
+      "Clickmasters built our HoloLens 2 remote expert solution. Our field technicians now call a central expert who sees exactly what they see and draws holographic annotations on the equipment. Expert travel costs dropped 80%. Mean time to repair reduced 35%.",
     author: "Head of Field Operations",
     role: "Industrial Equipment Manufacturer",
   },
@@ -29530,10 +29530,10 @@ const iotDevelopmentOverride = {
   heroImage:
     "/images/photo-1518770660439-4636190af475.jpg",
   metaTitle:
-    "IoT Development Services | Connected Device Solutions | ClickMasters",
+    "IoT Development Services | Connected Device Solutions | Clickmasters",
   metaDescription:
-    "ClickMasters builds IoT systems device firmware, cloud backend, real-time dashboards, and MQTT/AWS IoT integration for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds IoT systems for B2B companies across the USA, Europe, Canada, and Australia. Device firmware for microcontrollers and single-board computers. MQTT and HTTPS communication via AWS IoT Core. Real-time telemetry dashboards. Over-the-air firmware updates with A/B partition rollback. Alerts and automated responses to sensor threshold breaches. The complete IoT stack from sensor to dashboard.",
+    "Clickmasters builds IoT systems device firmware, cloud backend, real-time dashboards, and MQTT/AWS IoT integration for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds IoT systems for B2B companies across the USA, Europe, Canada, and Australia. Device firmware for microcontrollers and single-board computers. MQTT and HTTPS communication via AWS IoT Core. Real-time telemetry dashboards. Over-the-air firmware updates with A/B partition rollback. Alerts and automated responses to sensor threshold breaches. The complete IoT stack from sensor to dashboard.",
   highlights: [
     "Device Firmware (C/C++/MicroPython)",
     "AWS IoT Core + MQTT",
@@ -29543,7 +29543,7 @@ const iotDevelopmentOverride = {
     "Alert Rules + Automation",
   ],
   // marketStats: [
-  //   { label: 'AWS IoT Core managed MQTT broker scaling to billions of device messages. ClickMasters\' primary IoT cloud platform.', value: 'AWS IoT' },
+  //   { label: 'AWS IoT Core managed MQTT broker scaling to billions of device messages. Clickmasters\' primary IoT cloud platform.', value: 'AWS IoT' },
   //   { label: 'MQTT Message Queuing Telemetry Transport lightweight pub-sub protocol for constrained devices and low-bandwidth networks. 2-byte header.', value: 'MQTT' },
   //   { label: 'ESP32 Espressif ESP32 the most widely deployed Wi-Fi + Bluetooth microcontroller in commercial IoT products worldwide.', value: 'ESP32' },
   //   { label: 'OTA Over-the-Air Update push firmware to deployed devices without physical access. Mandatory for production IoT fleets.', value: 'OTA' },
@@ -29764,7 +29764,7 @@ const iotDevelopmentOverride = {
     {
       question: "What is an IoT system and what are the main components?",
       answer:
-        "An IoT system connects physical devices sensors, actuators, machines to the cloud, enabling remote monitoring, control, and data-driven decision making. The five main components: devices (microcontrollers or single-board computers with sensors and actuators that measure or control physical conditions), connectivity (Wi-Fi, cellular, LoRaWAN, or BLE the transport layer between device and cloud), cloud platform (AWS IoT Core manages device connections, authenticates devices, routes messages, and integrates with cloud services), data processing (rules engines, stream processors, time series databases), and applications (dashboards, mobile apps, automated alerts triggered by sensor thresholds). ClickMasters designs and builds the complete stack firmware to dashboard as a single engagement rather than requiring the client to coordinate multiple specialists.",
+        "An IoT system connects physical devices sensors, actuators, machines to the cloud, enabling remote monitoring, control, and data-driven decision making. The five main components: devices (microcontrollers or single-board computers with sensors and actuators that measure or control physical conditions), connectivity (Wi-Fi, cellular, LoRaWAN, or BLE the transport layer between device and cloud), cloud platform (AWS IoT Core manages device connections, authenticates devices, routes messages, and integrates with cloud services), data processing (rules engines, stream processors, time series databases), and applications (dashboards, mobile apps, automated alerts triggered by sensor thresholds). Clickmasters designs and builds the complete stack firmware to dashboard as a single engagement rather than requiring the client to coordinate multiple specialists.",
     },
     {
       question: "What is MQTT and why is it used for IoT?",
@@ -29775,7 +29775,7 @@ const iotDevelopmentOverride = {
       question:
         "What is OTA firmware update and why is it essential for IoT products?",
       answer:
-        "OTA (Over-the-Air) firmware update enables pushing new firmware to deployed IoT devices without physical access. For any IoT product deployed at scale, OTA is non-negotiable: security vulnerabilities discovered after deployment must be patched without dispatching a technician to each device, feature improvements and bug fixes must reach the installed base, and devices must remain updatable as cloud APIs evolve. ClickMasters implements OTA using an A/B partition scheme: the device has two firmware partitions (active and inactive), the new firmware is downloaded to the inactive partition in the background, a cryptographic signature is verified before switching, and the device boots into the new firmware. If the new firmware fails to boot or passes a health check, the bootloader automatically rolls back to the previous partition. AWS IoT Jobs orchestrates OTA deployments across device fleets staged rollout, progress monitoring, and rollback triggering.",
+        "OTA (Over-the-Air) firmware update enables pushing new firmware to deployed IoT devices without physical access. For any IoT product deployed at scale, OTA is non-negotiable: security vulnerabilities discovered after deployment must be patched without dispatching a technician to each device, feature improvements and bug fixes must reach the installed base, and devices must remain updatable as cloud APIs evolve. Clickmasters implements OTA using an A/B partition scheme: the device has two firmware partitions (active and inactive), the new firmware is downloaded to the inactive partition in the background, a cryptographic signature is verified before switching, and the device boots into the new firmware. If the new firmware fails to boot or passes a health check, the bootloader automatically rolls back to the previous partition. AWS IoT Jobs orchestrates OTA deployments across device fleets staged rollout, progress monitoring, and rollback triggering.",
     },
     {
       question: "What is an IoT device shadow and when is it useful?",
@@ -29785,7 +29785,7 @@ const iotDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters built our complete IoT platform firmware for 10,000 ESP32 devices, AWS IoT Core backend, and real-time telemetry dashboard. The OTA system with A/B partition rollback has pushed 15 updates with zero bricked devices.",
+      "Clickmasters built our complete IoT platform firmware for 10,000 ESP32 devices, AWS IoT Core backend, and real-time telemetry dashboard. The OTA system with A/B partition rollback has pushed 15 updates with zero bricked devices.",
     author: "CTO",
     role: "IoT Product Company",
   },
@@ -29858,10 +29858,10 @@ const smartSystemsDevelopmentOverride = {
   heroImage:
     "/images/photo-1518770660439-4636190af475.jpg",
   metaTitle:
-    "Smart Systems Development | BMS & Predictive Maintenance | ClickMasters",
+    "Smart Systems Development | BMS & Predictive Maintenance | Clickmasters",
   metaDescription:
-    "ClickMasters builds smart systems building automation, predictive maintenance, fleet telematics, and digital twins for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds smart systems for B2B companies across the USA, Europe, Canada, and Australia. Building management systems that reduce energy consumption by automating HVAC, lighting, and access control via BACnet and Modbus. Predictive maintenance systems that use vibration, thermal, and current signature analysis to detect equipment failure before it happens. Connected fleet management with real-time GPS, OBD-II telematics, and driver scoring. Digital twin platforms on Azure Digital Twins or AWS IoT TwinMaker.",
+    "Clickmasters builds smart systems building automation, predictive maintenance, fleet telematics, and digital twins for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds smart systems for B2B companies across the USA, Europe, Canada, and Australia. Building management systems that reduce energy consumption by automating HVAC, lighting, and access control via BACnet and Modbus. Predictive maintenance systems that use vibration, thermal, and current signature analysis to detect equipment failure before it happens. Connected fleet management with real-time GPS, OBD-II telematics, and driver scoring. Digital twin platforms on Azure Digital Twins or AWS IoT TwinMaker.",
   highlights: [
     "BMS Automation (BACnet/Modbus)",
     "Predictive Maintenance (Vibration + Thermal)",
@@ -30068,7 +30068,7 @@ const smartSystemsDevelopmentOverride = {
   sections: [
     {
       heading: "BACnet The Standard for Building Automation",
-      body: "BACnet (Building Automation and Control Networks ASHRAE Standard 135) is the dominant open protocol for building management systems. It enables equipment from different manufacturers Siemens, Johnson Controls, Honeywell, Carrier to communicate using a common standard without proprietary integration. BACnet/IP transports over standard Ethernet networks and connects to HVAC controllers, lighting systems, energy meters, and access control panels. ClickMasters reads and writes BACnet object values (present value, setpoints, schedules, alarm states) to implement automation logic and feed the cloud data platform. Modbus is an alternative protocol used in industrial and energy equipment (inverters, meters, variable frequency drives) ClickMasters supports both BACnet and Modbus in the same system for comprehensive coverage of heterogeneous building infrastructure.",
+      body: "BACnet (Building Automation and Control Networks ASHRAE Standard 135) is the dominant open protocol for building management systems. It enables equipment from different manufacturers Siemens, Johnson Controls, Honeywell, Carrier to communicate using a common standard without proprietary integration. BACnet/IP transports over standard Ethernet networks and connects to HVAC controllers, lighting systems, energy meters, and access control panels. Clickmasters reads and writes BACnet object values (present value, setpoints, schedules, alarm states) to implement automation logic and feed the cloud data platform. Modbus is an alternative protocol used in industrial and energy equipment (inverters, meters, variable frequency drives) Clickmasters supports both BACnet and Modbus in the same system for comprehensive coverage of heterogeneous building infrastructure.",
       items: [],
     },
     {
@@ -30082,7 +30082,7 @@ const smartSystemsDevelopmentOverride = {
       question:
         "What is BACnet and why is it the standard for building automation?",
       answer:
-        "BACnet (Building Automation and Control Networks ASHRAE Standard 135) is the dominant open protocol for building management systems. It enables equipment from different manufacturers Siemens, Johnson Controls, Honeywell, Carrier to communicate using a common standard without proprietary integration. BACnet/IP transports over standard Ethernet networks and connects to HVAC controllers, lighting systems, energy meters, and access control panels. ClickMasters reads and writes BACnet object values (present value, setpoints, schedules, alarm states) to implement automation logic and feed the cloud data platform. Modbus is an alternative protocol used in industrial and energy equipment (inverters, meters, variable frequency drives) ClickMasters supports both BACnet and Modbus in the same system for comprehensive coverage of heterogeneous building infrastructure.",
+        "BACnet (Building Automation and Control Networks ASHRAE Standard 135) is the dominant open protocol for building management systems. It enables equipment from different manufacturers Siemens, Johnson Controls, Honeywell, Carrier to communicate using a common standard without proprietary integration. BACnet/IP transports over standard Ethernet networks and connects to HVAC controllers, lighting systems, energy meters, and access control panels. Clickmasters reads and writes BACnet object values (present value, setpoints, schedules, alarm states) to implement automation logic and feed the cloud data platform. Modbus is an alternative protocol used in industrial and energy equipment (inverters, meters, variable frequency drives) Clickmasters supports both BACnet and Modbus in the same system for comprehensive coverage of heterogeneous building infrastructure.",
     },
     {
       question: "What is predictive maintenance and what is the ROI?",
@@ -30099,12 +30099,12 @@ const smartSystemsDevelopmentOverride = {
       question:
         "What does smart fleet management enable that GPS tracking alone does not?",
       answer:
-        "Basic GPS tracking shows where vehicles are. Smart fleet management with OBD-II telematics adds: engine diagnostics (fault codes know about a vehicle issue before the driver reports it, schedule maintenance proactively), fuel consumption per trip and per driver (identify inefficient drivers and routes a 10% fuel reduction across a 50-vehicle fleet represents significant annual savings), driver behaviour scoring (harsh braking, rapid acceleration, speeding the primary predictors of accident risk and maintenance cost), utilisation analytics (which vehicles are underutilised optimise fleet size and allocation), and usage-based maintenance scheduling (service vehicles based on actual mileage and engine hours rather than calendar intervals avoiding both premature and overdue maintenance). ClickMasters integrates fleet telematics data with dispatch and maintenance systems for a complete operational picture.",
+        "Basic GPS tracking shows where vehicles are. Smart fleet management with OBD-II telematics adds: engine diagnostics (fault codes know about a vehicle issue before the driver reports it, schedule maintenance proactively), fuel consumption per trip and per driver (identify inefficient drivers and routes a 10% fuel reduction across a 50-vehicle fleet represents significant annual savings), driver behaviour scoring (harsh braking, rapid acceleration, speeding the primary predictors of accident risk and maintenance cost), utilisation analytics (which vehicles are underutilised optimise fleet size and allocation), and usage-based maintenance scheduling (service vehicles based on actual mileage and engine hours rather than calendar intervals avoiding both premature and overdue maintenance). Clickmasters integrates fleet telematics data with dispatch and maintenance systems for a complete operational picture.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters integrated our building's BACnet HVAC controllers and Modbus energy meters into a single dashboard. Automated occupancy-based scheduling alone reduced our energy bill by 18%. The system paid for itself in 16 months.",
+      "Clickmasters integrated our building's BACnet HVAC controllers and Modbus energy meters into a single dashboard. Automated occupancy-based scheduling alone reduced our energy bill by 18%. The system paid for itself in 16 months.",
     author: "Facilities Director",
     role: "Commercial Real Estate",
   },
@@ -30176,10 +30176,10 @@ const industrialIoTOverride = {
   serviceName: "Industrial IoT",
   heroImage:
     "/images/photo-1518770660439-4636190af475.jpg",
-  metaTitle: "Industrial IoT (IIoT) Development | OPC-UA & OEE | ClickMasters",
+  metaTitle: "Industrial IoT (IIoT) Development | OPC-UA & OEE | Clickmasters",
   metaDescription:
-    "ClickMasters builds IIoT systems OPC-UA/Modbus PLC connectivity, OEE monitoring, SCADA integration, and edge computing for manufacturing B2B companies worldwide.",
-  lead: "ClickMasters builds IIoT systems for manufacturing and industrial B2B companies across the USA, Europe, Canada, and Australia. OPC-UA and Modbus TCP connectivity to PLCs, CNCs, and legacy industrial controllers. Real-time OEE dashboards with downtime categorisation and shift reporting. Ignition SCADA with MQTT Sparkplug B to cloud. Edge computing with AWS Greengrass and NVIDIA Jetson. IT/OT network segmentation per ISA/IEC 62443.",
+    "Clickmasters builds IIoT systems OPC-UA/Modbus PLC connectivity, OEE monitoring, SCADA integration, and edge computing for manufacturing B2B companies worldwide.",
+  lead: "Clickmasters builds IIoT systems for manufacturing and industrial B2B companies across the USA, Europe, Canada, and Australia. OPC-UA and Modbus TCP connectivity to PLCs, CNCs, and legacy industrial controllers. Real-time OEE dashboards with downtime categorisation and shift reporting. Ignition SCADA with MQTT Sparkplug B to cloud. Edge computing with AWS Greengrass and NVIDIA Jetson. IT/OT network segmentation per ISA/IEC 62443.",
   highlights: [
     "OPC-UA + Modbus PLC Connectivity",
     "OEE Monitoring + Downtime Pareto",
@@ -30411,18 +30411,18 @@ const industrialIoTOverride = {
     {
       question: "What is the IT/OT convergence challenge?",
       answer:
-        "IT (Information Technology) manages computers, networks, and data. OT (Operational Technology) manages PLCs, SCADA, and physical control systems. They use different protocols (TCP/IP vs Modbus/Profibus), different update cycles (IT patches frequently; OT updates rarely downtime is costly), and different security models (IT assumes patchable systems; OT may run Windows XP on a machine tool that cannot be taken offline). Connecting OT systems to cloud platforms creates real business value but also creates security risk. ClickMasters addresses this with: network segmentation (OT separated from IT by firewall), unidirectional data flow (data diodes prevent attacks from reaching control systems), and OT-specific passive security monitoring (Claroty, Nozomi, or Dragos anomaly detection that does not interfere with industrial protocols that cannot tolerate active scanning).",
+        "IT (Information Technology) manages computers, networks, and data. OT (Operational Technology) manages PLCs, SCADA, and physical control systems. They use different protocols (TCP/IP vs Modbus/Profibus), different update cycles (IT patches frequently; OT updates rarely downtime is costly), and different security models (IT assumes patchable systems; OT may run Windows XP on a machine tool that cannot be taken offline). Connecting OT systems to cloud platforms creates real business value but also creates security risk. Clickmasters addresses this with: network segmentation (OT separated from IT by firewall), unidirectional data flow (data diodes prevent attacks from reaching control systems), and OT-specific passive security monitoring (Claroty, Nozomi, or Dragos anomaly detection that does not interfere with industrial protocols that cannot tolerate active scanning).",
     },
     {
       question:
-        "Can ClickMasters connect to legacy PLCs that are 10-20 years old?",
+        "Can Clickmasters connect to legacy PLCs that are 10-20 years old?",
       answer:
-        "Yes legacy equipment is a primary IIoT use case. Most legacy PLCs support Modbus RTU (serial RS-485) or Modbus TCP (Ethernet). If the PLC has Ethernet or can be reached via RS-485, ClickMasters can read its data. PLCs with proprietary protocols only (Siemens S7, Allen-Bradley DF1) require an OPC-UA gateway an industrial PC running Kepware or Ignition OPC-UA server with vendor-specific drivers that bridge the proprietary protocol to OPC-UA. ClickMasters sizes the gateway to the protocol and polling rate requirements. Key constraints: very old PLCs may have limited concurrent connection capacity (excessive polling frequency can overwhelm the controller ClickMasters configures appropriate polling intervals based on the PLC's specifications) and some legacy Modbus implementations have vendor-specific non-standard behaviour requiring specific configuration.",
+        "Yes legacy equipment is a primary IIoT use case. Most legacy PLCs support Modbus RTU (serial RS-485) or Modbus TCP (Ethernet). If the PLC has Ethernet or can be reached via RS-485, Clickmasters can read its data. PLCs with proprietary protocols only (Siemens S7, Allen-Bradley DF1) require an OPC-UA gateway an industrial PC running Kepware or Ignition OPC-UA server with vendor-specific drivers that bridge the proprietary protocol to OPC-UA. Clickmasters sizes the gateway to the protocol and polling rate requirements. Key constraints: very old PLCs may have limited concurrent connection capacity (excessive polling frequency can overwhelm the controller Clickmasters configures appropriate polling intervals based on the PLC's specifications) and some legacy Modbus implementations have vendor-specific non-standard behaviour requiring specific configuration.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters connected our 15-year-old Siemens PLCs to OPC-UA and AWS IoT Core. Our OEE dashboard shows real-time availability, performance, and quality across 10 production lines. We increased OEE from 58% to 72% in 6 months $2M additional annual output.",
+      "Clickmasters connected our 15-year-old Siemens PLCs to OPC-UA and AWS IoT Core. Our OEE dashboard shows real-time availability, performance, and quality across 10 production lines. We increased OEE from 58% to 72% in 6 months $2M additional annual output.",
     author: "Plant Manager",
     role: "Automotive Parts Manufacturer",
   },
@@ -30494,10 +30494,10 @@ const embeddedSystemsDevelopmentOverride = {
   serviceName: "Embedded Systems Development",
   heroImage:
     "/images/photo-1518770660439-4636190af475.jpg",
-  metaTitle: "Embedded Systems Development | Firmware & RTOS | ClickMasters",
+  metaTitle: "Embedded Systems Development | Firmware & RTOS | Clickmasters",
   metaDescription:
-    "ClickMasters develops embedded firmware bare-metal C/C++, FreeRTOS, Zephyr, BSP porting, and low-power design for B2B hardware products in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters develops embedded firmware for B2B companies across the USA, Europe, Canada, and Australia. Bare-metal C/C++ for latency-critical microcontroller applications. FreeRTOS for multi-tasking ARM Cortex-M devices. Zephyr RTOS for Nordic nRF52/nRF53 BLE products. BSP porting and hardware bring-up for new PCB designs. Low-power design for battery-operated devices targeting sub-10\xC2\xB5A average current. Static analysis with MISRA C and Cppcheck. Hardware-in-the-loop testing in CI/CD.",
+    "Clickmasters develops embedded firmware bare-metal C/C++, FreeRTOS, Zephyr, BSP porting, and low-power design for B2B hardware products in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters develops embedded firmware for B2B companies across the USA, Europe, Canada, and Australia. Bare-metal C/C++ for latency-critical microcontroller applications. FreeRTOS for multi-tasking ARM Cortex-M devices. Zephyr RTOS for Nordic nRF52/nRF53 BLE products. BSP porting and hardware bring-up for new PCB designs. Low-power design for battery-operated devices targeting sub-10\xC2\xB5A average current. Static analysis with MISRA C and Cppcheck. Hardware-in-the-loop testing in CI/CD.",
   highlights: [
     "Bare Metal C/C++ (ISR, DMA, Timers)",
     "FreeRTOS + Zephyr RTOS",
@@ -30705,7 +30705,7 @@ const embeddedSystemsDevelopmentOverride = {
     },
     {
       heading: "Low Power Design Achieving <10\xC2\xB5A Average Current",
-      body: "For a CR2032 coin cell battery with 220mAh capacity, 1-year battery life requires average current <25\xC2\xB5A (220mAh / 8760h \xE2\u2030\u02C6 25\xC2\xB5A). For safety margin and typical battery self-discharge, target <10\xC2\xB5A average current. Achieving this requires: careful sleep mode selection (Stop mode (20\xC2\xB5A) vs Standby (2\xC2\xB5A) vs Shutdown (<1\xC2\xB5A) trade-off between wake latency and current draw), peripheral power gating (disable SPI clock when idle, gate sensor VCC between measurements inactive sensors still draw quiescent current), wake-up sources (RTC alarm for periodic measurement (once per minute), external interrupt for user event), current profiling (Nordic Power Profiler Kit II measures current vs time identify unexpected active periods, unexpected high sleep current from un-gated peripherals). ClickMasters achieves <10\xC2\xB5A for most BLE sensor applications, <5\xC2\xB5A for simple periodic measurement devices.",
+      body: "For a CR2032 coin cell battery with 220mAh capacity, 1-year battery life requires average current <25\xC2\xB5A (220mAh / 8760h \xE2\u2030\u02C6 25\xC2\xB5A). For safety margin and typical battery self-discharge, target <10\xC2\xB5A average current. Achieving this requires: careful sleep mode selection (Stop mode (20\xC2\xB5A) vs Standby (2\xC2\xB5A) vs Shutdown (<1\xC2\xB5A) trade-off between wake latency and current draw), peripheral power gating (disable SPI clock when idle, gate sensor VCC between measurements inactive sensors still draw quiescent current), wake-up sources (RTC alarm for periodic measurement (once per minute), external interrupt for user event), current profiling (Nordic Power Profiler Kit II measures current vs time identify unexpected active periods, unexpected high sleep current from un-gated peripherals). Clickmasters achieves <10\xC2\xB5A for most BLE sensor applications, <5\xC2\xB5A for simple periodic measurement devices.",
       items: [],
     },
   ],
@@ -30718,22 +30718,22 @@ const embeddedSystemsDevelopmentOverride = {
     {
       question: "Which microcontroller should I choose for my IoT product?",
       answer:
-        "MCU selection depends on connectivity, processing power, and certification requirements. ESP32 (Espressif dual core, 240MHz, built-in Wi-Fi + BT): ideal for Wi-Fi connected consumer and commercial IoT, low cost, large community, easy development not suitable for safety-critical certifications. STM32 (STMicroelectronics ARM Cortex-M0+ to M7): industrial-grade, extensive HAL, IEC 61508 and AEC-Q100 certifications available ideal for industrial, medical, and automotive embedded products. nRF52/nRF53 (Nordic Semiconductor Cortex-M4, best-in-class BLE, ultra-low power, Zephyr native): ideal for Bluetooth wearables and battery-operated sensors. RP2040 (Raspberry Pi dual M0+, PIO state machines, low cost): ideal for maker-grade and cost-sensitive products without wireless requirements. ClickMasters selects based on the specific connectivity, power, and certification requirements of each product.",
+        "MCU selection depends on connectivity, processing power, and certification requirements. ESP32 (Espressif dual core, 240MHz, built-in Wi-Fi + BT): ideal for Wi-Fi connected consumer and commercial IoT, low cost, large community, easy development not suitable for safety-critical certifications. STM32 (STMicroelectronics ARM Cortex-M0+ to M7): industrial-grade, extensive HAL, IEC 61508 and AEC-Q100 certifications available ideal for industrial, medical, and automotive embedded products. nRF52/nRF53 (Nordic Semiconductor Cortex-M4, best-in-class BLE, ultra-low power, Zephyr native): ideal for Bluetooth wearables and battery-operated sensors. RP2040 (Raspberry Pi dual M0+, PIO state machines, low cost): ideal for maker-grade and cost-sensitive products without wireless requirements. Clickmasters selects based on the specific connectivity, power, and certification requirements of each product.",
     },
     {
       question: "What is static analysis for embedded firmware?",
       answer:
-        "Static analysis examines C/C++ source code without executing it identifying defects, undefined behaviour, and MISRA C violations that code review and testing might miss. Tools ClickMasters uses: Cppcheck (open-source memory errors, buffer overflows, uninitialised variables runs in CI on every commit), PC-lint Plus (Gimpel comprehensive MISRA C compliance checker, widely required for automotive and safety-critical firmware), and Polyspace (MathWorks formal methods proves absence of runtime errors required for ISO 26262 automotive and DO-178C avionics certification). MISRA C (Motor Industry Software Reliability Association guidelines) prohibits dangerous but legal C constructs mandatory in automotive, widely adopted in medical and industrial firmware. ClickMasters runs Cppcheck and a MISRA C subset as standard quality gates on all commercial firmware deliverables.",
+        "Static analysis examines C/C++ source code without executing it identifying defects, undefined behaviour, and MISRA C violations that code review and testing might miss. Tools Clickmasters uses: Cppcheck (open-source memory errors, buffer overflows, uninitialised variables runs in CI on every commit), PC-lint Plus (Gimpel comprehensive MISRA C compliance checker, widely required for automotive and safety-critical firmware), and Polyspace (MathWorks formal methods proves absence of runtime errors required for ISO 26262 automotive and DO-178C avionics certification). MISRA C (Motor Industry Software Reliability Association guidelines) prohibits dangerous but legal C constructs mandatory in automotive, widely adopted in medical and industrial firmware. Clickmasters runs Cppcheck and a MISRA C subset as standard quality gates on all commercial firmware deliverables.",
     },
     {
       question: "What is hardware-in-the-loop (HIL) testing?",
       answer:
-        "HIL testing runs automated test scripts against actual target hardware the firmware executes on the real microcontroller while a test harness stimulates inputs and verifies outputs. HIL catches hardware-specific bugs that software simulation misses: timing-dependent bugs (interrupt latency, SPI clock edge relationships), peripheral register bugs (incorrect DMA configuration, wrong ADC reference), and power regression bugs (measure current during specific test sequences, compare to power budget). ClickMasters implements HIL using: pyOCD or Segger J-Link Python API (programmatic flash, halt, read memory, set breakpoints via JTAG/SWD), GPIO simulation (signal generator or microcontroller test fixture to drive sensor inputs), and Python test scripts that run in GitHub Actions every firmware build validated on real hardware before release.",
+        "HIL testing runs automated test scripts against actual target hardware the firmware executes on the real microcontroller while a test harness stimulates inputs and verifies outputs. HIL catches hardware-specific bugs that software simulation misses: timing-dependent bugs (interrupt latency, SPI clock edge relationships), peripheral register bugs (incorrect DMA configuration, wrong ADC reference), and power regression bugs (measure current during specific test sequences, compare to power budget). Clickmasters implements HIL using: pyOCD or Segger J-Link Python API (programmatic flash, halt, read memory, set breakpoints via JTAG/SWD), GPIO simulation (signal generator or microcontroller test fixture to drive sensor inputs), and Python test scripts that run in GitHub Actions every firmware build validated on real hardware before release.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters developed the firmware for our BLE wearable medical device. nRF52 with Zephyr RTOS, 8\xC2\xB5A average sleep, OTA updates via BLE. Passed FCC/CE certification. 2-year battery life on CR2032.",
+      "Clickmasters developed the firmware for our BLE wearable medical device. nRF52 with Zephyr RTOS, 8\xC2\xB5A average sleep, OTA updates via BLE. Passed FCC/CE certification. 2-year battery life on CR2032.",
     author: "Head of Hardware",
     role: "Medical Device Company",
   },
@@ -30818,10 +30818,10 @@ const blockchainDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "Blockchain Development Company | Smart Contracts, DApps & Web3 | ClickMasters",
+    "Blockchain Development Company | Smart Contracts, DApps & Web3 | Clickmasters",
   metaDescription:
-    "ClickMasters builds production-grade blockchain applications smart contracts, DApps, NFT marketplaces, crypto wallets, and Web3 platforms for enterprise and startup clients in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds production-grade blockchain applications for enterprises and startups across the USA, Europe, Canada, and Australia. Smart contracts that execute business logic without intermediaries. DApps with real users. NFT marketplaces with real liquidity. Crypto wallets that enterprise security teams approve. And the honest architectural guidance to tell you when blockchain is the right answer and when it is not.",
+    "Clickmasters builds production-grade blockchain applications smart contracts, DApps, NFT marketplaces, crypto wallets, and Web3 platforms for enterprise and startup clients in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds production-grade blockchain applications for enterprises and startups across the USA, Europe, Canada, and Australia. Smart contracts that execute business logic without intermediaries. DApps with real users. NFT marketplaces with real liquidity. Crypto wallets that enterprise security teams approve. And the honest architectural guidance to tell you when blockchain is the right answer and when it is not.",
   highlights: [
     "Smart Contract Development",
     "DApp & Web3 Development",
@@ -31091,7 +31091,7 @@ const blockchainDevelopmentOverride = {
     },
     {
       heading: "When Blockchain is NOT the Right Answer",
-      body: 'If all the parties involved in your system already trust each other or a central authority blockchain adds cost and complexity without adding value. If your data needs to be private, mutable, or deleted public blockchain is the wrong architecture. If transaction speed and finality are critical (sub-second) current public blockchains are too slow. If your use case is simply "we want an immutable audit log" a write-once database or cloud audit trail service achieves this without the engineering overhead of blockchain. ClickMasters will tell you honestly if a traditional architecture better serves your requirements.',
+      body: 'If all the parties involved in your system already trust each other or a central authority blockchain adds cost and complexity without adding value. If your data needs to be private, mutable, or deleted public blockchain is the wrong architecture. If transaction speed and finality are critical (sub-second) current public blockchains are too slow. If your use case is simply "we want an immutable audit log" a write-once database or cloud audit trail service achieves this without the engineering overhead of blockchain. Clickmasters will tell you honestly if a traditional architecture better serves your requirements.',
       items: [],
     },
     {
@@ -31099,10 +31099,10 @@ const blockchainDevelopmentOverride = {
         "Blockchain Network Selection Guide: Ethereum vs. Polygon vs. Solana vs. Hyperledger",
       body: "",
       items: [
-        "Ethereum (L1): Transaction speed ~15 TPS (mainnet). Transaction cost $1-50+ (gas, variable). Decentralization Highest most validators. Smart contract language Solidity (EVM). DeFi/NFT ecosystem Largest most liquidity. Developer maturity Highest most tooling. Regulatory posture Public, pseudonymous. Best for DeFi, high-value NFTs, maximum security/composability. ClickMasters default for high-value DeFi, flagship NFT projects.",
-        "Polygon (L2): Transaction speed ~7,000 TPS. Transaction cost $0.001-0.1 (very low). Decentralization High Ethereum security. Smart contract language Solidity (EVM-compatible). DeFi/NFT ecosystem Large Ethereum bridge. Developer maturity High Hardhat/Truffle. Regulatory posture Public, pseudonymous. Best for consumer DApps, NFT platforms, cost-sensitive applications. ClickMasters default for most DApps and NFT marketplaces best cost/security balance.",
-        "Solana: Transaction speed ~65,000 TPS. Transaction cost $0.00025 (negligible). Decentralization High 1,900+ validators. Smart contract language Rust / C (programs). DeFi/NFT ecosystem Large and growing. Developer maturity High Anchor framework. Regulatory posture Public, pseudonymous. Best for high-frequency transactions, gaming, consumer apps. ClickMasters default for gaming, real-time apps, consumer scale.",
-        "Hyperledger Fabric: Transaction speed 2,000-20,000 TPS. Transaction cost Near-zero (permissioned). Decentralization None permissioned consortium. Smart contract language Go / JavaScript (chaincode). DeFi/NFT ecosystem Not applicable (private). Developer maturity High IBM-backed. Regulatory posture Private, permissioned, KYC. Best for enterprise consortia, supply chain, trade finance, interbank. ClickMasters default for enterprise, regulated industries, consortium B2B.",
+        "Ethereum (L1): Transaction speed ~15 TPS (mainnet). Transaction cost $1-50+ (gas, variable). Decentralization Highest most validators. Smart contract language Solidity (EVM). DeFi/NFT ecosystem Largest most liquidity. Developer maturity Highest most tooling. Regulatory posture Public, pseudonymous. Best for DeFi, high-value NFTs, maximum security/composability. Clickmasters default for high-value DeFi, flagship NFT projects.",
+        "Polygon (L2): Transaction speed ~7,000 TPS. Transaction cost $0.001-0.1 (very low). Decentralization High Ethereum security. Smart contract language Solidity (EVM-compatible). DeFi/NFT ecosystem Large Ethereum bridge. Developer maturity High Hardhat/Truffle. Regulatory posture Public, pseudonymous. Best for consumer DApps, NFT platforms, cost-sensitive applications. Clickmasters default for most DApps and NFT marketplaces best cost/security balance.",
+        "Solana: Transaction speed ~65,000 TPS. Transaction cost $0.00025 (negligible). Decentralization High 1,900+ validators. Smart contract language Rust / C (programs). DeFi/NFT ecosystem Large and growing. Developer maturity High Anchor framework. Regulatory posture Public, pseudonymous. Best for high-frequency transactions, gaming, consumer apps. Clickmasters default for gaming, real-time apps, consumer scale.",
+        "Hyperledger Fabric: Transaction speed 2,000-20,000 TPS. Transaction cost Near-zero (permissioned). Decentralization None permissioned consortium. Smart contract language Go / JavaScript (chaincode). DeFi/NFT ecosystem Not applicable (private). Developer maturity High IBM-backed. Regulatory posture Private, permissioned, KYC. Best for enterprise consortia, supply chain, trade finance, interbank. Clickmasters default for enterprise, regulated industries, consortium B2B.",
       ],
     },
     {
@@ -31133,12 +31133,12 @@ const blockchainDevelopmentOverride = {
       question:
         "Which blockchain should I build on Ethereum, Polygon, or Solana?",
       answer:
-        "Network selection depends on your use case. Ethereum is the choice for high-value DeFi applications and flagship NFT projects where maximum security, decentralization, and composability with the largest ecosystem justify the higher transaction costs. Polygon is the default for most consumer DApps and NFT platforms where Ethereum security is inherited through the L2 bridge but transaction costs are negligible ($0.001-0.1 per transaction). Solana is best for high-frequency applications (gaming, real-time trading, consumer scale) requiring sub-second finality and minimal transaction costs. For enterprise consortium use cases where participants are known and full public decentralization is not required, Hyperledger Fabric provides privacy, performance, and regulatory clarity that public networks cannot. ClickMasters will assess your specific requirements and recommend the correct network before any development begins.",
+        "Network selection depends on your use case. Ethereum is the choice for high-value DeFi applications and flagship NFT projects where maximum security, decentralization, and composability with the largest ecosystem justify the higher transaction costs. Polygon is the default for most consumer DApps and NFT platforms where Ethereum security is inherited through the L2 bridge but transaction costs are negligible ($0.001-0.1 per transaction). Solana is best for high-frequency applications (gaming, real-time trading, consumer scale) requiring sub-second finality and minimal transaction costs. For enterprise consortium use cases where participants are known and full public decentralization is not required, Hyperledger Fabric provides privacy, performance, and regulatory clarity that public networks cannot. Clickmasters will assess your specific requirements and recommend the correct network before any development begins.",
     },
     {
       question: "How much does smart contract development cost?",
       answer:
-        "Smart contract development costs range from $10,000 for a simple ERC-20 token or basic functionality contract to $40,000 for a complex DeFi protocol or multi-contract system with governance. A security audit for an existing contract costs $8,000-25,000 depending on contract complexity. A full DApp (smart contracts + frontend + The Graph integration) costs $20,000-60,000. An NFT marketplace costs $25,000-70,000. An enterprise Hyperledger implementation costs $40,000-120,000. All smart contract engagements at ClickMasters include security-first development practices test coverage, static analysis, and gas optimization as standard.",
+        "Smart contract development costs range from $10,000 for a simple ERC-20 token or basic functionality contract to $40,000 for a complex DeFi protocol or multi-contract system with governance. A security audit for an existing contract costs $8,000-25,000 depending on contract complexity. A full DApp (smart contracts + frontend + The Graph integration) costs $20,000-60,000. An NFT marketplace costs $25,000-70,000. An enterprise Hyperledger implementation costs $40,000-120,000. All smart contract engagements at Clickmasters include security-first development practices test coverage, static analysis, and gas optimization as standard.",
     },
     {
       question: "Why do smart contracts need security audits?",
@@ -31160,12 +31160,12 @@ const blockchainDevelopmentOverride = {
     {
       question: "How long does blockchain development take?",
       answer:
-        "A simple smart contract with security review takes 4-8 weeks. An NFT collection with mint contract and launch takes 5-9 weeks. A full DApp with frontend takes 7-12 weeks. An NFT marketplace takes 8-14 weeks. An enterprise Hyperledger implementation takes 3-9 months. Timeline is primarily determined by smart contract complexity, security audit depth, and frontend scope. All ClickMasters blockchain projects include a mandatory testnet deployment phase before mainnet launch this is non-negotiable and is included in the timeline estimate.",
+        "A simple smart contract with security review takes 4-8 weeks. An NFT collection with mint contract and launch takes 5-9 weeks. A full DApp with frontend takes 7-12 weeks. An NFT marketplace takes 8-14 weeks. An enterprise Hyperledger implementation takes 3-9 months. Timeline is primarily determined by smart contract complexity, security audit depth, and frontend scope. All Clickmasters blockchain projects include a mandatory testnet deployment phase before mainnet launch this is non-negotiable and is included in the timeline estimate.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our NFT marketplace on Polygon. The smart contracts are gas-optimised, the frontend is production-quality, and the security audit found zero critical issues. We've listed 50,000 items in our first month.",
+      "Clickmasters built our NFT marketplace on Polygon. The smart contracts are gas-optimised, the frontend is production-quality, and the security audit found zero critical issues. We've listed 50,000 items in our first month.",
     author: "CTO",
     role: "NFT Platform",
   },
@@ -31256,10 +31256,10 @@ const smartContractDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "Smart Contract Development Services | Solidity & Ethereum | ClickMasters",
+    "Smart Contract Development Services | Solidity & Ethereum | Clickmasters",
   metaDescription:
-    "ClickMasters builds and audits smart contracts Solidity on Ethereum, Polygon, BNB Chain, and Avalanche for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds and audits smart contracts for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 token contracts with vesting schedules and governance. ERC-721 and ERC-1155 NFT contracts with royalty enforcement (ERC-2981). DeFi protocols staking, liquidity pools, yield farming. Custom business logic in Solidity on Ethereum, Polygon, BNB Chain, and Avalanche. Every contract tested with Hardhat and Foundry, gas-optimised, and audited before mainnet deployment.",
+    "Clickmasters builds and audits smart contracts Solidity on Ethereum, Polygon, BNB Chain, and Avalanche for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds and audits smart contracts for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 token contracts with vesting schedules and governance. ERC-721 and ERC-1155 NFT contracts with royalty enforcement (ERC-2981). DeFi protocols staking, liquidity pools, yield farming. Custom business logic in Solidity on Ethereum, Polygon, BNB Chain, and Avalanche. Every contract tested with Hardhat and Foundry, gas-optimised, and audited before mainnet deployment.",
   highlights: [
     "Solidity (EVM) Development",
     "Hardhat + Foundry Testing",
@@ -31474,12 +31474,12 @@ const smartContractDevelopmentOverride = {
   sections: [
     {
       heading: "When Blockchain Is NOT the Right Solution",
-      body: "Smart contracts are appropriate when: the business logic genuinely requires trustless, tamper-proof execution between parties who do not trust each other; decentralisation is a core product requirement (not just a marketing claim); and the asset or agreement being managed has sufficient value to justify the gas costs and development complexity. Smart contracts are NOT appropriate when: a traditional database and legal contract can enforce the same agreement (most B2B use cases); the data that the contract needs to act on lives off-chain and requires an oracle (adding a trust assumption that partially undermines the decentralisation argument); or the regulatory environment for your use case (security tokens, financial products) is not yet clear in your jurisdiction. ClickMasters will tell you honestly whether your use case requires blockchain.",
+      body: "Smart contracts are appropriate when: the business logic genuinely requires trustless, tamper-proof execution between parties who do not trust each other; decentralisation is a core product requirement (not just a marketing claim); and the asset or agreement being managed has sufficient value to justify the gas costs and development complexity. Smart contracts are NOT appropriate when: a traditional database and legal contract can enforce the same agreement (most B2B use cases); the data that the contract needs to act on lives off-chain and requires an oracle (adding a trust assumption that partially undermines the decentralisation argument); or the regulatory environment for your use case (security tokens, financial products) is not yet clear in your jurisdiction. Clickmasters will tell you honestly whether your use case requires blockchain.",
       items: [],
     },
     {
       heading: "Gas Optimisation Techniques",
-      body: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), calldata instead of memory for function parameters (calldata is read-only and significantly cheaper), and unchecked arithmetic in loops where overflow is provably impossible. ClickMasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
+      body: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), calldata instead of memory for function parameters (calldata is read-only and significantly cheaper), and unchecked arithmetic in loops where overflow is provably impossible. Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
       items: [],
     },
   ],
@@ -31493,22 +31493,22 @@ const smartContractDevelopmentOverride = {
     {
       question: "What is the difference between ERC-20, ERC-721, and ERC-1155?",
       answer:
-        "These are Ethereum token standards interface specifications that define how a token contract behaves so wallets, exchanges, and other contracts can interact with it without knowing the specific implementation. ERC-20 defines fungible tokens each token is identical and interchangeable (like currency one USDC is worth the same as any other USDC). ERC-721 defines non-fungible tokens (NFTs) each token has a unique ID and is distinct from all others (used for digital ownership each token represents a unique asset). ERC-1155 defines a multi-token standard a single contract can hold both fungible and non-fungible tokens, enabling efficient batch operations (mint 1,000 fungible game currency tokens and 50 unique item NFTs in one transaction). ClickMasters selects the appropriate standard based on the use case ERC-20 for utility tokens and stablecoins, ERC-721 for unique digital assets, ERC-1155 for gaming and platforms managing multiple token types.",
+        "These are Ethereum token standards interface specifications that define how a token contract behaves so wallets, exchanges, and other contracts can interact with it without knowing the specific implementation. ERC-20 defines fungible tokens each token is identical and interchangeable (like currency one USDC is worth the same as any other USDC). ERC-721 defines non-fungible tokens (NFTs) each token has a unique ID and is distinct from all others (used for digital ownership each token represents a unique asset). ERC-1155 defines a multi-token standard a single contract can hold both fungible and non-fungible tokens, enabling efficient batch operations (mint 1,000 fungible game currency tokens and 50 unique item NFTs in one transaction). Clickmasters selects the appropriate standard based on the use case ERC-20 for utility tokens and stablecoins, ERC-721 for unique digital assets, ERC-1155 for gaming and platforms managing multiple token types.",
     },
     {
       question: "What is gas optimisation and why does it matter?",
       answer:
-        "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect the user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques reduce the gas cost of contract operations: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), and using calldata instead of memory for function parameters that are not modified (calldata is read-only and significantly cheaper). ClickMasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
+        "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect the user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques reduce the gas cost of contract operations: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), and using calldata instead of memory for function parameters that are not modified (calldata is read-only and significantly cheaper). Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
     },
     {
       question: "What is a smart contract audit and do I need one?",
       answer:
-        "A smart contract audit is a security review of Solidity code by an expert combining automated analysis (Slither, Mythril) with manual review to identify vulnerabilities before deployment. Once a smart contract is deployed and holds funds or controls assets, bugs cannot be fixed without a migration or a pre-designed upgrade mechanism. A single reentrancy bug (the type that enabled the 2016 DAO hack $60M lost) can drain all funds from a contract. ClickMasters strongly recommends security analysis on every contract that will hold or control value, and a full third-party audit for contracts controlling significant value (>$100K). ClickMasters performs pre-audit security analysis (Slither + Mythril + manual review) as a standard step before client deployment, and can recommend specialist smart contract audit firms (Trail of Bits, OpenZeppelin, ConsenSys Diligence, Certik) for high-value contracts requiring a formal third-party audit report.",
+        "A smart contract audit is a security review of Solidity code by an expert combining automated analysis (Slither, Mythril) with manual review to identify vulnerabilities before deployment. Once a smart contract is deployed and holds funds or controls assets, bugs cannot be fixed without a migration or a pre-designed upgrade mechanism. A single reentrancy bug (the type that enabled the 2016 DAO hack $60M lost) can drain all funds from a contract. Clickmasters strongly recommends security analysis on every contract that will hold or control value, and a full third-party audit for contracts controlling significant value (>$100K). Clickmasters performs pre-audit security analysis (Slither + Mythril + manual review) as a standard step before client deployment, and can recommend specialist smart contract audit firms (Trail of Bits, OpenZeppelin, ConsenSys Diligence, Certik) for high-value contracts requiring a formal third-party audit report.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our ERC-20 staking contract with gas optimisation that reduced user costs by 40%. Their Slither + Foundry fuzzing found a reentrancy edge case our team missed. The audit passed with zero critical findings.",
+      "Clickmasters built our ERC-20 staking contract with gas optimisation that reduced user costs by 40%. Their Slither + Foundry fuzzing found a reentrancy edge case our team missed. The audit passed with zero critical findings.",
     author: "CTO",
     role: "DeFi Protocol",
   },
@@ -31586,10 +31586,10 @@ const dappDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "DApp Development Services | Decentralised Application | ClickMasters",
+    "DApp Development Services | Decentralised Application | Clickmasters",
   metaDescription:
-    "ClickMasters builds DApps decentralised applications with React frontend, smart contract backend, and Web3 wallet integration for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds DApps for B2B companies across the USA, Europe, Canada, and Australia. React frontends with wagmi and viem for type-safe Ethereum interactions. MetaMask, WalletConnect, and Coinbase Wallet integration. Real-time transaction state management pending, confirmed, failed. The Graph for efficient on-chain data indexing. IPFS for decentralised storage. Every DApp built with the same production standards as a traditional web application Lighthouse 90+, TypeScript, accessible, and deployable via CI/CD.",
+    "Clickmasters builds DApps decentralised applications with React frontend, smart contract backend, and Web3 wallet integration for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds DApps for B2B companies across the USA, Europe, Canada, and Australia. React frontends with wagmi and viem for type-safe Ethereum interactions. MetaMask, WalletConnect, and Coinbase Wallet integration. Real-time transaction state management pending, confirmed, failed. The Graph for efficient on-chain data indexing. IPFS for decentralised storage. Every DApp built with the same production standards as a traditional web application Lighthouse 90+, TypeScript, accessible, and deployable via CI/CD.",
   highlights: [
     "React + wagmi + viem",
     "WalletConnect / MetaMask Integration",
@@ -31802,12 +31802,12 @@ const dappDevelopmentOverride = {
   sections: [
     {
       heading: "wagmi + viem Modern Web3 Stack",
-      body: "wagmi is a React library that provides hooks for common Ethereum interactions connecting wallets, reading smart contract state, sending transactions, listening for events. Without wagmi, DApp developers must manually manage: wallet provider connections (different wallets have different connection APIs), provider fallback and reconnection, caching contract read results, tracking transaction states, handling wallet switching and chain switching. wagmi abstracts all of this into simple React hooks: `useAccount()` returns the connected wallet address, `useReadContract()` returns the result of a contract view function (with caching and background refresh), `useWriteContract()` handles the full transaction flow. wagmi v2 is built on top of viem (for low-level Ethereum operations) and TanStack Query (for caching) the same patterns used in modern non-blockchain React applications. ClickMasters uses wagmi v2 + viem as the default Web3 stack for all new DApp frontends.",
+      body: "wagmi is a React library that provides hooks for common Ethereum interactions connecting wallets, reading smart contract state, sending transactions, listening for events. Without wagmi, DApp developers must manually manage: wallet provider connections (different wallets have different connection APIs), provider fallback and reconnection, caching contract read results, tracking transaction states, handling wallet switching and chain switching. wagmi abstracts all of this into simple React hooks: `useAccount()` returns the connected wallet address, `useReadContract()` returns the result of a contract view function (with caching and background refresh), `useWriteContract()` handles the full transaction flow. wagmi v2 is built on top of viem (for low-level Ethereum operations) and TanStack Query (for caching) the same patterns used in modern non-blockchain React applications. Clickmasters uses wagmi v2 + viem as the default Web3 stack for all new DApp frontends.",
       items: [],
     },
     {
       heading: "Account Abstraction (EIP-4337)",
-      body: "Account abstraction (EIP-4337) replaces the traditional Ethereum externally-owned account (EOA controlled by a private key / seed phrase) with a smart contract wallet. This enables DApp UX improvements that were impossible with EOAs: social login (users create a wallet by signing in with Google, Apple, or email no seed phrase to write down and lose), sponsored transactions (the DApp operator pays gas fees on behalf of the user removing the requirement for users to hold ETH before they can use the DApp), session keys (the user approves a session key that can perform specific actions without requiring a signature for each transaction improved UX for games and high-frequency interactions), and batch transactions (multiple actions executed in a single transaction approve + swap in one click instead of two). ClickMasters implements account abstraction using Alchemy's Account Kit or Biconomy both provide developer-friendly SDKs for EIP-4337 implementation.",
+      body: "Account abstraction (EIP-4337) replaces the traditional Ethereum externally-owned account (EOA controlled by a private key / seed phrase) with a smart contract wallet. This enables DApp UX improvements that were impossible with EOAs: social login (users create a wallet by signing in with Google, Apple, or email no seed phrase to write down and lose), sponsored transactions (the DApp operator pays gas fees on behalf of the user removing the requirement for users to hold ETH before they can use the DApp), session keys (the user approves a session key that can perform specific actions without requiring a signature for each transaction improved UX for games and high-frequency interactions), and batch transactions (multiple actions executed in a single transaction approve + swap in one click instead of two). Clickmasters implements account abstraction using Alchemy's Account Kit or Biconomy both provide developer-friendly SDKs for EIP-4337 implementation.",
       items: [],
     },
   ],
@@ -31821,7 +31821,7 @@ const dappDevelopmentOverride = {
     {
       question: "What is wagmi and why do modern DApps use it?",
       answer:
-        "wagmi is a React library that provides hooks for common Ethereum interactions connecting wallets, reading smart contract state, sending transactions, listening for events. Without wagmi, DApp developers must manually manage: wallet provider connections (different wallets have different connection APIs), provider fallback and reconnection, caching contract read results, tracking transaction states, handling wallet switching and chain switching. wagmi abstracts all of this into simple React hooks: `useAccount()` returns the connected wallet address, `useReadContract()` returns the result of a contract view function (with caching and background refresh), `useWriteContract()` handles the full transaction flow. wagmi v2 is built on top of viem (for low-level Ethereum operations) and TanStack Query (for caching) the same patterns used in modern non-blockchain React applications. ClickMasters uses wagmi v2 + viem as the default Web3 stack for all new DApp frontends.",
+        "wagmi is a React library that provides hooks for common Ethereum interactions connecting wallets, reading smart contract state, sending transactions, listening for events. Without wagmi, DApp developers must manually manage: wallet provider connections (different wallets have different connection APIs), provider fallback and reconnection, caching contract read results, tracking transaction states, handling wallet switching and chain switching. wagmi abstracts all of this into simple React hooks: `useAccount()` returns the connected wallet address, `useReadContract()` returns the result of a contract view function (with caching and background refresh), `useWriteContract()` handles the full transaction flow. wagmi v2 is built on top of viem (for low-level Ethereum operations) and TanStack Query (for caching) the same patterns used in modern non-blockchain React applications. Clickmasters uses wagmi v2 + viem as the default Web3 stack for all new DApp frontends.",
     },
     {
       question: "What is The Graph and why is it used for DApp data?",
@@ -31832,12 +31832,12 @@ const dappDevelopmentOverride = {
       question:
         "What is account abstraction (EIP-4337) and why does it matter for DApp UX?",
       answer:
-        "Account abstraction (EIP-4337) replaces the traditional Ethereum externally-owned account (EOA controlled by a private key / seed phrase) with a smart contract wallet. This enables DApp UX improvements that were impossible with EOAs: social login (users create a wallet by signing in with Google, Apple, or email no seed phrase to write down and lose), sponsored transactions (the DApp operator pays gas fees on behalf of the user removing the requirement for users to hold ETH before they can use the DApp), session keys (the user approves a session key that can perform specific actions without requiring a signature for each transaction improved UX for games and high-frequency interactions), and batch transactions (multiple actions executed in a single transaction approve + swap in one click instead of two). ClickMasters implements account abstraction using Alchemy's Account Kit or Biconomy both provide developer-friendly SDKs for EIP-4337 implementation.",
+        "Account abstraction (EIP-4337) replaces the traditional Ethereum externally-owned account (EOA controlled by a private key / seed phrase) with a smart contract wallet. This enables DApp UX improvements that were impossible with EOAs: social login (users create a wallet by signing in with Google, Apple, or email no seed phrase to write down and lose), sponsored transactions (the DApp operator pays gas fees on behalf of the user removing the requirement for users to hold ETH before they can use the DApp), session keys (the user approves a session key that can perform specific actions without requiring a signature for each transaction improved UX for games and high-frequency interactions), and batch transactions (multiple actions executed in a single transaction approve + swap in one click instead of two). Clickmasters implements account abstraction using Alchemy's Account Kit or Biconomy both provide developer-friendly SDKs for EIP-4337 implementation.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our DApp frontend with wagmi + The Graph. The wallet connection works flawlessly across MetaMask, WalletConnect, and Coinbase Wallet. The transaction UX with optimistic updates makes the app feel as responsive as Web2.",
+      "Clickmasters built our DApp frontend with wagmi + The Graph. The wallet connection works flawlessly across MetaMask, WalletConnect, and Coinbase Wallet. The transaction UX with optimistic updates makes the app feel as responsive as Web2.",
     author: "Product Lead",
     role: "DeFi Protocol",
   },
@@ -31915,10 +31915,10 @@ const web3DevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "Web3 Development Services | Blockchain Integration & dApps | ClickMasters",
+    "Web3 Development Services | Blockchain Integration & dApps | Clickmasters",
   metaDescription:
-    "ClickMasters delivers Web3 development blockchain integration, wallet authentication, token-gated access, and DAO tooling for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters delivers Web3 development for B2B companies across the USA, Europe, Canada, and Australia. Sign In With Ethereum (SIWE) authenticate users with their wallet, no password required. Token-gated access restrict content or features to holders of a specific NFT or token. On-chain identity and reputation build products that read and write to the emerging Web3 identity layer. DAO tooling governance proposals, voting, and treasury management. NFT integration in existing products. Built on Alchemy, Infura, and The Graph.",
+    "Clickmasters delivers Web3 development blockchain integration, wallet authentication, token-gated access, and DAO tooling for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters delivers Web3 development for B2B companies across the USA, Europe, Canada, and Australia. Sign In With Ethereum (SIWE) authenticate users with their wallet, no password required. Token-gated access restrict content or features to holders of a specific NFT or token. On-chain identity and reputation build products that read and write to the emerging Web3 identity layer. DAO tooling governance proposals, voting, and treasury management. NFT integration in existing products. Built on Alchemy, Infura, and The Graph.",
   highlights: [
     "Sign In With Ethereum (SIWE)",
     "Token-Gated Access",
@@ -32130,7 +32130,7 @@ const web3DevelopmentOverride = {
     },
     {
       heading: "Token-Gated Access Server-Side Verification",
-      body: "Token-gated access restricts application features or content to holders of a specific token or NFT. The implementation must include server-side verification: never rely on client-side wallet connection alone, as client-side checks can be bypassed. Next.js middleware or API routes call Alchemy NFT API or The Graph to verify token ownership on-chain before serving protected content or allowing API access. Best practices: always verify on the server (client-side UI can show gated content but API must validate before serving data), cache ownership results for performance (blockchain queries are expensive cache for 5-15 minutes depending on your freshness requirements), use snapshot gating for historical holdings (gate based on token holdings at a specific block number to prevent gaming by purchasing tokens just before access), and provide clear error states when wallet not connected, user does not own required token, or user connected wrong network. ClickMasters implements token gating with server-side verification as standard.",
+      body: "Token-gated access restricts application features or content to holders of a specific token or NFT. The implementation must include server-side verification: never rely on client-side wallet connection alone, as client-side checks can be bypassed. Next.js middleware or API routes call Alchemy NFT API or The Graph to verify token ownership on-chain before serving protected content or allowing API access. Best practices: always verify on the server (client-side UI can show gated content but API must validate before serving data), cache ownership results for performance (blockchain queries are expensive cache for 5-15 minutes depending on your freshness requirements), use snapshot gating for historical holdings (gate based on token holdings at a specific block number to prevent gaming by purchasing tokens just before access), and provide clear error states when wallet not connected, user does not own required token, or user connected wrong network. Clickmasters implements token gating with server-side verification as standard.",
       items: [],
     },
   ],
@@ -32153,12 +32153,12 @@ const web3DevelopmentOverride = {
     {
       question: "What is a DAO and what does DAO tooling include?",
       answer:
-        "A DAO (Decentralised Autonomous Organisation) is an organisation governed by smart contracts and token holders decisions are made via on-chain proposals and voting rather than by a traditional board. DAO tooling provides the user interface for governance participation: a proposal dashboard (list active, pending, and closed proposals with vote counts and status), a voting interface (cast votes on-chain for, against, or abstain with gas fee display), a delegation interface (delegate voting power to another address useful for token holders who want to participate in governance but do not want to vote on every proposal), a treasury view (display the DAO's multi-sig treasury holdings and transaction history), and Snapshot integration (many DAOs use Snapshot for off-chain signalling votes gasless, no on-chain transaction required for voting before binding on-chain votes). ClickMasters builds DAO tooling for organisations using OpenZeppelin Governor, Compound Governor Bravo, or Snapshot as their governance framework.",
+        "A DAO (Decentralised Autonomous Organisation) is an organisation governed by smart contracts and token holders decisions are made via on-chain proposals and voting rather than by a traditional board. DAO tooling provides the user interface for governance participation: a proposal dashboard (list active, pending, and closed proposals with vote counts and status), a voting interface (cast votes on-chain for, against, or abstain with gas fee display), a delegation interface (delegate voting power to another address useful for token holders who want to participate in governance but do not want to vote on every proposal), a treasury view (display the DAO's multi-sig treasury holdings and transaction history), and Snapshot integration (many DAOs use Snapshot for off-chain signalling votes gasless, no on-chain transaction required for voting before binding on-chain votes). Clickmasters builds DAO tooling for organisations using OpenZeppelin Governor, Compound Governor Bravo, or Snapshot as their governance framework.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters integrated SIWE authentication and token-gated content into our existing Web2 platform. Users can now sign in with their wallet and unlock premium features based on NFT holdings. The server-side verification ensures gating cannot be bypassed.",
+      "Clickmasters integrated SIWE authentication and token-gated content into our existing Web2 platform. Users can now sign in with their wallet and unlock premium features based on NFT holdings. The server-side verification ensures gating cannot be bypassed.",
     author: "CTO",
     role: "Creator Platform",
   },
@@ -32241,10 +32241,10 @@ const cryptoWalletDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "Crypto Wallet Development Services | Web & Mobile Wallets | ClickMasters",
+    "Crypto Wallet Development Services | Web & Mobile Wallets | Clickmasters",
   metaDescription:
-    "ClickMasters builds crypto wallets custodial, non-custodial, and MPC wallets for web and mobile for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds crypto wallet solutions for B2B companies across the USA, Europe, Canada, and Australia. Custodial wallets for exchanges and financial platforms secure key management with HSM and MPC. Non-custodial embedded wallets using Privy or Alchemy Account Kit users own their keys without seed phrase friction. Multi-chain support Ethereum, Polygon, BNB Chain, Solana, Bitcoin. Transaction signing and broadcasting. Portfolio balance displays. Hardware wallet integration.",
+    "Clickmasters builds crypto wallets custodial, non-custodial, and MPC wallets for web and mobile for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds crypto wallet solutions for B2B companies across the USA, Europe, Canada, and Australia. Custodial wallets for exchanges and financial platforms secure key management with HSM and MPC. Non-custodial embedded wallets using Privy or Alchemy Account Kit users own their keys without seed phrase friction. Multi-chain support Ethereum, Polygon, BNB Chain, Solana, Bitcoin. Transaction signing and broadcasting. Portfolio balance displays. Hardware wallet integration.",
   highlights: [
     "Custodial Wallet (HSM + MPC)",
     "Non-Custodial (Privy / Alchemy)",
@@ -32493,12 +32493,12 @@ const cryptoWalletDevelopmentOverride = {
       question:
         "What compliance requirements apply to crypto wallet applications?",
       answer:
-        "Compliance requirements for crypto wallet applications depend on the jurisdiction and business model. For custodial wallets (where the platform holds keys on behalf of users): KYC/AML (Know Your Customer / Anti-Money Laundering) requirements apply in most jurisdictions user identity verification before allowing transactions above thresholds, transaction monitoring for suspicious patterns, SAR (Suspicious Activity Report) filing obligations. Travel Rule (FATF Recommendation 16): for transactions above $1,000/$3,000 (jurisdiction-dependent) between custodial service providers, the originating VASP must transmit identifying information about the sender and recipient to the receiving VASP. For non-custodial wallets where the platform does not hold keys: less stringent requirements in most jurisdictions, but the regulatory environment is evolving rapidly. ClickMasters integrates compliance tooling (Chainalysis, Elliptic for transaction monitoring; Onfido, Jumio for KYC) but recommends the client obtain specific legal advice for their jurisdiction before launch.",
+        "Compliance requirements for crypto wallet applications depend on the jurisdiction and business model. For custodial wallets (where the platform holds keys on behalf of users): KYC/AML (Know Your Customer / Anti-Money Laundering) requirements apply in most jurisdictions user identity verification before allowing transactions above thresholds, transaction monitoring for suspicious patterns, SAR (Suspicious Activity Report) filing obligations. Travel Rule (FATF Recommendation 16): for transactions above $1,000/$3,000 (jurisdiction-dependent) between custodial service providers, the originating VASP must transmit identifying information about the sender and recipient to the receiving VASP. For non-custodial wallets where the platform does not hold keys: less stringent requirements in most jurisdictions, but the regulatory environment is evolving rapidly. Clickmasters integrates compliance tooling (Chainalysis, Elliptic for transaction monitoring; Onfido, Jumio for KYC) but recommends the client obtain specific legal advice for their jurisdiction before launch.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our embedded wallet infrastructure with Privy. Users sign up with email and get a non-custodial wallet automatically no seed phrase friction. We've onboarded 50,000 users with zero seed phrase support tickets.",
+      "Clickmasters built our embedded wallet infrastructure with Privy. Users sign up with email and get a non-custodial wallet automatically no seed phrase friction. We've onboarded 50,000 users with zero seed phrase support tickets.",
     author: "CTO",
     role: "Consumer Web3 App",
   },
@@ -32571,10 +32571,10 @@ const nftMarketplaceDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "NFT Marketplace Development Services | Custom NFT Platform | ClickMasters",
+    "NFT Marketplace Development Services | Custom NFT Platform | Clickmasters",
   metaDescription:
-    "ClickMasters builds NFT marketplaces minting, listing, auction, royalties, and secondary sales for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds NFT marketplaces for B2B companies across the USA, Europe, Canada, and Australia. Primary drop platforms scheduled reveals, allow lists, presale and public mint phases. Secondary marketplaces list, bid, buy, and sell NFTs with creator royalties enforced on-chain via ERC-2981. Lazy minting to reduce gas costs for large collections. Metadata storage on IPFS. Real-time floor price and trading volume analytics. Built on Ethereum, Polygon, or Base.",
+    "Clickmasters builds NFT marketplaces minting, listing, auction, royalties, and secondary sales for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters builds NFT marketplaces for B2B companies across the USA, Europe, Canada, and Australia. Primary drop platforms scheduled reveals, allow lists, presale and public mint phases. Secondary marketplaces list, bid, buy, and sell NFTs with creator royalties enforced on-chain via ERC-2981. Lazy minting to reduce gas costs for large collections. Metadata storage on IPFS. Real-time floor price and trading volume analytics. Built on Ethereum, Polygon, or Base.",
   highlights: [
     "Primary Drop + Allow List",
     "Secondary Marketplace (List/Bid/Buy)",
@@ -32779,7 +32779,7 @@ const nftMarketplaceDevelopmentOverride = {
   sections: [
     {
       heading: "When Blockchain Is NOT the Right Solution",
-      body: "NFT marketplaces are appropriate when: digital ownership and provenance are core to the product value (art, collectibles, gaming assets where ownership history matters); the creator economy benefits from programmable royalties on secondary sales; or the asset being represented genuinely benefits from on-chain ownership. They are NOT appropriate when: the use case is primarily about access control or licensing (token-gated access is simpler); the assets have no secondary market value (no reason to pay gas for minting); or the legal status of NFTs as securities in your jurisdiction is unclear for your specific asset type. ClickMasters advises clients to obtain legal guidance on NFT classification before launch, particularly for projects where NFTs may be classified as investment contracts.",
+      body: "NFT marketplaces are appropriate when: digital ownership and provenance are core to the product value (art, collectibles, gaming assets where ownership history matters); the creator economy benefits from programmable royalties on secondary sales; or the asset being represented genuinely benefits from on-chain ownership. They are NOT appropriate when: the use case is primarily about access control or licensing (token-gated access is simpler); the assets have no secondary market value (no reason to pay gas for minting); or the legal status of NFTs as securities in your jurisdiction is unclear for your specific asset type. Clickmasters advises clients to obtain legal guidance on NFT classification before launch, particularly for projects where NFTs may be classified as investment contracts.",
       items: [],
     },
     {
@@ -32789,7 +32789,7 @@ const nftMarketplaceDevelopmentOverride = {
     },
     {
       heading: "Merkle Tree Allow List",
-      body: "Merkle tree-based allow lists are the standard for gas-efficient NFT whitelisting. Instead of storing every allowed address in the contract (which costs gas and may hit block gas limits for large lists), the contract stores only the Merkle root of the allow list tree. To mint, the user provides a Merkle proof (a compact set of sibling hashes from the tree) that demonstrates their address is contained in the tree. The contract verifies the proof against the stored root and allows the mint if valid. Benefits: gas-efficient (store only one 32-byte root, not 1000+ addresses), scalable (unlimited list size, no gas limit issue), and privacy-preserving (the list is not publicly stored on-chain only the root). ClickMasters generates Merkle trees from allow list CSVs and implements proof verification in the mint function.",
+      body: "Merkle tree-based allow lists are the standard for gas-efficient NFT whitelisting. Instead of storing every allowed address in the contract (which costs gas and may hit block gas limits for large lists), the contract stores only the Merkle root of the allow list tree. To mint, the user provides a Merkle proof (a compact set of sibling hashes from the tree) that demonstrates their address is contained in the tree. The contract verifies the proof against the stored root and allows the mint if valid. Benefits: gas-efficient (store only one 32-byte root, not 1000+ addresses), scalable (unlimited list size, no gas limit issue), and privacy-preserving (the list is not publicly stored on-chain only the root). Clickmasters generates Merkle trees from allow list CSVs and implements proof verification in the mint function.",
       items: [],
     },
   ],
@@ -32797,7 +32797,7 @@ const nftMarketplaceDevelopmentOverride = {
     {
       question: "What is an NFT and how does an NFT marketplace work?",
       answer:
-        "An NFT (Non-Fungible Token) is a blockchain token that represents ownership of a unique digital or physical asset each token has a unique ID and cannot be exchanged 1:1 with another token (unlike fungible tokens like ETH or USDC where each unit is identical). NFT ownership is recorded on the blockchain the token's ownership history, transfer history, and associated metadata are publicly verifiable and immutable. An NFT marketplace is a platform where NFTs are minted (created), bought, sold, and traded. A primary marketplace facilitates the original creator selling NFTs to buyers ClickMasters builds primary drop platforms with mint pages, allow lists, and reveal mechanics. A secondary marketplace facilitates peer-to-peer resale sellers list their NFTs, buyers purchase at the listed price or make offers. Creator royalties (ERC-2981) specify a percentage of secondary sales that flows back to the original creator automatically when the marketplace honours the standard.",
+        "An NFT (Non-Fungible Token) is a blockchain token that represents ownership of a unique digital or physical asset each token has a unique ID and cannot be exchanged 1:1 with another token (unlike fungible tokens like ETH or USDC where each unit is identical). NFT ownership is recorded on the blockchain the token's ownership history, transfer history, and associated metadata are publicly verifiable and immutable. An NFT marketplace is a platform where NFTs are minted (created), bought, sold, and traded. A primary marketplace facilitates the original creator selling NFTs to buyers Clickmasters builds primary drop platforms with mint pages, allow lists, and reveal mechanics. A secondary marketplace facilitates peer-to-peer resale sellers list their NFTs, buyers purchase at the listed price or make offers. Creator royalties (ERC-2981) specify a percentage of secondary sales that flows back to the original creator automatically when the marketplace honours the standard.",
     },
     {
       question:
@@ -32813,12 +32813,12 @@ const nftMarketplaceDevelopmentOverride = {
     {
       question: "How are creator royalties enforced on NFT secondary sales?",
       answer:
-        "ERC-2981 is an Ethereum standard that specifies a royalty percentage and recipient address on-chain in the NFT contract. When a marketplace queries the NFT contract (`royaltyInfo(tokenId, salePrice)` returns `(royaltyRecipient, royaltyAmount)`), it can automatically deduct the royalty from the sale proceeds and pay the creator. The limitation: ERC-2981 is a voluntary standard marketplaces are not required by the Ethereum protocol to honour it. OpenSea, LooksRare, X2Y2, and most major marketplaces honour ERC-2981. Some newer marketplaces launched 'royalty-optional' models in 2022-2023, allowing buyers to bypass royalties. On-chain royalty enforcement (via operator filter registry or transfer hooks that only allow sales through royalty-honouring marketplaces) partially addresses this but restricts secondary market liquidity. ClickMasters implements ERC-2981 as the standard royalty mechanism and advises on the trade-offs of on-chain enforcement vs. voluntary standards.",
+        "ERC-2981 is an Ethereum standard that specifies a royalty percentage and recipient address on-chain in the NFT contract. When a marketplace queries the NFT contract (`royaltyInfo(tokenId, salePrice)` returns `(royaltyRecipient, royaltyAmount)`), it can automatically deduct the royalty from the sale proceeds and pay the creator. The limitation: ERC-2981 is a voluntary standard marketplaces are not required by the Ethereum protocol to honour it. OpenSea, LooksRare, X2Y2, and most major marketplaces honour ERC-2981. Some newer marketplaces launched 'royalty-optional' models in 2022-2023, allowing buyers to bypass royalties. On-chain royalty enforcement (via operator filter registry or transfer hooks that only allow sales through royalty-honouring marketplaces) partially addresses this but restricts secondary market liquidity. Clickmasters implements ERC-2981 as the standard royalty mechanism and advises on the trade-offs of on-chain enforcement vs. voluntary standards.",
     },
   ],
   testimonial: {
     quote:
-      "ClickMasters built our 10,000-piece NFT collection on Ethereum using ERC-721A and a Merkle tree allow list. The mint page handled 5,000 concurrent mint requests without issues. Gas costs for batch minting were 70% lower than standard ERC-721.",
+      "Clickmasters built our 10,000-piece NFT collection on Ethereum using ERC-721A and a Merkle tree allow list. The mint page handled 5,000 concurrent mint requests without issues. Gas costs for batch minting were 70% lower than standard ERC-721.",
     author: "Founder",
     role: "NFT Project",
   },
@@ -32891,10 +32891,10 @@ const tokenDevelopmentOverride = {
   heroImage:
     "/images/photo-1639762681485-074b7f938ba0.jpg",
   metaTitle:
-    "Token Development Services | ERC-20 & Tokenomics Design | ClickMasters",
+    "Token Development Services | ERC-20 & Tokenomics Design | Clickmasters",
   metaDescription:
-    "ClickMasters develops tokens ERC-20 utility tokens, governance tokens, stablecoins, and tokenomics design for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters develops tokens for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 utility tokens with configurable supply, minting, and burning. Governance tokens with delegation and on-chain voting (OpenZeppelin Governor). Vesting contracts with cliff, linear, and custom schedules. Staking contracts with reward distribution. Tokenomics design that aligns incentives without creating unsustainable inflation. Every token contract audited before launch.",
+    "Clickmasters develops tokens ERC-20 utility tokens, governance tokens, stablecoins, and tokenomics design for B2B companies in the USA, Europe, Canada & Australia.",
+  lead: "Clickmasters develops tokens for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 utility tokens with configurable supply, minting, and burning. Governance tokens with delegation and on-chain voting (OpenZeppelin Governor). Vesting contracts with cliff, linear, and custom schedules. Staking contracts with reward distribution. Tokenomics design that aligns incentives without creating unsustainable inflation. Every token contract audited before launch.",
   highlights: [
     "ERC-20 Token Contract",
     "Vesting + Cliff Schedules",
@@ -33100,7 +33100,7 @@ const tokenDevelopmentOverride = {
   sections: [
     {
       heading: "When Blockchain Is NOT the Right Solution",
-      body: 'Tokens are appropriate when: the token represents a genuine utility within the platform (access to services, governance rights, or fee discounts that are meaningfully tied to ownership), the token economics create sustainable demand relative to supply, and the regulatory status of the token in your target jurisdictions is clear. Tokens are NOT appropriate when: the primary use case is fundraising and investors expect profits from the token price appreciating (this is likely a security in most jurisdictions requiring full securities law compliance), the "utility" is superficial (tokens that could be replaced by a database row), or the tokenomics create excessive inflation that will inevitably impair the value of early holders. ClickMasters strongly recommends engaging a lawyer familiar with digital asset securities law in your primary jurisdiction before designing tokenomics or launching a token.',
+      body: 'Tokens are appropriate when: the token represents a genuine utility within the platform (access to services, governance rights, or fee discounts that are meaningfully tied to ownership), the token economics create sustainable demand relative to supply, and the regulatory status of the token in your target jurisdictions is clear. Tokens are NOT appropriate when: the primary use case is fundraising and investors expect profits from the token price appreciating (this is likely a security in most jurisdictions requiring full securities law compliance), the "utility" is superficial (tokens that could be replaced by a database row), or the tokenomics create excessive inflation that will inevitably impair the value of early holders. Clickmasters strongly recommends engaging a lawyer familiar with digital asset securities law in your primary jurisdiction before designing tokenomics or launching a token.',
       items: [],
     },
     {
@@ -33110,7 +33110,7 @@ const tokenDevelopmentOverride = {
     },
     {
       heading: "Howey Test Is Your Token a Security?",
-      body: `The Howey Test is the US Supreme Court's test for whether a transaction is an investment contract (a security). A token is a security if: there is an investment of money, in a common enterprise, with an expectation of profits, derived from the efforts of others. Many utility tokens are treated as securities because investors buy them expecting the token price to appreciate as the platform succeeds regardless of the "utility" label. Consequences of unregistered securities: in the USA, the SEC can halt the token sale, require registration (or an exemption), and fine the issuer. In the EU, MiCA (Markets in Crypto-Assets) regulation provides a framework for token issuance with specific requirements. ClickMasters strongly recommends engaging a lawyer specialising in digital asset securities in your primary target jurisdictions before designing tokenomics, writing a whitepaper, or conducting any public sale. This is not optional it is a prerequisite for a legally compliant token launch.`,
+      body: `The Howey Test is the US Supreme Court's test for whether a transaction is an investment contract (a security). A token is a security if: there is an investment of money, in a common enterprise, with an expectation of profits, derived from the efforts of others. Many utility tokens are treated as securities because investors buy them expecting the token price to appreciate as the platform succeeds regardless of the "utility" label. Consequences of unregistered securities: in the USA, the SEC can halt the token sale, require registration (or an exemption), and fine the issuer. In the EU, MiCA (Markets in Crypto-Assets) regulation provides a framework for token issuance with specific requirements. Clickmasters strongly recommends engaging a lawyer specialising in digital asset securities in your primary target jurisdictions before designing tokenomics, writing a whitepaper, or conducting any public sale. This is not optional it is a prerequisite for a legally compliant token launch.`,
       items: [],
     },
   ],
@@ -33127,7 +33127,7 @@ const tokenDevelopmentOverride = {
     },
     {
       question: "What are the regulatory risks of launching a token?",
-      answer: `Token regulatory risk is significant and jurisdiction-specific. The key question in most jurisdictions (USA, EU, UK) is whether the token is a security applying the Howey Test in the USA (an investment contract exists when money is invested in a common enterprise with an expectation of profits from others' efforts). Many utility tokens are treated as securities because investors buy them expecting the token price to appreciate as the platform succeeds regardless of the "utility" label. Consequences of unregistered securities: in the USA, the SEC can halt the token sale, require registration (or an exemption), and fine the issuer. In the EU, MiCA (Markets in Crypto-Assets) regulation provides a framework for token issuance with specific requirements. ClickMasters strongly recommends engaging a lawyer specialising in digital asset securities in the primary target jurisdictions before designing tokenomics, writing a whitepaper, or conducting any public sale. This is not optional it is a prerequisite for a legally compliant token launch.`,
+      answer: `Token regulatory risk is significant and jurisdiction-specific. The key question in most jurisdictions (USA, EU, UK) is whether the token is a security applying the Howey Test in the USA (an investment contract exists when money is invested in a common enterprise with an expectation of profits from others' efforts). Many utility tokens are treated as securities because investors buy them expecting the token price to appreciate as the platform succeeds regardless of the "utility" label. Consequences of unregistered securities: in the USA, the SEC can halt the token sale, require registration (or an exemption), and fine the issuer. In the EU, MiCA (Markets in Crypto-Assets) regulation provides a framework for token issuance with specific requirements. Clickmasters strongly recommends engaging a lawyer specialising in digital asset securities in the primary target jurisdictions before designing tokenomics, writing a whitepaper, or conducting any public sale. This is not optional it is a prerequisite for a legally compliant token launch.`,
     },
     {
       question:
@@ -33137,7 +33137,7 @@ const tokenDevelopmentOverride = {
   ],
   testimonial: {
     quote:
-      "ClickMasters designed our tokenomics and built our ERC-20 token with vesting and governance contracts. The tokenomics document was clear enough for investors, and the smart contracts passed audit with zero findings.",
+      "Clickmasters designed our tokenomics and built our ERC-20 token with vesting and governance contracts. The tokenomics document was clear enough for investors, and the smart contracts passed audit with zero findings.",
     author: "Founder",
     role: "DeFi Protocol",
   },

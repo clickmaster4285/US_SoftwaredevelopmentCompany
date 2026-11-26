@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Retail Inventory Management System",
   industrySlug: "retail-ecommerce-software",
   industryLabel: "Retail & E-commerce Software",
-  theme: { accent: "#0d9488", dark: "#042f2e", soft: "#ccfbf1", border: "#99f6e4", tint: "#f0fdfa" },
+  theme: { accent: "#0f766e", dark: "#042f2e", soft: "#ccfbf1", border: "#99f6e4", tint: "#f0fdfa" },
   browserLabel: "stock.example",
   images: {
     dashboard: img("retail-inventory-management-system-dashboard.svg", "Retail inventory management system dashboard with stock value, sell-through, low-stock alerts and inventory by store"),

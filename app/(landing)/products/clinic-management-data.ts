@@ -6,10 +6,10 @@ export const CLINIC_PATH =
   "/products/healthcare-medical-software/clinic-management-software";
 
 export const clinicTitle =
-  "Clinic Management Software Development | ClickMasters";
+  "Clinic Management Software Development | Clickmasters";
 
 export const clinicDescription =
-  "Custom clinic management software for appointments, patient records, EMR, billing and follow-ups, built around your clinic's workflow. Request a consultation.";
+  "Custom clinic management software for appointments, patient records, EMR, billing and follow-ups, built around your clinic's workflow.";
 
 export const productLink = (slug: string) =>
   `/products/healthcare-medical-software/${slug}`;
@@ -926,9 +926,9 @@ export const clinicFaqs = [
       "Yes, where the billing system provides integration access. Clinic invoices, service codes and patient details can be passed to a medical billing or claims platform, reducing double entry. Alternatively, a dedicated billing module can be built into the system. We'll recommend an approach based on how your clinic handles insurance, claims and payments.",
   },
   {
-    question: "Can ClickMasters develop a customized clinic management system?",
+    question: "Can Clickmasters develop a customized clinic management system?",
     answer:
-      "Yes. ClickMasters designs and develops custom clinic management software based on your workflows, specialty, team structure and growth plans. We handle requirements, UI/UX design, architecture, development, integrations, testing, deployment and ongoing support. Every project starts with a clear scope, timeline and quote, so you can make an informed decision.",
+      "Yes. Clickmasters designs and develops custom clinic management software based on your workflows, specialty, team structure and growth plans. We handle requirements, UI/UX design, architecture, development, integrations, testing, deployment and ongoing support. Every project starts with a clear scope, timeline and quote, so you can make an informed decision.",
   },
 ];
 

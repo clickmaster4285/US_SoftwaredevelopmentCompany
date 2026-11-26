@@ -32,7 +32,7 @@ const pages = hireUsItems.map((title) => {
   return {
     slug,
     title,
-    metaDescription: `${title} by ClickMasters. Plan, build, and scale high-impact digital products with an experienced delivery team.`,
+    metaDescription: `${title} by Clickmasters. Plan, build, and scale high-impact digital products with an experienced delivery team.`,
     lead: `Our ${normalized} offering helps you move from idea to production with clear milestones, quality engineering, and dependable support.`,
     highlights: [
       `Specialized delivery for ${normalized}`,

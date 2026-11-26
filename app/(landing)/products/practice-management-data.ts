@@ -6,10 +6,10 @@ export const PRACTICE_PATH =
   "/products/healthcare-medical-software/medical-practice-management-software";
 
 export const practiceTitle =
-  "Medical Practice Management Software | ClickMasters";
+  "Medical Practice Management Software | Clickmasters";
 
 export const practiceDescription =
-  "Custom medical practice management software for provider scheduling, billing, claims, RCM and multi-location reporting. Get a custom project estimate today.";
+  "Custom medical practice management software for provider scheduling, billing, claims, RCM and multi-location reporting. Get a project estimate.";
 
 export const heroSystem = [
   "Provider schedules, rooms and locations",
@@ -1220,9 +1220,9 @@ export const practiceFaqs = [
   },
   {
     question:
-      "Can ClickMasters develop custom medical practice management software?",
+      "Can Clickmasters develop custom medical practice management software?",
     answer:
-      "Yes. ClickMasters designs and develops custom medical practice management software, covering requirement discovery, workflow analysis, module planning, UI/UX design, architecture, frontend and backend development, database design, integrations, security testing, QA, deployment and ongoing support. Every project starts with a written scope, timeline and quote.",
+      "Yes. Clickmasters designs and develops custom medical practice management software, covering requirement discovery, workflow analysis, module planning, UI/UX design, architecture, frontend and backend development, database design, integrations, security testing, QA, deployment and ongoing support. Every project starts with a written scope, timeline and quote.",
   },
 ];
 

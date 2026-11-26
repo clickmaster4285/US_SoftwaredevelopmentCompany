@@ -1,3 +1,4 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -8,7 +9,6 @@ import {
   Brain,
   Building2,
   Check,
-  ChevronRight,
   ClipboardList,
   Factory,
   FileCheck2,
@@ -20,7 +20,7 @@ import {
   Truck,
   Warehouse,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -169,12 +169,12 @@ function BodyLink({ link }: { link: LinkSpec }) {
 
 function AppFigure({ image, caption, priority = false }: { image: Img; caption: string; priority?: boolean }) {
   return (
-    <figure className="overflow-hidden rounded-2xl border border-border bg-[#072a31] shadow-xl shadow-cyan-950/10 ring-1 ring-black/5">
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+    <figure className="cx-overfl-rounde-45">
+      <div className="cm-mock-bar" aria-hidden>
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> supplychain.example / concept
         </span>
       </div>
@@ -186,11 +186,11 @@ function AppFigure({ image, caption, priority = false }: { image: Img; caption: 
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
-        className="block h-auto w-full bg-[#f3f5fb]"
+        className="cm-img"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -206,7 +206,7 @@ function DiagramFigure({ image, caption, className = "" }: { image: Img; caption
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">{caption}</figcaption>
     </figure>
@@ -253,8 +253,8 @@ function CheckList({ items, className = "" }: { items: readonly string[]; classN
   return (
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-          <Check className="mt-1 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(item)} className="cm-li">
+          <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
           {item}
         </li>
       ))}
@@ -274,12 +274,12 @@ function TitledList({
   return (
     <ul className={`grid gap-4 ${className}`}>
       {items.map(([title, text]) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <p className="flex items-start gap-2 font-semibold leading-snug">
-            <Icon className="mt-0.5 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(title)} className="cm-card5">
+          <p className="cm-ttl">
+            <Icon className="cm-ic05" style={{ color: ACCENT }} aria-hidden />
             {title}
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p2">{text}</p>
         </li>
       ))}
     </ul>
@@ -290,17 +290,17 @@ function NumberedCards({ items, className = "" }: { items: readonly (readonly [s
   return (
     <ol className={`grid gap-4 ${className}`}>
       {items.map(([title, text], index) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <div className="flex items-center gap-3">
+        <li key={shortKey(title)} className="cm-card5">
+          <div className="cx-flex-itemsc-h">
             <span
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+              className="cm-num"
               style={{ backgroundColor: ACCENT }}
             >
               {index + 1}
             </span>
-            <p className="font-semibold leading-snug">{title}</p>
+            <p className="cx-fontse-leadin-b">{title}</p>
           </div>
-          <p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p3">{text}</p>
         </li>
       ))}
     </ol>
@@ -310,7 +310,7 @@ function NumberedCards({ items, className = "" }: { items: readonly (readonly [s
 function Note({ children }: { children: ReactNode }) {
   return (
     <div
-      className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
+      className="cm-note"
       style={{ borderColor: ACCENT }}
     >
       {children}
@@ -331,14 +331,14 @@ function Split({ children, figure }: { children: ReactNode; figure: ReactNode })
 function FeatureCard({ feature }: { feature: ScmFeature }) {
   const Icon = ICONS[feature.icon] ?? ClipboardList;
   return (
-    <article className="rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-center gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#cffafe]">
+    <article className="cm-card6">
+      <div className="cx-flex-itemsc-5">
+        <span className="cx-flex-h11-1w">
           <Icon className="h-5 w-5 text-[#0e7490]" aria-hidden />
         </span>
-        <h3 className="text-lg font-semibold leading-snug">{feature.title}</h3>
+        <h3 className="cm-h3">{feature.title}</h3>
       </div>
-      <p className="mt-4 text-sm leading-6 text-muted-foreground">{feature.text}</p>
+      <p className="cm-p4">{feature.text}</p>
     </article>
   );
 }
@@ -374,15 +374,15 @@ export default function ScmPage() {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em]" style={{ color: ACCENT }}>
                 {INDUSTRY_LABEL}
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Supply Chain Management Software for End-to-End Visibility, From Supplier to Delivery
+              <h1 className="cm-h1">
+                Supply Chain Management Software for End-to-End Visibility
               </h1>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 <p>
                   Your suppliers send confirmations by email. Purchasing tracks orders in a spreadsheet.
                   The warehouse runs its own system, transportation runs another, and planners rebuild
@@ -410,7 +410,7 @@ export default function ScmPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -458,12 +458,12 @@ export default function ScmPage() {
           </Prose>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {scopeAreas.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
+              <li key={shortKey(title)} className="cm-card5">
+                <span className="cm-label" style={{ color: ACCENT }}>
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <p className="mt-1 text-lg font-semibold">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ul>
@@ -515,7 +515,7 @@ export default function ScmPage() {
           </Prose>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
-              <FeatureCard key={feature.title} feature={feature} />
+              <FeatureCard key={shortKey(feature.title)} feature={feature} />
             ))}
           </div>
           <div className="mt-10">
@@ -530,7 +530,7 @@ export default function ScmPage() {
             headers={["Module", "Purpose", "Key users"]}
             rows={moduleRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Most businesses start with the modules closest to their biggest pain point, often supplier and
             procurement visibility, then add planning and logistics visibility.
           </p>
@@ -541,16 +541,16 @@ export default function ScmPage() {
           <DiagramFigure image={scmImages.workflow} caption="From supplier to customer" />
           <ol className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {workflowSteps.map(([title, text], index) => (
-              <li key={title} className="flex gap-4 rounded-2xl border border-border bg-white p-4">
+              <li key={shortKey(title)} className="cx-flex-gap4-2y">
                 <span
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                  className="cm-num8"
                   style={{ backgroundColor: "#cffafe", color: ACCENT }}
                 >
                   {index + 1}
                 </span>
                 <div>
-                  <p className="font-semibold leading-snug">{title}</p>
-                  <p className="mt-1 text-sm leading-6 text-muted-foreground">{text}</p>
+                  <p className="cx-fontse-leadin-b">{title}</p>
+                  <p className="cx-mt1-textsm-26">{text}</p>
                 </div>
               </li>
             ))}
@@ -571,7 +571,7 @@ export default function ScmPage() {
               />
             }
           >
-            <p className="text-base leading-7 text-muted-foreground">
+            <p className="cx-textba-leadin-1n">
               Strong supplier management starts with <strong className="text-foreground">one supplier
               record</strong>: legal details, contacts, terms, approved items, lead times, certificates and
               performance history. Supply chain risk management software flags a supplier whose
@@ -724,7 +724,7 @@ export default function ScmPage() {
             headers={["Industry", "Key challenges", "Relevant modules", "Outcomes sought"]}
             rows={industryRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             Healthcare supply chain management software and hospital supply chain management software
             track clinical supplies so a stockout is visible before it reaches a ward. Pharmaceutical
             supply chain management software adds lot and expiry to that chain. Food supply chain
@@ -741,7 +741,7 @@ export default function ScmPage() {
         {/* SMB / Enterprise */}
         <section className="border-t border-border py-16 md:py-20">
           <div className="mx-auto grid max-w-6xl gap-6 px-5 md:px-8 lg:grid-cols-2">
-            <article id="small-business" className="scroll-mt-28 rounded-3xl border border-border bg-white p-6 md:p-8">
+            <article id="small-business" className="cx-scroll-rounde-1g">
               <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
                 Supply Chain Management Software for Small Businesses
               </h2>
@@ -780,7 +780,7 @@ export default function ScmPage() {
             headers={["Factor", "Cloud-based", "On-premise"]}
             rows={cloudVsOnPremRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             SaaS supply chain management software is the browser version, so suppliers and planners
             open the same status without a server in the office.
           </p>
@@ -821,7 +821,7 @@ export default function ScmPage() {
           <Split
             figure={<DiagramFigure image={scmImages.mobile} caption="Approve and respond on the go" />}
           >
-            <p className="text-base leading-7 text-muted-foreground">
+            <p className="cx-textba-leadin-1n">
               AI is useful in supply chains when it&apos;s applied to specific, data-rich problems.
               Supply chain management AI software can flag a late shipment or draft a forecast. A
               supply chain management system using blockchain is sometimes proposed for a shared
@@ -830,7 +830,7 @@ export default function ScmPage() {
             </p>
             <TitledList items={aiPoints} icon={Brain} className="mt-5" />
           </Split>
-          <div className="mt-8 flex max-w-4xl gap-4 rounded-2xl border border-[#fde68a] bg-[#fffbeb] p-5 text-sm leading-7 text-[#78350f]">
+          <div className="cm-warn">
             <AlertTriangle className="mt-1 h-5 w-5 shrink-0" aria-hidden />
             <p>
               AI outputs depend on the quality and history of your data. They need validation against real
@@ -866,17 +866,17 @@ export default function ScmPage() {
           </p>
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {selectionQuestions.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <p className="flex items-center gap-3 font-semibold">
+              <li key={shortKey(title)} className="cm-card5">
+                <p className="cx-flex-itemsc-1s">
                   <span
-                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                    className="cm-num7"
                     style={{ backgroundColor: "#cffafe", color: ACCENT }}
                   >
                     {index + 1}
                   </span>
                   {title}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -886,12 +886,12 @@ export default function ScmPage() {
         <Section id="process" eyebrow="Delivery" title="Custom SCM Software Development Process">
           <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
+              <li key={shortKey(title)} className="cm-card5">
+                <span className="cm-label" style={{ color: ACCENT }}>
                   Step {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -932,21 +932,21 @@ export default function ScmPage() {
         </Section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+        <section id="faq" className="cm-sec">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Supply Chain Management Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {scmFaqs.map((faq, index) => (
-                <details key={faq.question} className="group p-5 md:p-6" open={index === 0}>
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                <details key={shortKey(faq.question)} className="group p-5 md:p-6" open={index === 0}>
+                  <summary className="cm-faq-q">
                     <h3>
                       {index + 1}. {faq.question}
                     </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">{faq.answer}</p>
+                  <p className="cm-intro">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -957,7 +957,7 @@ export default function ScmPage() {
         <section className="border-t border-border text-white" style={{ backgroundColor: DARK }}>
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Connect Your Supply Chain From Supplier to Customer
               </h2>
               <p className="mt-4 text-base leading-7 text-white/80">
@@ -980,7 +980,7 @@ export default function ScmPage() {
               <p className="text-sm font-semibold">Our recommendation covers:</p>
               <ul className="mt-4 space-y-3">
                 {["The right scope: full system or coordination layer", "The modules involved", "ERP, WMS, TMS and partner integrations", "A planned first phase"].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(item)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#67e8f9] text-[#072a31]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -995,13 +995,13 @@ export default function ScmPage() {
         {/* Related products (site template block) */}
         {relatedProducts.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">More in {INDUSTRY_LABEL}</h2>
+            <h2 className="cx-text2x-fontse-u">More in {INDUSTRY_LABEL}</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {relatedProducts.map((item) => (
                 <Link
                   key={item.slug}
                   href={productPath(INDUSTRY_SLUG, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -1012,10 +1012,10 @@ export default function ScmPage() {
 
         {/* Sticky mobile CTA */}
         <style>{"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}</style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Discuss Your Supply Chain Requirements
             <ArrowRight className="h-4 w-4" />

@@ -101,31 +101,27 @@ export default function ProductsMenu({ className }: { className: string }) {
         }
       }}
     >
-      <button
-        type="button"
+      {/* A real link so crawlers (and users without hover) reach /products.
+          It used to be a <button>, so the server HTML had no link into the
+          product catalogue. Hover/focus still opens the mega-menu. */}
+      <Link
+        href="/products"
         className={[
           "relative inline-flex cursor-pointer items-center gap-1 bg-transparent px-3 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300",
           className,
         ].join(" ")}
         aria-haspopup="true"
         aria-expanded={open}
-        onClick={() => {
-          if (pinnedRef.current) {
-            closeMenu();
-            return;
-          }
-          pinnedRef.current = true;
-          show();
-        }}
       >
         Products
         <ChevronDown
+          aria-hidden="true"
           className={[
             "h-3 w-3 opacity-60 transition-transform duration-300",
             open ? "rotate-180" : "rotate-0",
           ].join(" ")}
         />
-      </button>
+      </Link>
 
       {visible && (
         <div

@@ -12,6 +12,7 @@ export default function ProcessSection() {
     <section className="bg-[#171717] px-5 py-24 text-white md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          tone="dark"
           eyebrow="Process"
           title="Structured enough to stay predictable."
           copy="Every engagement has a clear path from first call to production handoff."

@@ -1,10 +1,29 @@
-import { pageUrl, SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, pageUrl, SITE_URL } from "@/lib/site";
 
+const isFaqNode = (node: unknown) =>
+  !!node &&
+  typeof node === "object" &&
+  ([] as unknown[])
+    .concat((node as Record<string, unknown>)["@type"])
+    .includes("FAQPage");
+
+/**
+ * FAQPage markup is not emitted. Since 2023 Google shows FAQ rich results
+ * only for well-known government and health authority sites, so this site is
+ * not eligible, and the markup repeated every FAQ answer twice more per page
+ * (JSON-LD + its hydration copy): up to ~25 KB on the largest product pages.
+ * The FAQs stay visible on the pages; only the structured-data copy is dropped.
+ */
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
+  if (isFaqNode(data)) return null;
+  const graph = data["@graph"];
+  const output = Array.isArray(graph)
+    ? { ...data, "@graph": graph.filter((node) => !isFaqNode(node)) }
+    : data;
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(output) }}
     />
   );
 }
@@ -16,7 +35,8 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: "Clickmasters",
     url: SITE_URL,
-    email: "sales@Clickmasterssoftwaredevelopmentcompany.com",
+    logo: `${SITE_URL}/cm-logos/logo.webp`,
+    email: CONTACT_EMAIL,
     telephone: "+1-325-202-4074",
     description:
       "Remote-first software development company building custom web, mobile, and AI products for businesses in the United States and abroad.",

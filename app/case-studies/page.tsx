@@ -170,7 +170,7 @@ function CaseStudyCard({ study }: { study: CaseStudyEntry }) {
       {/* hover glow */}
       <div
         aria-hidden
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+        className="cx-absolu-inset0-23"
         style={{
           background:
             "radial-gradient(circle at 30% 0%, oklch(0.65 0.18 250 / 0.18), transparent 60%)",
@@ -180,16 +180,16 @@ function CaseStudyCard({ study }: { study: CaseStudyEntry }) {
       {/* top meta row */}
       <div className="relative flex items-center justify-between text-[11px] uppercase tracking-[0.25em] opacity-50 mb-6">
         <span>{getHeroText(study, "eyebrow")}</span>
-        <span className="flex items-center gap-2">
+        <span className="cx-flex-itemsc-2x">
           <span className="size-1 rounded-full bg-[oklch(0.65_0.18_250)]" />
           {utcYear(study.meta.updatedAt)}
         </span>
       </div>
 
       {/* title */}
-      <h3 className="relative text-xl md:text-2xl font-semibold tracking-tight leading-tight mb-3">
+      <h2 className="relative text-xl md:text-2xl font-semibold tracking-tight leading-tight mb-3">
         {getHeroText(study, "h1")}
-      </h3>
+      </h2>
 
       {/* summary */}
       <p className="relative text-[15px] leading-relaxed opacity-75 mb-6">
@@ -364,12 +364,12 @@ export default function CaseStudiesPage() {
         )}
 
         {/* ── Footer note ── */}
-        <div className="mt-20 pt-8 border-t border-[oklch(0.18_0.02_250)]/10 flex items-center justify-between text-[11px] uppercase tracking-[0.2em] opacity-40">
+        <div className="mt-20 pt-8 border-t border-[oklch(0.18_0.02_250)]/10 flex items-center justify-between text-[11px] uppercase tracking-[0.2em] opacity-70">
           <span>
             {published.length}{" "}
             {published.length === 1 ? "case study" : "case studies"}
           </span>
-          <span className="flex items-center gap-2">
+          <span className="cx-flex-itemsc-2x">
             <span className="size-1 rounded-full bg-[oklch(0.65_0.18_250)]" />
             {published.length > 0 ? `Updated ${lastUpdatedYear}` : null}
           </span>

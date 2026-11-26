@@ -3,6 +3,11 @@ import Link from "next/link";
 import { Linkedin, Instagram, Twitter, Dribbble, Facebook } from "lucide-react";
 import mascot from "@/public/assets/footer-mascot.webp";
 import logo from "@/public/cm-logos/logo.webp";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+} from "@/lib/site";
 
 /* ───────────────── Data ───────────────── */
 
@@ -12,11 +17,8 @@ const FOOTER_NAV = [
     title: "Company",
     items: [
       { label: "About Us", href: "/about" },
-      { label: "Our Work", href: "/software-development" },
-      {
-        label: "Case Studies",
-        href: "/software-development/custom-software-development",
-      },
+      { label: "Software Products", href: "/products" },
+      { label: "Case Studies", href: "/case-studies" },
       { label: "Contact Us", href: "/contact" },
     ],
   },
@@ -49,18 +51,34 @@ const FOOTER_NAV = [
     ],
   },
   {
+    // Each industry links to its product hub (previously four of these all
+    // pointed at /software-development, and no page outside /products
+    // linked into the product catalogue).
     title: "Industries",
     items: [
-      { label: "Healthcare", href: "/software-development" },
-      { label: "FinTech", href: "/software-development" },
-      { label: "E-commerce", href: "/web-development/ecommerce-development" },
-      { label: "Education", href: "/software-development" },
-      { label: "Logistics", href: "/software-development" },
+      { label: "Healthcare", href: "/products/healthcare-medical-software" },
+      {
+        label: "Business & Enterprise",
+        href: "/products/business-enterprise-management",
+      },
+      { label: "Fitness & Sports", href: "/products/fitness-sports-management" },
+      { label: "Education", href: "/products/education-management-software" },
+      { label: "Retail & E-commerce", href: "/products/retail-ecommerce-software" },
+      {
+        label: "Logistics",
+        href: "/products/logistics-transportation-software",
+      },
+      {
+        label: "Real Estate",
+        href: "/products/real-estate-property-management",
+      },
     ],
   },
 ];
 
-// NEW: social row next to contact info (per reference image)
+// Social profiles. Entries with href "#" are placeholders and are not
+// rendered (dead "#" links hurt crawl quality and keyboard users); add the
+// real profile URL to show an icon.
 const TOP_SOCIALS = [
   { label: "LinkedIn", href: "#", Icon: Linkedin },
   { label: "Instagram", href: "#", Icon: Instagram },
@@ -78,7 +96,7 @@ const SERVICE_AREAS = [
 ];
 
 // UNCHANGED (bottom bar)
-const SOCIALS = [
+const SOCIALS_ALL = [
   { label: "Dribbble", href: "#", aria: "Dribbble", Icon: Dribbble },
   { label: "Behance", href: "#", aria: "Behance", Icon: null },
   { label: "Instagram", href: "#", aria: "Instagram", Icon: Instagram },
@@ -86,9 +104,11 @@ const SOCIALS = [
   { label: "X", href: "#", aria: "X", Icon: Twitter },
   { label: "Facebook", href: "#", aria: "Facebook", Icon: Facebook },
 ];
+const SOCIALS = SOCIALS_ALL.filter((s) => s.href !== "#");
+const TOP_SOCIALS_LIVE = TOP_SOCIALS.filter((s) => s.href !== "#");
 
 /** Optional ERP/CMS overrides for pages created in the ERP. Without props the
- * default ClickMasters footer renders unchanged. */
+ * default Clickmasters footer renders unchanged. */
 export type FooterColumn = {
   title: string;
   items: { label: string; href: string; newTab?: boolean }[];
@@ -104,13 +124,6 @@ export default function Footer({
   copyright?: string;
 } = {}) {
   const navColumns = columns?.length ? columns : FOOTER_NAV;
-  const emailParts = {
-    first: "sales@Clickmasterssoftwaredevelopment",
-    second: "company.com",
-  };
-  const emailFull = `${emailParts.first}${emailParts.second}`;
-  const PHONE_DISPLAY = "+1 325 202 4074";
-  const PHONE_TEL = "tel:+13252024074";
 
   return (
     <footer className="bg-[#f5f3ee] text-[#1a1a1a]">
@@ -144,35 +157,35 @@ export default function Footer({
 
               <p className="text-base sm:text-lg leading-relaxed max-w-sm font-medium">
                 {tagline ||
-                  "ClickMasters is a software development company delivering high-performance web, mobile, AI, SaaS, and cloud solutions for startups and growing businesses."}
+                  "Clickmasters is a software development company delivering high-performance web, mobile, AI, SaaS, and cloud solutions for startups and growing businesses."}
               </p>
             </div>
 
             {/* Contact */}
             <div className="mt-6 sm:mt-8 space-y-1.5">
               <a
-                href={`mailto:${emailFull}`}
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="block text-sm sm:text-base md:text-lg font-medium hover:opacity-60 transition-opacity"
               >
-                <span className="block whitespace-nowrap">
-                  {emailParts.first}
-                </span>
-                <span className="block whitespace-nowrap">
-                  {emailParts.second}
-                </span>
+                {/* One text node so the address reads/copies correctly; <wbr>
+                    keeps the old two-line wrap on narrow columns. */}
+                {CONTACT_EMAIL.replace(/company\.com$/, "")}
+                <wbr />
+                company.com
               </a>
               <a
-                href={PHONE_TEL}
+                href={CONTACT_PHONE_TEL}
                 className="block text-sm sm:text-base md:text-lg font-medium opacity-70 hover:opacity-100 transition-opacity"
               >
-                {PHONE_DISPLAY}
+                {CONTACT_PHONE_DISPLAY}
               </a>
             </div>
 
             {/* Social row */}
+            {TOP_SOCIALS_LIVE.length > 0 && (
             <ul className="mt-6 sm:mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm sm:text-base font-medium">
-              {TOP_SOCIALS.map((s, i) => (
-                <li key={s.label} className="flex items-center gap-3">
+              {TOP_SOCIALS_LIVE.map((s, i) => (
+                <li key={s.label} className="cx-flex-itemsc-h">
                   <a
                     href={s.href}
                     aria-label={s.label}
@@ -180,7 +193,7 @@ export default function Footer({
                   >
                     <s.Icon className="h-4 w-4" />
                   </a>
-                  {i < TOP_SOCIALS.length - 1 && (
+                  {i < TOP_SOCIALS_LIVE.length - 1 && (
                     <span aria-hidden="true" className="opacity-30">
                       |
                     </span>
@@ -188,6 +201,7 @@ export default function Footer({
                 </li>
               ))}
             </ul>
+            )}
           </div>
 
           {/* Right: the four nav columns */}
@@ -195,7 +209,7 @@ export default function Footer({
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 md:gap-x-8">
               {navColumns.map((col: FooterColumn) => (
                 <div key={col.title}>
-                  <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 md:mb-5 font-medium">
+                  <p className="cm-fhead">
                     {col.title}
                   </p>
                   <ul className="space-y-2.5 md:space-y-3">
@@ -206,7 +220,7 @@ export default function Footer({
                           {...(item.newTab
                             ? { target: "_blank", rel: "noopener noreferrer" }
                             : {})}
-                          className="text-sm sm:text-base font-medium hover:opacity-60 transition-opacity"
+                          className="cm-flink"
                         >
                           {item.label}
                         </a>
@@ -220,7 +234,7 @@ export default function Footer({
         </div>
 
         <div className="mt-16 md:mt-20 lg:mt-24">
-          <p className="text-xs uppercase tracking-[0.25em] opacity-50 mb-4 font-medium">
+          <p className="text-xs uppercase tracking-[0.25em] opacity-70 mb-4 font-medium">
             Service area
           </p>
           <p className="max-w-3xl text-sm leading-7 opacity-70">
@@ -252,19 +266,22 @@ export default function Footer({
               ))}
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-xs sm:text-sm opacity-60 text-center">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-xs sm:text-sm opacity-70 text-center">
               <span className="w-full sm:w-auto">
                 {copyright || "©2026 Clickmasters"}
               </span>
               <span className="hidden sm:inline opacity-30">|</span>
               <div className="flex items-center gap-3 sm:gap-5">
-                <a href="#" className="hover:opacity-100 transition-opacity">
-                  Privacy
+                <a
+                  href="/privacy"
+                  className="hover:opacity-100 transition-opacity"
+                >
+                  Privacy Policy
                 </a>
-                <a href="#" className="hover:opacity-100 transition-opacity">
-                  Terms
-                </a>
-                <a href="#" className="hover:opacity-100 transition-opacity">
+                <a
+                  href="/sitemap.xml"
+                  className="hover:opacity-100 transition-opacity"
+                >
                   Sitemap
                 </a>
               </div>

@@ -112,9 +112,9 @@ export const SERVICE_SECTION_DATA = {
         icon: "Building",
         heroImage:
           "/images/photo-1555066931-4365d14bab8c.jpg",
-        metaTitle: "Custom Software Development Company | ClickMasters",
+        metaTitle: "Custom Software Development Company | Clickmasters",
         metaDescription:
-          "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
+          "Clickmasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
         lead: "Custom software built around how your business actually operates not generic tools that force you to change your workflows.",
         highlights: [
           "Internal workflows & customer-facing platforms",

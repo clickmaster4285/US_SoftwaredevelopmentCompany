@@ -1,3 +1,4 @@
+import LazyVideo from "@/components/ui/lazy-video";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -164,7 +165,7 @@ function CapabilitiesSection() {
             >
               <div
                 aria-hidden
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+                className="cx-absolu-inset0-23"
                 style={{
                   background: `radial-gradient(circle at 30% 0%, ${c.accent.replace(")", " / 0.18)")}, transparent 60%)`,
                 }}
@@ -274,7 +275,7 @@ function StackRow({
         {repeated.map((label, i) => (
           <span
             key={i}
-            className="shrink-0 px-6 py-3 rounded-full border border-white/15 bg-white/5 text-sm md:text-base font-medium tracking-tight backdrop-blur-sm"
+            className="cx-shrink-px6-13"
           >
             {label}
           </span>
@@ -396,13 +397,9 @@ function ProcessPathSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           {/* Video column stretches to match the steps column's height */}
           <div className="relative lg:sticky lg:top-24 h-[320px] md:h-[420px] lg:h-auto rounded-2xl overflow-hidden">
-            <video
+            <LazyVideo
               className="absolute inset-0 w-full h-full object-cover"
               src="/assets/studio-path.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
 

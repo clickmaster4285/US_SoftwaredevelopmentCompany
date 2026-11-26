@@ -82,18 +82,26 @@ export default function AudienceCarousel() {
           ))}
 
           {/* Dots */}
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-3 py-2 border border-white/15">
+          {/* Each button is a 24px tap target (WCAG 2.5.8); the visible bar is
+              the inner span, sized exactly as before. */}
+          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center bg-white/10 backdrop-blur-md rounded-full px-1.5 py-1 border border-white/15">
             {AUDIENCE_SLIDES.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIndex(i)}
                 aria-label={`Go to slide ${i + 1}`}
-                className="h-1.5 rounded-full transition-all duration-300"
-                style={{
-                  width: i === index ? 24 : 6,
-                  background: i === index ? "white" : "rgba(255,255,255,0.45)",
-                }}
-              />
+                aria-current={i === index ? "true" : undefined}
+                className="flex h-6 min-w-6 items-center justify-center px-1"
+              >
+                <span
+                  className="block h-1.5 rounded-full transition-all duration-300"
+                  style={{
+                    width: i === index ? 24 : 6,
+                    background:
+                      i === index ? "white" : "rgba(255,255,255,0.45)",
+                  }}
+                />
+              </button>
             ))}
           </div>
 

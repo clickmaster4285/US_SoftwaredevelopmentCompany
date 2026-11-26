@@ -303,10 +303,10 @@ export const mainServicesData = {
         icon: "Target",
         heroImage:
           "/images/photo-1555066931-4365d14bab8c.jpg",
-        metaTitle: "Custom Software Development Company | ClickMasters",
+        metaTitle: "Custom Software Development Company | Clickmasters",
         metaDescription:
-          "ClickMasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
-        lead: "Build software that scales your revenue - not just your codebase. ClickMasters delivers end-to-end custom software development for B2B companies.",
+          "Clickmasters builds custom software solutions - web apps, SaaS platforms, and enterprise systems.",
+        lead: "Build software that scales your revenue - not just your codebase. Clickmasters delivers end-to-end custom software development for B2B companies.",
         highlights: [
           "MVP to enterprise delivery",
           "Architecture-first approach",
@@ -1238,7 +1238,7 @@ export const mainServicesData = {
       "/images/photo-1460925895917-afdab827c52f.jpg",
     stats: [
       { value: "200+", label: "Data Projects Delivered" },
-      { value: "3", label: "Cloud Certifications (AWS, Azure, GCP)" },
+      { value: "3", label: "Cloud Platforms (AWS, Azure, GCP)" },
       { value: "SOC 2", label: "Aligned & HIPAA-Ready Practices" },
       { value: "2-3 wks", label: "Typical First Dashboard Turnaround" },
     ],
@@ -1266,9 +1266,9 @@ export const mainServicesData = {
         icon: "BarChart3",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Data Analytics Services Company | ClickMasters",
+        metaTitle: "Data Analytics Services Company | Clickmasters",
         metaDescription:
-          "Data analytics services that turn your numbers into a clear story — move from guessing to knowing with ClickMasters.",
+          "Data analytics services that turn your numbers into a clear story — move from guessing to knowing with Clickmasters.",
         lead: "From guessing to knowing.",
         highlights: [
           "Customer churn prediction",
@@ -1285,7 +1285,7 @@ export const mainServicesData = {
         icon: "LayoutDashboard",
         heroImage:
           "/images/photo-1504868584819-f8e8b4b6d7e3.jpg",
-        metaTitle: "Business Intelligence Services | ClickMasters",
+        metaTitle: "Business Intelligence Services | Clickmasters",
         metaDescription:
           "Live BI dashboards and reports so your team sees sales, costs, and performance in one place, in real time.",
         lead: "One place for all your numbers, in real time.",
@@ -1304,7 +1304,7 @@ export const mainServicesData = {
         icon: "Database",
         heroImage:
           "/images/photo-1558494949-ef010cbdcc31.jpg",
-        metaTitle: "Data Engineering Services Company | ClickMasters",
+        metaTitle: "Data Engineering Services Company | Clickmasters",
         metaDescription:
           "Data engineering services that build safe, scalable pipelines moving your data from system to system.",
         lead: "Strong pipelines behind every good report.",
@@ -1323,7 +1323,7 @@ export const mainServicesData = {
         icon: "Warehouse",
         heroImage:
           "/images/photo-1544383835-bda2bc66a55d.jpg",
-        metaTitle: "Cloud Data Warehousing Services | ClickMasters",
+        metaTitle: "Cloud Data Warehousing Services | Clickmasters",
         metaDescription:
           "Cloud data warehouses that store all your business data in one safe, organized place — one version of the truth.",
         lead: "One safe place for all your business data.",
@@ -1342,7 +1342,7 @@ export const mainServicesData = {
         icon: "Boxes",
         heroImage:
           "/images/photo-1518770660439-4636190af475.jpg",
-        metaTitle: "Big Data Solutions Company | ClickMasters",
+        metaTitle: "Big Data Solutions Company | Clickmasters",
         metaDescription:
           "Big data services using Apache Spark, Hadoop, and Kafka to process huge data volumes fast and spot trends first.",
         lead: "Millions of rows, processed fast.",
@@ -1361,7 +1361,7 @@ export const mainServicesData = {
         icon: "Plug",
         heroImage:
           "/images/photo-1526374965328-7f61d4dc18c5.jpg",
-        metaTitle: "Data Integration Services | ClickMasters",
+        metaTitle: "Data Integration Services | Clickmasters",
         metaDescription:
           "Connect your CRM, accounting, marketing, and support tools so information flows automatically across your business.",
         lead: "All your tools, talking to each other.",
@@ -1380,7 +1380,7 @@ export const mainServicesData = {
         icon: "ArrowRightLeft",
         heroImage:
           "/images/photo-1558494949-ef010cbdcc31.jpg",
-        metaTitle: "Data Migration Services | ClickMasters",
+        metaTitle: "Data Migration Services | Clickmasters",
         metaDescription:
           "Safe data migration from old systems to new — zero data loss, almost no downtime.",
         lead: "Move systems without losing data.",
@@ -1399,7 +1399,7 @@ export const mainServicesData = {
         icon: "ShieldCheck",
         heroImage:
           "/images/photo-1563986768609-322da13575f3.jpg",
-        metaTitle: "Data Management & Governance Services | ClickMasters",
+        metaTitle: "Data Management & Governance Services | Clickmasters",
         metaDescription:
           "Data management services with clear access rules, keeping your data accurate and compliant with U.S. privacy laws.",
         lead: "Clean, safe, organized data — by design.",
@@ -1418,7 +1418,7 @@ export const mainServicesData = {
         icon: "PieChart",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Data Visualization Services | ClickMasters",
+        metaTitle: "Data Visualization Services | Clickmasters",
         metaDescription:
           "Turn raw numbers into simple charts, maps, and graphs anyone on your team can understand in seconds.",
         lead: "Numbers anyone can read in seconds.",
@@ -1868,7 +1868,7 @@ export const mainServicesData = {
     icon: "TestTube",
     tagline: "QA Testing Services",
     description:
-      "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers.",
+      "Clickmasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers.",
     heroBadge: "500+ Projects Tested",
     heroImage:
       "/images/photo-1516321318423-f06f85e504b3.jpg",

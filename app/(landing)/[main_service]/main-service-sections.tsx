@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -104,7 +105,7 @@ export function MainServiceBreadcrumb({ service }: { service: MainService }) {
             Home
           </Link>
           <ChevronRight className="h-4 w-4 text-muted-foreground" />
-          <span className="font-semibold text-foreground">{service.title}</span>
+          <span className="cx-fontse-textfo-1">{service.title}</span>
         </nav>
       </div>
     </div>
@@ -144,10 +145,13 @@ export function MainServiceHero({ service }: { service: MainService }) {
         </div>
         <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-card">
           {service.heroImage ? (
-            <img
+            <Image
               src={service.heroImage}
               alt={heroImageAlt(service.title, service.heroImage)}
-              className="absolute inset-0 h-full w-full object-cover opacity-80"
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover opacity-80"
             />
           ) : null}
           <div className="absolute inset-0 bg-background/45" />
@@ -203,18 +207,18 @@ export function ExploreSection({ service }: { service: MainService }) {
               href={`/${service.slug}/${item.slug}`}
               className="group rounded-lg border border-border bg-card p-6 text-card-foreground transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <span className="mb-7 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
+              <span className="cx-mb7-flex-m">
                 <IconFor name={item.icon} />
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="cx-text2x-fontse-u">
                 {item.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">
+              <p className="cm-p3">
                 {item.description}
               </p>
-              <span className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-primary">
+              <span className="cx-mt7-inline-x">
                 Read more
-                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                <ArrowRight className="cx-h4-w4-t" />
               </span>
             </Link>
           ))}
@@ -263,7 +267,7 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
           <div className="mt-8 space-y-4">
             {painPoints.map((item) => (
               <div key={item} className="flex gap-3 text-card-foreground">
-                <BarChart3 className="mt-1 h-5 w-5 shrink-0 text-primary" />
+                <BarChart3 className="cx-mt1-h5-1d" />
                 <p className="text-lg font-medium leading-7">{item}</p>
               </div>
             ))}
@@ -283,7 +287,7 @@ export function PainPointsSolutions({ service }: { service: MainService }) {
                   <h3 className="text-xl font-semibold text-card-foreground">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                  <p className="cx-mt1-textsm-26">
                     {item.description}
                   </p>
                 </div>
@@ -313,7 +317,7 @@ export function AppsSection() {
           {appIdeas.map((item) => (
             <div
               key={item}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <Layers3 className="mb-10 h-6 w-6 text-primary" />
               <p className="text-xl font-semibold text-card-foreground">
@@ -348,7 +352,7 @@ export function ProcessPage({ service }: { service: MainService }) {
           {steps.map((step, index) => (
             <div
               key={step}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <p className="text-sm font-semibold text-primary">0{index + 1}</p>
               <Workflow className="mt-10 h-5 w-5 text-muted-foreground" />
@@ -408,7 +412,7 @@ export function TechStackSection({
   return (
     <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading eyebrow="Tech stack" title={title} copy={copy} />
+        <SectionHeading tone="dark" eyebrow="Tech stack" title={title} copy={copy} />
         {groups?.length ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {groups.map((group) => (
@@ -434,7 +438,7 @@ export function TechStackSection({
             {chips.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-3 text-sm font-semibold"
+                className="cx-rounde-border-a"
               >
                 {item}
               </span>
@@ -463,7 +467,7 @@ export function FeaturedInsights() {
           {insights.map((item) => (
             <article
               key={item}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <Compass className="mb-12 h-6 w-6 text-primary" />
               <h3 className="text-xl font-semibold leading-tight text-card-foreground">
@@ -499,7 +503,7 @@ export function WhyChooseUs({ service }: { service: MainService }) {
           {points.map((point) => (
             <div
               key={point}
-              className="rounded-lg border border-border bg-card p-6"
+              className="cx-rounde-border-16"
             >
               <CheckCircle2 className="mb-8 h-5 w-5 text-primary" />
               <p className="text-lg font-semibold leading-tight text-card-foreground">
@@ -556,9 +560,9 @@ export function PricingSection({
                 {(plan.features || []).slice(0, 4).map((feature) => (
                   <div
                     key={feature}
-                    className="flex gap-3 text-sm text-muted-foreground"
+                    className="cx-flex-gap3-w"
                   >
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
+                    <CheckCircle2 className="cx-h4-w4-o" />
                     {feature}
                   </div>
                 ))}
@@ -593,7 +597,7 @@ export function IndustriesSection() {
           {industries.map((industry) => (
             <div
               key={industry}
-              className="rounded-lg border border-border bg-card p-5 text-center font-semibold text-card-foreground"
+              className="cx-rounde-border-3m"
             >
               {industry}
             </div>
@@ -616,7 +620,7 @@ export function TestimonialsSection(_props: { service: MainService }) {
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
           <Link
             href="/case-studies/pre-launch-qa-for-a-saas-booking-platform"
-            className="font-semibold text-primary"
+            className="cx-fontse-textpr-29"
           >
             Pre-launch QA for a SaaS booking platform
           </Link>
@@ -641,11 +645,11 @@ export function FaqSection({ service }: { service: MainService }) {
         <div className="mt-14 divide-y divide-border rounded-lg border border-border bg-card">
           {faqs.map((item) => (
             <details key={item.question} className="group p-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold text-card-foreground">
+              <summary className="cx-flex-cursor-r">
                 {item.question}
-                <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
               </summary>
-              <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
+              <p className="cm-intro">
                 {item.answer}
               </p>
             </details>

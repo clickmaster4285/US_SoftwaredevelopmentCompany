@@ -1,3 +1,5 @@
+import LazyVideo from "@/components/ui/lazy-video";
+
 const dominateVideo = "/dominate-video.mp4";
 
 export default function DominateSection() {
@@ -45,12 +47,8 @@ export default function DominateSection() {
         </div>
 
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-border bg-black/10 shadow-2xl lg:mt-0">
-          <video
+          <LazyVideo
             src={dominateVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
             className="h-full w-full object-cover"
           />
         </div>

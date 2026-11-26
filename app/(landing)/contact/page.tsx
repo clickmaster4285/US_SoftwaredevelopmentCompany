@@ -10,7 +10,7 @@ export const revalidate = 60;
 
 const CONTACT_URL =
   "https://clickmasterssoftwaredevelopmentcompany.com/contact";
-const CONTACT_TITLE = fitTitle("Contact");
+const CONTACT_TITLE = fitTitle("Contact Us – Request a Software Project Quote");
 const CONTACT_DESCRIPTION = fitDescription(
   "Have a software project in mind? Talk with Clickmasters about a custom app, web platform, or software build. We reply with scope, timeline, and a quote.",
   "Contact Clickmasters",

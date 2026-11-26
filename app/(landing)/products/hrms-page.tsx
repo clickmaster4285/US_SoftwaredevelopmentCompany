@@ -1,3 +1,4 @@
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -6,7 +7,6 @@ import {
   BarChart3,
   CalendarDays,
   Check,
-  ChevronRight,
   ClipboardList,
   Clock,
   Cloud,
@@ -24,7 +24,7 @@ import {
   Wallet,
   Zap,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { industryPath, productIndustries, productPath } from "@/data/products";
 import { pageUrl, SITE_URL } from "@/lib/site";
@@ -84,7 +84,7 @@ const ICONS: Record<string, LucideIcon> = {
   Wallet,
 };
 
-const ACCENT = "#059669";
+const ACCENT = "#047857";
 const DARK = "#06261f";
 
 export function hrmsSchema() {
@@ -173,11 +173,11 @@ function BodyLink({ link }: { link: LinkSpec }) {
 function AppFigure({ image, caption, priority = false }: { image: Img; caption: string; priority?: boolean }) {
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#06261f] shadow-xl shadow-emerald-950/10 ring-1 ring-black/5">
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
-        <span className="ml-3 hidden items-center gap-1.5 rounded-md bg-white/10 px-3 py-0.5 text-[11px] text-white/60 sm:inline-flex">
+      <div className="cm-mock-bar" aria-hidden>
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
+        <span className="cm-mock-url">
           <Lock className="h-3 w-3" /> hrms.example / concept
         </span>
       </div>
@@ -189,11 +189,11 @@ function AppFigure({ image, caption, priority = false }: { image: Img; caption: 
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
-        className="block h-auto w-full bg-[#f3f5fb]"
+        className="cm-img"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">Illustrative concept</span>
+        <span className="cm-chip">Illustrative concept</span>
       </figcaption>
     </figure>
   );
@@ -209,7 +209,7 @@ function DiagramFigure({ image, caption, className = "" }: { image: Img; caption
         height={image.height}
         loading="lazy"
         decoding="async"
-        className="mx-auto block h-auto w-full max-w-5xl"
+        className="cm-fig"
       />
       <figcaption className="mt-2 text-center text-xs text-muted-foreground">{caption}</figcaption>
     </figure>
@@ -248,8 +248,8 @@ function CheckList({ items, className = "" }: { items: readonly string[]; classN
   return (
     <ul className={`grid gap-3 ${className}`}>
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-          <Check className="mt-1 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(item)} className="cm-li">
+          <span aria-hidden="true" className="ico ico-check cm-ic1" style={{ color: ACCENT }} />
           {item}
         </li>
       ))}
@@ -269,12 +269,12 @@ function TitledList({
   return (
     <ul className={`grid gap-4 ${className}`}>
       {items.map(([title, text]) => (
-        <li key={title} className="rounded-2xl border border-border bg-white p-5">
-          <p className="flex items-start gap-2 font-semibold leading-snug">
-            <Icon className="mt-0.5 h-4 w-4 shrink-0" style={{ color: ACCENT }} aria-hidden />
+        <li key={shortKey(title)} className="cm-card5">
+          <p className="cm-ttl">
+            <Icon className="cm-ic05" style={{ color: ACCENT }} aria-hidden />
             {title}
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+          <p className="cm-p2">{text}</p>
         </li>
       ))}
     </ul>
@@ -284,7 +284,7 @@ function TitledList({
 function Note({ children }: { children: ReactNode }) {
   return (
     <div
-      className="mt-8 max-w-4xl rounded-2xl border-l-4 bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground"
+      className="cm-note"
       style={{ borderColor: ACCENT }}
     >
       {children}
@@ -295,21 +295,21 @@ function Note({ children }: { children: ReactNode }) {
 function ModuleCard({ mod }: { mod: HrmsModule }) {
   const Icon = ICONS[mod.icon] ?? ClipboardList;
   return (
-    <article className="flex flex-col rounded-2xl border border-border bg-white p-6">
-      <div className="flex items-center gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#d1fae5]">
-          <Icon className="h-5 w-5 text-[#059669]" aria-hidden />
+    <article className="cm-card6c">
+      <div className="cx-flex-itemsc-5">
+        <span className="cx-flex-h11-3x">
+          <Icon className="h-5 w-5 text-[#047857]" aria-hidden />
         </span>
-        <h3 className="text-lg font-semibold leading-snug">{mod.title}</h3>
+        <h3 className="cm-h3">{mod.title}</h3>
       </div>
-      <p className="mt-4 text-sm leading-6 text-muted-foreground">{mod.does}</p>
-      <dl className="mt-4 grid gap-2 text-sm leading-6">
-        <div className="rounded-xl bg-[#fef2f2] px-3 py-2">
-          <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-[#b91c1c]">HR problem</dt>
+      <p className="cm-p4">{mod.does}</p>
+      <dl className="cx-mt4-grid-39">
+        <div className="cx-rounde-bgfef2-3a">
+          <dt className="cx-textxs-fontse-25">HR problem</dt>
           <dd className="text-muted-foreground">{mod.problem}</dd>
         </div>
         <div className="rounded-xl bg-[#ecfdf5] px-3 py-2">
-          <dt className="text-xs font-semibold uppercase tracking-[0.12em]" style={{ color: ACCENT }}>
+          <dt className="cx-textxs-fontse-1p" style={{ color: ACCENT }}>
             Workflow impact
           </dt>
           <dd className="text-muted-foreground">{mod.impact}</dd>
@@ -350,15 +350,15 @@ export default function HrmsPage() {
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div className="cm-hero-grid">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em]" style={{ color: ACCENT }}>
                 {INDUSTRY_LABEL}
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
-                Human Resource Management System (HRMS) Software Built Around How Your HR Team Works
+              <h1 className="cm-h1">
+                Human Resource Management System (HRMS) Built Around Your HR Team
               </h1>
-              <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
+              <div className="cm-lead">
                 <p>
                   Employee files in shared drives. Leave requests in email. Onboarding checklists in
                   spreadsheets. Attendance in one tool, payroll in another, and headcount reports
@@ -389,7 +389,7 @@ export default function HrmsPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -441,22 +441,22 @@ export default function HrmsPage() {
           </Prose>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {layers.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <div className="flex items-center gap-3">
+              <li key={shortKey(title)} className="cm-card5">
+                <div className="cx-flex-itemsc-h">
                   <span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+                    className="cm-num"
                     style={{ backgroundColor: ACCENT }}
                   >
                     {index + 1}
                   </span>
                   <p className="font-semibold">{title}</p>
                 </div>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-p3">{text}</p>
               </li>
             ))}
           </ol>
           <div className="mt-8 max-w-4xl rounded-2xl border border-[#a7f3d0] bg-[#ecfdf5] p-5 text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">Example: </span>a manager approves a
+            <span className="cx-fontse-textfo-1">Example: </span>a manager approves a
             promotion in the HRMS. The employee&apos;s position, title and pay details update with an
             effective date, the change is logged, payroll receives the update through its
             integration, and the org chart and headcount reports reflect it.
@@ -496,7 +496,7 @@ export default function HrmsPage() {
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {modules.map((mod) => (
-              <ModuleCard key={mod.title} mod={mod} />
+              <ModuleCard key={shortKey(mod.title)} mod={mod} />
             ))}
           </div>
         </Section>
@@ -535,7 +535,7 @@ export default function HrmsPage() {
           <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
             <div>
               <H3>Recruitment and Applicant Tracking</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 A human resource management system hiring process starts with a manager raising a
                 requisition against an approved position. Finance or HR approves it, and the job is
                 posted to the careers page and, through integration, to job boards. Applications
@@ -559,7 +559,7 @@ export default function HrmsPage() {
           <div className="mt-14 grid gap-10 lg:grid-cols-2">
             <div>
               <H3>Employee Onboarding</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Onboarding works best as a set of parallel task lists triggered by the hire date. HR
                 collects documents and policy acknowledgments, IT provisions accounts and equipment,
                 the manager plans the first weeks, and the new hire completes forms through
@@ -570,7 +570,7 @@ export default function HrmsPage() {
             </div>
             <div>
               <H3>Employee and Manager Self-Service Portals</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Self-service portals are often what employees see most of an HRMS, so they need to be
                 simple, mobile-friendly and fast. Clickmasters builds employee onboarding, HR
                 self-service and training platforms as part of its{" "}
@@ -591,7 +591,7 @@ export default function HrmsPage() {
           <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
             <div>
               <H3>Attendance, Time and Shift Management</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 For hourly, shift-based and multi-location workforces, time data affects pay, coverage
                 and labor cost. An HRMS can capture time through web, mobile or time clock
                 integrations, apply schedules and overtime rules, route exceptions to managers, and
@@ -608,7 +608,7 @@ export default function HrmsPage() {
           <div className="mt-14 grid gap-10 lg:grid-cols-2">
             <div>
               <H3>Leave Management</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Leave policies vary by employment type, tenure, location and state law. An HRMS applies
                 accrual, carry-over and eligibility rules consistently, shows balances to employees,
                 and gives managers a team calendar so approvals take coverage into account. Policy
@@ -618,7 +618,7 @@ export default function HrmsPage() {
             </div>
             <div>
               <H3>Payroll and Benefits</H3>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 <strong className="text-foreground">HRMS and payroll software are not the same thing.</strong>{" "}
                 The HRMS manages the employee and the employment data: job, compensation, time and
                 leave, deductions and benefits elections. Payroll software calculates gross-to-net
@@ -722,10 +722,10 @@ export default function HrmsPage() {
           </Prose>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {integrations.map(([title, text]) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
+              <li key={shortKey(title)} className="cm-card5">
                 <Plug className="h-4 w-4" style={{ color: ACCENT }} aria-hidden />
-                <p className="mt-3 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cx-mt3-fontse-2u">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ul>
@@ -761,7 +761,7 @@ export default function HrmsPage() {
             headers={["", "Ready-made HR software", "Custom HRMS"]}
             rows={customVsReadyRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             A hybrid approach is common: keep a payroll provider or specialized tools, and build a
             custom HRMS layer, portal or integration hub around them.
           </p>
@@ -811,12 +811,12 @@ export default function HrmsPage() {
         <Section id="implementation" eyebrow="Delivery" title="HRMS Implementation Process">
           <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {implementationSteps.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <span className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
+              <li key={shortKey(title)} className="cm-card5">
+                <span className="cm-label" style={{ color: ACCENT }}>
                   Step {index + 1}
                 </span>
-                <p className="mt-2 font-semibold leading-snug">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-t2">{title}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -842,7 +842,7 @@ export default function HrmsPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
                 How pricing works
               </p>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Packaged HR software is usually priced per employee per month, with costs rising by
                 tier and add-on. Custom HRMS projects are scoped and quoted individually. Clickmasters
                 agrees on scope, timeline and quote before development starts.
@@ -852,7 +852,7 @@ export default function HrmsPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em]" style={{ color: ACCENT }}>
                 Measuring ROI
               </p>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
+              <p className="cx-mt3-textba-3c">
                 Set baselines before launch, then track HR hours spent on administration, time to
                 onboard, leave and attendance errors, payroll corrections caused by HR data, time to
                 produce reports and self-service adoption. Value comes from measured change, not
@@ -866,17 +866,17 @@ export default function HrmsPage() {
         <Section id="choose" eyebrow="Evaluation" title="How to Choose HRMS Software">
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {selectionQuestions.map(([title, text], index) => (
-              <li key={title} className="rounded-2xl border border-border bg-white p-5">
-                <p className="flex items-center gap-3 font-semibold">
+              <li key={shortKey(title)} className="cm-card5">
+                <p className="cx-flex-itemsc-1s">
                   <span
-                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                    className="cm-num7"
                     style={{ backgroundColor: "#d1fae5", color: ACCENT }}
                   >
                     {index + 1}
                   </span>
                   {title}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
+                <p className="cm-p2">{text}</p>
               </li>
             ))}
           </ol>
@@ -899,21 +899,21 @@ export default function HrmsPage() {
         </Section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-28 border-t border-border py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+        <section id="faq" className="cm-sec">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About HRMS Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
+            <div className="cm-list">
               {hrmsFaqs.map((faq, index) => (
-                <details key={faq.question} className="group p-5 md:p-6" open={index === 0}>
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
+                <details key={shortKey(faq.question)} className="group p-5 md:p-6" open={index === 0}>
+                  <summary className="cm-faq-q">
                     <h3>
                       {index + 1}. {faq.question}
                     </h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
+                    <span aria-hidden="true" className="ico ico-chev cm-faq-ic" />
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">{faq.answer}</p>
+                  <p className="cm-intro">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -924,7 +924,7 @@ export default function HrmsPage() {
         <section className="border-t border-border text-white" style={{ backgroundColor: DARK }}>
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Build an HRMS Around Your Business</h2>
+              <h2 className="cm-h2b">Build an HRMS Around Your Business</h2>
               <p className="mt-4 text-base leading-7 text-white/80">
                 Whether you&apos;re replacing spreadsheets, connecting HR and payroll, untangling
                 disconnected HR tools or planning a custom HRMS, the first step is the same: a clear
@@ -946,7 +946,7 @@ export default function HrmsPage() {
               <p className="text-sm font-semibold">Our recommendation covers:</p>
               <ul className="mt-4 space-y-3">
                 {["Configure, integrate or build", "The modules involved", "Payroll and system integrations", "A scoped next step"].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(item)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6ee7b7] text-[#06261f]">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -961,13 +961,13 @@ export default function HrmsPage() {
         {/* Related products (site template block) */}
         {relatedProducts.length > 0 ? (
           <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-            <h2 className="text-2xl font-semibold tracking-tight">More in {INDUSTRY_LABEL}</h2>
+            <h2 className="cx-text2x-fontse-u">More in {INDUSTRY_LABEL}</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {relatedProducts.map((item) => (
                 <Link
                   key={item.slug}
                   href={productPath(INDUSTRY_SLUG, item.slug)}
-                  className="rounded-2xl border border-border bg-white px-5 py-4 text-sm font-semibold hover:border-primary/30 hover:text-primary"
+                  className="cm-linkcard"
                 >
                   {item.title}
                 </Link>
@@ -978,10 +978,10 @@ export default function HrmsPage() {
 
         {/* Sticky mobile CTA */}
         <style>{"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}</style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Discuss Your HR Software Requirements
             <ArrowRight className="h-4 w-4" />

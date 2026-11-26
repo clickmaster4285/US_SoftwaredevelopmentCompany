@@ -1,4 +1,5 @@
 /** Contextual internal links for location and support pages. */
+import { productIndustries, productPath } from "@/data/products";
 
 export type InternalLink = {
   href: string;
@@ -257,4 +258,192 @@ export function extraLinksForPath(path: string): InternalLink[] {
   }
 
   return [];
+}
+
+/* ── Product catalogue links ──────────────────────────────────────────────
+ * Before this map, no page outside /products linked to any product page (the
+ * Products nav item only renders its links after hover, client-side). Each
+ * service page below links to the products that are genuinely built with
+ * that kind of work. Kept short (2–4 per page) and varied on purpose. */
+
+type ProductRef = readonly [industry: string, product: string];
+
+const HC = "healthcare-medical-software";
+const BIZ = "business-enterprise-management";
+const FIT = "fitness-sports-management";
+const EDU = "education-management-software";
+const RET = "retail-ecommerce-software";
+const LOG = "logistics-transportation-software";
+const RE = "real-estate-property-management";
+
+const PRODUCTS_FOR_PATH: Record<string, ProductRef[]> = {
+  "/software-development": [
+    [HC, "hospital-management-system"],
+    [BIZ, "enterprise-resource-planning-erp-software"],
+    [EDU, "school-management-system"],
+  ],
+  "/software-development/custom-software-development": [
+    [BIZ, "enterprise-resource-planning-erp-software"],
+    [HC, "clinic-management-software"],
+    [LOG, "fleet-management-software"],
+  ],
+  "/software-development/enterprise-software-development": [
+    [BIZ, "enterprise-resource-planning-erp-software"],
+    [BIZ, "human-resource-management-system-hrms"],
+    [BIZ, "supply-chain-management-software"],
+    [BIZ, "document-management-system"],
+  ],
+  "/software-development/saas-product-development": [
+    [FIT, "gym-management-software"],
+    [EDU, "learning-management-system-lms"],
+    [RE, "property-management-software"],
+  ],
+  "/software-development/desktop-application-development": [
+    [RET, "retail-pos-software"],
+    [HC, "pharmacy-management-system"],
+  ],
+  "/software-development/api-development-integration": [
+    [HC, "electronic-health-records-ehr-software"],
+    [HC, "medical-billing-software"],
+    [RET, "order-management-system"],
+  ],
+  "/software-development/microservices-architecture": [
+    [RET, "multi-vendor-marketplace-software"],
+    [LOG, "transportation-management-system-tms"],
+  ],
+  "/software-development/mvp-development": [
+    [HC, "telemedicine-software"],
+    [FIT, "personal-trainer-management-software"],
+  ],
+  "/web-development/web-application-development": [
+    [BIZ, "customer-relationship-management-crm-software"],
+    [HC, "patient-management-software"],
+    [EDU, "student-information-system-sis"],
+  ],
+  "/web-development/ecommerce-development": [
+    [RET, "ecommerce-management-platform"],
+    [RET, "multi-vendor-marketplace-software"],
+    [RET, "order-management-system"],
+  ],
+  "/web-development/headless-ecommerce": [
+    [RET, "ecommerce-management-platform"],
+    [RET, "retail-inventory-management-system"],
+  ],
+  "/web-development/shopify-development": [
+    [RET, "order-management-system"],
+    [BIZ, "inventory-management-software"],
+  ],
+  "/web-development/woocommerce-development": [
+    [RET, "ecommerce-management-platform"],
+    [RET, "grocery-store-management-software"],
+  ],
+  "/web-development/custom-web-development": [
+    [RE, "real-estate-listing-platform"],
+    [FIT, "fitness-booking-and-scheduling-software"],
+  ],
+  "/mobile-app-development": [
+    [HC, "telemedicine-software"],
+    [LOG, "delivery-management-software"],
+    [FIT, "fitness-club-management-system"],
+  ],
+  "/mobile-app-development/custom-mobile-app-development": [
+    [LOG, "courier-management-system"],
+    [FIT, "yoga-studio-management-software"],
+  ],
+  "/mobile-app-development/cross-platform-app-development": [
+    [FIT, "membership-management-software"],
+    [HC, "patient-management-software"],
+  ],
+  "/mobile-app-development/android-app-development": [
+    [LOG, "truck-dispatch-management-software"],
+    [BIZ, "employee-attendance-management-system"],
+  ],
+  "/mobile-app-development/ios-app-development": [
+    [FIT, "personal-trainer-management-software"],
+    [HC, "telemedicine-software"],
+  ],
+  "/mobile-app-development/flutter-app-development": [
+    [FIT, "sports-club-management-software"],
+    [EDU, "online-examination-software"],
+  ],
+  "/mobile-app-development/react-native-development": [
+    [LOG, "delivery-management-software"],
+    [EDU, "coaching-institute-management-software"],
+  ],
+  "/artificial-intelligence-ai/ai-automation-systems": [
+    [BIZ, "business-process-management-software"],
+    [BIZ, "document-management-system"],
+  ],
+  "/artificial-intelligence-ai/ai-chatbot-development": [
+    [BIZ, "customer-relationship-management-crm-software"],
+    [HC, "patient-management-software"],
+  ],
+  "/machine-learning-development-services/predictive-analytics": [
+    [BIZ, "inventory-management-software"],
+    [LOG, "vehicle-maintenance-management-software"],
+  ],
+  "/machine-learning-development-services/recommendation-systems": [
+    [RET, "ecommerce-management-platform"],
+    [EDU, "course-management-platform"],
+  ],
+  "/data-services/business-intelligence": [
+    [BIZ, "enterprise-resource-planning-erp-software"],
+    [BIZ, "payroll-management-software"],
+  ],
+  "/data-services/data-migration-services": [
+    [HC, "electronic-medical-records-emr-software"],
+    [HC, "laboratory-information-management-system-lims"],
+  ],
+  "/data-services/data-integration-services": [
+    [HC, "medical-practice-management-software"],
+    [RET, "warehouse-management-system-wms"],
+  ],
+  "/cybersecurity-services/data-security": [
+    [HC, "electronic-health-records-ehr-software"],
+    [BIZ, "document-management-system"],
+  ],
+  "/cybersecurity-services/security-audits-compliance": [
+    [HC, "electronic-medical-records-emr-software"],
+    [BIZ, "payroll-management-software"],
+  ],
+  "/cloud-devops-services/cloud-migration-modernization": [
+    [BIZ, "enterprise-resource-planning-erp-software"],
+    [EDU, "university-management-system"],
+  ],
+  "/ui-ux-design-services/product-design": [
+    [FIT, "fitness-booking-and-scheduling-software"],
+    [RE, "rental-management-system"],
+  ],
+  "/ui-ux-design-services/mobile-app-design": [
+    [FIT, "gym-management-software"],
+    [RET, "restaurant-pos-software"],
+  ],
+  "/support-and-outsourcing/maintenance-support": [
+    [HC, "hospital-management-system"],
+    [BIZ, "asset-management-software"],
+  ],
+  "/support-and-outsourcing/dedicated-development-teams": [
+    [RE, "construction-project-management-software"],
+    [LOG, "route-optimization-software"],
+  ],
+  "/support-and-outsourcing/staff-augmentation": [
+    [EDU, "college-management-software"],
+    [RE, "real-estate-crm-software"],
+  ],
+};
+
+/** Product pages relevant to a service path, labelled with product titles. */
+export function productLinksForPath(path: string): InternalLink[] {
+  const refs = PRODUCTS_FOR_PATH[path] ?? [];
+  const links: InternalLink[] = [];
+  for (const [industrySlug, productSlug] of refs) {
+    const industry = productIndustries.find((i) => i.slug === industrySlug);
+    const product = industry?.products.find((p) => p.slug === productSlug);
+    if (!industry || !product) continue;
+    links.push({
+      href: productPath(industry.slug, product.slug),
+      label: product.title,
+    });
+  }
+  return links;
 }

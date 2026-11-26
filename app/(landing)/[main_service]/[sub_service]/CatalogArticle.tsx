@@ -4,7 +4,7 @@ import type { ArticleSection } from "@/lib/service-copy";
 
 function Prose({ paragraphs }: { paragraphs: string[] }) {
   return (
-    <div className="mt-6 space-y-5 text-base leading-8 text-black/70 md:text-lg">
+    <div className="cx-mt6-spacey-f">
       {paragraphs.map((paragraph) => (
         <p key={paragraph.slice(0, 80)} className="whitespace-pre-line">
           {paragraph}
@@ -20,7 +20,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.lead ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#e05b35]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c44a24]">
               Scope
             </p>
             <p className="mt-4 text-xl leading-9 text-black/75">{page.lead}</p>
@@ -33,16 +33,16 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
           <div className="mx-auto max-w-3xl space-y-12">
             {page.sections.map((section) => (
               <article key={section.heading}>
-                <h2 className="text-3xl font-semibold tracking-tight">
+                <h2 className="cx-text3x-fontse-2">
                   {section.heading}
                 </h2>
                 {section.body ? (
-                  <p className="mt-4 whitespace-pre-line text-base leading-8 text-black/70 md:text-lg">
+                  <p className="cx-mt4-whites-j">
                     {section.body}
                   </p>
                 ) : null}
                 {section.items?.length ? (
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-black/70">
+                  <ul className="cx-mt4-listdi-18">
                     {section.items.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -57,17 +57,17 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.servicesCards?.length ? (
         <section className="bg-[#fffaf1] px-5 py-20 md:px-10">
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               What this engagement delivers
             </h2>
             <div className="mt-10 grid gap-4 md:grid-cols-2">
               {page.servicesCards.map((card) => (
                 <article
                   key={card.title}
-                  className="rounded-[8px] bg-white p-6 ring-1 ring-black/10"
+                  className="cx-rounde-bgwhit-0"
                 >
                   <h3 className="text-xl font-semibold">{card.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-black/65">
+                  <p className="cx-mt3-textsm-i">
                     {card.description}
                   </p>
                 </article>
@@ -80,7 +80,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.checklist?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               Engineering baseline
             </h2>
             <ul className="mt-6 space-y-4">
@@ -100,15 +100,15 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.processPhases?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">Process</h2>
+            <h2 className="cx-text3x-fontse-2">Process</h2>
             <ol className="mt-8 space-y-8">
               {page.processPhases.map((phase) => (
                 <li key={`${phase.phase}-${phase.title}`}>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e05b35]">
+                  <p className="cx-textxs-fontse-7">
                     {[phase.phase, phase.timeline].filter(Boolean).join(" · ")}
                   </p>
-                  <h3 className="mt-2 text-2xl font-semibold">{phase.title}</h3>
-                  <p className="mt-3 text-base leading-8 text-black/70">
+                  <h3 className="cx-mt2-text2x-p">{phase.title}</h3>
+                  <p className="cx-mt3-textba-g">
                     {phase.text}
                   </p>
                 </li>
@@ -121,7 +121,7 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.techStackCategories?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               Tech stack
             </h2>
             <dl className="mt-6 space-y-4">
@@ -139,14 +139,14 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.differentiators?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               How we work
             </h2>
             <div className="mt-6 space-y-5">
               {page.differentiators.map((item) => (
                 <article key={item.feature}>
                   <h3 className="text-xl font-semibold">{item.feature}</h3>
-                  <p className="mt-2 leading-7 text-black/70">
+                  <p className="cx-mt2-leadin-c">
                     {item.description}
                   </p>
                 </article>
@@ -159,14 +159,14 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.industryUseCases?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               Where this is used
             </h2>
             <div className="mt-6 space-y-5">
               {page.industryUseCases.map((item) => (
                 <article key={item.name}>
                   <h3 className="text-xl font-semibold">{item.name}</h3>
-                  <p className="mt-2 leading-7 text-black/70">
+                  <p className="cx-mt2-leadin-c">
                     {item.description}
                   </p>
                 </article>
@@ -179,13 +179,13 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.pricingTiers?.length ? (
         <section className="bg-[#fffaf1] px-5 py-20 md:px-10">
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               Pricing guidance
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-black/65">
               These ranges are planning anchors. The quote names scope,
               timeline, and what is excluded.{" "}
-              <Link href="/contact" className="font-semibold text-[#e05b35]">
+              <Link href="/contact" className="cx-fontse-textc4-4">
                 Talk through a quote
               </Link>
               .
@@ -194,17 +194,17 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
               {page.pricingTiers.map((tier) => (
                 <article
                   key={tier.type}
-                  className="rounded-[8px] bg-white p-6 ring-1 ring-black/10"
+                  className="cx-rounde-bgwhit-0"
                 >
                   <h3 className="text-xl font-semibold">{tier.type}</h3>
-                  <p className="mt-4 text-3xl font-semibold">
+                  <p className="cx-mt4-text3x-k">
                     {tier.investment}
                   </p>
-                  <p className="mt-2 text-sm uppercase tracking-[0.14em] text-black/45">
+                  <p className="cx-mt2-textsm-6">
                     {tier.timeline}
                   </p>
                   {tier.bestFor ? (
-                    <p className="mt-4 text-sm leading-6 text-black/65">
+                    <p className="cx-mt4-textsm-e">
                       {tier.bestFor}
                     </p>
                   ) : null}
@@ -218,12 +218,12 @@ export function CatalogArticle({ page }: { page: CatalogPage }) {
       {page.faqs?.length ? (
         <section className="px-5 md:px-10">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-semibold tracking-tight">FAQs</h2>
+            <h2 className="cx-text3x-fontse-2">FAQs</h2>
             <div className="mt-8 space-y-8">
               {page.faqs.map((faq) => (
                 <article key={faq.question}>
                   <h3 className="text-xl font-semibold">{faq.question}</h3>
-                  <p className="mt-3 leading-8 text-black/70">{faq.answer}</p>
+                  <p className="cx-mt3-leadin-n">{faq.answer}</p>
                 </article>
               ))}
             </div>
@@ -240,7 +240,7 @@ export function FallbackArticle({ sections }: { sections: ArticleSection[] }) {
       <div className="mx-auto max-w-3xl space-y-14">
         {sections.map((section) => (
           <article key={section.heading}>
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="cx-text3x-fontse-2">
               {section.heading}
             </h2>
             <Prose paragraphs={section.paragraphs} />

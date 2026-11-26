@@ -9,7 +9,7 @@ export const teleTitle =
   "Telemedicine Software | Custom Telehealth Development";
 
 export const teleDescription =
-  "Custom telemedicine software for US healthcare: secure video visits, virtual waiting rooms, e-prescribing, RPM, EHR integration and HIPAA-aware architecture.";
+  "Custom telemedicine software for US healthcare: secure video visits, virtual waiting rooms, e-prescribing, RPM, EHR integration and HIPAA-aware design.";
 
 export const PRODUCT_NAME = "Telemedicine Software";
 

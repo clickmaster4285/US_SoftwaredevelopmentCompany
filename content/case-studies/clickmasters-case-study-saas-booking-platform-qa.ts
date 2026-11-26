@@ -69,13 +69,13 @@ export const caseStudy: CaseStudy = {
     readingMinutes: 14,
   },
   seo: {
-    url: "https://clickmasterssoftwaredevelopmentcompany.com/case-studies/pre-launch-qa-saas-booking-platform",
+    url: "https://clickmasterssoftwaredevelopmentcompany.com/case-studies/pre-launch-qa-for-a-saas-booking-platform",
     canonical:
-      "https://clickmasterssoftwaredevelopmentcompany.com/case-studies/pre-launch-qa-saas-booking-platform",
+      "https://clickmasterssoftwaredevelopmentcompany.com/case-studies/pre-launch-qa-for-a-saas-booking-platform",
     title:
       "Pre-launch QA for a SaaS Booking Platform | Clickmasters Case Study",
     description:
-      "How Clickmasters plans and runs pre-launch QA for a multi-tenant SaaS booking platform: risk-based manual testing, double-booking checks, Mollie deposit status mapping and tenant-separation checks.",
+      "Pre-launch QA for a multi-tenant SaaS booking platform: risk-based testing, double-booking checks, Mollie deposit status mapping and tenant separation.",
     h1: "Pre-launch QA for a SaaS Booking Platform: Finding the Failures That Matter",
     robots: "index, follow",
     og: {
@@ -741,9 +741,9 @@ export const caseStudy: CaseStudy = {
         {
           kind: "image",
           src: "/case-studies/approach.png",
+          width: 1000,
+          height: 442,
           alt: "Booking and deposit flow: 3 steps, 4 payment outcomes",
-          width: 1200,
-          height: 675,
         },
         {
           kind: "para",
@@ -1225,9 +1225,9 @@ export const caseStudy: CaseStudy = {
         {
           kind: "image",
           src: "/case-studies/delivery-plan.png",
+          width: 1000,
+          height: 311,
           alt: "Delivery roadmap: 6 phases, 4 gates",
-          width: 1200,
-          height: 675,
         },
         {
           kind: "para",

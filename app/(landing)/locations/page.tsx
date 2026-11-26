@@ -59,6 +59,7 @@ export default function LocationsPage() {
       />
       <Navbar />
 
+      <main id="main-content">
       {/* Hero */}
       <section className="relative overflow-hidden bg-background px-5 pt-20 pb-10 md:px-10 md:pt-24 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-px bg-border" />
@@ -74,7 +75,7 @@ export default function LocationsPage() {
               Home
             </Link>
             <ChevronRight className="h-4 w-4 text-muted-foreground" />
-            <span className="font-semibold text-foreground">Locations</span>
+            <span className="cx-fontse-textfo-1">Locations</span>
           </nav>
 
           <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -95,14 +96,14 @@ export default function LocationsPage() {
                 The work itself is the same catalog as{" "}
                 <Link
                   href="/software-development"
-                  className="font-semibold text-primary"
+                  className="cx-fontse-textpr-29"
                 >
                   Software Development
                 </Link>{" "}
                 and{" "}
                 <Link
                   href="/support-and-outsourcing"
-                  className="font-semibold text-primary"
+                  className="cx-fontse-textpr-29"
                 >
                   Support & Outsourcing
                 </Link>.
@@ -147,15 +148,15 @@ export default function LocationsPage() {
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
                     <MapPin className="h-5 w-5" />
                   </div>
-                  <h3 className="text-2xl font-semibold tracking-tight">
+                  <h2 className="cx-text2x-fontse-u">
                     {location.title}
-                  </h3>
+                  </h2>
                   <p className="mt-3 text-sm leading-6 text-muted-foreground line-clamp-3">
                     {location.intro}
                   </p>
                   <span className="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-primary">
                     Learn more
-                    <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                    <ArrowRight className="cx-h4-w4-t" />
                   </span>
                 </div>
               </Link>
@@ -163,6 +164,7 @@ export default function LocationsPage() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

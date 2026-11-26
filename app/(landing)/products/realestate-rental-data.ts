@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Rental Management System",
   industrySlug: "real-estate-property-management",
   industryLabel: "Real Estate & Property Management",
-  theme: { accent: "#0d9488", dark: "#042f2e", soft: "#ccfbf1", border: "#99f6e4", tint: "#f0fdfa" },
+  theme: { accent: "#0f766e", dark: "#042f2e", soft: "#ccfbf1", border: "#99f6e4", tint: "#f0fdfa" },
   browserLabel: "rentals.example",
   images: {
     dashboard: img("rental-management-system-dashboard.svg", "Rental management system dashboard with occupancy, rent collected this month, vacant units, applications in review and leases up for renewal"),

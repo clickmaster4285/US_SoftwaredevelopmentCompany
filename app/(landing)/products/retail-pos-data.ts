@@ -19,7 +19,7 @@ const page: ProductPageData = {
   productName: "Retail POS Software",
   industrySlug: "retail-ecommerce-software",
   industryLabel: "Retail & E-commerce Software",
-  theme: { accent: "#0891b2", dark: "#083344", soft: "#cffafe", border: "#a5f3fc", tint: "#ecfeff" },
+  theme: { accent: "#0e7490", dark: "#083344", soft: "#cffafe", border: "#a5f3fc", tint: "#ecfeff" },
   browserLabel: "pos.example",
   images: {
     dashboard: img("retail-pos-software-dashboard.svg", "Retail POS software dashboard with today's sales by store, top-selling variants, open BOPIS orders and low-stock alerts"),

@@ -1,6 +1,6 @@
 // components/cms/sections/Engage.tsx
 // Conversion-oriented CMS sections: faq, cta, contact, newsletter, blogPosts /
-// relatedPosts — in the ClickMasters style.
+// relatedPosts — in the Clickmasters style.
 import { ArrowRight, Mail, MapPin, Phone, Plus } from "lucide-react";
 import type { CmsButton } from "../cmsContent";
 import { ButtonRow, CmsImg, CmsLink, SectionHeading, cx } from "./ui";
@@ -121,7 +121,7 @@ export function CmsContact({
         />
         <ul className="-mt-4 space-y-4">
           {details.map(({ Icon, label, href }) => (
-            <li key={label} className="flex items-center gap-4">
+            <li key={label} className="cx-flex-itemsc-5">
               <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
                 <Icon className="h-5 w-5" aria-hidden="true" />
               </span>
@@ -323,7 +323,7 @@ export function CmsPosts({
               <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-primary">
                 Read more{" "}
                 <ArrowRight
-                  className="h-4 w-4 transition group-hover:translate-x-1"
+                  className="cx-h4-w4-t"
                   aria-hidden="true"
                 />
               </span>

@@ -8,15 +8,19 @@ const contentSecurityPolicy = [
   "form-action 'self'",
   "frame-ancestors 'self'",
   "object-src 'none'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  // Google Tag Manager (loaded in app/layout.tsx) was missing here, so the
+  // browser blocked gtm.js and no analytics tag ever ran in production.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
   // https: — images on pages created in the ERP can live on any HTTPS host.
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
   "media-src 'self' blob: data: https:",
   // ERP "video" sections embed YouTube / Vimeo only (ids parsed server-side).
-  "frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com",
-  "connect-src 'self' https://crm.clickmasters.pk",
+  // GTM: the <noscript> fallback iframe.
+  "frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com https://www.googletagmanager.com",
+  // GTM / GA4 hit endpoints.
+  "connect-src 'self' https://crm.clickmasters.pk https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com",
   isProd ? "upgrade-insecure-requests" : "",
 ]
   .filter(Boolean)
@@ -31,9 +35,16 @@ const securityHeaders = [
     value: "max-age=63072000; includeSubDomains",
   },
   { key: "Content-Security-Policy", value: contentSecurityPolicy },
+  // The site uses none of these browser features.
+  {
+    key: "Permissions-Policy",
+    value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+  },
 ];
 
 const nextConfig = {
+  // Don't advertise the framework in an X-Powered-By header.
+  poweredByHeader: false,
   async redirects() {
     return redirectRules();
   },
@@ -54,7 +65,9 @@ const nextConfig = {
     "192.168.88.*", // 👈 Or allow all on this subnet
   ],
   images: {
-    deviceSizes: [640, 750, 828],
+    // 1080–1920 added for full-width hero photos (next/image) on desktop;
+    // phones still pick the 640–828 candidates.
+    deviceSizes: [640, 750, 828, 1080, 1920],
     imageSizes: [64, 96, 128, 256, 384],
     formats: ["image/webp"],
     qualities: [60, 75],

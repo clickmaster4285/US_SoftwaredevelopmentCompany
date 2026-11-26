@@ -213,7 +213,7 @@ export default function AwardsSection() {
                 >
                   <img
                     src={typeof c.src == "string" ? c.src : c.src.src}
-                    alt=""
+                    alt={c.alt}
                     loading="lazy"
                     width={512}
                     height={704}

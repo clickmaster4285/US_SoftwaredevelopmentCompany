@@ -19,6 +19,6 @@ declare module "*.mp4" {
   export default src;
 }
 declare module "*.asset.json" {
-  const value: any;
+  const value: unknown;
   export default value;
 }

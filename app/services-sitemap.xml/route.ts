@@ -1,46 +1,64 @@
-import { mainServicesData } from "../../data/main-services.js";
-import { isRetiredSub } from "../../lib/site-routes.mjs";
+import { mainServicesData } from "@/data/main-services";
+import { mainServiceData } from "@/data/main-services-data";
+import { services } from "@/app/(landing)/[main_service]/[sub_service]/service-data";
+import { destinationFor, isRetiredSub } from "@/lib/site-routes.mjs";
+import {
+  lastModified,
+  urlsetXml,
+  xmlResponse,
+  type SitemapEntry,
+} from "@/lib/sitemap";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://clickmasterssoftwaredevelopmentcompany.com";
+// Uses the same sources as the routes' generateStaticParams. The previous
+// version read only data/main-services.js, so sub-services that exist only in
+// data/main-services-data.js (e.g. /web-development/progressive-web-app-development)
+// were rendered and linked but missing from the sitemap.
 
-function buildUrlElement(url: string, lastMod: string) {
-  return `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastMod}</lastmod>\n  </url>`;
-}
+const SERVICE_FILES = [
+  "data/main-services.js",
+  "data/main-services-data.js",
+  "data/sub-services.js",
+  "lib/service-copy.ts",
+];
+const HUB_FILES = [
+  ...SERVICE_FILES,
+  "app/(landing)/[main_service]/main-service-page.tsx",
+  "app/(landing)/[main_service]/main-service-sections.tsx",
+  "app/(landing)/[main_service]/MainServicePage.tsx",
+];
+const SUB_FILES = [
+  ...SERVICE_FILES,
+  "app/(landing)/[main_service]/[sub_service]/SubServicePage.tsx",
+  "app/(landing)/[main_service]/[sub_service]/CatalogArticle.tsx",
+];
 
-function collectServiceRoutes() {
-  const routes = new Set<string>();
-  const lastMod = new Date().toISOString().split("T")[0];
+export function GET() {
+  const hubLastmod = lastModified(HUB_FILES);
+  const subLastmod = lastModified(SUB_FILES);
+  const entries: SitemapEntry[] = [];
 
-  Object.values(mainServicesData).forEach((service) => {
-    const hub = service?.slug;
-    if (!hub) return;
+  const hubs = new Set([
+    ...Object.values(mainServiceData).map((service) => service?.slug),
+    ...Object.values(mainServicesData).map((service) => service?.slug),
+  ]);
+  for (const hub of hubs) {
+    // Alias hubs redirect permanently; only list canonical hub URLs.
+    if (!hub || destinationFor(hub, undefined)) continue;
+    entries.push({ path: `/${hub}`, lastmod: hubLastmod });
+  }
 
-    routes.add(`${siteUrl}/${hub}`);
+  for (const service of Object.values(services)) {
+    if (!service?.slug || destinationFor(service.slug, undefined)) continue;
+    for (const sub of service.subServices || []) {
+      if (!sub?.slug || isRetiredSub(service.slug, sub.slug)) continue;
+      entries.push({
+        path: `/${service.slug}/${sub.slug}`,
+        lastmod: subLastmod,
+      });
+    }
+  }
 
-    const subServices = Array.isArray(service?.subServices)
-      ? service.subServices
-      : [];
-
-    subServices.forEach((subService) => {
-      if (!subService?.slug || isRetiredSub(hub, subService.slug)) return;
-      routes.add(`${siteUrl}/${hub}/${subService.slug}`);
-    });
-  });
-
-  return Array.from(routes)
-    .sort()
-    .map((url) => buildUrlElement(url, lastMod));
-}
-
-export async function GET() {
-  const xmlUrls = collectServiceRoutes();
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${xmlUrls.join("\n")}\n</urlset>\n`;
-
-  return new Response(xml, {
-    headers: {
-      "Content-Type": "application/xml; charset=utf-8",
-    },
-  });
+  return xmlResponse(urlsetXml(entries));
 }

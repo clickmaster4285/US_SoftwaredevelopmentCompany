@@ -1,3 +1,7 @@
+import { CtaBand, linkClass, ProductLink } from "./product-primitives";
+import { ClinicFaqList } from "./clinic-sections";
+export { CtaBand, linkClass, ProductLink } from "./product-primitives";
+import { shortKey } from "@/lib/short-key";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -9,7 +13,6 @@ import {
   Building2,
   CalendarCheck,
   Check,
-  ChevronRight,
   ClipboardList,
   Cloud,
   CornerDownLeft,
@@ -36,7 +39,7 @@ import {
   Wallet,
   Workflow,
   type LucideIcon,
-} from "lucide-react";
+} from "@/components/ui/mask-icons";
 import { PageFrame } from "@/app/(landing)/[main_service]/[sub_service]/landing-primitives";
 import { pageUrl, SITE_URL } from "@/lib/site";
 import { CompareTable, Prose, Section } from "./hospital-management-page";
@@ -116,7 +119,6 @@ export function clinicManagementSchema() {
         inLanguage: "en",
         isPartOf: { "@id": `${SITE_URL}/#website` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        about: { "@id": `${url}#software` },
         mainEntity: { "@id": `${url}#service` },
       },
       {
@@ -149,21 +151,10 @@ export function clinicManagementSchema() {
           },
         ],
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${url}#software`,
-        name: "Clinic Management Software",
-        description:
-          "Custom-developed clinic management software for appointment scheduling, patient registration, electronic medical records, prescriptions, billing, payment tracking, reminders, follow-ups, role-based access, reporting and multi-branch clinic operations.",
-        applicationCategory: "HealthApplication",
-        applicationSubCategory: "Clinic Management System",
-        operatingSystem: "Web-based",
-        url,
-        image: pageUrl(clinicImages.dashboard.src),
-        featureList: features.map((f) => f.title),
-        creator: org,
-        publisher: org,
-      },
+      // Custom-built software, not a packaged app with a public price or
+      // ratings: a SoftwareApplication node failed Google's required
+      // offers + aggregateRating/review checks, so the page is described
+      // as the development Service it actually is (same as other products).
       {
         "@type": "Service",
         "@id": `${url}#service`,
@@ -173,6 +164,7 @@ export function clinicManagementSchema() {
           "Requirement analysis, clinic workflow discovery, UI/UX design, software architecture, frontend and backend development, third-party integrations, security and quality testing, deployment, and ongoing maintenance for custom clinic management systems.",
         provider: org,
         url,
+        image: pageUrl(clinicImages.dashboard.src),
         areaServed: [
           "United States",
           "United Kingdom",
@@ -230,21 +222,7 @@ const contents = [
   { href: "#faq", label: "FAQ" },
 ];
 
-export const linkClass = "font-medium text-foreground underline underline-offset-4";
 
-export function ProductLink({
-  slug,
-  children,
-}: {
-  slug: string;
-  children: ReactNode;
-}) {
-  return (
-    <Link href={productLink(slug)} className={linkClass}>
-      {children}
-    </Link>
-  );
-}
 
 export function ScreenFigure({
   image,
@@ -258,12 +236,12 @@ export function ScreenFigure({
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-[#0f172a] shadow-xl shadow-slate-900/10 ring-1 ring-black/5">
       <div
-        className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5"
+        className="cm-mock-bar"
         aria-hidden
       >
-        <span className="h-2.5 w-2.5 rounded-full bg-[#f87171]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#34d399]" />
+        <span className="cm-dot-r" />
+        <span className="cm-dot-y" />
+        <span className="cm-dot-g" />
       </div>
       <img
         src={image.src}
@@ -275,9 +253,9 @@ export function ScreenFigure({
         decoding="async"
         className="block h-auto w-full bg-[#f4f6fa]"
       />
-      <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-white px-4 py-2.5 text-xs text-muted-foreground">
+      <figcaption className="cm-mock-cap">
         <span>{caption}</span>
-        <span className="rounded-full bg-secondary px-2 py-0.5 font-medium">
+        <span className="cm-chip">
           Concept illustration
         </span>
       </figcaption>
@@ -285,33 +263,6 @@ export function ScreenFigure({
   );
 }
 
-export function CtaBand({
-  title,
-  text,
-  cta,
-}: {
-  title: string;
-  text: string;
-  cta: string;
-}) {
-  return (
-    <div className="mt-12 flex flex-col items-start justify-between gap-5 rounded-3xl border border-border bg-secondary p-6 md:flex-row md:items-center md:p-8">
-      <div className="max-w-2xl">
-        <p className="text-lg font-semibold tracking-tight md:text-xl">
-          {title}
-        </p>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p>
-      </div>
-      <Link
-        href="/contact"
-        className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
-      >
-        {cta}
-        <ArrowRight className="h-4 w-4" />
-      </Link>
-    </div>
-  );
-}
 
 function FeatureBody({
   feature,
@@ -323,42 +274,42 @@ function FeatureBody({
   const Icon = ICONS[feature.icon] ?? ClipboardList;
   return (
     <>
-      <div className="flex items-start gap-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-secondary">
+      <div className="cx-flex-itemss-31">
+        <span className="cx-flex-h11-33">
           <Icon className="h-5 w-5 text-primary" aria-hidden />
         </span>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          <p className="cx-textxs-fontse-15">
             Feature {index + 1}
           </p>
-          <h3 className="mt-1 text-lg font-semibold leading-snug">
+          <h3 className="cx-mt1-textlg-27">
             {index + 1}. {feature.title}
           </h3>
         </div>
       </div>
-      <div className="mt-4 space-y-3 text-sm leading-6 text-muted-foreground">
+      <div className="cx-mt4-spacey-1j">
         <p>
-          <span className="font-semibold text-foreground">What it does: </span>
+          <span className="cx-fontse-textfo-1">What it does: </span>
           {feature.does}
         </p>
         <p>
-          <span className="font-semibold text-foreground">How it works: </span>
+          <span className="cx-fontse-textfo-1">How it works: </span>
           {feature.how}
         </p>
       </div>
-      <div className="mt-4 grid gap-3 rounded-xl bg-secondary/70 p-4 text-sm leading-6">
+      <div className="cx-mt4-grid-3h">
         <p className="text-muted-foreground">
-          <span className="font-semibold text-foreground">
+          <span className="cx-fontse-textfo-1">
             Problem solved:{" "}
           </span>
           {feature.problem}
         </p>
         {Array.isArray(feature.benefits) ? (
           <div>
-            <p className="font-semibold text-foreground">Benefits:</p>
+            <p className="cx-fontse-textfo-1">Benefits:</p>
             <ul className="mt-1 space-y-1 text-muted-foreground">
               {feature.benefits.map((item) => (
-                <li key={item} className="flex gap-2">
+                <li key={shortKey(item)} className="flex gap-2">
                   <Check
                     className="mt-1 h-3.5 w-3.5 shrink-0 text-primary"
                     aria-hidden
@@ -370,7 +321,7 @@ function FeatureBody({
           </div>
         ) : (
           <p className="text-muted-foreground">
-            <span className="font-semibold text-foreground">Benefits: </span>
+            <span className="cx-fontse-textfo-1">Benefits: </span>
             {feature.benefits}
             {feature.note ? (
               <>
@@ -391,7 +342,7 @@ function FeatureBody({
 
 function FeatureCard({ index }: { index: number }) {
   return (
-    <article className="rounded-2xl border border-border bg-white p-6">
+    <article className="cm-card6">
       <FeatureBody feature={features[index]} index={index} />
     </article>
   );
@@ -461,10 +412,10 @@ export default function ClinicManagementPage() {
 
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              <p className="cm-eyebrow">
                 Healthcare software
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl md:leading-[1.08]">
+              <h1 className="cm-h1">
                 Clinic Management Software Built Around the Way Your Clinic
                 Works
               </h1>
@@ -503,7 +454,7 @@ export default function ClinicManagementPage() {
                 Most clinics don&apos;t struggle because their staff aren&apos;t
                 working hard enough. They struggle because the day is split
                 across a paper diary, a spreadsheet, a billing tool, a messaging
-                app and a filing cabinet. ClickMasters designs and builds custom
+                app and a filing cabinet. Clickmasters designs and builds custom
                 clinic management software that connects those pieces. Your
                 front desk, doctors and administrators work from the same
                 patient record, the same calendar and the same billing data.
@@ -523,7 +474,7 @@ export default function ClinicManagementPage() {
               <ul className="mt-4 space-y-3">
                 {heroOutcomes.map((item) => (
                   <li
-                    key={item}
+                    key={shortKey(item)}
                     className="flex gap-3 text-sm leading-6 text-primary-foreground/85"
                   >
                     <Check
@@ -542,7 +493,7 @@ export default function ClinicManagementPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-border px-3 py-1.5 text-sm font-medium hover:bg-secondary"
+                className="cm-pill"
               >
                 {item.label}
               </a>
@@ -577,20 +528,20 @@ export default function ClinicManagementPage() {
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {coreRecords.map((item, index) => (
               <li
-                key={item.title}
+                key={shortKey(item.title)}
                 className="relative rounded-2xl border border-border bg-white p-5"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
                   {index + 1}
                 </span>
                 <p className="mt-4 font-semibold">{item.title}</p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {item.text}
                 </p>
               </li>
             ))}
           </ol>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             When a receptionist books an appointment, the system links it to the
             patient&apos;s record. When the doctor opens the appointment, they
             see that patient&apos;s history. When the consultation ends, the
@@ -605,17 +556,17 @@ export default function ClinicManagementPage() {
           <ul className="mt-6 grid gap-3 md:grid-cols-2">
             {whoNeeds.map((item) => (
               <li
-                key={item.title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(item.title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">
+                <span className="cx-fontse-textfo-1">
                   {item.title}
                 </span>{" "}
                 {item.text}
               </li>
             ))}
           </ul>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             If patient records are your main concern, our dedicated{" "}
             <ProductLink slug="patient-management-software">
               Patient Management Software
@@ -654,13 +605,13 @@ export default function ClinicManagementPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {challenges.map((item) => (
               <article
-                key={item.title}
-                className="overflow-hidden rounded-2xl border border-border bg-white"
+                key={shortKey(item.title)}
+                className="cx-overfl-rounde-2q"
               >
                 <h3 className="px-6 pt-6 text-lg font-semibold">
                   {item.title}
                 </h3>
-                <p className="px-6 pt-3 text-sm leading-6 text-muted-foreground">
+                <p className="cx-px6-pt3-30">
                   <span className="font-semibold text-[#be123c]">
                     The problem:{" "}
                   </span>
@@ -721,7 +672,7 @@ export default function ClinicManagementPage() {
                 <p className="text-lg font-semibold">
                   Start with what you need now
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   Most clinics launch with scheduling, records and billing, then
                   add reminders, lab workflows or multi-branch support in later
                   phases.
@@ -767,11 +718,11 @@ export default function ClinicManagementPage() {
             >
               {journeySteps.map((step, index) => (
                 <li
-                  key={step}
+                  key={shortKey(step)}
                   className="flex items-center gap-3 lg:flex-col lg:gap-0"
                 >
-                  <div className="flex w-full items-center gap-3 rounded-xl bg-secondary px-4 py-3 lg:mx-1 lg:w-auto lg:flex-1 lg:flex-col lg:justify-center lg:px-2 lg:py-4 lg:text-center">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
+                  <div className="cx-flex-wfull-3e">
+                    <span className="cx-flex-h8-2d">
                       {index + 1}
                     </span>
                     <span className="text-sm font-semibold leading-snug lg:mt-2">
@@ -783,7 +734,7 @@ export default function ClinicManagementPage() {
             </ol>
             <figcaption className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
               <CornerDownLeft
-                className="h-4 w-4 shrink-0 text-primary"
+                className="cx-h4-w4-o"
                 aria-hidden
               />
               Step 8, Follow-Up, loops back to step 2, Appointment Booking.
@@ -805,14 +756,14 @@ export default function ClinicManagementPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((item) => (
               <article
-                key={item.title}
-                className="flex flex-col rounded-2xl border border-border bg-white p-5"
+                key={shortKey(item.title)}
+                className="cx-flex-flexco-3i"
               >
-                <h3 className="font-semibold leading-snug">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <h3 className="cx-fontse-leadin-b">{item.title}</h3>
+                <p className="cm-p2">
                   {item.text}
                 </p>
-                <p className="mt-auto pt-4 text-sm leading-6 text-foreground/80">
+                <p className="cx-mtauto-pt4-3w">
                   <span className="mr-1 rounded bg-secondary px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.12em]">
                     Example
                   </span>{" "}
@@ -841,14 +792,14 @@ export default function ClinicManagementPage() {
               const Icon = ICONS[item.icon] ?? Stethoscope;
               return (
                 <article
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-white p-5"
+                  key={shortKey(item.title)}
+                  className="cm-card5"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary">
                     <Icon className="h-5 w-5 text-primary" aria-hidden />
                   </span>
                   <h3 className="mt-4 font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="cm-p2">
                     {item.text}
                   </p>
                 </article>
@@ -875,18 +826,18 @@ export default function ClinicManagementPage() {
               software makes sense when your clinic&apos;s way of working
               doesn&apos;t fit a standard product, or when you need control over
               features, integrations and data. As a development partner,
-              ClickMasters builds the system you specify rather than selling a
+              Clickmasters builds the system you specify rather than selling a
               fixed product.
             </p>
           </Prose>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {customReasons.map((item) => (
               <article
-                key={item.title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(item.title)}
+                className="cm-card5"
               >
                 <h3 className="font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {item.text}
                 </p>
               </article>
@@ -930,7 +881,7 @@ export default function ClinicManagementPage() {
                       <div
                         className="rounded-xl px-4 py-3"
                         style={{
-                          backgroundColor: `rgba(15, 23, 42, ${0.05 + index * 0.13})`,
+                          backgroundColor: `rgba(15, 23, 42, ${[0.04, 0.065, 0.09, 0.76, 0.86, 0.96][index] ?? 0.96})`,
                         }}
                       >
                         <p
@@ -939,7 +890,7 @@ export default function ClinicManagementPage() {
                           {layer.label}
                         </p>
                         <p
-                          className={`text-xs ${index > 2 ? "text-white/75" : "text-muted-foreground"}`}
+                          className={`text-xs ${index > 2 ? "text-white/85" : "text-muted-foreground"}`}
                         >
                           {layer.detail}
                         </p>
@@ -962,16 +913,16 @@ export default function ClinicManagementPage() {
               </div>
             </figure>
             <div>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="cx-text2x-fontse-u">
                 Security Controls We Design and Build
               </h3>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {securityControls.map((item) => (
                   <li
-                    key={item.title}
-                    className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                    key={shortKey(item.title)}
+                    className="cm-cardnote"
                   >
-                    <span className="font-semibold text-foreground">
+                    <span className="cx-fontse-textfo-1">
                       {item.title}:
                     </span>{" "}
                     {item.text}
@@ -992,19 +943,19 @@ export default function ClinicManagementPage() {
             {privacyRegions.map((item) => (
               <article
                 key={item.region}
-                className="rounded-2xl border border-border bg-white p-5"
+                className="cm-card5"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
                   {item.region}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <p className="cm-p2">
                   {item.text}
                 </p>
               </article>
             ))}
           </div>
           <div className="mt-6 max-w-4xl rounded-2xl border-l-4 border-primary bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">
+            <span className="cx-fontse-textfo-1">
               An important clarification:{" "}
             </span>
             no software is &quot;HIPAA-certified&quot; or
@@ -1012,7 +963,7 @@ export default function ClinicManagementPage() {
             government certification for either. Compliance depends on the final
             system architecture, hosting choices, how the clinic configures and
             uses the software, staff policies and training, contracts with
-            vendors, and the laws of the jurisdiction. ClickMasters can design
+            vendors, and the laws of the jurisdiction. Clickmasters can design
             and build software with the technical safeguards these frameworks
             call for. Your clinic, together with its legal and compliance
             advisers, remains responsible for overall compliance.
@@ -1031,10 +982,10 @@ export default function ClinicManagementPage() {
               integrations clinics most commonly request.
             </p>
             <p>
-              <span className="font-semibold text-foreground">
+              <span className="cx-fontse-textfo-1">
                 How to read this list:{" "}
               </span>
-              ClickMasters builds integrations per project. Whether a specific
+              Clickmasters builds integrations per project. Whether a specific
               connection is possible depends on the third-party system&apos;s
               available APIs, data standards, access permissions and commercial
               terms. We confirm feasibility during discovery, before development
@@ -1051,7 +1002,7 @@ export default function ClinicManagementPage() {
             ]}
             rows={integrationRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
+          <p className="cx-mt6-maxw3x-1c">
             If your clinic is connecting to, or building, a broader records
             platform, our{" "}
             <ProductLink slug="electronic-health-records-ehr-software">
@@ -1078,15 +1029,15 @@ export default function ClinicManagementPage() {
         >
           <ol className="relative mt-2 space-y-4 before:absolute before:bottom-6 before:left-[19px] before:top-6 before:w-px before:bg-border md:space-y-5">
             {processSteps.map((step, index) => (
-              <li key={step.title} className="relative flex gap-5">
-                <span className="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-4 border-background bg-primary text-sm font-semibold text-primary-foreground">
+              <li key={shortKey(step.title)} className="relative flex gap-5">
+                <span className="cx-z10-flex-2z">
                   {index + 1}
                 </span>
                 <div className="flex-1 rounded-2xl border border-border bg-white p-5">
                   <h3 className="font-semibold">
                     {index + 1}. {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="cm-p2">
                     {step.text}
                   </p>
                   <p className="mt-3 inline-flex rounded-lg bg-secondary px-3 py-1.5 text-xs leading-5 text-foreground">
@@ -1114,8 +1065,8 @@ export default function ClinicManagementPage() {
             ]}
             rows={customVsReadyRows}
           />
-          <p className="mt-6 max-w-3xl text-base leading-7 text-muted-foreground">
-            <span className="font-semibold text-foreground">
+          <p className="cx-mt6-maxw3x-1c">
+            <span className="cx-fontse-textfo-1">
               Our honest view:{" "}
             </span>
             If a ready-made product already fits your workflow, it may be the
@@ -1141,10 +1092,10 @@ export default function ClinicManagementPage() {
           <ul className="mt-6 grid gap-3 md:grid-cols-3">
             {costFactors.map((item) => (
               <li
-                key={item.title}
-                className="rounded-2xl border border-border bg-white px-5 py-4 text-sm leading-6 text-muted-foreground"
+                key={shortKey(item.title)}
+                className="cm-cardnote"
               >
-                <span className="font-semibold text-foreground">
+                <span className="cx-fontse-textfo-1">
                   {item.title}:
                 </span>{" "}
                 {item.text}
@@ -1158,15 +1109,15 @@ export default function ClinicManagementPage() {
           />
         </Section>
 
-        {/* Why ClickMasters */}
+        {/* Why Clickmasters */}
         <Section
           id="why-us"
           eyebrow="Your partner"
-          title="Why Choose ClickMasters?"
+          title="Why Choose Clickmasters?"
         >
           <Prose>
             <p>
-              ClickMasters is a remote-first software development company that
+              Clickmasters is a remote-first software development company that
               builds web, mobile, AI, SaaS and cloud solutions for startups and
               growing businesses, including healthcare organizations. We work
               with clients by video and phone, and every project starts with a
@@ -1176,11 +1127,11 @@ export default function ClinicManagementPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whyClickMasters.map((item) => (
               <article
-                key={item.title}
-                className="rounded-2xl border border-border bg-white p-5"
+                key={shortKey(item.title)}
+                className="cm-card5"
               >
-                <h3 className="font-semibold leading-snug">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                <h3 className="cx-fontse-leadin-b">{item.title}</h3>
+                <p className="cm-p2">
                   {item.text}
                 </p>
               </article>
@@ -1192,7 +1143,7 @@ export default function ClinicManagementPage() {
         <section className="border-t border-border bg-primary text-primary-foreground">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="cm-h2b">
                 Ready to Build Your Clinic Management System?
               </h2>
               <p className="mt-4 text-base leading-7 text-primary-foreground/80">
@@ -1230,7 +1181,7 @@ export default function ClinicManagementPage() {
               </p>
               <ul className="mt-4 space-y-4">
                 {consultationChecklist.map(([title, text]) => (
-                  <li key={title} className="flex gap-3 text-sm leading-6">
+                  <li key={shortKey(title)} className="cx-flex-gap3-24">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#5eead4] text-primary">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -1249,27 +1200,11 @@ export default function ClinicManagementPage() {
 
         {/* FAQ */}
         <section id="faq" className="scroll-mt-28 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-5 md:px-8">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="cm-wrap">
+            <h2 className="cm-h2b">
               Frequently Asked Questions About Clinic Management Software
             </h2>
-            <div className="mt-8 divide-y divide-border rounded-2xl border border-border bg-white">
-              {clinicFaqs.map((faq, index) => (
-                <details
-                  key={faq.question}
-                  className="group p-5 md:p-6"
-                  open={index === 0}
-                >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-semibold md:text-lg">
-                    <h3>{faq.question}</h3>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                  </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">
-                    {faq.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <ClinicFaqList />
           </div>
         </section>
 
@@ -1277,10 +1212,10 @@ export default function ClinicManagementPage() {
         <style>
           {"@media (max-width: 767px) { body { padding-bottom: 72px; } }"}
         </style>
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
+        <div className="cm-mbar">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+            className="cm-cta-m"
           >
             Get a Consultation
             <ArrowRight className="h-4 w-4" />

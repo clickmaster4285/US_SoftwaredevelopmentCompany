@@ -1,6 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import Link from "next/link";
+
+const PRODUCT_HUBS = [
+  { href: "/products/healthcare-medical-software", label: "healthcare software" },
+  { href: "/products/retail-ecommerce-software", label: "retail and e-commerce software" },
+  { href: "/products/logistics-transportation-software", label: "logistics software" },
+  { href: "/products/real-estate-property-management", label: "real estate software" },
+  { href: "/products/education-management-software", label: "education software" },
+  { href: "/products/business-enterprise-management", label: "business management software" },
+];
 
 type Industry = {
   code: string;
@@ -677,6 +687,34 @@ export default function IndustriesSection() {
               );
             })}
           </div>
+          {/* Crawlable links from the homepage into the product catalogue.
+              Kept outside the role="button" rows to avoid nested controls. */}
+          <p className="mt-8 max-w-3xl text-sm leading-7 text-muted-foreground md:text-base">
+            See the systems we build for these sectors:{" "}
+            {PRODUCT_HUBS.map((hub, index) => (
+              <span key={hub.href}>
+                {index > 0
+                  ? index === PRODUCT_HUBS.length - 1
+                    ? " and "
+                    : ", "
+                  : null}
+                <Link
+                  href={hub.href}
+                  className="font-semibold text-foreground underline underline-offset-4 hover:text-primary"
+                >
+                  {hub.label}
+                </Link>
+              </span>
+            ))}
+            , or browse all{" "}
+            <Link
+              href="/products"
+              className="font-semibold text-foreground underline underline-offset-4 hover:text-primary"
+            >
+              software products
+            </Link>
+            .
+          </p>
         </div>
       </div>
     </section>

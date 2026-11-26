@@ -9,7 +9,7 @@ import { Fragment, type ReactNode } from "react";
 import Link from "next/link";
 import { safeHref } from "./cmsContent";
 
-// ClickMasters typography (globals.css tokens) — CMS HTML never brings its own styles.
+// Clickmasters typography (globals.css tokens) — CMS HTML never brings its own styles.
 const TAG_CLASSES: Record<string, string> = {
   h1: "text-3xl md:text-5xl font-semibold tracking-tight text-foreground mt-12 mb-4 first:mt-0",
   h2: "text-2xl md:text-4xl font-semibold tracking-tight text-foreground mt-12 mb-4 first:mt-0",
