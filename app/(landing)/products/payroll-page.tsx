@@ -87,7 +87,7 @@ const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-const ACCENT = "#ea580c";
+const ACCENT = "#c2410c";
 const DARK = "#24140a";
 
 export function payrollSchema() {
@@ -301,7 +301,7 @@ function FeatureCard({ feature }: { feature: PayrollFeature }) {
     <article className="cm-card6c">
       <div className="cx-flex-itemsc-5">
         <span className="cx-flex-h11-21">
-          <Icon className="h-5 w-5 text-[#ea580c]" aria-hidden />
+          <Icon className="h-5 w-5 text-[#c2410c]" aria-hidden />
         </span>
         <h3 className="cm-h3">{feature.title}</h3>
       </div>

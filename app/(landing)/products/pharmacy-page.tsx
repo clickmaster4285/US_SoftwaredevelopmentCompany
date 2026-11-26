@@ -75,7 +75,7 @@ const ICONS: Record<string, LucideIcon> = {
   UserCheck,
 };
 
-const ACCENT = "#059669";
+const ACCENT = "#047857";
 const INDUSTRY_SLUG = "healthcare-medical-software";
 
 export function pharmacySchema() {
@@ -349,7 +349,7 @@ function FeatureCard({
       className={`rounded-2xl border border-border bg-white p-6 ${className}`}
     >
       <span className="cx-flex-h11-3v">
-        <Icon className="h-5 w-5 text-[#059669]" aria-hidden />
+        <Icon className="h-5 w-5 text-[#047857]" aria-hidden />
       </span>
       <h3 className="cx-mt4-textlg-35">
         {feature.title}

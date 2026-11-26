@@ -409,7 +409,7 @@ export default function PracticeManagementPage() {
                 provider and when, whether patient and coverage details are
                 correct, what was charged, which claims are outstanding, what
                 has been collected and how each provider and location is
-                performing. ClickMasters designs and develops custom practice
+                performing. Clickmasters designs and develops custom practice
                 management systems for independent physicians, multi-physician
                 practices, specialist groups and growing healthcare
                 organizations that need more control than spreadsheets and
@@ -731,7 +731,7 @@ export default function PracticeManagementPage() {
               <span className="cx-fontse-textfo-1">
                 What&apos;s available vs what&apos;s built per project:{" "}
               </span>
-              API development and third-party integration are core ClickMasters
+              API development and third-party integration are core Clickmasters
               services. Every healthcare-specific connection below is developed
               per project. We don&apos;t claim pre-built connectors to any named
               vendor. Feasibility depends on each third party&apos;s APIs,
@@ -817,7 +817,7 @@ export default function PracticeManagementPage() {
             <p>
               Technology is selected per project, based on your requirements,
               integrations, expected scale, security needs and hosting
-              preferences. The options below come from the ClickMasters
+              preferences. The options below come from the Clickmasters
               development toolkit. They are candidate choices, not the stack of
               an existing product. Most practices choose web based medical
               practice management software, so staff sign in from a browser at
@@ -882,15 +882,15 @@ export default function PracticeManagementPage() {
           />
         </Section>
 
-        {/* 16. Why ClickMasters */}
+        {/* 16. Why Clickmasters */}
         <Section
           id="why-us"
           eyebrow="Your partner"
-          title="Why Choose ClickMasters?"
+          title="Why Choose Clickmasters?"
         >
           <Prose>
             <p>
-              ClickMasters is a remote-first software development company
+              Clickmasters is a remote-first software development company
               building web, mobile, AI, SaaS and cloud solutions for startups,
               growing businesses and larger organizations. Healthcare is one of
               the industries we serve, and our team builds medical practice

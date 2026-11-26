@@ -429,7 +429,7 @@ export default function HospitalManagementPage() {
             Complete healthcare management software
           </p>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-            Hospital management system software that connects patient registration, appointments, medical records, billing, pharmacy, laboratory, wards and reporting in one platform. Built and configured by ClickMasters around the way your hospital actually works.
+            Hospital management system software that connects patient registration, appointments, medical records, billing, pharmacy, laboratory, wards and reporting in one platform. Built and configured by Clickmasters around the way your hospital actually works.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -480,7 +480,7 @@ export default function HospitalManagementPage() {
               A hospital runs on hundreds of handoffs every day. A patient checks in at the front desk, waits for a doctor, gets sent for a blood test, returns with results, receives a prescription, pays a bill and, if admitted, moves through wards, theatres and discharge. When every one of those steps lives in a separate spreadsheet, paper register or standalone tool, staff spend their time chasing information instead of acting on it.
             </p>
             <p>
-              ClickMasters hospital management system software brings those handoffs into one place. Registration creates a single patient record. Every department that touches the patient (consultation, laboratory, radiology, pharmacy, nursing, billing) reads from and writes to that same record. Administrators see what is happening across the hospital without calling each department for an update.
+              Clickmasters hospital management system software brings those handoffs into one place. Registration creates a single patient record. Every department that touches the patient (consultation, laboratory, radiology, pharmacy, nursing, billing) reads from and writes to that same record. Administrators see what is happening across the hospital without calling each department for an update.
             </p>
             <p>
               We approach HMS as a configurable product, not a one-size-fits-all box. Our team maps your departments, approval chains and billing rules first, then configures the modules you need. When you need a custom hospital management system because your workflows go beyond standard configuration, our{" "}
@@ -741,12 +741,12 @@ export default function HospitalManagementPage() {
         <Section id="why-us" title="Choosing among hospital management software companies">
           <Prose>
             <p>
-              When you compare hospital management software companies, look at how they handle your workflows, integrations, data migration and support after launch, not only the feature list. ClickMasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. Many vendors sell a fixed package; we treat hospital management system software as a long-term partnership, not a one-time installation.
+              When you compare hospital management software companies, look at how they handle your workflows, integrations, data migration and support after launch, not only the feature list. Clickmasters is a software development company that works with healthcare organizations alongside clients in FinTech, e-commerce, education and logistics. Many vendors sell a fixed package; we treat hospital management system software as a long-term partnership, not a one-time installation.
             </p>
             <p>
               You can read more{" "}
               <Link href="/about" className="cm-link-u">
-                about ClickMasters and how our team works
+                about Clickmasters and how our team works
               </Link>
               , including our remote-first delivery model with sessions that overlap U.S. business hours.
             </p>

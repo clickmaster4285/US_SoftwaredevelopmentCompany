@@ -213,7 +213,7 @@ function VideoBlock({ block }: { block: Extract<Block, { kind: "video" }> }) {
         className="w-full h-auto max-h-[70vh] object-cover"
       />
       {block.caption && (
-        <figcaption className="px-4 py-3 text-xs opacity-60">
+        <figcaption className="px-4 py-3 text-xs text-white/75">
           {block.caption}
         </figcaption>
       )}
@@ -266,7 +266,7 @@ function BlockRenderer({ block }: { block: Block }) {
             loading="lazy"
           />
           {block.caption && (
-            <figcaption className="px-4 py-3 text-xs opacity-60">
+            <figcaption className="px-4 py-3 text-xs opacity-75">
               {block.caption}
             </figcaption>
           )}

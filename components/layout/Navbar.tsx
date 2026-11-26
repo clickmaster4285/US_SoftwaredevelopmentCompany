@@ -37,7 +37,7 @@ const SOCIAL = [
 const SOCIAL_LIVE = SOCIAL.filter((s) => s.href !== "#");
 
 /** Optional ERP/CMS navigation (pages created in the ERP). Without it the
- * default ClickMasters navigation below renders unchanged. */
+ * default Clickmasters navigation below renders unchanged. */
 export type NavbarItem = {
   label: string;
   href: string;

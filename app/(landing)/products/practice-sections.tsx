@@ -440,7 +440,7 @@ export function PracticeSecurity() {
                   <div
                     className="rounded-xl px-4 py-3"
                     style={{
-                      backgroundColor: `rgba(49, 46, 129, ${0.06 + index * 0.15})`,
+                      backgroundColor: `rgba(49, 46, 129, ${[0.04, 0.07, 0.1, 0.88, 0.94, 1][index] ?? 1})`,
                     }}
                   >
                     <p
@@ -449,7 +449,7 @@ export function PracticeSecurity() {
                       {layer.label}
                     </p>
                     <p
-                      className={`text-xs ${index > 2 ? "text-white/75" : "text-muted-foreground"}`}
+                      className={`text-xs ${index > 2 ? "text-white/85" : "text-muted-foreground"}`}
                     >
                       {layer.detail}
                     </p>
@@ -507,7 +507,7 @@ export function PracticeSecurity() {
       <div className="mt-6 max-w-4xl rounded-2xl border-l-4 border-[#4f46e5] bg-secondary px-5 py-4 text-sm leading-7 text-muted-foreground">
         <span className="cx-fontse-textfo-1">Important: </span>
         there is no official government &quot;HIPAA certification&quot; or
-        &quot;GDPR certification&quot; for software, and ClickMasters
+        &quot;GDPR certification&quot; for software, and Clickmasters
         doesn&apos;t claim either. Compliance depends on architecture,
         hosting, configuration, the practice&apos;s policies and training,
         vendor contracts and the laws of each jurisdiction. We build the

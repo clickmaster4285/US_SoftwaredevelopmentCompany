@@ -364,7 +364,7 @@ export default function CaseStudiesPage() {
         )}
 
         {/* ── Footer note ── */}
-        <div className="mt-20 pt-8 border-t border-[oklch(0.18_0.02_250)]/10 flex items-center justify-between text-[11px] uppercase tracking-[0.2em] opacity-40">
+        <div className="mt-20 pt-8 border-t border-[oklch(0.18_0.02_250)]/10 flex items-center justify-between text-[11px] uppercase tracking-[0.2em] opacity-70">
           <span>
             {published.length}{" "}
             {published.length === 1 ? "case study" : "case studies"}

@@ -605,7 +605,7 @@ body:has([data-case-studies-layout])::-webkit-scrollbar {
     @apply h-4 w-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary;
   }
   .cx-fontmo-textxs-11 {
-    @apply font-mono text-xs tabular-nums opacity-40 transition-colors duration-300 group-hover:opacity-100 group-hover:text-[oklch(0.65_0.18_250)];
+    @apply font-mono text-xs tabular-nums opacity-70 transition-colors duration-300 group-hover:opacity-100 group-hover:text-[oklch(0.65_0.18_250)];
   }
   .cx-mxauto-maxw3x-12 {
     @apply mx-auto max-w-3xl text-center;
@@ -851,7 +851,7 @@ body:has([data-case-studies-layout])::-webkit-scrollbar {
     @apply rounded-xl bg-[#fef2f2] px-3 py-2;
   }
   .cx-select-fontmo-3b {
-    @apply select-none font-mono text-xs md:text-sm tracking-[0.2em] opacity-40 pt-1 tabular-nums;
+    @apply select-none font-mono text-xs md:text-sm tracking-[0.2em] opacity-70 pt-1 tabular-nums;
   }
   .cx-mt3-textba-3c {
     @apply mt-3 text-base leading-7 text-muted-foreground;

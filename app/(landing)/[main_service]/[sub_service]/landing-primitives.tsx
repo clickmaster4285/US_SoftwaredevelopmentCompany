@@ -45,21 +45,25 @@ export function SectionHeading({
   eyebrow,
   title,
   copy,
+  tone = "light",
 }: {
   eyebrow: string;
   title: string;
   copy?: string;
+  /** "dark" for headings placed on a dark section background. */
+  tone?: "light" | "dark";
 }) {
+  const dark = tone === "dark";
   return (
     <div className="cx-mxauto-maxw3x-12">
-      <p className="cm-eyebrow">
+      <p className={dark ? "cm-eyebrow !text-white/75" : "cm-eyebrow"}>
         {eyebrow}
       </p>
-      <h2 className="cx-mt4-textcl-d">
+      <h2 className={dark ? "cx-mt4-textcl-d !text-white" : "cx-mt4-textcl-d"}>
         {title}
       </h2>
       {copy ? (
-        <p className="cx-mt5-textba-s">
+        <p className={dark ? "cx-mt5-textba-s !text-white/80" : "cx-mt5-textba-s"}>
           {copy}
         </p>
       ) : null}

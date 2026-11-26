@@ -412,7 +412,7 @@ export function TechStackSection({
   return (
     <section className="border-y border-border bg-primary px-5 py-24 text-primary-foreground md:px-10">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading eyebrow="Tech stack" title={title} copy={copy} />
+        <SectionHeading tone="dark" eyebrow="Tech stack" title={title} copy={copy} />
         {groups?.length ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {groups.map((group) => (

@@ -1204,7 +1204,7 @@ export const ehrFaqs = [
   },
   {
     question:
-      "Can ClickMasters develop custom Electronic Health Records software?",
+      "Can Clickmasters develop custom Electronic Health Records software?",
     answer:
       "Yes. Clickmasters develops custom healthcare software, including EHR platforms, covering requirement discovery, clinical workflow analysis, UI/UX design, web and mobile development, healthcare integrations, security implementation, quality assurance, deployment and ongoing support. Every project starts with a written scope agreed before development begins.",
   },

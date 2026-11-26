@@ -142,11 +142,15 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
         <table className="w-full border-collapse text-[14px] md:text-[15px]">
           <thead>
             <tr className="relative">
-              <th className="w-14" aria-hidden />
+              {/* Labels the row-number column so every data cell has a header. */}
+              <th scope="col" className="w-14">
+                <span className="sr-only">Row</span>
+              </th>
 
               {head.map((cell, i) => (
                 <th
                   key={i}
+                  scope="col"
                   data-table-head
                   className="cx-textle-alignb-2a"
                 >
@@ -207,7 +211,7 @@ export function AnimatedTable({ rows }: { rows: string[][] }) {
 
       <div
         data-table-footer
-        className="mt-5 flex items-center justify-between text-[11px] uppercase tracking-[0.18em] opacity-40"
+        className="mt-5 flex items-center justify-between text-[11px] uppercase tracking-[0.18em] opacity-70"
       >
         <span>
           {body.length} {body.length === 1 ? "row" : "rows"}

@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Multi-Vendor Marketplace Software",
   industrySlug: "retail-ecommerce-software",
   industryLabel: "Retail & E-commerce Software",
-  theme: { accent: "#ea580c", dark: "#2b1206", soft: "#ffedd5", border: "#fed7aa", tint: "#fff7ed" },
+  theme: { accent: "#c2410c", dark: "#2b1206", soft: "#ffedd5", border: "#fed7aa", tint: "#fff7ed" },
   browserLabel: "marketplace.example",
   images: {
     dashboard: img("multi-vendor-marketplace-software-dashboard.svg", "Multi-vendor marketplace software dashboard with gross merchandise value, commission revenue, active sellers and orders awaiting action"),

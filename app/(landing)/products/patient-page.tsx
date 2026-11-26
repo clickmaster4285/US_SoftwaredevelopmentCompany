@@ -60,7 +60,7 @@ const ICONS: Record<string, LucideIcon> = {
   Route,
 };
 
-const ACCENT = "#0891b2";
+const ACCENT = "#0e7490";
 const INDUSTRY_SLUG = "healthcare-medical-software";
 
 export function patientSchema() {
@@ -590,7 +590,7 @@ export default function PatientPage() {
                 <div key={shortKey(group.title)}>
                   <div className="flex items-center gap-3 border-b border-border pb-4">
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#cffafe]">
-                      <Icon className="h-5 w-5 text-[#0891b2]" aria-hidden />
+                      <Icon className="h-5 w-5 text-[#0e7490]" aria-hidden />
                     </span>
                     <H3>{group.title}</H3>
                   </div>

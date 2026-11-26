@@ -88,7 +88,7 @@ const ICONS: Record<string, LucideIcon> = {
   Smartphone,
 };
 
-const ACCENT = "#0284c7";
+const ACCENT = "#0369a1";
 const DARK = "#071c2b";
 
 export function attendanceSchema() {
@@ -337,7 +337,7 @@ function FeatureCard({ feature }: { feature: AttendanceFeature }) {
     <article className="cm-card6c">
       <div className="cx-flex-itemsc-5">
         <span className="cx-flex-h11-1x">
-          <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
+          <Icon className="h-5 w-5 text-[#0369a1]" aria-hidden />
         </span>
         <h3 className="cm-h3">{feature.title}</h3>
       </div>

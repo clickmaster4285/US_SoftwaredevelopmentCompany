@@ -24,7 +24,7 @@ export const TITLE_OVERRIDES: Record<string, string> = {
 export function fitTitle(raw: string) {
   let name = clean(raw)
     .replace(/\s*[|–—-]\s*Clickmasters\b.*$/i, "")
-    .replace(/\s*[|–—-]\s*ClickMasters\b.*$/i, "")
+    .replace(/\s*[|–—-]\s*Clickmasters\b.*$/i, "")
     .trim();
 
   const withBrand = () => `${name}${BRAND}`;

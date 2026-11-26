@@ -63,7 +63,7 @@ const ICONS: Record<string, LucideIcon> = {
   Wallet,
 };
 
-const ACCENT = "#ea580c";
+const ACCENT = "#c2410c";
 const INDUSTRY_SLUG = "healthcare-medical-software";
 
 export function billingSchema() {
@@ -557,7 +557,7 @@ export default function BillingPage() {
                 <div key={shortKey(group.title)}>
                   <div className="flex items-center gap-3 border-b border-border pb-4">
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#ffedd5]">
-                      <Icon className="h-5 w-5 text-[#ea580c]" aria-hidden />
+                      <Icon className="h-5 w-5 text-[#c2410c]" aria-hidden />
                     </span>
                     <H3>{group.title}</H3>
                   </div>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ArrowRight, Loader2, Mail, MapPin, Phone } from "lucide-react";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   CONTACT_EMAIL,
   CONTACT_PHONE_DISPLAY,
@@ -16,10 +17,10 @@ import {
   SectionHeading,
 } from "../[main_service]/[sub_service]/landing-primitives";
 
-// ClickMasters CRM lead-capture endpoint (see EXTERNAL-WEBSITES-CONNECTION guide).
+// Clickmasters CRM lead-capture endpoint (see EXTERNAL-WEBSITES-CONNECTION guide).
 const CRM_ENDPOINT = "https://crm.clickmasters.pk/api/leads";
 
-// Identifies which ClickMasters site + service each lead came from.
+// Identifies which Clickmasters site + service each lead came from.
 const CRM_WEBSITE = "clickmasterssoftwaredevelopmentcompany.com";
 const CRM_SERVICE = "Software Development";
 
@@ -365,6 +366,13 @@ export default function ContactPage() {
                 </>
               )}
             </button>
+            <p className="mt-4 text-xs text-white/70">
+              We use these details to reply to your inquiry. See our{" "}
+              <Link href="/privacy" className="underline underline-offset-4">
+                Privacy Policy
+              </Link>
+              .
+            </p>
           </form>
         </div>
       </section>

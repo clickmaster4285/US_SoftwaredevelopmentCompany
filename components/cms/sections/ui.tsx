@@ -1,5 +1,5 @@
 // components/cms/sections/ui.tsx
-// ClickMasters design primitives for CMS-created pages (same look as the
+// Clickmasters design primitives for CMS-created pages (same look as the
 // landing / service pages: uppercase eyebrows, tight display headings,
 // rounded-full buttons, rounded-3xl cards). Colours come from theme tokens,
 // so section backgrounds (dark / primary / muted) restyle them automatically.

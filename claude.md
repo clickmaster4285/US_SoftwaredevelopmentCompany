@@ -15,6 +15,11 @@ For full migration history, see @MIGRATION_SUMMARY.md. Note: the MIGRATION_SUMMA
 - Social defaults (og:type/site_name/default og:image `/og-default.png`) are added in `withEditedPageSeo`. Every route must keep calling it.
 - Product pages import icons from `@/components/ui/mask-icons` (CSS-mask spans, generated). After using a new icon there, run `node scripts/gen-mask-icons.cjs`.
 - Product-page weight budget is <300 KB HTML. Long static blocks on medical practice, EHR, clinic and the fitness hub render from `*-sections.tsx` client components that import their own data (keeps text out of the RSC payload; markup is unchanged). Shared building blocks live in `product-primitives.tsx`. Use `shortKey()` for React keys made from text.
+- Accessibility (axe clean on 184/185 pages): product `ACCENT`/`theme.accent` colours must be ≥4.5:1 on white (use Tailwind 700 shades, not 600). `SectionHeading` on a dark section needs `tone="dark"`. Empty `CompareTable` headers are fine (sr-only text is added). Favicon/icons are `app/favicon.ico`, `app/icon.png`, `app/apple-icon.png` (square).
+- OG images (`public/products/**/*-og.png`) are palette-compressed to <100 KB; re-compress new ones the same way.
+- Lint: `eslint.config.js` ignores `.next`; Prettier uses `endOfLine: "auto"` (CRLF repo). Unused deps (TanStack Start, nodemailer, xlsx, zod, redux) were removed: production `npm audit` is 0. Don't claim certifications (AWS/Azure/GCP, SOC 2, HIPAA) without evidence.
+- Homepage `Testimonials3DRoom` keeps a 0.72 card-opacity floor for contrast; don't lower it.
+- Brand is spelled "Clickmasters" (not "ClickMasters"). `/privacy` describes the real data flows (contact form → CRM, GTM/GA4, server logs): update it when forms or trackers change.
 - **Always deploy from a clean build** (`rm -rf .next && npm run build`): an incremental build once shipped a stale stylesheet missing new classes.
 
 # Work Log: 2026-11-11 — ERP / headless CMS integration

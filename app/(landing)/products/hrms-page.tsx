@@ -84,7 +84,7 @@ const ICONS: Record<string, LucideIcon> = {
   Wallet,
 };
 
-const ACCENT = "#059669";
+const ACCENT = "#047857";
 const DARK = "#06261f";
 
 export function hrmsSchema() {
@@ -298,7 +298,7 @@ function ModuleCard({ mod }: { mod: HrmsModule }) {
     <article className="cm-card6c">
       <div className="cx-flex-itemsc-5">
         <span className="cx-flex-h11-3x">
-          <Icon className="h-5 w-5 text-[#059669]" aria-hidden />
+          <Icon className="h-5 w-5 text-[#047857]" aria-hidden />
         </span>
         <h3 className="cm-h3">{mod.title}</h3>
       </div>

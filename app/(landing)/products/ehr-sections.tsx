@@ -131,7 +131,7 @@ function DiagramFigure({
   );
 }
 
-const ACCENT = "#0284c7";
+const ACCENT = "#0369a1";
 
 function H3({
   children,
@@ -182,7 +182,7 @@ function FeatureCard({
     <article className="cm-card6c">
       <div className="cx-flex-itemss-31">
         <span className="cx-flex-h11-1x">
-          <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
+          <Icon className="h-5 w-5 text-[#0369a1]" aria-hidden />
         </span>
         <div>
           <p className="cx-textxs-fontse-15">Feature {number}</p>

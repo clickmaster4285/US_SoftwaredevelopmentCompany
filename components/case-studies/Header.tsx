@@ -329,7 +329,7 @@ export function ContactForm() {
             </span>
           </button>
 
-          <p className="text-[11px] opacity-40 leading-relaxed">
+          <p className="text-[11px] opacity-70 leading-relaxed">
             We reply within one working day. No marketing emails.
           </p>
         </form>

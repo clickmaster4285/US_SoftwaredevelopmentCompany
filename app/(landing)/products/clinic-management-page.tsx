@@ -454,7 +454,7 @@ export default function ClinicManagementPage() {
                 Most clinics don&apos;t struggle because their staff aren&apos;t
                 working hard enough. They struggle because the day is split
                 across a paper diary, a spreadsheet, a billing tool, a messaging
-                app and a filing cabinet. ClickMasters designs and builds custom
+                app and a filing cabinet. Clickmasters designs and builds custom
                 clinic management software that connects those pieces. Your
                 front desk, doctors and administrators work from the same
                 patient record, the same calendar and the same billing data.
@@ -826,7 +826,7 @@ export default function ClinicManagementPage() {
               software makes sense when your clinic&apos;s way of working
               doesn&apos;t fit a standard product, or when you need control over
               features, integrations and data. As a development partner,
-              ClickMasters builds the system you specify rather than selling a
+              Clickmasters builds the system you specify rather than selling a
               fixed product.
             </p>
           </Prose>
@@ -881,7 +881,7 @@ export default function ClinicManagementPage() {
                       <div
                         className="rounded-xl px-4 py-3"
                         style={{
-                          backgroundColor: `rgba(15, 23, 42, ${0.05 + index * 0.13})`,
+                          backgroundColor: `rgba(15, 23, 42, ${[0.04, 0.065, 0.09, 0.76, 0.86, 0.96][index] ?? 0.96})`,
                         }}
                       >
                         <p
@@ -890,7 +890,7 @@ export default function ClinicManagementPage() {
                           {layer.label}
                         </p>
                         <p
-                          className={`text-xs ${index > 2 ? "text-white/75" : "text-muted-foreground"}`}
+                          className={`text-xs ${index > 2 ? "text-white/85" : "text-muted-foreground"}`}
                         >
                           {layer.detail}
                         </p>
@@ -963,7 +963,7 @@ export default function ClinicManagementPage() {
             government certification for either. Compliance depends on the final
             system architecture, hosting choices, how the clinic configures and
             uses the software, staff policies and training, contracts with
-            vendors, and the laws of the jurisdiction. ClickMasters can design
+            vendors, and the laws of the jurisdiction. Clickmasters can design
             and build software with the technical safeguards these frameworks
             call for. Your clinic, together with its legal and compliance
             advisers, remains responsible for overall compliance.
@@ -985,7 +985,7 @@ export default function ClinicManagementPage() {
               <span className="cx-fontse-textfo-1">
                 How to read this list:{" "}
               </span>
-              ClickMasters builds integrations per project. Whether a specific
+              Clickmasters builds integrations per project. Whether a specific
               connection is possible depends on the third-party system&apos;s
               available APIs, data standards, access permissions and commercial
               terms. We confirm feasibility during discovery, before development
@@ -1109,15 +1109,15 @@ export default function ClinicManagementPage() {
           />
         </Section>
 
-        {/* Why ClickMasters */}
+        {/* Why Clickmasters */}
         <Section
           id="why-us"
           eyebrow="Your partner"
-          title="Why Choose ClickMasters?"
+          title="Why Choose Clickmasters?"
         >
           <Prose>
             <p>
-              ClickMasters is a remote-first software development company that
+              Clickmasters is a remote-first software development company that
               builds web, mobile, AI, SaaS and cloud solutions for startups and
               growing businesses, including healthcare organizations. We work
               with clients by video and phone, and every project starts with a

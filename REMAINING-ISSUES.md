@@ -8,18 +8,18 @@ These items were verified during the 2026-11-25 audit but **could not or should 
 | R-01 | 38 near-duplicate template service pages | High | Editorial work by someone who knows each service | Code/content |
 | R-02 | Cannibalizing URL pairs need consolidation | High | URL-change approval | Code |
 | R-03 | Removed statistics: confirm true figures | High | Company records | Content |
-| R-04 | Privacy Policy and Terms pages missing | Medium | Legal text | Content |
+| R-04 | Privacy Policy **drafted (F-27), needs legal review before deploy**; Terms page not created | Medium | Legal review | Content |
 | R-05 | Social profile URLs unknown | Low | Real profile URLs | Code (data only) |
-| R-06 | 11.5 MB homepage videos | Medium | ffmpeg / re-exported assets | Assets |
-| R-07 | Brand casing inconsistent | Low | Brand decision | Content |
-| R-08 | Unverified certification / compliance claims | High | Evidence | Content |
-| R-09 | Unused vulnerable dependencies | Medium | Approval to remove | Code |
+| R-06 | ~~11.5 MB homepage videos~~ **resolved (F-27)**: 1.4 MB / 1.2 MB | — | — | — |
+| R-07 | ~~Brand casing~~ **resolved (F-27)**: "Clickmasters" everywhere | — | — | — |
+| R-08 | ~~Unverified certification claims~~ reworded (F-26); "SOC 2-aligned / HIPAA-ready practices" wording still to confirm | Low | Evidence | Content |
+| R-09 | ~~Unused vulnerable dependencies~~ **resolved (F-26)**: production audit 0 vulnerabilities | — | — | — |
 | R-10 | Server/DNS hygiene | Low | Server and DNS access | nginx, DNS |
 | R-11 | Further HTML size reduction | Low | Refactor approval | Code |
 | R-12 | ERP/CMS integration unreachable, domain not registered | Low | ERP admin | ERP |
 | R-13 | Search Console follow-up | Medium | Deploy first | Search Console |
 | R-14 | Mobile first paint: render-blocking CSS, JS weight | Medium | Refactor decision | Code |
-| R-15 | Remaining contrast items (mock-ups, avatars, orange buttons) | Low | Design review | Code |
+| R-15 | ~~Homepage testimonial corridor contrast~~ **resolved (F-26)**: axe clean on 185/185 | — | — | — |
 
 ---
 
@@ -72,28 +72,27 @@ Also still in data files but **not rendered today**: `stats`/`heroBadge` values 
 Still rendered and worth confirming: "5+ years of hands-on experience per developer" on the location pages. This is a hiring claim, not a company statistic, so it was left in place.
 
 ### R-04. Privacy Policy and Terms pages (Medium)
-The footer linked "Privacy" and "Terms" to `#`; those dead links were removed. The contact form collects names, emails and project details and sends them to a CRM, so a privacy policy is expected by users (and in many jurisdictions by law). It is also a trust signal.
-**Action:** publish `/privacy` (and `/terms` if needed) with legal-approved text, add them to the footer and the pages sitemap (it is auto-discovered), and link the policy next to the contact form.
+F-27 added `/privacy`, linked in the footer and under the contact form, and listed in the pages sitemap. It describes only what the site actually does: the contact form (name, email, company, budget, message, landing page, referrer and UTM tags sent to the CRM), Google Tag Manager / Analytics, server logs and embedded video.
+**Action before deploy:** have it legally reviewed. In particular confirm the "we do not sell personal information" line and the retention wording, and add a postal address if your jurisdiction requires one. A Terms page was not created (no legal text available).
 
 ### R-05. Social profiles (Low)
 All social icons pointed to `#`. They are now hidden, not deleted.
 **Action:** put the real URLs in `TOP_SOCIALS`/`SOCIALS_ALL` (`components/layout/Footer.tsx`) and `SOCIAL` (`components/layout/Navbar.tsx`). Then add them as `sameAs` in `organizationSchema()` (`components/seo/JsonLd.tsx`).
 
-### R-06. Homepage videos (Medium, performance)
-`public/hero-video.mp4` and `public/dominate-video.mp4` are 11.5 MB each. The hero video autoplays above the fold on mobile. `ffmpeg` is not installed here, so they were not re-encoded. (The below-the-fold video is now lazy-loaded; see F-16.)
-**Action:** re-export at about 720p, H.264 CRF 28 + WebM/AV1, target ≤1.5 MB. Add a `poster` image so the first paint does not wait on video. Consider not autoplaying the hero on `prefers-reduced-data` / small screens.
+### R-06. Homepage videos — resolved
+F-27 re-encoded both in headless Chrome (WebCodecs H.264 High profile, fast-start MP4): `hero-video.mp4` 11.5 MB → 1.4 MB (1280×720), `dominate-video.mp4` 11.5 MB → 1.2 MB (960×960). Same 5.04 s length, loops, no visible difference in side-by-side frames. Originals are in git history.
+**Optional:** add a `poster` image to the hero video.
 
-### R-07. Brand casing (Low)
-"ClickMasters" (922 occurrences) vs "Clickmasters" (885). The logo is all-caps, so it does not decide the question. Titles, schema, `og:site_name` and the copyright use "Clickmasters".
-**Action:** choose one casing, then run a scripted replace across `app/`, `data/` and `components/`.
+### R-07. Brand casing — resolved
+F-27 replaced "ClickMasters" with "Clickmasters" in visible text (914 replacements, 24 files). The code identifier `whyClickMasters` was left unchanged.
 
-### R-08. Unverified certification / compliance claims (High, trust)
-Rendered on `/data-services` and related pages: "Our engineers hold certifications from AWS, Microsoft Azure, and Google Cloud", "SOC 2-aligned and HIPAA-ready practices", and in data "3 Cloud Certifications (AWS, Azure, GCP)". Product pages also mention HIPAA-aware design. That wording is hedged and was left in place.
-**Action:** confirm with evidence (certificate IDs, audit reports) or soften to describe practices rather than certifications. Never imply a SOC 2 report or HIPAA certification that does not exist.
+### R-08. Unverified certification / compliance claims (Low, was High)
+**Resolved in F-26:** "Our engineers hold certifications from AWS, Microsoft Azure, and Google Cloud", "Certified engineers…", "Certified security engineers…", the "3 Cloud Certifications" stat and "GDPR/SOC 2 compliant" were reworded to describe experience and practices.
+**Still to confirm:** `/data-services` says "SOC 2-aligned and HIPAA-ready practices". "Aligned"/"ready" describe practices, not an audit, so the wording was kept. Product pages mention HIPAA-aware design (also hedged, and they state that HHS does not certify software).
+**Action:** if you do hold AWS/Azure/GCP certifications or a SOC 2 report, you can restore the stronger wording with that evidence.
 
-### R-09. Unused vulnerable dependencies (Medium)
-`npm audit --omit=dev` after the Next.js upgrade still lists `@tanstack/react-start` (critical, TanStack Start leftover, unused per CLAUDE.md), `nodemailer` (high, not imported), `xlsx` (high, **no upstream fix**, not imported), `zod` (fix requires a major upgrade), and transitive dev-tool advisories. They are not loaded by the running site, which is why they were left in place.
-**Action:** remove the unused packages (`npm rm @tanstack/react-start nodemailer xlsx @reduxjs/toolkit react-redux`), delete the leftover `server.ts`/`start.ts`, rebuild, then plan the `zod` 4 upgrade separately.
+### R-09. Unused vulnerable dependencies — resolved
+Removed in F-26: `@tanstack/react-start`, `nodemailer`, `xlsx`, `zod`, `@reduxjs/toolkit`, `react-redux`, `@hookform/resolvers`, `@types/nodemailer` (none were imported; `server.ts`/`start.ts` were already gone). `eslint-config-next` moved to devDependencies. `npm audit --omit=dev`: 0 vulnerabilities. Remaining advisories are in dev-only lint tooling.
 
 ### R-10. Server and DNS hygiene (Low)
 - `Server: nginx/1.24.0 (Ubuntu)` reveals the version. Set `server_tokens off;`.
@@ -117,9 +116,9 @@ I have no Search Console access.
 **Why it remains:** inlining CSS (`experimental.inlineCss`) would add ~150–200 KB to every HTML document, which works against the HTML-size goal. Trimming JS means removing or deferring animation libraries on content pages, a design and engineering decision.
 **Action:** (1) Check Tailwind's generated CSS for unused shadcn/ui component styles. (2) Load Framer Motion/GSAP only on the homepage sections that use them (dynamic import). (3) Consider GTM `strategy="lazyOnload"` if early-pageview loss is acceptable (it currently adds ~300 ms TBT). (4) After deploy, use PageSpeed Insights field data (CrUX) as the source of truth.
 
-### R-15. Remaining contrast items (Low)
-After the fixes, Lighthouse still flags: 2 decorative avatar-initial circles on the homepage (`TrustedBy`), and 6 items inside the illustrative dashboard mock-ups on product pages (purple chart swatches, `text-muted-foreground` on a `#b5b4d2` bar). Orange **buttons** (white on `#e05b35`, 3.67:1) also fall short of 4.5:1 for normal-size text; they were not flagged because the button text is large/bold, but they are borderline.
-**Action:** design review. Darken the button orange or use `#c44a24` for buttons too, and give mock-up labels a solid background.
+### R-15. Contrast — resolved
+F-26 raised the testimonial corridor's minimum card opacity (0.16 → 0.72) and its inner labels; the initials avatars are now large bold text and hidden from screen readers. axe is clean on 185/185 pages and the homepage scores Accessibility 100.
+Orange **buttons** (white on `#e05b35`, 3.67:1) pass only because their text is large/bold; keep that if they are restyled.
 
 ### R-16. Server response time on production (Low, hosting)
 ~~Three pages over 400 KB~~: resolved in F-24 (every page is now ≤290 KB).
@@ -128,7 +127,7 @@ The audit measured 0.59 s median / 1.32 s max response time from its crawler to 
 **Keep page weight down:** four audited pages sit at 288–289 KB. If long content is added to a product page, use the client-section pattern in `practice-sections.tsx` for its longest blocks.
 
 ### R-17. "Low text-to-HTML ratio" notices (Low)
-73 pages are below 10% (Semrush shows this as a notice, not an error). The cause is the App Router hydration payload described in R-16, which every Next.js App Router site has. It improved as HTML shrank, but it cannot reach 10% on design-heavy pages without removing the hydration payload, which would break navigation and interactivity.
+41 pages are below 10% (Semrush shows this as a notice, not an error). The cause is the App Router hydration payload described in R-16, which every Next.js App Router site has. It improved as HTML shrank, but it cannot reach 10% on design-heavy pages without removing the hydration payload, which would break navigation and interactivity.
 
 ### Not fixed by design
 - Long but natural H1s (14 between 71 and 88 characters) were left unchanged. Length is not a ranking rule.

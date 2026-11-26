@@ -108,7 +108,7 @@ const SOCIALS = SOCIALS_ALL.filter((s) => s.href !== "#");
 const TOP_SOCIALS_LIVE = TOP_SOCIALS.filter((s) => s.href !== "#");
 
 /** Optional ERP/CMS overrides for pages created in the ERP. Without props the
- * default ClickMasters footer renders unchanged. */
+ * default Clickmasters footer renders unchanged. */
 export type FooterColumn = {
   title: string;
   items: { label: string; href: string; newTab?: boolean }[];
@@ -157,7 +157,7 @@ export default function Footer({
 
               <p className="text-base sm:text-lg leading-relaxed max-w-sm font-medium">
                 {tagline ||
-                  "ClickMasters is a software development company delivering high-performance web, mobile, AI, SaaS, and cloud solutions for startups and growing businesses."}
+                  "Clickmasters is a software development company delivering high-performance web, mobile, AI, SaaS, and cloud solutions for startups and growing businesses."}
               </p>
             </div>
 
@@ -271,9 +271,13 @@ export default function Footer({
                 {copyright || "©2026 Clickmasters"}
               </span>
               <span className="hidden sm:inline opacity-30">|</span>
-              {/* Privacy and Terms links pointed at "#" (no such pages
-                  exist yet); removed until the pages are published. */}
               <div className="flex items-center gap-3 sm:gap-5">
+                <a
+                  href="/privacy"
+                  className="hover:opacity-100 transition-opacity"
+                >
+                  Privacy Policy
+                </a>
                 <a
                   href="/sitemap.xml"
                   className="hover:opacity-100 transition-opacity"

@@ -85,7 +85,7 @@ const ICONS: Record<string, LucideIcon> = {
   UserCheck,
 };
 
-const ACCENT = "#0d9488";
+const ACCENT = "#0f766e";
 const INDUSTRY_SLUG = "healthcare-medical-software";
 
 export function emrSchema() {
@@ -345,7 +345,7 @@ function FeatureCard({ feature }: { feature: EmrFeature }) {
     <article className="cm-card6">
       <div className="cx-flex-itemsc-5">
         <span className="cx-flex-h11-2o">
-          <Icon className="h-5 w-5 text-[#0d9488]" aria-hidden />
+          <Icon className="h-5 w-5 text-[#0f766e]" aria-hidden />
         </span>
         <h3 className="cm-h3">{feature.title}</h3>
       </div>
@@ -730,7 +730,7 @@ export default function EmrPage() {
                   className="cm-card5"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#ccfbf1]">
-                    <Icon className="h-5 w-5 text-[#0d9488]" aria-hidden />
+                    <Icon className="h-5 w-5 text-[#0f766e]" aria-hidden />
                   </span>
                   <h3 className="mt-4 font-semibold">{item.title}</h3>
                   <p className="cm-p2">
@@ -1013,7 +1013,7 @@ export default function EmrPage() {
                   className="cm-card6"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#ccfbf1]">
-                    <Icon className="h-5 w-5 text-[#0d9488]" aria-hidden />
+                    <Icon className="h-5 w-5 text-[#0f766e]" aria-hidden />
                   </span>
                   <h3 className="cx-mt4-textlg-35">
                     {group.title}

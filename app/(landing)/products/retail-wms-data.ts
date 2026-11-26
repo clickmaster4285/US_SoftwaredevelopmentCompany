@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Warehouse Management System (WMS)",
   industrySlug: "retail-ecommerce-software",
   industryLabel: "Retail & E-commerce Software",
-  theme: { accent: "#ca8a04", dark: "#2a1f04", soft: "#fef9c3", border: "#fef08a", tint: "#fefce8" },
+  theme: { accent: "#a16207", dark: "#2a1f04", soft: "#fef9c3", border: "#fef08a", tint: "#fefce8" },
   browserLabel: "wms.example",
   images: {
     dashboard: img("warehouse-management-system-dashboard.svg", "Warehouse management system dashboard with orders to ship, pick rate, dock-to-stock time, order accuracy and dock door status"),

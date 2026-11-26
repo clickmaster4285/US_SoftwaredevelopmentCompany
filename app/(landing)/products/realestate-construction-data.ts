@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Construction Project Management Software",
   industrySlug: "real-estate-property-management",
   industryLabel: "Real Estate & Property Management",
-  theme: { accent: "#ca8a04", dark: "#2a1f04", soft: "#fef9c3", border: "#fef08a", tint: "#fefce8" },
+  theme: { accent: "#a16207", dark: "#2a1f04", soft: "#fef9c3", border: "#fef08a", tint: "#fefce8" },
   browserLabel: "site.example",
   images: {
     dashboard: img("construction-project-management-software-dashboard.svg", "Construction project management software dashboard with active projects, budget versus actual, schedule status, open RFIs and change orders"),

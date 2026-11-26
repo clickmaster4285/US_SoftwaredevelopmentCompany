@@ -20,7 +20,7 @@ const page: ProductPageData = {
   productName: "Delivery Management Software",
   industrySlug: "logistics-transportation-software",
   industryLabel: "Logistics & Transportation Software",
-  theme: { accent: "#059669", dark: "#022c22", soft: "#d1fae5", border: "#a7f3d0", tint: "#ecfdf5" },
+  theme: { accent: "#047857", dark: "#022c22", soft: "#d1fae5", border: "#a7f3d0", tint: "#ecfdf5" },
   browserLabel: "deliver.example",
   images: {
     dashboard: img("delivery-management-software-dashboard.svg", "Delivery management software dashboard with today's deliveries, on-time rate, active drivers, failed deliveries and live map status"),

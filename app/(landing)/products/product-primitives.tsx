@@ -73,14 +73,23 @@ export function CompareTable({
   // in the HTML and twice again in the RSC payload. Below md, `.cm-compare`
   // (globals.css) restyles rows as cards and labels cells from data-label.
   return (
-    <div className="cx-mt8-overfl-3">
+    // tabIndex/role/aria-label: the wrapper scrolls horizontally on narrow
+    // screens, so keyboard users must be able to focus it (axe
+    // scrollable-region-focusable).
+    <div
+      className="cx-mt8-overfl-3"
+      tabIndex={0}
+      role="region"
+      aria-label={caption}
+    >
       <table className="cm-compare w-full border-collapse text-left text-sm md:min-w-[720px]">
         <caption className="sr-only">{caption}</caption>
         <thead className="cx-bgseco-textfo-l">
           <tr>
             {headers.map((header) => (
-              <th key={header} scope="col">
-                {header}
+              <th key={header || "corner"} scope="col">
+                {/* Empty corner cells still need a name for screen readers. */}
+                {header || <span className="sr-only">Comparison</span>}
               </th>
             ))}
           </tr>

@@ -1,6 +1,6 @@
 // components/cms/sections/Engage.tsx
 // Conversion-oriented CMS sections: faq, cta, contact, newsletter, blogPosts /
-// relatedPosts — in the ClickMasters style.
+// relatedPosts — in the Clickmasters style.
 import { ArrowRight, Mail, MapPin, Phone, Plus } from "lucide-react";
 import type { CmsButton } from "../cmsContent";
 import { ButtonRow, CmsImg, CmsLink, SectionHeading, cx } from "./ui";

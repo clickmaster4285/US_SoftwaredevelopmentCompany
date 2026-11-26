@@ -5,6 +5,7 @@ import {
   useRef,
   useState,
   type CSSProperties,
+  type ElementType,
   type ReactNode,
 } from "react";
 import Link from "next/link";
@@ -127,7 +128,7 @@ function Reveal({
   children: ReactNode;
   delay?: number;
   className?: string;
-  as?: any;
+  as?: ElementType;
 }) {
   const [ref, inView] = useInViewOnce<HTMLDivElement>(0.15);
   return (
@@ -266,7 +267,7 @@ export default function AboutPage({
         }
         .ab-slider-item .badge-text .desc {
           font-size: 0.75rem;
-          color: rgba(0,0,0,0.5);
+          color: rgba(0,0,0,0.66);
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;

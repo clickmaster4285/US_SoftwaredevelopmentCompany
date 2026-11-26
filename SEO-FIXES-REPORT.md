@@ -232,6 +232,51 @@ Audit finding: 26 of 27 product pages were 410–654 KB of HTML, about 60% of it
 
 **Maintenance:** when a product page starts using a new lucide icon, import it from `@/components/ui/mask-icons` and run `node scripts/gen-mask-icons.cjs` (TypeScript fails the build if the icon hasn't been generated).
 
+### F-25. Fifth audit pass: whole-site technical, image and accessibility sweep
+Scope: full crawl of all 185 URLs plus robots.txt, 404 handling, redirects, every referenced asset (745 URLs), response headers, duplicate head tags, sitemap XML/lastmod validity, axe-core (WCAG 2.2 AA + best practice) on every page, and Lighthouse SEO / Accessibility / Best Practices on 14 page templates.
+
+| Finding | Fix | Files |
+|---|---|---|
+| **Process heading invisible on 38 service pages** (dark text on the near-black "Process" section) and the "Tech stack" heading on main service pages (same problem on `bg-primary`) | `SectionHeading` takes `tone="dark"` (white heading, light eyebrow/copy); used by both dark sections | `[sub_service]/landing-primitives.tsx`, `[sub_service]/process-section.tsx`, `[main_service]/main-service-sections.tsx` |
+| **Case-study video caption invisible** (dark text on the black video frame) | Caption is `text-white/75` | `app/case-studies/[slug]/page.tsx` |
+| 54 Open Graph share images 102–154 KB | Re-encoded in place (same file names, same 1200×750): now 37–58 KB, mean pixel difference 0.21/255. Originals backed up outside the repo | `public/products/**/*-og.png` |
+| `favicon.ico` was a non-square 352×169 PNG (Google shows only square favicons, multiples of 48 px); no apple-touch-icon | Real ICO (16/32/48 px) built from the existing CM mark on its own background; added `app/icon.png` (192 px) and `app/apple-icon.png` (180 px). Next adds the `<link>` tags automatically | `app/favicon.ico`, `app/icon.png`, `app/apple-icon.png` |
+| Product accent colours below 4.5:1 as text/badges (emerald, orange, teal, sky, cyan, yellow, green "600" shades) on 16 product pages | Same hues, Tailwind "700" shades: all ≥4.5:1 on white and on each page's tint | 16 files in `app/(landing)/products/` (ACCENT / `theme.accent`) |
+| Security-layer diagrams (clinic, medical practice): middle layers failed contrast for both dark and white text | Per-layer opacities chosen so every layer passes (still light → dark) | `clinic-management-page.tsx`, `practice-sections.tsx` |
+| 92 empty comparison-table corner headers; table scroll area not keyboard-focusable | Empty header gets screen-reader text; wrapper is a labelled, focusable region | `product-primitives.tsx` (`CompareTable`) |
+| Case-study tables: row-number cells had no header; faint 11 px labels (40% opacity) | Row column labelled for screen readers, `scope="col"`; labels at 70% opacity | `components/case-studies/Table.tsx`, `Header.tsx`, `app/case-studies/page.tsx`, `globals.css` |
+| EHR "At a glance" `<dl>` had `dt`/`dd` nested two divs deep (invalid list) | Icon moved inside the `dt`; identical layout | `ehr-page.tsx` |
+| Homepage slider dots were 6 px tap targets | 24 px buttons with the same visible bar inside | `app/(landing)/AudienceCarousel.tsx` |
+| About badge descriptions 3.9:1 | Text darkened (7.1:1) | `about/AboutPage.tsx` |
+
+**Checked and already correct:** unknown URLs return 404 (also nested and product paths); `/about/` 308-redirects to `/about`; uppercase URLs 404; robots.txt valid and points to the sitemap index; 4 sitemaps are valid XML with valid `lastmod`; no broken internal links or assets; no `http://` resources; no duplicate title/description/canonical/robots tags; `og:url` equals canonical everywhere; og:image absolute; security headers present; gzip on.
+
+**Results (clean build, full re-crawl):**
+- All 14 auditor criteria pass; JSON-LD 0 issues; 0 non-200 pages; every page ≤300 KB.
+- axe: violations on 98 pages → **1 page** (184/185 clean). The remaining one is the homepage 3D testimonial corridor (see R-15).
+- Lighthouse (14 templates): **SEO 100 on all**; Accessibility 100 on 13 of 14 (homepage 96, same corridor); Best Practices 100, except when Google Tag Manager is unreachable from the test machine (a network error, not a site error).
+- No console or hydration errors on the changed pages; FAQ toggles work.
+- Typecheck passes; lint shows no new findings in changed files.
+
+### F-26. Sixth pass: clearing the remaining-issues list
+| Finding | Fix | Files |
+|---|---|---|
+| Homepage testimonial corridor failed contrast (distant cards faded to 16%; labels faded again inside) | Card opacity floor raised to 0.72 and inner labels to 80%; initials avatars are large bold text and `aria-hidden` (the name is printed beside them). Depth still comes from the 3D perspective, scale and glow | `app/(landing)/Testimonials3DRoom.tsx` |
+| Unused packages with known vulnerabilities (R-09): `@tanstack/react-start` (critical), `nodemailer`, `xlsx` (high, no fix upstream), `zod` (high), `@reduxjs/toolkit`, `react-redux`, `@hookform/resolvers`, `@types/nodemailer` | Removed (none were imported). `eslint-config-next` moved to devDependencies; `npm audit fix` for non-breaking patches. `npm audit --omit=dev` now reports **0 vulnerabilities** | `package.json`, `package-lock.json` |
+| Unverified certification claims (R-08): "Our engineers hold certifications from AWS, Microsoft Azure, and Google Cloud", "Certified engineers…", "Certified security engineers…", "3 Cloud Certifications", "GDPR/SOC 2 compliant" | Reworded to describe experience and practices, not certifications ("work hands-on with AWS, Azure and Google Cloud", "Cloud Platforms", "GDPR-aware") | `data/main-services-data.js`, `data/main-services.js`, `data/sub-services.js` |
+| `npm run lint` linted the `.next` build output (116,000+ findings, timed out) and could not parse JSX in `data/*.js`; a leftover TanStack rule blocked `server-only` | ESLint ignores `.next`, `node_modules`, `public`; JSX enabled for `.js`; stale rule removed; Prettier `endOfLine: "auto"` (repo files are CRLF). Fixed the 3 real errors (`any` types). Remaining output is formatting-only Prettier style in older files | `eslint.config.js`, `.prettierrc.json`, `about/AboutPage.tsx`, `types/assets.d.ts` |
+
+**Results (clean build, full re-crawl):** all 14 auditor criteria pass; JSON-LD 0 issues; 185/185 pages HTTP 200; **axe clean on 185/185 pages**; homepage Lighthouse Accessibility / Best Practices / SEO **100 / 100 / 100**; no console errors; typecheck passes; production dependencies 0 vulnerabilities.
+
+### F-27. Videos, brand casing, Privacy Policy
+| Finding | Fix | Files |
+|---|---|---|
+| Homepage videos 11.5 MB each (R-06) | Re-encoded to H.264 fast-start MP4: 1.4 MB (1280×720) and 1.2 MB (960×960); same length, loops, visually identical | `public/hero-video.mp4`, `public/dominate-video.mp4` |
+| Brand spelled "ClickMasters" and "Clickmasters" (R-07) | "Clickmasters" everywhere in visible text (914 replacements) | 24 files in `app/`, `components/`, `data/`, `lib/` |
+| No Privacy Policy although the contact form collects personal data (R-04) | New `/privacy` page (draft for legal review), footer link, note under the contact form; auto-listed in `pages-sitemap.xml` | `app/(landing)/privacy/page.tsx`, `components/layout/Footer.tsx`, `contact/ContactPage.tsx` |
+
+**Results (clean build, full re-crawl):** 186 pages, all 14 criteria pass, JSON-LD 0 issues, axe clean on 186/186, no video over 3 MB, no console errors.
+
 ### F-19. Response headers
 | | |
 |---|---|

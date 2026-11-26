@@ -104,7 +104,9 @@ export default function Testimonials3DRoom() {
               const x = side * WALL_X;
               const dist = i - cameraIndex;
               const focus = Math.max(0, 1 - Math.abs(dist) * 0.9);
-              const visibility = Math.max(0.16, 1 - Math.abs(dist) * 0.22);
+              // Floor of 0.72 keeps distant cards readable (WCAG 4.5:1 incl. the
+              // 0.8 labels inside); depth comes from perspective, scale and glow.
+              const visibility = Math.max(0.72, 1 - Math.abs(dist) * 0.14);
               const lift = Math.sin(Math.min(1, focus) * Math.PI) * 22;
 
               return (
@@ -248,7 +250,7 @@ function Card({
         >
           0{index + 1} / 0{TESTIMONIALS.length}
         </span>
-        <span className="text-[10px] uppercase tracking-[0.3em] opacity-50">
+        <span className="text-[10px] uppercase tracking-[0.3em] opacity-80">
           Delivery
         </span>
       </div>
@@ -257,7 +259,8 @@ function Card({
       </p>
       <div className="mt-8 flex items-center gap-4">
         <div
-          className="w-12 h-12 rounded-full flex items-center justify-center text-base font-semibold"
+          aria-hidden="true"
+          className="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold"
           style={{
             background: card.accent,
             color: "oklch(0.12 0.02 260)",
@@ -271,7 +274,7 @@ function Card({
         </div>
         <div>
           <p className="text-sm font-medium">{card.name}</p>
-          <p className="text-xs opacity-60">{card.role}</p>
+          <p className="text-xs opacity-80">{card.role}</p>
         </div>
       </div>
     </div>

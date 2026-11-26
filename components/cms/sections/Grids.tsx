@@ -1,5 +1,5 @@
 // components/cms/sections/Grids.tsx
-// Card / list CMS sections in the ClickMasters style: features, services,
+// Card / list CMS sections in the Clickmasters style: features, services,
 // cards, benefits, process, timeline, stats, logos, gallery, team,
 // testimonials, pricing, bento.
 import { ArrowRight, Check, Quote } from "lucide-react";

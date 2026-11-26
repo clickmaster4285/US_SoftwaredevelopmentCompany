@@ -3966,7 +3966,7 @@ export const mainServiceData = {
     // Meta data
     metaTitle: "Data Services Company in USA | Analytics & Engineering",
     metaDescription:
-      "ClickMasters is a top data services company in the USA. We offer data analytics, engineering, and big data solutions. Get a free quote today!",
+      "Clickmasters is a top data services company in the USA. We offer data analytics, engineering, and big data solutions. Get a free quote today!",
     canonical:
       "https://clickmasterssoftwaredevelopmentcompany.com/data-services",
 
@@ -3976,7 +3976,7 @@ export const mainServiceData = {
     icon: "Database",
     tagline: "Data Services Company USA — Smarter Data. Faster Growth.",
     description:
-      "ClickMasters is a trusted data services company that helps U.S. businesses collect, clean, and use their data the right way. As your dedicated data services provider, we turn messy spreadsheets and scattered systems into clear answers you can act on. From small startups to large enterprises, our custom data solutions help you save time, cut costs, and make better decisions every single day.",
+      "Clickmasters is a trusted data services company that helps U.S. businesses collect, clean, and use their data the right way. As your dedicated data services provider, we turn messy spreadsheets and scattered systems into clear answers you can act on. From small startups to large enterprises, our custom data solutions help you save time, cut costs, and make better decisions every single day.",
     heroBadge: "200+ data projects delivered",
     heroImage:
       "/images/photo-1551288049-bebda4e38f71.jpg",
@@ -4070,7 +4070,7 @@ export const mainServiceData = {
         icon: "BarChart",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Data Science & Analytics Services | ClickMasters",
+        metaTitle: "Data Science & Analytics Services | Clickmasters",
         metaDescription:
           "Professional data analytics services using statistics, machine learning, and clean data models to answer real business questions.",
         lead: "Turn your numbers into a clear story with statistics and machine learning.",
@@ -4106,7 +4106,7 @@ export const mainServiceData = {
         icon: "PieChart",
         heroImage:
           "/images/photo-1504384308090-c894fdcc538d.jpg",
-        metaTitle: "Business Intelligence Services | ClickMasters",
+        metaTitle: "Business Intelligence Services | Clickmasters",
         metaDescription:
           "Professional BI services with live dashboards and real-time reports for sales, costs, and performance tracking.",
         lead: "Live dashboards and reports that show your business performance in real time.",
@@ -4142,7 +4142,7 @@ export const mainServiceData = {
         icon: "Server",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Data Engineering Services | ClickMasters",
+        metaTitle: "Data Engineering Services | Clickmasters",
         metaDescription:
           "Professional data engineering services building scalable data pipelines that move data safely between systems.",
         lead: "Build scalable data pipelines that move your data safely between systems.",
@@ -4178,7 +4178,7 @@ export const mainServiceData = {
         icon: "Database",
         heroImage:
           "/images/photo-1504384308090-c894fdcc538d.jpg",
-        metaTitle: "Data Warehousing Services | ClickMasters",
+        metaTitle: "Data Warehousing Services | Clickmasters",
         metaDescription:
           "Cloud data warehouse solutions that store all business data in one safe, organized place for team-wide consistency.",
         lead: "Store all your business data in one safe, organized cloud warehouse.",
@@ -4214,7 +4214,7 @@ export const mainServiceData = {
         icon: "Cpu",
         heroImage:
           "/images/photo-1451187580459-43490279c0fa.jpg",
-        metaTitle: "Big Data Solutions | ClickMasters",
+        metaTitle: "Big Data Solutions | Clickmasters",
         metaDescription:
           "Big data solutions using Apache Spark, Hadoop, and Kafka to process huge amounts of data fast and spot trends before competitors.",
         lead: "Process huge amounts of data fast with big data tools and technologies.",
@@ -4250,7 +4250,7 @@ export const mainServiceData = {
         icon: "Plug",
         heroImage:
           "/images/photo-1555066931-4365d14bab8c.jpg",
-        metaTitle: "Data Integration Services | ClickMasters",
+        metaTitle: "Data Integration Services | Clickmasters",
         metaDescription:
           "Data integration services connecting CRM, accounting, marketing, and support tools for automatic information flow.",
         lead: "Connect all your business tools so information flows automatically.",
@@ -4286,7 +4286,7 @@ export const mainServiceData = {
         icon: "Move",
         heroImage:
           "/images/photo-1504384308090-c894fdcc538d.jpg",
-        metaTitle: "Data Migration Services | ClickMasters",
+        metaTitle: "Data Migration Services | Clickmasters",
         metaDescription:
           "Professional data migration services moving data safely from old systems to new ones with zero data loss and minimal downtime.",
         lead: "Move your data safely between systems with zero data loss and minimal downtime.",
@@ -4322,7 +4322,7 @@ export const mainServiceData = {
         icon: "Shield",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Data Management & Governance | ClickMasters",
+        metaTitle: "Data Management & Governance | Clickmasters",
         metaDescription:
           "Data management services with clear rules for data access, usage, and updates to ensure compliance with U.S. privacy laws.",
         lead: "Set clear rules for who can see, use, and update your data.",
@@ -4358,7 +4358,7 @@ export const mainServiceData = {
         icon: "Eye",
         heroImage:
           "/images/photo-1504384308090-c894fdcc538d.jpg",
-        metaTitle: "Data Visualization Services | ClickMasters",
+        metaTitle: "Data Visualization Services | Clickmasters",
         metaDescription:
           "Data visualization services turning raw numbers into simple charts, maps, and graphs for easy team understanding.",
         lead: "Turn raw numbers into simple charts and graphs that anyone can understand.",
@@ -4392,7 +4392,7 @@ export const mainServiceData = {
     trustSection: {
       title: "A Trusted Data Solutions Company in the USA",
       description:
-        "ClickMasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers hold certifications from AWS, Microsoft Azure, and Google Cloud, and our team delivers data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
+        "Clickmasters is a U.S.-based data services company built for businesses that want real results from their data, not reports nobody reads. We work as a complete data solutions company and data technology company, which means you get one team for strategy, building, and ongoing support.\nOur engineers work hands-on with AWS, Microsoft Azure, and Google Cloud, and our team delivers data projects across the United States. We follow strict data security standards, including SOC 2-aligned and HIPAA-ready practices, so your business data services stay safe from day one.\nWhether you need business data services for a five-person team or enterprise data services for a Fortune 500 company, we shape our data development services around your goals — not the other way around.",
       // points: [
       //   "AWS, Azure, and Google Cloud certified engineers",
       //   "200+ data projects delivered across the USA",
@@ -4434,9 +4434,9 @@ export const mainServiceData = {
 
     // Why Choose Us
     whyChooseUs: {
-      title: "Why Choose ClickMasters as Your Data Services Company",
+      title: "Why Choose Clickmasters as Your Data Services Company",
       description:
-        "Many companies call themselves a data services provider. Here is what actually makes ClickMasters different:",
+        "Many companies call themselves a data services provider. Here is what actually makes Clickmasters different:",
       reasons: [
         {
           title: "U.S.-based team",
@@ -4470,7 +4470,7 @@ export const mainServiceData = {
         },
       ],
       closingText:
-        "This combination is why businesses consistently choose ClickMasters as their trusted data services partner.",
+        "This combination is why businesses consistently choose Clickmasters as their trusted data services partner.",
     },
 
     // Technology Stack
@@ -4509,7 +4509,7 @@ export const mainServiceData = {
     testimonials: [
       {
         quote:
-          "ClickMasters cleaned up three years of messy spreadsheets and gave us one dashboard we actually use every morning. We were searching for data services near me, and they made the whole process simple. Our reporting time dropped from two days to twenty minutes.",
+          "Clickmasters cleaned up three years of messy spreadsheets and gave us one dashboard we actually use every morning. We were searching for data services near me, and they made the whole process simple. Our reporting time dropped from two days to twenty minutes.",
         author: "Sarah Mitchell",
         title: "Operations Director",
         company: "Meridian Retail Group",
@@ -4517,7 +4517,7 @@ export const mainServiceData = {
       },
       {
         quote:
-          "We needed a data engineering company near me that could move fast without breaking anything. ClickMasters understood our requirements, handled the migration smoothly, and we had zero downtime.",
+          "We needed a data engineering company near me that could move fast without breaking anything. Clickmasters understood our requirements, handled the migration smoothly, and we had zero downtime.",
         author: "David Park",
         title: "IT Manager",
         company: "Lakeshore Health Partners",
@@ -4525,7 +4525,7 @@ export const mainServiceData = {
       },
       {
         quote:
-          "As a growing company, we didn't have an in-house data team. We were looking for data consulting services near me, and ClickMasters became the partner we needed. They helped us make sense of our numbers for the first time.",
+          "As a growing company, we didn't have an in-house data team. We were looking for data consulting services near me, and Clickmasters became the partner we needed. They helped us make sense of our numbers for the first time.",
         author: "Amanda Reyes",
         title: "Founder",
         company: "Northbridge SaaS Solutions",
@@ -4659,17 +4659,17 @@ export const mainServiceData = {
       {
         question: "How much do data services cost in the USA?",
         answer:
-          "Cost depends on the size of your project. Small dashboards can start in the low thousands, while full data engineering company USA projects cost more. ClickMasters provides a free, clear quote before any work begins.",
+          "Cost depends on the size of your project. Small dashboards can start in the low thousands, while full data engineering company USA projects cost more. Clickmasters provides a free, clear quote before any work begins.",
       },
       {
-        question: "Why choose ClickMasters as a data services provider?",
+        question: "Why choose Clickmasters as a data services provider?",
         answer:
-          "ClickMasters is a data services company USA businesses trust for fast delivery, fair pricing, and secure, compliant data management services USA companies rely on every day.",
+          "Clickmasters is a data services company USA businesses trust for fast delivery, fair pricing, and secure, compliant data management services USA companies rely on every day.",
       },
       {
         question: "Is my data safe with a data services agency?",
         answer:
-          "Yes. ClickMasters follows SOC 2-aligned and HIPAA-ready practices, so your data stays private and protected at every step of the process.",
+          "Yes. Clickmasters follows SOC 2-aligned and HIPAA-ready practices, so your data stays private and protected at every step of the process.",
       },
       {
         question:
@@ -5167,7 +5167,7 @@ export const mainServiceData = {
       reasons: [
         {
           description:
-            "Certified engineers with real experience on AWS, Azure, and Google Cloud",
+            "Engineers with real, hands-on experience on AWS, Azure, and Google Cloud",
         },
         {
           description:
@@ -5782,7 +5782,7 @@ export const mainServiceData = {
         "Clickmasters is a US-based cybersecurity company built for one reason: to keep businesses safe from threats that grow more advanced every year. We are not a call center reselling security software. We are a hands-on cybersecurity service provider with engineers who test, monitor, and defend your systems every day.\nCyberattacks don't wait for a good time to happen. A single data breach can cost a company its customers' trust, its revenue, and in some cases, its future. That's why our cybersecurity consulting company approach starts with understanding your business first — what data you hold, what systems you run, and what a breach would actually cost you — before we recommend a single tool.\nWe work with small businesses that need their first real security plan, and with enterprises that need a full-scale security operations center watching their network around the clock. Either way, you get straight answers, clear reporting, and a team that treats your risk like it's our own.",
       pointsHeading: "What makes us a leading cybersecurity services company:",
       points: [
-        "Certified security engineers with real-world attack and defense experience",
+        "Security engineers with real-world attack and defense experience",
         "Clear, plain-English reporting — no confusing jargon",
         "Support for compliance frameworks like HIPAA, SOC 2, PCI-DSS, and GDPR",
         "Fast response times when something looks wrong",
@@ -6149,7 +6149,7 @@ export const mainServiceData = {
   // ============================================
   qaTesting: {
     // Meta data
-    metaTitle: "QA Testing Services Company | ClickMasters",
+    metaTitle: "QA Testing Services Company | Clickmasters",
     metaDescription:
       "Leading QA testing services company in the USA offering manual, automation, and performance testing solutions. Get a free QA consultation and quote today!",
     canonical:
@@ -6161,7 +6161,7 @@ export const mainServiceData = {
     icon: "Bug",
     tagline: "QA Testing Services",
     description:
-      "ClickMasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers. As a trusted software testing company, we find bugs, security gaps, and performance issues before they ever reach your users, so your product works the first time and every time.\nWhether you need one round of manual testing or a full-time automation testing partner, our QA testing company is built to fit your release schedule, not slow it down.",
+      "Clickmasters delivers QA testing services that help US businesses launch software with confidence, not crossed fingers. As a trusted software testing company, we find bugs, security gaps, and performance issues before they ever reach your users, so your product works the first time and every time.\nWhether you need one round of manual testing or a full-time automation testing partner, our QA testing company is built to fit your release schedule, not slow it down.",
     heroBadge: "10+ Years of QA Excellence",
     heroImage:
       "/images/photo-1551288049-bebda4e38f71.jpg",
@@ -6274,7 +6274,7 @@ export const mainServiceData = {
         icon: "Bug",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Manual QA Testing Services | ClickMasters",
+        metaTitle: "Manual QA Testing Services | Clickmasters",
         metaDescription:
           "Manual QA testing using real testers to catch usability issues and edge cases that automated scripts miss.",
         lead: "Real testers catch what automated scripts miss.",
@@ -6310,7 +6310,7 @@ export const mainServiceData = {
         icon: "Repeat",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Automated QA Testing Services | ClickMasters",
+        metaTitle: "Automated QA Testing Services | Clickmasters",
         metaDescription:
           "Reusable test scripts that run fast, catch regressions early, and plug into your CI/CD pipeline.",
         lead: "Fast, reusable test scripts that catch regressions early.",
@@ -6329,7 +6329,7 @@ export const mainServiceData = {
         icon: "Globe",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Web Application Testing Services | ClickMasters",
+        metaTitle: "Web Application Testing Services | Clickmasters",
         metaDescription:
           "Cross-browser and cross-device testing for smooth, working web experiences.",
         lead: "Smooth web experiences across all browsers and devices.",
@@ -6348,7 +6348,7 @@ export const mainServiceData = {
         icon: "Smartphone",
         heroImage:
           "/images/photo-1512941937669-90a1b58e7e9c.jpg",
-        metaTitle: "Mobile App Testing Services | ClickMasters",
+        metaTitle: "Mobile App Testing Services | Clickmasters",
         metaDescription:
           "iOS and Android app testing across real devices and OS versions for crashes, layout, and performance.",
         lead: "iOS and Android testing across real devices.",
@@ -6367,7 +6367,7 @@ export const mainServiceData = {
         icon: "Plug",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "API Testing Services | ClickMasters",
+        metaTitle: "API Testing Services | Clickmasters",
         metaDescription:
           "API testing for correct data, error handling, and stability under real traffic.",
         lead: "Reliable APIs that handle real traffic correctly.",
@@ -6386,7 +6386,7 @@ export const mainServiceData = {
         icon: "Rocket",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Performance Testing Services | ClickMasters",
+        metaTitle: "Performance Testing Services | Clickmasters",
         metaDescription:
           "Real user load simulation to catch slowdowns and crashes before peak traffic.",
         lead: "Catch slowdowns and crashes before peak traffic.",
@@ -6405,7 +6405,7 @@ export const mainServiceData = {
         icon: "ShieldCheck",
         heroImage:
           "/images/photo-1550751827-4bd374c3f58b.jpg",
-        metaTitle: "Security Testing Services | ClickMasters",
+        metaTitle: "Security Testing Services | Clickmasters",
         metaDescription:
           "Application security testing for vulnerabilities, weak access controls, and data exposure risks.",
         lead: "Find and fix security issues before attackers do.",
@@ -6424,7 +6424,7 @@ export const mainServiceData = {
         icon: "CheckCircle2",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Functional Testing Services | ClickMasters",
+        metaTitle: "Functional Testing Services | Clickmasters",
         metaDescription:
           "Feature-by-feature verification that your software matches requirements.",
         lead: "Every feature verified against requirements.",
@@ -6443,7 +6443,7 @@ export const mainServiceData = {
         icon: "RefreshCw",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Regression Testing Services | ClickMasters",
+        metaTitle: "Regression Testing Services | Clickmasters",
         metaDescription:
           "Re-check existing functionality after every update to prevent new code from breaking old features.",
         lead: "Keep old features working after every update.",
@@ -6462,7 +6462,7 @@ export const mainServiceData = {
         icon: "Workflow",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "End-to-End Testing Services | ClickMasters",
+        metaTitle: "End-to-End Testing Services | Clickmasters",
         metaDescription:
           "Complete user journey testing from start to finish for seamless workflows.",
         lead: "Complete user journeys that work seamlessly.",
@@ -6481,7 +6481,7 @@ export const mainServiceData = {
         icon: "Compass",
         heroImage:
           "/images/photo-1552664730-d307ca884978.jpg",
-        metaTitle: "QA Consulting Services | ClickMasters",
+        metaTitle: "QA Consulting Services | Clickmasters",
         metaDescription:
           "QA process review and practical roadmap for improved coverage, speed, and release confidence.",
         lead: "Practical roadmap for better QA coverage and confidence.",
@@ -6500,7 +6500,7 @@ export const mainServiceData = {
         icon: "Building2",
         heroImage:
           "/images/photo-1551288049-bebda4e38f71.jpg",
-        metaTitle: "Enterprise QA Testing Services | ClickMasters",
+        metaTitle: "Enterprise QA Testing Services | Clickmasters",
         metaDescription:
           "Dedicated testing teams, detailed reporting, and scalable processes for complex enterprise systems.",
         lead: "Structured QA for complex enterprise systems.",
@@ -6517,7 +6517,7 @@ export const mainServiceData = {
     trustSection: {
       title: "A QA Testing Company Built Around Your Release Schedule",
       description:
-        "ClickMasters is a US-focused QA testing services company built for teams that can't afford to ship broken software. We are not a testing checklist factory. We are a hands-on software QA company that acts like part of your team — writing test plans around your product, not a generic template.\nA single bug in production can cost more than the fix itself. It costs user trust, bad reviews, and support tickets that pull your developers away from building new features. That's why our QA and testing services start with understanding how your users actually use your product, then build a testing strategy around real-world scenarios, not just a checkbox exercise.\nWe work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
+        "Clickmasters is a US-focused QA testing services company built for teams that can't afford to ship broken software. We are not a testing checklist factory. We are a hands-on software QA company that acts like part of your team — writing test plans around your product, not a generic template.\nA single bug in production can cost more than the fix itself. It costs user trust, bad reviews, and support tickets that pull your developers away from building new features. That's why our QA and testing services start with understanding how your users actually use your product, then build a testing strategy around real-world scenarios, not just a checkbox exercise.\nWe work with startups shipping their first product, and with enterprises running complex systems that can't go down. Either way, you get clear bug reports, honest timelines, and a team that treats your release date like our own deadline.",
       pointsHeading: "What makes us a trusted QA testing services company:",
       points: [
         "ISTQB-aligned testers with real production testing experience",
@@ -6559,7 +6559,7 @@ export const mainServiceData = {
 
     // Why Choose Us Data
     whyChooseUs: {
-      title: "Why Choose ClickMasters for QA Testing Services",
+      title: "Why Choose Clickmasters for QA Testing Services",
       description: "",
       reasons: [
         {
@@ -6618,7 +6618,7 @@ export const mainServiceData = {
     testimonials: [
       {
         quote:
-          "ClickMasters caught bugs our own team missed for months. Our release process is faster now, and we ship with a lot more confidence.",
+          "Clickmasters caught bugs our own team missed for months. Our release process is faster now, and we ship with a lot more confidence.",
         author: "Rachel Turner",
         title: "Product Manager",
         company: "SaaS Platform",

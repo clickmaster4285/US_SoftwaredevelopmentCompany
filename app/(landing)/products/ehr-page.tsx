@@ -78,7 +78,7 @@ import {
 export { EHR_PATH, ehrDescription, ehrTitle };
 
 
-const ACCENT = "#0284c7";
+const ACCENT = "#0369a1";
 
 export function ehrSchema() {
   const url = pageUrl(EHR_PATH);
@@ -455,15 +455,17 @@ export default function EhrPage() {
               <p className="text-sm font-semibold">At a glance</p>
               <dl className="mt-4 space-y-3">
                 {atAGlance.map(([title, text]) => (
-                  <div key={shortKey(title)} className="cx-flex-gap3-24">
-                    <Check
-                      className="mt-1 h-4 w-4 shrink-0 text-[#7dd3fc]"
-                      aria-hidden
-                    />
-                    <div>
-                      <dt className="inline font-semibold">{title}: </dt>
-                      <dd className="inline text-white/80">{text}</dd>
-                    </div>
+                  // dt/dd must sit directly in a div child of the dl, so the
+                  // icon is positioned inside the dt (same layout as before).
+                  <div key={shortKey(title)} className="relative pl-7">
+                    <dt className="inline font-semibold">
+                      <Check
+                        className="absolute left-0 top-1 h-4 w-4 text-[#7dd3fc]"
+                        aria-hidden
+                      />
+                      {title}:{" "}
+                    </dt>
+                    <dd className="inline text-white/80">{text}</dd>
                   </div>
                 ))}
               </dl>
@@ -568,7 +570,7 @@ export default function EhrPage() {
                   className="cx-flex-h9-3z"
                   style={{
                     backgroundColor:
-                      index === lifecycle.length - 1 ? "#16a34a" : ACCENT,
+                      index === lifecycle.length - 1 ? "#15803d" : ACCENT,
                   }}
                 >
                   {index + 1}
@@ -643,7 +645,7 @@ export default function EhrPage() {
                   className="cm-card5"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#e0f2fe]">
-                    <Icon className="h-5 w-5 text-[#0284c7]" aria-hidden />
+                    <Icon className="h-5 w-5 text-[#0369a1]" aria-hidden />
                   </span>
                   <h3 className="mt-4 font-semibold">{item.title}</h3>
                   <p className="cm-p2">
